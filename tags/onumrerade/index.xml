@@ -1,0 +1,138 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>onumrerade - Tag - Säkerhetspodcasten</title>
+        <link>https://sakerhetspodcasten.se/tags/onumrerade/</link>
+        <description>onumrerade - Tag - Säkerhetspodcasten</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 11 Jan 2016 14:20:03 &#43;0000</lastBuildDate><atom:link href="https://sakerhetspodcasten.se/tags/onumrerade/" rel="self" type="application/rss+xml" /><item>
+    <title>Intervjuavsnitt #16 - Jakob H. Heidelberg</title>
+    <link>https://sakerhetspodcasten.se/posts/intervjuavsnitt-16-jakob-h-heidelberg/</link>
+    <pubDate>Mon, 11 Jan 2016 14:20:03 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/intervjuavsnitt-16-jakob-h-heidelberg/</guid>
+    <description><![CDATA[Lyssna mp3
+Innehåll I detta intervjuavsnitt pratar vi med Jakob Heidelberg från Fortconsult om hans föredrag på Sec-T 2015, som handlade bland annat om post-exploitation genom Active Directory. Jakob går igenom både strategier för angrepp och försvar i ett modernt AD.
+AI transkribering AI försöker förstå oss&hellip; Ha överseende med galna feltranskriberingar.
+1 00:00:00,000 --&gt; 00:00:05,960 Vi är här idag med Jakob Heidelberg från NCC Group.
+2 00:00:06,080 --&gt; 00:00:07,680 Jag har glömt namnet av företaget.]]></description>
+</item>
+<item>
+    <title>Intervjuavsnitt #15 - Anders Nilsson</title>
+    <link>https://sakerhetspodcasten.se/posts/intervjuavsnitt-15-anders-nilsson/</link>
+    <pubDate>Mon, 28 Dec 2015 13:44:14 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/intervjuavsnitt-15-anders-nilsson/</guid>
+    <description><![CDATA[Lyssna mp3
+Innehåll Detta är det femtonde intervjuavsnittet av Säkerhetspodcasten, i vilket panelen diskuterar malware, hur antivirus fungerar på riktigt, vad man ska tänka på som konsument och mycket mer tillsammans med Anders Nilsson från antivirusbolaget ESET.
+AI transkribering AI försöker förstå oss&hellip; Ha överseende med galna feltranskriberingar.
+1 00:00:00,340 --&gt; 00:00:05,540 Hej och välkommen till Säkerhetspodcasten. Läs med oss på säkerhetspodcasten.se ifall ni vill.
+2 00:00:06,280 --&gt; 00:00:11,320 Det här avsnittet presenteras i samarbete med Codemint som finns på www.]]></description>
+</item>
+<item>
+    <title>Intervjuavsnitt #14 - Snare</title>
+    <link>https://sakerhetspodcasten.se/posts/intervjuavsnitt-14-snare/</link>
+    <pubDate>Fri, 06 Mar 2015 12:42:54 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/intervjuavsnitt-14-snare/</guid>
+    <description><![CDATA[Lyssna mp3
+Innehåll Detta är det fjortonde intervjuavsnittet av Säkerhetspodcasten, i vilket Peter och Jesper intervjuar @Snare på Sec-T 2014. De diskuterar Thunderbolt DMA-Attacker och mycket mer. Reklam: Swehack har en CTF som går av stapeln den 20e mars. Läs mer på 2015.swectf.se.
+Länkar SweCTF
+AI transkribering AI försöker förstå oss&hellip; Ha överseende med galna feltranskriberingar.
+1 00:00:00,260 --&gt; 00:00:03,880 Hej, det här är Johan Möller och Jesper Larsson.
+2 00:00:05,460 --&gt; 00:00:08,600 Innan avsnittet börjar ska vi pusha för några grejer som händer snart.]]></description>
+</item>
+<item>
+    <title>Intervjuavsnitt #13 - Hugo Teso</title>
+    <link>https://sakerhetspodcasten.se/posts/intervjuavsnitt-13-hugo-teso/</link>
+    <pubDate>Mon, 03 Nov 2014 13:19:05 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/intervjuavsnitt-13-hugo-teso/</guid>
+    <description><![CDATA[Lyssna mp3
+Innehåll Detta är det trettonde intervjuavsnittet av Säkerhetspodcasten, i vilket Peter och Jesper intervjuar Hugo Teso om hans forskning i flygsäkerhet och de allvarliga sårbarheter som han funnit i två av de system som används inom flygindustrin, ADS-B (Automated Dependent Surveillance-Broadcast) och ACARS (Aircraft Communications Addressing and Reporting System).
+Länkar Hugos Tesos hemsida http://www.commandercat.com/
+Youtube inspelning av Hugos SEC-T presentation: Hugo Teso - Going deeper on aviation security]]></description>
+</item>
+<item>
+    <title>Intervjuavsnitt #12 - Mathias &#34;Avlidienbrunn&#34; Karlsson</title>
+    <link>https://sakerhetspodcasten.se/posts/intervjuavsnitt-12-mathias-avlidienbrunn-karlsson/</link>
+    <pubDate>Mon, 13 Oct 2014 15:26:42 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/intervjuavsnitt-12-mathias-avlidienbrunn-karlsson/</guid>
+    <description><![CDATA[Lyssna mp3
+Innehåll Detta är det tolfte intervjuavsnittet av Säkerhetspodcasten, i vilket Jesper och Peter intervjuar Mathias &ldquo;Avlidienbrunn&rdquo; Karlsson. Det snackas säkerhet i webramverk, framförallt Angular JS, och klientsäkerhet i allmänhet.
+Länkar SEC-T 2014 0x07: Mattias Karlsson - Breaking AngularJS Javascript Sandbox
+SEC-T
+AI transkribering AI försöker förstå oss&hellip; Ha överseende med galna feltranskriberingar.
+1 00:00:00,000 --&gt; 00:00:02,000 Nu Mattias!
+2 00:00:02,000 --&gt; 00:00:04,000 Ska vi köra igång eller?
+3 00:00:04,000 --&gt; 00:00:06,000 Ja jag tryckte på rekord]]></description>
+</item>
+<item>
+    <title>Intervjuavsnitt #11 - David Jacoby</title>
+    <link>https://sakerhetspodcasten.se/posts/intervjuavsnitt-11-david-jacoby/</link>
+    <pubDate>Mon, 06 Oct 2014 18:53:53 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/intervjuavsnitt-11-david-jacoby/</guid>
+    <description><![CDATA[Lyssna mp3
+Innehåll Detta är det elfte intervjuavsnittet av Säkerhetspodcasten, i vilket Jesper och Peter intervjuar David Jacoby, säkerhetsexpert på Kaspersky, senast uppmärksammad för hans hackande av sitt smarta hem.
+Inspelat: 2014-09-20. Längd: 18:36.
+Länkar David Jacoby.se
+@JacobyDavid
+SEC-T
+AI transkribering AI försöker förstå oss&hellip; Ha överseende med galna feltranskriberingar.
+1 00:00:00,000 --&gt; 00:00:09,000 Okej, vi börjar om. Okej, andra lagen, säcktee, vi är lite bakfulla, vi har suttit och pratat här en liten stund utan att trycka på rekord.]]></description>
+</item>
+<item>
+    <title>Intervjuavsnitt #10 - James Lyne</title>
+    <link>https://sakerhetspodcasten.se/posts/intervjuavsnitt-10-james-lyne/</link>
+    <pubDate>Wed, 06 Aug 2014 16:14:41 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/intervjuavsnitt-10-james-lyne/</guid>
+    <description><![CDATA[Lyssna mp3
+Innehåll Detta avsnittet av Säkerhetspodcasten bjuder vi på en &ldquo;exklusiv&rdquo; intervju med Sophos egna James Lyne. Vi pratar om James väg in i säkerhetsbranschen, de största problemen inom säkerhetsvärlden idag, hur det är att flyga världen runt för att hålla SANS-kurser, och mycket mer. Inspelat på SANS Pentest Training i Berlin 2014.
+AI transkribering AI försöker förstå oss&hellip; Ha överseende med galna feltranskriberingar.
+1 00:00:00,000 --&gt; 00:00:29,980 Undertexter från Amara.]]></description>
+</item>
+<item>
+    <title>Intervjuavsnitt #9 - Dominic White</title>
+    <link>https://sakerhetspodcasten.se/posts/intervjuavsnitt-9-dominic-white/</link>
+    <pubDate>Wed, 02 Jul 2014 08:28:12 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/intervjuavsnitt-9-dominic-white/</guid>
+    <description><![CDATA[Lyssna mp3
+Innehåll Intervju från Hack In The Box Amsterdam 2014 med Dominic White (@singe) CTO på SensePost. Vi pratar om Dominics nya verktyg &ldquo;Big Iron Recon and Pwnage&rdquo; eller BIRP som kan användas för att granska stordatorapplikationer som använder TN3270 och vad man kan hitta på med det.
+Inspelat: 29 maj 2014. Längd: 11:14.
+Länkar Presentation från Amsterdam - http://haxpo.nl/hitb2014ams-dominic-white/ BIRP - https://github.com/sensepost/birp Dominics GitHub - https://github.com/singe Hercules - http://www.]]></description>
+</item>
+<item>
+    <title>Intervjuavsnitt #8 - Per Thorsheim</title>
+    <link>https://sakerhetspodcasten.se/posts/intervjuavsnitt-8-per-thorsheim/</link>
+    <pubDate>Thu, 27 Feb 2014 09:21:29 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/intervjuavsnitt-8-per-thorsheim/</guid>
+    <description><![CDATA[Lyssna mp3
+Innehåll Detta är det åttonde intervjuavsnittet av Säkerhetspodcasten, i vilket Johan, Mattias och Peter intervjuar Per Thorsheim, grundaren till Passwordscon. Inspelat på OWASP GBG den artonde februari 2014.
+Inspelat: 2014-02-18. Längd: 32:49.
+Länkar Per Thorsheim, blogg , YT , twitter
+PasswordCon http://passwordscon.org/
+OwaspGBG Presentation: Per Thorsheim - (Almost) Everything OWASP Won't Teach You
+OwaspGBG Presentation: Klas Lindfors - One Time Passwords
+LinkedIn incidenten http://www.cnet.com/news/millions-of-linkedin-passwords-reportedly-leaked-online/
+Kickstarter incidenten http://www.cnet.com/news/kickstarter-hacked-user-data-stolen/
+bcrypt, scrypt, pbkdf2: https://www.]]></description>
+</item>
+<item>
+    <title>Jubileumsavsnitt #1 2012-2013</title>
+    <link>https://sakerhetspodcasten.se/posts/jubileumsavsnitt-1-2012-2013/</link>
+    <pubDate>Tue, 19 Nov 2013 17:30:34 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/jubileumsavsnitt-1-2012-2013/</guid>
+    <description><![CDATA[Lyssna iTunes | mp3
+Innehåll Detta är det tjugofjärde avsnittet av Säkerhetspodcasten, i vilket panelen är tillbaka i studion för att fira podcastens ettårsjubileum. Vi diskuterar årets största säkerhetshändelser och berättar om våra respektive vägar in i säkerhetsvärlden.
+Inspelat: 2013-11-18. Längd: 1:49:23.
+Länkar André Clouet Grand Réserve Magnum
+AI transkribering AI försöker förstå oss&hellip; Ha överseende med galna feltranskriberingar.
+1 00:00:00,000 --&gt; 00:00:03,980 Jubileum!
+2 00:00:30,000 --&gt; 00:00:35,940 Twitter, där finns ju också SAK-podcasten, gå in och följ oss, och iTunes, och på alla andra ställen som har laddat ner podcast.]]></description>
+</item>
+</channel>
+</rss>
