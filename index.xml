@@ -3,9 +3,21 @@
         <title>Säkerhetspodcasten</title>
         <link>https://sakerhetspodcasten.se/</link>
         <description>Säkerhetspodcasten - Sveriges första? podcast om IT-säkerhet</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 27 Oct 2025 13:32:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 10 Nov 2025 07:33:00 &#43;0000</lastBuildDate>
             <atom:link href="https://sakerhetspodcasten.se/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Säkerhetspodcasten #292 - Ostrukturerat V.46</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_292_ostrukturerat_v_46/</link>
+    <pubDate>Mon, 10 Nov 2025 07:33:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_292_ostrukturerat_v_46/</guid>
+    <description><![CDATA[Mössen lyssnar, Secret Service hittar SIM-kort, TPM-diskussion, Unity sårbarhet, Oracle SSRF RCE, Osignerade tokens till Azure Graph API, Signal PQC Ratchet, OSINT mot FSB, Malware i din jobbintervju.
+Lyssna mp3, längd: 01:13:21 Försnack Rickard pratar om varför han varit borta ett tag. Peter snackar om Whisper transkriberingar.
+Mus avlyssnar dig Möss med hög uppdateringsfrekvens kan avlyssna rum via sin fotosensor.
+Länkar:
+Mic-E-Mouse Invisible Ears at Your Fingertips: Acoustic Eavesdropping via Mouse Sensors pdf Mohamad Habib Fakih, Rahul Dharmaji, Youssef Mahmoud, Halima Bouzidi, Mohammad Abdullah Al Faruque, Dept.]]></description>
+</item>
+<item>
     <title>Säkerhetspodcasten #291 - Kubernetes Drivers</title>
     <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_291_kubernetes_drivers/</link>
     <pubDate>Mon, 27 Oct 2025 13:32:00 &#43;0000</pubDate>
@@ -108,16 +120,6 @@ Attack Exposure Scoring (AES) värdera risken kopplad till en Attack Path Attack
 Lyssna mp3, längd: 01:12:48 Incident: TeleMessage 00:03:28 USA använder Signal-klonen TeleMessage, utvecklat i Israel under &ldquo;Israel-US Binational Industrial Research and Development Foundation&rdquo;. Meddelanden från appen kunde komma åts av hackers.
 Tekniska detaljer:
 Servern är skriven i JSP och SpringBoot. Lösenord i MD5 på klient istället för server, dvs hittar du en hash funkar den rakt av mot server. feroxbuster hittar /heapdump på archive.]]></description>
-</item>
-<item>
-    <title>Säkerhetspodcasten #282 - Transatlantiska haverier</title>
-    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_282_transatlantiska_haverier/</link>
-    <pubDate>Mon, 12 May 2025 13:31:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_282_transatlantiska_haverier/</guid>
-    <description><![CDATA[Handelskrig, EU US-exit, CVE, CISA, DNSSEC, Schrems, ICANN, IANA, &hellip;
-Lyssna mp3, längd: 01:03:01 Innehåll Hur funkar Säkerhet när transatlantiska relationerna bryter samman? När EU behöver dra sig ur amerikanska moln, hur påverkar det säkerhet på lång och kort sikt. När USA drar in stöd till MITRE och CVE-infrastrukturen hänger på en skör tråd?
-Hur stadsoberoende styrs Internet när relationerna krånglar? DNS, DNSSEC och top-level domains - nycklarna till internet.]]></description>
 </item>
 </channel>
 </rss>

@@ -3,7 +3,19 @@
         <title>ostrukturerat - Tag - Säkerhetspodcasten</title>
         <link>https://sakerhetspodcasten.se/tags/ostrukturerat/</link>
         <description>ostrukturerat - Tag - Säkerhetspodcasten</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 13 Oct 2025 15:32:00 &#43;0000</lastBuildDate><atom:link href="https://sakerhetspodcasten.se/tags/ostrukturerat/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 10 Nov 2025 07:33:00 &#43;0000</lastBuildDate><atom:link href="https://sakerhetspodcasten.se/tags/ostrukturerat/" rel="self" type="application/rss+xml" /><item>
+    <title>Säkerhetspodcasten #292 - Ostrukturerat V.46</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_292_ostrukturerat_v_46/</link>
+    <pubDate>Mon, 10 Nov 2025 07:33:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_292_ostrukturerat_v_46/</guid>
+    <description><![CDATA[Mössen lyssnar, Secret Service hittar SIM-kort, TPM-diskussion, Unity sårbarhet, Oracle SSRF RCE, Osignerade tokens till Azure Graph API, Signal PQC Ratchet, OSINT mot FSB, Malware i din jobbintervju.
+Lyssna mp3, längd: 01:13:21 Försnack Rickard pratar om varför han varit borta ett tag. Peter snackar om Whisper transkriberingar.
+Mus avlyssnar dig Möss med hög uppdateringsfrekvens kan avlyssna rum via sin fotosensor.
+Länkar:
+Mic-E-Mouse Invisible Ears at Your Fingertips: Acoustic Eavesdropping via Mouse Sensors pdf Mohamad Habib Fakih, Rahul Dharmaji, Youssef Mahmoud, Halima Bouzidi, Mohammad Abdullah Al Faruque, Dept.]]></description>
+</item>
+<item>
     <title>Säkerhetspodcasten #290 - Ostrukturerat V.42</title>
     <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_290_ostrukturerat_v_42/</link>
     <pubDate>Mon, 13 Oct 2025 15:32:00 &#43;0000</pubDate>
@@ -100,16 +112,6 @@ SecurityFest 4-5 juni BSides Ume 10-11 juni Peter&rsquo;s bloggpost: Path Length
     <description><![CDATA[Lyssna mp3, längd: 35:05 Panelen Johan, Mattias, Peter och Rickard tar sig vad som har hänt det senaste!
 Jesper är frånvarande pga. att han är bad ass säkerhetspresentatör i Stockholm!
 Ämnen Europol slår till mot MATRIX Off-topic: Säkra meddelandeprotokoll och kvantar Off-topic: kvantkrypto-coinet WiFi hoppandes spioner Needsrestart Credential Guard Credential leaks hackas jättesnabbt Europol slår till mot MATRIX Ett ganska stort kriminelt nätverk blev avkrypterat av Europol i månader, och sen nerstängt.]]></description>
-</item>
-<item>
-    <title>Säkerhetspodcasten #271 - Ostrukturerat V.48</title>
-    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_271_ostrukturerat_v_48/</link>
-    <pubDate>Mon, 25 Nov 2024 09:58:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_271_ostrukturerat_v_48/</guid>
-    <description><![CDATA[Lyssna mp3, längd: 39:50 Innehåll Rickard fick akut hoppa av inspelningen för att rädda universium från Operation Impending Doom I, och lämande Jesper, Johan, Mattias och Peter till att styra båten i land.
-Dagens ämnen:
-Brev till Jesper. Rebecka kommunicerar syntaxfel i SecurityFest&rsquo;s hemsida, via att be Jesper öppna ett brev &ldquo;live&rdquo; under inspelning. Mullvad slutar med OpenVPN Off-topic: Kryptoagilitet jämfört med stela kryptolådor Windows Sårbarhet (Remote Code Executution via URL-filer) DLink NAS command injection: execvp() vs system() i samma produkt&hellip; Massa onda Github Pull Requests Bring Your Own Vulnerable Driver City Skylines Traffic Trojan Mattias till DreamHack i helgen Extra shoutout till Low Level som stod för en helt stor andel av historierna Peter rapporterade på denna gången!]]></description>
 </item>
 </channel>
 </rss>
