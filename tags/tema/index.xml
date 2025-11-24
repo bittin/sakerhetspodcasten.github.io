@@ -3,7 +3,17 @@
         <title>tema - Tag - Säkerhetspodcasten</title>
         <link>https://sakerhetspodcasten.se/tags/tema/</link>
         <description>tema - Tag - Säkerhetspodcasten</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 27 Oct 2025 13:32:00 &#43;0000</lastBuildDate><atom:link href="https://sakerhetspodcasten.se/tags/tema/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 24 Nov 2025 12:15:00 &#43;0000</lastBuildDate><atom:link href="https://sakerhetspodcasten.se/tags/tema/" rel="self" type="application/rss+xml" /><item>
+    <title>Säkerhetspodcasten #293 - Molnet Har Fallit</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_293_molnet_har_fallit/</link>
+    <pubDate>Mon, 24 Nov 2025 12:15:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_293_molnet_har_fallit/</guid>
+    <description><![CDATA[Molnet har fallit. Två stora hyperscalers har gått ner. AWS står och brinner. Zombies vandrar runt i Azure&rsquo;s datahallar. Säkerhetspodcasten försöker leda dig genom den post-apokalyps vi nu lever i, tiden efter att molnet gick ner.
+Körde du EKG över AWS? Styrde du sängvärmen via AWS? Kunde du inte hämta ut dina barn för att Azure vägrade dig checka ut dem från kommunens system?
+Lyssna mp3, längd: 54:07 AWS brinner: US-EAST-1 har fallit DynamoDB Service Disruption.]]></description>
+</item>
+<item>
     <title>Säkerhetspodcasten #291 - Kubernetes Drivers</title>
     <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_291_kubernetes_drivers/</link>
     <pubDate>Mon, 27 Oct 2025 13:32:00 &#43;0000</pubDate>
@@ -113,17 +123,6 @@ Gamla Spaningar Hur gick 2024 jämfört med våra spaningar?
     <description><![CDATA[Lyssna mp3, längd: 30:25 Innehåll Hela panelen är samlad efter ett hårt och långt nyårsavsnitt!
 Jesper, Johan, Mattias, Peter och Rickard babblar om ett urval av spännade nyheter;
 Hårdvaru-nära: Mattias spekulerar om nya Apple M silikon spekulativa hål SLAP och FLOP. Peter pratar om Reloader.EFI, nästa nya hål i UEFI Secure Boot. Kryptografi: NATO HALFLOOP-24 för frekvenshoppning knäckt. Bil-nytt: Rickard och Mattias pratar om Subaru STARLINK och Volkswagen Cariad incidenterna. Vår urgamla vänner Spring Boot Actuators återvänder!]]></description>
-</item>
-<item>
-    <title>Säkerhetspodcasten #274 - Fyra fantastiska frågor</title>
-    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_274_fyra_fantastiska_fragor/</link>
-    <pubDate>Mon, 23 Dec 2024 07:20:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_274_fyra_fantastiska_fragor/</guid>
-    <description><![CDATA[Lyssna mp3, längd: 01:12:14 Innehåll Johan, Mattias, Peter och Rickard försöker ta sig an Loves fyra frågor!
-(En ung Love kan höras i Säkerhetspodcasten avs.68 - Motsägelsefulla Best Practices med Love Björk. 2016-09-07 var verkligen inte igår, drygt 8 år sen!)
-Loves fyra frågor Love&rsquo;s fyra frågor:
-Problemet med samhälls single point of failure. Framtiden för lösenord. SBOM, hur hanterar man det här på ett bra sätt? Mental hälsa! Problemet med samhälls single point of failure Här tänker jag tex på bankID och att alla snart sitter i Microsoft365.]]></description>
 </item>
 </channel>
 </rss>

@@ -1,0 +1,3358 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Säkerhetspodcasten #293 - Molnet Har Fallit - Säkerhetspodcasten</title><meta name="Description" content="Säkerhetspodcasten - Sveriges första? podcast om IT-säkerhet"><meta property="og:title" content="Säkerhetspodcasten #293 - Molnet Har Fallit" />
+<meta property="og:description" content="Molnet har fallit. Två stora hyperscalers har gått ner. AWS står och brinner. Zombies vandrar runt i Azure&rsquo;s datahallar. Säkerhetspodcasten försöker leda dig genom den post-apokalyps vi nu lever i, tiden efter att molnet gick ner.
+Körde du EKG över AWS? Styrde du sängvärmen via AWS? Kunde du inte hämta ut dina barn för att Azure vägrade dig checka ut dem från kommunens system?
+Lyssna mp3, längd: 54:07 AWS brinner: US-EAST-1 har fallit DynamoDB Service Disruption." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sakerhetspodcasten.se/posts/sakerhetspodcasten_293_molnet_har_fallit/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-11-24T12:15:00+00:00" />
+<meta property="article:modified_time" content="2025-11-24T12:15:00+00:00" /><meta property="og:site_name" content="Säkerhetspodcasten" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Säkerhetspodcasten #293 - Molnet Har Fallit"/>
+<meta name="twitter:description" content="Molnet har fallit. Två stora hyperscalers har gått ner. AWS står och brinner. Zombies vandrar runt i Azure&rsquo;s datahallar. Säkerhetspodcasten försöker leda dig genom den post-apokalyps vi nu lever i, tiden efter att molnet gick ner.
+Körde du EKG över AWS? Styrde du sängvärmen via AWS? Kunde du inte hämta ut dina barn för att Azure vägrade dig checka ut dem från kommunens system?
+Lyssna mp3, längd: 54:07 AWS brinner: US-EAST-1 har fallit DynamoDB Service Disruption."/>
+<meta name="application-name" content="Säkerhetspodcasten">
+<meta name="apple-mobile-web-app-title" content="Säkerhetspodcasten"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://sakerhetspodcasten.se/posts/sakerhetspodcasten_293_molnet_har_fallit/" /><link rel="prev" href="https://sakerhetspodcasten.se/posts/sakerhetspodcasten_292_ostrukturerat_v_46/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Säkerhetspodcasten #293 - Molnet Har Fallit",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/sakerhetspodcasten.se\/posts\/sakerhetspodcasten_293_molnet_har_fallit\/"
+        },"genre": "posts","keywords": "tema","wordcount":  16326 ,
+        "url": "https:\/\/sakerhetspodcasten.se\/posts\/sakerhetspodcasten_293_molnet_har_fallit\/","datePublished": "2025-11-24T12:15:00+00:00","dateModified": "2025-11-24T12:15:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Säkerhetspodcasten">Säkerhetspodcasten</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Pods </a><a class="menu-item" href="/pages/lyssna" title="Lyssna"> Lyssna! </a><a class="menu-item" href="/pages/kontakt" title="kontakt"> Kontakt </a><a class="menu-item" href="/pages/panelen" title="panelen"> Panelen </a><a class="menu-item" href="/pages/supportersida-2" title="supporters"> Supporters </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Säkerhetspodcasten">Säkerhetspodcasten</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Pods</a><a class="menu-item" href="/pages/lyssna" title="Lyssna">Lyssna!</a><a class="menu-item" href="/pages/kontakt" title="kontakt">Kontakt</a><a class="menu-item" href="/pages/panelen" title="panelen">Panelen</a><a class="menu-item" href="/pages/supportersida-2" title="supporters">Supporters</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Säkerhetspodcasten #293 - Molnet Har Fallit</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2025-11-24">2025-11-24</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;16326 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;77 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#lyssna">Lyssna</a></li>
+    <li><a href="#aws-brinner-us-east-1-har-fallit">AWS brinner: US-EAST-1 har fallit</a></li>
+    <li><a href="#microsoft-brinner-azure-front-door-afd-står-i-lågor">Microsoft brinner: Azure Front Door (AFD) står i lågor</a></li>
+    <li><a href="#neddragningar-aws">Neddragningar AWS</a></li>
+    <li><a href="#ai-transkribering">AI transkribering</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Molnet har fallit.
+Två stora hyperscalers har gått ner.
+AWS står och brinner.
+Zombies vandrar runt i Azure&rsquo;s datahallar.
+Säkerhetspodcasten försöker leda dig genom den post-apokalyps vi nu lever i,
+tiden efter att molnet gick ner.</p>
+<p>Körde du EKG över AWS?
+Styrde du sängvärmen via AWS?
+Kunde du inte hämta ut dina barn för att Azure vägrade dig checka ut dem
+från kommunens system?</p>
+<h2 id="lyssna">Lyssna</h2>
+<ul>
+<li><a href="https://traffic.libsyn.com/secure/sakerhetspodcasten/2025-11-05_Molnet_har_fallit_v2.mp3?dest-id=117848" target="_blank" rel="noopener noreffer ">mp3</a>, längd: 54:07</li>
+</ul>
+<h2 id="aws-brinner-us-east-1-har-fallit">AWS brinner: US-EAST-1 har fallit</h2>
+<p>DynamoDB Service Disruption.
+<code>dynamodb.us-east-1.amazonaws.com</code> tappade bort sin egen DNS-entry
+under ett race condition mellan <code>DNS Planner</code> och <code>DNS Enactor</code>.
+Blah blah blah det ena leder till det andra, nu är det full kaos
+i US-EAST-1 DNS-tjänster.
+Sen börjar EC2 strula pga följdfel.
+Sen börjar Network Load Balancer (NLB) strula pga följdfel.
+Sen börjar allt strula oga följdfel.</p>
+<p>Länk:</p>
+<ul>
+<li><a href="https://aws.amazon.com/message/101925/" target="_blank" rel="noopener noreffer ">Amazon Web Services, Inc.: Summary of the Amazon DynamoDB Service Disruption in the Northern Virginia (US-EAST-1) Region</a></li>
+</ul>
+<h2 id="microsoft-brinner-azure-front-door-afd-står-i-lågor">Microsoft brinner: Azure Front Door (AFD) står i lågor</h2>
+<p>Microsoft Azure hade accessproblem pga Azure Front Door (AFD),
+den 9:e och 29:e Oktober.</p>
+<p>9:e Oktober:</p>
+<blockquote>
+<p>On 09 October 2025, we initiated a cleanup
+<em>[&hellip;]</em>
+By bypassing the protection system, the erroneous metadata was inadvertently
+able to propagate to later stages – and triggered the bug in the data plane
+that crashed the data plane service. This resulted in a disruption to a
+significant number of edge sites across Europe and Africa, approximately 26%
+of AFD data plane infrastructure resources in these regions were impacted.</p>
+</blockquote>
+<p>Oktober 29:e:</p>
+<blockquote>
+<p>A specific sequence of customer configuration changes, performed across two
+different control plane build versions, resulted in incompatible customer
+configuration metadata being generated. These customer configuration changes
+themselves were valid and non-malicious – however they produced metadata that,
+when deployed to edge site servers, exposed a latent bug in the data plane.
+This incompatibility triggered a crash during asynchronous processing within
+the data plane service. This defect escaped detection due to a gap in our
+pre-production validation, since not all features are validated across
+different control plane build versions.</p>
+</blockquote>
+<p>Länkar:</p>
+<ul>
+<li><a href="https://azure.status.microsoft/en-us/status/history/" target="_blank" rel="noopener noreffer ">Azure status history | Microsoft Azure</a></li>
+<li><a href="https://www.youtube.com/watch?v=PHvIYrWkAJU" target="_blank" rel="noopener noreffer ">YouTube/ Microsoft Reactor: Azure Incident Retrospective - Azure Front Door connectivity issues Oct 2025 (Tracking ID - YKYN-BWZ)</a> <code>video</code></li>
+<li><a href="https://www.youtube.com/watch?v=J9TB6euLBI4" target="_blank" rel="noopener noreffer ">YouTube/ Microsoft Reactor: Azure Incident Retrospective - Azure Front Door/Portal Oct 9, 2025 (Tracking ID - QNBQ-5W8 &amp; QKNQ-PB8)</a> <code>video</code></li>
+<li><a href="https://www.itpro.com/infrastructure/the-microsoft-azure-outage-explained-what-happened-who-was-impacted-and-what-can-we-learn-from-it" target="_blank" rel="noopener noreffer ">IT Pro/ Nicole Kobie: The Microsoft Azure outage explained - What happened, who was impacted, and what can we learn from it? - The Azure outage has prompted calls for greater cloud diversification</a></li>
+</ul>
+<h2 id="neddragningar-aws">Neddragningar AWS</h2>
+<p>En tes är att många lämnar i FANG-uppsägningarna,
+att man tappat nyckelpersonal för att felsöka systemen.</p>
+<p>Länkar:</p>
+<ul>
+<li><a href="https://www.aboutamazon.com/news/company-news/amazon-workforce-reduction" target="_blank" rel="noopener noreffer ">Amazon: An update from SVP Beth Galetti on Amazon workforce reduction</a></li>
+<li><a href="https://www.theregister.com/2025/10/20/aws_outage_amazon_brain_drain_corey_quinn/" target="_blank" rel="noopener noreffer ">The Register/ Corey Quinn: Amazon brain drain finally caught up with AWS</a></li>
+<li><a href="https://www.planetearthandbeyond.co/p/amazon-just-proved-ai-isnt-the-answer" target="_blank" rel="noopener noreffer ">Will Lockett: Amazon Just Proved AI Isn&rsquo;t The Answer Yet Again</a></li>
+<li><a href="https://www.linkedin.com/posts/jamesgosling_amazon-just-proved-ai-isnt-the-answer-yet-activity-7390531807277932544-JItA" target="_blank" rel="noopener noreffer ">James Gosling: AWS incident - How ROI-focused management destroyed teams and services</a>
+<em>James Gosling posted on the topic | LinkedIn - This article is a good read. It speaks to some of the backstory and foolishness around the recent AWS incident. Back when the AI hype explosion happened and I was still at AWS I was astonished by how the structure of the business got torqued around, and how teams got demolished. One of the saddest things that happened is that senior management became dominated by folks that knew almost nothing about how AWS worked. There was an influx of ridiculous spreadsheet pushers tasked with realigning staffing. But they were being idiotic about it: the only metric they cared about when measuring a service was ROI. How much money the service brought in from customers. Teams whose ROI didn’t measure up were decimated. Every team I was working with ceased to exist. This occasionally made sense, but many of the services have little to no direct revenue. And yet they are critical to the operation of the system. The internal DNS is one of those systems. I have no specific knowledge of what happened to that team, but I’m quite confident that they took a huge headcount hit. This damages the ability to improve, the ability to reduce technical debt, and the ability to respond to operational issues. The ROI analysis was disastrously shortsighted. These systems are complex interconnected structures. Unless the whole ecosystem is comprehended in total, bad decisions are made. It’s an epic clusterfuck that has been hard to watch. I spent a lot of time trying to get these shortsighted idiots to understand, but made zero progress. | 148 comments on LinkedIn</em></li>
+</ul>
+<h2 id="ai-transkribering">AI transkribering</h2>
+<p><em>AI försöker förstå oss&hellip; Ha överseende med galna feltranskriberingar.</em></p>
+<p><code>1 00:00:00,000 --&gt; 00:00:12,180</code>
+Hej och välkommen till Säkerhetspodcasten, jag som pratar heter Johan Rydberg Möller och med mig har jag Peter Magnusson, Sockret i din bensintank, Rickard Bortfors, Mattias Idrager och Jesper Larsson.</p>
+<p><code>2 00:00:12,220 --&gt; 00:00:13,080</code>
+Det kan ni feta ja.</p>
+<p><code>3 00:00:13,200 --&gt; 00:00:14,800</code>
+Vet ni vad, vi är ju fan fulltaliga idag.</p>
+<p><code>4 00:00:14,880 --&gt; 00:00:16,380</code>
+Det är helt sjukt, helt magiskt.</p>
+<p><code>5 00:00:16,680 --&gt; 00:00:18,340</code>
+Det är så hemskt, så jag får inga hörnudar.</p>
+<p><code>6 00:00:18,940 --&gt; 00:00:24,420</code>
+Det är onsdag den 5 november, nådesår 2025 när vi spelar in det här.</p>
+<p><code>7 00:00:24,420 --&gt; 00:00:34,840</code>
+Vi ska nämna att vi är sponsrade av Avershort, så ni kan läsa mer om Avershort.se, så även av 0x4a, som finns på 0x4a.se och av Bortfors Consulting, som ni hittar på Bortfors.se.</p>
+<p><code>8 00:00:35,320 --&gt; 00:00:35,560</code>
+Yay!</p>
+<p><code>9 00:00:36,020 --&gt; 00:00:37,180</code>
+Där har man sagt några gånger.</p>
+<p><code>10 00:00:37,360 --&gt; 00:00:38,760</code>
+Den sitter nu.</p>
+<p><code>11 00:00:38,920 --&gt; 00:00:40,460</code>
+Bortfors har en snygg ny logga.</p>
+<p><code>12 00:00:41,460 --&gt; 00:00:46,320</code>
+Nu hade jag ju inte på mig den huddin idag då, utan jag tog podcast-huddin, because of reasons.</p>
+<p><code>13 00:00:46,520 --&gt; 00:00:47,580</code>
+Och väldigt bra swag.</p>
+<p><code>14 00:00:48,400 --&gt; 00:00:51,480</code>
+Avundsjuk på er vattenflaska, eller avundsjuk på utvald avgön.</p>
+<p><code>15 00:00:51,500 --&gt; 00:00:52,040</code>
+Du fick ju en.</p>
+<p><code>16 00:00:52,240 --&gt; 00:00:53,360</code>
+Men den är jättebra.</p>
+<p><code>17 00:00:53,820 --&gt; 00:00:54,040</code>
+Den var&hellip;</p>
+<p><code>18 00:00:54,420 --&gt; 00:00:55,280</code>
+Den var bra.</p>
+<p><code>19 00:00:55,780 --&gt; 00:00:56,540</code>
+Det är kul.</p>
+<p><code>20 00:00:56,640 --&gt; 00:00:57,380</code>
+Ja, jag gillar den nya loggan.</p>
+<p><code>21 00:00:57,380 --&gt; 00:01:02,240</code>
+Man har ju ändå fått ganska många vattenflaskor med gängse budskap på från olika cybersäkerhetsfirmor.</p>
+<p><code>22 00:01:02,780 --&gt; 00:01:03,220</code>
+Den här var bra.</p>
+<p><code>23 00:01:03,920 --&gt; 00:01:07,380</code>
+Ja, det är alltså swagpodden som ni lyssnar på idag.</p>
+<p><code>24 00:01:07,380 --&gt; 00:01:07,720</code>
+Swagpodden.</p>
+<p><code>25 00:01:08,720 --&gt; 00:01:11,040</code>
+Nej, men det är ju faktiskt så att vi har ett tema för det här avsnittet.</p>
+<p><code>26 00:01:11,260 --&gt; 00:01:12,080</code>
+Jag kan ju nämna det också.</p>
+<p><code>27 00:01:12,180 --&gt; 00:01:13,480</code>
+Du sa ju Bortfors Consulting.</p>
+<p><code>28 00:01:13,600 --&gt; 00:01:17,440</code>
+Vi är på gång att droppa Consulting, så det är bara Bortfors.</p>
+<p><code>29 00:01:17,620 --&gt; 00:01:18,400</code>
+Droppa Bortfors.</p>
+<p><code>30 00:01:18,480 --&gt; 00:01:18,660</code>
+Nej.</p>
+<p><code>31 00:01:19,960 --&gt; 00:01:21,980</code>
+Nej, vi droppar faktiskt D1 i Bortfors.</p>
+<p><code>32 00:01:22,480 --&gt; 00:01:23,900</code>
+Det blir Bortfors Consulting.</p>
+<p><code>33 00:01:24,420 --&gt; 00:01:26,660</code>
+Det är lite ny marknad.</p>
+<p><code>34 00:01:27,000 --&gt; 00:01:27,380</code>
+Precis.</p>
+<p><code>35 00:01:28,240 --&gt; 00:01:30,620</code>
+Vi säljer kanoner och konsulter.</p>
+<p><code>36 00:01:31,060 --&gt; 00:01:31,460</code>
+Kanonkonsulter.</p>
+<p><code>37 00:01:31,460 --&gt; 00:01:34,780</code>
+Är det första revilen på ny bränning nog då?</p>
+<p><code>38 00:01:35,020 --&gt; 00:01:39,820</code>
+Ja, eller vi får väl se vad Bolagsverket säger om den manövren.</p>
+<p><code>39 00:01:40,140 --&gt; 00:01:43,940</code>
+Men oavsett så är det Bortfors bara.</p>
+<p><code>40 00:01:44,240 --&gt; 00:01:46,580</code>
+Ja, men man kan ju ha inofficiella&hellip;</p>
+<p><code>41 00:01:46,580 --&gt; 00:01:47,040</code>
+Exakt.</p>
+<p><code>42 00:01:47,520 --&gt; 00:01:52,740</code>
+Tänk på våra kollegor i stan som heter Kocki Totsås AB.</p>
+<p><code>43 00:01:52,740 --&gt; 00:01:53,420</code>
+Ja, exakt.</p>
+<p><code>44 00:01:53,420 --&gt; 00:01:53,820</code>
+Precis.</p>
+<p><code>45 00:01:54,420 --&gt; 00:01:56,260</code>
+Nåväl.</p>
+<p><code>46 00:01:56,620 --&gt; 00:01:58,800</code>
+Nog om diverse branding och så vidare.</p>
+<p><code>47 00:01:58,920 --&gt; 00:02:00,540</code>
+Vi har ett tema för det här avsnittet.</p>
+<p><code>48 00:02:01,700 --&gt; 00:02:04,280</code>
+Det var ju någonting som hände här för några dagar sedan.</p>
+<p><code>49 00:02:04,280 --&gt; 00:02:05,280</code>
+Fan, när internet försvann.</p>
+<p><code>50 00:02:05,360 --&gt; 00:02:06,560</code>
+Ja, det är bara&hellip;</p>
+<p><code>51 00:02:06,560 --&gt; 00:02:07,820</code>
+Det gick lite trögt.</p>
+<p><code>52 00:02:07,840 --&gt; 00:02:08,420</code>
+Ja, det var skönt.</p>
+<p><code>53 00:02:08,800 --&gt; 00:02:10,100</code>
+Då kunde man gå och lägga sig på soffan en stund.</p>
+<p><code>54 00:02:10,600 --&gt; 00:02:11,880</code>
+Men det var lite skönt.</p>
+<p><code>55 00:02:12,300 --&gt; 00:02:12,960</code>
+Var det inte det?</p>
+<p><code>56 00:02:13,440 --&gt; 00:02:16,640</code>
+När man kommer över, är det bara jag eller är det alla andra som bara&hellip;</p>
+<p><code>57 00:02:16,640 --&gt; 00:02:17,280</code>
+Här är det ganska bra.</p>
+<p><code>58 00:02:17,960 --&gt; 00:02:18,700</code>
+Det här är egentligen&hellip;</p>
+<p><code>59 00:02:18,700 --&gt; 00:02:21,560</code>
+Vi pratade alltså om AVS.</p>
+<p><code>60 00:02:21,700 --&gt; 00:02:23,420</code>
+Framförallt det står AVS och AptiTrend.</p>
+<p><code>61 00:02:23,420 --&gt; 00:02:24,300</code>
+Men även Azure.</p>
+<p><code>62 00:02:24,420 --&gt; 00:02:25,440</code>
+Det är ju ett problem nyligen.</p>
+<p><code>63 00:02:26,140 --&gt; 00:02:31,260</code>
+Då inspirerade vi oss lite att prata om ett tema som vi visserligen har varit inne och snuddat på lite innan.</p>
+<p><code>64 00:02:31,640 --&gt; 00:02:32,740</code>
+Men vi ska väl diskutera&hellip;</p>
+<p><code>65 00:02:32,740 --&gt; 00:02:33,700</code>
+Nämligen kantareller.</p>
+<p><code>66 00:02:33,900 --&gt; 00:02:34,720</code>
+I breda dag.</p>
+<p><code>67 00:02:36,000 --&gt; 00:02:38,420</code>
+Problematiken med stora hyperscalers.</p>
+<p><code>68 00:02:39,280 --&gt; 00:02:40,840</code>
+Många ägg i få korgar.</p>
+<p><code>69 00:02:41,180 --&gt; 00:02:41,820</code>
+Och så vidare.</p>
+<p><code>70 00:02:41,880 --&gt; 00:02:43,820</code>
+Ett av vårt gamla fan, Loebjörk.</p>
+<p><code>71 00:02:44,440 --&gt; 00:02:46,360</code>
+Han hade ju det här som fråga.</p>
+<p><code>72 00:02:47,420 --&gt; 00:02:47,700</code>
+Okej.</p>
+<p><code>73 00:02:48,420 --&gt; 00:02:49,560</code>
+Men han har varit fan länge.</p>
+<p><code>74 00:02:49,940 --&gt; 00:02:52,060</code>
+Han har hängt efter oss länge.</p>
+<p><code>75 00:02:52,060 --&gt; 00:02:54,260</code>
+Och han ställde ju en fråga till&hellip;</p>
+<p><code>76 00:02:54,420 --&gt; 00:02:55,300</code>
+Inte med oss för ett tag sedan.</p>
+<p><code>77 00:02:55,680 --&gt; 00:02:56,100</code>
+Ja, just det.</p>
+<p><code>78 00:02:56,540 --&gt; 00:02:57,640</code>
+Just om&hellip;</p>
+<p><code>79 00:02:57,640 --&gt; 00:03:00,640</code>
+Är det inte lite dumt att vi lägger&hellip;</p>
+<p><code>80 00:03:00,640 --&gt; 00:03:02,220</code>
+Ja, lägger våra grejer&hellip;</p>
+<p><code>81 00:03:02,220 --&gt; 00:03:03,800</code>
+Vi skete i att svara på det.</p>
+<p><code>82 00:03:03,980 --&gt; 00:03:05,800</code>
+Så Loebjörk drog över till USA och ryckte ur sladdan.</p>
+<p><code>83 00:03:06,540 --&gt; 00:03:07,820</code>
+Nu vet vi alla hur det gick.</p>
+<p><code>84 00:03:08,060 --&gt; 00:03:09,020</code>
+Det inspirerade ju oss då.</p>
+<p><code>85 00:03:09,020 --&gt; 00:03:09,900</code>
+Nu kör vi ett avsnitt.</p>
+<p><code>86 00:03:10,260 --&gt; 00:03:10,460</code>
+Precis.</p>
+<p><code>87 00:03:10,620 --&gt; 00:03:12,720</code>
+Det är lite så man får göra ifall man vill ha ett avsnitt av oss.</p>
+<p><code>88 00:03:12,940 --&gt; 00:03:13,100</code>
+Ja.</p>
+<p><code>89 00:03:14,080 --&gt; 00:03:18,080</code>
+Men vi kan väl börja lite med att snacka om vad det var som hände i de här två fallen.</p>
+<p><code>90 00:03:18,340 --&gt; 00:03:20,420</code>
+Och vi har väl läst in oss&hellip;</p>
+<p><code>91 00:03:20,420 --&gt; 00:03:22,500</code>
+Det kan man säga var lite effekten.</p>
+<p><code>92 00:03:23,500 --&gt; 00:03:24,180</code>
+Men vad var då?</p>
+<p><code>93 00:03:24,420 --&gt; 00:03:25,060</code>
+Försaker, Jesper.</p>
+<p><code>94 00:03:25,180 --&gt; 00:03:26,320</code>
+There is a hole in the boat.</p>
+<p><code>95 00:03:26,420 --&gt; 00:03:27,980</code>
+The front isn&rsquo;t supposed to come off.</p>
+<p><code>96 00:03:28,900 --&gt; 00:03:30,500</code>
+Well, on the sea.</p>
+<p><code>97 00:03:32,680 --&gt; 00:03:34,540</code>
+Well, the front come off in this case, obviously.</p>
+<p><code>98 00:03:35,520 --&gt; 00:03:35,900</code>
+Ja, det är ju&hellip;</p>
+<p><code>99 00:03:35,900 --&gt; 00:03:37,460</code>
+Det är ju ostrukturerat.</p>
+<p><code>100 00:03:37,520 --&gt; 00:03:38,660</code>
+Vi har haft att göra skit idag.</p>
+<p><code>101 00:03:39,800 --&gt; 00:03:40,700</code>
+Det är inte ostrukturerat.</p>
+<p><code>102 00:03:40,720 --&gt; 00:03:41,440</code>
+Jag har adh&hellip;</p>
+<p><code>103 00:03:41,440 --&gt; 00:03:42,120</code>
+Nej, det är tema.</p>
+<p><code>104 00:03:42,260 --&gt; 00:03:42,500</code>
+Det är tema.</p>
+<p><code>105 00:03:42,600 --&gt; 00:03:43,140</code>
+Nu får vi börja på det.</p>
+<p><code>106 00:03:43,240 --&gt; 00:03:43,940</code>
+Ja, exakt.</p>
+<p><code>107 00:03:44,220 --&gt; 00:03:45,440</code>
+Det är min bokstavskomplikation.</p>
+<p><code>108 00:03:45,460 --&gt; 00:03:46,500</code>
+Jesper har ADSL och&hellip;</p>
+<p><code>109 00:03:46,500 --&gt; 00:03:47,540</code>
+ADSL, ja, exakt.</p>
+<p><code>110 00:03:48,320 --&gt; 00:03:49,360</code>
+Så det här kommer spåra.</p>
+<p><code>111 00:03:49,680 --&gt; 00:03:50,200</code>
+Håll i er.</p>
+<p><code>112 00:03:50,500 --&gt; 00:03:51,240</code>
+Nu kör vi.</p>
+<p><code>113 00:03:51,360 --&gt; 00:03:52,000</code>
+Okej, AVS.</p>
+<p><code>114 00:03:52,060 --&gt; 00:03:52,820</code>
+Vi börjar med AVS.</p>
+<p><code>115 00:03:53,320 --&gt; 00:03:54,320</code>
+AVS hade problem.</p>
+<p><code>116 00:03:54,420 --&gt; 00:04:05,940</code>
+Det ledde till åtta miljoner complaints och två tusen kunder eller något sånt där av den större skalan som blev drabbade.</p>
+<p><code>117 00:04:06,240 --&gt; 00:04:09,240</code>
+Det hela varade under typ två timmar.</p>
+<p><code>118 00:04:09,620 --&gt; 00:04:10,200</code>
+Nej, nej, nej.</p>
+<p><code>119 00:04:10,280 --&gt; 00:04:10,940</code>
+16 timmar.</p>
+<p><code>120 00:04:10,980 --&gt; 00:04:11,560</code>
+Ja, exakt.</p>
+<p><code>121 00:04:11,720 --&gt; 00:04:15,200</code>
+Det tog två timmar att hitta det första felet.</p>
+<p><code>122 00:04:15,220 --&gt; 00:04:16,060</code>
+Så var det, så var det.</p>
+<p><code>123 00:04:16,260 --&gt; 00:04:17,540</code>
+Ni ser hur bra koll vi har.</p>
+<p><code>124 00:04:18,720 --&gt; 00:04:22,740</code>
+Och vi har försökt kolla lite på vad root cause i det här fallet var.</p>
+<p><code>125 00:04:22,740 --&gt; 00:04:23,740</code>
+Det visade sig vara rätt&hellip;</p>
+<p><code>126 00:04:24,420 --&gt; 00:04:24,860</code>
+Reflext.</p>
+<p><code>127 00:04:25,320 --&gt; 00:04:28,420</code>
+Jag kan rekommendera en rejäl&hellip;</p>
+<p><code>128 00:04:29,820 --&gt; 00:04:30,520</code>
+Vad ska man säga?</p>
+<p><code>129 00:04:30,620 --&gt; 00:04:31,020</code>
+Vad heter det?</p>
+<p><code>130 00:04:31,120 --&gt; 00:04:31,920</code>
+Root cause analysis.</p>
+<p><code>131 00:04:32,640 --&gt; 00:04:33,340</code>
+Djupdykning i.</p>
+<p><code>132 00:04:33,600 --&gt; 00:04:34,000</code>
+Precis.</p>
+<p><code>133 00:04:34,160 --&gt; 00:04:35,860</code>
+Den finns på Amazon.com.</p>
+<p><code>134 00:04:36,360 --&gt; 00:04:37,520</code>
+Vi kommer länka till den.</p>
+<p><code>135 00:04:37,700 --&gt; 00:04:45,280</code>
+Men i korta drag, så som jag förstår det, så handlar det här alltså om ett race condition problematik</p>
+<p><code>136 00:04:45,280 --&gt; 00:04:49,520</code>
+relaterat till dynamodb, heter det då?</p>
+<p><code>137 00:04:49,520 --&gt; 00:04:53,560</code>
+Som de använder för att distribuera DNS.</p>
+<p><code>138 00:04:54,420 --&gt; 00:04:55,280</code>
+So is DNS.</p>
+<p><code>139 00:04:55,280 --&gt; 00:04:56,280</code>
+Det är alltid så.</p>
+<p><code>140 00:04:56,280 --&gt; 00:05:03,140</code>
+Där har de ett gäng olika pryttlar inom den här tjänsten som jobbar med varandra.</p>
+<p><code>141 00:05:03,140 --&gt; 00:05:15,980</code>
+Ett typ planeringsverktyg, ett typ exekveringsverktyg och vid något läge så var det mycket latency, vilket räddade till att det ena började spinna iväg och jobba med osanningar som sedan blev sanningar.</p>
+<p><code>142 00:05:16,380 --&gt; 00:05:24,380</code>
+I slutändan resulterade detta i att det blev tomma DNS-uppslag för US East One zonen inom AVS.</p>
+<p><code>143 00:05:24,420 --&gt; 00:05:25,760</code>
+Och den är väl så här central, va?</p>
+<p><code>144 00:05:25,840 --&gt; 00:05:31,960</code>
+Det är väl, alltså de flesta andra zoner kan de överleva om de går ner en liten stund, men den är central för många tjänster.</p>
+<p><code>145 00:05:32,120 --&gt; 00:05:36,780</code>
+Så att även om du har skit i andra zoner, så är US East ett nere, då är du kokt anyway.</p>
+<p><code>146 00:05:37,000 --&gt; 00:05:37,200</code>
+Precis.</p>
+<p><code>147 00:05:37,480 --&gt; 00:05:42,400</code>
+Det är ju en, det är en av de primära databasnoderna i molnet, i AVS-molnet.</p>
+<p><code>148 00:05:42,520 --&gt; 00:05:45,200</code>
+Det är det som är den tekniska termen, primär databasnod.</p>
+<p><code>149 00:05:45,460 --&gt; 00:05:46,940</code>
+Ja, men alltså för deras interna tjänster.</p>
+<p><code>150 00:05:46,940 --&gt; 00:05:47,180</code>
+Ja.</p>
+<p><code>151 00:05:47,560 --&gt; 00:05:52,720</code>
+Och det här ledde ju då till problem som man kan förstå med deras interna DNS-uppslag och sådana saker.</p>
+<p><code>152 00:05:53,340 --&gt; 00:05:54,400</code>
+Det propagerade sen.</p>
+<p><code>153 00:05:54,420 --&gt; 00:06:09,300</code>
+Men då även till deras andra tjänster, typ EC2, på grund av att för att bygga nya EC2-instanser, eller droplets som de heter då, så använder de sig av DNS-tjänsterna som ligger under.</p>
+<p><code>154 00:06:10,160 --&gt; 00:06:15,100</code>
+Om de inte funkar, då får du typ, you&rsquo;re at capacity rate limiting issue.</p>
+<p><code>155 00:06:16,060 --&gt; 00:06:20,620</code>
+Och detta leder då typ i sin tur till att hela skiten brakar söndagen.</p>
+<p><code>156 00:06:20,840 --&gt; 00:06:22,680</code>
+För att då får deras load balancers problem.</p>
+<p><code>157 00:06:23,000 --&gt; 00:06:23,900</code>
+Det här är så roligt.</p>
+<p><code>158 00:06:23,900 --&gt; 00:06:24,400</code>
+Och sen så faller allt.</p>
+<p><code>159 00:06:24,420 --&gt; 00:06:33,660</code>
+Det här är en, det här är också en, det här, om man har varit med ett tag i AVS-hierarkin, som jag ändå får säga att jag har varit, så är det här en jävla rolig tillbakakaka.</p>
+<p><code>160 00:06:34,100 --&gt; 00:06:40,380</code>
+För att någon gång så satt någon som satt på kulpåsarna i AVS och kom fram till att våra IPv4-adresser tar slut.</p>
+<p><code>161 00:06:40,940 --&gt; 00:06:44,500</code>
+Så vi kan inte tillhandahålla dem hur som helst, även för interna namn.</p>
+<p><code>162 00:06:44,860 --&gt; 00:06:47,000</code>
+Så vi måste DNS alla interna namn istället.</p>
+<p><code>163 00:06:47,480 --&gt; 00:06:49,020</code>
+Så att vi kan ha flytande IPn.</p>
+<p><code>164 00:06:49,020 --&gt; 00:06:53,420</code>
+Och då bytte man till att alla EC2 och sånt inte fick en publikadress direkt.</p>
+<p><code>165 00:06:53,420 --&gt; 00:06:54,580</code>
+Utan de fick ett internt namn.</p>
+<p><code>166 00:06:54,660 --&gt; 00:06:56,180</code>
+Och det fick alla lastbalanserare och allting.</p>
+<p><code>167 00:06:56,780 --&gt; 00:06:56,980</code>
+Precis.</p>
+<p><code>168 00:06:57,140 --&gt; 00:07:02,140</code>
+Och allt det här ligger då nere i de här systemen som vi har beskrivit.</p>
+<p><code>169 00:07:03,540 --&gt; 00:07:11,420</code>
+Sedan när EC2-grejerna började få kall, då slutade ju även såklart deras interna health-check-system fungera.</p>
+<p><code>170 00:07:12,240 --&gt; 00:07:15,560</code>
+Och sen har du vet konstaterat totalt jävla clusterfuck.</p>
+<p><code>171 00:07:16,260 --&gt; 00:07:16,740</code>
+Jajamän.</p>
+<p><code>172 00:07:16,820 --&gt; 00:07:17,340</code>
+Kan man då säga.</p>
+<p><code>173 00:07:17,620 --&gt; 00:07:19,680</code>
+Och typ halva internet var nere i 16 timmar.</p>
+<p><code>174 00:07:19,880 --&gt; 00:07:20,060</code>
+Ja.</p>
+<p><code>175 00:07:20,800 --&gt; 00:07:21,660</code>
+Shit burned.</p>
+<p><code>176 00:07:21,660 --&gt; 00:07:22,100</code>
+Precis.</p>
+<p><code>177 00:07:23,420 --&gt; 00:07:24,620</code>
+I fallet AVS.</p>
+<p><code>178 00:07:24,720 --&gt; 00:07:29,380</code>
+Har vi koll på hur det var i fallet Azure som hände inte så långt dessför innan var det?</p>
+<p><code>179 00:07:29,440 --&gt; 00:07:30,560</code>
+Varför det var precis innan? Var det inte så?</p>
+<p><code>180 00:07:31,440 --&gt; 00:07:31,960</code>
+Ingen aning.</p>
+<p><code>181 00:07:32,360 --&gt; 00:07:33,200</code>
+Strax efter.</p>
+<p><code>182 00:07:33,280 --&gt; 00:07:33,820</code>
+Var det strax efter?</p>
+<p><code>183 00:07:34,040 --&gt; 00:07:36,100</code>
+Ja, ett par dagar eller en vecka senare tror jag.</p>
+<p><code>184 00:07:36,920 --&gt; 00:07:38,120</code>
+Azure tror jag var den 29.</p>
+<p><code>185 00:07:38,300 --&gt; 00:07:42,800</code>
+Jag kommer inte ihåg vilket datum som AVS var.</p>
+<p><code>186 00:07:42,880 --&gt; 00:07:46,180</code>
+Men det var väl två veckor sedan eller någonting med dagens pengar.</p>
+<p><code>187 00:07:46,800 --&gt; 00:07:47,640</code>
+Ja, något sånt där.</p>
+<p><code>188 00:07:48,540 --&gt; 00:07:50,540</code>
+Precis 19 oktober tror jag detta var.</p>
+<p><code>189 00:07:50,540 --&gt; 00:07:52,280</code>
+Azure var väl kort därefter.</p>
+<p><code>190 00:07:52,480 --&gt; 00:07:53,380</code>
+Och det var en front.</p>
+<p><code>191 00:07:53,420 --&gt; 00:07:56,200</code>
+En backdoor som vi alla vet vad det är för något och jag är.</p>
+<p><code>192 00:07:56,200 --&gt; 00:07:57,320</code>
+Jag har en på min lägenhet.</p>
+<p><code>193 00:07:57,320 --&gt; 00:07:57,820</code>
+Jag med.</p>
+<p><code>194 00:07:58,600 --&gt; 00:07:59,100</code>
+På mitt hus.</p>
+<p><code>195 00:07:59,280 --&gt; 00:08:03,000</code>
+Någon jag känner sa att det är deras typ motsvarande firewall manager.</p>
+<p><code>196 00:08:03,240 --&gt; 00:08:05,120</code>
+Jag spelar även en backdoor på sitt hus.</p>
+<p><code>197 00:08:05,280 --&gt; 00:08:06,120</code>
+Det har inte jag i min lägenhet.</p>
+<p><code>198 00:08:06,460 --&gt; 00:08:08,080</code>
+Nej, jag har faktiskt blivit mer än en backdoor.</p>
+<p><code>199 00:08:08,280 --&gt; 00:08:08,780</code>
+Det är hemskt ändå.</p>
+<p><code>200 00:08:10,140 --&gt; 00:08:12,420</code>
+Ja, men det var alltså inte ett bakdörrsproblem den här gången.</p>
+<p><code>201 00:08:13,100 --&gt; 00:08:14,460</code>
+Nej, som det skulle kunna ha varit.</p>
+<p><code>202 00:08:14,660 --&gt; 00:08:15,060</code>
+Det var det inte.</p>
+<p><code>203 00:08:15,960 --&gt; 00:08:21,420</code>
+Och jag vet inte super mycket om vad det var som drabbades när Azure var nere.</p>
+<p><code>204 00:08:21,600 --&gt; 00:08:22,640</code>
+Nej, jag har inte heller så bra koll på just det.</p>
+<p><code>205 00:08:22,640 --&gt; 00:08:23,400</code>
+Det var inte halva internet.</p>
+<p><code>206 00:08:23,420 --&gt; 00:08:24,860</code>
+Det vet jag inte.</p>
+<p><code>207 00:08:24,860 --&gt; 00:08:32,800</code>
+Rykten gällande att en kollega till mig inte kunde typ checka in och checka ut barnen från förskolan och sånt.</p>
+<p><code>208 00:08:32,880 --&gt; 00:08:34,420</code>
+För det var givetvis automatiserat.</p>
+<p><code>209 00:08:35,360 --&gt; 00:08:38,240</code>
+Vilket gjorde att hämtning och lämning blev lite stökig.</p>
+<p><code>210 00:08:39,000 --&gt; 00:08:41,380</code>
+Men jag kan inte verifiera det faktiskt.</p>
+<p><code>211 00:08:42,380 --&gt; 00:08:47,600</code>
+Jag vet inte hur den relativa market sharen är mellan AWS och Azure.</p>
+<p><code>212 00:08:48,900 --&gt; 00:08:50,680</code>
+Azure är väl hyfsat mindre.</p>
+<p><code>213 00:08:50,680 --&gt; 00:08:51,820</code>
+Det är min känsla.</p>
+<p><code>214 00:08:52,220 --&gt; 00:08:52,640</code>
+Jag har inte.</p>
+<p><code>215 00:08:53,420 --&gt; 00:08:55,920</code>
+Det var helt olika målgrupper också, tänker jag.</p>
+<p><code>216 00:08:56,940 --&gt; 00:08:57,980</code>
+Olika typer av kunder.</p>
+<p><code>217 00:08:58,540 --&gt; 00:09:00,200</code>
+Jag håller på att panikgoogla fram.</p>
+<p><code>218 00:09:00,240 --&gt; 00:09:02,780</code>
+Jag fick ett mejl med metrics på hur mycket som gick ner.</p>
+<p><code>219 00:09:04,180 --&gt; 00:09:05,080</code>
+Hur jag nu fick det.</p>
+<p><code>220 00:09:05,220 --&gt; 00:09:06,380</code>
+Men det har jag fått i alla fall någonstans.</p>
+<p><code>221 00:09:06,500 --&gt; 00:09:07,520</code>
+Jag sitter bara och panikar.</p>
+<p><code>222 00:09:07,700 --&gt; 00:09:11,060</code>
+För det var rätt mycket tjänster i AWS som bara tog&hellip;</p>
+<p><code>223 00:09:11,060 --&gt; 00:09:12,100</code>
+Alltså så här&hellip;</p>
+<p><code>224 00:09:12,100 --&gt; 00:09:12,620</code>
+Oj, oj, oj.</p>
+<p><code>225 00:09:12,820 --&gt; 00:09:16,000</code>
+Alltså även interna mängder, interna grejer var ju extremt&hellip;</p>
+<p><code>226 00:09:16,000 --&gt; 00:09:16,980</code>
+Snap var ju nere.</p>
+<p><code>227 00:09:17,120 --&gt; 00:09:18,180</code>
+Det måste ju vara det mest&hellip;</p>
+<p><code>228 00:09:18,180 --&gt; 00:09:19,280</code>
+Roblox.</p>
+<p><code>229 00:09:20,080 --&gt; 00:09:21,120</code>
+Roblox var nere också, ja precis.</p>
+<p><code>230 00:09:21,120 --&gt; 00:09:23,360</code>
+Men Snap tänker jag för att man har ju sina snaps.</p>
+<p><code>231 00:09:23,480 --&gt; 00:09:25,560</code>
+Alltså hur många dagar i rad man har snappat på varandra.</p>
+<p><code>232 00:09:26,120 --&gt; 00:09:28,360</code>
+Och om det ändå är nere så kanske man missar sina snaps.</p>
+<p><code>233 00:09:28,540 --&gt; 00:09:32,800</code>
+Jag trodde du tänkte på de här foodstamp-benefit-grejerna som också heter Snap.</p>
+<p><code>234 00:09:32,940 --&gt; 00:09:34,380</code>
+För den kan jag berätta är fortfarande nere.</p>
+<p><code>235 00:09:34,460 --&gt; 00:09:35,940</code>
+Det korrekta ordet är väl Snapchat.</p>
+<p><code>236 00:09:36,540 --&gt; 00:09:39,840</code>
+Men Snap är ju det det heter i gemene mans mun.</p>
+<p><code>237 00:09:40,180 --&gt; 00:09:41,340</code>
+Ja, det är ju nere i&hellip;</p>
+<p><code>238 00:09:41,340 --&gt; 00:09:42,060</code>
+Down with the kids.</p>
+<p><code>239 00:09:42,320 --&gt; 00:09:42,840</code>
+Herregud, ja.</p>
+<p><code>240 00:09:43,200 --&gt; 00:09:44,160</code>
+Home with the downies.</p>
+<p><code>241 00:09:45,400 --&gt; 00:09:51,200</code>
+Jag har ju noterat massa strul som inte tidsmässigt korrelerar med de här incidenterna.</p>
+<p><code>242 00:09:51,540 --&gt; 00:09:53,200</code>
+Det var ett antal sajter som&hellip;</p>
+<p><code>243 00:09:53,420 --&gt; 00:09:54,160</code>
+Rapporterande.</p>
+<p><code>244 00:09:55,140 --&gt; 00:09:58,340</code>
+Vi heter Cloudflare och vi kan inte nå ensystemet.</p>
+<p><code>245 00:10:00,660 --&gt; 00:10:01,980</code>
+Jag tänkte bara&hellip;</p>
+<p><code>246 00:10:01,980 --&gt; 00:10:04,760</code>
+Nu är det en till sån här stor krasch.</p>
+<p><code>247 00:10:04,760 --&gt; 00:10:08,200</code>
+Men nej, det verkar bara vara jättemycket fel det senaste.</p>
+<p><code>248 00:10:08,400 --&gt; 00:10:09,180</code>
+Du har bara haft otur.</p>
+<p><code>249 00:10:09,280 --&gt; 00:10:11,640</code>
+Det var inte så att du skulle ta spårvagnen eller något sånt.</p>
+<p><code>250 00:10:11,700 --&gt; 00:10:13,080</code>
+För det har vi ju korrelerat tidigare.</p>
+<p><code>251 00:10:13,200 --&gt; 00:10:14,360</code>
+Att det är då det brukar bli problem.</p>
+<p><code>252 00:10:14,540 --&gt; 00:10:15,220</code>
+Ja, just det.</p>
+<p><code>253 00:10:15,240 --&gt; 00:10:15,740</code>
+De ryska&hellip;</p>
+<p><code>254 00:10:15,740 --&gt; 00:10:16,960</code>
+Nej, Peter ska ta spårvagnen.</p>
+<p><code>255 00:10:17,080 --&gt; 00:10:17,880</code>
+Ja, eller&hellip;</p>
+<p><code>256 00:10:17,880 --&gt; 00:10:20,760</code>
+Men det var attacken mot Mattias&hellip;</p>
+<p><code>257 00:10:21,440 --&gt; 00:10:22,920</code>
+Det dos av BankID.</p>
+<p><code>258 00:10:23,420 --&gt; 00:10:23,880</code>
+Ja, exakt.</p>
+<p><code>259 00:10:25,140 --&gt; 00:10:26,240</code>
+Callback till gammalt avsnitt.</p>
+<p><code>260 00:10:26,400 --&gt; 00:10:26,460</code>
+Ja.</p>
+<p><code>261 00:10:28,360 --&gt; 00:10:32,480</code>
+Okej, så vi har inte riktigt full koll på vad det var som hände i fallet Azure, men&hellip;</p>
+<p><code>262 00:10:32,480 --&gt; 00:10:33,680</code>
+Nej, Frontdoor är den där jag har hört.</p>
+<p><code>263 00:10:34,900 --&gt; 00:10:36,440</code>
+Det var något kall, i alla fall.</p>
+<p><code>264 00:10:37,820 --&gt; 00:10:38,500</code>
+Shit went bad.</p>
+<p><code>265 00:10:39,040 --&gt; 00:10:39,280</code>
+Precis.</p>
+<p><code>266 00:10:39,840 --&gt; 00:10:43,360</code>
+Men jag tänkte att vi skulle prata lite om varför sånt här kan hända.</p>
+<p><code>267 00:10:43,460 --&gt; 00:10:46,240</code>
+Man är ju lätt att säga, ja, men det är ju alltid DNS.</p>
+<p><code>268 00:10:46,360 --&gt; 00:10:47,880</code>
+Nu var det ju DNS i det här fallet.</p>
+<p><code>269 00:10:47,880 --&gt; 00:10:51,180</code>
+Men egentligen var det ju inte DNS, DNS.</p>
+<p><code>270 00:10:51,860 --&gt; 00:10:52,900</code>
+Eller så, okej, jo.</p>
+<p><code>271 00:10:52,900 --&gt; 00:10:54,200</code>
+Det var bara det det var.</p>
+<p><code>272 00:10:54,320 --&gt; 00:10:56,120</code>
+Det var DNS som drabbades, absolut.</p>
+<p><code>273 00:10:56,480 --&gt; 00:10:58,020</code>
+Men grundproblemet är ju&hellip;</p>
+<p><code>274 00:10:58,020 --&gt; 00:11:04,560</code>
+Det här var ju egentligen en märklig race condition mellan två olika system som drabbade DNS.</p>
+<p><code>275 00:11:04,720 --&gt; 00:11:08,620</code>
+Ja, men det påtalar väl egentligen precis det problemet som man ville undvika</p>
+<p><code>276 00:11:08,620 --&gt; 00:11:14,400</code>
+när man gick från hårda IP-associerade instanser till DNS-instanser</p>
+<p><code>277 00:11:14,400 --&gt; 00:11:18,240</code>
+och vad som händer när man litar på namnuppslagningen.</p>
+<p><code>278 00:11:18,240 --&gt; 00:11:19,140</code>
+För det blir det.</p>
+<p><code>279 00:11:19,500 --&gt; 00:11:22,240</code>
+I och med att du inte har zonfiler som är&hellip;</p>
+<p><code>280 00:11:22,900 --&gt; 00:11:25,580</code>
+Har samma tidsstämplar, inte innehåller samma sak.</p>
+<p><code>281 00:11:26,560 --&gt; 00:11:28,500</code>
+Då är det kört.</p>
+<p><code>282 00:11:28,940 --&gt; 00:11:31,000</code>
+Alltså, det funkar ju inte i namnuppslagningen.</p>
+<p><code>283 00:11:31,080 --&gt; 00:11:34,340</code>
+Och det är precis det som måste finnas för att all den här automationen ska fungera.</p>
+<p><code>284 00:11:34,680 --&gt; 00:11:37,000</code>
+Vilket den gör i mångt och mycket jättebra.</p>
+<p><code>285 00:11:37,660 --&gt; 00:11:38,820</code>
+Tills någonting sånt här händer.</p>
+<p><code>286 00:11:39,080 --&gt; 00:11:40,620</code>
+Och det är precis som du sa, jättebra.</p>
+<p><code>287 00:11:42,000 --&gt; 00:11:43,280</code>
+Kaskadeffekten på det här är ju kanon.</p>
+<p><code>288 00:11:43,420 --&gt; 00:11:45,400</code>
+För att det går tills det inte går längre.</p>
+<p><code>289 00:11:45,820 --&gt; 00:11:48,860</code>
+Och sen går allt jättefort sönder.</p>
+<p><code>290 00:11:48,860 --&gt; 00:11:49,120</code>
+Ja.</p>
+<p><code>291 00:11:49,640 --&gt; 00:11:52,860</code>
+Så det hade varit kul att få vara den som gör incident-responser.</p>
+<p><code>292 00:11:52,900 --&gt; 00:11:55,880</code>
+Men okej, det är någonting med namnöversättningen.</p>
+<p><code>293 00:11:56,440 --&gt; 00:12:00,320</code>
+Och sen, tänk då trycket när AVS själva upptäcker att vi har ett problem.</p>
+<p><code>294 00:12:00,960 --&gt; 00:12:04,440</code>
+Och så är det sådana här småbolag som Slack och Roblox och Venmo</p>
+<p><code>295 00:12:04,440 --&gt; 00:12:11,760</code>
+och andra jättestora instanser vars operationella teams förmodligen är jättestora.</p>
+<p><code>296 00:12:12,260 --&gt; 00:12:14,020</code>
+Tänk hur mycket det hamrade på Slack.</p>
+<p><code>297 00:12:14,540 --&gt; 00:12:16,140</code>
+Kan ni tänka er hur jag så&hellip;</p>
+<p><code>298 00:12:16,140 --&gt; 00:12:16,840</code>
+Det låg där nere.</p>
+<p><code>299 00:12:16,900 --&gt; 00:12:18,840</code>
+Ja, det var helt tvärt, det gick inte att logga in.</p>
+<p><code>300 00:12:19,120 --&gt; 00:12:22,200</code>
+Tänk så många request i sekunden bara Slack genererar.</p>
+<p><code>301 00:12:22,200 --&gt; 00:12:22,340</code>
+Ja.</p>
+<p><code>302 00:12:22,900 --&gt; 00:12:24,140</code>
+Och bara börja här, vad är detta?</p>
+<p><code>303 00:12:24,240 --&gt; 00:12:26,200</code>
+Nu kan de säkert rata det till något hål någonstans.</p>
+<p><code>304 00:12:26,300 --&gt; 00:12:28,400</code>
+Men det är ju&hellip;</p>
+<p><code>305 00:12:28,400 --&gt; 00:12:29,200</code>
+Nu snackar vi ball.</p>
+<p><code>306 00:12:29,280 --&gt; 00:12:33,580</code>
+Vi snackade att Netflix hade många gigabit internet per sekund</p>
+<p><code>307 00:12:33,580 --&gt; 00:12:36,500</code>
+när de här Tyson-matcher med den här inflödet.</p>
+<p><code>308 00:12:36,500 --&gt; 00:12:37,660</code>
+Ja, det är ju PCA-et.</p>
+<p><code>309 00:12:37,820 --&gt; 00:12:38,180</code>
+Exakt.</p>
+<p><code>310 00:12:38,520 --&gt; 00:12:39,280</code>
+Det här är liksom&hellip;</p>
+<p><code>311 00:12:39,280 --&gt; 00:12:40,220</code>
+Ja, men det stod ju i den här&hellip;</p>
+<p><code>312 00:12:40,220 --&gt; 00:12:41,220</code>
+Global Outage, liksom.</p>
+<p><code>313 00:12:41,220 --&gt; 00:12:42,320</code>
+...Global Outage-analysen här.</p>
+<p><code>314 00:12:42,400 --&gt; 00:12:44,520</code>
+Att en av de stora grejerna som de var tvungna att göra</p>
+<p><code>315 00:12:44,520 --&gt; 00:12:45,820</code>
+när de höll på att fixa det här</p>
+<p><code>316 00:12:45,820 --&gt; 00:12:47,860</code>
+var ju att dra på massiv rate-limiting.</p>
+<p><code>317 00:12:47,960 --&gt; 00:12:48,220</code>
+Ja, exakt.</p>
+<p><code>318 00:12:48,220 --&gt; 00:12:49,060</code>
+På allting kommande.</p>
+<p><code>319 00:12:49,140 --&gt; 00:12:50,700</code>
+Annars hade det ju bara kollapsat igen.</p>
+<p><code>320 00:12:50,840 --&gt; 00:12:51,540</code>
+Det hade börjat brinna.</p>
+<p><code>321 00:12:51,540 --&gt; 00:12:54,720</code>
+För en sak som jag läste som var&hellip;</p>
+<p><code>322 00:12:54,720 --&gt; 00:12:56,620</code>
+Apropå incident-respons då.</p>
+<p><code>323 00:12:56,820 --&gt; 00:12:58,680</code>
+Det var någonting jag tyckte var anmärkningsvärt.</p>
+<p><code>324 00:12:58,840 --&gt; 00:13:01,440</code>
+För de är ju väldigt transparenta när de felsöker det här.</p>
+<p><code>325 00:13:01,820 --&gt; 00:13:04,600</code>
+Det var att de hade ingen aning om vad det var</p>
+<p><code>326 00:13:04,600 --&gt; 00:13:06,340</code>
+förrän efter två timmar.</p>
+<p><code>327 00:13:06,680 --&gt; 00:13:09,220</code>
+Och de sa att historiskt så är det liksom&hellip;</p>
+<p><code>328 00:13:09,220 --&gt; 00:13:11,440</code>
+Det är ju oceaner av tid, två timmar.</p>
+<p><code>329 00:13:11,520 --&gt; 00:13:13,660</code>
+Oftast är det ett par minuter som vet ungefär vad det är.</p>
+<p><code>330 00:13:14,160 --&gt; 00:13:16,140</code>
+Så de tyckte att det var anmärkningsvärt verkligen.</p>
+<p><code>331 00:13:16,700 --&gt; 00:13:19,340</code>
+Att det tog så lång tid innan de visste vad det handlade om.</p>
+<p><code>332 00:13:19,340 --&gt; 00:13:21,200</code>
+Men tänk dig då från det&hellip;</p>
+<p><code>333 00:13:21,200 --&gt; 00:13:26,340</code>
+Där du får första kollisionen i populeringen av namn.</p>
+<p><code>334 00:13:27,960 --&gt; 00:13:31,900</code>
+När du får det, då är det redan kört.</p>
+<p><code>335 00:13:32,660 --&gt; 00:13:34,480</code>
+Det går inte att&hellip;</p>
+<p><code>336 00:13:34,480 --&gt; 00:13:37,000</code>
+Man måste förstå hur stort det här är.</p>
+<p><code>337 00:13:37,520 --&gt; 00:13:39,120</code>
+Tänk hur många som går in och trycker på knappen</p>
+<p><code>338 00:13:39,120 --&gt; 00:13:40,560</code>
+skapa en ny grej.</p>
+<p><code>339 00:13:40,780 --&gt; 00:13:43,420</code>
+Det kanske är några tusen som gör det på en gång.</p>
+<p><code>340 00:13:43,540 --&gt; 00:13:45,400</code>
+Under några timmar eller några minuter.</p>
+<p><code>341 00:13:45,860 --&gt; 00:13:47,960</code>
+Men tänk då allting som synkar</p>
+<p><code>342 00:13:47,960 --&gt; 00:13:50,740</code>
+och hela tiden gör requests.</p>
+<p><code>343 00:13:51,200 --&gt; 00:13:53,480</code>
+Allting bygger på namnuppslagningen.</p>
+<p><code>344 00:13:54,040 --&gt; 00:13:55,420</code>
+Och det är ju deras&hellip;</p>
+<p><code>345 00:13:55,420 --&gt; 00:13:57,360</code>
+Har det börjat propagera fel från början?</p>
+<p><code>346 00:13:57,360 --&gt; 00:13:57,600</code>
+Exakt.</p>
+<p><code>347 00:13:57,940 --&gt; 00:14:01,040</code>
+Och när det slutar att funka, när du får mismatch</p>
+<p><code>348 00:14:01,040 --&gt; 00:14:04,420</code>
+och reglerna börjar agera så som de ska göra</p>
+<p><code>349 00:14:04,420 --&gt; 00:14:06,320</code>
+då är det redan kört.</p>
+<p><code>350 00:14:06,440 --&gt; 00:14:07,620</code>
+För den cashen kommer de aldrig&hellip;</p>
+<p><code>351 00:14:07,620 --&gt; 00:14:08,200</code>
+Det går inte.</p>
+<p><code>352 00:14:08,980 --&gt; 00:14:11,840</code>
+Och det tycker jag är ball egentligen.</p>
+<p><code>353 00:14:12,020 --&gt; 00:14:13,360</code>
+Hur vi har nu&hellip;</p>
+<p><code>354 00:14:13,360 --&gt; 00:14:15,620</code>
+Hur någonting som är väldigt snyggt designat</p>
+<p><code>355 00:14:15,620 --&gt; 00:14:18,060</code>
+och det är ganska robust.</p>
+<p><code>356 00:14:18,060 --&gt; 00:14:20,840</code>
+För det är ganska sällan vi har sett den här typen av outage.</p>
+<p><code>357 00:14:21,200 --&gt; 00:14:22,040</code>
+Som har varit så här länge.</p>
+<p><code>358 00:14:22,680 --&gt; 00:14:24,520</code>
+Men det är också ett tecken på att när det väl sker</p>
+<p><code>359 00:14:24,520 --&gt; 00:14:26,480</code>
+då är det svårt.</p>
+<p><code>360 00:14:27,020 --&gt; 00:14:27,980</code>
+För att det är så stort.</p>
+<p><code>361 00:14:28,080 --&gt; 00:14:30,120</code>
+Men det jag tänker också&hellip;</p>
+<p><code>362 00:14:30,120 --&gt; 00:14:32,480</code>
+Kan inte en bidragande orsak ha varit att</p>
+<p><code>363 00:14:32,480 --&gt; 00:14:36,360</code>
+just Amazons egna interna tjänster</p>
+<p><code>364 00:14:36,360 --&gt; 00:14:38,320</code>
+inklusive säkerhetsfunktioner och sånt där</p>
+<p><code>365 00:14:38,320 --&gt; 00:14:41,180</code>
+också drabbades av den här outagen?</p>
+<p><code>366 00:14:41,720 --&gt; 00:14:42,160</code>
+Säkert.</p>
+<p><code>367 00:14:42,280 --&gt; 00:14:44,840</code>
+Jag tänker bara att the sheer amount of shit</p>
+<p><code>368 00:14:44,840 --&gt; 00:14:47,240</code>
+som regnade ner samtidigt.</p>
+<p><code>369 00:14:48,240 --&gt; 00:14:49,440</code>
+Amazon är ju stora de också.</p>
+<p><code>370 00:14:49,520 --&gt; 00:14:51,120</code>
+De har ju jättemånga team som sitter och tittar på</p>
+<p><code>371 00:14:51,120 --&gt; 00:14:53,720</code>
+jättemånga olika aspekter i stort sett.</p>
+<p><code>372 00:14:55,200 --&gt; 00:14:57,180</code>
+Alltifrån unika resursvärv och vidare.</p>
+<p><code>373 00:14:58,100 --&gt; 00:14:59,480</code>
+Och sen ska ju alla komma fram till att</p>
+<p><code>374 00:14:59,480 --&gt; 00:15:00,680</code>
+allt är Dynamo Davids fel.</p>
+<p><code>375 00:15:00,820 --&gt; 00:15:01,420</code>
+Det tar ju en stund.</p>
+<p><code>376 00:15:01,840 --&gt; 00:15:04,020</code>
+Jag läste två intressanta artiklar om det här.</p>
+<p><code>377 00:15:04,460 --&gt; 00:15:06,800</code>
+Vad de tyckte är&hellip;</p>
+<p><code>378 00:15:06,800 --&gt; 00:15:09,980</code>
+Vad är the root of the root cause lite grann?</p>
+<p><code>379 00:15:10,580 --&gt; 00:15:13,040</code>
+Och nu kommer det, eftersom ni är i säkerhetspodcasten</p>
+<p><code>380 00:15:13,040 --&gt; 00:15:15,920</code>
+så ska vi ge er den hemliga grejen varför.</p>
+<p><code>381 00:15:15,920 --&gt; 00:15:17,940</code>
+Det är nämligen så att Johan har börjat köra intern</p>
+<p><code>382 00:15:17,940 --&gt; 00:15:19,400</code>
+på Amazon.</p>
+<p><code>383 00:15:19,900 --&gt; 00:15:20,920</code>
+Och tänkte att han skulle göra&hellip;</p>
+<p><code>384 00:15:21,120 --&gt; 00:15:21,980</code>
+Det är en snabb liten grej.</p>
+<p><code>385 00:15:22,060 --&gt; 00:15:23,440</code>
+Jag hade plöjat lite till prod bara.</p>
+<p><code>386 00:15:23,580 --&gt; 00:15:26,380</code>
+Johan är numera tillbaka på sitt vanliga jobb.</p>
+<p><code>387 00:15:26,880 --&gt; 00:15:28,300</code>
+Precis, jag var borta förra gången.</p>
+<p><code>388 00:15:28,380 --&gt; 00:15:28,800</code>
+Nu vet ni varför.</p>
+<p><code>389 00:15:29,160 --&gt; 00:15:30,500</code>
+De tyckte på ett par saker.</p>
+<p><code>390 00:15:30,620 --&gt; 00:15:32,660</code>
+Det ena är ju då komplexiteten.</p>
+<p><code>391 00:15:33,880 --&gt; 00:15:35,720</code>
+AVS är ju bäst.</p>
+<p><code>392 00:15:35,800 --&gt; 00:15:38,880</code>
+Det består av tusentals interna system</p>
+<p><code>393 00:15:38,880 --&gt; 00:15:41,060</code>
+som supportar hela det här jättedjuret.</p>
+<p><code>394 00:15:41,380 --&gt; 00:15:43,840</code>
+Och det här är ju dessutom utvecklat över tid.</p>
+<p><code>395 00:15:45,000 --&gt; 00:15:49,180</code>
+Så mycket av funktionaliteten i de urgamla ställena</p>
+<p><code>396 00:15:49,180 --&gt; 00:15:50,680</code>
+de har ju liksom fallit i glömska.</p>
+<p><code>397 00:15:51,120 --&gt; 00:15:53,700</code>
+Folk vet knappt hur vissa delar av grejerna funkar.</p>
+<p><code>398 00:15:55,340 --&gt; 00:15:56,980</code>
+Och det är väl någonting som jag gissar att</p>
+<p><code>399 00:15:56,980 --&gt; 00:16:00,040</code>
+du och Jesper i ditt jobb emellanåt springer på.</p>
+<p><code>400 00:16:00,160 --&gt; 00:16:02,640</code>
+Det vill säga att de vet nog knappt själva hur skit funkar.</p>
+<p><code>401 00:16:03,200 --&gt; 00:16:04,520</code>
+För det är en best.</p>
+<p><code>402 00:16:04,800 --&gt; 00:16:05,760</code>
+Det är hur stort som helst.</p>
+<p><code>403 00:16:05,880 --&gt; 00:16:07,780</code>
+Och det är ju bara kod.</p>
+<p><code>404 00:16:08,220 --&gt; 00:16:10,140</code>
+De är ju inte supermänniskor.</p>
+<p><code>405 00:16:10,860 --&gt; 00:16:12,980</code>
+Det är ju precis som vilken utvecklare som helst.</p>
+<p><code>406 00:16:13,100 --&gt; 00:16:15,560</code>
+De gör misstag och de har inte öronkoll på hur grejerna funkar.</p>
+<p><code>407 00:16:16,300 --&gt; 00:16:18,880</code>
+Och det är då den här tokiga komplexiteten</p>
+<p><code>408 00:16:18,880 --&gt; 00:16:20,760</code>
+tillsammans med en ganska&hellip;</p>
+<p><code>409 00:16:21,120 --&gt; 00:16:24,660</code>
+Offensiva neddragningar på personal i AVS.</p>
+<p><code>410 00:16:24,900 --&gt; 00:16:28,040</code>
+Sen 2017 fram till 2022</p>
+<p><code>411 00:16:28,040 --&gt; 00:16:29,980</code>
+var det en jättestor neddragning.</p>
+<p><code>412 00:16:30,300 --&gt; 00:16:31,960</code>
+Och nu har det börjat igen ganska nyligen.</p>
+<p><code>413 00:16:33,060 --&gt; 00:16:37,340</code>
+2017-2022 så var det väl typ bara neddragningar generellt tror jag.</p>
+<p><code>414 00:16:37,420 --&gt; 00:16:39,640</code>
+Nu är det ju då AI-fokus.</p>
+<p><code>415 00:16:39,840 --&gt; 00:16:41,720</code>
+Det vill säga AI tar över mer och mer.</p>
+<p><code>416 00:16:42,180 --&gt; 00:16:44,440</code>
+Så det de säger nu, de som&hellip;</p>
+<p><code>417 00:16:44,440 --&gt; 00:16:47,420</code>
+Jag var till och med inne på Amazon Employee Reddit</p>
+<p><code>418 00:16:47,420 --&gt; 00:16:48,840</code>
+och läste.</p>
+<p><code>419 00:16:50,080 --&gt; 00:16:51,080</code>
+Och det de säger,</p>
+<p><code>420 00:16:51,120 --&gt; 00:16:53,360</code>
+det är att just de här gamla rävarna</p>
+<p><code>421 00:16:53,360 --&gt; 00:16:55,120</code>
+som kunde, som hade den här spinderkänslan.</p>
+<p><code>422 00:16:56,000 --&gt; 00:16:56,600</code>
+De visste liksom,</p>
+<p><code>423 00:16:56,700 --&gt; 00:16:58,000</code>
+om det är fel där,</p>
+<p><code>424 00:16:58,700 --&gt; 00:17:00,120</code>
+då är det nog inte där det är fel egentligen.</p>
+<p><code>425 00:17:00,220 --&gt; 00:17:01,740</code>
+Utan du kollar det systemet istället.</p>
+<p><code>426 00:17:01,960 --&gt; 00:17:04,880</code>
+De som har varit med så länge och sitter här.</p>
+<p><code>427 00:17:04,880 --&gt; 00:17:06,440</code>
+De har fått dyra. De är borta nu.</p>
+<p><code>428 00:17:06,640 --&gt; 00:17:08,400</code>
+De är då extremseniora.</p>
+<p><code>429 00:17:08,520 --&gt; 00:17:10,660</code>
+Har varit med och byggt upp skiten från noll.</p>
+<p><code>430 00:17:11,100 --&gt; 00:17:13,320</code>
+Och har extremt bra cred på marknaden.</p>
+<p><code>431 00:17:13,420 --&gt; 00:17:14,780</code>
+Så i samma ögonblick tycker de att</p>
+<p><code>432 00:17:14,780 --&gt; 00:17:16,140</code>
+nu är det inte rolig kultur längre.</p>
+<p><code>433 00:17:16,300 --&gt; 00:17:19,020</code>
+Vilket hände där 2021-2022 någon gång.</p>
+<p><code>434 00:17:19,020 --&gt; 00:17:21,100</code>
+Då drar de någon annanstans och får ett slut.</p>
+<p><code>435 00:17:21,120 --&gt; 00:17:22,620</code>
+Bra och välbetalt jobb.</p>
+<p><code>436 00:17:23,180 --&gt; 00:17:24,580</code>
+Och det är tillsammans med att det verkar vara</p>
+<p><code>437 00:17:24,580 --&gt; 00:17:27,460</code>
+ett tveksam karriärsteg inom Amazon.</p>
+<p><code>438 00:17:27,760 --&gt; 00:17:29,860</code>
+Alltså det är inte meritocracy direkt.</p>
+<p><code>439 00:17:30,020 --&gt; 00:17:30,620</code>
+Utan det är snarare</p>
+<p><code>440 00:17:30,620 --&gt; 00:17:33,820</code>
+den som typ sparkar mest</p>
+<p><code>441 00:17:33,820 --&gt; 00:17:35,400</code>
+på sina kollegor.</p>
+<p><code>442 00:17:35,460 --&gt; 00:17:37,040</code>
+Så de kommer upp mycket armbågar</p>
+<p><code>443 00:17:37,040 --&gt; 00:17:38,160</code>
+för att ta sig upp i den strukturen.</p>
+<p><code>444 00:17:38,680 --&gt; 00:17:40,260</code>
+Vilket då betyder att det finns</p>
+<p><code>445 00:17:40,260 --&gt; 00:17:42,460</code>
+ingen plats för kompetens längre.</p>
+<p><code>446 00:17:43,000 --&gt; 00:17:44,080</code>
+Utan det är oväsen.</p>
+<p><code>447 00:17:44,340 --&gt; 00:17:45,380</code>
+Mer turnerspel.</p>
+<p><code>448 00:17:45,840 --&gt; 00:17:47,580</code>
+Och speciellt då kanske i en situation</p>
+<p><code>449 00:17:47,580 --&gt; 00:17:50,540</code>
+jag vet inte om ni märkte det, men bara typ två-tre dagar</p>
+<p><code>450 00:17:50,540 --&gt; 00:17:51,100</code>
+efter den här incitationen.</p>
+<p><code>451 00:17:51,120 --&gt; 00:17:52,900</code>
+Så gick de ut med ett nytt varsel.</p>
+<p><code>452 00:17:53,000 --&gt; 00:17:54,220</code>
+30 000 perskar bort.</p>
+<p><code>453 00:17:56,000 --&gt; 00:17:57,100</code>
+Någonting som slog mig</p>
+<p><code>454 00:17:57,100 --&gt; 00:17:57,940</code>
+nu när vi pratar.</p>
+<p><code>455 00:17:58,260 --&gt; 00:17:59,920</code>
+Jag ska börja på din punkta.</p>
+<p><code>456 00:17:59,980 --&gt; 00:18:02,420</code>
+De 30 000, då snackar vi AVS.</p>
+<p><code>457 00:18:02,760 --&gt; 00:18:03,760</code>
+Nej, det är Amazon.</p>
+<p><code>458 00:18:04,160 --&gt; 00:18:06,480</code>
+De berättar inte var&hellip;</p>
+<p><code>459 00:18:06,480 --&gt; 00:18:08,300</code>
+Det kan vara 30 000 lagar.</p>
+<p><code>460 00:18:08,560 --&gt; 00:18:10,280</code>
+Det kan vara pakethanterare.</p>
+<p><code>461 00:18:10,880 --&gt; 00:18:12,400</code>
+I alla fall på den&hellip;</p>
+<p><code>462 00:18:12,400 --&gt; 00:18:14,640</code>
+De har en tråd för just detta på Redditen.</p>
+<p><code>463 00:18:15,160 --&gt; 00:18:17,060</code>
+Om du blev uppsagd nu.</p>
+<p><code>464 00:18:17,480 --&gt; 00:18:18,940</code>
+Berätta var du var någonstans.</p>
+<p><code>465 00:18:18,940 --&gt; 00:18:20,660</code>
+Du har något levelsystem.</p>
+<p><code>466 00:18:21,120 --&gt; 00:18:22,400</code>
+Berätta var du jobbade någonstans.</p>
+<p><code>467 00:18:22,480 --&gt; 00:18:24,360</code>
+Vilken level du hade och hur länge du har varit där.</p>
+<p><code>468 00:18:24,720 --&gt; 00:18:26,840</code>
+Det var ju folk som hade varit där i 14 år</p>
+<p><code>469 00:18:26,840 --&gt; 00:18:28,760</code>
+och var level jävelhögt.</p>
+<p><code>470 00:18:29,020 --&gt; 00:18:31,000</code>
+Och flera av dem satt just</p>
+<p><code>471 00:18:31,000 --&gt; 00:18:32,280</code>
+någonstans på AVS.</p>
+<p><code>472 00:18:32,900 --&gt; 00:18:35,140</code>
+Men det var inte långt ifrån alla.</p>
+<p><code>473 00:18:35,280 --&gt; 00:18:37,000</code>
+Det var vanliga lagararbetare också.</p>
+<p><code>474 00:18:37,180 --&gt; 00:18:38,620</code>
+Det var across the board, tror jag.</p>
+<p><code>475 00:18:39,460 --&gt; 00:18:40,700</code>
+Men i samband med</p>
+<p><code>476 00:18:40,700 --&gt; 00:18:42,920</code>
+den här uppsägningsrundan nu så gick de ut</p>
+<p><code>477 00:18:42,920 --&gt; 00:18:45,200</code>
+med varför de gör det och en tydlig strategi.</p>
+<p><code>478 00:18:45,300 --&gt; 00:18:46,820</code>
+Och det är i mångt och mycket att ersätta</p>
+<p><code>479 00:18:46,820 --&gt; 00:18:49,100</code>
+arbetare med AI istället.</p>
+<p><code>480 00:18:49,100 --&gt; 00:18:51,100</code>
+Så många tror ju att det som har hänt är att</p>
+<p><code>481 00:18:51,120 --&gt; 00:18:53,060</code>
+de har automatiserat mer och mer, förmodligen</p>
+<p><code>482 00:18:53,060 --&gt; 00:18:55,360</code>
+med hjälp av AI-botten. Och när det då skiter</p>
+<p><code>483 00:18:55,360 --&gt; 00:18:57,280</code>
+sig, och det</p>
+<p><code>484 00:18:57,280 --&gt; 00:18:58,420</code>
+inte är lätta fall.</p>
+<p><code>485 00:18:58,720 --&gt; 00:19:01,040</code>
+Så länge det är lätta fall</p>
+<p><code>486 00:19:01,040 --&gt; 00:19:03,120</code>
+så kan du fixa detta själv.</p>
+<p><code>487 00:19:03,760 --&gt; 00:19:04,780</code>
+För då är det liksom, det är det här.</p>
+<p><code>488 00:19:04,820 --&gt; 00:19:06,860</code>
+Det händer varje gång, de har playbooks för det och så vidare.</p>
+<p><code>489 00:19:06,940 --&gt; 00:19:08,820</code>
+Då kan du automatisera det och då kan AI fixa det.</p>
+<p><code>490 00:19:09,120 --&gt; 00:19:10,940</code>
+Men när det kommer ett komplext fall de inte har stött på</p>
+<p><code>491 00:19:10,940 --&gt; 00:19:12,960</code>
+tidigare, då blir det bara värre</p>
+<p><code>492 00:19:12,960 --&gt; 00:19:14,940</code>
+av automatiseringen. Då går det</p>
+<p><code>493 00:19:14,940 --&gt; 00:19:16,140</code>
+ännu fortare liksom.</p>
+<p><code>494 00:19:16,960 --&gt; 00:19:17,740</code>
+Såg ni förresten,</p>
+<p><code>495 00:19:17,940 --&gt; 00:19:20,560</code>
+jag läste en artikel idag,</p>
+<p><code>496 00:19:20,560 --&gt; 00:19:23,040</code>
+Michael Burry, han som shortade</p>
+<p><code>497 00:19:23,040 --&gt; 00:19:25,580</code>
+The Big Short,</p>
+<p><code>498 00:19:25,680 --&gt; 00:19:26,940</code>
+heter filmen som är byggd på</p>
+<p><code>499 00:19:26,940 --&gt; 00:19:27,460</code>
+hans liv.</p>
+<p><code>500 00:19:28,520 --&gt; 00:19:30,420</code>
+Han som föresåg bostadskrisen.</p>
+<p><code>501 00:19:30,480 --&gt; 00:19:31,340</code>
+Precis, 2008.</p>
+<p><code>502 00:19:31,340 --&gt; 00:19:32,680</code>
+Och alla bajslån.</p>
+<p><code>503 00:19:32,740 --&gt; 00:19:35,140</code>
+Han har nu gått in och köpt x antal</p>
+<p><code>504 00:19:35,140 --&gt; 00:19:37,540</code>
+miljarder i shorts mot Nvidia</p>
+<p><code>505 00:19:37,540 --&gt; 00:19:39,080</code>
+och Palantir för att</p>
+<p><code>506 00:19:39,080 --&gt; 00:19:41,060</code>
+annonsera att AI är en bubbla.</p>
+<p><code>507 00:19:41,180 --&gt; 00:19:41,480</code>
+Ja, exakt.</p>
+<p><code>508 00:19:41,740 --&gt; 00:19:45,380</code>
+Men jag måste bara flika in där, jag kom på det nu</p>
+<p><code>509 00:19:45,380 --&gt; 00:19:46,260</code>
+när vi pratade.</p>
+<p><code>510 00:19:47,100 --&gt; 00:19:49,400</code>
+Att det här är ju, det är rimligt att det är</p>
+<p><code>511 00:19:49,400 --&gt; 00:19:50,480</code>
+att, att det</p>
+<p><code>512 00:19:50,480 --&gt; 00:19:52,040</code>
+tog två timmar, det är väl helt okej</p>
+<p><code>513 00:19:52,040 --&gt; 00:19:54,240</code>
+att det kom upp så snabbt som det gjorde i Nubet, det är ju helt</p>
+<p><code>514 00:19:54,240 --&gt; 00:19:56,540</code>
+skillnadssjukt. Ni alla här har ju</p>
+<p><code>515 00:19:56,540 --&gt; 00:19:58,320</code>
+jobbat med Azure, eller i AWS</p>
+<p><code>516 00:19:58,320 --&gt; 00:20:00,560</code>
+någon gång, särskilt kanske när man</p>
+<p><code>517 00:20:00,560 --&gt; 00:20:02,500</code>
+serverar content. Och då har ni tittat</p>
+<p><code>518 00:20:02,500 --&gt; 00:20:03,620</code>
+på hedrar bland annat.</p>
+<p><code>519 00:20:04,440 --&gt; 00:20:06,560</code>
+Så om man tittar på en hemsida som hostas</p>
+<p><code>520 00:20:06,560 --&gt; 00:20:08,420</code>
+i, hos AWS</p>
+<p><code>521 00:20:08,420 --&gt; 00:20:10,500</code>
+så vet ni att ni har</p>
+<p><code>522 00:20:10,500 --&gt; 00:20:12,740</code>
+massa specifika AWS-hedrar,</p>
+<p><code>523 00:20:12,840 --&gt; 00:20:13,540</code>
+eller hur? Absolut.</p>
+<p><code>524 00:20:14,280 --&gt; 00:20:15,560</code>
+Vad tror ni de</p>
+<p><code>525 00:20:15,560 --&gt; 00:20:17,860</code>
+genereras ur bland annat?</p>
+<p><code>526 00:20:18,800 --&gt; 00:20:19,840</code>
+DNS. Exakt.</p>
+<p><code>527 00:20:20,480 --&gt; 00:20:21,860</code>
+Och då tänker man sig då om</p>
+<p><code>528 00:20:21,860 --&gt; 00:20:24,080</code>
+STS-tjänsten, som är det som ligger</p>
+<p><code>529 00:20:24,080 --&gt; 00:20:26,040</code>
+bakom detta, genererar massa</p>
+<p><code>530 00:20:26,040 --&gt; 00:20:28,560</code>
+tokens som ska stämma</p>
+<p><code>531 00:20:28,560 --&gt; 00:20:29,980</code>
+och, exakt.</p>
+<p><code>532 00:20:30,060 --&gt; 00:20:32,500</code>
+Och de slutar korrelera. Exakt, fullständigt.</p>
+<p><code>533 00:20:32,680 --&gt; 00:20:33,420</code>
+Det blir access denied.</p>
+<p><code>534 00:20:34,260 --&gt; 00:20:35,840</code>
+Och så genereras det nya.</p>
+<p><code>535 00:20:36,260 --&gt; 00:20:37,840</code>
+Och då får vi bara störa oss över problemet.</p>
+<p><code>536 00:20:37,840 --&gt; 00:20:38,660</code>
+Exakt, och det</p>
+<p><code>537 00:20:38,660 --&gt; 00:20:41,920</code>
+spelar ingen roll om du har den sjukaste datorn i världen.</p>
+<p><code>538 00:20:42,120 --&gt; 00:20:43,200</code>
+Det går inte.</p>
+<p><code>539 00:20:44,280 --&gt; 00:20:45,060</code>
+Det är rätt ballen då.</p>
+<p><code>540 00:20:45,760 --&gt; 00:20:47,340</code>
+Det var så jävla ball att bara få</p>
+<p><code>541 00:20:47,340 --&gt; 00:20:48,740</code>
+se vad som händer.</p>
+<p><code>542 00:20:49,320 --&gt; 00:20:50,440</code>
+Bara sitta med och skratta.</p>
+<p><code>543 00:20:50,480 --&gt; 00:20:51,600</code>
+Ja, men det är alltså</p>
+<p><code>544 00:20:51,600 --&gt; 00:20:54,140</code>
+inte ur ett såhär hånkör, bara såhär</p>
+<p><code>545 00:20:54,140 --&gt; 00:20:56,380</code>
+det är sånt jävla</p>
+<p><code>546 00:20:56,380 --&gt; 00:20:58,260</code>
+clusterfuck. Så det är såhär</p>
+<p><code>547 00:20:58,260 --&gt; 00:21:00,380</code>
+var börjar man ens? Allt</p>
+<p><code>548 00:21:00,380 --&gt; 00:21:02,360</code>
+fuckar. Det är jättekul.</p>
+<p><code>549 00:21:03,360 --&gt; 00:21:04,480</code>
+Men jag tänker på&hellip;</p>
+<p><code>550 00:21:05,200 --&gt; 00:21:05,540</code>
+Vad vet jag?</p>
+<p><code>551 00:21:05,840 --&gt; 00:21:08,260</code>
+Det är ju spännande. Vi kan ju prata</p>
+<p><code>552 00:21:08,260 --&gt; 00:21:10,220</code>
+lite konsekvenser av det här, eller inte nödvändigtvis</p>
+<p><code>553 00:21:10,220 --&gt; 00:21:12,100</code>
+kanske precis just det här senaste</p>
+<p><code>554 00:21:12,100 --&gt; 00:21:13,800</code>
+outaget, men lite mer</p>
+<p><code>555 00:21:13,800 --&gt; 00:21:16,380</code>
+generellt. Och konsekvenser av</p>
+<p><code>556 00:21:16,380 --&gt; 00:21:18,300</code>
+ägg och korgar. Ja, men precis.</p>
+<p><code>557 00:21:18,300 --&gt; 00:21:20,300</code>
+Vi har ju, jag tog upp det förutom</p>
+<p><code>558 00:21:20,480 --&gt; 00:21:22,600</code>
+i vårt försnack här, men</p>
+<p><code>559 00:21:22,600 --&gt; 00:21:23,800</code>
+jag tror att det var</p>
+<p><code>560 00:21:23,800 --&gt; 00:21:26,340</code>
+Meredith Whittaker, heter hon så?</p>
+<p><code>561 00:21:26,540 --&gt; 00:21:28,700</code>
+Något sånt. På Signal</p>
+<p><code>562 00:21:28,700 --&gt; 00:21:29,860</code>
+som</p>
+<p><code>563 00:21:29,860 --&gt; 00:21:32,380</code>
+lade ut på Blue Sky i samband</p>
+<p><code>564 00:21:32,380 --&gt; 00:21:34,660</code>
+med att det här gick ner och pratade om problematiken</p>
+<p><code>565 00:21:34,660 --&gt; 00:21:35,800</code>
+med</p>
+<p><code>566 00:21:35,800 --&gt; 00:21:38,900</code>
+äggsynbaskets och hyperscalers.</p>
+<p><code>567 00:21:40,640 --&gt; 00:21:42,280</code>
+Jag måste säga det, på tal om det</p>
+<p><code>568 00:21:42,280 --&gt; 00:21:44,440</code>
+nu flyker jag in här. Jag tycker mig ändå</p>
+<p><code>569 00:21:44,440 --&gt; 00:21:46,800</code>
+se av de kunderna jag har som är</p>
+<p><code>570 00:21:50,480 --&gt; 00:21:53,600</code>
+cloud-nyttjare</p>
+<p><code>571 00:21:53,600 --&gt; 00:21:54,820</code>
+liksom, som har byggt hela</p>
+<p><code>572 00:21:54,820 --&gt; 00:21:56,840</code>
+sin plattform från början</p>
+<p><code>573 00:21:56,840 --&gt; 00:21:58,280</code>
+i en cloud-miljö.</p>
+<p><code>574 00:21:58,760 --&gt; 00:22:00,820</code>
+Där ser jag ju jättestora trender nu</p>
+<p><code>575 00:22:00,820 --&gt; 00:22:02,200</code>
+att man försöker</p>
+<p><code>576 00:22:02,200 --&gt; 00:22:05,000</code>
+gå emot vad man kallar cloud-native-konceptet.</p>
+<p><code>577 00:22:05,060 --&gt; 00:22:06,920</code>
+Det vill säga att man inte är bunden till leverantör.</p>
+<p><code>578 00:22:07,040 --&gt; 00:22:09,160</code>
+Men det var det här hon var inne på.</p>
+<p><code>579 00:22:09,660 --&gt; 00:22:10,660</code>
+Hon sa det, att det är</p>
+<p><code>580 00:22:10,660 --&gt; 00:22:11,620</code>
+en jättefin idé.</p>
+<p><code>581 00:22:12,360 --&gt; 00:22:14,820</code>
+Att vi kan sprida ut oss och vara agnostiska</p>
+<p><code>582 00:22:14,820 --&gt; 00:22:16,520</code>
+och hela den här biten.</p>
+<p><code>583 00:22:16,520 --&gt; 00:22:18,780</code>
+Men om du ska drifta</p>
+<p><code>584 00:22:18,780 --&gt; 00:22:20,440</code>
+en massor,</p>
+<p><code>585 00:22:20,480 --&gt; 00:22:22,040</code>
+en massiv kommunikationsplattform</p>
+<p><code>586 00:22:22,040 --&gt; 00:22:24,300</code>
+som ska ha fullgod kryptering, som ska vara</p>
+<p><code>587 00:22:24,300 --&gt; 00:22:26,500</code>
+alltid online, med</p>
+<p><code>588 00:22:26,500 --&gt; 00:22:28,260</code>
+noll latency, för du pratar</p>
+<p><code>589 00:22:28,260 --&gt; 00:22:30,400</code>
+chat, men du pratar också telefonsamtal</p>
+<p><code>590 00:22:30,400 --&gt; 00:22:31,460</code>
+och video.</p>
+<p><code>591 00:22:32,340 --&gt; 00:22:34,520</code>
+Du kan vara en jävla cloud-native</p>
+<p><code>592 00:22:34,520 --&gt; 00:22:36,740</code>
+du vill. Du har typ två alternativ att välja på.</p>
+<p><code>593 00:22:37,360 --&gt; 00:22:38,340</code>
+Jaha, var det apropå att</p>
+<p><code>594 00:22:38,340 --&gt; 00:22:39,860</code>
+signal drabbades i det här också då?</p>
+<p><code>595 00:22:39,980 --&gt; 00:22:42,800</code>
+Jag tror att det kan ha varit ursprung i det.</p>
+<p><code>596 00:22:43,080 --&gt; 00:22:43,760</code>
+Det var helt kallt.</p>
+<p><code>597 00:22:43,760 --&gt; 00:22:44,760</code>
+Och det är liksom så här,</p>
+<p><code>598 00:22:44,880 --&gt; 00:22:47,880</code>
+vi pratade om det här lite innan också</p>
+<p><code>599 00:22:47,880 --&gt; 00:22:49,300</code>
+med potentiella lösningar.</p>
+<p><code>600 00:22:49,400 --&gt; 00:22:50,220</code>
+Vi kommer väl komma till det.</p>
+<p><code>601 00:22:50,480 --&gt; 00:22:52,320</code>
+Men med europeiska mål och sånt.</p>
+<p><code>602 00:22:52,760 --&gt; 00:22:54,360</code>
+Absolut, det kan ju läsa en del av problematiken.</p>
+<p><code>603 00:22:54,540 --&gt; 00:22:56,140</code>
+Men inte för alla typer av tjänster.</p>
+<p><code>604 00:22:56,880 --&gt; 00:22:58,580</code>
+Jag tänker på det här.</p>
+<p><code>605 00:22:58,840 --&gt; 00:23:00,540</code>
+När vi alla runt det här bordet</p>
+<p><code>606 00:23:00,540 --&gt; 00:23:02,020</code>
+och säkert många som lyssnar på det här också.</p>
+<p><code>607 00:23:02,800 --&gt; 00:23:04,600</code>
+När internet kom till byn</p>
+<p><code>608 00:23:04,600 --&gt; 00:23:06,660</code>
+på något sätt, då var det ju ganska inne</p>
+<p><code>609 00:23:06,660 --&gt; 00:23:08,440</code>
+att man hostade sitt eget</p>
+<p><code>610 00:23:08,440 --&gt; 00:23:10,560</code>
+bröte. I alla fall i den generationen</p>
+<p><code>611 00:23:10,560 --&gt; 00:23:12,720</code>
+jag tillhör. Och det gjorde man ju med</p>
+<p><code>612 00:23:12,720 --&gt; 00:23:14,540</code>
+både bra och dåliga</p>
+<p><code>613 00:23:14,540 --&gt; 00:23:16,340</code>
+resultat. Men jag tror att det är nog</p>
+<p><code>614 00:23:16,340 --&gt; 00:23:18,380</code>
+en grej som är lite på väg tillbaka ändå.</p>
+<p><code>615 00:23:19,240 --&gt; 00:23:19,780</code>
+Att man hostar,</p>
+<p><code>616 00:23:20,480 --&gt; 00:23:23,260</code>
+skitgrejer som inte behöver vara Google Mail</p>
+<p><code>617 00:23:23,260 --&gt; 00:23:25,180</code>
+till exempel, superenkelt att hosta egentligen.</p>
+<p><code>618 00:23:25,900 --&gt; 00:23:27,260</code>
+Jag tänker att man åtminstone</p>
+<p><code>619 00:23:27,260 --&gt; 00:23:29,160</code>
+ska ha en plan för att kunna hosta sin mail</p>
+<p><code>620 00:23:29,160 --&gt; 00:23:29,460</code>
+själv.</p>
+<p><code>621 00:23:30,840 --&gt; 00:23:33,100</code>
+Sen tror jag att man med</p>
+<p><code>622 00:23:33,100 --&gt; 00:23:35,400</code>
+kloka backup-strategier</p>
+<p><code>623 00:23:35,400 --&gt; 00:23:37,400</code>
+kan säkra sin data. För om all</p>
+<p><code>624 00:23:37,400 --&gt; 00:23:39,020</code>
+din data ligger i molnet så är det</p>
+<p><code>625 00:23:39,020 --&gt; 00:23:40,120</code>
+kokt i bajsen då.</p>
+<p><code>626 00:23:40,300 --&gt; 00:23:42,880</code>
+Det är också en otroligt viktig, faktiskt viktig ståndpunkt</p>
+<p><code>627 00:23:42,880 --&gt; 00:23:44,380</code>
+är att man skyddar sitt data.</p>
+<p><code>628 00:23:44,380 --&gt; 00:23:46,700</code>
+Det har vi inte egentligen pratat om här.</p>
+<p><code>629 00:23:47,160 --&gt; 00:23:48,580</code>
+Det är ju en sak att tjänsterna</p>
+<p><code>630 00:23:48,580 --&gt; 00:23:50,440</code>
+inte får göra. Men det skulle</p>
+<p><code>631 00:23:50,480 --&gt; 00:23:51,800</code>
+också kunna bli scramblat.</p>
+<p><code>632 00:23:52,400 --&gt; 00:23:54,540</code>
+Nu vet vi inte om vi springer lite snabbt här nu.</p>
+<p><code>633 00:23:54,640 --&gt; 00:23:56,100</code>
+Jag tänker att vi går tillbaka till Johan lite grann.</p>
+<p><code>634 00:23:57,020 --&gt; 00:23:58,700</code>
+Okej, nu har det</p>
+<p><code>635 00:23:58,700 --&gt; 00:24:00,440</code>
+hänt downtime. 16 timmar.</p>
+<p><code>636 00:24:00,700 --&gt; 00:24:01,700</code>
+Det är rätt mycket.</p>
+<p><code>637 00:24:02,860 --&gt; 00:24:04,440</code>
+Jag har inte verifierat det här, men</p>
+<p><code>638 00:24:04,440 --&gt; 00:24:06,200</code>
+någon sa att</p>
+<p><code>639 00:24:06,200 --&gt; 00:24:07,600</code>
+ICOL, vet ni vad det är?</p>
+<p><code>640 00:24:07,840 --&gt; 00:24:09,540</code>
+Det är lagen från</p>
+<p><code>641 00:24:09,540 --&gt; 00:24:12,720</code>
+20 någonting.</p>
+<p><code>642 00:24:13,720 --&gt; 00:24:14,520</code>
+Krockar du så ska</p>
+<p><code>643 00:24:14,520 --&gt; 00:24:16,540</code>
+fordonet ringa ambulansen mer eller mindre</p>
+<p><code>644 00:24:16,540 --&gt; 00:24:18,000</code>
+automatiskt. Det lägger man hos AVS.</p>
+<p><code>645 00:24:18,460 --&gt; 00:24:19,360</code>
+Nej, det är</p>
+<p><code>646 00:24:19,360 --&gt; 00:24:22,440</code>
+SLA på det.</p>
+<p><code>647 00:24:22,720 --&gt; 00:24:23,660</code>
+Det är sju minuter.</p>
+<p><code>648 00:24:24,440 --&gt; 00:24:26,740</code>
+Nu vet ni om det är sju minuter i dagen</p>
+<p><code>649 00:24:26,740 --&gt; 00:24:28,820</code>
+eller månaden eller året.</p>
+<p><code>650 00:24:28,900 --&gt; 00:24:30,200</code>
+Men det har liksom ingen betydelse.</p>
+<p><code>651 00:24:30,540 --&gt; 00:24:32,320</code>
+För om AVS är nere 16 timmar</p>
+<p><code>652 00:24:32,320 --&gt; 00:24:34,200</code>
+om man har lagt sin ICOL via AVS</p>
+<p><code>653 00:24:34,200 --&gt; 00:24:35,860</code>
+då är det SLA åt helvete.</p>
+<p><code>654 00:24:36,240 --&gt; 00:24:37,880</code>
+Eller bara ha något subberoende.</p>
+<p><code>655 00:24:38,660 --&gt; 00:24:39,820</code>
+Även om det här är då</p>
+<p><code>656 00:24:39,820 --&gt; 00:24:42,060</code>
+det hände en gång, det är 16 timmar.</p>
+<p><code>657 00:24:42,200 --&gt; 00:24:44,340</code>
+För vissa så är ju det här superallvarliga</p>
+<p><code>658 00:24:44,340 --&gt; 00:24:44,940</code>
+konsekvenser.</p>
+<p><code>659 00:24:45,780 --&gt; 00:24:48,200</code>
+Om vi ska projicera det här på framtiden</p>
+<p><code>660 00:24:48,200 --&gt; 00:24:49,180</code>
+och tro att det här kommer fortsätta.</p>
+<p><code>661 00:24:49,180 --&gt; 00:24:49,240</code>
+Det kommer fortsätta.</p>
+<p><code>662 00:24:49,240 --&gt; 00:24:49,340</code>
+Det kommer fortsätta.</p>
+<p><code>663 00:24:49,340 --&gt; 00:24:49,960</code>
+Det kommer hända igen.</p>
+<p><code>664 00:24:50,440 --&gt; 00:24:52,440</code>
+En gång om året så kommer det vara ner till 16 timmar.</p>
+<p><code>665 00:24:53,100 --&gt; 00:24:56,020</code>
+Då kan man inte använda AVS.</p>
+<p><code>666 00:24:56,100 --&gt; 00:24:58,720</code>
+Det finns ju olika definitioner på</p>
+<p><code>667 00:24:58,720 --&gt; 00:25:01,320</code>
+vad som innefattar kritisk infrastruktur.</p>
+<p><code>668 00:25:01,680 --&gt; 00:25:03,260</code>
+Men det var ju en kul</p>
+<p><code>669 00:25:03,260 --&gt; 00:25:04,720</code>
+internet of shit incident</p>
+<p><code>670 00:25:04,720 --&gt; 00:25:06,900</code>
+där det var</p>
+<p><code>671 00:25:06,900 --&gt; 00:25:09,360</code>
+sån här</p>
+<p><code>672 00:25:09,360 --&gt; 00:25:11,100</code>
+uppvärmd vattensäng</p>
+<p><code>673 00:25:11,100 --&gt; 00:25:12,700</code>
+som kontrollerades.</p>
+<p><code>674 00:25:13,180 --&gt; 00:25:14,020</code>
+Det läste jag också om.</p>
+<p><code>675 00:25:14,540 --&gt; 00:25:16,160</code>
+Det är så fan vad jag får skit.</p>
+<p><code>676 00:25:16,160 --&gt; 00:25:17,920</code>
+Du kunde ju inte</p>
+<p><code>677 00:25:17,920 --&gt; 00:25:18,920</code>
+bli kokt.</p>
+<p><code>678 00:25:18,920 --&gt; 00:25:21,340</code>
+Hade du ställt in</p>
+<p><code>679 00:25:21,340 --&gt; 00:25:22,920</code>
+termostaten innan</p>
+<p><code>680 00:25:23,480 --&gt; 00:25:24,500</code>
+så var du safe.</p>
+<p><code>681 00:25:25,360 --&gt; 00:25:26,280</code>
+Det var det som var så roligt.</p>
+<p><code>682 00:25:26,400 --&gt; 00:25:27,320</code>
+Du kunde inte ändra den.</p>
+<p><code>683 00:25:27,720 --&gt; 00:25:29,560</code>
+Det är också så jävla stört.</p>
+<p><code>684 00:25:29,900 --&gt; 00:25:31,180</code>
+Jag har en säng i min&hellip;</p>
+<p><code>685 00:25:31,180 --&gt; 00:25:33,340</code>
+Den är fysiskt i mitt hem.</p>
+<p><code>686 00:25:33,740 --&gt; 00:25:35,880</code>
+Men jag måste kalla på ett jävla API</p>
+<p><code>687 00:25:35,880 --&gt; 00:25:37,720</code>
+för att styra min egen jävla säng.</p>
+<p><code>688 00:25:37,740 --&gt; 00:25:38,960</code>
+Du såg din säng.</p>
+<p><code>689 00:25:39,180 --&gt; 00:25:40,400</code>
+Du håller på att koka bort den.</p>
+<p><code>690 00:25:41,340 --&gt; 00:25:42,800</code>
+Du är fysiskt utsladd.</p>
+<p><code>691 00:25:43,140 --&gt; 00:25:45,000</code>
+Du får lägga dig i soffan istället.</p>
+<p><code>692 00:25:45,000 --&gt; 00:25:46,440</code>
+För sängen är numera brickad.</p>
+<p><code>693 00:25:46,520 --&gt; 00:25:48,840</code>
+För den har inte internet. Hur fan blev det så här?</p>
+<p><code>694 00:25:48,920 --&gt; 00:25:50,240</code>
+Ja, det är roligt.</p>
+<p><code>695 00:25:50,260 --&gt; 00:25:52,540</code>
+Just den biten kanske inte är kritisk.</p>
+<p><code>696 00:25:52,640 --&gt; 00:25:53,820</code>
+En sling bäddar sängen.</p>
+<p><code>697 00:25:53,980 --&gt; 00:25:56,040</code>
+Det går inte. Det är DNS-problem med solbilen.</p>
+<p><code>698 00:25:56,680 --&gt; 00:25:57,900</code>
+Det brann upp.</p>
+<p><code>699 00:25:59,440 --&gt; 00:26:00,520</code>
+Ja, men jag fattar.</p>
+<p><code>700 00:26:03,260 --&gt; 00:26:04,240</code>
+Åter till min poäng.</p>
+<p><code>701 00:26:05,940 --&gt; 00:26:07,140</code>
+Rickard, du har jobbat mycket</p>
+<p><code>702 00:26:07,140 --&gt; 00:26:08,120</code>
+med kritisk infrastruktur.</p>
+<p><code>703 00:26:08,320 --&gt; 00:26:11,140</code>
+Då brukar man prata om saker som el och vatten</p>
+<p><code>704 00:26:11,140 --&gt; 00:26:13,100</code>
+och vård och sådana saker.</p>
+<p><code>705 00:26:13,640 --&gt; 00:26:14,120</code>
+Betalningar.</p>
+<p><code>706 00:26:14,120 --&gt; 00:26:14,700</code>
+Betalningar.</p>
+<p><code>707 00:26:15,300 --&gt; 00:26:18,120</code>
+Men jag skulle säga att</p>
+<p><code>708 00:26:18,120 --&gt; 00:26:18,820</code>
+avv.</p>
+<p><code>709 00:26:18,920 --&gt; 00:26:20,940</code>
+Det klassas som kritisk infrastruktur.</p>
+<p><code>710 00:26:21,060 --&gt; 00:26:22,680</code>
+För det finns så många tjänster som är byggda på det</p>
+<p><code>711 00:26:22,680 --&gt; 00:26:24,780</code>
+som kan påverka liv och läm.</p>
+<p><code>712 00:26:25,740 --&gt; 00:26:26,920</code>
+Som du inte tänker på.</p>
+<p><code>713 00:26:27,320 --&gt; 00:26:28,920</code>
+Jag kommer ihåg. Det finns ju ett annat</p>
+<p><code>714 00:26:28,920 --&gt; 00:26:30,020</code>
+glammat klassiskt avv.</p>
+<p><code>715 00:26:30,840 --&gt; 00:26:32,440</code>
+Tidigt i avv. världen.</p>
+<p><code>716 00:26:32,820 --&gt; 00:26:34,860</code>
+Det var första gången de gick ner på riktigt länge.</p>
+<p><code>717 00:26:35,060 --&gt; 00:26:37,240</code>
+Ja, när de gick och fått tag på</p>
+<p><code>718 00:26:37,240 --&gt; 00:26:38,760</code>
+supportpersonalen.</p>
+<p><code>719 00:26:38,780 --&gt; 00:26:41,560</code>
+Exakt. Och då fick man så här panikforumsdiskussioner.</p>
+<p><code>720 00:26:42,020 --&gt; 00:26:43,160</code>
+Och en var ju just det.</p>
+<p><code>721 00:26:43,160 --&gt; 00:26:45,060</code>
+Vi har EKG-övervakning</p>
+<p><code>722 00:26:45,060 --&gt; 00:26:46,680</code>
+av våra remote-patienter.</p>
+<p><code>723 00:26:47,720 --&gt; 00:26:48,780</code>
+Och nu, vi får inte upp.</p>
+<p><code>724 00:26:48,920 --&gt; 00:26:49,580</code>
+Man är i sitt tvåa.</p>
+<p><code>725 00:26:49,700 --&gt; 00:26:52,520</code>
+Vi har ingen koll på. De kan dö nu.</p>
+<p><code>726 00:26:52,680 --&gt; 00:26:54,140</code>
+Det här har ju vi snackat om.</p>
+<p><code>727 00:26:54,220 --&gt; 00:26:55,900</code>
+Vi är ju inom säkerhetsbordkarten.</p>
+<p><code>728 00:26:56,360 --&gt; 00:26:58,960</code>
+De har inte använt en professionell riskanalys.</p>
+<p><code>729 00:26:59,620 --&gt; 00:27:00,880</code>
+Jag tror jag visade</p>
+<p><code>730 00:27:00,880 --&gt; 00:27:02,680</code>
+den screenshoten på en</p>
+<p><code>731 00:27:02,680 --&gt; 00:27:03,620</code>
+OPP-Koko-konferens.</p>
+<p><code>732 00:27:03,820 --&gt; 00:27:05,320</code>
+Den är klassisk liksom.</p>
+<p><code>733 00:27:05,560 --&gt; 00:27:07,640</code>
+De har inte gjort den kloka metoden.</p>
+<p><code>734 00:27:07,840 --&gt; 00:27:10,220</code>
+Vilket är att hitta en snubbe i</p>
+<p><code>735 00:27:10,220 --&gt; 00:27:12,760</code>
+ett svenskt snubbe i Thailand för att drifta 1177</p>
+<p><code>736 00:27:12,760 --&gt; 00:27:14,160</code>
+som sätter allting på</p>
+<p><code>737 00:27:14,160 --&gt; 00:27:15,380</code>
+en nas.</p>
+<p><code>738 00:27:16,600 --&gt; 00:27:17,900</code>
+Det är fast safe.</p>
+<p><code>739 00:27:18,200 --&gt; 00:27:18,640</code>
+Det är där.</p>
+<p><code>740 00:27:18,920 --&gt; 00:27:22,400</code>
+Det roliga med 1177-grejen</p>
+<p><code>741 00:27:22,400 --&gt; 00:27:23,620</code>
+det är ju att</p>
+<p><code>742 00:27:23,620 --&gt; 00:27:25,960</code>
+det här bolaget finns ju kvar.</p>
+<p><code>743 00:27:27,580 --&gt; 00:27:29,500</code>
+Hur är det möjligt?</p>
+<p><code>744 00:27:29,700 --&gt; 00:27:31,520</code>
+Nej, men exakt hur fan är det möjligt?</p>
+<p><code>745 00:27:31,680 --&gt; 00:27:32,440</code>
+Och affärerna</p>
+<p><code>746 00:27:32,440 --&gt; 00:27:35,020</code>
+som det här bolaget gör</p>
+<p><code>747 00:27:35,020 --&gt; 00:27:36,720</code>
+de är allt annat än</p>
+<p><code>748 00:27:36,720 --&gt; 00:27:38,420</code>
+rumsirena. Det är fan sjukt.</p>
+<p><code>749 00:27:38,500 --&gt; 00:27:40,560</code>
+Men om vi återvänder till</p>
+<p><code>750 00:27:40,560 --&gt; 00:27:41,320</code>
+on topic.</p>
+<p><code>751 00:27:42,900 --&gt; 00:27:44,260</code>
+Då blir jag upprörd här.</p>
+<p><code>752 00:27:45,140 --&gt; 00:27:46,960</code>
+Jo, vi ska bygga ett nytt internet.</p>
+<p><code>753 00:27:47,200 --&gt; 00:27:47,960</code>
+Men Asch-grejen</p>
+<p><code>754 00:27:47,960 --&gt; 00:27:48,760</code>
+grejen</p>
+<p><code>755 00:27:48,760 --&gt; 00:27:50,620</code>
+den var väl</p>
+<p><code>756 00:27:50,620 --&gt; 00:27:52,400</code>
+den brödde väl hela Asch-grejen?</p>
+<p><code>757 00:27:52,800 --&gt; 00:27:53,860</code>
+Den var</p>
+<p><code>758 00:27:53,860 --&gt; 00:27:56,960</code>
+Den jag såg var Multiple Regions.</p>
+<p><code>759 00:27:57,300 --&gt; 00:27:58,700</code>
+Men den var</p>
+<p><code>760 00:27:58,700 --&gt; 00:27:59,900</code>
+den var</p>
+<p><code>761 00:27:59,900 --&gt; 00:28:03,520</code>
+Men AVS-grejen</p>
+<p><code>762 00:28:03,520 --&gt; 00:28:04,360</code>
+var ju fortfarande</p>
+<p><code>763 00:28:04,360 --&gt; 00:28:07,220</code>
+låst i en availability-zone.</p>
+<p><code>764 00:28:07,540 --&gt; 00:28:08,640</code>
+Jo, fast</p>
+<p><code>765 00:28:08,640 --&gt; 00:28:11,160</code>
+de som hostar väldigt mycket kritisk infrastruktur</p>
+<p><code>766 00:28:11,160 --&gt; 00:28:13,020</code>
+från Amazon internt.</p>
+<p><code>767 00:28:13,460 --&gt; 00:28:15,240</code>
+Så resten av</p>
+<p><code>768 00:28:15,240 --&gt; 00:28:16,940</code>
+AVS gick också ner då kan man ju säga.</p>
+<p><code>769 00:28:17,240 --&gt; 00:28:17,800</code>
+Ja.</p>
+<p><code>770 00:28:17,800 --&gt; 00:28:17,940</code>
+Ja.</p>
+<p><code>771 00:28:17,960 --&gt; 00:28:19,860</code>
+Inte tjänsterna på samma sätt.</p>
+<p><code>772 00:28:20,420 --&gt; 00:28:22,120</code>
+Men deras lokala</p>
+<p><code>773 00:28:22,120 --&gt; 00:28:24,780</code>
+klister som är ju för Amazons</p>
+<p><code>774 00:28:24,780 --&gt; 00:28:25,400</code>
+interna tjänster.</p>
+<p><code>775 00:28:25,420 --&gt; 00:28:27,860</code>
+Men det var inte kritisk kundimpakt direkt på</p>
+<p><code>776 00:28:27,860 --&gt; 00:28:30,480</code>
+de som låg i andra availability-zonen va?</p>
+<p><code>777 00:28:30,480 --&gt; 00:28:31,560</code>
+Alltså det blev ju det.</p>
+<p><code>778 00:28:31,660 --&gt; 00:28:33,780</code>
+Jo, det blev ju det efter ett tag.</p>
+<p><code>779 00:28:34,140 --&gt; 00:28:36,480</code>
+För det propagerar ju</p>
+<p><code>780 00:28:36,480 --&gt; 00:28:38,800</code>
+inte exponentiellt</p>
+<p><code>781 00:28:38,800 --&gt; 00:28:39,820</code>
+men väldigt snabbt då.</p>
+<p><code>782 00:28:39,860 --&gt; 00:28:41,280</code>
+Det var ju inte DNS-uppslagen</p>
+<p><code>783 00:28:41,280 --&gt; 00:28:43,980</code>
+på EU&rsquo;s East One</p>
+<p><code>784 00:28:43,980 --&gt; 00:28:46,140</code>
+som nödvändigtvis ställde till problem</p>
+<p><code>785 00:28:46,140 --&gt; 00:28:46,580</code>
+för dem.</p>
+<p><code>786 00:28:46,920 --&gt; 00:28:47,800</code>
+Utan det var ju när det ställde&hellip;</p>
+<p><code>787 00:28:47,800 --&gt; 00:28:49,620</code>
+All provisionering.</p>
+<p><code>788 00:28:49,840 --&gt; 00:28:49,860</code>
+All provisionering.</p>
+<p><code>789 00:28:49,860 --&gt; 00:28:51,960</code>
+Alltså du måste ju göra API-calls.</p>
+<p><code>790 00:28:52,440 --&gt; 00:28:54,140</code>
+När du går in i ditt UI och klickar</p>
+<p><code>791 00:28:54,140 --&gt; 00:28:55,160</code>
+jag vill ha den här grejen.</p>
+<p><code>792 00:28:55,580 --&gt; 00:28:57,460</code>
+Den formen som säger att Peter vill ha en grej.</p>
+<p><code>793 00:28:57,900 --&gt; 00:29:00,220</code>
+Den ska ju gå till modemodemet.</p>
+<p><code>794 00:29:00,760 --&gt; 00:29:03,880</code>
+Och så ska det vara liksom en handover där.</p>
+<p><code>795 00:29:04,220 --&gt; 00:29:05,160</code>
+Så att du blir built för den.</p>
+<p><code>796 00:29:05,320 --&gt; 00:29:06,320</code>
+Och den tjänsten funkar inte.</p>
+<p><code>797 00:29:07,120 --&gt; 00:29:08,860</code>
+Eller så funkar den att du får den</p>
+<p><code>798 00:29:08,860 --&gt; 00:29:09,980</code>
+men den kan inte ge ditt namn.</p>
+<p><code>799 00:29:10,060 --&gt; 00:29:11,140</code>
+Eller det namnet finns redan.</p>
+<p><code>800 00:29:11,260 --&gt; 00:29:12,040</code>
+Eller vad händer nu?</p>
+<p><code>801 00:29:12,380 --&gt; 00:29:14,320</code>
+Så i bootstrap-handover så kanske det finns två.</p>
+<p><code>802 00:29:14,860 --&gt; 00:29:15,760</code>
+Och då, alltså det blir</p>
+<p><code>803 00:29:15,760 --&gt; 00:29:17,460</code>
+alltså det blir inget bra alltså.</p>
+<p><code>804 00:29:17,460 --&gt; 00:29:17,760</code>
+Ja.</p>
+<p><code>805 00:29:17,800 --&gt; 00:29:19,680</code>
+Jag vet en organisation som driftar grejer</p>
+<p><code>806 00:29:19,680 --&gt; 00:29:21,920</code>
+i både Kina, EU och USA.</p>
+<p><code>807 00:29:22,160 --&gt; 00:29:23,360</code>
+Och de hade problem i alla&hellip;</p>
+<p><code>808 00:29:23,360 --&gt; 00:29:24,520</code>
+Undrar vem det kan vara.</p>
+<p><code>809 00:29:26,020 --&gt; 00:29:26,540</code>
+Nej, det har jag inte.</p>
+<p><code>810 00:29:26,740 --&gt; 00:29:27,460</code>
+Nej, inte jag heller.</p>
+<p><code>811 00:29:27,540 --&gt; 00:29:28,560</code>
+På tal om IK.</p>
+<p><code>812 00:29:29,020 --&gt; 00:29:29,220</code>
+Ja.</p>
+<p><code>813 00:29:31,680 --&gt; 00:29:33,780</code>
+Ja, men ska vi prata lite om</p>
+<p><code>814 00:29:33,780 --&gt; 00:29:35,620</code>
+vad man kan göra då?</p>
+<p><code>815 00:29:35,680 --&gt; 00:29:37,200</code>
+Lite diversifiering kanske?</p>
+<p><code>816 00:29:37,800 --&gt; 00:29:39,960</code>
+Man kan använda Loralan.</p>
+<p><code>817 00:29:40,760 --&gt; 00:29:41,800</code>
+Nej, men&hellip;</p>
+<p><code>818 00:29:41,800 --&gt; 00:29:43,520</code>
+Men det finns ju lite olika</p>
+<p><code>819 00:29:43,520 --&gt; 00:29:45,240</code>
+aspekter på det som man kan prata om.</p>
+<p><code>820 00:29:46,140 --&gt; 00:29:47,640</code>
+Om jag får flika in då</p>
+<p><code>821 00:29:47,640 --&gt; 00:29:49,840</code>
+med den tecken som jag hade innan</p>
+<p><code>822 00:29:49,840 --&gt; 00:29:51,140</code>
+just där med</p>
+<p><code>823 00:29:51,140 --&gt; 00:29:53,140</code>
+att bygga</p>
+<p><code>824 00:29:53,140 --&gt; 00:29:55,640</code>
+alltså att förbereda för</p>
+<p><code>825 00:29:55,640 --&gt; 00:29:57,840</code>
+att Amazon, Azure,</p>
+<p><code>826 00:29:58,100 --&gt; 00:29:59,840</code>
+Google Cloud Platform kan</p>
+<p><code>827 00:29:59,840 --&gt; 00:30:01,100</code>
+bli otillgängliga.</p>
+<p><code>828 00:30:01,900 --&gt; 00:30:03,480</code>
+Det måste man ha med i sin</p>
+<p><code>829 00:30:03,480 --&gt; 00:30:04,440</code>
+viskbrävning.</p>
+<p><code>830 00:30:04,560 --&gt; 00:30:06,660</code>
+Ja, i sin kontinuitetsplan.</p>
+<p><code>831 00:30:07,460 --&gt; 00:30:09,860</code>
+Och då tänker jag att</p>
+<p><code>832 00:30:09,860 --&gt; 00:30:11,660</code>
+ja, man kan bygga</p>
+<p><code>833 00:30:11,660 --&gt; 00:30:14,240</code>
+målen agnostiskt.</p>
+<p><code>834 00:30:14,940 --&gt; 00:30:15,900</code>
+Det är jättefint.</p>
+<p><code>835 00:30:16,180 --&gt; 00:30:17,620</code>
+Men du behöver ju</p>
+<p><code>836 00:30:17,620 --&gt; 00:30:19,080</code>
+säkra att din data</p>
+<p><code>837 00:30:19,080 --&gt; 00:30:21,240</code>
+är någonstans där du</p>
+<p><code>838 00:30:21,240 --&gt; 00:30:22,100</code>
+kontrollerar den.</p>
+<p><code>839 00:30:23,080 --&gt; 00:30:25,480</code>
+Det som är bra med</p>
+<p><code>840 00:30:25,480 --&gt; 00:30:27,420</code>
+sådana här outage är att då har vi</p>
+<p><code>841 00:30:27,420 --&gt; 00:30:29,680</code>
+ett färskt exempel för den</p>
+<p><code>842 00:30:29,680 --&gt; 00:30:30,760</code>
+argumentationen just nu.</p>
+<p><code>843 00:30:31,000 --&gt; 00:30:33,900</code>
+Annars brukar det vara så här, denna tar oss inte riktigt på allvar.</p>
+<p><code>844 00:30:34,120 --&gt; 00:30:36,080</code>
+Vi kör ju två availability zones.</p>
+<p><code>845 00:30:36,300 --&gt; 00:30:36,640</code>
+Det är lugnt.</p>
+<p><code>846 00:30:37,280 --&gt; 00:30:38,760</code>
+Om de inte har varit kund hos Teto då.</p>
+<p><code>847 00:30:39,620 --&gt; 00:30:40,680</code>
+Ja, för då är ju allting lugnt.</p>
+<p><code>848 00:30:41,140 --&gt; 00:30:43,640</code>
+För då är det ju deras fel. De har ju ändå köpt</p>
+<p><code>849 00:30:43,640 --&gt; 00:30:46,520</code>
+en bra business continuity planning.</p>
+<p><code>850 00:30:46,860 --&gt; 00:30:47,520</code>
+Dubbla backup.</p>
+<p><code>851 00:30:47,620 --&gt; 00:30:49,400</code>
+Och alltihop, men hur gick det egentligen?</p>
+<p><code>852 00:30:49,400 --&gt; 00:30:51,040</code>
+Det bolaget finns förut också fortfarande.</p>
+<p><code>853 00:30:51,240 --&gt; 00:30:53,700</code>
+Ja, och delade också ut en galn massa stålar</p>
+<p><code>854 00:30:53,700 --&gt; 00:30:54,460</code>
+till sina ägare.</p>
+<p><code>855 00:30:54,940 --&gt; 00:30:55,900</code>
+Inte okej alltså.</p>
+<p><code>856 00:30:56,680 --&gt; 00:30:59,100</code>
+Just den, och nu är</p>
+<p><code>857 00:30:59,100 --&gt; 00:31:00,920</code>
+rent alert då.</p>
+<p><code>858 00:31:01,400 --&gt; 00:31:03,480</code>
+Man får det. Det är våran podcast.</p>
+<p><code>859 00:31:03,980 --&gt; 00:31:04,460</code>
+Varför</p>
+<p><code>860 00:31:04,460 --&gt; 00:31:07,380</code>
+förstår man inte att</p>
+<p><code>861 00:31:07,380 --&gt; 00:31:09,580</code>
+om jag köper,</p>
+<p><code>862 00:31:09,720 --&gt; 00:31:11,200</code>
+om jag outsourcar en tjänst,</p>
+<p><code>863 00:31:11,300 --&gt; 00:31:14,000</code>
+då betyder det inte att jag kan skita i</p>
+<p><code>864 00:31:14,000 --&gt; 00:31:15,960</code>
+kontinuitetshantering,</p>
+<p><code>865 00:31:16,120 --&gt; 00:31:17,360</code>
+riskhantering och</p>
+<p><code>866 00:31:17,620 --&gt; 00:31:20,220</code>
+säkerhetsproblem i det här.</p>
+<p><code>867 00:31:20,220 --&gt; 00:31:22,360</code>
+Jag är fortfarande ansvarig för det.</p>
+<p><code>868 00:31:22,380 --&gt; 00:31:24,080</code>
+Men AVS, Google, Azure</p>
+<p><code>869 00:31:24,080 --&gt; 00:31:25,960</code>
+har ju shared responsibility model.</p>
+<p><code>870 00:31:26,480 --&gt; 00:31:28,860</code>
+How did that work out for you guys?</p>
+<p><code>871 00:31:29,400 --&gt; 00:31:29,840</code>
+Sådär va?</p>
+<p><code>872 00:31:29,960 --&gt; 00:31:32,240</code>
+Men det jag menar är att om man då inte</p>
+<p><code>873 00:31:32,240 --&gt; 00:31:33,760</code>
+gör sin ordentliga</p>
+<p><code>874 00:31:33,760 --&gt; 00:31:35,620</code>
+analys av vad</p>
+<p><code>875 00:31:35,620 --&gt; 00:31:38,160</code>
+kan hända om den här skiten går ner.</p>
+<p><code>876 00:31:39,180 --&gt; 00:31:40,500</code>
+Eller kontrollera.</p>
+<p><code>877 00:31:40,580 --&gt; 00:31:42,080</code>
+Har vi immutable backups?</p>
+<p><code>878 00:31:42,520 --&gt; 00:31:44,860</code>
+Ja, absolut. Det står i kontraktet.</p>
+<p><code>879 00:31:45,180 --&gt; 00:31:45,900</code>
+Ja, vad fint.</p>
+<p><code>880 00:31:46,480 --&gt; 00:31:47,580</code>
+Det kan jag somna om.</p>
+<p><code>881 00:31:47,620 --&gt; 00:31:49,780</code>
+Om hur många månader</p>
+<p><code>882 00:31:49,780 --&gt; 00:31:51,640</code>
+tänkte du att jag skulle få tillbaka den här backupen?</p>
+<p><code>883 00:31:52,160 --&gt; 00:31:53,660</code>
+Exakt. Eller, jo,</p>
+<p><code>884 00:31:53,800 --&gt; 00:31:55,540</code>
+vi hade immutable men det var på samma</p>
+<p><code>885 00:31:55,540 --&gt; 00:31:57,080</code>
+kluster som blev ägt.</p>
+<p><code>886 00:31:57,680 --&gt; 00:31:58,540</code>
+Det var ju</p>
+<p><code>887 00:31:58,540 --&gt; 00:32:01,520</code>
+Sydkorea. Deras</p>
+<p><code>888 00:32:01,520 --&gt; 00:32:03,260</code>
+G-Drive brann ju upp för ett tag sedan.</p>
+<p><code>889 00:32:04,640 --&gt; 00:32:05,900</code>
+Deras vad? Google Drive?</p>
+<p><code>890 00:32:06,820 --&gt; 00:32:07,300</code>
+Nej,</p>
+<p><code>891 00:32:07,980 --&gt; 00:32:09,120</code>
+Government Drive</p>
+<p><code>892 00:32:09,120 --&gt; 00:32:10,720</code>
+i Sydkorea brann upp.</p>
+<p><code>893 00:32:10,880 --&gt; 00:32:12,380</code>
+Den heter för riktigt Government Drive.</p>
+<p><code>894 00:32:12,380 --&gt; 00:32:15,060</code>
+Ja, det var en batteri.</p>
+<p><code>895 00:32:15,060 --&gt; 00:32:17,220</code>
+Det måste hålla sig on brand.</p>
+<p><code>896 00:32:17,620 --&gt; 00:32:19,460</code>
+Det var en batteribackup som valde</p>
+<p><code>897 00:32:19,460 --&gt; 00:32:21,180</code>
+att det var mycket roligare</p>
+<p><code>898 00:32:21,180 --&gt; 00:32:22,760</code>
+om det brann i den istället för att&hellip;</p>
+<p><code>899 00:32:22,760 --&gt; 00:32:24,160</code>
+Så det brann alltså fysiskt upp?</p>
+<p><code>900 00:32:24,180 --&gt; 00:32:26,660</code>
+Ja, alltså batteribackupen tände eld.</p>
+<p><code>901 00:32:27,200 --&gt; 00:32:29,720</code>
+Och sen så tyckte hallen att det var en bra idé</p>
+<p><code>902 00:32:29,720 --&gt; 00:32:30,820</code>
+om det fortsatte brinna.</p>
+<p><code>903 00:32:30,900 --&gt; 00:32:33,120</code>
+Så batteribranden spred sig</p>
+<p><code>904 00:32:33,120 --&gt; 00:32:36,380</code>
+och sen eldade den upp</p>
+<p><code>905 00:32:36,380 --&gt; 00:32:37,860</code>
+hela Sydkoreas</p>
+<p><code>906 00:32:37,860 --&gt; 00:32:38,880</code>
+G-Drive.</p>
+<p><code>907 00:32:39,480 --&gt; 00:32:41,100</code>
+Så det är en massa terabyte</p>
+<p><code>908 00:32:41,100 --&gt; 00:32:43,640</code>
+stadsdata</p>
+<p><code>909 00:32:43,640 --&gt; 00:32:45,280</code>
+som är liksom bara uppbrunna.</p>
+<p><code>910 00:32:46,080 --&gt; 00:32:47,560</code>
+Då kan du åka tillbaka, Johan.</p>
+<p><code>911 00:32:47,620 --&gt; 00:32:48,020</code>
+Ja, det är lugnt.</p>
+<p><code>912 00:32:48,920 --&gt; 00:32:51,620</code>
+Och på temat risktänk</p>
+<p><code>913 00:32:51,620 --&gt; 00:32:53,700</code>
+och sånt.</p>
+<p><code>914 00:32:54,800 --&gt; 00:32:55,320</code>
+Backupen,</p>
+<p><code>915 00:32:55,340 --&gt; 00:32:57,040</code>
+den stod bredvid den också.</p>
+<p><code>916 00:32:57,900 --&gt; 00:32:59,060</code>
+Men det är ju det här</p>
+<p><code>917 00:32:59,060 --&gt; 00:33:00,300</code>
+3-2-1.</p>
+<p><code>918 00:33:00,760 --&gt; 00:33:03,540</code>
+Det är det här man tjötade om för 25 år sedan.</p>
+<p><code>919 00:33:03,940 --&gt; 00:33:05,760</code>
+Ja, ja, ja. Alltså bara så.</p>
+<p><code>920 00:33:06,980 --&gt; 00:33:07,880</code>
+3-2-1.</p>
+<p><code>921 00:33:08,220 --&gt; 00:33:09,800</code>
+Du ska ha tre backupper</p>
+<p><code>922 00:33:09,800 --&gt; 00:33:10,900</code>
+på två olika ställen</p>
+<p><code>923 00:33:10,900 --&gt; 00:33:12,420</code>
+och minst en av dem ska vara offline.</p>
+<p><code>924 00:33:14,060 --&gt; 00:33:14,580</code>
+Rickard.</p>
+<p><code>925 00:33:14,580 --&gt; 00:33:16,300</code>
+Här, killen med minnesregeln.</p>
+<p><code>926 00:33:16,500 --&gt; 00:33:17,320</code>
+3-2-1.</p>
+<p><code>927 00:33:17,620 --&gt; 00:33:20,320</code>
+Och det där är ju sunt.</p>
+<p><code>928 00:33:21,060 --&gt; 00:33:22,660</code>
+Men problemet är ju som sagt</p>
+<p><code>929 00:33:22,660 --&gt; 00:33:24,800</code>
+när man argumenterar för de här frågorna</p>
+<p><code>930 00:33:24,800 --&gt; 00:33:26,660</code>
+och sen så får man</p>
+<p><code>931 00:33:26,660 --&gt; 00:33:28,320</code>
+hela tiden på sig att det är lugnt.</p>
+<p><code>932 00:33:28,400 --&gt; 00:33:29,980</code>
+Vi kör ju två availability zones.</p>
+<p><code>933 00:33:31,060 --&gt; 00:33:32,220</code>
+Vad händer om</p>
+<p><code>934 00:33:32,220 --&gt; 00:33:34,040</code>
+infran går ner då?</p>
+<p><code>935 00:33:34,200 --&gt; 00:33:35,720</code>
+Om Azure blir otillgängligt eller</p>
+<p><code>936 00:33:35,720 --&gt; 00:33:38,600</code>
+om Trump bestämmer sig för att nej.</p>
+<p><code>937 00:33:38,660 --&gt; 00:33:40,280</code>
+Nu är ju dumma.</p>
+<p><code>938 00:33:40,380 --&gt; 00:33:41,080</code>
+Nu stänger vi av.</p>
+<p><code>939 00:33:41,080 --&gt; 00:33:42,080</code>
+Nu klipper vi BGP här.</p>
+<p><code>940 00:33:42,900 --&gt; 00:33:44,840</code>
+Ja, nej. Det är ju sjukt ändå</p>
+<p><code>941 00:33:44,840 --&gt; 00:33:45,800</code>
+att vi har ett internet.</p>
+<p><code>942 00:33:46,580 --&gt; 00:33:47,080</code>
+För det är ju ganska&hellip;</p>
+<p><code>943 00:33:47,620 --&gt; 00:33:49,780</code>
+Det bygger på ganska rudimentära grejer egentligen.</p>
+<p><code>944 00:33:50,340 --&gt; 00:33:51,200</code>
+Men absolut.</p>
+<p><code>945 00:33:51,580 --&gt; 00:33:53,820</code>
+Tanken med internet var ju resiliens.</p>
+<p><code>946 00:33:53,920 --&gt; 00:33:55,640</code>
+Exakt. Du ska ha mycket på olika platser.</p>
+<p><code>947 00:33:55,920 --&gt; 00:33:56,240</code>
+Exakt.</p>
+<p><code>948 00:33:56,440 --&gt; 00:33:58,340</code>
+Och sen kom kapitalism i kapte</p>
+<p><code>949 00:33:58,340 --&gt; 00:33:59,320</code>
+och sen så bara&hellip;</p>
+<p><code>950 00:33:59,320 --&gt; 00:34:00,700</code>
+Nej, men fan. Vi skiter i det, va?</p>
+<p><code>951 00:34:00,840 --&gt; 00:34:01,320</code>
+Ja, det gör vi.</p>
+<p><code>952 00:34:01,380 --&gt; 00:34:01,900</code>
+Som vanligt.</p>
+<p><code>953 00:34:02,340 --&gt; 00:34:03,180</code>
+Villigare att låta av.</p>
+<p><code>954 00:34:03,180 --&gt; 00:34:05,000</code>
+Nej, men decentralisering och så.</p>
+<p><code>955 00:34:05,280 --&gt; 00:34:06,600</code>
+Vi kan ju prata om det här i all ära</p>
+<p><code>956 00:34:06,600 --&gt; 00:34:09,220</code>
+men vi bär grejen kommer ju alltid att vara</p>
+<p><code>957 00:34:09,220 --&gt; 00:34:10,540</code>
+någon form av kabel och sådär.</p>
+<p><code>958 00:34:10,940 --&gt; 00:34:12,440</code>
+Och det är klart att vi har ju en mycket bättre</p>
+<p><code>959 00:34:12,440 --&gt; 00:34:13,820</code>
+peering än vad vi hade förr i tiden.</p>
+<p><code>960 00:34:14,140 --&gt; 00:34:16,320</code>
+Så just resiliens i vår infrastruktur</p>
+<p><code>961 00:34:16,320 --&gt; 00:34:16,940</code>
+är ju kanon.</p>
+<p><code>962 00:34:16,940 --&gt; 00:34:18,200</code>
+Även när vi tappar en massa ankare</p>
+<p><code>963 00:34:18,200 --&gt; 00:34:19,140</code>
+runt om i hela Norden</p>
+<p><code>964 00:34:19,140 --&gt; 00:34:20,040</code>
+och klipper kablar</p>
+<p><code>965 00:34:20,040 --&gt; 00:34:21,380</code>
+så funkar ju det ganska bra.</p>
+<p><code>966 00:34:21,520 --&gt; 00:34:22,200</code>
+Eller ja, det är ju en olycka.</p>
+<p><code>967 00:34:22,560 --&gt; 00:34:23,440</code>
+Vi klipper inte kablar.</p>
+<p><code>968 00:34:23,540 --&gt; 00:34:23,960</code>
+Det är en olycka.</p>
+<p><code>969 00:34:24,000 --&gt; 00:34:25,600</code>
+Nej, vi råkade ju för att inte två gånger.</p>
+<p><code>970 00:34:25,840 --&gt; 00:34:26,500</code>
+Nej, exakt.</p>
+<p><code>971 00:34:27,060 --&gt; 00:34:29,860</code>
+Men det finns ju andra decentraliseringskoncept.</p>
+<p><code>972 00:34:30,060 --&gt; 00:34:32,440</code>
+Jag vet att vi hade ju en snubbe från</p>
+<p><code>973 00:34:32,440 --&gt; 00:34:35,000</code>
+CCC, va?</p>
+<p><code>974 00:34:35,940 --&gt; 00:34:37,020</code>
+På Secure Fest.</p>
+<p><code>975 00:34:38,200 --&gt; 00:34:39,360</code>
+Som pratade&hellip;</p>
+<p><code>976 00:34:39,360 --&gt; 00:34:39,940</code>
+Där är jag.</p>
+<p><code>977 00:34:40,120 --&gt; 00:34:40,900</code>
+Ja, men precis.</p>
+<p><code>978 00:34:41,060 --&gt; 00:34:41,820</code>
+Du brukar ju vara där.</p>
+<p><code>979 00:34:41,940 --&gt; 00:34:42,260</code>
+Du med.</p>
+<p><code>980 00:34:42,820 --&gt; 00:34:44,560</code>
+Eller Call to the Mad Cow kanske.</p>
+<p><code>981 00:34:44,680 --&gt; 00:34:45,400</code>
+Ja, ja, ja.</p>
+<p><code>982 00:34:45,400 --&gt; 00:34:45,820</code>
+Ja, precis.</p>
+<p><code>983 00:34:46,280 --&gt; 00:34:46,460</code>
+Nu.</p>
+<p><code>984 00:34:46,940 --&gt; 00:34:47,920</code>
+Som såg det.</p>
+<p><code>985 00:34:48,080 --&gt; 00:34:50,500</code>
+Som snackade om decentralisering</p>
+<p><code>986 00:34:50,500 --&gt; 00:34:53,660</code>
+på typ app-planet.</p>
+<p><code>987 00:34:53,960 --&gt; 00:34:55,080</code>
+Alltså du&hellip;</p>
+<p><code>988 00:34:55,080 --&gt; 00:34:56,960</code>
+Varenda enhet är</p>
+<p><code>989 00:34:56,960 --&gt; 00:34:58,960</code>
+din egen decentraliserade server.</p>
+<p><code>990 00:34:59,580 --&gt; 00:35:00,420</code>
+Den typen.</p>
+<p><code>991 00:35:00,580 --&gt; 00:35:02,280</code>
+Men det är ju mer utopiskt tänkande.</p>
+<p><code>992 00:35:02,280 --&gt; 00:35:04,520</code>
+Ja, men jag tänker tillbaka på ett uppdrag</p>
+<p><code>993 00:35:04,520 --&gt; 00:35:05,620</code>
+som vi hade för länge sedan</p>
+<p><code>994 00:35:05,620 --&gt; 00:35:06,880</code>
+när jag var persåd.</p>
+<p><code>995 00:35:07,420 --&gt; 00:35:09,100</code>
+Jag kommer inte säga några detaljer</p>
+<p><code>996 00:35:09,100 --&gt; 00:35:10,500</code>
+mer än vad det var tänkt då.</p>
+<p><code>997 00:35:10,560 --&gt; 00:35:12,480</code>
+Det är ju liksom att bygga&hellip;</p>
+<p><code>998 00:35:12,480 --&gt; 00:35:13,800</code>
+I det här fallet skulle man bygga ett CDN</p>
+<p><code>999 00:35:13,800 --&gt; 00:35:15,320</code>
+för ett fragmenterat internet.</p>
+<p><code>1000 00:35:15,320 --&gt; 00:35:15,720</code>
+Precis.</p>
+<p><code>1001 00:35:16,060 --&gt; 00:35:16,320</code>
+Som är nations&hellip;</p>
+<p><code>1002 00:35:16,940 --&gt; 00:35:17,900</code>
+Drivet egentligen.</p>
+<p><code>1003 00:35:18,000 --&gt; 00:35:19,440</code>
+Vilken jävla smart idé egentligen.</p>
+<p><code>1004 00:35:20,000 --&gt; 00:35:21,060</code>
+Just för till exempel&hellip;</p>
+<p><code>1005 00:35:21,060 --&gt; 00:35:22,220</code>
+Det går ju inte att köra allt liksom.</p>
+<p><code>1006 00:35:22,320 --&gt; 00:35:23,400</code>
+Men du skulle ju kunna köra</p>
+<p><code>1007 00:35:23,400 --&gt; 00:35:25,500</code>
+krisberedskapsinformation.</p>
+<p><code>1008 00:35:25,880 --&gt; 00:35:27,100</code>
+Du skulle kunna göra några sådana grejer</p>
+<p><code>1009 00:35:27,100 --&gt; 00:35:30,280</code>
+utan att vara beroende av internet</p>
+<p><code>1010 00:35:30,280 --&gt; 00:35:32,120</code>
+så som vi känner till internet idag.</p>
+<p><code>1011 00:35:32,480 --&gt; 00:35:34,320</code>
+Och den möjligheten finns ju faktiskt</p>
+<p><code>1012 00:35:34,320 --&gt; 00:35:35,560</code>
+att göra på operatörnivå liksom.</p>
+<p><code>1013 00:35:36,800 --&gt; 00:35:39,660</code>
+Så det är ju inte så att det är omöjligt.</p>
+<p><code>1014 00:35:39,800 --&gt; 00:35:40,880</code>
+Sen är det bara det att man vill&hellip;</p>
+<p><code>1015 00:35:40,880 --&gt; 00:35:42,460</code>
+Man ska ju då&hellip;</p>
+<p><code>1016 00:35:42,460 --&gt; 00:35:42,960</code>
+Man ska ju&hellip;</p>
+<p><code>1017 00:35:42,960 --&gt; 00:35:44,040</code>
+Som du är inne på lite, Rickard.</p>
+<p><code>1018 00:35:44,040 --&gt; 00:35:46,260</code>
+Man måste identifiera att det är en risk.</p>
+<p><code>1019 00:35:46,260 --&gt; 00:35:48,200</code>
+Och att den risken är värd att ta på allvar.</p>
+<p><code>1020 00:35:48,280 --&gt; 00:35:48,900</code>
+Och du har ju fortfarande infrastruktur.</p>
+<p><code>1021 00:35:48,900 --&gt; 00:35:49,780</code>
+Och betala för.</p>
+<p><code>1022 00:35:49,980 --&gt; 00:35:50,560</code>
+Och exakt.</p>
+<p><code>1023 00:35:50,640 --&gt; 00:35:51,000</code>
+Precis.</p>
+<p><code>1024 00:35:51,220 --&gt; 00:35:52,320</code>
+För det är det det kommer ner till.</p>
+<p><code>1025 00:35:52,680 --&gt; 00:35:55,200</code>
+Du kommer ju behöva investera ganska mycket pengar</p>
+<p><code>1026 00:35:55,200 --&gt; 00:35:57,420</code>
+i någonting som du förhoppningsvis</p>
+<p><code>1027 00:35:57,420 --&gt; 00:35:58,520</code>
+aldrig kommer att använda.</p>
+<p><code>1028 00:35:58,620 --&gt; 00:36:01,080</code>
+Och då har vi ju egentligen bara återgått</p>
+<p><code>1029 00:36:01,080 --&gt; 00:36:03,240</code>
+till där vi var back in the 90s.</p>
+<p><code>1030 00:36:03,580 --&gt; 00:36:04,020</code>
+Exakt.</p>
+<p><code>1031 00:36:04,060 --&gt; 00:36:05,900</code>
+Då ska vi alla ha egna datacenter igen då.</p>
+<p><code>1032 00:36:06,080 --&gt; 00:36:07,520</code>
+Och det är ju lite av en trend nu också.</p>
+<p><code>1033 00:36:07,800 --&gt; 00:36:10,520</code>
+Eller åtminstone hos någon annan</p>
+<p><code>1034 00:36:10,520 --&gt; 00:36:12,900</code>
+som inte förlitar sig på samma infrastruktur som du.</p>
+<p><code>1035 00:36:12,900 --&gt; 00:36:15,900</code>
+Men det som är svårast att lösa det är ju</p>
+<p><code>1036 00:36:15,900 --&gt; 00:36:18,000</code>
+om du har väldigt stora datamängder</p>
+<p><code>1037 00:36:18,000 --&gt; 00:36:20,560</code>
+som inte är lätt att hålla på att replikera</p>
+<p><code>1038 00:36:20,560 --&gt; 00:36:22,280</code>
+fram och tillbaka mellan olika ställen.</p>
+<p><code>1039 00:36:22,400 --&gt; 00:36:22,840</code>
+Och just&hellip;</p>
+<p><code>1040 00:36:22,840 --&gt; 00:36:25,180</code>
+Och även riktigt stora kommunikationsnät.</p>
+<p><code>1041 00:36:25,280 --&gt; 00:36:26,720</code>
+Om jag tar Signal och de motsvarande</p>
+<p><code>1042 00:36:26,720 --&gt; 00:36:28,140</code>
+sådana kommunikationsplattformar.</p>
+<p><code>1043 00:36:28,200 --&gt; 00:36:29,400</code>
+Det blir ju svårare.</p>
+<p><code>1044 00:36:30,020 --&gt; 00:36:32,180</code>
+Alltså för kommunikationen är ju själva grejen.</p>
+<p><code>1045 00:36:32,360 --&gt; 00:36:33,280</code>
+De måste finnas privat.</p>
+<p><code>1046 00:36:33,280 --&gt; 00:36:34,180</code>
+Alltså jag blir&hellip;</p>
+<p><code>1047 00:36:34,180 --&gt; 00:36:37,100</code>
+Det skulle vara så jävla fett att se såhär</p>
+<p><code>1048 00:36:37,100 --&gt; 00:36:39,840</code>
+hur många medlemmar dras iväg</p>
+<p><code>1049 00:36:39,840 --&gt; 00:36:40,900</code>
+över slack på en dag egentligen.</p>
+<p><code>1050 00:36:41,840 --&gt; 00:36:42,760</code>
+Du vet, jag tror att det är såhär</p>
+<p><code>1051 00:36:42,760 --&gt; 00:36:45,080</code>
+det är nog sinnessjuka som är</p>
+<p><code>1052 00:36:45,080 --&gt; 00:36:46,160</code>
+som sticker iväg.</p>
+<p><code>1053 00:36:46,260 --&gt; 00:36:46,960</code>
+Ja, det lär det ju vara.</p>
+<p><code>1054 00:36:47,080 --&gt; 00:36:49,420</code>
+Jag bara tittar på våra slack-kanaler</p>
+<p><code>1055 00:36:49,420 --&gt; 00:36:51,040</code>
+om vi tänker på Säkerhetspodcasten</p>
+<p><code>1056 00:36:51,040 --&gt; 00:36:52,780</code>
+och bolaget Slack liksom</p>
+<p><code>1057 00:36:52,780 --&gt; 00:36:54,040</code>
+så är det ju&hellip;</p>
+<p><code>1058 00:36:54,040 --&gt; 00:36:56,080</code>
+Det rasslar ju ibland hela tiden.</p>
+<p><code>1059 00:36:56,340 --&gt; 00:36:57,860</code>
+Jag har en kompis som satte upp det här</p>
+<p><code>1060 00:36:57,860 --&gt; 00:36:59,620</code>
+som motifieringstjänst</p>
+<p><code>1061 00:36:59,620 --&gt; 00:37:01,000</code>
+för sin bug bounty-automation.</p>
+<p><code>1062 00:37:01,480 --&gt; 00:37:02,400</code>
+Du hörde faktiskt slack av</p>
+<p><code>1063 00:37:02,400 --&gt; 00:37:02,860</code>
+så jag sa det.</p>
+<p><code>1064 00:37:02,920 --&gt; 00:37:04,020</code>
+Det här är fan ingen&hellip;</p>
+<p><code>1065 00:37:04,020 --&gt; 00:37:05,720</code>
+Det här är ingen pager-tjänst.</p>
+<p><code>1066 00:37:05,760 --&gt; 00:37:06,320</code>
+Du får sluta.</p>
+<p><code>1067 00:37:06,680 --&gt; 00:37:07,320</code>
+Och då undrar man</p>
+<p><code>1068 00:37:07,320 --&gt; 00:37:09,480</code>
+hur jävla många medlemmar det var.</p>
+<p><code>1069 00:37:10,200 --&gt; 00:37:11,480</code>
+Förmodligen rätt många ändå.</p>
+<p><code>1070 00:37:12,500 --&gt; 00:37:13,940</code>
+Och då tänker man på det stora hela</p>
+<p><code>1071 00:37:13,940 --&gt; 00:37:14,400</code>
+måste det vara&hellip;</p>
+<p><code>1072 00:37:15,080 --&gt; 00:37:16,060</code>
+Sjukt mycket.</p>
+<p><code>1073 00:37:16,660 --&gt; 00:37:17,880</code>
+Och det är bara en tjänst.</p>
+<p><code>1074 00:37:18,280 --&gt; 00:37:18,740</code>
+Ja, exakt.</p>
+<p><code>1075 00:37:19,920 --&gt; 00:37:21,760</code>
+Tänk dig alla andra medlemmar-tjänster</p>
+<p><code>1076 00:37:21,760 --&gt; 00:37:23,780</code>
+för tjänster som egentligen inte är medlemmar-tjänster</p>
+<p><code>1077 00:37:23,780 --&gt; 00:37:24,500</code>
+typ Facebook.</p>
+<p><code>1078 00:37:24,820 --&gt; 00:37:25,240</code>
+Ja, exakt.</p>
+<p><code>1079 00:37:26,660 --&gt; 00:37:29,020</code>
+Instagram eller Snap snackade vi om.</p>
+<p><code>1080 00:37:29,800 --&gt; 00:37:30,940</code>
+Ja, det är sjukt.</p>
+<p><code>1081 00:37:31,260 --&gt; 00:37:34,480</code>
+Men jag tycker att det är bra</p>
+<p><code>1082 00:37:34,480 --&gt; 00:37:35,140</code>
+att sånt här händer</p>
+<p><code>1083 00:37:35,140 --&gt; 00:37:36,180</code>
+för då pratar vi om det</p>
+<p><code>1084 00:37:36,180 --&gt; 00:37:38,020</code>
+och det gör också att vi kanske</p>
+<p><code>1085 00:37:38,020 --&gt; 00:37:39,760</code>
+funderar lite över</p>
+<p><code>1086 00:37:39,760 --&gt; 00:37:42,080</code>
+vilka strategiska mål</p>
+<p><code>1087 00:37:42,080 --&gt; 00:37:43,060</code>
+eller hur vi borde göra.</p>
+<p><code>1088 00:37:43,060 --&gt; 00:37:44,060</code>
+Men det är&hellip;</p>
+<p><code>1089 00:37:45,080 --&gt; 00:37:46,680</code>
+En sak som jag vill flika in här</p>
+<p><code>1090 00:37:46,680 --&gt; 00:37:49,000</code>
+alltså, ja, det är ett problem</p>
+<p><code>1091 00:37:49,000 --&gt; 00:37:50,200</code>
+att det är</p>
+<p><code>1092 00:37:50,200 --&gt; 00:37:52,360</code>
+ett oligopol</p>
+<p><code>1093 00:37:52,360 --&gt; 00:37:53,760</code>
+men</p>
+<p><code>1094 00:37:53,760 --&gt; 00:37:56,640</code>
+det hjälper vi ju inte.</p>
+<p><code>1095 00:37:56,840 --&gt; 00:37:57,880</code>
+Alltså, det blir inte&hellip;</p>
+<p><code>1096 00:37:57,880 --&gt; 00:37:59,740</code>
+Problemet försvinner inte om vi&hellip;</p>
+<p><code>1097 00:37:59,740 --&gt; 00:38:02,100</code>
+Ja, men jag kör i ett europeiskt moln.</p>
+<p><code>1098 00:38:02,160 --&gt; 00:38:02,360</code>
+Nej.</p>
+<p><code>1099 00:38:03,220 --&gt; 00:38:04,940</code>
+För du är fortfarande beroende</p>
+<p><code>1100 00:38:04,940 --&gt; 00:38:06,300</code>
+av någon annans infrastruktur.</p>
+<p><code>1101 00:38:07,180 --&gt; 00:38:08,400</code>
+Det kan lösa viss problematik.</p>
+<p><code>1102 00:38:08,460 --&gt; 00:38:09,820</code>
+Ja, de kan få&hellip;</p>
+<p><code>1103 00:38:09,820 --&gt; 00:38:12,060</code>
+Vi tar bort Trump-hotet liksom.</p>
+<p><code>1104 00:38:12,060 --&gt; 00:38:14,340</code>
+Men det är en riskfaktor.</p>
+<p><code>1105 00:38:14,520 --&gt; 00:38:15,060</code>
+Men du har kvar&hellip;</p>
+<p><code>1106 00:38:15,080 --&gt; 00:38:17,100</code>
+Okej, men om jag är chefen nu</p>
+<p><code>1107 00:38:17,100 --&gt; 00:38:18,100</code>
+jag vill ha en enkla lösning.</p>
+<p><code>1108 00:38:18,240 --&gt; 00:38:19,540</code>
+Vad är den enkla lösningen?</p>
+<p><code>1109 00:38:20,100 --&gt; 00:38:20,300</code>
+Nej.</p>
+<p><code>1110 00:38:20,960 --&gt; 00:38:22,360</code>
+Du kan använda min tjänst här.</p>
+<p><code>1111 00:38:22,420 --&gt; 00:38:22,960</code>
+Du får allt.</p>
+<p><code>1112 00:38:23,080 --&gt; 00:38:23,760</code>
+Det kostar bara mer.</p>
+<p><code>1113 00:38:24,340 --&gt; 00:38:25,300</code>
+Hur löser du det då?</p>
+<p><code>1114 00:38:25,380 --&gt; 00:38:26,000</code>
+Jag har bara löst det.</p>
+<p><code>1115 00:38:26,020 --&gt; 00:38:27,220</code>
+Jag tror det är ett skitsvårt problem</p>
+<p><code>1116 00:38:27,220 --&gt; 00:38:28,740</code>
+att lösa för att vi har kommit så långt.</p>
+<p><code>1117 00:38:28,840 --&gt; 00:38:30,460</code>
+Jag tror framförallt att det är</p>
+<p><code>1118 00:38:30,460 --&gt; 00:38:31,180</code>
+ekonomiskt oförsvarbart att bygga.</p>
+<p><code>1119 00:38:31,220 --&gt; 00:38:32,700</code>
+Det kommer vara unika lösningar</p>
+<p><code>1120 00:38:32,700 --&gt; 00:38:34,080</code>
+beroende på din affärsmodell</p>
+<p><code>1121 00:38:34,080 --&gt; 00:38:34,900</code>
+och dina risker</p>
+<p><code>1122 00:38:34,900 --&gt; 00:38:36,480</code>
+och kraven på din verksamhet.</p>
+<p><code>1123 00:38:36,540 --&gt; 00:38:37,440</code>
+Och också att man&hellip;</p>
+<p><code>1124 00:38:37,440 --&gt; 00:38:38,800</code>
+Jag gillar ju decentraliseringsidé ändå.</p>
+<p><code>1125 00:38:39,020 --&gt; 00:38:39,940</code>
+Men kontinuitetsplanering</p>
+<p><code>1126 00:38:39,940 --&gt; 00:38:41,540</code>
+som Rickard är inne på</p>
+<p><code>1127 00:38:41,540 --&gt; 00:38:44,520</code>
+om vi nu ska ge råd till SISO</p>
+<p><code>1128 00:38:44,520 --&gt; 00:38:46,300</code>
+i ett medelstort svenskt bolag.</p>
+<p><code>1129 00:38:46,420 --&gt; 00:38:47,180</code>
+Gör det på riktigt.</p>
+<p><code>1130 00:38:47,200 --&gt; 00:38:48,660</code>
+Det är väl det man får säga då.</p>
+<p><code>1131 00:38:49,060 --&gt; 00:38:51,300</code>
+Ha en riktig fallback-planering</p>
+<p><code>1132 00:38:51,300 --&gt; 00:38:53,160</code>
+som är beprövad.</p>
+<p><code>1133 00:38:53,320 --&gt; 00:38:55,440</code>
+Och också acceptera att</p>
+<p><code>1134 00:38:55,440 --&gt; 00:38:57,160</code>
+i en kontinuitetsplan</p>
+<p><code>1135 00:38:57,160 --&gt; 00:38:59,400</code>
+kanske du inte har</p>
+<p><code>1136 00:38:59,400 --&gt; 00:39:01,400</code>
+samma leveransförmåga</p>
+<p><code>1137 00:39:01,400 --&gt; 00:39:02,980</code>
+som du har när allting funkar.</p>
+<p><code>1138 00:39:02,980 --&gt; 00:39:03,180</code>
+Nej, jag tänkte samma sak.</p>
+<p><code>1139 00:39:03,360 --&gt; 00:39:04,360</code>
+Nej, men precis.</p>
+<p><code>1140 00:39:04,500 --&gt; 00:39:06,060</code>
+Du accepterar att du går ner.</p>
+<p><code>1141 00:39:06,220 --&gt; 00:39:07,920</code>
+Tittar du på ett vattenverk</p>
+<p><code>1142 00:39:07,920 --&gt; 00:39:10,220</code>
+så har de nödvattenplaner för</p>
+<p><code>1143 00:39:10,220 --&gt; 00:39:11,500</code>
+okej, shit, vårt distribution</p>
+<p><code>1144 00:39:11,500 --&gt; 00:39:12,660</code>
+nät går åt fandes.</p>
+<p><code>1145 00:39:12,800 --&gt; 00:39:14,320</code>
+Vart ställer vi ut tankbilar?</p>
+<p><code>1146 00:39:14,640 --&gt; 00:39:16,860</code>
+Det är den mentaliteten man ska ha.</p>
+<p><code>1147 00:39:16,980 --&gt; 00:39:20,320</code>
+Men hon pratade ju ganska bra</p>
+<p><code>1148 00:39:20,320 --&gt; 00:39:21,300</code>
+hon från</p>
+<p><code>1149 00:39:21,300 --&gt; 00:39:23,780</code>
+från det här</p>
+<p><code>1150 00:39:23,780 --&gt; 00:39:26,780</code>
+sportprydelsbolaget</p>
+<p><code>1151 00:39:26,780 --&gt; 00:39:26,980</code>
+som var på&hellip;</p>
+<p><code>1152 00:39:26,980 --&gt; 00:39:29,120</code>
+Du tänker dem som hade Tieto</p>
+<p><code>1153 00:39:29,120 --&gt; 00:39:30,520</code>
+som leveransförmedlare.</p>
+<p><code>1154 00:39:31,520 --&gt; 00:39:33,860</code>
+Och hon berättade hur bra</p>
+<p><code>1155 00:39:33,860 --&gt; 00:39:35,940</code>
+hur bra de hanterade det för stadium.</p>
+<p><code>1156 00:39:36,200 --&gt; 00:39:38,100</code>
+Men du vill ju helst</p>
+<p><code>1157 00:39:38,100 --&gt; 00:39:39,180</code>
+du vill ju helst</p>
+<p><code>1158 00:39:39,180 --&gt; 00:39:41,040</code>
+att din centrala verksamhet</p>
+<p><code>1159 00:39:41,040 --&gt; 00:39:41,700</code>
+kan funka.</p>
+<p><code>1160 00:39:42,140 --&gt; 00:39:43,160</code>
+Den har verkligen skitit sig.</p>
+<p><code>1161 00:39:43,520 --&gt; 00:39:45,240</code>
+Du vill ju som minimum</p>
+<p><code>1162 00:39:45,240 --&gt; 00:39:47,140</code>
+att det ska kunna finnas en sida</p>
+<p><code>1163 00:39:47,140 --&gt; 00:39:47,660</code>
+där man säger</p>
+<p><code>1164 00:39:47,660 --&gt; 00:39:50,060</code>
+hej, tyvärr, vi har lite driftstörningar</p>
+<p><code>1165 00:39:50,060 --&gt; 00:39:51,520</code>
+men vi kommer ge dig</p>
+<p><code>1166 00:39:51,520 --&gt; 00:39:53,420</code>
+en bra känsla senare.</p>
+<p><code>1167 00:39:54,060 --&gt; 00:39:55,260</code>
+Just nu är det lite svårt</p>
+<p><code>1168 00:39:55,260 --&gt; 00:39:56,500</code>
+att nå oss på grund av de här.</p>
+<p><code>1169 00:39:56,520 --&gt; 00:39:58,100</code>
+Inte bara en grå browser default</p>
+<p><code>1170 00:39:58,100 --&gt; 00:39:59,780</code>
+gå inte och nå just nu</p>
+<p><code>1171 00:39:59,780 --&gt; 00:40:00,640</code>
+har det gött, hej.</p>
+<p><code>1172 00:40:01,300 --&gt; 00:40:03,100</code>
+För vad jag upplevde när</p>
+<p><code>1173 00:40:03,100 --&gt; 00:40:05,700</code>
+Ingen 404-dinosaurie.</p>
+<p><code>1174 00:40:06,180 --&gt; 00:40:06,660</code>
+Nej.</p>
+<p><code>1175 00:40:07,140 --&gt; 00:40:07,620</code>
+Vad sa du, Pet?</p>
+<p><code>1176 00:40:07,920 --&gt; 00:40:09,720</code>
+Jag har ju varit med om en helbunta</p>
+<p><code>1177 00:40:09,720 --&gt; 00:40:10,340</code>
+där det står</p>
+<p><code>1178 00:40:10,340 --&gt; 00:40:13,320</code>
+hej, vi har till Cloudflare</p>
+<p><code>1179 00:40:13,320 --&gt; 00:40:15,320</code>
+och det här händelsesystemet</p>
+<p><code>1180 00:40:15,320 --&gt; 00:40:16,200</code>
+är inte nåbart.</p>
+<p><code>1181 00:40:17,940 --&gt; 00:40:19,380</code>
+Grå sida där det står</p>
+<p><code>1182 00:40:19,380 --&gt; 00:40:21,100</code>
+too many requests</p>
+<p><code>1183 00:40:21,100 --&gt; 00:40:22,700</code>
+och en bunt, han har sån här.</p>
+<p><code>1184 00:40:23,880 --&gt; 00:40:25,500</code>
+Verify your human brukar jag också få.</p>
+<p><code>1185 00:40:26,300 --&gt; 00:40:27,700</code>
+Ja, det får jag också</p>
+<p><code>1186 00:40:27,700 --&gt; 00:40:28,940</code>
+ganska ofta, men det är väl</p>
+<p><code>1187 00:40:28,940 --&gt; 00:40:29,880</code>
+Googles fält, tror jag.</p>
+<p><code>1188 00:40:30,740 --&gt; 00:40:31,640</code>
+Jag håller med dig.</p>
+<p><code>1189 00:40:32,480 --&gt; 00:40:35,280</code>
+Att man kan ha någon sån</p>
+<p><code>1190 00:40:35,280 --&gt; 00:40:37,600</code>
+fallback-plan som inte</p>
+<p><code>1191 00:40:37,600 --&gt; 00:40:38,260</code>
+alltid är premium.</p>
+<p><code>1192 00:40:38,720 --&gt; 00:40:39,540</code>
+Minimum viable.</p>
+<p><code>1193 00:40:40,340 --&gt; 00:40:42,500</code>
+Att det kanske är så,</p>
+<p><code>1194 00:40:42,560 --&gt; 00:40:44,640</code>
+för det finns ju konsekvensen</p>
+<p><code>1195 00:40:44,640 --&gt; 00:40:47,080</code>
+att vi bryter SLAT</p>
+<p><code>1196 00:40:47,080 --&gt; 00:40:48,240</code>
+det är ju en typ av konsekvens.</p>
+<p><code>1197 00:40:49,100 --&gt; 00:40:50,900</code>
+En annan typ av konsekvens är att vi går i konkurs.</p>
+<p><code>1198 00:40:51,480 --&gt; 00:40:52,500</code>
+Och jag menar, det finns ganska många steg</p>
+<p><code>1199 00:40:52,500 --&gt; 00:40:53,700</code>
+däremellan, så att</p>
+<p><code>1200 00:40:53,700 --&gt; 00:40:55,400</code>
+låt oss säga att man har</p>
+<p><code>1201 00:40:55,400 --&gt; 00:40:57,680</code>
+16 timmars nedtid kommer vi förmodligen inte göra</p>
+<p><code>1202 00:40:57,680 --&gt; 00:40:58,540</code>
+att någon går i konkurs.</p>
+<p><code>1203 00:40:58,660 --&gt; 00:41:00,820</code>
+Men ett ransomware-case</p>
+<p><code>1204 00:41:00,820 --&gt; 00:41:02,160</code>
+kan ju mycket väl vara så att nu</p>
+<p><code>1205 00:41:02,160 --&gt; 00:41:03,220</code>
+vi har inte business längre.</p>
+<p><code>1206 00:41:03,320 --&gt; 00:41:04,300</code>
+Om man inte har bra</p>
+<p><code>1207 00:41:04,300 --&gt; 00:41:05,960</code>
+business-continuity-plan.</p>
+<p><code>1208 00:41:06,400 --&gt; 00:41:08,420</code>
+Och då är det caset så är det ju liksom</p>
+<p><code>1209 00:41:08,420 --&gt; 00:41:10,300</code>
+ta Jaguar Land Rover,</p>
+<p><code>1210 00:41:10,340 --&gt; 00:41:12,600</code>
+vad stängde de fabrikerna i två månader</p>
+<p><code>1211 00:41:12,600 --&gt; 00:41:12,980</code>
+eller någonting?</p>
+<p><code>1212 00:41:14,020 --&gt; 00:41:15,280</code>
+Men nu är de tillbaks.</p>
+<p><code>1213 00:41:15,680 --&gt; 00:41:17,900</code>
+Det är ju allt annat än optimalt. De har ju förlorat</p>
+<p><code>1214 00:41:17,900 --&gt; 00:41:19,580</code>
+supermycket pengar, men de lever.</p>
+<p><code>1215 00:41:20,940 --&gt; 00:41:22,380</code>
+Jag menar, hade de haft noll</p>
+<p><code>1216 00:41:22,380 --&gt; 00:41:23,980</code>
+backupper och de har drabbats äldre,</p>
+<p><code>1217 00:41:24,080 --&gt; 00:41:25,880</code>
+då är de ju inte tillbaks. Då finns det ju inte.</p>
+<p><code>1218 00:41:25,940 --&gt; 00:41:28,280</code>
+Ritningen är borta, systemet funkar, fabriken är död.</p>
+<p><code>1219 00:41:28,300 --&gt; 00:41:28,920</code>
+Har du gjort hej?</p>
+<p><code>1220 00:41:29,600 --&gt; 00:41:32,340</code>
+Så jag menar, det finns ju steg i den här.</p>
+<p><code>1221 00:41:33,320 --&gt; 00:41:34,440</code>
+Målet behöver inte vara</p>
+<p><code>1222 00:41:34,440 --&gt; 00:41:35,980</code>
+att 16 timmars nedtid</p>
+<p><code>1223 00:41:35,980 --&gt; 00:41:36,960</code>
+inte ska märkas.</p>
+<p><code>1224 00:41:37,460 --&gt; 00:41:39,880</code>
+Utan vi ska överleva, kan målet vara.</p>
+<p><code>1225 00:41:40,340 --&gt; 00:41:42,420</code>
+Har du fysiska prylar</p>
+<p><code>1226 00:41:42,420 --&gt; 00:41:43,300</code>
+så ska ju de</p>
+<p><code>1227 00:41:43,300 --&gt; 00:41:46,480</code>
+börja tjuta och larma om att</p>
+<p><code>1228 00:41:46,480 --&gt; 00:41:48,140</code>
+de har</p>
+<p><code>1229 00:41:48,140 --&gt; 00:41:50,340</code>
+tappat kontakten</p>
+<p><code>1230 00:41:51,520 --&gt; 00:41:52,060</code>
+med modem</p>
+<p><code>1231 00:41:52,060 --&gt; 00:41:54,460</code>
+och inte i något bra steg</p>
+<p><code>1232 00:41:54,460 --&gt; 00:41:55,700</code>
+längre. Och sen så ska</p>
+<p><code>1233 00:41:55,700 --&gt; 00:41:58,200</code>
+allting där cloudet ska</p>
+<p><code>1234 00:41:58,200 --&gt; 00:42:00,580</code>
+säga till dem vad de ska göra, det ska ju återgå till</p>
+<p><code>1235 00:42:00,580 --&gt; 00:42:02,140</code>
+ett säkert</p>
+<p><code>1236 00:42:02,140 --&gt; 00:42:03,120</code>
+default, liksom.</p>
+<p><code>1237 00:42:04,040 --&gt; 00:42:05,400</code>
+För nu finns inget att se till.</p>
+<p><code>1238 00:42:05,840 --&gt; 00:42:08,320</code>
+I flygplanen har du ju den här instruktionen</p>
+<p><code>1239 00:42:08,320 --&gt; 00:42:10,320</code>
+när någonting</p>
+<p><code>1240 00:42:10,340 --&gt; 00:42:12,400</code>
+är konstigt. Så ska du som</p>
+<p><code>1241 00:42:12,400 --&gt; 00:42:14,100</code>
+pilot sätta flygplanet i</p>
+<p><code>1242 00:42:14,100 --&gt; 00:42:15,120</code>
+Nosedive.</p>
+<p><code>1243 00:42:15,840 --&gt; 00:42:18,360</code>
+Nej, nej, nej. Du ska sätta den i, du ska</p>
+<p><code>1244 00:42:18,360 --&gt; 00:42:20,460</code>
+sätta, gasen ska vara på</p>
+<p><code>1245 00:42:20,460 --&gt; 00:42:21,840</code>
+bra standardläge.</p>
+<p><code>1246 00:42:22,220 --&gt; 00:42:23,880</code>
+Du ska säkra att vingarna är level.</p>
+<p><code>1247 00:42:24,660 --&gt; 00:42:26,240</code>
+Och först när liksom allting</p>
+<p><code>1248 00:42:26,240 --&gt; 00:42:28,340</code>
+är i ett okej state så bör du</p>
+<p><code>1249 00:42:28,340 --&gt; 00:42:29,780</code>
+felsöka till exempel om du</p>
+<p><code>1250 00:42:29,780 --&gt; 00:42:32,560</code>
+tror att hastighetsindikatorerna</p>
+<p><code>1251 00:42:32,560 --&gt; 00:42:34,040</code>
+är så här. Alltså</p>
+<p><code>1252 00:42:34,040 --&gt; 00:42:36,100</code>
+du ska återgå till</p>
+<p><code>1253 00:42:36,100 --&gt; 00:42:37,660</code>
+vi dör inte</p>
+<p><code>1254 00:42:37,660 --&gt; 00:42:40,300</code>
+om vi börjar felsöka.</p>
+<p><code>1255 00:42:40,340 --&gt; 00:42:42,000</code>
+Och lite</p>
+<p><code>1256 00:42:42,000 --&gt; 00:42:43,380</code>
+det måste man ju ha, liksom man</p>
+<p><code>1257 00:42:43,380 --&gt; 00:42:46,440</code>
+kan funka lite grann</p>
+<p><code>1258 00:42:46,440 --&gt; 00:42:48,400</code>
+i vart fall även när man är i ett dåligt</p>
+<p><code>1259 00:42:48,400 --&gt; 00:42:50,240</code>
+state i en ideal värld.</p>
+<p><code>1260 00:42:50,360 --&gt; 00:42:52,380</code>
+Och inom avionics så har</p>
+<p><code>1261 00:42:52,380 --&gt; 00:42:53,980</code>
+man alltid tre instrument.</p>
+<p><code>1262 00:42:54,540 --&gt; 00:42:56,560</code>
+För om du har två instrument</p>
+<p><code>1263 00:42:56,560 --&gt; 00:42:58,600</code>
+och de visar olika, vilket visar rätt.</p>
+<p><code>1264 00:42:59,480 --&gt; 00:43:00,000</code>
+Just det, precis.</p>
+<p><code>1265 00:43:00,700 --&gt; 00:43:02,240</code>
+Det är, du har alltid exakt</p>
+<p><code>1266 00:43:02,240 --&gt; 00:43:03,000</code>
+tre kompasser.</p>
+<p><code>1267 00:43:04,300 --&gt; 00:43:05,280</code>
+Minority report.</p>
+<p><code>1268 00:43:05,900 --&gt; 00:43:06,900</code>
+Ja, just det.</p>
+<p><code>1269 00:43:06,900 --&gt; 00:43:08,660</code>
+The minority report.</p>
+<p><code>1270 00:43:10,340 --&gt; 00:43:12,180</code>
+Men i det fallet var det väl i och för sig bara en</p>
+<p><code>1271 00:43:12,180 --&gt; 00:43:12,940</code>
+som hade rätt ordentligt.</p>
+<p><code>1272 00:43:12,940 --&gt; 00:43:14,160</code>
+Ja, det var de andra som hade fel.</p>
+<p><code>1273 00:43:14,160 --&gt; 00:43:16,220</code>
+Men vad hette det?</p>
+<p><code>1274 00:43:16,640 --&gt; 00:43:18,560</code>
+Jag tänkte på det också, jag tror jag tog upp det</p>
+<p><code>1275 00:43:18,560 --&gt; 00:43:20,560</code>
+förut när vi snackade lite innan.</p>
+<p><code>1276 00:43:20,700 --&gt; 00:43:23,040</code>
+Nu när du kom in på det här med flygplatsanalogin</p>
+<p><code>1277 00:43:23,040 --&gt; 00:43:24,840</code>
+eller flygplansanalogin snarare.</p>
+<p><code>1278 00:43:26,580 --&gt; 00:43:27,020</code>
+Från</p>
+<p><code>1279 00:43:27,020 --&gt; 00:43:28,300</code>
+ett större</p>
+<p><code>1280 00:43:28,300 --&gt; 00:43:30,880</code>
+policy, lawmaking</p>
+<p><code>1281 00:43:30,880 --&gt; 00:43:32,800</code>
+perspektiv. Vi får väl nu se det här som</p>
+<p><code>1282 00:43:32,800 --&gt; 00:43:33,900</code>
+kritisk infrastruktur.</p>
+<p><code>1283 00:43:35,000 --&gt; 00:43:36,860</code>
+När ett sånt här haveri händer</p>
+<p><code>1284 00:43:36,860 --&gt; 00:43:38,740</code>
+så hade det ju varit trevligt om man kunde ha</p>
+<p><code>1285 00:43:38,740 --&gt; 00:43:40,200</code>
+krav på att det ska hanteras.</p>
+<p><code>1286 00:43:40,200 --&gt; 00:43:42,640</code>
+Just som ett haveri med en undersökning</p>
+<p><code>1287 00:43:42,640 --&gt; 00:43:44,500</code>
+och transparens.</p>
+<p><code>1288 00:43:44,620 --&gt; 00:43:46,080</code>
+Nu får man ju ändå ge</p>
+<p><code>1289 00:43:46,080 --&gt; 00:43:47,880</code>
+avgäst, jag läste deras</p>
+<p><code>1290 00:43:47,880 --&gt; 00:43:49,140</code>
+rapport här nu.</p>
+<p><code>1291 00:43:49,600 --&gt; 00:43:51,900</code>
+Vad jag kan se verkar grundligt genomförd</p>
+<p><code>1292 00:43:51,900 --&gt; 00:43:54,220</code>
+och tydlig och sådär. Sen har ju inte jag</p>
+<p><code>1293 00:43:54,220 --&gt; 00:43:56,240</code>
+verifierat det, för det har jag ingen möjlighet att göra.</p>
+<p><code>1294 00:43:56,820 --&gt; 00:43:57,960</code>
+De kan ju ljuga hur mycket de vill.</p>
+<p><code>1295 00:43:58,780 --&gt; 00:44:00,440</code>
+Men det hade ju på något sätt</p>
+<p><code>1296 00:44:00,440 --&gt; 00:44:01,980</code>
+varit skönt ifall vi nu förlitar oss</p>
+<p><code>1297 00:44:01,980 --&gt; 00:44:04,200</code>
+så himla mycket på de här sakerna på samma sätt som man gör</p>
+<p><code>1298 00:44:04,200 --&gt; 00:44:05,220</code>
+ifall du sitter i ett flygplan.</p>
+<p><code>1299 00:44:06,140 --&gt; 00:44:07,960</code>
+Att det fanns lite krav på</p>
+<p><code>1300 00:44:07,960 --&gt; 00:44:09,420</code>
+de sakerna.</p>
+<p><code>1301 00:44:10,200 --&gt; 00:44:11,180</code>
+Jag ser en</p>
+<p><code>1302 00:44:11,180 --&gt; 00:44:13,980</code>
+potentiell risk med det</p>
+<p><code>1303 00:44:13,980 --&gt; 00:44:15,740</code>
+att förlita oss på</p>
+<p><code>1304 00:44:15,740 --&gt; 00:44:18,400</code>
+att lagstiftarna ska komma in och göra</p>
+<p><code>1305 00:44:18,400 --&gt; 00:44:18,720</code>
+någonting.</p>
+<p><code>1306 00:44:21,040 --&gt; 00:44:22,080</code>
+Risken är att det där</p>
+<p><code>1307 00:44:22,080 --&gt; 00:44:24,280</code>
+eskalerar till en pissing contest mellan</p>
+<p><code>1308 00:44:24,280 --&gt; 00:44:25,440</code>
+USA och Europa.</p>
+<p><code>1309 00:44:26,880 --&gt; 00:44:28,160</code>
+Och att det bara leder till</p>
+<p><code>1310 00:44:28,160 --&gt; 00:44:29,660</code>
+nya</p>
+<p><code>1311 00:44:29,660 --&gt; 00:44:34,460</code>
+Kremsk GDPR debackel.</p>
+<p><code>1312 00:44:34,780 --&gt; 00:44:36,520</code>
+Ja, sådana risker finns ju.</p>
+<p><code>1313 00:44:36,700 --&gt; 00:44:38,520</code>
+Ja, nu har EU stiftat en lag</p>
+<p><code>1314 00:44:38,520 --&gt; 00:44:40,180</code>
+som säger, ja då stiftar USA</p>
+<p><code>1315 00:44:40,200 --&gt; 00:44:42,220</code>
+en lag som säger att vi kan skita i den lagen</p>
+<p><code>1316 00:44:42,220 --&gt; 00:44:43,880</code>
+för because of national security.</p>
+<p><code>1317 00:44:44,160 --&gt; 00:44:46,240</code>
+Och så fortsätter det att eskalera.</p>
+<p><code>1318 00:44:46,280 --&gt; 00:44:48,660</code>
+Vi kan ju inte lagstifta</p>
+<p><code>1319 00:44:48,660 --&gt; 00:44:50,540</code>
+bort att det är</p>
+<p><code>1320 00:44:50,540 --&gt; 00:44:51,620</code>
+strun på clouden.</p>
+<p><code>1321 00:44:51,620 --&gt; 00:44:54,080</code>
+Du kan ju inte lagstifta att ett flygplan</p>
+<p><code>1322 00:44:54,080 --&gt; 00:44:54,940</code>
+faller ur luften heller.</p>
+<p><code>1323 00:44:55,300 --&gt; 00:44:57,160</code>
+Nej, precis.</p>
+<p><code>1324 00:44:57,580 --&gt; 00:44:59,460</code>
+Det jag tänker är att man</p>
+<p><code>1325 00:44:59,460 --&gt; 00:45:02,640</code>
+bör uppmuntra</p>
+<p><code>1326 00:45:02,640 --&gt; 00:45:03,820</code>
+de stora</p>
+<p><code>1327 00:45:03,820 --&gt; 00:45:05,780</code>
+och även mindre</p>
+<p><code>1328 00:45:05,780 --&gt; 00:45:08,040</code>
+att faktiskt vara mer transparenta i sin</p>
+<p><code>1329 00:45:08,040 --&gt; 00:45:08,900</code>
+incidenthantering.</p>
+<p><code>1330 00:45:10,200 --&gt; 00:45:12,100</code>
+Men det är klart, det är väl dit</p>
+<p><code>1331 00:45:12,100 --&gt; 00:45:12,840</code>
+vi kan komma.</p>
+<p><code>1332 00:45:13,580 --&gt; 00:45:16,080</code>
+Och i viss mån kan man ju hävda att lagstiftningen redan har börjat.</p>
+<p><code>1333 00:45:16,220 --&gt; 00:45:18,640</code>
+Det vill säga, den har ju inte gått på leverantören.</p>
+<p><code>1334 00:45:18,960 --&gt; 00:45:19,940</code>
+Alltså underleverantören.</p>
+<p><code>1335 00:45:20,060 --&gt; 00:45:22,380</code>
+Utan den har ju gått på bilar till exempel.</p>
+<p><code>1336 00:45:23,060 --&gt; 00:45:24,000</code>
+NIS 2 har vi.</p>
+<p><code>1337 00:45:24,060 --&gt; 00:45:26,280</code>
+Sen kommer farande som ställer mer och mer krav på</p>
+<p><code>1338 00:45:26,280 --&gt; 00:45:28,320</code>
+de som bygger</p>
+<p><code>1339 00:45:28,320 --&gt; 00:45:29,520</code>
+konsumenttjänster i alla fall.</p>
+<p><code>1340 00:45:29,720 --&gt; 00:45:31,060</code>
+Och samhällskritisk verksamhet.</p>
+<p><code>1341 00:45:31,280 --&gt; 00:45:33,440</code>
+CR-direktivet som pratar om resiliens.</p>
+<p><code>1342 00:45:33,600 --&gt; 00:45:35,420</code>
+Och de kan ju indirekt betyda att</p>
+<p><code>1343 00:45:35,420 --&gt; 00:45:37,740</code>
+då går det inte att använda de här stora jättarna</p>
+<p><code>1344 00:45:37,740 --&gt; 00:45:40,100</code>
+som leverantörer om inte de har bra koll på</p>
+<p><code>1345 00:45:40,100 --&gt; 00:45:42,260</code>
+sina grejer. Så det driver ju förmodligen</p>
+<p><code>1346 00:45:42,260 --&gt; 00:45:44,820</code>
+krav på målleverantörerna också.</p>
+<p><code>1347 00:45:45,160 --&gt; 00:45:45,920</code>
+I alla fall</p>
+<p><code>1348 00:45:45,920 --&gt; 00:45:47,340</code>
+långsiktigt kan man tänka sig.</p>
+<p><code>1349 00:45:48,660 --&gt; 00:45:49,480</code>
+Ja, absolut.</p>
+<p><code>1350 00:45:49,820 --&gt; 00:45:52,120</code>
+Sen tror jag</p>
+<p><code>1351 00:45:52,120 --&gt; 00:45:53,260</code>
+att</p>
+<p><code>1352 00:45:53,260 --&gt; 00:45:55,940</code>
+det spelar ju liksom</p>
+<p><code>1353 00:45:55,940 --&gt; 00:45:57,320</code>
+ingen roll om du</p>
+<p><code>1354 00:45:57,320 --&gt; 00:46:00,420</code>
+använder en jätteamerikansk</p>
+<p><code>1355 00:46:00,420 --&gt; 00:46:01,880</code>
+drake eller om du använder ett</p>
+<p><code>1356 00:46:01,880 --&gt; 00:46:03,600</code>
+statligt moln.</p>
+<p><code>1357 00:46:04,000 --&gt; 00:46:06,160</code>
+Folk gör fel. Folk kommer fortsätta göra fel.</p>
+<p><code>1358 00:46:06,160 --&gt; 00:46:08,160</code>
+Jo, det handlar ju mer om</p>
+<p><code>1359 00:46:08,160 --&gt; 00:46:10,060</code>
+om det blir</p>
+<p><code>1360 00:46:10,060 --&gt; 00:46:11,360</code>
+sämre och sämre över tid, menar jag.</p>
+<p><code>1361 00:46:12,040 --&gt; 00:46:13,960</code>
+Om det är så att det vi ser nu</p>
+<p><code>1362 00:46:13,960 --&gt; 00:46:14,800</code>
+det är bara början.</p>
+<p><code>1363 00:46:15,800 --&gt; 00:46:17,960</code>
+För det är min lilla spaning. Jag tror att</p>
+<p><code>1364 00:46:17,960 --&gt; 00:46:20,200</code>
+the era of shitification har</p>
+<p><code>1365 00:46:20,200 --&gt; 00:46:20,660</code>
+påbörjats.</p>
+<p><code>1366 00:46:21,000 --&gt; 00:46:22,780</code>
+Vi är mitt uppe i den.</p>
+<p><code>1367 00:46:23,220 --&gt; 00:46:26,420</code>
+Jag ser en parallell här till hur</p>
+<p><code>1368 00:46:26,420 --&gt; 00:46:28,160</code>
+massmarknad,</p>
+<p><code>1369 00:46:29,220 --&gt; 00:46:30,260</code>
+alltså tillverkning av fysiska</p>
+<p><code>1370 00:46:30,260 --&gt; 00:46:32,200</code>
+prylar flyttade väldigt mycket</p>
+<p><code>1371 00:46:32,200 --&gt; 00:46:34,020</code>
+overseas till Kina.</p>
+<p><code>1372 00:46:35,160 --&gt; 00:46:36,220</code>
+Kvaliteten kanske minskade</p>
+<p><code>1373 00:46:36,220 --&gt; 00:46:37,720</code>
+och det blev mer och mer masstillverkning.</p>
+<p><code>1374 00:46:38,120 --&gt; 00:46:40,020</code>
+Jävligt bra priser, men det var inte</p>
+<p><code>1375 00:46:40,020 --&gt; 00:46:41,600</code>
+samma hög kvalitet som tidigare.</p>
+<p><code>1376 00:46:42,200 --&gt; 00:46:44,100</code>
+Jag tror att vi är på väg åt samma håll nu</p>
+<p><code>1377 00:46:44,100 --&gt; 00:46:45,980</code>
+på it-sidan. Tjänsterna blir</p>
+<p><code>1378 00:46:45,980 --&gt; 00:46:48,620</code>
+mer och mer volym, inte samma kvalitet.</p>
+<p><code>1379 00:46:48,880 --&gt; 00:46:50,500</code>
+Det är shitification has commenced.</p>
+<p><code>1380 00:46:50,740 --&gt; 00:46:52,480</code>
+Men eftersom de kan hålla</p>
+<p><code>1381 00:46:52,480 --&gt; 00:46:53,780</code>
+låga priser</p>
+<p><code>1382 00:46:53,780 --&gt; 00:46:56,440</code>
+så kommer vi fortsätta att köpa den här skiten.</p>
+<p><code>1383 00:46:56,580 --&gt; 00:46:58,020</code>
+Så är det, för du kommer aldrig kunna motivera</p>
+<p><code>1384 00:46:58,020 --&gt; 00:46:59,480</code>
+för din board att göra på något sätt.</p>
+<p><code>1385 00:46:59,500 --&gt; 00:47:01,700</code>
+Varför köpa den här tjänsten som är 10 gånger dyrare</p>
+<p><code>1386 00:47:01,700 --&gt; 00:47:02,660</code>
+eller 20 gånger dyrare?</p>
+<p><code>1387 00:47:03,300 --&gt; 00:47:05,260</code>
+Det enda sättet att motverka det är</p>
+<p><code>1388 00:47:05,260 --&gt; 00:47:07,320</code>
+att det faktiskt finns</p>
+<p><code>1389 00:47:07,320 --&gt; 00:47:09,820</code>
+lagkrav på att vissa tjänster är så pass</p>
+<p><code>1390 00:47:09,820 --&gt; 00:47:11,760</code>
+viktiga. Så där måste du ha</p>
+<p><code>1391 00:47:11,760 --&gt; 00:47:14,060</code>
+din skit på plats. Och det kan ju då flytta</p>
+<p><code>1392 00:47:14,060 --&gt; 00:47:15,440</code>
+affärer från</p>
+<p><code>1393 00:47:15,440 --&gt; 00:47:17,880</code>
+shitification-leverantörer</p>
+<p><code>1394 00:47:17,880 --&gt; 00:47:19,400</code>
+till kvalitetsleverantörer.</p>
+<p><code>1395 00:47:19,680 --&gt; 00:47:20,720</code>
+Och det kommer ju att kosta.</p>
+<p><code>1396 00:47:21,820 --&gt; 00:47:23,660</code>
+Det är först då vi kommer att kunna se</p>
+<p><code>1397 00:47:23,660 --&gt; 00:47:25,700</code>
+en ändring av shitification-trenden.</p>
+<p><code>1398 00:47:25,780 --&gt; 00:47:26,600</code>
+Eller anarki.</p>
+<p><code>1399 00:47:27,140 --&gt; 00:47:28,740</code>
+Ja, det är alltid ett alternativ.</p>
+<p><code>1400 00:47:28,740 --&gt; 00:47:29,700</code>
+Krossa kapitalismen.</p>
+<p><code>1401 00:47:29,700 --&gt; 00:47:32,680</code>
+Men för en massa år sedan</p>
+<p><code>1402 00:47:32,680 --&gt; 00:47:34,220</code>
+så var det väl .se</p>
+<p><code>1403 00:47:34,220 --&gt; 00:47:36,920</code>
+sökt bort en punkt i sin</p>
+<p><code>1404 00:47:36,920 --&gt; 00:47:38,060</code>
+zonfil.</p>
+<p><code>1405 00:47:38,260 --&gt; 00:47:39,000</code>
+Som heter bara se.</p>
+<p><code>1406 00:47:39,080 --&gt; 00:47:39,800</code>
+Ja, jag vet inte ens om det var så.</p>
+<p><code>1407 00:47:39,800 --&gt; 00:47:42,280</code>
+Det var en massa år sedan. Det känner jag igen som relativt nyligen.</p>
+<p><code>1408 00:47:42,480 --&gt; 00:47:44,920</code>
+Det är nog bara att du är lika</p>
+<p><code>1409 00:47:44,920 --&gt; 00:47:46,280</code>
+gammal.</p>
+<p><code>1410 00:47:46,440 --&gt; 00:47:47,040</code>
+Så kanske det är.</p>
+<p><code>1411 00:47:47,600 --&gt; 00:47:50,320</code>
+Du är tillägg med äldre. Nej, så att du är djuråldre.</p>
+<p><code>1412 00:47:51,180 --&gt; 00:47:52,860</code>
+Jag tror verkligen inte det var igår.</p>
+<p><code>1413 00:47:53,200 --&gt; 00:47:54,740</code>
+Men&hellip;</p>
+<p><code>1414 00:47:54,740 --&gt; 00:47:56,620</code>
+Känns som att du blir kallad fossil, Mattias.</p>
+<p><code>1415 00:47:56,640 --&gt; 00:47:57,480</code>
+Nej, jag har inga problem med det.</p>
+<p><code>1416 00:47:58,660 --&gt; 00:48:00,940</code>
+Så det är ju inte bara så att det blir fel</p>
+<p><code>1417 00:48:00,940 --&gt; 00:48:03,520</code>
+på de stora draken.</p>
+<p><code>1418 00:48:03,560 --&gt; 00:48:05,500</code>
+Det blir även fel&hellip;</p>
+<p><code>1419 00:48:05,500 --&gt; 00:48:06,360</code>
+Alla kan ju göra fel.</p>
+<p><code>1420 00:48:06,360 --&gt; 00:48:07,420</code>
+Ja, herregud ja.</p>
+<p><code>1421 00:48:09,800 --&gt; 00:48:13,460</code>
+Precis. Nej, men det jag tänkte på är att det kommer ju krav</p>
+<p><code>1422 00:48:13,480 --&gt; 00:48:15,220</code>
+alltså på</p>
+<p><code>1423 00:48:17,740 --&gt; 00:48:20,600</code>
+just tillverkare av digitala</p>
+<p><code>1424 00:48:20,600 --&gt; 00:48:22,900</code>
+komponenter eller</p>
+<p><code>1425 00:48:24,140 --&gt; 00:48:27,480</code>
+prylar med digitala komponenter under nästa år här.</p>
+<p><code>1426 00:48:27,640 --&gt; 00:48:30,980</code>
+Så att det kommer ju den typen av lagstiftning också.</p>
+<p><code>1427 00:48:30,980 --&gt; 00:48:32,320</code>
+Så den här mikrochip?</p>
+<p><code>1428 00:48:32,580 --&gt; 00:48:35,280</code>
+Ja, eller kod eller appar eller&hellip;</p>
+<p><code>1429 00:48:35,280 --&gt; 00:48:36,160</code>
+Mikro popkort.</p>
+<p><code>1430 00:48:36,160 --&gt; 00:48:36,940</code>
+You name it.</p>
+<p><code>1431 00:48:36,940 --&gt; 00:48:39,600</code>
+Och om det ska säljas i EU och&hellip;</p>
+<p><code>1432 00:48:39,600 --&gt; 00:48:44,800</code>
+Och ha en CE-märkning då, så måste du uppfylla vissa krav.</p>
+<p><code>1433 00:48:45,160 --&gt; 00:48:49,580</code>
+Och det är ju en backlash ifrån internet of shit, liksom.</p>
+<p><code>1434 00:48:50,260 --&gt; 00:48:55,260</code>
+Att du kan inte sälja en vattensäng som du inte tar ansvar för.</p>
+<p><code>1435 00:48:55,680 --&gt; 00:48:56,820</code>
+Och som&hellip;</p>
+<p><code>1436 00:48:56,820 --&gt; 00:48:57,580</code>
+Nej, fast&hellip;</p>
+<p><code>1437 00:48:57,580 --&gt; 00:49:00,720</code>
+Och det handlar ju om att folk pluggar ju in</p>
+<p><code>1438 00:49:00,720 --&gt; 00:49:02,780</code>
+vad fan skit som helst i sina hem.</p>
+<p><code>1439 00:49:02,900 --&gt; 00:49:05,060</code>
+Och så här, ja men det är jättebra, jag kan styra med en app.</p>
+<p><code>1440 00:49:05,060 --&gt; 00:49:07,520</code>
+Ja, men vad fint. Vad är på-knappen då?</p>
+<p><code>1441 00:49:07,680 --&gt; 00:49:09,520</code>
+Men det tycker jag är intressant just när det gäller så här&hellip;</p>
+<p><code>1442 00:49:09,520 --&gt; 00:49:11,200</code>
+Hemautomation och sånt, så&hellip;</p>
+<p><code>1443 00:49:11,200 --&gt; 00:49:12,200</code>
+Dubbla interface.</p>
+<p><code>1444 00:49:12,380 --&gt; 00:49:15,440</code>
+I Home Assistant så är det ju verkligen en supertydlig trend</p>
+<p><code>1445 00:49:15,440 --&gt; 00:49:17,700</code>
+att local integration är the shit.</p>
+<p><code>1446 00:49:18,260 --&gt; 00:49:22,960</code>
+Alltså, man fnyser åt molnkopplade integrationer.</p>
+<p><code>1447 00:49:23,060 --&gt; 00:49:24,520</code>
+Utan allting ska vara lokalt, liksom.</p>
+<p><code>1448 00:49:25,000 --&gt; 00:49:28,080</code>
+Det får gärna vara nätkopplat hemma hos dig.</p>
+<p><code>1449 00:49:28,260 --&gt; 00:49:28,960</code>
+Det är inga konstigheter.</p>
+<p><code>1450 00:49:29,100 --&gt; 00:49:31,200</code>
+Men så fort du är beroende av en främmande tjänst</p>
+<p><code>1451 00:49:31,200 --&gt; 00:49:32,560</code>
+så är det liksom&hellip;</p>
+<p><code>1452 00:49:32,560 --&gt; 00:49:34,420</code>
+Alltså, jag håller med.</p>
+<p><code>1453 00:49:35,420 --&gt; 00:49:37,360</code>
+Jag har exakt min lusighet, för jag är i det träsket.</p>
+<p><code>1454 00:49:37,360 --&gt; 00:49:39,360</code>
+Jag har så mycket störda grejer.</p>
+<p><code>1455 00:49:40,080 --&gt; 00:49:43,380</code>
+Alltså, hemautomationsmässigt så vill jag köra allt med Wifi</p>
+<p><code>1456 00:49:43,380 --&gt; 00:49:44,960</code>
+och jag vill köra allting till Home Assistant.</p>
+<p><code>1457 00:49:45,220 --&gt; 00:49:47,540</code>
+Det är liksom modemodemet för det.</p>
+<p><code>1458 00:49:48,240 --&gt; 00:49:51,300</code>
+Och sen häromdagen så fick jag installera lite ny utbelysning</p>
+<p><code>1459 00:49:51,300 --&gt; 00:49:52,780</code>
+och så gjorde jag på grejerna.</p>
+<p><code>1460 00:49:52,860 --&gt; 00:49:54,640</code>
+Så provisionerade jag några nya källipuckar</p>
+<p><code>1461 00:49:54,640 --&gt; 00:49:55,820</code>
+för jag kör Källi Interplayed.</p>
+<p><code>1462 00:49:56,520 --&gt; 00:49:59,280</code>
+Och så satt jag där och funderade lite så här bara&hellip;</p>
+<p><code>1463 00:49:59,280 --&gt; 00:50:01,060</code>
+En grej som jag inte har tänkt på här</p>
+<p><code>1464 00:50:01,060 --&gt; 00:50:02,640</code>
+som är jäkligt osmart</p>
+<p><code>1465 00:50:02,640 --&gt; 00:50:05,360</code>
+när man har typ 60 källipuckar då, liggande överallt.</p>
+<p><code>1466 00:50:05,360 --&gt; 00:50:07,940</code>
+Det är att om jag någon gång skulle sälja det här huset</p>
+<p><code>1467 00:50:07,940 --&gt; 00:50:09,500</code>
+så är det ju kör.</p>
+<p><code>1468 00:50:09,520 --&gt; 00:50:11,400</code>
+Jo, men alltså&hellip;</p>
+<p><code>1469 00:50:11,400 --&gt; 00:50:13,760</code>
+De är synkade till mig, till mitt Wifi</p>
+<p><code>1470 00:50:13,760 --&gt; 00:50:15,020</code>
+till mitt dolda Wifi</p>
+<p><code>1471 00:50:15,020 --&gt; 00:50:17,200</code>
+till min Home Assistant, den punkt.</p>
+<p><code>1472 00:50:17,540 --&gt; 00:50:18,780</code>
+All logik styrs därifrån.</p>
+<p><code>1473 00:50:19,140 --&gt; 00:50:21,520</code>
+Det är så icke-transferable som det bara kan bli.</p>
+<p><code>1474 00:50:21,920 --&gt; 00:50:24,240</code>
+Men stå till exempel Played, det går ju bara att&hellip;</p>
+<p><code>1475 00:50:24,240 --&gt; 00:50:24,460</code>
+Här.</p>
+<p><code>1476 00:50:25,620 --&gt; 00:50:27,080</code>
+Du kan ju göra det.</p>
+<p><code>1477 00:50:27,160 --&gt; 00:50:30,560</code>
+Du måste ta bort provisioneringen från deras interface dock.</p>
+<p><code>1478 00:50:31,440 --&gt; 00:50:31,680</code>
+Ja.</p>
+<p><code>1479 00:50:32,220 --&gt; 00:50:33,340</code>
+Det är så du får göra det.</p>
+<p><code>1480 00:50:33,440 --&gt; 00:50:34,340</code>
+Det hjälper&hellip;</p>
+<p><code>1481 00:50:34,340 --&gt; 00:50:37,580</code>
+Men du förstår vad jag menar. Det är en jävla omständig process.</p>
+<p><code>1482 00:50:37,580 --&gt; 00:50:38,040</code>
+Absolut.</p>
+<p><code>1483 00:50:38,040 --&gt; 00:50:39,900</code>
+Det är ju ingenting man skryter med på visningen.</p>
+<p><code>1484 00:50:40,120 --&gt; 00:50:42,060</code>
+Allting går att styra via en app.</p>
+<p><code>1485 00:50:42,080 --&gt; 00:50:44,740</code>
+Jag kan säga såhär, Factory Set-knappen gör inte det du tror att den gör.</p>
+<p><code>1486 00:50:44,880 --&gt; 00:50:45,440</code>
+Nej, exakt.</p>
+<p><code>1487 00:50:47,940 --&gt; 00:50:51,000</code>
+Men nu tror jag att vi har lämnat ämnet lite grann.</p>
+<p><code>1488 00:50:51,460 --&gt; 00:50:52,440</code>
+Ja, men jag tycker ändå</p>
+<p><code>1489 00:50:52,440 --&gt; 00:50:55,280</code>
+i parallell med</p>
+<p><code>1490 00:50:55,280 --&gt; 00:50:57,880</code>
+Home Assistant Local Integration-trenden</p>
+<p><code>1491 00:50:57,880 --&gt; 00:51:00,340</code>
+så pratas det väldigt mycket om</p>
+<p><code>1492 00:51:00,340 --&gt; 00:51:02,640</code>
+att köra egna cloud.</p>
+<p><code>1493 00:51:03,260 --&gt; 00:51:04,860</code>
+Just på privatmarknaden.</p>
+<p><code>1494 00:51:05,400 --&gt; 00:51:07,620</code>
+Alltså just det, att istället för att synka upp dina foton</p>
+<p><code>1495 00:51:07,620 --&gt; 00:51:07,860</code>
+till&hellip;</p>
+<p><code>1496 00:51:08,040 --&gt; 00:51:09,480</code>
+Apple&rsquo;s&hellip;</p>
+<p><code>1497 00:51:09,480 --&gt; 00:51:10,780</code>
+Vad fan heter den ens?</p>
+<p><code>1498 00:51:12,100 --&gt; 00:51:12,880</code>
+Not cloud.</p>
+<p><code>1499 00:51:13,060 --&gt; 00:51:13,560</code>
+iCloud.</p>
+<p><code>1500 00:51:13,560 --&gt; 00:51:14,340</code>
+iCloud, ja.</p>
+<p><code>1501 00:51:14,620 --&gt; 00:51:15,700</code>
+Så har du liksom&hellip;</p>
+<p><code>1502 00:51:15,700 --&gt; 00:51:17,560</code>
+Du kör typ Nextcloud hemma eller någonting</p>
+<p><code>1503 00:51:17,560 --&gt; 00:51:18,860</code>
+och så synkar du den foton dit.</p>
+<p><code>1504 00:51:20,120 --&gt; 00:51:22,360</code>
+Du kör Trunas hemma</p>
+<p><code>1505 00:51:22,360 --&gt; 00:51:24,860</code>
+och du kör just Nextcloud, Owncloud.</p>
+<p><code>1506 00:51:25,240 --&gt; 00:51:26,100</code>
+Du kör Played.</p>
+<p><code>1507 00:51:26,200 --&gt; 00:51:27,800</code>
+Du kör Jellyfish.</p>
+<p><code>1508 00:51:27,960 --&gt; 00:51:28,760</code>
+Du kör Image.</p>
+<p><code>1509 00:51:29,100 --&gt; 00:51:31,560</code>
+Alltså du löser musik, video och&hellip;</p>
+<p><code>1510 00:51:32,360 --&gt; 00:51:34,980</code>
+och bilder.</p>
+<p><code>1511 00:51:35,260 --&gt; 00:51:37,920</code>
+Det löser du hemma istället för att vara beroende av en&hellip;</p>
+<p><code>1512 00:51:37,920 --&gt; 00:51:39,440</code>
+Och sen har du en halvtidstjänst</p>
+<p><code>1513 00:51:39,440 --&gt; 00:51:40,740</code>
+som systemadministratör.</p>
+<p><code>1514 00:51:40,740 --&gt; 00:51:43,860</code>
+Ja, men just Trunas</p>
+<p><code>1515 00:51:43,860 --&gt; 00:51:45,900</code>
+till exempel funkar ju nästan som en plattform</p>
+<p><code>1516 00:51:45,900 --&gt; 00:51:46,240</code>
+för det här.</p>
+<p><code>1517 00:51:46,320 --&gt; 00:51:49,260</code>
+Du kan launcha kompis-tjänster på den.</p>
+<p><code>1518 00:51:49,440 --&gt; 00:51:51,180</code>
+Ni skrattar. Jag satt sex och en halv timme</p>
+<p><code>1519 00:51:51,180 --&gt; 00:51:53,060</code>
+och byggde om mitt nätverk hemma i söndags.</p>
+<p><code>1520 00:51:53,760 --&gt; 00:51:54,440</code>
+Det är värt det.</p>
+<p><code>1521 00:51:55,500 --&gt; 00:51:57,420</code>
+Det handlar inte bara om Amazon</p>
+<p><code>1522 00:51:57,420 --&gt; 00:51:59,100</code>
+och att de har 16 timmars nedtid utan</p>
+<p><code>1523 00:51:59,100 --&gt; 00:52:00,880</code>
+det finns ju jävligt många sådana här</p>
+<p><code>1524 00:52:00,880 --&gt; 00:52:03,100</code>
+Internet of Things-tjänster</p>
+<p><code>1525 00:52:03,100 --&gt; 00:52:05,680</code>
+som poppar upp, blir superpopulära.</p>
+<p><code>1526 00:52:05,760 --&gt; 00:52:07,660</code>
+Jag tänker speciellt på Neatos dammsugare.</p>
+<p><code>1527 00:52:07,920 --&gt; 00:52:08,500</code>
+Ja, och så dör.</p>
+<p><code>1528 00:52:08,600 --&gt; 00:52:11,280</code>
+Så dör de. Och helt plötsligt så har du ingen backan längre.</p>
+<p><code>1529 00:52:12,020 --&gt; 00:52:13,020</code>
+Så har du ingen dammsugare längre.</p>
+<p><code>1530 00:52:14,080 --&gt; 00:52:15,740</code>
+Och jag menar i kontext</p>
+<p><code>1531 00:52:15,740 --&gt; 00:52:18,180</code>
+av ett hus som du har jävligt många år</p>
+<p><code>1532 00:52:18,180 --&gt; 00:52:20,240</code>
+så just tjänster kopplade till huset</p>
+<p><code>1533 00:52:20,240 --&gt; 00:52:21,220</code>
+du kan liksom inte</p>
+<p><code>1534 00:52:21,220 --&gt; 00:52:23,800</code>
+bygga upp det med hjälp av företag</p>
+<p><code>1535 00:52:23,800 --&gt; 00:52:24,760</code>
+som finns i två år.</p>
+<p><code>1536 00:52:25,520 --&gt; 00:52:27,800</code>
+Där makes it sense att faktiskt</p>
+<p><code>1537 00:52:27,800 --&gt; 00:52:28,740</code>
+drifta någonting eget.</p>
+<p><code>1538 00:52:29,220 --&gt; 00:52:31,820</code>
+Där du själv kan uppgradera systemen år efter år.</p>
+<p><code>1539 00:52:32,560 --&gt; 00:52:33,780</code>
+Men hemligheten</p>
+<p><code>1540 00:52:33,780 --&gt; 00:52:35,960</code>
+kanske då är för att slippa Jespers problem</p>
+<p><code>1541 00:52:35,960 --&gt; 00:52:37,740</code>
+och att man skapar</p>
+<p><code>1542 00:52:37,920 --&gt; 00:52:39,800</code>
+ett separat konto för allting</p>
+<p><code>1543 00:52:39,800 --&gt; 00:52:41,800</code>
+det som är husnära. Och sen så kan man bara</p>
+<p><code>1544 00:52:41,800 --&gt; 00:52:42,880</code>
+lämna över nycklarna.</p>
+<p><code>1545 00:52:43,680 --&gt; 00:52:46,140</code>
+Eller så gör man så att man går och trycker på knappen</p>
+<p><code>1546 00:52:46,140 --&gt; 00:52:47,760</code>
+på väggen så att lamporna sätts på.</p>
+<p><code>1547 00:52:47,900 --&gt; 00:52:48,780</code>
+Det är ju en annan lösning.</p>
+<p><code>1548 00:52:49,540 --&gt; 00:52:52,100</code>
+Du tycker det är väldigt sånt.</p>
+<p><code>1549 00:52:52,100 --&gt; 00:52:54,200</code>
+Jag menar det som en gammal dinosaur nu.</p>
+<p><code>1550 00:52:54,340 --&gt; 00:52:56,360</code>
+Ja, men ingen sån skit i mitt hem nu.</p>
+<p><code>1551 00:52:57,180 --&gt; 00:52:58,820</code>
+Men nu har vi pratat</p>
+<p><code>1552 00:52:58,820 --&gt; 00:52:59,540</code>
+till och länge om det här.</p>
+<p><code>1553 00:52:59,660 --&gt; 00:53:01,320</code>
+Vi har som vanligt inte kommit fram till några lösningar</p>
+<p><code>1554 00:53:01,320 --&gt; 00:53:02,820</code>
+men ni har gett några bra tips i alla fall.</p>
+<p><code>1555 00:53:03,600 --&gt; 00:53:05,940</code>
+Det har vi i och för sig inte men vi har tips på</p>
+<p><code>1556 00:53:05,940 --&gt; 00:53:06,940</code>
+hur man kan tänka.</p>
+<p><code>1557 00:53:07,920 --&gt; 00:53:10,360</code>
+Och det är väl så mycket man kan hoppas på att man kan erbjuda.</p>
+<p><code>1558 00:53:10,940 --&gt; 00:53:12,160</code>
+Jag hoppas att ni som lyssnade</p>
+<p><code>1559 00:53:12,160 --&gt; 00:53:14,100</code>
+tyckte att det var intressant. Det tyckte i alla fall jag.</p>
+<p><code>1560 00:53:14,720 --&gt; 00:53:16,300</code>
+Och jag som pratade, det är Johan Ryberg Möller</p>
+<p><code>1561 00:53:16,300 --&gt; 00:53:17,540</code>
+med mig, hade jag och Jesper Larsson.</p>
+<p><code>1562 00:53:17,580 --&gt; 00:53:19,300</code>
+Det kan ni feta, ja. Mattias Vidhage.</p>
+<p><code>1563 00:53:19,300 --&gt; 00:53:20,180</code>
+Yay, yay, yay.</p>
+<p><code>1564 00:53:20,280 --&gt; 00:53:23,040</code>
+Med säkerhetspodcasten Huddin på.</p>
+<p><code>1565 00:53:23,200 --&gt; 00:53:25,320</code>
+Och Peter Magnus. Som inte har sänkt ditt mål.</p>
+<p><code>1566 00:53:25,660 --&gt; 00:53:26,640</code>
+Woo! Än.</p>
+<p><code>1567 00:53:31,800 --&gt; 00:53:32,760</code>
+Jag tror inte vi har det.</p>
+<p><code>1568 00:53:33,720 --&gt; 00:53:35,220</code>
+Vi kan plugga tomten.</p>
+<p><code>1569 00:53:35,520 --&gt; 00:53:36,720</code>
+Vi kan ju plugga i och för sig grejen.</p>
+<p><code>1570 00:53:36,980 --&gt; 00:53:37,720</code>
+Nej, men det har den varit.</p>
+<p><code>1571 00:53:37,920 --&gt; 00:53:39,700</code>
+Det har den varit. Vi har börjat plugga i och för sig grejen.</p>
+<p><code>1572 00:53:42,620 --&gt; 00:53:43,820</code>
+No plug in everything.</p>
+<p><code>1573 00:53:46,380 --&gt; 00:53:47,960</code>
+Ska det inte Ova spara någon grej?</p>
+<p><code>1574 00:53:49,080 --&gt; 00:53:49,760</code>
+Nej, men den är nog</p>
+<p><code>1575 00:53:49,760 --&gt; 00:53:50,560</code>
+nyt också tror jag.</p>
+<p><code>1576 00:53:51,160 --&gt; 00:53:52,200</code>
+Och den ska jag också prata på.</p>
+<p><code>1577 00:53:53,180 --&gt; 00:53:54,380</code>
+Vi pratar bara allt nu för tiden.</p>
+<p><code>1578 00:53:55,060 --&gt; 00:53:56,200</code>
+Det här var ju fullt i och för sig.</p>
+<p><code>1579 00:53:56,860 --&gt; 00:53:59,860</code>
+Vi köper bara. No fucking plugs.</p>
+<p><code>1580 00:54:00,260 --&gt; 00:54:01,080</code>
+Vi kan kolla på toaster.</p>
+<p><code>1581 00:54:01,140 --&gt; 00:54:01,860</code>
+Fokus på oss själva.</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2025-11-24</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/tema/">tema</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/sakerhetspodcasten_292_ostrukturerat_v_46/" class="prev" rel="prev" title="Säkerhetspodcasten #292 - Ostrukturerat V.46"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Säkerhetspodcasten #292 - Ostrukturerat V.46</a></div>
+</div>
+</article></div>
+            </main></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>

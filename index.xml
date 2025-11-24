@@ -3,9 +3,19 @@
         <title>Säkerhetspodcasten</title>
         <link>https://sakerhetspodcasten.se/</link>
         <description>Säkerhetspodcasten - Sveriges första? podcast om IT-säkerhet</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 10 Nov 2025 07:33:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 24 Nov 2025 12:15:00 &#43;0000</lastBuildDate>
             <atom:link href="https://sakerhetspodcasten.se/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Säkerhetspodcasten #293 - Molnet Har Fallit</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_293_molnet_har_fallit/</link>
+    <pubDate>Mon, 24 Nov 2025 12:15:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_293_molnet_har_fallit/</guid>
+    <description><![CDATA[Molnet har fallit. Två stora hyperscalers har gått ner. AWS står och brinner. Zombies vandrar runt i Azure&rsquo;s datahallar. Säkerhetspodcasten försöker leda dig genom den post-apokalyps vi nu lever i, tiden efter att molnet gick ner.
+Körde du EKG över AWS? Styrde du sängvärmen via AWS? Kunde du inte hämta ut dina barn för att Azure vägrade dig checka ut dem från kommunens system?
+Lyssna mp3, längd: 54:07 AWS brinner: US-EAST-1 har fallit DynamoDB Service Disruption.]]></description>
+</item>
+<item>
     <title>Säkerhetspodcasten #292 - Ostrukturerat V.46</title>
     <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_292_ostrukturerat_v_46/</link>
     <pubDate>Mon, 10 Nov 2025 07:33:00 &#43;0000</pubDate>
@@ -109,17 +119,6 @@ Kanske även förberedelser, recon. Vad är fördelarna, tanken med att tänka i
 Attack Path verktyg, termer och metoder Verktyg/metodstöd.
 Kärt barn har många namn:
 Attack Exposure Scoring (AES) värdera risken kopplad till en Attack Path Attack Path Analysis (APA) Attack Path Management (APM) Attack Path Simulation (APS) Attack Path Visualization (APV) visa attack paths Olika fokus i APx verktyg:]]></description>
-</item>
-<item>
-    <title>Säkerhetspodcasten #283 - Ostrukturerat V.22</title>
-    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_283_ostrukturerat_v_22/</link>
-    <pubDate>Mon, 26 May 2025 11:54:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_283_ostrukturerat_v_22/</guid>
-    <description><![CDATA[TeleMessage/Signalgate, DOGE/Infostealer, Hangul, ASUS, Airborn, VM-escape, Intel BPRC, Unify Protect, sudo-rs!
-Lyssna mp3, längd: 01:12:48 Incident: TeleMessage 00:03:28 USA använder Signal-klonen TeleMessage, utvecklat i Israel under &ldquo;Israel-US Binational Industrial Research and Development Foundation&rdquo;. Meddelanden från appen kunde komma åts av hackers.
-Tekniska detaljer:
-Servern är skriven i JSP och SpringBoot. Lösenord i MD5 på klient istället för server, dvs hittar du en hash funkar den rakt av mot server. feroxbuster hittar /heapdump på archive.]]></description>
 </item>
 </channel>
 </rss>
