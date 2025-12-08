@@ -4,6 +4,15 @@
         <link>https://sakerhetspodcasten.se/tags/ci/cd/</link>
         <description>CI/CD - Tag - Säkerhetspodcasten</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://sakerhetspodcasten.se/tags/ci/cd/" rel="self" type="application/rss+xml" /><item>
+    <title>Säkerhetspodcasten #294 - Ostrukturerat V.50</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_294_ostrukturerat_v_50/</link>
+    <pubDate>Mon, 08 Dec 2025 10:17:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_294_ostrukturerat_v_50/</guid>
+    <description><![CDATA[Sha-Hulud 2.0 NPM/Github/PostHog hack, Glassworm gömmer sitt malware med Unicode Variation Selectors, ShadyPanda Browser Malware, CloudFlare/Rust krash, Ryska hackers trashar OT/ICS honypot, React2Shell, Pixelnapping spionerar på din OTP, Flock kameror usel säkerhet&hellip;
+Lyssna mp3, längd: 01:08:49 Sha-hulud 2.0: NPM och Github brinner igen Dune-masken reser sig ur sanden igen, och hackar NPM, github. Masken blir mer resilient och hittar mer stabil sätt att exfiltera secrets, genom att kollaborativt dela github tokens på github.]]></description>
+</item>
+<item>
     <title>Säkerhetspodcasten #289 - Ostrukturerat V.41</title>
     <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_289_ostrukturerat_v_41/</link>
     <pubDate>Mon, 06 Oct 2025 08:05:00 &#43;0200</pubDate>
@@ -111,17 +120,6 @@ Remediation and Guidance Hub: Channel File 291 Incident Technical Details: Falco
     <description><![CDATA[Lyssna mp3, längd: 01:20:46 Plugs Konferenser Maj 30-31 2024: Security Fest Juni 4-5 2024: BSides Conference, Umeå September 10-13 2024: SEC-T 0x10sion Tillbakablickar Säkerhetspodcasten #250 - DevSecOps Säkerhetspodcasten #259 - XZ-bakdörren GitHub själv-hostad Runner litar blint på bidragare! John Stawinski med flera hackar GitHub, Microsoft, &hellip; via konstiga CI/CD fel i GitHub Self-Hosted Runners.
 Konstiga grejer som triggade oss: Contributator (bidragare) skall vara en kul grej, inte ett säkerhetshål!
 Dubbelkolla vilka regler som gäller för din Runner (joggare) om du satt upp en egen!]]></description>
-</item>
-<item>
-    <title>Säkerhetspodcasten #250 - DevSecOps</title>
-    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_250_devsecops/</link>
-    <pubDate>Mon, 06 Nov 2023 13:27:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_250_devsecops/</guid>
-    <description><![CDATA[Lyssna mp3, längd: 50:45 Innehåll I dagens avsnitt diskuterar vi DevSecOps. Vad är det, hur funkar det i teorin och hur kan man införa det i en modern organisation.
-Säkerhetspodcasten slog nytt världsrekord i Buzz Words, termer, produktnamn, referenser.
-&hellip;vad f-n hände egentligen? Jag tror dom andra gjorde full denial of service attack mot min förmåga att skriva show-notes!
-DevSecOps devsecops.org Stora drakar om DevSecOps Red Hat: DevSecOps VMWare: DevSecOps IBM: DevSecOps Dev Ops, Continous Delivery med mera Adlibris: The Phoenix Project; Gene Kim, Kevin Behr, George Spafford]]></description>
 </item>
 </channel>
 </rss>

@@ -3,9 +3,18 @@
         <title>Säkerhetspodcasten</title>
         <link>https://sakerhetspodcasten.se/</link>
         <description>Säkerhetspodcasten - Sveriges första? podcast om IT-säkerhet</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 24 Nov 2025 12:15:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 08 Dec 2025 10:17:00 &#43;0000</lastBuildDate>
             <atom:link href="https://sakerhetspodcasten.se/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Säkerhetspodcasten #294 - Ostrukturerat V.50</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_294_ostrukturerat_v_50/</link>
+    <pubDate>Mon, 08 Dec 2025 10:17:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_294_ostrukturerat_v_50/</guid>
+    <description><![CDATA[Sha-Hulud 2.0 NPM/Github/PostHog hack, Glassworm gömmer sitt malware med Unicode Variation Selectors, ShadyPanda Browser Malware, CloudFlare/Rust krash, Ryska hackers trashar OT/ICS honypot, React2Shell, Pixelnapping spionerar på din OTP, Flock kameror usel säkerhet&hellip;
+Lyssna mp3, längd: 01:08:49 Sha-hulud 2.0: NPM och Github brinner igen Dune-masken reser sig ur sanden igen, och hackar NPM, github. Masken blir mer resilient och hittar mer stabil sätt att exfiltera secrets, genom att kollaborativt dela github tokens på github.]]></description>
+</item>
+<item>
     <title>Säkerhetspodcasten #293 - Molnet Har Fallit</title>
     <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_293_molnet_har_fallit/</link>
     <pubDate>Mon, 24 Nov 2025 12:15:00 &#43;0000</pubDate>
@@ -104,21 +113,6 @@ blaufish.github.io: Capturing and streaming conferences - audio, video and more 
     <description><![CDATA[Operation Deep Sentinel, Påskägg, BankID, CrowdStrike, ASUS API, ASUS SSH, Azure
 Lyssna mp3, längd: 54:23 Archetyp 00:00:49 Europol Operation Deep Sentinel slår mot Archetyp, en handelsplats på &ldquo;darknet&rdquo;.
 Europol: Europe-wide takedown hits longest-standing dark web drug market – Administrator arrested in Spain; top vendors targeted in Sweden - Between 11 and 13 June, a series of coordinated actions took place across Germany, the Netherlands, Romania, Spain, Sweden, targeting the platform’s administrator, moderators, key vendors, and technical infrastructure.]]></description>
-</item>
-<item>
-    <title>Säkerhetspodcasten #284 - Attack Paths</title>
-    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_284_attack_paths/</link>
-    <pubDate>Mon, 16 Jun 2025 10:55:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_284_attack_paths/</guid>
-    <description><![CDATA[Attack Paths och verktyg för att jobba med dem!
-Lyssna mp3, längd: 01:02:17 Attack Path Vad är &ldquo;Attack Path&rdquo;?
-Primärt:
-Resan från Initial Access (TTP) Till att hela företaget står och brinner, t.ex. Impact (TTP) eller Exfiltration (TTP). Sekundärt:
-Kanske även förberedelser, recon. Vad är fördelarna, tanken med att tänka i termer av Attack Paths?
-Attack Path verktyg, termer och metoder Verktyg/metodstöd.
-Kärt barn har många namn:
-Attack Exposure Scoring (AES) värdera risken kopplad till en Attack Path Attack Path Analysis (APA) Attack Path Management (APM) Attack Path Simulation (APS) Attack Path Visualization (APV) visa attack paths Olika fokus i APx verktyg:]]></description>
 </item>
 </channel>
 </rss>

@@ -1,0 +1,111 @@
+<rss xmlns:atom="http://www.w3.org/2005/Atom" version="2.0">
+    <channel>
+        <title>rust - Tag - Säkerhetspodcasten</title>
+        <link>https://sakerhetspodcasten.se/tags/rust/</link>
+        <description>rust - Tag - Säkerhetspodcasten</description>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 08 Dec 2025 10:17:00 &#43;0000</lastBuildDate><atom:link href="https://sakerhetspodcasten.se/tags/rust/" rel="self" type="application/rss+xml" /><item>
+    <title>Säkerhetspodcasten #294 - Ostrukturerat V.50</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_294_ostrukturerat_v_50/</link>
+    <pubDate>Mon, 08 Dec 2025 10:17:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_294_ostrukturerat_v_50/</guid>
+    <description><![CDATA[Sha-Hulud 2.0 NPM/Github/PostHog hack, Glassworm gömmer sitt malware med Unicode Variation Selectors, ShadyPanda Browser Malware, CloudFlare/Rust krash, Ryska hackers trashar OT/ICS honypot, React2Shell, Pixelnapping spionerar på din OTP, Flock kameror usel säkerhet&hellip;
+Lyssna mp3, längd: 01:08:49 Sha-hulud 2.0: NPM och Github brinner igen Dune-masken reser sig ur sanden igen, och hackar NPM, github. Masken blir mer resilient och hittar mer stabil sätt att exfiltera secrets, genom att kollaborativt dela github tokens på github.]]></description>
+</item>
+<item>
+    <title>Säkerhetspodcasten #289 - Ostrukturerat V.41</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_289_ostrukturerat_v_41/</link>
+    <pubDate>Mon, 06 Oct 2025 08:05:00 &#43;0200</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_289_ostrukturerat_v_41/</guid>
+    <description><![CDATA[SEC-T. Självrefererande Git. NPM: S1ngularity, och Shai-Hulud. Massa randomware och läckor: Miljödata, Jaguar LandRover (JLR), Collins, Kinesiska Muren (GFwC). Minnesskydd. Kassa kassaskåp! WhatsApp/iOS/DNG attack. Hotaktör säkrar dina server. Steam-malware.
+Lyssna mp3, längd: 01:16:09 Plugs Vi promotar random kul vagt relaterat till säkerhet:
+Security Fest: WWWInterpub Friday, November 7, 2025 blaufish.github.io: Self Referential Git Peter har gjort en git commit be31337 som i en länk refererar till sig själv på github. Antar du vår utmaning?]]></description>
+</item>
+<item>
+    <title>Säkerhetspodcasten #286 - Sommar 2025</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_286_sommar_2025/</link>
+    <pubDate>Thu, 10 Jul 2025 06:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_286_sommar_2025/</guid>
+    <description><![CDATA[Sommar 2025 inleds med champagne!
+BSides Ume recap. Security Fest recap. Planer för SEC-T, BlackHat, Defcon. Andra sommar planer? Lite kul ISC^2 CPE diskussioner också, hett ämne i sommarsolen!
+Lyssna mp3, längd: 49:36 BSides Ume 2025 Länkar:
+BSides Ume 2025 (10-11 June 2025): Overview · Indico blaufish.github.io: BSides Ume 2025 Konferens video Peter om hur filma, strömma, editera konferensvideo för Security Fest:
+blaufish.github.io: Capturing and streaming conferences - audio, video and more blaufish.]]></description>
+</item>
+<item>
+    <title>Säkerhetspodcasten #283 - Ostrukturerat V.22</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_283_ostrukturerat_v_22/</link>
+    <pubDate>Mon, 26 May 2025 11:54:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_283_ostrukturerat_v_22/</guid>
+    <description><![CDATA[TeleMessage/Signalgate, DOGE/Infostealer, Hangul, ASUS, Airborn, VM-escape, Intel BPRC, Unify Protect, sudo-rs!
+Lyssna mp3, längd: 01:12:48 Incident: TeleMessage 00:03:28 USA använder Signal-klonen TeleMessage, utvecklat i Israel under &ldquo;Israel-US Binational Industrial Research and Development Foundation&rdquo;. Meddelanden från appen kunde komma åts av hackers.
+Tekniska detaljer:
+Servern är skriven i JSP och SpringBoot. Lösenord i MD5 på klient istället för server, dvs hittar du en hash funkar den rakt av mot server. feroxbuster hittar /heapdump på archive.]]></description>
+</item>
+<item>
+    <title>Säkerhetspodcasten #282 - Transatlantiska haverier</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_282_transatlantiska_haverier/</link>
+    <pubDate>Mon, 12 May 2025 13:31:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_282_transatlantiska_haverier/</guid>
+    <description><![CDATA[Handelskrig, EU US-exit, CVE, CISA, DNSSEC, Schrems, ICANN, IANA, &hellip;
+Lyssna mp3, längd: 01:03:01 Innehåll Hur funkar Säkerhet när transatlantiska relationerna bryter samman? När EU behöver dra sig ur amerikanska moln, hur påverkar det säkerhet på lång och kort sikt. När USA drar in stöd till MITRE och CVE-infrastrukturen hänger på en skör tråd?
+Hur stadsoberoende styrs Internet när relationerna krånglar? DNS, DNSSEC och top-level domains - nycklarna till internet.]]></description>
+</item>
+<item>
+    <title>Säkerhetspodcasten #267 - Ostrukturerat V.41</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_267_ostrukturerat_v_41/</link>
+    <pubDate>Mon, 07 Oct 2024 08:29:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_267_ostrukturerat_v_41/</guid>
+    <description><![CDATA[Lyssna mp3, längd: 46:23 Innehåll Johan, Rickard och Peter träffas efter sommaren och snackar om vad som hänt inom IT-säkerhet!
+Linux buggen som lovade för mycket Före:
+CVSS: 9.9. Allt är sårbart. Alla servers. Alla klienter. Dommedagen är här. Huset brinner. Verkligheten:
+Vi fick bara någon tråkiga printer-buggar som kräver specifika inställningar och en bunt user-interaction. CVSS: 9.9 verkar vara rent nonsens. CVSS Attack Complexity (AC), User Interaction (UI), Scope (S) är diskutabla!]]></description>
+</item>
+<item>
+    <title>Säkerhetspodcasten #264 - Tips till en 18-åring</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_264_tips_till_en_18_aring/</link>
+    <pubDate>Mon, 12 Aug 2024 09:24:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_264_tips_till_en_18_aring/</guid>
+    <description><![CDATA[Lyssna mp3, längd: 53:29 Tema: Vad skall man lära sig som 18 åring? Temaförslag från Love:
+Om du fått ge dig själv råd i vad du borde lära dig som 18 åring, vad hade du sagt?
+Jag tänker att det antagligen finns en del föräldrar med lite vilse tonåringar som kan behöva något vettigt att göra. Jag själv var nog typ 15-16 när jag börja lyssna (kan det stämma?).
+Vad har varit roligast att kunna och vad tror ni idag ger mest pang för pengarna att lära sig?]]></description>
+</item>
+<item>
+    <title>Säkerhetspodcasten #257 - Ostrukturerat V.10</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_257_ostrukturerat_v_10/</link>
+    <pubDate>Mon, 04 Mar 2024 15:22:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_257_ostrukturerat_v_10/</guid>
+    <description><![CDATA[Lyssna mp3, längd: 52:21 Innehåll Panelen diskuterar den senaste tidens nyheter och svarar på lite lyssnarfrågor.
+Plugs SecurityFest, Maj 30-31 2024. SEC-T, 10-13 September 2024. Lyssnarbrev från Jonathan Johnsson Jonathan hittade till kontakt@sakerhetspodcasten.se! Tre lyssnarfrågor från honom!
+Tieto - vad tycker ni om deras uttalande? Jag läste precis den här artikeln på DN och skulle vilja höra era tankar om Tietoevrys Sverigechefs uttalanden där: www.dn.se/sverige/tietoevry-efter-attacken-inga-brister-i-var-it-sakerhet
+Vad har blivit bättre inom säkerhet?]]></description>
+</item>
+<item>
+    <title>Säkerhetspodcasten #231 - Ostrukturerat V.51</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_231_ostrukturerat_v_51/</link>
+    <pubDate>Mon, 19 Dec 2022 13:23:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_231_ostrukturerat_v_51/</guid>
+    <description><![CDATA[Lyssna mp3, längd: 46:08 Innehåll I dagens luciaavsnitt går vi igenom den senaste tidens nyheter. Bland annat diskuteras angrepp mot franska sjukhus och svenska folkhälsomyndigheten samt Softronic, en snygg WAF bypass och en tråkig sårbarhet i Fortinets brandväggar.
+Memcached UDP DDoS Cloudflare: What is a memcached DDoS attack? JSON SQL Injection PortSwigger: JSON syntax hack allowed SQL injection payloads to be smuggled past WAFs Folkhälsomyndigheten Sminet Dagens Nyheter: Folkhälsomyndigheten hackades – falsk covidpatient lades till i smittodatabas Linus Larsson: Trusec - 1.]]></description>
+</item>
+<item>
+    <title>Säkerhetspodcasten #229 - Ostrukturerat V.46</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_229_ostrukturerat_v_46/</link>
+    <pubDate>Mon, 14 Nov 2022 09:41:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_229_ostrukturerat_v_46/</guid>
+    <description><![CDATA[Lyssna mp3, längd: 01:16:48 Innehåll Vi firar tio år! Det gör vi som sig bör med både öl och champagne (tack Onevinn!) och en genomgång av den senaste tidens säkerhetsnyheter.
+AI transkribering AI försöker förstå oss&hellip; Ha överseende med galna feltranskriberingar.
+1 00:00:00,520 --&gt; 00:00:16,020 Hej och välkommen till Säkerhetspodcasten. Jag som pratar heter Johan Ryberg Möller och har med mig Mattias Idage och Jesper Larsson och Peter Magnusson och Regan Bordfors på länk ifrån Kungliga Huvudstaden.]]></description>
+</item>
+</channel>
+</rss>

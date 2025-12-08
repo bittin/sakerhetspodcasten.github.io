@@ -3,7 +3,16 @@
         <title>ostrukturerat - Tag - Säkerhetspodcasten</title>
         <link>https://sakerhetspodcasten.se/tags/ostrukturerat/</link>
         <description>ostrukturerat - Tag - Säkerhetspodcasten</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 10 Nov 2025 07:33:00 &#43;0000</lastBuildDate><atom:link href="https://sakerhetspodcasten.se/tags/ostrukturerat/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 08 Dec 2025 10:17:00 &#43;0000</lastBuildDate><atom:link href="https://sakerhetspodcasten.se/tags/ostrukturerat/" rel="self" type="application/rss+xml" /><item>
+    <title>Säkerhetspodcasten #294 - Ostrukturerat V.50</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_294_ostrukturerat_v_50/</link>
+    <pubDate>Mon, 08 Dec 2025 10:17:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_294_ostrukturerat_v_50/</guid>
+    <description><![CDATA[Sha-Hulud 2.0 NPM/Github/PostHog hack, Glassworm gömmer sitt malware med Unicode Variation Selectors, ShadyPanda Browser Malware, CloudFlare/Rust krash, Ryska hackers trashar OT/ICS honypot, React2Shell, Pixelnapping spionerar på din OTP, Flock kameror usel säkerhet&hellip;
+Lyssna mp3, längd: 01:08:49 Sha-hulud 2.0: NPM och Github brinner igen Dune-masken reser sig ur sanden igen, och hackar NPM, github. Masken blir mer resilient och hittar mer stabil sätt att exfiltera secrets, genom att kollaborativt dela github tokens på github.]]></description>
+</item>
+<item>
     <title>Säkerhetspodcasten #292 - Ostrukturerat V.46</title>
     <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_292_ostrukturerat_v_46/</link>
     <pubDate>Mon, 10 Nov 2025 07:33:00 &#43;0000</pubDate>
@@ -102,16 +111,6 @@ Vad sägs om att vi tillsammans crowdsårcar in lite anekdotter! Jag gissar att 
 Säkerhetspodcasten är två man kort, men Jesper, Mattias och Peter samlas för att leverera ett ostrukterat avsnitt!
 Plugs Kul aktuella grejer!
 SecurityFest 4-5 juni BSides Ume 10-11 juni Peter&rsquo;s bloggpost: Path Length constraint limitations and bypasses Bakdörrar är farligt 00:04:01 Tema signal!]]></description>
-</item>
-<item>
-    <title>Säkerhetspodcasten #273 - Ostrukturerat V.50</title>
-    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_273_ostrukturerat_v_50/</link>
-    <pubDate>Mon, 09 Dec 2024 19:16:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_273_ostrukturerat_v_50/</guid>
-    <description><![CDATA[Lyssna mp3, längd: 35:05 Panelen Johan, Mattias, Peter och Rickard tar sig vad som har hänt det senaste!
-Jesper är frånvarande pga. att han är bad ass säkerhetspresentatör i Stockholm!
-Ämnen Europol slår till mot MATRIX Off-topic: Säkra meddelandeprotokoll och kvantar Off-topic: kvantkrypto-coinet WiFi hoppandes spioner Needsrestart Credential Guard Credential leaks hackas jättesnabbt Europol slår till mot MATRIX Ett ganska stort kriminelt nätverk blev avkrypterat av Europol i månader, och sen nerstängt.]]></description>
 </item>
 </channel>
 </rss>
