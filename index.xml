@@ -3,9 +3,18 @@
         <title>Säkerhetspodcasten</title>
         <link>https://sakerhetspodcasten.se/</link>
         <description>Säkerhetspodcasten - Sveriges första? podcast om IT-säkerhet</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 08 Dec 2025 10:17:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 29 Dec 2025 10:22:00 &#43;0000</lastBuildDate>
             <atom:link href="https://sakerhetspodcasten.se/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Säkerhetspodcasten #295 - Startupsäkerhet</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_295_startupsakerhet/</link>
+    <pubDate>Mon, 29 Dec 2025 10:22:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_295_startupsakerhet/</guid>
+    <description><![CDATA[En startup hörde av sig med hur vi ser på att säkerhet är för dyrt för många mindre kunder. Vi försöker säga något klokt.
+Lyssna mp3, längd: 43:03 Innehåll &lt;NAMN&gt; heter jag och är CTO för ett mindre startup. Vi jobbar inom &lt;BRANCH&gt; kan man säga. För att sätta lite perspektiv på saker så omsätter vårt bolag ca &lt;BELOPP&gt; SEK och vi är &lt;ANTAL_ANSTÄLLDA&gt; anställda, varav 4 är utvecklare (två på frontend och två på backend).]]></description>
+</item>
+<item>
     <title>Säkerhetspodcasten #294 - Ostrukturerat V.50</title>
     <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_294_ostrukturerat_v_50/</link>
     <pubDate>Mon, 08 Dec 2025 10:17:00 &#43;0000</pubDate>
@@ -103,16 +112,6 @@ BSides Ume recap. Security Fest recap. Planer för SEC-T, BlackHat, Defcon. Andr
 Lyssna mp3, längd: 49:36 BSides Ume 2025 Länkar:
 BSides Ume 2025 (10-11 June 2025): Overview · Indico blaufish.github.io: BSides Ume 2025 Konferens video Peter om hur filma, strömma, editera konferensvideo för Security Fest:
 blaufish.github.io: Capturing and streaming conferences - audio, video and more blaufish.]]></description>
-</item>
-<item>
-    <title>Säkerhetspodcasten #285 - Ostrukturerat V.27</title>
-    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_285_ostrukturerat_v_27/</link>
-    <pubDate>Mon, 30 Jun 2025 13:32:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_285_ostrukturerat_v_27/</guid>
-    <description><![CDATA[Operation Deep Sentinel, Påskägg, BankID, CrowdStrike, ASUS API, ASUS SSH, Azure
-Lyssna mp3, längd: 54:23 Archetyp 00:00:49 Europol Operation Deep Sentinel slår mot Archetyp, en handelsplats på &ldquo;darknet&rdquo;.
-Europol: Europe-wide takedown hits longest-standing dark web drug market – Administrator arrested in Spain; top vendors targeted in Sweden - Between 11 and 13 June, a series of coordinated actions took place across Germany, the Netherlands, Romania, Spain, Sweden, targeting the platform’s administrator, moderators, key vendors, and technical infrastructure.]]></description>
 </item>
 </channel>
 </rss>

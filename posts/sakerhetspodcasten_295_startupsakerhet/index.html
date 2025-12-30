@@ -1,0 +1,3015 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Säkerhetspodcasten #295 - Startupsäkerhet - Säkerhetspodcasten</title><meta name="Description" content="Säkerhetspodcasten - Sveriges första? podcast om IT-säkerhet"><meta property="og:title" content="Säkerhetspodcasten #295 - Startupsäkerhet" />
+<meta property="og:description" content="En startup hörde av sig med hur vi ser på att säkerhet är för dyrt för många mindre kunder. Vi försöker säga något klokt.
+Lyssna mp3, längd: 43:03 Innehåll &lt;NAMN&gt; heter jag och är CTO för ett mindre startup. Vi jobbar inom &lt;BRANCH&gt; kan man säga. För att sätta lite perspektiv på saker så omsätter vårt bolag ca &lt;BELOPP&gt; SEK och vi är &lt;ANTAL_ANSTÄLLDA&gt; anställda, varav 4 är utvecklare (två på frontend och två på backend)." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sakerhetspodcasten.se/posts/sakerhetspodcasten_295_startupsakerhet/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2025-12-29T10:22:00+00:00" />
+<meta property="article:modified_time" content="2025-12-29T10:22:00+00:00" /><meta property="og:site_name" content="Säkerhetspodcasten" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Säkerhetspodcasten #295 - Startupsäkerhet"/>
+<meta name="twitter:description" content="En startup hörde av sig med hur vi ser på att säkerhet är för dyrt för många mindre kunder. Vi försöker säga något klokt.
+Lyssna mp3, längd: 43:03 Innehåll &lt;NAMN&gt; heter jag och är CTO för ett mindre startup. Vi jobbar inom &lt;BRANCH&gt; kan man säga. För att sätta lite perspektiv på saker så omsätter vårt bolag ca &lt;BELOPP&gt; SEK och vi är &lt;ANTAL_ANSTÄLLDA&gt; anställda, varav 4 är utvecklare (två på frontend och två på backend)."/>
+<meta name="application-name" content="Säkerhetspodcasten">
+<meta name="apple-mobile-web-app-title" content="Säkerhetspodcasten"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://sakerhetspodcasten.se/posts/sakerhetspodcasten_295_startupsakerhet/" /><link rel="prev" href="https://sakerhetspodcasten.se/posts/sakerhetspodcasten_294_ostrukturerat_v_50/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Säkerhetspodcasten #295 - Startupsäkerhet",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/sakerhetspodcasten.se\/posts\/sakerhetspodcasten_295_startupsakerhet\/"
+        },"genre": "posts","keywords": "tema","wordcount":  13275 ,
+        "url": "https:\/\/sakerhetspodcasten.se\/posts\/sakerhetspodcasten_295_startupsakerhet\/","datePublished": "2025-12-29T10:22:00+00:00","dateModified": "2025-12-29T10:22:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Säkerhetspodcasten">Säkerhetspodcasten</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Pods </a><a class="menu-item" href="/pages/lyssna" title="Lyssna"> Lyssna! </a><a class="menu-item" href="/pages/kontakt" title="kontakt"> Kontakt </a><a class="menu-item" href="/pages/panelen" title="panelen"> Panelen </a><a class="menu-item" href="/pages/supportersida-2" title="supporters"> Supporters </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Säkerhetspodcasten">Säkerhetspodcasten</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Pods</a><a class="menu-item" href="/pages/lyssna" title="Lyssna">Lyssna!</a><a class="menu-item" href="/pages/kontakt" title="kontakt">Kontakt</a><a class="menu-item" href="/pages/panelen" title="panelen">Panelen</a><a class="menu-item" href="/pages/supportersida-2" title="supporters">Supporters</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Säkerhetspodcasten #295 - Startupsäkerhet</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2025-12-29">2025-12-29</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;13275 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;63 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#lyssna">Lyssna</a></li>
+    <li><a href="#innehåll">Innehåll</a></li>
+    <li><a href="#ai-transkribering">AI transkribering</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>En startup hörde av sig med hur vi ser på att säkerhet är för dyrt
+för många mindre kunder.
+Vi försöker säga något klokt.</p>
+<h2 id="lyssna">Lyssna</h2>
+<ul>
+<li><a href="https://traffic.libsyn.com/secure/sakerhetspodcasten/2025-12-03_Sakerhet_i_Startup.mp3?dest-id=117848" target="_blank" rel="noopener noreffer ">mp3</a>, längd: 43:03</li>
+</ul>
+<h2 id="innehåll">Innehåll</h2>
+<blockquote>
+<p><code>&lt;NAMN&gt;</code> heter jag och är CTO för ett mindre startup.
+Vi jobbar inom <code>&lt;BRANCH&gt;</code> kan man säga.
+För att sätta lite perspektiv på saker så omsätter vårt bolag ca
+<code>&lt;BELOPP&gt;</code> SEK och vi är <code>&lt;ANTAL_ANSTÄLLDA&gt;</code> anställda, varav 4 är
+utvecklare (två på frontend och två på backend).
+Ovanpå det har vi <code>&lt;ANTAL_KUNDER&gt;</code> betalande kunder men närmare
+<code>&lt;ANTAL_ANVÄNDARE&gt;</code> användare av en av våra produkter.
+Ett ganska vanligt startup i tillväxtfasen helt enkelt.</p>
+<p>Jag som CTO och backendutvecklare tänker ofta på säkerhet och hur
+vi ser till att hålla våra system så säkra som möjligt.
+Vi lever lite efter principen av att inte bygga säkerhet själva,
+utan förlita oss på andra system
+(vi kör t.ex. <code>&lt;PRODUKT&gt;</code> för användarhantering och hostar allt hos
+<code>&lt;MOLN&gt;</code>).
+Det finns såklart ändå MÄNGDER av saker man kan göra fel som skapar
+alla tänkbara olika attackytor.
+Tyvärr blir säkerhet något man lite stressar ovanpå sina coola nya
+features som bara måste ut till kunder så snabbt som möjligt.</p>
+<p>Vad tror ni om att ta ett avsnitt, eller en del av ett avsnitt, där
+man prata om problematiken i att säkerhet är dyrt och inte är till
+för alla.
+Vi pratade t.ex. med en firma om att göra ett pentest, det skulle gå
+på <strong>närmare 100k</strong> vilket är helt otänkbart för ett bolag i vår
+storlek, och det var bara för <strong>ett av våra APIer</strong>.
+Samtidigt har vi en VD som argumenterar för att risken för oss som
+bolag att misslyckas är större om vi inte lägger all vår tid på nya
+features mot att vi lägger massa tid på säkerhet och skyddar oss mot
+en eventuell attack som kanske inte ens händer.
+<strong>Försäkringsbolagen</strong> är helt <strong>ointresserade av</strong> att teckna
+<strong>cybersäkerhetsförsäkringar</strong> förresten.</p>
+<p>Det vore i alla fall väldigt intressant att prata om och diskutera
+problematiken i att säkerhet inte är till för alla och ge konkreta
+tips om vad man ska fokusera på som startup.
+Jag har pratat med flera andra CTOre för startups som <strong>sitter i exakt
+samma sits.</strong></p>
+</blockquote>
+<h2 id="ai-transkribering">AI transkribering</h2>
+<p><em>AI försöker förstå oss&hellip; Ha överseende med galna feltranskriberingar.</em></p>
+<p><code>1 00:00:00,000 --&gt; 00:00:03,440</code>
+Hej och välkommen till Säkerhetspodcasten. Jag som pratar heter Johan Lyberg Möller.</p>
+<p><code>2 00:00:03,540 --&gt; 00:00:09,360</code>
+Med mig har jag Jesper Larsson, Mattias Idager och Peter Magnusson.</p>
+<p><code>3 00:00:10,040 --&gt; 00:00:12,240</code>
+Som har glömt vad han ska säga när han introducerar sig själv.</p>
+<p><code>4 00:00:12,380 --&gt; 00:00:16,040</code>
+Det är bra. Rickard är tyvärr inte med oss idag, men jag önskar honom all lycka.</p>
+<p><code>5 00:00:16,160 --&gt; 00:00:17,320</code>
+Han kommer säkert att vara med på nästa år.</p>
+<p><code>6 00:00:18,260 --&gt; 00:00:24,800</code>
+Vi ska nämna att det är onsdag den 3 december i Nordens år 2025 när vi spelar in detta.</p>
+<p><code>7 00:00:24,800 --&gt; 00:00:28,460</code>
+Och vi är sponsrade av Horshort, som ni kan läsa mer om på horshort.se.</p>
+<p><code>8 00:00:28,460 --&gt; 00:00:32,500</code>
+Och även av 0x4a, som finns på 0x4a.se och av Bortfors.</p>
+<p><code>9 00:00:32,560 --&gt; 00:00:33,660</code>
+Heter de bara Bortfors nu?</p>
+<p><code>10 00:00:33,920 --&gt; 00:00:36,240</code>
+Ja, Bortfors.se i alla fall.</p>
+<p><code>11 00:00:37,380 --&gt; 00:00:38,320</code>
+Det är ett temaavsnitt idag.</p>
+<p><code>12 00:00:39,040 --&gt; 00:00:41,400</code>
+Och den som ska basa över detta heter Peter.</p>
+<p><code>13 00:00:41,640 --&gt; 00:00:42,260</code>
+Så jag skickar över till dig.</p>
+<p><code>14 00:00:42,280 --&gt; 00:00:43,300</code>
+Oh my god!</p>
+<p><code>15 00:00:44,020 --&gt; 00:00:48,000</code>
+Vi fick ett mail. Mailet fick vi för rätt länge sedan.</p>
+<p><code>16 00:00:48,080 --&gt; 00:00:50,960</code>
+Så jag vet inte om vi har tappat något sammanhang där.</p>
+<p><code>17 00:00:50,960 --&gt; 00:00:56,160</code>
+Men vi gjorde ju något avsnitt om vad man kunde börja med.</p>
+<p><code>18 00:00:56,280 --&gt; 00:00:58,080</code>
+Om man kickade igång säkerhet för ett bolag.</p>
+<p><code>19 00:00:58,080 --&gt; 00:01:00,080</code>
+Eller om man inte hade gjort så mycket och så.</p>
+<p><code>20 00:01:00,080 --&gt; 00:01:04,980</code>
+Så det kan vara det att det här mailet var typ en reply på det eller så.</p>
+<p><code>21 00:01:04,980 --&gt; 00:01:07,580</code>
+Eller så är det helt oprompat.</p>
+<p><code>22 00:01:07,580 --&gt; 00:01:11,980</code>
+Men jag har anonymiserat mailet lite grann.</p>
+<p><code>23 00:01:11,980 --&gt; 00:01:14,680</code>
+Så jag är klar av att läsa ett så här långt mail.</p>
+<p><code>24 00:01:14,680 --&gt; 00:01:19,180</code>
+Namn heter jag och är, som sagt, anonymiserad.</p>
+<p><code>25 00:01:19,180 --&gt; 00:01:21,180</code>
+Och jag sätter ihop för ett mindre bolag.</p>
+<p><code>26 00:01:21,180 --&gt; 00:01:23,180</code>
+Vi jobbar inom bransch kan man säga.</p>
+<p><code>27 00:01:23,180 --&gt; 00:01:27,880</code>
+För att sätta lite perspektiv så sätter vi vårt bolag cirka belopp.</p>
+<p><code>28 00:01:27,880 --&gt; 00:01:34,380</code>
+SEK och vi är antal anställda varav fyra är utvecklare.</p>
+<p><code>29 00:01:34,380 --&gt; 00:01:38,380</code>
+Två av dem är fronten och två jobbar backend.</p>
+<p><code>30 00:01:38,380 --&gt; 00:01:41,380</code>
+Och de har ett antal betalande kunder.</p>
+<p><code>31 00:01:41,380 --&gt; 00:01:45,380</code>
+De har ett antal användare i en av deras produkter.</p>
+<p><code>32 00:01:45,380 --&gt; 00:01:49,380</code>
+Så det är ett ganska vanligt start upp i tillväxtfasen.</p>
+<p><code>33 00:01:53,380 --&gt; 00:01:57,380</code>
+Vi tänker ofta på säkerhet och vi ska göra våra system så säkra som möjligt.</p>
+<p><code>34 00:01:57,880 --&gt; 00:02:04,380</code>
+Det är principen att inte bygga själva utan förlita oss på andra system.</p>
+<p><code>35 00:02:04,380 --&gt; 00:02:07,380</code>
+Vi kör den här produkten för användarhantering.</p>
+<p><code>36 00:02:07,380 --&gt; 00:02:10,380</code>
+Och vi stannar alltid i moln.</p>
+<p><code>37 00:02:10,380 --&gt; 00:02:14,380</code>
+Det finns såklart mängder av saker man kan göra som skapar olika attackytor.</p>
+<p><code>38 00:02:14,380 --&gt; 00:02:17,380</code>
+Det här är som att vara i Peters huvud ni som lyssnar.</p>
+<p><code>39 00:02:17,380 --&gt; 00:02:21,380</code>
+Det är sammanhängande men ändå inte sammanhängande.</p>
+<p><code>40 00:02:21,380 --&gt; 00:02:25,380</code>
+Och fuskeringen är spännande.</p>
+<p><code>41 00:02:25,380 --&gt; 00:02:27,380</code>
+För vissa grejer är så här.</p>
+<p><code>42 00:02:27,380 --&gt; 00:02:30,380</code>
+Det är som inception känsla.</p>
+<p><code>43 00:02:30,380 --&gt; 00:02:32,380</code>
+Antal anställda.</p>
+<p><code>44 00:02:32,380 --&gt; 00:02:37,380</code>
+Vi behöver inte ha extremt identifierande.</p>
+<p><code>45 00:02:37,380 --&gt; 00:02:40,380</code>
+Någonting hade varit bra.</p>
+<p><code>46 00:02:40,380 --&gt; 00:02:42,380</code>
+Vi kan hitta på världen.</p>
+<p><code>47 00:02:42,380 --&gt; 00:02:47,380</code>
+De är fyra utvecklare för att driva systemet.</p>
+<p><code>48 00:02:47,380 --&gt; 00:02:49,380</code>
+De har hostar i molnet.</p>
+<p><code>49 00:02:49,380 --&gt; 00:02:53,380</code>
+Och CTO har flera roller.</p>
+<p><code>50 00:02:53,380 --&gt; 00:02:55,380</code>
+Så han är inte bara CTO utan han jobbar även som utvecklare.</p>
+<p><code>51 00:02:55,380 --&gt; 00:02:57,380</code>
+Något som undanflykter.</p>
+<p><code>52 00:02:57,380 --&gt; 00:03:02,380</code>
+Och de använder så mycket som möjligt färdiga produkter.</p>
+<p><code>53 00:03:02,380 --&gt; 00:03:07,380</code>
+Istället för att uppfinna ägget på nytt.</p>
+<p><code>54 00:03:07,380 --&gt; 00:03:08,380</code>
+Eget på nytt?</p>
+<p><code>55 00:03:08,380 --&gt; 00:03:10,380</code>
+Julet. Vad fan är det man säger?</p>
+<p><code>56 00:03:10,380 --&gt; 00:03:12,380</code>
+Julet tror jag man brukar säga.</p>
+<p><code>57 00:03:12,380 --&gt; 00:03:14,380</code>
+Uppfinna ägget på nytt.</p>
+<p><code>58 00:03:14,380 --&gt; 00:03:17,380</code>
+Men säkerhet blir ofta något man lite stressar.</p>
+<p><code>59 00:03:17,380 --&gt; 00:03:19,380</code>
+En kokon på något sätt.</p>
+<p><code>60 00:03:19,380 --&gt; 00:03:21,380</code>
+Och hitta alla sina hjul i sommarkorg.</p>
+<p><code>61 00:03:21,380 --&gt; 00:03:23,380</code>
+Nej.</p>
+<p><code>62 00:03:23,380 --&gt; 00:03:25,380</code>
+Kommer ni osökt att tänka på filmen Kokon?</p>
+<p><code>63 00:03:25,380 --&gt; 00:03:26,380</code>
+Kommer ni ihåg den?</p>
+<p><code>64 00:03:26,380 --&gt; 00:03:28,380</code>
+Strukturerat avsnitt.</p>
+<p><code>65 00:03:28,380 --&gt; 00:03:30,380</code>
+Det är ett strukturerat avsnitt det här.</p>
+<p><code>66 00:03:30,380 --&gt; 00:03:34,380</code>
+Men vi har ett litet och medelstort bolag som vi börjar jobba med lite säkerhet.</p>
+<p><code>67 00:03:34,380 --&gt; 00:03:37,380</code>
+Det har ändå gått bättre med min läsning än förra gången jag skulle läsa.</p>
+<p><code>68 00:03:37,380 --&gt; 00:03:39,380</code>
+Ni bara mobbade mig i fullständighet.</p>
+<p><code>69 00:03:39,380 --&gt; 00:03:41,380</code>
+Vi har ändå börjat mobba dig lite nu.</p>
+<p><code>70 00:03:41,380 --&gt; 00:03:42,380</code>
+Men jag tycker ändå att det är snällt.</p>
+<p><code>71 00:03:42,380 --&gt; 00:03:44,380</code>
+Det är med den berömda glimten i ögat.</p>
+<p><code>72 00:03:44,380 --&gt; 00:03:50,380</code>
+Men prata om problematiken att säkerhet är dyrt och inte är för alla.</p>
+<p><code>73 00:03:50,380 --&gt; 00:03:52,380</code>
+Det här är ju en säkerhetspodcast.</p>
+<p><code>74 00:03:52,380 --&gt; 00:03:54,380</code>
+Vi pratade till exempel med en firma om att göra pentest.</p>
+<p><code>75 00:03:54,380 --&gt; 00:03:58,380</code>
+Och det skulle gå på närmare hundratusen.</p>
+<p><code>76 00:03:58,380 --&gt; 00:04:00,380</code>
+Och då antar vi att det är sekt.</p>
+<p><code>77 00:04:00,380 --&gt; 00:04:03,380</code>
+Vilket är helt otänkbart för ett bolag i våran storlek.</p>
+<p><code>78 00:04:03,380 --&gt; 00:04:07,380</code>
+Och det var bara för ett av deras API.</p>
+<p><code>79 00:04:07,380 --&gt; 00:04:13,380</code>
+Samtidigt har vi en vd som har argumenterat risken för oss som bolag att misslyckas.</p>
+<p><code>80 00:04:13,380 --&gt; 00:04:16,380</code>
+Se här.</p>
+<p><code>81 00:04:16,380 --&gt; 00:04:23,380</code>
+Antar också upp att det är problematiskt att lägga en massa pengar mot en attack som kanske inte ens händer.</p>
+<p><code>82 00:04:23,380 --&gt; 00:04:32,380</code>
+Han har även undersökt möjligheten att teckna sådana här försäkringar för att transferera risker.</p>
+<p><code>83 00:04:32,380 --&gt; 00:04:36,380</code>
+Och cyberförsäkringar. Försäkringsbolagen är helt ointresserade.</p>
+<p><code>84 00:04:36,380 --&gt; 00:04:39,380</code>
+Men det är ju det. Men hur länge har ni jobbat med säkerhetsansvar?</p>
+<p><code>85 00:04:39,380 --&gt; 00:04:45,380</code>
+Än så länge har ni ändå tagit in alla de här jag tar inte ansvar wildcardsen.</p>
+<p><code>86 00:04:45,380 --&gt; 00:04:51,380</code>
+Samtidigt som jag har full förståelse för småbolag.</p>
+<p><code>87 00:04:51,380 --&gt; 00:04:52,380</code>
+Är det du som har skrivit brevet?</p>
+<p><code>88 00:04:52,380 --&gt; 00:04:55,380</code>
+Nej det är jag inte. Jag är inte CTO på ett mindre startupbolag.</p>
+<p><code>89 00:04:55,380 --&gt; 00:05:02,380</code>
+Jag har full förståelse för att småbolag kan ha problem att ta sig an den här frågeställningen.</p>
+<p><code>90 00:05:02,380 --&gt; 00:05:09,380</code>
+Och att det finns en hel del tjänster som kan eller kanske inte behövs köpas som är snorgävla dyra för ett sådant bolag.</p>
+<p><code>91 00:05:09,380 --&gt; 00:05:11,380</code>
+Med det sagt.</p>
+<p><code>92 00:05:11,380 --&gt; 00:05:15,380</code>
+Som du sa. Vissa utav de här get out of jail free-calls som han försöker med här.</p>
+<p><code>93 00:05:15,380 --&gt; 00:05:17,380</code>
+Det tycker jag är så jävla fel.</p>
+<p><code>94 00:05:17,380 --&gt; 00:05:20,380</code>
+Alla kan inte jobba med säkerhetsansvar.</p>
+<p><code>95 00:05:20,380 --&gt; 00:05:21,380</code>
+Jo det kan de.</p>
+<p><code>96 00:05:21,380 --&gt; 00:05:23,380</code>
+Du är en utvecklare. Du är ansvarig för din jävla produkt.</p>
+<p><code>97 00:05:23,380 --&gt; 00:05:25,380</code>
+Jag skiter i hur mycket startup du är.</p>
+<p><code>98 00:05:25,380 --&gt; 00:05:27,380</code>
+Det bryr jag mig fan inte om.</p>
+<p><code>99 00:05:27,380 --&gt; 00:05:30,380</code>
+Du är ansvarig för din produkt och säkerheten i den produkten.</p>
+<p><code>100 00:05:30,380 --&gt; 00:05:31,380</code>
+Med det sagt.</p>
+<p><code>101 00:05:31,380 --&gt; 00:05:34,380</code>
+Det beror ju helt på hotmodellen.</p>
+<p><code>102 00:05:34,380 --&gt; 00:05:36,380</code>
+Hur mycket säkerhet man behöver rösa in.</p>
+<p><code>103 00:05:36,380 --&gt; 00:05:38,380</code>
+Konkretisera ner det här lite då.</p>
+<p><code>104 00:05:38,380 --&gt; 00:05:41,380</code>
+Börja med någon fråga som vi kan fundera lite kring.</p>
+<p><code>105 00:05:41,380 --&gt; 00:05:44,380</code>
+Ja jag tänker det vi kan säga kring startups.</p>
+<p><code>106 00:05:44,380 --&gt; 00:05:49,380</code>
+Det finns väl två tre olika modeller för att kicka igång en bolag.</p>
+<p><code>107 00:05:49,380 --&gt; 00:05:52,380</code>
+Det ena är ju att du går in med massiva riskkapital.</p>
+<p><code>108 00:05:52,380 --&gt; 00:05:57,380</code>
+Så att du är väsentligen fundad för att ha en bra problemfri start.</p>
+<p><code>109 00:05:57,380 --&gt; 00:06:02,380</code>
+Det som är något snarlikt men kanske lite annorlunda.</p>
+<p><code>110 00:06:02,380 --&gt; 00:06:07,380</code>
+Det är att det finns en rik person eller ett bolag bredvid.</p>
+<p><code>111 00:06:07,380 --&gt; 00:06:09,380</code>
+Som har gjort andra grejer tidigare.</p>
+<p><code>112 00:06:09,380 --&gt; 00:06:11,380</code>
+Som fundar startupen liksom.</p>
+<p><code>113 00:06:11,380 --&gt; 00:06:12,380</code>
+Ja.</p>
+<p><code>114 00:06:12,380 --&gt; 00:06:14,380</code>
+Eller garageköret liksom.</p>
+<p><code>115 00:06:14,380 --&gt; 00:06:15,380</code>
+Det är shoestring budget.</p>
+<p><code>116 00:06:15,380 --&gt; 00:06:17,380</code>
+Men då har man också en.</p>
+<p><code>117 00:06:17,380 --&gt; 00:06:18,380</code>
+Minimal value.</p>
+<p><code>118 00:06:18,380 --&gt; 00:06:20,380</code>
+Man har ändå en produkt oftast som man säljer.</p>
+<p><code>119 00:06:20,380 --&gt; 00:06:22,380</code>
+Även om det är bra eller dåligt tänker jag.</p>
+<p><code>120 00:06:22,380 --&gt; 00:06:23,380</code>
+Man har oftast en intäkts.</p>
+<p><code>121 00:06:23,380 --&gt; 00:06:25,380</code>
+Eller så vill man åtminstone bygga upp den väldigt fort.</p>
+<p><code>122 00:06:25,380 --&gt; 00:06:26,380</code>
+Ja.</p>
+<p><code>123 00:06:26,380 --&gt; 00:06:28,380</code>
+Oftast har man ju en intäktsström redan då tänker jag.</p>
+<p><code>124 00:06:28,380 --&gt; 00:06:30,380</code>
+Men visst.</p>
+<p><code>125 00:06:30,380 --&gt; 00:06:34,380</code>
+Men det låter ju definitivt som att de.</p>
+<p><code>126 00:06:34,380 --&gt; 00:06:36,380</code>
+Kör en av de hårdare startarna.</p>
+<p><code>127 00:06:36,380 --&gt; 00:06:39,380</code>
+Där du har väldigt lite startkapital.</p>
+<p><code>128 00:06:39,380 --&gt; 00:06:41,380</code>
+Men nu har vi kommit till stadiet där.</p>
+<p><code>129 00:06:41,380 --&gt; 00:06:42,380</code>
+Vi har produkt.</p>
+<p><code>130 00:06:42,380 --&gt; 00:06:43,380</code>
+Vi har kunder.</p>
+<p><code>131 00:06:43,380 --&gt; 00:06:45,380</code>
+Vi rullar på liksom.</p>
+<p><code>132 00:06:45,380 --&gt; 00:06:46,380</code>
+Vi har anställda.</p>
+<p><code>133 00:06:46,380 --&gt; 00:06:47,380</code>
+Nu är det dags att säkra upp det här.</p>
+<p><code>134 00:06:47,380 --&gt; 00:06:49,380</code>
+Så att vi inte fuckar upp.</p>
+<p><code>135 00:06:49,380 --&gt; 00:06:50,380</code>
+Precis.</p>
+<p><code>136 00:06:50,380 --&gt; 00:06:52,380</code>
+Om jag ska börja lite.</p>
+<p><code>137 00:06:52,380 --&gt; 00:06:53,380</code>
+Så de första grejerna.</p>
+<p><code>138 00:06:53,380 --&gt; 00:06:55,380</code>
+Det jag ser svinmycket nu.</p>
+<p><code>139 00:06:55,380 --&gt; 00:06:56,380</code>
+Som.</p>
+<p><code>140 00:06:56,380 --&gt; 00:06:57,380</code>
+Ja.</p>
+<p><code>141 00:06:57,380 --&gt; 00:06:59,380</code>
+Jobbar med teknik får man väl ändå säga.</p>
+<p><code>142 00:06:59,380 --&gt; 00:07:00,380</code>
+Det är identitet.</p>
+<p><code>143 00:07:00,380 --&gt; 00:07:01,380</code>
+Ett jätteproblem.</p>
+<p><code>144 00:07:01,380 --&gt; 00:07:04,380</code>
+Och det mynnar ju ut i ett vuxenproblem.</p>
+<p><code>145 00:07:04,380 --&gt; 00:07:05,380</code>
+Som är tråkigt att börja med.</p>
+<p><code>146 00:07:05,380 --&gt; 00:07:06,380</code>
+För att det tar lång tid.</p>
+<p><code>147 00:07:06,380 --&gt; 00:07:08,380</code>
+Och man måste verkligen göra det.</p>
+<p><code>148 00:07:08,380 --&gt; 00:07:10,380</code>
+Och det handlar ju om risk och hotmodellering.</p>
+<p><code>149 00:07:10,380 --&gt; 00:07:11,380</code>
+Det vill säga.</p>
+<p><code>150 00:07:11,380 --&gt; 00:07:13,380</code>
+Vilka äpplen är värda att skydda.</p>
+<p><code>151 00:07:13,380 --&gt; 00:07:16,380</code>
+Och är vi överens om att det är äpplen vi skyddar.</p>
+<p><code>152 00:07:16,380 --&gt; 00:07:17,380</code>
+Eller.</p>
+<p><code>153 00:07:17,380 --&gt; 00:07:18,380</code>
+Ska bananerna ha sitt också.</p>
+<p><code>154 00:07:18,380 --&gt; 00:07:20,380</code>
+Så att alla är alla ledig med.</p>
+<p><code>155 00:07:20,380 --&gt; 00:07:21,380</code>
+På vad det är som är.</p>
+<p><code>156 00:07:21,380 --&gt; 00:07:22,380</code>
+Viktigt.</p>
+<p><code>157 00:07:22,380 --&gt; 00:07:23,380</code>
+Det är väl.</p>
+<p><code>158 00:07:23,380 --&gt; 00:07:24,380</code>
+Det här man måste börja.</p>
+<p><code>159 00:07:24,380 --&gt; 00:07:25,380</code>
+Risk och hotmodellering.</p>
+<p><code>160 00:07:25,380 --&gt; 00:07:26,380</code>
+Och sen så får du korrelera det med tillgänglig budget.</p>
+<p><code>161 00:07:26,380 --&gt; 00:07:27,380</code>
+Ja.</p>
+<p><code>162 00:07:27,380 --&gt; 00:07:28,380</code>
+Var kan vi lägga.</p>
+<p><code>163 00:07:28,380 --&gt; 00:07:29,380</code>
+Pengar för bäst effekt.</p>
+<p><code>164 00:07:29,380 --&gt; 00:07:30,380</code>
+Och sen.</p>
+<p><code>165 00:07:30,380 --&gt; 00:07:31,380</code>
+Alltså ha.</p>
+<p><code>166 00:07:31,380 --&gt; 00:07:32,380</code>
+Och Mattias.</p>
+<p><code>167 00:07:32,380 --&gt; 00:07:33,380</code>
+Ta inte den lätta vägen.</p>
+<p><code>168 00:07:33,380 --&gt; 00:07:34,380</code>
+Aldrig.</p>
+<p><code>169 00:07:34,380 --&gt; 00:07:36,380</code>
+Bygg nu en riktig utvecklingsmiljö.</p>
+<p><code>170 00:07:36,380 --&gt; 00:07:38,380</code>
+Bygg en riktig produktionsmiljö.</p>
+<p><code>171 00:07:38,380 --&gt; 00:07:39,380</code>
+Det kostar lite extra pengar.</p>
+<p><code>172 00:07:39,380 --&gt; 00:07:40,380</code>
+Men liksom.</p>
+<p><code>173 00:07:40,380 --&gt; 00:07:41,380</code>
+Du.</p>
+<p><code>174 00:07:41,380 --&gt; 00:07:42,380</code>
+Det gör så ont.</p>
+<p><code>175 00:07:42,380 --&gt; 00:07:43,380</code>
+Att göra de här förändringarna efteråt.</p>
+<p><code>176 00:07:43,380 --&gt; 00:07:44,380</code>
+Exakt.</p>
+<p><code>177 00:07:44,380 --&gt; 00:07:45,380</code>
+Ordning och reda från början.</p>
+<p><code>178 00:07:45,380 --&gt; 00:07:46,380</code>
+Kommer vinna.</p>
+<p><code>179 00:07:47,380 --&gt; 00:07:48,380</code>
+Då behöver du inte köpa dyra.</p>
+<p><code>180 00:07:48,380 --&gt; 00:07:49,380</code>
+Lyssna på gratis säkerhetspodcast.</p>
+<p><code>181 00:07:49,380 --&gt; 00:07:50,380</code>
+Du behöver inte köpa några dyra externa tjänster.</p>
+<p><code>182 00:07:50,380 --&gt; 00:07:51,380</code>
+Det här kan du lösa själva.</p>
+<p><code>183 00:07:51,380 --&gt; 00:07:52,380</code>
+Tänk efter.</p>
+<p><code>184 00:07:52,380 --&gt; 00:07:53,380</code>
+Ta inte genvägarna liksom.</p>
+<p><code>185 00:07:53,380 --&gt; 00:07:54,380</code>
+Och sen.</p>
+<p><code>186 00:07:54,380 --&gt; 00:07:55,380</code>
+Sen tänker jag också så här.</p>
+<p><code>187 00:07:55,380 --&gt; 00:07:56,380</code>
+Nu.</p>
+<p><code>188 00:07:56,380 --&gt; 00:07:57,380</code>
+Har ju Peter.</p>
+<p><code>189 00:07:57,380 --&gt; 00:07:58,380</code>
+Förmodligen obfuskerat.</p>
+<p><code>190 00:07:58,380 --&gt; 00:07:59,380</code>
+Tydligheten i brevet här.</p>
+<p><code>191 00:07:59,380 --&gt; 00:08:00,380</code>
+Så.</p>
+<p><code>192 00:08:00,380 --&gt; 00:08:01,380</code>
+Det.</p>
+<p><code>193 00:08:01,380 --&gt; 00:08:02,380</code>
+Det låter lite.</p>
+<p><code>194 00:08:02,380 --&gt; 00:08:03,380</code>
+Som att man ska köpa sig upp.</p>
+<p><code>195 00:08:03,380 --&gt; 00:08:04,380</code>
+Problematiken.</p>
+<p><code>196 00:08:04,380 --&gt; 00:08:05,380</code>
+Och det tror jag är helt fel.</p>
+<p><code>197 00:08:05,380 --&gt; 00:08:06,380</code>
+För att.</p>
+<p><code>198 00:08:06,380 --&gt; 00:08:07,380</code>
+Man måste ha kompetensen.</p>
+<p><code>199 00:08:07,380 --&gt; 00:08:08,380</code>
+Själv.</p>
+<p><code>200 00:08:08,380 --&gt; 00:08:09,380</code>
+Men jag tror att.</p>
+<p><code>201 00:08:09,380 --&gt; 00:08:10,380</code>
+Det behöver inte ha liksom.</p>
+<p><code>202 00:08:10,380 --&gt; 00:08:11,380</code>
+Djupt kompetensen.</p>
+<p><code>203 00:08:11,380 --&gt; 00:08:12,380</code>
+Men man måste ändå.</p>
+<p><code>204 00:08:12,380 --&gt; 00:08:13,380</code>
+Man måste förstå domänen.</p>
+<p><code>205 00:08:17,380 --&gt; 00:08:18,380</code>
+För annars så är man.</p>
+<p><code>206 00:08:18,380 --&gt; 00:08:19,380</code>
+Man kan inte ens.</p>
+<p><code>207 00:08:19,380 --&gt; 00:08:20,380</code>
+Beställa tjänsten.</p>
+<p><code>208 00:08:20,380 --&gt; 00:08:21,380</code>
+Nej men.</p>
+<p><code>209 00:08:21,380 --&gt; 00:08:22,380</code>
+Det tror jag.</p>
+<p><code>210 00:08:22,380 --&gt; 00:08:23,380</code>
+Kanske är.</p>
+<p><code>211 00:08:23,380 --&gt; 00:08:24,380</code>
+Kruxet.</p>
+<p><code>212 00:08:24,380 --&gt; 00:08:25,380</code>
+I den här frågan.</p>
+<p><code>213 00:08:25,380 --&gt; 00:08:26,380</code>
+Alltså.</p>
+<p><code>214 00:08:26,380 --&gt; 00:08:27,380</code>
+Vart ska man börja.</p>
+<p><code>215 00:08:27,380 --&gt; 00:08:28,380</code>
+Om man kollar.</p>
+<p><code>216 00:08:28,380 --&gt; 00:08:29,380</code>
+Om man.</p>
+<p><code>217 00:08:29,380 --&gt; 00:08:30,380</code>
+Sätter sig ner.</p>
+<p><code>218 00:08:30,380 --&gt; 00:08:31,380</code>
+Söker runt på internet.</p>
+<p><code>219 00:08:31,380 --&gt; 00:08:32,380</code>
+Så kommer du hitta.</p>
+<p><code>220 00:08:32,380 --&gt; 00:08:33,380</code>
+En jävla massa aktörer.</p>
+<p><code>221 00:08:33,380 --&gt; 00:08:34,380</code>
+Som säger.</p>
+<p><code>222 00:08:34,380 --&gt; 00:08:35,380</code>
+Ja men kolla här.</p>
+<p><code>223 00:08:35,380 --&gt; 00:08:36,380</code>
+Vi löser all den här problemen.</p>
+<p><code>224 00:08:36,380 --&gt; 00:08:37,380</code>
+Du ska ha pentas.</p>
+<p><code>225 00:08:37,380 --&gt; 00:08:38,380</code>
+För 300 000 spänn.</p>
+<p><code>226 00:08:38,380 --&gt; 00:08:39,380</code>
+Eller du ska ha.</p>
+<p><code>227 00:08:39,380 --&gt; 00:08:40,380</code>
+Den här tjänsten.</p>
+<p><code>228 00:08:40,380 --&gt; 00:08:41,380</code>
+Eller den här försäkringen.</p>
+<p><code>229 00:08:41,380 --&gt; 00:08:42,380</code>
+Det är inte där.</p>
+<p><code>230 00:08:42,380 --&gt; 00:08:43,380</code>
+Det är inte.</p>
+<p><code>231 00:08:43,380 --&gt; 00:08:44,380</code>
+Där problemet ligger liksom.</p>
+<p><code>232 00:08:44,380 --&gt; 00:08:45,380</code>
+Det är inte där du ska börja.</p>
+<p><code>233 00:08:45,380 --&gt; 00:08:46,380</code>
+Nej.</p>
+<p><code>234 00:08:47,380 --&gt; 00:08:48,380</code>
+Det är tråkigt.</p>
+<p><code>235 00:08:48,380 --&gt; 00:08:49,380</code>
+Att inte ricka det här.</p>
+<p><code>236 00:08:49,380 --&gt; 00:08:50,380</code>
+För det.</p>
+<p><code>237 00:08:50,380 --&gt; 00:08:51,380</code>
+Man skulle haft.</p>
+<p><code>238 00:08:51,380 --&gt; 00:08:52,380</code>
+En person som kommer in.</p>
+<p><code>239 00:08:52,380 --&gt; 00:08:53,380</code>
+Och tittar.</p>
+<p><code>240 00:08:53,380 --&gt; 00:08:54,380</code>
+Organisatoriskt.</p>
+<p><code>241 00:08:54,380 --&gt; 00:08:55,380</code>
+Och sedan.</p>
+<p><code>242 00:08:55,380 --&gt; 00:08:56,380</code>
+Har ju ingen organisation.</p>
+<p><code>243 00:08:56,380 --&gt; 00:08:57,380</code>
+Och säger.</p>
+<p><code>244 00:08:57,380 --&gt; 00:08:58,380</code>
+Nej okej.</p>
+<p><code>245 00:08:58,380 --&gt; 00:08:59,380</code>
+Nej men.</p>
+<p><code>246 00:08:59,380 --&gt; 00:09:00,380</code>
+Och kanske sätter den då.</p>
+<p><code>247 00:09:00,380 --&gt; 00:09:01,380</code>
+Ja.</p>
+<p><code>248 00:09:01,380 --&gt; 00:09:02,380</code>
+Lösar vi.</p>
+<p><code>249 00:09:02,380 --&gt; 00:09:03,380</code>
+Så så här.</p>
+<p><code>250 00:09:03,380 --&gt; 00:09:04,380</code>
+Men jag kan helt enkelt säga.</p>
+<p><code>251 00:09:04,380 --&gt; 00:09:05,380</code>
+Låt oss säga.</p>
+<p><code>252 00:09:05,380 --&gt; 00:09:06,380</code>
+Att de inte hade haft.</p>
+<p><code>253 00:09:06,380 --&gt; 00:09:07,380</code>
+En frontendutvecklare.</p>
+<p><code>254 00:09:07,380 --&gt; 00:09:08,380</code>
+Hade de köpt in den tjänsten då.</p>
+<p><code>255 00:09:08,380 --&gt; 00:09:09,380</code>
+Hade de för fan anställt.</p>
+<p><code>256 00:09:09,380 --&gt; 00:09:10,380</code>
+En frontendutvecklare.</p>
+<p><code>257 00:09:10,380 --&gt; 00:09:11,380</code>
+På samma sätt.</p>
+<p><code>258 00:09:11,380 --&gt; 00:09:12,380</code>
+Se till så att det är någon.</p>
+<p><code>259 00:09:12,380 --&gt; 00:09:13,380</code>
+Som har säkerhetsansvaret.</p>
+<p><code>260 00:09:13,380 --&gt; 00:09:14,380</code>
+I bolaget.</p>
+<p><code>261 00:09:14,380 --&gt; 00:09:15,380</code>
+Ja.</p>
+<p><code>262 00:09:15,380 --&gt; 00:09:16,380</code>
+Det bästa i världen.</p>
+<p><code>263 00:09:16,380 --&gt; 00:09:17,380</code>
+För det är ett litet bolag.</p>
+<p><code>264 00:09:17,380 --&gt; 00:09:18,380</code>
+Man tar det man har.</p>
+<p><code>265 00:09:18,380 --&gt; 00:09:19,380</code>
+Ja.</p>
+<p><code>266 00:09:19,380 --&gt; 00:09:20,380</code>
+Man har inte råd.</p>
+<p><code>267 00:09:20,380 --&gt; 00:09:21,380</code>
+Att skaffa sig.</p>
+<p><code>268 00:09:21,380 --&gt; 00:09:22,380</code>
+Ett fulltidsproffs.</p>
+<p><code>269 00:09:22,380 --&gt; 00:09:23,380</code>
+På säkerhet.</p>
+<p><code>270 00:09:23,380 --&gt; 00:09:24,380</code>
+Men ta någon.</p>
+<p><code>271 00:09:24,380 --&gt; 00:09:25,380</code>
+Som kan något.</p>
+<p><code>272 00:09:25,380 --&gt; 00:09:26,380</code>
+I alla fall.</p>
+<p><code>273 00:09:26,380 --&gt; 00:09:27,380</code>
+Så det är liksom.</p>
+<p><code>274 00:09:27,380 --&gt; 00:09:28,380</code>
+På samma sätt.</p>
+<p><code>275 00:09:28,380 --&gt; 00:09:29,380</code>
+Som man väver in.</p>
+<p><code>276 00:09:29,380 --&gt; 00:09:30,380</code>
+Annan kompetens.</p>
+<p><code>277 00:09:30,380 --&gt; 00:09:31,380</code>
+Någon måste kunna.</p>
+<p><code>278 00:09:31,380 --&gt; 00:09:32,380</code>
+Databasen.</p>
+<p><code>279 00:09:32,380 --&gt; 00:09:33,380</code>
+Någon måste kunna.</p>
+<p><code>280 00:09:33,380 --&gt; 00:09:34,380</code>
+Backend java.</p>
+<p><code>281 00:09:34,380 --&gt; 00:09:35,380</code>
+Någon måste kunna.</p>
+<p><code>282 00:09:35,380 --&gt; 00:09:36,380</code>
+Frontend javascript.</p>
+<p><code>283 00:09:36,380 --&gt; 00:09:37,380</code>
+Liksom.</p>
+<p><code>284 00:09:37,380 --&gt; 00:09:38,380</code>
+Så hitta någon.</p>
+<p><code>285 00:09:38,380 --&gt; 00:09:39,380</code>
+Som kan säkerhet också.</p>
+<p><code>286 00:09:39,380 --&gt; 00:09:40,380</code>
+Det är en helt naturlig.</p>
+<p><code>287 00:09:40,380 --&gt; 00:09:41,380</code>
+Komponent.</p>
+<p><code>288 00:09:41,380 --&gt; 00:09:42,380</code>
+I det här bygget.</p>
+<p><code>289 00:09:42,380 --&gt; 00:09:43,380</code>
+Du kan inte skita i det.</p>
+<p><code>290 00:09:43,380 --&gt; 00:09:44,380</code>
+Och som du säger.</p>
+<p><code>291 00:09:44,380 --&gt; 00:09:45,380</code>
+Du vet det.</p>
+<p><code>292 00:09:45,380 --&gt; 00:09:46,380</code>
+Och det handlar ju också om.</p>
+<p><code>293 00:09:46,380 --&gt; 00:09:47,380</code>
+Att de som kommer göra jobbet.</p>
+<p><code>294 00:09:47,380 --&gt; 00:09:48,380</code>
+Behöver ju göra jobbet.</p>
+<p><code>295 00:09:48,380 --&gt; 00:09:49,380</code>
+Och har inte du gjort något.</p>
+<p><code>296 00:09:49,380 --&gt; 00:09:50,380</code>
+Utav jobbet.</p>
+<p><code>297 00:09:50,380 --&gt; 00:09:51,380</code>
+Så.</p>
+<p><code>298 00:09:51,380 --&gt; 00:09:52,380</code>
+Vad blir det för leverans.</p>
+<p><code>299 00:09:52,380 --&gt; 00:09:53,380</code>
+Förstår ni.</p>
+<p><code>300 00:09:53,380 --&gt; 00:09:54,380</code>
+Alltså.</p>
+<p><code>301 00:09:54,380 --&gt; 00:09:55,380</code>
+Beställer man.</p>
+<p><code>302 00:09:55,380 --&gt; 00:09:56,380</code>
+Skit.</p>
+<p><code>303 00:09:56,380 --&gt; 00:09:57,380</code>
+Så får man skit.</p>
+<p><code>304 00:09:57,380 --&gt; 00:09:58,380</code>
+Så det måste ju finnas en.</p>
+<p><code>305 00:09:58,380 --&gt; 00:09:59,380</code>
+Beställarkompetens.</p>
+<p><code>306 00:09:59,380 --&gt; 00:10:00,380</code>
+Ja.</p>
+<p><code>307 00:10:00,380 --&gt; 00:10:01,380</code>
+Beställarkompetensen är viktig.</p>
+<p><code>308 00:10:01,380 --&gt; 00:10:02,380</code>
+Och då behöver man ha det.</p>
+<p><code>309 00:10:02,380 --&gt; 00:10:03,380</code>
+Med en förståelse.</p>
+<p><code>310 00:10:03,380 --&gt; 00:10:04,380</code>
+Har man inte det.</p>
+<p><code>311 00:10:04,380 --&gt; 00:10:05,380</code>
+Så måste man skaffa sig det.</p>
+<p><code>312 00:10:05,380 --&gt; 00:10:06,380</code>
+Sen kan jag tänka mig.</p>
+<p><code>313 00:10:06,380 --&gt; 00:10:07,380</code>
+Att det finns branscher.</p>
+<p><code>314 00:10:07,380 --&gt; 00:10:08,380</code>
+Där det finns höga.</p>
+<p><code>315 00:10:08,380 --&gt; 00:10:09,380</code>
+Säkerhetskrav.</p>
+<p><code>316 00:10:09,380 --&gt; 00:10:10,380</code>
+Eller höga förväntningar.</p>
+<p><code>317 00:10:10,380 --&gt; 00:10:11,380</code>
+Från kunderna.</p>
+<p><code>318 00:10:11,380 --&gt; 00:10:13,140</code>
+Och även för en startup då.</p>
+<p><code>319 00:10:13,140 --&gt; 00:10:14,140</code>
+Så kan det ju vara.</p>
+<p><code>320 00:10:14,140 --&gt; 00:10:15,140</code>
+En kompetensmässig.</p>
+<p><code>321 00:10:15,140 --&gt; 00:10:16,140</code>
+Fördel.</p>
+<p><code>322 00:10:16,140 --&gt; 00:10:17,140</code>
+Eller fel.</p>
+<p><code>323 00:10:17,140 --&gt; 00:10:18,140</code>
+En marknadsmässig.</p>
+<p><code>324 00:10:18,140 --&gt; 00:10:19,140</code>
+Fördel.</p>
+<p><code>325 00:10:19,140 --&gt; 00:10:20,140</code>
+Till och med.</p>
+<p><code>326 00:10:20,140 --&gt; 00:10:21,140</code>
+Att ta hjälp.</p>
+<p><code>327 00:10:21,140 --&gt; 00:10:22,140</code>
+Av en extert partner.</p>
+<p><code>328 00:10:22,140 --&gt; 00:10:23,140</code>
+Jag var med en gång.</p>
+<p><code>329 00:10:23,140 --&gt; 00:10:24,140</code>
+När vi jobbade med.</p>
+<p><code>330 00:10:24,140 --&gt; 00:10:25,140</code>
+En superliten startup.</p>
+<p><code>331 00:10:25,140 --&gt; 00:10:26,140</code>
+De hade liksom.</p>
+<p><code>332 00:10:26,140 --&gt; 00:10:27,140</code>
+Inga pengar alls.</p>
+<p><code>333 00:10:27,140 --&gt; 00:10:28,140</code>
+De hade liksom.</p>
+<p><code>334 00:10:28,140 --&gt; 00:10:29,140</code>
+De hade precis.</p>
+<p><code>335 00:10:29,140 --&gt; 00:10:30,140</code>
+Ett kontor.</p>
+<p><code>336 00:10:30,140 --&gt; 00:10:31,140</code>
+Och var väl.</p>
+<p><code>337 00:10:31,140 --&gt; 00:10:32,140</code>
+Ja.</p>
+<p><code>338 00:10:32,140 --&gt; 00:10:33,140</code>
+Fyra pers.</p>
+<p><code>339 00:10:33,140 --&gt; 00:10:34,140</code>
+Eller någonting.</p>
+<p><code>340 00:10:34,140 --&gt; 00:10:35,140</code>
+Och de riktade sig.</p>
+<p><code>341 00:10:35,140 --&gt; 00:10:36,140</code>
+Mot en ganska mogen marknad.</p>
+<p><code>342 00:10:36,140 --&gt; 00:10:37,140</code>
+Som var ganska reglerad.</p>
+<p><code>343 00:10:37,140 --&gt; 00:10:38,140</code>
+Men de insåg snabbt.</p>
+<p><code>344 00:10:38,140 --&gt; 00:10:39,140</code>
+Att vi måste.</p>
+<p><code>345 00:10:39,140 --&gt; 00:10:40,140</code>
+Om inte vi har säkerhet.</p>
+<p><code>346 00:10:40,140 --&gt; 00:10:41,140</code>
+Så kommer de.</p>
+<p><code>347 00:10:41,140 --&gt; 00:10:42,140</code>
+För det tidigt.</p>
+<p><code>348 00:10:42,140 --&gt; 00:10:43,140</code>
+Och teamade upp med oss.</p>
+<p><code>349 00:10:43,140 --&gt; 00:10:44,140</code>
+Och köpte liksom.</p>
+<p><code>350 00:10:44,140 --&gt; 00:10:45,140</code>
+Enstaka timmar.</p>
+<p><code>351 00:10:45,140 --&gt; 00:10:46,140</code>
+När vi bara satt.</p>
+<p><code>352 00:10:46,140 --&gt; 00:10:47,140</code>
+Och pratade med dem.</p>
+<p><code>353 00:10:47,140 --&gt; 00:10:48,140</code>
+Om liksom.</p>
+<p><code>354 00:10:48,140 --&gt; 00:10:49,140</code>
+Ja.</p>
+<p><code>355 00:10:49,140 --&gt; 00:10:50,140</code>
+Det är inte så smart.</p>
+<p><code>356 00:10:50,140 --&gt; 00:10:51,140</code>
+Att ha.</p>
+<p><code>357 00:10:51,140 --&gt; 00:10:52,140</code>
+Byggservern.</p>
+<p><code>358 00:10:52,140 --&gt; 00:10:53,140</code>
+Development.</p>
+<p><code>359 00:10:53,140 --&gt; 00:10:54,140</code>
+Och produktion.</p>
+<p><code>360 00:10:54,140 --&gt; 00:10:55,140</code>
+I samma.</p>
+<p><code>361 00:10:55,140 --&gt; 00:10:56,140</code>
+OVS-konto.</p>
+<p><code>362 00:10:56,140 --&gt; 00:10:57,140</code>
+Nej.</p>
+<p><code>363 00:10:57,140 --&gt; 00:10:58,140</code>
+Det är inte smart.</p>
+<p><code>364 00:10:58,140 --&gt; 00:10:59,140</code>
+Utan försök.</p>
+<p><code>365 00:10:59,140 --&gt; 00:11:00,140</code>
+Dela upp dem.</p>
+<p><code>366 00:11:00,140 --&gt; 00:11:01,140</code>
+På lite delar.</p>
+<p><code>367 00:11:01,140 --&gt; 00:11:02,140</code>
+Försök tänk lite.</p>
+<p><code>368 00:11:02,140 --&gt; 00:11:03,140</code>
+Som du sa.</p>
+<p><code>369 00:11:03,140 --&gt; 00:11:04,140</code>
+På.</p>
+<p><code>370 00:11:04,140 --&gt; 00:11:05,140</code>
+Identitet.</p>
+<p><code>371 00:11:05,140 --&gt; 00:11:06,140</code>
+Och sånt.</p>
+<p><code>372 00:11:06,140 --&gt; 00:11:07,140</code>
+Exempel.</p>
+<p><code>373 00:11:07,140 --&gt; 00:11:08,140</code>
+Så vi började tidigt.</p>
+<p><code>374 00:11:08,140 --&gt; 00:11:09,140</code>
+Och det är så här.</p>
+<p><code>375 00:11:09,140 --&gt; 00:11:10,140</code>
+Med sex månaders mellanrum.</p>
+<p><code>376 00:11:10,140 --&gt; 00:11:11,140</code>
+Så kom de tillbaka.</p>
+<p><code>377 00:11:11,140 --&gt; 00:11:12,140</code>
+Nu har de köpt.</p>
+<p><code>378 00:11:12,140 --&gt; 00:11:13,140</code>
+Flera pentest av oss.</p>
+<p><code>379 00:11:13,140 --&gt; 00:11:14,140</code>
+Sen dess.</p>
+<p><code>380 00:11:14,140 --&gt; 00:11:15,140</code>
+Inte superstora.</p>
+<p><code>381 00:11:15,140 --&gt; 00:11:16,140</code>
+Men ändå.</p>
+<p><code>382 00:11:16,140 --&gt; 00:11:17,140</code>
+Där är det ju.</p>
+<p><code>383 00:11:17,140 --&gt; 00:11:18,140</code>
+Där är det ju inne på någonting.</p>
+<p><code>384 00:11:18,140 --&gt; 00:11:19,140</code>
+Men där har man ju också.</p>
+<p><code>385 00:11:19,140 --&gt; 00:11:20,140</code>
+En idé.</p>
+<p><code>386 00:11:20,140 --&gt; 00:11:21,140</code>
+Om att man vill.</p>
+<p><code>387 00:11:21,140 --&gt; 00:11:22,140</code>
+Det har ju organisationen.</p>
+<p><code>388 00:11:22,140 --&gt; 00:11:23,140</code>
+Kommit fram till.</p>
+<p><code>389 00:11:23,140 --&gt; 00:11:24,140</code>
+Att vi ska lära oss det här.</p>
+<p><code>390 00:11:24,140 --&gt; 00:11:25,140</code>
+Och då.</p>
+<p><code>391 00:11:25,140 --&gt; 00:11:26,140</code>
+Okej.</p>
+<p><code>392 00:11:26,140 --&gt; 00:11:27,140</code>
+Men vad har vi råd med då?</p>
+<p><code>393 00:11:27,140 --&gt; 00:11:28,140</code>
+För det här.</p>
+<p><code>394 00:11:28,140 --&gt; 00:11:29,140</code>
+Mentorskapsgrejen.</p>
+<p><code>395 00:11:29,140 --&gt; 00:11:30,140</code>
+Är jättebra.</p>
+<p><code>396 00:11:30,140 --&gt; 00:11:31,140</code>
+Det är ju.</p>
+<p><code>397 00:11:31,140 --&gt; 00:11:32,140</code>
+Det är ju fint.</p>
+<p><code>398 00:11:32,140 --&gt; 00:11:33,140</code>
+Att det finns.</p>
+<p><code>399 00:11:33,140 --&gt; 00:11:34,140</code>
+Sen ska man ju veta det också.</p>
+<p><code>400 00:11:34,140 --&gt; 00:11:35,140</code>
+Att det finns ju.</p>
+<p><code>401 00:11:35,140 --&gt; 00:11:36,140</code>
+Bolag där ute.</p>
+<p><code>402 00:11:36,140 --&gt; 00:11:37,140</code>
+Som kränger bara.</p>
+<p><code>403 00:11:37,140 --&gt; 00:11:38,140</code>
+Man vill ju hitta en partner.</p>
+<p><code>404 00:11:38,140 --&gt; 00:11:39,140</code>
+Som.</p>
+<p><code>405 00:11:39,140 --&gt; 00:11:40,140</code>
+Som.</p>
+<p><code>406 00:11:40,140 --&gt; 00:11:41,140</code>
+Ska gynna.</p>
+<p><code>407 00:11:41,140 --&gt; 00:11:42,140</code>
+För det.</p>
+<p><code>408 00:11:42,140 --&gt; 00:11:43,140</code>
+Det är ju fast track.</p>
+<p><code>409 00:11:43,140 --&gt; 00:11:44,140</code>
+Till knowledge transfer.</p>
+<p><code>410 00:11:44,140 --&gt; 00:11:45,140</code>
+Och det är ju.</p>
+<p><code>411 00:11:45,140 --&gt; 00:11:46,140</code>
+Det är det det handlar om.</p>
+<p><code>412 00:11:46,140 --&gt; 00:11:47,140</code>
+Precis.</p>
+<p><code>413 00:11:47,140 --&gt; 00:11:48,140</code>
+Det är ju riktad rådgivning.</p>
+<p><code>414 00:11:48,140 --&gt; 00:11:49,140</code>
+Liksom.</p>
+<p><code>415 00:11:49,140 --&gt; 00:11:50,140</code>
+Exakt.</p>
+<p><code>416 00:11:50,140 --&gt; 00:11:51,140</code>
+På din miljö.</p>
+<p><code>417 00:11:51,140 --&gt; 00:11:52,140</code>
+Det är en.</p>
+<p><code>418 00:11:52,140 --&gt; 00:11:53,140</code>
+Det ska jag säga.</p>
+<p><code>419 00:11:53,140 --&gt; 00:11:54,140</code>
+Det är en bra grej.</p>
+<p><code>420 00:11:54,140 --&gt; 00:11:55,140</code>
+Om man är där och känner sig.</p>
+<p><code>421 00:11:55,140 --&gt; 00:11:56,140</code>
+Och det tror jag är bra.</p>
+<p><code>422 00:11:56,140 --&gt; 00:11:57,140</code>
+Om man inte har så himla bra koll.</p>
+<p><code>423 00:11:57,140 --&gt; 00:11:58,140</code>
+Ta in.</p>
+<p><code>424 00:11:58,140 --&gt; 00:11:59,140</code>
+Om man nu.</p>
+<p><code>425 00:11:59,140 --&gt; 00:12:00,140</code>
+Ska ta in någon.</p>
+<p><code>426 00:12:00,140 --&gt; 00:12:01,140</code>
+Någon får jag.</p>
+<p><code>427 00:12:01,140 --&gt; 00:12:02,140</code>
+Hjälpa till med.</p>
+<p><code>428 00:12:02,140 --&gt; 00:12:03,140</code>
+Extension.</p>
+<p><code>429 00:12:03,140 --&gt; 00:12:04,140</code>
+Som en början.</p>
+<p><code>430 00:12:04,140 --&gt; 00:12:05,140</code>
+En partner.</p>
+<p><code>431 00:12:05,140 --&gt; 00:12:06,140</code>
+Men börja med en.</p>
+<p><code>432 00:12:06,140 --&gt; 00:12:07,140</code>
+Liksom.</p>
+<p><code>433 00:12:07,140 --&gt; 00:12:08,140</code>
+Enklare hotmodellering.</p>
+<p><code>434 00:12:08,140 --&gt; 00:12:09,140</code>
+Och riskanalys.</p>
+<p><code>435 00:12:09,140 --&gt; 00:12:10,140</code>
+Det var tre timmar.</p>
+<p><code>436 00:12:10,140 --&gt; 00:12:11,140</code>
+På en kund.</p>
+<p><code>437 00:12:11,140 --&gt; 00:12:12,140</code>
+Back in the day.</p>
+<p><code>438 00:12:12,140 --&gt; 00:12:13,140</code>
+Vi lyckades sitta.</p>
+<p><code>439 00:12:13,140 --&gt; 00:12:14,140</code>
+En sequel injection.</p>
+<p><code>440 00:12:14,140 --&gt; 00:12:15,140</code>
+Innan vi gick till mötet.</p>
+<p><code>441 00:12:15,140 --&gt; 00:12:16,140</code>
+Och på plats.</p>
+<p><code>442 00:12:16,140 --&gt; 00:12:17,140</code>
+Så.</p>
+<p><code>443 00:12:17,140 --&gt; 00:12:18,140</code>
+Jag kommer ihåg.</p>
+<p><code>444 00:12:18,140 --&gt; 00:12:19,140</code>
+Så typ.</p>
+<p><code>445 00:12:19,140 --&gt; 00:12:20,140</code>
+Så.</p>
+<p><code>446 00:12:20,140 --&gt; 00:12:21,140</code>
+På whiteboard tavlan.</p>
+<p><code>447 00:12:21,140 --&gt; 00:12:22,140</code>
+Så upptäckte vi.</p>
+<p><code>448 00:12:22,140 --&gt; 00:12:23,140</code>
+Mycket saker som var.</p>
+<p><code>449 00:12:23,140 --&gt; 00:12:24,140</code>
+Det här måste ni göra om.</p>
+<p><code>450 00:12:24,140 --&gt; 00:12:25,140</code>
+Sen så.</p>
+<p><code>451 00:12:25,140 --&gt; 00:12:26,140</code>
+Och då hade vi redan planerat.</p>
+<p><code>452 00:12:26,140 --&gt; 00:12:27,140</code>
+Egentligen uppföljning.</p>
+<p><code>453 00:12:27,140 --&gt; 00:12:28,140</code>
+Vi skulle göra massor med jobb.</p>
+<p><code>454 00:12:28,140 --&gt; 00:12:29,140</code>
+Efter det.</p>
+<p><code>455 00:12:29,140 --&gt; 00:12:30,140</code>
+Men de sa.</p>
+<p><code>456 00:12:30,140 --&gt; 00:12:31,140</code>
+Nej.</p>
+<p><code>457 00:12:31,140 --&gt; 00:12:32,140</code>
+Vi har för mycket att göra.</p>
+<p><code>458 00:12:32,140 --&gt; 00:12:33,140</code>
+Efter de här tre timmarna.</p>
+<p><code>459 00:12:33,140 --&gt; 00:12:34,140</code>
+Så har vi tillräckligt mycket att göra.</p>
+<p><code>460 00:12:34,140 --&gt; 00:12:35,140</code>
+Ja.</p>
+<p><code>461 00:12:35,140 --&gt; 00:12:36,140</code>
+Men det där tror jag är bra.</p>
+<p><code>462 00:12:36,140 --&gt; 00:12:37,140</code>
+Och då vill man ju.</p>
+<p><code>463 00:12:37,140 --&gt; 00:12:38,140</code>
+Jag har inte den leveransen.</p>
+<p><code>464 00:12:38,140 --&gt; 00:12:39,140</code>
+Min leverans.</p>
+<p><code>465 00:12:39,140 --&gt; 00:12:40,140</code>
+Jag gör en grej.</p>
+<p><code>466 00:12:40,140 --&gt; 00:12:41,140</code>
+Jag levererar.</p>
+<p><code>467 00:12:41,140 --&gt; 00:12:42,140</code>
+En sak.</p>
+<p><code>468 00:12:42,140 --&gt; 00:12:43,140</code>
+Och där.</p>
+<p><code>469 00:12:43,140 --&gt; 00:12:44,140</code>
+Där är det ju viktigt också då.</p>
+<p><code>470 00:12:44,140 --&gt; 00:12:45,140</code>
+Att man.</p>
+<p><code>471 00:12:45,140 --&gt; 00:12:46,140</code>
+Lite så här.</p>
+<p><code>472 00:12:46,140 --&gt; 00:12:47,140</code>
+Att man hamnar hos någon.</p>
+<p><code>473 00:12:47,140 --&gt; 00:12:48,140</code>
+Som.</p>
+<p><code>474 00:12:48,140 --&gt; 00:12:49,140</code>
+Som har hela.</p>
+<p><code>475 00:12:49,140 --&gt; 00:12:50,140</code>
+Hela.</p>
+<p><code>476 00:12:50,140 --&gt; 00:12:51,140</code>
+Alltså hela skrået.</p>
+<p><code>477 00:12:51,140 --&gt; 00:12:52,140</code>
+Med säkerhetstjänster.</p>
+<p><code>478 00:12:52,140 --&gt; 00:12:53,140</code>
+Om det då.</p>
+<p><code>479 00:12:53,140 --&gt; 00:12:54,140</code>
+Om det.</p>
+<p><code>480 00:12:54,140 --&gt; 00:12:55,140</code>
+Om man vill ha en partner.</p>
+<p><code>481 00:12:55,140 --&gt; 00:12:56,140</code>
+Långsiktigt.</p>
+<p><code>482 00:12:56,140 --&gt; 00:12:57,140</code>
+Exakt.</p>
+<p><code>483 00:12:57,140 --&gt; 00:12:58,140</code>
+Du kan ju ta in någon.</p>
+<p><code>484 00:12:58,140 --&gt; 00:12:59,140</code>
+Som bara.</p>
+<p><code>485 00:12:59,140 --&gt; 00:13:00,140</code>
+Jävla fena på hotmodellering.</p>
+<p><code>486 00:13:00,140 --&gt; 00:13:01,140</code>
+Ja.</p>
+<p><code>487 00:13:01,140 --&gt; 00:13:02,140</code>
+För den typen av miljöer.</p>
+<p><code>488 00:13:02,140 --&gt; 00:13:03,140</code>
+Ja.</p>
+<p><code>489 00:13:03,140 --&gt; 00:13:04,140</code>
+Och göra en one off.</p>
+<p><code>490 00:13:04,140 --&gt; 00:13:05,140</code>
+Exakt.</p>
+<p><code>491 00:13:05,140 --&gt; 00:13:06,140</code>
+Och sen så ta med dig det.</p>
+<p><code>492 00:13:06,140 --&gt; 00:13:07,140</code>
+Till nästa.</p>
+<p><code>493 00:13:07,140 --&gt; 00:13:08,140</code>
+Och.</p>
+<p><code>494 00:13:08,140 --&gt; 00:13:09,140</code>
+Titta på vad vi pratar om här.</p>
+<p><code>495 00:13:09,140 --&gt; 00:13:10,140</code>
+Så är det ju.</p>
+<p><code>496 00:13:10,140 --&gt; 00:13:11,140</code>
+Vi pratar om ganska många olika delar här.</p>
+<p><code>497 00:13:11,140 --&gt; 00:13:14,140</code>
+Vi har inte varit så jäkla nära teknik egentligen ännu.</p>
+<p><code>498 00:13:14,140 --&gt; 00:13:15,140</code>
+Och det.</p>
+<p><code>499 00:13:15,140 --&gt; 00:13:16,140</code>
+Det har ju.</p>
+<p><code>500 00:13:16,140 --&gt; 00:13:17,140</code>
+Det.</p>
+<p><code>501 00:13:17,140 --&gt; 00:13:18,140</code>
+Det är ju för att.</p>
+<p><code>502 00:13:18,140 --&gt; 00:13:19,140</code>
+Det har blivit så mycket större än bara.</p>
+<p><code>503 00:13:19,140 --&gt; 00:13:20,140</code>
+En systemisk.</p>
+<p><code>504 00:13:20,140 --&gt; 00:13:21,140</code>
+Ja.</p>
+<p><code>505 00:13:21,140 --&gt; 00:13:22,140</code>
+Det är inte.</p>
+<p><code>506 00:13:22,140 --&gt; 00:13:23,140</code>
+Det är inte en snickare.</p>
+<p><code>507 00:13:23,140 --&gt; 00:13:24,140</code>
+En elektriker.</p>
+<p><code>508 00:13:24,140 --&gt; 00:13:25,140</code>
+Och en VVSare.</p>
+<p><code>509 00:13:25,140 --&gt; 00:13:26,140</code>
+Utan det kommer liksom.</p>
+<p><code>510 00:13:26,140 --&gt; 00:13:27,140</code>
+Vara i alla skrån.</p>
+<p><code>511 00:13:27,140 --&gt; 00:13:28,140</code>
+Det kommer drabba alla skrån.</p>
+<p><code>512 00:13:28,140 --&gt; 00:13:29,140</code>
+Så.</p>
+<p><code>513 00:13:29,140 --&gt; 00:13:30,140</code>
+Ja.</p>
+<p><code>514 00:13:30,140 --&gt; 00:13:31,140</code>
+Jag ser att ni ser ut som.</p>
+<p><code>515 00:13:31,140 --&gt; 00:13:32,140</code>
+Men.</p>
+<p><code>516 00:13:32,140 --&gt; 00:13:33,140</code>
+Men.</p>
+<p><code>517 00:13:33,140 --&gt; 00:13:34,140</code>
+Men.</p>
+<p><code>518 00:13:34,140 --&gt; 00:13:35,140</code>
+Men.</p>
+<p><code>519 00:13:35,140 --&gt; 00:13:36,140</code>
+Men.</p>
+<p><code>520 00:13:36,140 --&gt; 00:13:37,140</code>
+Men.</p>
+<p><code>521 00:13:37,140 --&gt; 00:13:38,140</code>
+Men.</p>
+<p><code>522 00:13:38,140 --&gt; 00:13:39,140</code>
+Men.</p>
+<p><code>523 00:13:39,140 --&gt; 00:13:40,140</code>
+Men.</p>
+<p><code>524 00:13:40,140 --&gt; 00:13:41,140</code>
+Men.</p>
+<p><code>525 00:13:41,140 --&gt; 00:13:42,140</code>
+Men.</p>
+<p><code>526 00:13:42,140 --&gt; 00:13:43,140</code>
+Men.</p>
+<p><code>527 00:13:43,140 --&gt; 00:13:44,140</code>
+Men.</p>
+<p><code>528 00:13:44,140 --&gt; 00:13:44,740</code>
+Men.</p>
+<p><code>529 00:13:44,740 --&gt; 00:13:45,140</code>
+Men.</p>
+<p><code>530 00:13:45,140 --&gt; 00:13:46,140</code>
+Men.</p>
+<p><code>531 00:13:46,140 --&gt; 00:13:47,140</code>
+Men.</p>
+<p><code>532 00:13:47,140 --&gt; 00:13:48,140</code>
+Men.</p>
+<p><code>533 00:13:48,140 --&gt; 00:13:49,140</code>
+Men.</p>
+<p><code>534 00:13:49,140 --&gt; 00:13:50,140</code>
+Men.</p>
+<p><code>535 00:13:50,140 --&gt; 00:13:51,140</code>
+Men.</p>
+<p><code>536 00:13:51,140 --&gt; 00:13:52,140</code>
+Men.</p>
+<p><code>537 00:13:52,140 --&gt; 00:13:53,140</code>
+Men.</p>
+<p><code>538 00:13:53,140 --&gt; 00:13:54,140</code>
+Men.</p>
+<p><code>539 00:13:54,140 --&gt; 00:13:55,140</code>
+Men.</p>
+<p><code>540 00:13:55,140 --&gt; 00:13:56,140</code>
+Men.</p>
+<p><code>541 00:13:56,140 --&gt; 00:13:57,140</code>
+Men.</p>
+<p><code>542 00:13:57,140 --&gt; 00:13:58,140</code>
+Men.</p>
+<p><code>543 00:13:58,140 --&gt; 00:13:59,140</code>
+Men.</p>
+<p><code>544 00:13:59,140 --&gt; 00:14:00,140</code>
+Men.</p>
+<p><code>545 00:14:00,140 --&gt; 00:14:01,140</code>
+Men.</p>
+<p><code>546 00:14:01,140 --&gt; 00:14:02,140</code>
+Men.</p>
+<p><code>547 00:14:02,140 --&gt; 00:14:03,140</code>
+Men.</p>
+<p><code>548 00:14:03,140 --&gt; 00:14:04,140</code>
+Men.</p>
+<p><code>549 00:14:04,140 --&gt; 00:14:05,140</code>
+Men.</p>
+<p><code>550 00:14:05,140 --&gt; 00:14:06,140</code>
+Men.</p>
+<p><code>551 00:14:06,140 --&gt; 00:14:08,300</code>
+del av att göra saker och ting</p>
+<p><code>552 00:14:08,300 --&gt; 00:14:09,920</code>
+i it-fältet.</p>
+<p><code>553 00:14:10,020 --&gt; 00:14:10,800</code>
+Man måste ha det.</p>
+<p><code>554 00:14:11,460 --&gt; 00:14:12,640</code>
+Jag tänkte på</p>
+<p><code>555 00:14:12,640 --&gt; 00:14:16,200</code>
+han tog ju specifikt upp</p>
+<p><code>556 00:14:16,200 --&gt; 00:14:16,740</code>
+att</p>
+<p><code>557 00:14:16,740 --&gt; 00:14:19,520</code>
+ett pentest på hundratusen</p>
+<p><code>558 00:14:19,520 --&gt; 00:14:21,720</code>
+är för dyrt för bolaget.</p>
+<p><code>559 00:14:21,980 --&gt; 00:14:23,420</code>
+Då gör man inte det.</p>
+<p><code>560 00:14:24,260 --&gt; 00:14:25,040</code>
+Nej, precis.</p>
+<p><code>561 00:14:25,340 --&gt; 00:14:27,520</code>
+Där kan man ju fundera på olika&hellip;</p>
+<p><code>562 00:14:27,520 --&gt; 00:14:29,800</code>
+Det är ju fler&hellip;</p>
+<p><code>563 00:14:29,800 --&gt; 00:14:30,760</code>
+Nu avbryter jag, förlåt.</p>
+<p><code>564 00:14:30,860 --&gt; 00:14:33,980</code>
+Det är så kul här för att</p>
+<p><code>565 00:14:33,980 --&gt; 00:14:35,340</code>
+det är ju&hellip;</p>
+<p><code>566 00:14:35,340 --&gt; 00:14:37,460</code>
+Antingen så är personen i fråga</p>
+<p><code>567 00:14:37,460 --&gt; 00:14:39,300</code>
+ganska så här, det är för dyrt, det kommer aldrig att gå.</p>
+<p><code>568 00:14:39,740 --&gt; 00:14:41,600</code>
+Eller så har den personen som man har frågat</p>
+<p><code>569 00:14:41,600 --&gt; 00:14:43,400</code>
+detta missförstått övningen</p>
+<p><code>570 00:14:43,400 --&gt; 00:14:44,320</code>
+kapitalt.</p>
+<p><code>571 00:14:45,920 --&gt; 00:14:47,760</code>
+Om vi som sitter och diskuterar</p>
+<p><code>572 00:14:47,760 --&gt; 00:14:49,720</code>
+här nu, vi har ju en ganska klar bild</p>
+<p><code>573 00:14:49,720 --&gt; 00:14:51,320</code>
+tror jag alla vi fyra här nu</p>
+<p><code>574 00:14:51,320 --&gt; 00:14:52,620</code>
+om vad man borde göra.</p>
+<p><code>575 00:14:54,300 --&gt; 00:14:55,880</code>
+Och då har han säkert, vi hoppas</p>
+<p><code>576 00:14:55,880 --&gt; 00:14:57,520</code>
+att den här han eller hon har gått ut och frågat</p>
+<p><code>577 00:14:57,520 --&gt; 00:14:59,840</code>
+någon och de har sagt hundratusen kostar ett pentest.</p>
+<p><code>578 00:15:00,420 --&gt; 00:15:01,720</code>
+Det är fel person att fråga.</p>
+<p><code>579 00:15:02,360 --&gt; 00:15:04,000</code>
+Den personen har ju&hellip;</p>
+<p><code>580 00:15:04,000 --&gt; 00:15:05,320</code>
+Det är ju Cocobello, de kommer</p>
+<p><code>581 00:15:05,320 --&gt; 00:15:06,980</code>
+inte kunna ta emot ett pentest.</p>
+<p><code>582 00:15:07,480 --&gt; 00:15:09,260</code>
+Vi har gjort några sådana här övningar</p>
+<p><code>583 00:15:09,260 --&gt; 00:15:11,260</code>
+back in the day, jag kommer ihåg en som</p>
+<p><code>584 00:15:11,260 --&gt; 00:15:13,180</code>
+Johan var inne på, de fick ju också</p>
+<p><code>585 00:15:13,180 --&gt; 00:15:15,380</code>
+ett externt krav på att göra ett pentest.</p>
+<p><code>586 00:15:16,020 --&gt; 00:15:17,700</code>
+Och sen så visade det sig</p>
+<p><code>587 00:15:17,700 --&gt; 00:15:19,500</code>
+att Johan var ganska bra på deras ramverk</p>
+<p><code>588 00:15:19,500 --&gt; 00:15:21,340</code>
+så att hela deras plattform</p>
+<p><code>589 00:15:21,340 --&gt; 00:15:22,580</code>
+bara gick&hellip;</p>
+<p><code>590 00:15:22,580 --&gt; 00:15:25,520</code>
+Det var liksom ingen idé att fortsätta skriva rapport</p>
+<p><code>591 00:15:25,520 --&gt; 00:15:27,060</code>
+för att det var liksom&hellip;</p>
+<p><code>592 00:15:27,060 --&gt; 00:15:29,520</code>
+Allt är trasigt och då blir det ju så här</p>
+<p><code>593 00:15:29,520 --&gt; 00:15:31,520</code>
+att Johan har en rapport</p>
+<p><code>594 00:15:31,520 --&gt; 00:15:33,380</code>
+varenda finding</p>
+<p><code>595 00:15:33,380 --&gt; 00:15:34,260</code>
+gör om.</p>
+<p><code>596 00:15:35,320 --&gt; 00:15:37,540</code>
+De har inte kapaciteten</p>
+<p><code>597 00:15:37,540 --&gt; 00:15:38,720</code>
+att fixa rapporten.</p>
+<p><code>598 00:15:38,840 --&gt; 00:15:40,920</code>
+De behöver inte den rapporten, de behöver annan</p>
+<p><code>599 00:15:40,920 --&gt; 00:15:43,000</code>
+systemisk hjälp. Så det handlar ju om att hitta</p>
+<p><code>600 00:15:43,000 --&gt; 00:15:44,480</code>
+rätt typ av säkerhetshjälp.</p>
+<p><code>601 00:15:44,960 --&gt; 00:15:47,300</code>
+Inte säkerhetshjälp. Förstår ni vad jag tänker?</p>
+<p><code>602 00:15:48,620 --&gt; 00:15:48,800</code>
+Ja.</p>
+<p><code>603 00:15:49,240 --&gt; 00:15:50,380</code>
+Pentest är inte svaret i alla frågor.</p>
+<p><code>604 00:15:50,400 --&gt; 00:15:50,680</code>
+Exakt.</p>
+<p><code>605 00:15:51,400 --&gt; 00:15:54,820</code>
+De är inte mogna för den leveransen.</p>
+<p><code>606 00:15:55,100 --&gt; 00:15:55,440</code>
+Förmodligen.</p>
+<p><code>607 00:15:56,420 --&gt; 00:15:58,740</code>
+Pentest har vissa styrkor, men</p>
+<p><code>608 00:15:58,740 --&gt; 00:16:00,980</code>
+vad det har</p>
+<p><code>609 00:16:00,980 --&gt; 00:16:03,060</code>
+som nackdel</p>
+<p><code>610 00:16:03,060 --&gt; 00:16:04,780</code>
+om man säger som en</p>
+<p><code>611 00:16:05,320 --&gt; 00:16:07,100</code>
+eller om du är cashdraft</p>
+<p><code>612 00:16:07,100 --&gt; 00:16:08,660</code>
+eller annat. Det första är ju att</p>
+<p><code>613 00:16:08,660 --&gt; 00:16:11,120</code>
+det ligger ju ofta</p>
+<p><code>614 00:16:11,120 --&gt; 00:16:12,780</code>
+lite utanför</p>
+<p><code>615 00:16:12,780 --&gt; 00:16:14,960</code>
+den processen.</p>
+<p><code>616 00:16:16,160 --&gt; 00:16:16,760</code>
+Och</p>
+<p><code>617 00:16:16,760 --&gt; 00:16:18,980</code>
+jag tror alla pentestare har</p>
+<p><code>618 00:16:18,980 --&gt; 00:16:20,820</code>
+någon hysterisk, rolig</p>
+<p><code>619 00:16:20,820 --&gt; 00:16:23,040</code>
+horrorstory om hur det är</p>
+<p><code>620 00:16:23,040 --&gt; 00:16:25,300</code>
+plötsligt någonting man rapporterar till ett bolag</p>
+<p><code>621 00:16:25,300 --&gt; 00:16:26,980</code>
+för ett</p>
+<p><code>622 00:16:26,980 --&gt; 00:16:28,780</code>
+eller mer år sedan blev en</p>
+<p><code>623 00:16:28,780 --&gt; 00:16:30,860</code>
+jättestor grej och så</p>
+<p><code>624 00:16:30,860 --&gt; 00:16:32,180</code>
+långt, långt senare liksom.</p>
+<p><code>625 00:16:32,940 --&gt; 00:16:34,900</code>
+Men man kan, jag kan vända på det.</p>
+<p><code>626 00:16:35,320 --&gt; 00:16:36,780</code>
+Historier åt andra hållet där man</p>
+<p><code>627 00:16:36,780 --&gt; 00:16:38,500</code>
+någon har sålt in ett pentest</p>
+<p><code>628 00:16:38,500 --&gt; 00:16:41,120</code>
+som är helt detachad till</p>
+<p><code>629 00:16:41,120 --&gt; 00:16:42,940</code>
+organisationen. Det kommer från CS.</p>
+<p><code>630 00:16:43,160 --&gt; 00:16:44,980</code>
+Alltså från de vuxna på bolaget.</p>
+<p><code>631 00:16:45,200 --&gt; 00:16:47,200</code>
+De har beställt ett pentest. De har ingen aning</p>
+<p><code>632 00:16:47,200 --&gt; 00:16:47,940</code>
+om vad det är de har beställt.</p>
+<p><code>633 00:16:48,580 --&gt; 00:16:51,220</code>
+Men man har kommit fram till att ett skåp</p>
+<p><code>634 00:16:51,220 --&gt; 00:16:53,240</code>
+finns. Innehåll, läge</p>
+<p><code>635 00:16:53,240 --&gt; 00:16:55,400</code>
+oklart. Utvecklarna förstår inte innehållet.</p>
+<p><code>636 00:16:55,580 --&gt; 00:16:56,860</code>
+Pentesterna förstår inte innehållet.</p>
+<p><code>637 00:16:57,240 --&gt; 00:16:59,040</code>
+Man börjar jobba och det blir</p>
+<p><code>638 00:16:59,040 --&gt; 00:16:59,840</code>
+ingenting av det.</p>
+<p><code>639 00:17:00,880 --&gt; 00:17:02,160</code>
+Det finns ju åt båda hållen.</p>
+<p><code>640 00:17:03,040 --&gt; 00:17:04,860</code>
+Det här skåpet verkar ju konstigt.</p>
+<p><code>641 00:17:05,320 --&gt; 00:17:06,920</code>
+Så det är, det är, det är, jag tänker att</p>
+<p><code>642 00:17:06,920 --&gt; 00:17:08,780</code>
+det finns nog alla typer där.</p>
+<p><code>643 00:17:09,460 --&gt; 00:17:10,520</code>
+Beställningsmognad som är. Exakt.</p>
+<p><code>644 00:17:10,920 --&gt; 00:17:13,320</code>
+Men vad jag tänker är att om du</p>
+<p><code>645 00:17:13,320 --&gt; 00:17:13,760</code>
+är</p>
+<p><code>646 00:17:13,760 --&gt; 00:17:17,420</code>
+om du är väldigt cashstrapped</p>
+<p><code>647 00:17:17,420 --&gt; 00:17:19,240</code>
+och så</p>
+<p><code>648 00:17:19,240 --&gt; 00:17:21,100</code>
+så det finns ju</p>
+<p><code>649 00:17:21,100 --&gt; 00:17:22,720</code>
+saker du kan göra som</p>
+<p><code>650 00:17:22,720 --&gt; 00:17:25,320</code>
+integrerar i den processen</p>
+<p><code>651 00:17:25,320 --&gt; 00:17:27,200</code>
+och som</p>
+<p><code>652 00:17:27,200 --&gt; 00:17:28,160</code>
+kommer vara kvar</p>
+<p><code>653 00:17:28,160 --&gt; 00:17:30,860</code>
+efter att säkert folk är där och jobbar.</p>
+<p><code>654 00:17:32,160 --&gt; 00:17:33,280</code>
+Som till exempel</p>
+<p><code>655 00:17:33,280 --&gt; 00:17:35,020</code>
+scanna sina dependencies.</p>
+<p><code>656 00:17:35,320 --&gt; 00:17:36,880</code>
+Det är det jag menar.</p>
+<p><code>657 00:17:37,880 --&gt; 00:17:39,860</code>
+Det ska vara del i ditt vanliga</p>
+<p><code>658 00:17:39,860 --&gt; 00:17:41,900</code>
+utvecklingsarbete. Att du ska ha toling</p>
+<p><code>659 00:17:41,900 --&gt; 00:17:43,280</code>
+på plats som löser sådana här frågor.</p>
+<p><code>660 00:17:43,800 --&gt; 00:17:45,640</code>
+Jag får känslan av att man vill köpa</p>
+<p><code>661 00:17:45,640 --&gt; 00:17:47,460</code>
+en stämpel.</p>
+<p><code>662 00:17:47,480 --&gt; 00:17:49,240</code>
+Man vill köpa någonting som säger, kolla här.</p>
+<p><code>663 00:17:49,300 --&gt; 00:17:51,840</code>
+Det finns en plats för det. Dels extern</p>
+<p><code>664 00:17:51,840 --&gt; 00:17:53,240</code>
+verifiering är ju nästan alltid nyttigt.</p>
+<p><code>665 00:17:53,320 --&gt; 00:17:55,800</code>
+Någon annan kastar tid</p>
+<p><code>666 00:17:55,800 --&gt; 00:17:57,960</code>
+och ögon på koden. Det är superbra.</p>
+<p><code>667 00:17:58,640 --&gt; 00:17:59,860</code>
+Och om du dessutom kanske har</p>
+<p><code>668 00:17:59,860 --&gt; 00:18:01,980</code>
+som var fallet i den parten vi hade</p>
+<p><code>669 00:18:01,980 --&gt; 00:18:03,740</code>
+då, att de verkligen behövde</p>
+<p><code>670 00:18:03,740 --&gt; 00:18:05,140</code>
+nästan stämpa.</p>
+<p><code>671 00:18:05,320 --&gt; 00:18:07,120</code>
+Approval från en externt erkänd partner</p>
+<p><code>672 00:18:07,120 --&gt; 00:18:08,700</code>
+när de skulle gå åt sina kunder.</p>
+<p><code>673 00:18:09,080 --&gt; 00:18:10,920</code>
+Då fanns det ju också en nytta med det. Vi kunde</p>
+<p><code>674 00:18:10,920 --&gt; 00:18:13,480</code>
+signa under på att det här har vi gjort och det såg bra ut</p>
+<p><code>675 00:18:13,480 --&gt; 00:18:14,400</code>
+eller det såg dåligt ut.</p>
+<p><code>676 00:18:15,340 --&gt; 00:18:16,780</code>
+Så det har sin plats.</p>
+<p><code>677 00:18:17,020 --&gt; 00:18:19,480</code>
+Men i det här generiska scenariot som man drar upp i brevet</p>
+<p><code>678 00:18:19,480 --&gt; 00:18:21,300</code>
+så känner jag liksom att jag såg inget uppenbart</p>
+<p><code>679 00:18:21,300 --&gt; 00:18:23,360</code>
+behov av det där. Annat än att vdn var orolig.</p>
+<p><code>680 00:18:23,760 --&gt; 00:18:25,340</code>
+Men då fanns säkra upp</p>
+<p><code>681 00:18:25,340 --&gt; 00:18:27,400</code>
+hur ni jobbar. Det är mycket bättre i så fall.</p>
+<p><code>682 00:18:27,500 --&gt; 00:18:28,980</code>
+Att säga SCLC. Sådana grejer.</p>
+<p><code>683 00:18:29,340 --&gt; 00:18:31,200</code>
+Och det krävs inte en säkerhetsspecialist för det.</p>
+<p><code>684 00:18:31,680 --&gt; 00:18:32,920</code>
+Och det ska inte ens vara en</p>
+<p><code>685 00:18:32,920 --&gt; 00:18:34,440</code>
+på ett bolag som är så här litet.</p>
+<p><code>686 00:18:35,320 --&gt; 00:18:37,740</code>
+Det ska vara del i deras arbetsuppgifter.</p>
+<p><code>687 00:18:38,340 --&gt; 00:18:39,900</code>
+Men mentorgrejer</p>
+<p><code>688 00:18:39,900 --&gt; 00:18:40,660</code>
+är ju inte en dum grej.</p>
+<p><code>689 00:18:40,660 --&gt; 00:18:43,640</code>
+Ta in rådgivning för att hålla i de första</p>
+<p><code>690 00:18:43,640 --&gt; 00:18:45,440</code>
+leklådorna och ge rätt pekpinnar.</p>
+<p><code>691 00:18:45,600 --&gt; 00:18:47,960</code>
+Sen så kan man ju, som du var inne på det här Mattias,</p>
+<p><code>692 00:18:49,020 --&gt; 00:18:49,800</code>
+hitta någon som du kan</p>
+<p><code>693 00:18:49,800 --&gt; 00:18:51,720</code>
+följa upp med var sjätte månad</p>
+<p><code>694 00:18:51,720 --&gt; 00:18:53,760</code>
+och sen när du är i en punkt där du behöver</p>
+<p><code>695 00:18:53,760 --&gt; 00:18:55,600</code>
+där du har någonting att verifiera.</p>
+<p><code>696 00:18:55,980 --&gt; 00:18:57,980</code>
+För har du inget säkerhetstänk och inget säkerhetsarbete</p>
+<p><code>697 00:18:57,980 --&gt; 00:18:59,920</code>
+i bakgrunden. Du har inte tänkt på det</p>
+<p><code>698 00:18:59,920 --&gt; 00:19:01,800</code>
+vad gäller utvecklingsmiljö, infrastruktur</p>
+<p><code>699 00:19:02,380 --&gt; 00:19:03,720</code>
+internt överhuvudtaget.</p>
+<p><code>700 00:19:04,280 --&gt; 00:19:05,120</code>
+Om du kommer till mig och säger</p>
+<p><code>701 00:19:05,120 --&gt; 00:19:07,320</code>
+jag behöver ett papper där det står att</p>
+<p><code>702 00:19:07,320 --&gt; 00:19:09,720</code>
+du har verifierat säkerheten på det här bolaget.</p>
+<p><code>703 00:19:09,840 --&gt; 00:19:10,500</code>
+Då kan jag säga det.</p>
+<p><code>704 00:19:11,800 --&gt; 00:19:13,500</code>
+Även ifall jag skulle titta på ditt API</p>
+<p><code>705 00:19:13,500 --&gt; 00:19:15,360</code>
+och inte hitta några regelrätta sårbarheter</p>
+<p><code>706 00:19:15,360 --&gt; 00:19:17,400</code>
+så säger det piss och noll om hur sårbar</p>
+<p><code>707 00:19:17,400 --&gt; 00:19:18,180</code>
+ditt företag är.</p>
+<p><code>708 00:19:19,380 --&gt; 00:19:21,800</code>
+Så vänta med att verifiera tills du har något som går att verifiera.</p>
+<p><code>709 00:19:22,760 --&gt; 00:19:23,820</code>
+Mattias sa ju någon gång</p>
+<p><code>710 00:19:23,820 --&gt; 00:19:24,680</code>
+i början här att</p>
+<p><code>711 00:19:24,680 --&gt; 00:19:27,860</code>
+du har ju de resurserna</p>
+<p><code>712 00:19:27,860 --&gt; 00:19:28,340</code>
+du har.</p>
+<p><code>713 00:19:30,240 --&gt; 00:19:31,660</code>
+I en ideal värld så hade det ju</p>
+<p><code>714 00:19:31,660 --&gt; 00:19:33,060</code>
+varit jävligt gott att</p>
+<p><code>715 00:19:33,060 --&gt; 00:19:34,800</code>
+kunna välja resurser.</p>
+<p><code>716 00:19:35,120 --&gt; 00:19:36,680</code>
+När du startar en ny start.</p>
+<p><code>717 00:19:36,940 --&gt; 00:19:38,880</code>
+Det hade ju varit väldigt skönt att ha</p>
+<p><code>718 00:19:38,880 --&gt; 00:19:41,240</code>
+dels någon</p>
+<p><code>719 00:19:41,240 --&gt; 00:19:42,880</code>
+väldigt produktiv utvecklare</p>
+<p><code>720 00:19:42,880 --&gt; 00:19:45,440</code>
+och gärna alla eller många</p>
+<p><code>721 00:19:45,440 --&gt; 00:19:47,000</code>
+av dem som har koll på säkerhet.</p>
+<p><code>722 00:19:47,320 --&gt; 00:19:48,400</code>
+För att</p>
+<p><code>723 00:19:48,400 --&gt; 00:19:51,300</code>
+bara få</p>
+<p><code>724 00:19:51,300 --&gt; 00:19:52,640</code>
+väldigt mycket rätt</p>
+<p><code>725 00:19:52,640 --&gt; 00:19:55,140</code>
+gratis, billigt</p>
+<p><code>726 00:19:55,140 --&gt; 00:19:56,540</code>
+kontra att</p>
+<p><code>727 00:19:56,540 --&gt; 00:19:59,160</code>
+du startar och hela din</p>
+<p><code>728 00:19:59,160 --&gt; 00:20:01,100</code>
+nystart är vranglad med</p>
+<p><code>729 00:20:01,100 --&gt; 00:20:02,920</code>
+enkla säkerhetshåll</p>
+<p><code>730 00:20:02,920 --&gt; 00:20:04,920</code>
+och så i slutändan</p>
+<p><code>731 00:20:05,120 --&gt; 00:20:07,100</code>
+så ska du ha folk</p>
+<p><code>732 00:20:07,100 --&gt; 00:20:08,960</code>
+där och underläsa om grunderna</p>
+<p><code>733 00:20:08,960 --&gt; 00:20:10,400</code>
+är oavsett topp 10 eller någonting.</p>
+<p><code>734 00:20:10,680 --&gt; 00:20:11,780</code>
+Då blir det liksom</p>
+<p><code>735 00:20:11,780 --&gt; 00:20:14,940</code>
+det är mycket goare om du startar på</p>
+<p><code>736 00:20:14,940 --&gt; 00:20:16,980</code>
+en bra hög nivå</p>
+<p><code>737 00:20:16,980 --&gt; 00:20:18,900</code>
+och liksom</p>
+<p><code>738 00:20:18,900 --&gt; 00:20:21,440</code>
+Då hade man ju inte skickat mejlet tänker jag.</p>
+<p><code>739 00:20:21,540 --&gt; 00:20:23,160</code>
+Men jag hör dig</p>
+<p><code>740 00:20:23,160 --&gt; 00:20:24,660</code>
+alltså jag tänker också såhär</p>
+<p><code>741 00:20:24,660 --&gt; 00:20:27,100</code>
+det här är en bra</p>
+<p><code>742 00:20:27,100 --&gt; 00:20:29,280</code>
+det är ett bra tema för man får tänka efter lite.</p>
+<p><code>743 00:20:30,480 --&gt; 00:20:31,400</code>
+Men det som är</p>
+<p><code>744 00:20:31,400 --&gt; 00:20:32,340</code>
+intressant här är ju</p>
+<p><code>745 00:20:32,340 --&gt; 00:20:34,880</code>
+såhär jag tror verkligen</p>
+<p><code>746 00:20:35,120 --&gt; 00:20:37,020</code>
+att systemisk it-säkerhet</p>
+<p><code>747 00:20:37,020 --&gt; 00:20:38,460</code>
+måste vara någonting som</p>
+<p><code>748 00:20:38,460 --&gt; 00:20:40,760</code>
+alla har med sig särskilt om man nu</p>
+<p><code>749 00:20:40,760 --&gt; 00:20:43,080</code>
+är en startup som ska bygga teknik på internet.</p>
+<p><code>750 00:20:43,700 --&gt; 00:20:44,160</code>
+Det är liksom</p>
+<p><code>751 00:20:44,160 --&gt; 00:20:46,700</code>
+jag menar när vi var back in the day</p>
+<p><code>752 00:20:46,700 --&gt; 00:20:48,920</code>
+när vi började med detta för</p>
+<p><code>753 00:20:48,920 --&gt; 00:20:50,980</code>
+mer år än vad man liksom</p>
+<p><code>754 00:20:50,980 --&gt; 00:20:52,500</code>
+vill erkänna nu.</p>
+<p><code>755 00:20:52,780 --&gt; 00:20:54,480</code>
+Jag hittade en bild på Johan här om dagen i min telefon</p>
+<p><code>756 00:20:54,480 --&gt; 00:20:55,260</code>
+och bara vem är det?</p>
+<p><code>757 00:20:56,380 --&gt; 00:20:57,340</code>
+Alltså det är helt sjukt.</p>
+<p><code>758 00:20:58,240 --&gt; 00:21:00,100</code>
+Han är 12.</p>
+<p><code>759 00:21:00,720 --&gt; 00:21:03,120</code>
+Jag med. Så slät och fin man var.</p>
+<p><code>760 00:21:03,840 --&gt; 00:21:04,880</code>
+Nej men och då var det ju</p>
+<p><code>761 00:21:05,120 --&gt; 00:21:06,940</code>
+exakt då var det ju såhär</p>
+<p><code>762 00:21:06,940 --&gt; 00:21:08,980</code>
+vad ska vi ha med pentest?</p>
+<p><code>763 00:21:09,040 --&gt; 00:21:11,400</code>
+Är det någon testgrej? Någon QA-grej eller?</p>
+<p><code>764 00:21:11,880 --&gt; 00:21:13,700</code>
+Nej nej de testar säkerheten i applikationen.</p>
+<p><code>765 00:21:13,780 --&gt; 00:21:14,180</code>
+Varför då?</p>
+<p><code>766 00:21:14,840 --&gt; 00:21:16,340</code>
+Det var många år sedan nu.</p>
+<p><code>767 00:21:16,600 --&gt; 00:21:18,880</code>
+Jag vill ändå tro att det har hänt en hel del.</p>
+<p><code>768 00:21:20,240 --&gt; 00:21:21,400</code>
+Oh wow.</p>
+<p><code>769 00:21:22,220 --&gt; 00:21:22,920</code>
+Var det bara jag eller?</p>
+<p><code>770 00:21:23,140 --&gt; 00:21:23,640</code>
+Ja det var det nog.</p>
+<p><code>771 00:21:25,180 --&gt; 00:21:26,200</code>
+Lappa lite i sladdarna.</p>
+<p><code>772 00:21:26,320 --&gt; 00:21:27,900</code>
+Fucka inte med Jesper sladdar nu.</p>
+<p><code>773 00:21:28,380 --&gt; 00:21:28,780</code>
+Nej.</p>
+<p><code>774 00:21:29,300 --&gt; 00:21:30,480</code>
+Oh jäklar det blir brus.</p>
+<p><code>775 00:21:31,240 --&gt; 00:21:32,160</code>
+Ja exakt.</p>
+<p><code>776 00:21:32,160 --&gt; 00:21:33,060</code>
+Oh jäklar.</p>
+<p><code>777 00:21:35,120 --&gt; 00:21:37,100</code>
+Ja du rör dig inte på den där.</p>
+<p><code>778 00:21:37,260 --&gt; 00:21:39,160</code>
+Du började låta mina lurar när du gjorde det sådär.</p>
+<p><code>779 00:21:39,180 --&gt; 00:21:39,940</code>
+Ja mina lurar dog.</p>
+<p><code>780 00:21:41,480 --&gt; 00:21:41,840</code>
+Okej.</p>
+<p><code>781 00:21:42,740 --&gt; 00:21:43,660</code>
+På riktigt.</p>
+<p><code>782 00:21:43,760 --&gt; 00:21:45,400</code>
+Nej men det är lugnt. Vi kör vid det.</p>
+<p><code>783 00:21:47,140 --&gt; 00:21:49,700</code>
+Jag tappade däremot tråden fullständigt.</p>
+<p><code>784 00:21:50,260 --&gt; 00:21:50,420</code>
+Men.</p>
+<p><code>785 00:21:50,740 --&gt; 00:21:51,780</code>
+Fan du är asögd.</p>
+<p><code>786 00:21:52,020 --&gt; 00:21:56,420</code>
+Men systemisk säkerhet.</p>
+<p><code>787 00:21:56,560 --&gt; 00:21:58,200</code>
+Jag tror att det som Peter säger är att</p>
+<p><code>788 00:21:58,200 --&gt; 00:22:00,500</code>
+det är skönt om alla kommer in på en hög nivå.</p>
+<p><code>789 00:22:00,660 --&gt; 00:22:02,060</code>
+Ja det är såklart att det är så.</p>
+<p><code>790 00:22:02,340 --&gt; 00:22:03,520</code>
+Men det är.</p>
+<p><code>791 00:22:03,800 --&gt; 00:22:05,080</code>
+Jag tänker att man nog kan stanka.</p>
+<p><code>792 00:22:05,120 --&gt; 00:22:06,880</code>
+Man kan kräva det i dagens samhälle.</p>
+<p><code>793 00:22:07,020 --&gt; 00:22:08,740</code>
+Att någon måste bli dedikerat ansvarig.</p>
+<p><code>794 00:22:09,160 --&gt; 00:22:11,320</code>
+Och är det så att man sitter där runt bordet och alla bara.</p>
+<p><code>795 00:22:11,460 --&gt; 00:22:12,620</code>
+Nej men det går. Vi har ingen.</p>
+<p><code>796 00:22:13,160 --&gt; 00:22:15,420</code>
+Då är det nog det man ska börja med först.</p>
+<p><code>797 00:22:15,640 --&gt; 00:22:16,720</code>
+Jag tänker också det liksom.</p>
+<p><code>798 00:22:16,860 --&gt; 00:22:18,660</code>
+Jag fattar det här. Man har det man har lite grann.</p>
+<p><code>799 00:22:18,780 --&gt; 00:22:21,340</code>
+Om det här nu började med fyra goa kimmare.</p>
+<p><code>800 00:22:21,480 --&gt; 00:22:22,120</code>
+Eller någonting som hade.</p>
+<p><code>801 00:22:23,320 --&gt; 00:22:24,400</code>
+De är rookies.</p>
+<p><code>802 00:22:24,820 --&gt; 00:22:26,460</code>
+Men har en rolig idé och mycket energi.</p>
+<p><code>803 00:22:26,860 --&gt; 00:22:28,320</code>
+De kan inte ha all kompetens.</p>
+<p><code>804 00:22:28,420 --&gt; 00:22:29,240</code>
+För de är rookies liksom.</p>
+<p><code>805 00:22:29,240 --&gt; 00:22:29,600</code>
+Exakt.</p>
+<p><code>806 00:22:29,920 --&gt; 00:22:31,800</code>
+Men på samma sätt som att.</p>
+<p><code>807 00:22:32,060 --&gt; 00:22:33,320</code>
+Har vi ingen som kan databaser.</p>
+<p><code>808 00:22:33,800 --&gt; 00:22:34,460</code>
+Nej men.</p>
+<p><code>809 00:22:35,120 --&gt; 00:22:37,740</code>
+Jag tar en hypotetisk start up case.</p>
+<p><code>810 00:22:37,860 --&gt; 00:22:39,200</code>
+Med folk direkt från skolan kanske.</p>
+<p><code>811 00:22:39,340 --&gt; 00:22:40,020</code>
+Som har en jävligt rolig idé.</p>
+<p><code>812 00:22:41,240 --&gt; 00:22:42,440</code>
+De kan inte kunna allt.</p>
+<p><code>813 00:22:43,260 --&gt; 00:22:43,740</code>
+Men jag menar.</p>
+<p><code>814 00:22:44,080 --&gt; 00:22:45,660</code>
+Det finns ju problem att lösa då.</p>
+<p><code>815 00:22:45,880 --&gt; 00:22:47,240</code>
+Om vi inte har någon som kan databaser.</p>
+<p><code>816 00:22:47,320 --&gt; 00:22:48,420</code>
+Då måste någon lära sig databaser.</p>
+<p><code>817 00:22:48,920 --&gt; 00:22:50,500</code>
+Om vi inte har någon som kan fronten.</p>
+<p><code>818 00:22:50,560 --&gt; 00:22:51,740</code>
+Så får någon lära sig fronten.</p>
+<p><code>819 00:22:51,840 --&gt; 00:22:52,660</code>
+Eller så får vi köpa.</p>
+<p><code>820 00:22:52,720 --&gt; 00:22:53,340</code>
+Men vi har inga pengar.</p>
+<p><code>821 00:22:53,400 --&gt; 00:22:54,100</code>
+Så vi kan inte köpa.</p>
+<p><code>822 00:22:54,160 --&gt; 00:22:55,180</code>
+Så det är bara att lära sig skiten.</p>
+<p><code>823 00:22:55,420 --&gt; 00:22:58,360</code>
+Och på samma sätt så får ju någon ta säkerhetsansvaret då.</p>
+<p><code>824 00:22:58,440 --&gt; 00:23:00,020</code>
+Ja och det är inte svart magi liksom.</p>
+<p><code>825 00:23:01,020 --&gt; 00:23:01,600</code>
+Herregud nej.</p>
+<p><code>826 00:23:02,300 --&gt; 00:23:02,800</code>
+Verkligen inte.</p>
+<p><code>827 00:23:02,800 --&gt; 00:23:04,940</code>
+Och framförallt inte när det kommer till att plocka.</p>
+<p><code>828 00:23:05,120 --&gt; 00:23:06,820</code>
+Såhär lågt hängande frukt.</p>
+<p><code>829 00:23:06,980 --&gt; 00:23:08,400</code>
+Enkla snabba vinningar.</p>
+<p><code>830 00:23:09,240 --&gt; 00:23:11,560</code>
+Det är inte rocket surgery liksom.</p>
+<p><code>831 00:23:11,720 --&gt; 00:23:12,980</code>
+Att framförallt få lite struktur.</p>
+<p><code>832 00:23:13,120 --&gt; 00:23:13,480</code>
+Organisation.</p>
+<p><code>833 00:23:14,640 --&gt; 00:23:17,240</code>
+Bygga en utvecklingspipeline.</p>
+<p><code>834 00:23:17,420 --&gt; 00:23:19,440</code>
+Som ger dig ganska mycket gratis säkerhet.</p>
+<p><code>835 00:23:19,980 --&gt; 00:23:20,120</code>
+Såhär.</p>
+<p><code>836 00:23:20,680 --&gt; 00:23:21,860</code>
+Det kan vem som helst göra.</p>
+<p><code>837 00:23:22,360 --&gt; 00:23:23,700</code>
+Och jag menar om det nu är så.</p>
+<p><code>838 00:23:23,740 --&gt; 00:23:26,580</code>
+Det där är bra tycker jag.</p>
+<p><code>839 00:23:26,700 --&gt; 00:23:27,300</code>
+Och det är också såhär.</p>
+<p><code>840 00:23:28,120 --&gt; 00:23:30,760</code>
+Om man nu går in för att hundratusen är för dyrt för ett pentest.</p>
+<p><code>841 00:23:31,900 --&gt; 00:23:32,300</code>
+Så.</p>
+<p><code>842 00:23:32,920 --&gt; 00:23:33,320</code>
+Ja.</p>
+<p><code>843 00:23:33,820 --&gt; 00:23:34,960</code>
+Då köper man ju fel kompetens.</p>
+<p><code>844 00:23:35,120 --&gt; 00:23:35,660</code>
+Kompetens här.</p>
+<p><code>845 00:23:35,940 --&gt; 00:23:37,820</code>
+Det är ju lite jag vill komma med föregående.</p>
+<p><code>846 00:23:38,160 --&gt; 00:23:38,420</code>
+Ja precis.</p>
+<p><code>847 00:23:38,680 --&gt; 00:23:39,480</code>
+Då är det ju inte.</p>
+<p><code>848 00:23:39,760 --&gt; 00:23:41,100</code>
+Det är ju inte den känslan du ska ha.</p>
+<p><code>849 00:23:41,280 --&gt; 00:23:42,120</code>
+Nej alls.</p>
+<p><code>850 00:23:42,560 --&gt; 00:23:43,840</code>
+Nej och sen så kan man ju också hävda såhär.</p>
+<p><code>851 00:23:43,940 --&gt; 00:23:46,700</code>
+Låt oss säga nu att man väljer att någon av alla de här kompetenserna.</p>
+<p><code>852 00:23:46,760 --&gt; 00:23:48,120</code>
+Som behövs för att bygga den här produkten.</p>
+<p><code>853 00:23:48,340 --&gt; 00:23:49,000</code>
+Och hålla den vid liv.</p>
+<p><code>854 00:23:49,580 --&gt; 00:23:50,240</code>
+Den saknar vi.</p>
+<p><code>855 00:23:50,320 --&gt; 00:23:51,200</code>
+Vi kan inte lära oss.</p>
+<p><code>856 00:23:51,300 --&gt; 00:23:52,000</code>
+Utan vi köper den.</p>
+<p><code>857 00:23:52,680 --&gt; 00:23:54,500</code>
+Säg att det inte är säkerhet utan det är gu istället.</p>
+<p><code>858 00:23:54,820 --&gt; 00:23:54,940</code>
+Mm.</p>
+<p><code>859 00:23:55,940 --&gt; 00:23:57,060</code>
+Hundratusen för en gu utvecklare.</p>
+<p><code>860 00:23:57,220 --&gt; 00:23:58,020</code>
+Det är ju inga pengar alls.</p>
+<p><code>861 00:23:58,060 --&gt; 00:23:58,260</code>
+Nej.</p>
+<p><code>862 00:23:59,000 --&gt; 00:24:01,120</code>
+Så varför skulle säkerhetspengarna vara jättemycket.</p>
+<p><code>863 00:24:01,120 --&gt; 00:24:03,500</code>
+Men att köpa en utvecklare hade ju varit lite.</p>
+<p><code>864 00:24:03,660 --&gt; 00:24:04,800</code>
+Alltså jag ser inte det liksom.</p>
+<p><code>865 00:24:04,960 --&gt; 00:24:06,500</code>
+Nej men det kommer väl ner till den här.</p>
+<p><code>866 00:24:07,460 --&gt; 00:24:08,520</code>
+Till den här försäkringsfrågan.</p>
+<p><code>867 00:24:08,640 --&gt; 00:24:10,800</code>
+Ja men tänk om vi kör ett test och vi inte hittar något.</p>
+<p><code>868 00:24:10,820 --&gt; 00:24:12,040</code>
+Ja men det blir lite så.</p>
+<p><code>869 00:24:12,200 --&gt; 00:24:13,000</code>
+Och den här grejen att.</p>
+<p><code>870 00:24:13,060 --&gt; 00:24:15,220</code>
+Ja men ifall vi spenderar hundratusen på säkerhet.</p>
+<p><code>871 00:24:15,300 --&gt; 00:24:16,040</code>
+Vi kanske blir säkrare.</p>
+<p><code>872 00:24:16,100 --&gt; 00:24:17,840</code>
+Men det är ingenting våra kunder ser i nytta.</p>
+<p><code>873 00:24:18,060 --&gt; 00:24:18,280</code>
+Nej.</p>
+<p><code>874 00:24:18,360 --&gt; 00:24:20,500</code>
+Alltså det är ju den gamla grejen liksom.</p>
+<p><code>875 00:24:21,660 --&gt; 00:24:23,340</code>
+Och då blir det svårare att motivera.</p>
+<p><code>876 00:24:23,580 --&gt; 00:24:27,580</code>
+Men samtidigt så verkar ju vdn i det här hypotetiska mejlet.</p>
+<p><code>877 00:24:27,760 --&gt; 00:24:28,960</code>
+Eller ct-ordn vem det nu var.</p>
+<p><code>878 00:24:29,660 --&gt; 00:24:31,080</code>
+Ändå vara lite orolig.</p>
+<p><code>879 00:24:31,120 --&gt; 00:24:33,380</code>
+Och då finns det ju ett ganska stort värde.</p>
+<p><code>880 00:24:33,600 --&gt; 00:24:36,000</code>
+Och framförallt så finns det ju ett stort värde när skiten träffar fläkten.</p>
+<p><code>881 00:24:36,180 --&gt; 00:24:37,160</code>
+Jag tror att han som har skrivit det.</p>
+<p><code>882 00:24:37,160 --&gt; 00:24:38,520</code>
+Det blir ju också lite snabbare framdrift.</p>
+<p><code>883 00:24:38,580 --&gt; 00:24:40,320</code>
+Och framförallt blir det väldigt mycket ryrare.</p>
+<p><code>884 00:24:40,440 --&gt; 00:24:42,380</code>
+Han som hade skrivit var ju.</p>
+<p><code>885 00:24:43,320 --&gt; 00:24:43,760</code>
+Han hade.</p>
+<p><code>886 00:24:44,900 --&gt; 00:24:48,580</code>
+Ct-ordn var en av markörerna på hans axlar.</p>
+<p><code>887 00:24:48,840 --&gt; 00:24:52,060</code>
+Och han var också en av utvecklarna.</p>
+<p><code>888 00:24:53,520 --&gt; 00:24:56,100</code>
+Och det låter ju som att.</p>
+<p><code>889 00:24:56,660 --&gt; 00:24:59,680</code>
+I ct-ordn ingår även säkerhetsrollen då liksom.</p>
+<p><code>890 00:24:59,680 --&gt; 00:25:01,100</code>
+Ja men jag tänker så här.</p>
+<p><code>891 00:25:01,120 --&gt; 00:25:03,120</code>
+I just det här specifika exemplet.</p>
+<p><code>892 00:25:03,820 --&gt; 00:25:06,960</code>
+Om vi nu har en ct-ordn som också är en av utvecklarna.</p>
+<p><code>893 00:25:07,500 --&gt; 00:25:09,460</code>
+Som har dessutom säkerhetsansvaret.</p>
+<p><code>894 00:25:09,620 --&gt; 00:25:12,100</code>
+Om hen redan är lyssnare på våran podcast.</p>
+<p><code>895 00:25:12,200 --&gt; 00:25:13,520</code>
+Så finns det ju ett inneboende intresse.</p>
+<p><code>896 00:25:13,880 --&gt; 00:25:15,120</code>
+Där av säkerhet.</p>
+<p><code>897 00:25:15,280 --&gt; 00:25:17,120</code>
+Så jag tror att lyfta.</p>
+<p><code>898 00:25:18,500 --&gt; 00:25:20,520</code>
+Lyfta sig från den dimon de är på just nu.</p>
+<p><code>899 00:25:20,740 --&gt; 00:25:21,840</code>
+Det kommer inte vara jättesvårt.</p>
+<p><code>900 00:25:22,580 --&gt; 00:25:22,700</code>
+Nej.</p>
+<p><code>901 00:25:23,420 --&gt; 00:25:24,340</code>
+Men okej.</p>
+<p><code>902 00:25:24,460 --&gt; 00:25:27,320</code>
+Ska vi prata lite om vad man skulle kunna göra för en liten budget då.</p>
+<p><code>903 00:25:27,440 --&gt; 00:25:29,140</code>
+Säg nu att man är i en målmiljö.</p>
+<p><code>904 00:25:29,140 --&gt; 00:25:30,100</code>
+Så finns det ju.</p>
+<p><code>905 00:25:31,120 --&gt; 00:25:33,780</code>
+Plus-miljö att köpa hos våra stora målleverantörer.</p>
+<p><code>906 00:25:33,840 --&gt; 00:25:35,100</code>
+Där man får säkerhetssviter.</p>
+<p><code>907 00:25:35,720 --&gt; 00:25:37,340</code>
+Är de jättebra?</p>
+<p><code>908 00:25:37,740 --&gt; 00:25:38,000</code>
+Nej.</p>
+<p><code>909 00:25:38,460 --&gt; 00:25:40,160</code>
+Det svåra är vad utav dem man ska köpa.</p>
+<p><code>910 00:25:40,280 --&gt; 00:25:40,680</code>
+Ja exakt.</p>
+<p><code>911 00:25:41,140 --&gt; 00:25:42,880</code>
+Det får man ju läsa sig till.</p>
+<p><code>912 00:25:43,660 --&gt; 00:25:46,540</code>
+Du ska ju inte lägga dina pengar på massiv övervakning.</p>
+<p><code>913 00:25:46,760 --&gt; 00:25:47,220</code>
+Nej exakt.</p>
+<p><code>914 00:25:47,500 --&gt; 00:25:51,760</code>
+Du kanske ska ha någon som gör någon sisshistoria.</p>
+<p><code>915 00:25:51,880 --&gt; 00:25:54,560</code>
+Som tittar på din konfiguration.</p>
+<p><code>916 00:25:55,140 --&gt; 00:25:55,280</code>
+Ja.</p>
+<p><code>917 00:25:56,800 --&gt; 00:25:59,160</code>
+Det tar bort dem absolut.</p>
+<p><code>918 00:25:59,160 --&gt; 00:26:00,620</code>
+Det tar bort nästa.</p>
+<p><code>919 00:26:01,120 --&gt; 00:26:01,620</code>
+Död.</p>
+<p><code>920 00:26:02,100 --&gt; 00:26:03,100</code>
+Alltså lågt hängande frukt.</p>
+<p><code>921 00:26:03,100 --&gt; 00:26:03,600</code>
+Det är det det gör.</p>
+<p><code>922 00:26:03,600 --&gt; 00:26:05,600</code>
+Det är långt ifrån komplett.</p>
+<p><code>923 00:26:06,220 --&gt; 00:26:08,220</code>
+Men där kan man ju börja kanske.</p>
+<p><code>924 00:26:08,220 --&gt; 00:26:14,940</code>
+Och därav känner man att nej men vi vill inte ens aktivera de freemium eller premium versionerna i våran målleverantör.</p>
+<p><code>925 00:26:14,940 --&gt; 00:26:16,940</code>
+Men kör något open source då.</p>
+<p><code>926 00:26:16,940 --&gt; 00:26:18,940</code>
+Köra ett open source verktyg och gå igenom.</p>
+<p><code>927 00:26:18,940 --&gt; 00:26:20,940</code>
+Kör trivvis, snyggt.</p>
+<p><code>928 00:26:20,940 --&gt; 00:26:23,940</code>
+Problemet med det är att du kommer få en jäkla massa röda grejer.</p>
+<p><code>929 00:26:23,940 --&gt; 00:26:24,940</code>
+Och det kanske blir jättebra då.</p>
+<p><code>930 00:26:24,940 --&gt; 00:26:27,740</code>
+Då får du ju använda dem för att reda ut till att det är false positive.</p>
+<p><code>931 00:26:27,740 --&gt; 00:26:28,740</code>
+Så förstår du innebörden.</p>
+<p><code>932 00:26:28,740 --&gt; 00:26:29,740</code>
+Bra sätt att lära sig också faktiskt.</p>
+<p><code>933 00:26:29,740 --&gt; 00:26:30,240</code>
+Ja exakt.</p>
+<p><code>934 00:26:30,240 --&gt; 00:26:30,740</code>
+Och.</p>
+<p><code>935 00:26:31,120 --&gt; 00:26:32,120</code>
+Och det är.</p>
+<p><code>936 00:26:32,120 --&gt; 00:26:35,120</code>
+Men det är inte heller att likställa med att göra ett pentest.</p>
+<p><code>937 00:26:35,120 --&gt; 00:26:39,120</code>
+Jag har kommit till många utav mina kunder som kör i olika stora målmiljöer.</p>
+<p><code>938 00:26:39,120 --&gt; 00:26:41,120</code>
+Och jag är ju lat.</p>
+<p><code>939 00:26:41,120 --&gt; 00:26:43,120</code>
+Så jag använder ju.</p>
+<p><code>940 00:26:43,120 --&gt; 00:26:47,120</code>
+Nu står det stilla med CloudFlox och Prowler och CloudSploit.</p>
+<p><code>941 00:26:47,120 --&gt; 00:26:52,120</code>
+Hela deras repostruktur för systemiska sårbarheter och konfigurationsmissar.</p>
+<p><code>942 00:26:52,120 --&gt; 00:26:54,120</code>
+Det kör min scanner automatiskt i bakgrunden.</p>
+<p><code>943 00:26:54,120 --&gt; 00:26:57,120</code>
+För att ge mig en idé om vad det skulle kunna vara.</p>
+<p><code>944 00:26:57,120 --&gt; 00:27:01,120</code>
+Men många jag ser också jättesnabbt när mina kunder har kört.</p>
+<p><code>945 00:27:01,120 --&gt; 00:27:04,120</code>
+Det är ju faktiskt konfiguration för att det får inga resultat.</p>
+<p><code>946 00:27:04,120 --&gt; 00:27:06,120</code>
+Men mina rapporter blir aldrig tomma ändå.</p>
+<p><code>947 00:27:06,120 --&gt; 00:27:08,120</code>
+Så att det är liksom lagenivån av säkerhet.</p>
+<p><code>948 00:27:08,120 --&gt; 00:27:11,120</code>
+Så att det här att köpa ett pentest för hundratusen och det är för dyrt.</p>
+<p><code>949 00:27:11,120 --&gt; 00:27:13,120</code>
+Du kan använda open source grej.</p>
+<p><code>950 00:27:13,120 --&gt; 00:27:15,120</code>
+Men då kommer ju din output bli mycket mer.</p>
+<p><code>951 00:27:15,120 --&gt; 00:27:18,120</code>
+Och du själv får validera hur vidare det är någonting som är applicerbart eller inte.</p>
+<p><code>952 00:27:18,120 --&gt; 00:27:19,120</code>
+Då lär man sig någonting.</p>
+<p><code>953 00:27:19,120 --&gt; 00:27:22,120</code>
+Och jag tänker att ett annat sätt att se på den här påsen pengar du har.</p>
+<p><code>954 00:27:22,120 --&gt; 00:27:26,120</code>
+Om vi nu bara säger att du har hundratusen i budget.</p>
+<p><code>955 00:27:26,120 --&gt; 00:27:27,120</code>
+Det är det du har.</p>
+<p><code>956 00:27:27,120 --&gt; 00:27:29,120</code>
+Istället för att lägga det på en en veckans pentest.</p>
+<p><code>957 00:27:29,120 --&gt; 00:27:30,120</code>
+Som kommer ge dig.</p>
+<p><code>958 00:27:30,120 --&gt; 00:27:33,120</code>
+Information du förmodligen inte kan hantera ändå.</p>
+<p><code>959 00:27:33,120 --&gt; 00:27:35,120</code>
+Budgetera det internt istället.</p>
+<p><code>960 00:27:35,120 --&gt; 00:27:36,120</code>
+Ja.</p>
+<p><code>961 00:27:36,120 --&gt; 00:27:39,120</code>
+För det blir väldigt mycket billigare.</p>
+<p><code>962 00:27:39,120 --&gt; 00:27:42,120</code>
+Ta CTOn då i det här fallet.</p>
+<p><code>963 00:27:42,120 --&gt; 00:27:43,120</code>
+Och så säger du så här.</p>
+<p><code>964 00:27:43,120 --&gt; 00:27:45,120</code>
+En dag i veckan eller du vet.</p>
+<p><code>965 00:27:45,120 --&gt; 00:27:46,120</code>
+Två dagar i månaden.</p>
+<p><code>966 00:27:46,120 --&gt; 00:27:47,120</code>
+Vad det nu är.</p>
+<p><code>967 00:27:47,120 --&gt; 00:27:50,120</code>
+Eller sprid ut det på vilket sätt som nu verkar rimligt.</p>
+<p><code>968 00:27:50,120 --&gt; 00:27:54,120</code>
+Och lägg den tiden dedikerat på att just främja säkerhetsarbetet.</p>
+<p><code>969 00:27:54,120 --&gt; 00:27:56,120</code>
+På de olika sätten som vi redan har diskuterat.</p>
+<p><code>970 00:27:56,120 --&gt; 00:27:57,120</code>
+Du kan börja själv.</p>
+<p><code>971 00:27:57,120 --&gt; 00:27:59,120</code>
+Du behöver inte ens ta med de andra på jobbet.</p>
+<p><code>972 00:27:59,120 --&gt; 00:28:00,120</code>
+För att börja.</p>
+<p><code>973 00:28:00,120 --&gt; 00:28:01,120</code>
+Men hotmodellering.</p>
+<p><code>974 00:28:01,120 --&gt; 00:28:03,120</code>
+Du har förmodligen all den kollen som du behöver.</p>
+<p><code>975 00:28:03,120 --&gt; 00:28:06,120</code>
+För att göra det övergripligt och hyfsat bra i alla fall.</p>
+<p><code>976 00:28:06,120 --&gt; 00:28:07,120</code>
+Om du nu är CTO.</p>
+<p><code>977 00:28:07,120 --&gt; 00:28:08,120</code>
+Och dessutom utvecklare.</p>
+<p><code>978 00:28:08,120 --&gt; 00:28:09,120</code>
+Och jag tänker.</p>
+<p><code>979 00:28:09,120 --&gt; 00:28:13,120</code>
+Du behöver inte gotta ner dig i något svinstort ramverk.</p>
+<p><code>980 00:28:13,120 --&gt; 00:28:14,120</code>
+Eller köpa massa böcker.</p>
+<p><code>981 00:28:14,120 --&gt; 00:28:15,120</code>
+Eller inte bara.</p>
+<p><code>982 00:28:15,120 --&gt; 00:28:16,120</code>
+Jobba bara med där du står.</p>
+<p><code>983 00:28:16,120 --&gt; 00:28:17,120</code>
+Gräv där du står.</p>
+<p><code>984 00:28:17,120 --&gt; 00:28:19,120</code>
+Vad är vi rädda för?</p>
+<p><code>985 00:28:19,120 --&gt; 00:28:20,120</code>
+De här grejerna.</p>
+<p><code>986 00:28:20,120 --&gt; 00:28:23,120</code>
+Här någonstans ligger saker och ting som vore dumt.</p>
+<p><code>987 00:28:23,120 --&gt; 00:28:24,120</code>
+Jobba.</p>
+<p><code>988 00:28:24,120 --&gt; 00:28:25,120</code>
+Gör det inte så jävla komplicerat.</p>
+<p><code>989 00:28:25,120 --&gt; 00:28:27,120</code>
+Sen kan man applicera ramverk och massa fräcka grejer.</p>
+<p><code>990 00:28:27,120 --&gt; 00:28:28,120</code>
+Men börja bara.</p>
+<p><code>991 00:28:28,120 --&gt; 00:28:29,120</code>
+Exakt.</p>
+<p><code>992 00:28:29,120 --&gt; 00:28:32,120</code>
+Där kommer du få väldigt mycket mer bang for your buck.</p>
+<p><code>993 00:28:32,120 --&gt; 00:28:33,120</code>
+Jag tror också det.</p>
+<p><code>994 00:28:33,120 --&gt; 00:28:35,120</code>
+Det här blir lite sandlådig grej.</p>
+<p><code>995 00:28:35,120 --&gt; 00:28:37,120</code>
+Det är så dyrt man får ingenting för.</p>
+<p><code>996 00:28:37,120 --&gt; 00:28:39,120</code>
+Det är för att man väljer att inte ta ansvar.</p>
+<p><code>997 00:28:39,120 --&gt; 00:28:41,120</code>
+Dessutom blir det ingen extern budgetpost.</p>
+<p><code>998 00:28:41,120 --&gt; 00:28:42,120</code>
+Som ser jobbig ut.</p>
+<p><code>999 00:28:42,120 --&gt; 00:28:44,120</code>
+Utan det blir mycket mer hanterbart.</p>
+<p><code>1000 00:28:44,120 --&gt; 00:28:46,120</code>
+Sen kan man utveckla det här.</p>
+<p><code>1001 00:28:46,120 --&gt; 00:28:49,120</code>
+Om man nu har överlevt riktiga småbolagsåren.</p>
+<p><code>1002 00:28:49,120 --&gt; 00:28:51,120</code>
+Jämfört med småbarnsåren.</p>
+<p><code>1003 00:28:51,120 --&gt; 00:28:53,120</code>
+Där man får kämpa lite med kronorna.</p>
+<p><code>1004 00:28:55,120 --&gt; 00:28:57,120</code>
+Då kan man sen köpa in tjänster.</p>
+<p><code>1005 00:28:57,120 --&gt; 00:28:59,120</code>
+Eller till och med anställa någon som äger den här frågan.</p>
+<p><code>1006 00:28:59,120 --&gt; 00:29:01,120</code>
+Och så vidare.</p>
+<p><code>1007 00:29:01,120 --&gt; 00:29:03,120</code>
+Men just för att klara av de här initiala perioderna.</p>
+<p><code>1008 00:29:03,120 --&gt; 00:29:05,120</code>
+När det är tajt.</p>
+<p><code>1009 00:29:05,120 --&gt; 00:29:07,120</code>
+Man kan inte bygga en riktig verksamhet.</p>
+<p><code>1010 00:29:07,120 --&gt; 00:29:09,120</code>
+Med en specialist på varje roll.</p>
+<p><code>1011 00:29:09,120 --&gt; 00:29:11,120</code>
+Det går liksom inte.</p>
+<p><code>1012 00:29:11,120 --&gt; 00:29:13,120</code>
+Men då får man hanka sig igenom det.</p>
+<p><code>1013 00:29:13,120 --&gt; 00:29:15,120</code>
+Och gör man bara hygien och bare minimum.</p>
+<p><code>1014 00:29:15,120 --&gt; 00:29:17,120</code>
+Det finns ju undantag.</p>
+<p><code>1015 00:29:17,120 --&gt; 00:29:19,120</code>
+Det finns ju områden.</p>
+<p><code>1016 00:29:19,120 --&gt; 00:29:21,120</code>
+Som är lagreglerade.</p>
+<p><code>1017 00:29:21,120 --&gt; 00:29:23,120</code>
+Så är det också.</p>
+<p><code>1018 00:29:23,120 --&gt; 00:29:25,120</code>
+Då handlar du lite i en annan situation.</p>
+<p><code>1019 00:29:25,120 --&gt; 00:29:27,120</code>
+Då måste du ha med dig kalkyler mer eller mindre.</p>
+<p><code>1020 00:29:27,120 --&gt; 00:29:28,120</code>
+Ja.</p>
+<p><code>1021 00:29:28,120 --&gt; 00:29:30,120</code>
+GDPR.</p>
+<p><code>1022 00:29:30,120 --&gt; 00:29:32,120</code>
+CRO.</p>
+<p><code>1023 00:29:32,120 --&gt; 00:29:34,120</code>
+CRO.</p>
+<p><code>1024 00:29:34,120 --&gt; 00:29:36,120</code>
+Cyber Resilience Action.</p>
+<p><code>1025 00:29:36,120 --&gt; 00:29:38,120</code>
+Det är kopplat till CE-märkning.</p>
+<p><code>1026 00:29:38,120 --&gt; 00:29:40,120</code>
+Så bygger du en produkt som ska säljas.</p>
+<p><code>1027 00:29:40,120 --&gt; 00:29:42,120</code>
+Som kräver CE-märkning.</p>
+<p><code>1028 00:29:42,120 --&gt; 00:29:44,120</code>
+Så måste du göra vissa saker.</p>
+<p><code>1029 00:29:44,120 --&gt; 00:29:46,120</code>
+Jobbar du inom fintech?</p>
+<p><code>1030 00:29:46,120 --&gt; 00:29:48,120</code>
+Ja, fintech.</p>
+<p><code>1031 00:29:48,120 --&gt; 00:29:50,120</code>
+Det finns ju DORA och grejer som har kommit farande.</p>
+<p><code>1032 00:29:50,120 --&gt; 00:29:52,120</code>
+Så det kommer ju mer och mer lagstiftning.</p>
+<p><code>1033 00:29:52,120 --&gt; 00:29:54,120</code>
+Så det är inte optional längre.</p>
+<p><code>1034 00:29:54,120 --&gt; 00:29:56,120</code>
+Men jag antog nu att det här inte var inom någon av dem.</p>
+<p><code>1035 00:29:56,120 --&gt; 00:29:58,120</code>
+Jag tror att vi kunde utläsa.</p>
+<p><code>1036 00:29:58,120 --&gt; 00:30:00,120</code>
+Man kunde ordna sig till det.</p>
+<p><code>1037 00:30:00,120 --&gt; 00:30:02,120</code>
+I jobbforskare är det möjligt.</p>
+<p><code>1038 00:30:02,120 --&gt; 00:30:04,120</code>
+Att det är ett produktbolag.</p>
+<p><code>1039 00:30:04,120 --&gt; 00:30:06,120</code>
+Som har någon sorts nätprodukt.</p>
+<p><code>1040 00:30:06,120 --&gt; 00:30:08,120</code>
+SAS.</p>
+<p><code>1041 00:30:08,120 --&gt; 00:30:10,120</code>
+Ja, precis.</p>
+<p><code>1042 00:30:10,120 --&gt; 00:30:12,120</code>
+Någon SS-service.</p>
+<p><code>1043 00:30:12,120 --&gt; 00:30:14,120</code>
+Någonting kunde man ordna sig till.</p>
+<p><code>1044 00:30:14,120 --&gt; 00:30:16,120</code>
+Random letter SS-service.</p>
+<p><code>1045 00:30:16,120 --&gt; 00:30:18,120</code>
+Random letter SS-service.</p>
+<p><code>1046 00:30:18,120 --&gt; 00:30:20,120</code>
+Random letter SS-service.</p>
+<p><code>1047 00:30:20,120 --&gt; 00:30:22,120</code>
+Om det skulle vara en kontrollerad produkt.</p>
+<p><code>1048 00:30:22,120 --&gt; 00:30:24,120</code>
+Om det skulle vara en kontrollerad produkt.</p>
+<p><code>1049 00:30:24,120 --&gt; 00:30:26,120</code>
+Då är man ju ute på halis.</p>
+<p><code>1050 00:30:26,120 --&gt; 00:30:28,120</code>
+Jag tyckte man kunde ordna sig till.</p>
+<p><code>1051 00:30:28,120 --&gt; 00:30:30,120</code>
+Att det fanns betalflöden.</p>
+<p><code>1052 00:30:30,120 --&gt; 00:30:32,120</code>
+Utifrån någon av dem.</p>
+<p><code>1053 00:30:32,120 --&gt; 00:30:34,120</code>
+Och då är det ju.</p>
+<p><code>1054 00:30:34,120 --&gt; 00:30:36,120</code>
+Och då är det den klassiska.</p>
+<p><code>1055 00:30:36,120 --&gt; 00:30:38,120</code>
+Att hitta en så bra sätt.</p>
+<p><code>1056 00:30:38,120 --&gt; 00:30:40,120</code>
+Som möjligt.</p>
+<p><code>1057 00:30:40,120 --&gt; 00:30:42,120</code>
+Att hanka över den risken på någon annan.</p>
+<p><code>1058 00:30:42,120 --&gt; 00:30:44,120</code>
+Men det är ju typ en sån grej.</p>
+<p><code>1059 00:30:44,120 --&gt; 00:30:46,120</code>
+Don&rsquo;t roll your own.</p>
+<p><code>1060 00:30:46,120 --&gt; 00:30:48,120</code>
+Men det är väl ingen som gör.</p>
+<p><code>1061 00:30:48,120 --&gt; 00:30:50,120</code>
+Höll jag på att säga.</p>
+<p><code>1062 00:30:50,120 --&gt; 00:30:52,120</code>
+Det tänker jag att man märker.</p>
+<p><code>1063 00:30:52,120 --&gt; 00:30:54,120</code>
+När man försöker.</p>
+<p><code>1064 00:30:54,120 --&gt; 00:30:56,120</code>
+Ta kontakt med Visa och dem.</p>
+<p><code>1065 00:30:56,120 --&gt; 00:30:58,120</code>
+Och vill sätta upp.</p>
+<p><code>1066 00:30:58,120 --&gt; 00:31:00,120</code>
+Så börjar man snabbt märka.</p>
+<p><code>1067 00:31:00,120 --&gt; 00:31:02,120</code>
+Det här verkar jättejobbigt.</p>
+<p><code>1068 00:31:02,120 --&gt; 00:31:04,120</code>
+Man har ju sett folk som mer eller mindre.</p>
+<p><code>1069 00:31:04,120 --&gt; 00:31:06,120</code>
+Har byggt ett helt pengarflöde.</p>
+<p><code>1070 00:31:06,120 --&gt; 00:31:08,120</code>
+För att sen koppla ihop det.</p>
+<p><code>1071 00:31:08,120 --&gt; 00:31:10,120</code>
+Med ett riktigt pengarflöde.</p>
+<p><code>1072 00:31:10,120 --&gt; 00:31:12,120</code>
+Och där blir det logik på logik.</p>
+<p><code>1073 00:31:12,120 --&gt; 00:31:14,120</code>
+Och det brukar oftast vara sådär.</p>
+<p><code>1074 00:31:14,120 --&gt; 00:31:16,120</code>
+Men det tänker jag att.</p>
+<p><code>1075 00:31:16,120 --&gt; 00:31:18,120</code>
+Man förmodligen har koll på.</p>
+<p><code>1076 00:31:18,120 --&gt; 00:31:20,120</code>
+Förhoppningsvis.</p>
+<p><code>1077 00:31:20,120 --&gt; 00:31:22,120</code>
+Eller liksom.</p>
+<p><code>1078 00:31:22,120 --&gt; 00:31:24,120</code>
+De grejerna är jobbiga.</p>
+<p><code>1079 00:31:24,120 --&gt; 00:31:26,120</code>
+Och ansvaret vill du lägga på den andra.</p>
+<p><code>1080 00:31:26,120 --&gt; 00:31:28,120</code>
+Men det kan man inte göra med allting.</p>
+<p><code>1081 00:31:28,120 --&gt; 00:31:30,120</code>
+Tyvärr.</p>
+<p><code>1082 00:31:30,120 --&gt; 00:31:32,120</code>
+Jag sa det i en annan podcast.</p>
+<p><code>1083 00:31:32,120 --&gt; 00:31:34,120</code>
+Den bästa titeln på en finding är.</p>
+<p><code>1084 00:31:34,120 --&gt; 00:31:36,120</code>
+Lack of input validation leads to free bananas.</p>
+<p><code>1085 00:31:36,120 --&gt; 00:31:38,120</code>
+På samma tema.</p>
+<p><code>1086 00:31:38,120 --&gt; 00:31:40,120</code>
+Ja men så är det ju.</p>
+<p><code>1087 00:31:40,120 --&gt; 00:31:42,120</code>
+Men det här är ju.</p>
+<p><code>1088 00:31:42,120 --&gt; 00:31:44,120</code>
+Det är en bra mail att fråga.</p>
+<p><code>1089 00:31:44,120 --&gt; 00:31:46,120</code>
+Och det är kanon.</p>
+<p><code>1090 00:31:46,120 --&gt; 00:31:48,120</code>
+För det är inte så tydligt.</p>
+<p><code>1091 00:31:48,120 --&gt; 00:31:50,120</code>
+För alla här inne vid det här bordet.</p>
+<p><code>1092 00:31:50,120 --&gt; 00:31:52,120</code>
+Har ju en leverans.</p>
+<p><code>1093 00:31:52,120 --&gt; 00:31:54,120</code>
+Och kanske inte tänker så mycket.</p>
+<p><code>1094 00:31:54,120 --&gt; 00:31:56,120</code>
+På just den här typen av bolag.</p>
+<p><code>1095 00:31:56,120 --&gt; 00:31:58,120</code>
+Men just mentoreringsdelen tycker jag.</p>
+<p><code>1096 00:31:58,120 --&gt; 00:32:00,120</code>
+Är en smart idé.</p>
+<p><code>1097 00:32:00,120 --&gt; 00:32:02,120</code>
+Men också att ha någon appointed.</p>
+<p><code>1098 00:32:02,120 --&gt; 00:32:04,120</code>
+Ansvarig inuti bolaget som får axlarollen.</p>
+<p><code>1099 00:32:04,120 --&gt; 00:32:06,120</code>
+Och få tid att axla rollen.</p>
+<p><code>1100 00:32:06,120 --&gt; 00:32:08,120</code>
+Och med lite konkreta mål.</p>
+<p><code>1101 00:32:08,120 --&gt; 00:32:10,120</code>
+Och som sagt då.</p>
+<p><code>1102 00:32:10,120 --&gt; 00:32:12,120</code>
+Vad fan. Kontakta någon konsultfirma.</p>
+<p><code>1103 00:32:12,120 --&gt; 00:32:14,120</code>
+Och köp några timmar ifrån någon.</p>
+<p><code>1104 00:32:14,120 --&gt; 00:32:16,120</code>
+Det är möjligt att de kan dra loss någonting.</p>
+<p><code>1105 00:32:16,120 --&gt; 00:32:18,120</code>
+Många av konsultfirmerna.</p>
+<p><code>1106 00:32:18,120 --&gt; 00:32:20,120</code>
+Som är lite större.</p>
+<p><code>1107 00:32:20,120 --&gt; 00:32:22,120</code>
+Alltså mer eller mindre typ.</p>
+<p><code>1108 00:32:22,120 --&gt; 00:32:24,120</code>
+Grundläggande säkerhetsworkshop.</p>
+<p><code>1109 00:32:24,120 --&gt; 00:32:26,120</code>
+Sen känner jag på mig att det inte är säljarens.</p>
+<p><code>1110 00:32:26,120 --&gt; 00:32:28,120</code>
+Älsklingsuppdrag.</p>
+<p><code>1111 00:32:28,120 --&gt; 00:32:30,120</code>
+Bra fredagskick.</p>
+<p><code>1112 00:32:30,120 --&gt; 00:32:32,120</code>
+Sätta ihop en offert.</p>
+<p><code>1113 00:32:32,120 --&gt; 00:32:34,120</code>
+Och avtal och sånt på plats.</p>
+<p><code>1114 00:32:34,120 --&gt; 00:32:36,120</code>
+För att försälja 2-3 timmar liksom.</p>
+<p><code>1115 00:32:36,120 --&gt; 00:32:38,120</code>
+Men med det sagt.</p>
+<p><code>1116 00:32:38,120 --&gt; 00:32:40,120</code>
+Jag tycker det är roligt.</p>
+<p><code>1117 00:32:40,120 --&gt; 00:32:42,120</code>
+Kommer du med.</p>
+<p><code>1118 00:32:42,120 --&gt; 00:32:44,120</code>
+Kommer du med ett konkret förslag.</p>
+<p><code>1119 00:32:44,120 --&gt; 00:32:46,120</code>
+Som inte är lite så här.</p>
+<p><code>1120 00:32:46,120 --&gt; 00:32:48,120</code>
+Hjälp vi har ingen aning.</p>
+<p><code>1121 00:32:48,120 --&gt; 00:32:50,120</code>
+Utan mer så här.</p>
+<p><code>1122 00:32:50,120 --&gt; 00:32:52,120</code>
+Vi behöver en duktig person en eftermiddag.</p>
+<p><code>1123 00:32:52,120 --&gt; 00:32:54,120</code>
+För att göra en workshop med oss.</p>
+<p><code>1124 00:32:54,120 --&gt; 00:32:56,120</code>
+Vi tänker oss de här leveranlerna.</p>
+<p><code>1125 00:32:56,120 --&gt; 00:32:58,120</code>
+Du säger typ grundläggande risk och hotanalys.</p>
+<p><code>1126 00:32:58,120 --&gt; 00:33:00,120</code>
+Fem grejer vi kan jobba på.</p>
+<p><code>1127 00:33:00,120 --&gt; 00:33:02,120</code>
+Under nästa sex månader.</p>
+<p><code>1128 00:33:02,120 --&gt; 00:33:04,120</code>
+Vi behöver någon med en pekbinne.</p>
+<p><code>1129 00:33:04,120 --&gt; 00:33:06,120</code>
+Det blir en ganska konkret offert.</p>
+<p><code>1130 00:33:06,120 --&gt; 00:33:08,120</code>
+Det är inte så himla mycket jobb för säljaren att göra där.</p>
+<p><code>1131 00:33:08,120 --&gt; 00:33:10,120</code>
+Det är basic klicka på copy paste och sätta ett pris på det.</p>
+<p><code>1132 00:33:10,120 --&gt; 00:33:12,120</code>
+Säger de att det är det.</p>
+<p><code>1133 00:33:12,120 --&gt; 00:33:14,120</code>
+Så är det säljaren som är problemet.</p>
+<p><code>1134 00:33:14,120 --&gt; 00:33:16,120</code>
+Men jag tänkte på.</p>
+<p><code>1135 00:33:16,120 --&gt; 00:33:18,120</code>
+Alltså.</p>
+<p><code>1136 00:33:18,120 --&gt; 00:33:20,120</code>
+Den här modellen.</p>
+<p><code>1137 00:33:20,120 --&gt; 00:33:22,120</code>
+Till att man vill ha en riktig pentester.</p>
+<p><code>1138 00:33:22,120 --&gt; 00:33:24,120</code>
+Det är ju ofta att du vill ha en väldigt.</p>
+<p><code>1139 00:33:24,120 --&gt; 00:33:26,120</code>
+Välskriven rapport.</p>
+<p><code>1140 00:33:26,120 --&gt; 00:33:28,120</code>
+Som du kan visa upp.</p>
+<p><code>1141 00:33:28,120 --&gt; 00:33:30,120</code>
+Och någon kan ge svar på det.</p>
+<p><code>1142 00:33:30,120 --&gt; 00:33:32,120</code>
+Om de är så små.</p>
+<p><code>1143 00:33:32,120 --&gt; 00:33:34,120</code>
+Och man inte har råd med det.</p>
+<p><code>1144 00:33:34,120 --&gt; 00:33:36,120</code>
+Jag vet vad.</p>
+<p><code>1145 00:33:36,120 --&gt; 00:33:38,120</code>
+Nu har det ju gått väldigt länge sedan.</p>
+<p><code>1146 00:33:38,120 --&gt; 00:33:40,120</code>
+Sedan jag och folk jag kände pluggade med.</p>
+<p><code>1147 00:33:40,120 --&gt; 00:33:42,120</code>
+Men jag vet att.</p>
+<p><code>1148 00:33:42,120 --&gt; 00:33:44,120</code>
+Det hände ju att bolag bad studenter.</p>
+<p><code>1149 00:33:44,120 --&gt; 00:33:46,120</code>
+Att göra säkerhetstester.</p>
+<p><code>1150 00:33:46,120 --&gt; 00:33:48,120</code>
+Och studera.</p>
+<p><code>1151 00:33:48,120 --&gt; 00:33:50,120</code>
+Studerande har ju den stora fördelen.</p>
+<p><code>1152 00:33:50,120 --&gt; 00:33:52,120</code>
+Att de.</p>
+<p><code>1153 00:33:52,120 --&gt; 00:33:54,120</code>
+Kan ju inte ta betalt för sig.</p>
+<p><code>1154 00:33:54,120 --&gt; 00:33:56,120</code>
+Och.</p>
+<p><code>1155 00:33:56,120 --&gt; 00:33:58,120</code>
+Om du inte har krav på bästa.</p>
+<p><code>1156 00:33:58,120 --&gt; 00:34:00,120</code>
+Rapporten i manna minne.</p>
+<p><code>1157 00:34:00,120 --&gt; 00:34:02,120</code>
+Och sådär och du mest vill ha.</p>
+<p><code>1158 00:34:02,120 --&gt; 00:34:04,120</code>
+Alltså någon sorts ticket.</p>
+<p><code>1159 00:34:04,120 --&gt; 00:34:06,120</code>
+Eller bara ha någon extern åsikt.</p>
+<p><code>1160 00:34:06,120 --&gt; 00:34:08,120</code>
+På.</p>
+<p><code>1161 00:34:08,120 --&gt; 00:34:10,120</code>
+Var det så att ni satte en.</p>
+<p><code>1162 00:34:10,120 --&gt; 00:34:12,120</code>
+Student som ni litar på.</p>
+<p><code>1163 00:34:12,120 --&gt; 00:34:14,120</code>
+Ni vet att den har mycket säkerhetskompetens.</p>
+<p><code>1164 00:34:14,120 --&gt; 00:34:16,120</code>
+Och den.</p>
+<p><code>1165 00:34:16,120 --&gt; 00:34:18,120</code>
+En vecka och hittade ingenting.</p>
+<p><code>1166 00:34:18,120 --&gt; 00:34:20,120</code>
+Så säger det väl någonting.</p>
+<p><code>1167 00:34:20,120 --&gt; 00:34:22,120</code>
+Om personen.</p>
+<p><code>1168 00:34:22,120 --&gt; 00:34:24,120</code>
+Återkommer efter en timme och har.</p>
+<p><code>1169 00:34:24,120 --&gt; 00:34:26,120</code>
+10 allvarliga säkerhetshål.</p>
+<p><code>1170 00:34:26,120 --&gt; 00:34:28,120</code>
+Så säger det också någonting.</p>
+<p><code>1171 00:34:28,120 --&gt; 00:34:30,120</code>
+Liksom.</p>
+<p><code>1172 00:34:30,120 --&gt; 00:34:32,120</code>
+Ja det enda.</p>
+<p><code>1173 00:34:32,120 --&gt; 00:34:34,120</code>
+Svåra där i det första fallet du beskrev.</p>
+<p><code>1174 00:34:34,120 --&gt; 00:34:36,120</code>
+Är ju att externt bedöma kompetensen.</p>
+<p><code>1175 00:34:36,120 --&gt; 00:34:38,120</code>
+På den personen.</p>
+<p><code>1176 00:34:38,120 --&gt; 00:34:40,120</code>
+Det blir lättare om de hittar mycket.</p>
+<p><code>1177 00:34:40,120 --&gt; 00:34:42,120</code>
+Jag tänkte var inte.</p>
+<p><code>1178 00:34:42,120 --&gt; 00:34:44,120</code>
+Bagman tills mig i förslagslistan också.</p>
+<p><code>1179 00:34:44,120 --&gt; 00:34:46,120</code>
+Det var från min anteckning.</p>
+<p><code>1180 00:34:46,120 --&gt; 00:34:48,120</code>
+På vad vi kunde göra.</p>
+<p><code>1181 00:34:48,120 --&gt; 00:34:50,120</code>
+Den ska man nog inte ta.</p>
+<p><code>1182 00:34:50,120 --&gt; 00:34:52,120</code>
+Som en quick win alltså.</p>
+<p><code>1183 00:34:52,120 --&gt; 00:34:54,120</code>
+Det krävs en otrolig kompetens.</p>
+<p><code>1184 00:34:54,120 --&gt; 00:34:56,120</code>
+På insidan att göra triage på det där.</p>
+<p><code>1185 00:34:56,120 --&gt; 00:34:58,120</code>
+Och köpa det då.</p>
+<p><code>1186 00:34:58,120 --&gt; 00:35:00,120</code>
+Via någon av de stora plattformarna.</p>
+<p><code>1187 00:35:00,120 --&gt; 00:35:02,120</code>
+Det blir då.</p>
+<p><code>1188 00:35:02,120 --&gt; 00:35:04,120</code>
+Om hundratusen var ett problem.</p>
+<p><code>1189 00:35:04,120 --&gt; 00:35:06,120</code>
+Då blir det ett större problem.</p>
+<p><code>1190 00:35:06,120 --&gt; 00:35:08,120</code>
+Nej det är inte rätt väg att gå.</p>
+<p><code>1191 00:35:08,120 --&gt; 00:35:10,120</code>
+Men om.</p>
+<p><code>1192 00:35:10,120 --&gt; 00:35:12,120</code>
+Budgeten är hundratusen.</p>
+<p><code>1193 00:35:12,120 --&gt; 00:35:14,120</code>
+Svenska kronor.</p>
+<p><code>1194 00:35:14,120 --&gt; 00:35:16,120</code>
+Då är det ju förmodligen inte.</p>
+<p><code>1195 00:35:16,120 --&gt; 00:35:18,120</code>
+Ett svenskt.</p>
+<p><code>1196 00:35:18,120 --&gt; 00:35:20,120</code>
+Eller annat.</p>
+<p><code>1197 00:35:20,120 --&gt; 00:35:22,120</code>
+Höglöneland.</p>
+<p><code>1198 00:35:22,120 --&gt; 00:35:24,120</code>
+Som.</p>
+<p><code>1199 00:35:24,120 --&gt; 00:35:26,120</code>
+Kan leverera speciellt med.</p>
+<p><code>1200 00:35:26,120 --&gt; 00:35:28,120</code>
+Jo men.</p>
+<p><code>1201 00:35:28,120 --&gt; 00:35:30,120</code>
+Det blir det ju.</p>
+<p><code>1202 00:35:30,120 --&gt; 00:35:32,120</code>
+Om du har svenska konsulter.</p>
+<p><code>1203 00:35:32,120 --&gt; 00:35:34,120</code>
+En möjlighet är ju.</p>
+<p><code>1204 00:35:34,120 --&gt; 00:35:36,120</code>
+Att man lägger ut det som exjobb.</p>
+<p><code>1205 00:35:36,120 --&gt; 00:35:38,120</code>
+Eller någonting.</p>
+<p><code>1206 00:35:38,120 --&gt; 00:35:40,120</code>
+Det var lite det jag tänkte på.</p>
+<p><code>1207 00:35:40,120 --&gt; 00:35:42,120</code>
+Om man kan konkretisera det.</p>
+<p><code>1208 00:35:42,120 --&gt; 00:35:44,120</code>
+På ett vettigt sätt.</p>
+<p><code>1209 00:35:44,120 --&gt; 00:35:46,120</code>
+Det ska ju ge värde för studenten då.</p>
+<p><code>1210 00:35:46,120 --&gt; 00:35:48,120</code>
+Det är ju en student.</p>
+<p><code>1211 00:35:48,120 --&gt; 00:35:50,120</code>
+Så man får ju ta det för vad det är.</p>
+<p><code>1212 00:35:50,120 --&gt; 00:35:52,120</code>
+Men det är ju någonting.</p>
+<p><code>1213 00:35:52,120 --&gt; 00:35:54,120</code>
+Det är bättre än ingenting.</p>
+<p><code>1214 00:35:54,120 --&gt; 00:35:56,120</code>
+Om alternativet är.</p>
+<p><code>1215 00:35:58,120 --&gt; 00:36:00,120</code>
+Inte få lov att köpa.</p>
+<p><code>1216 00:36:00,120 --&gt; 00:36:02,120</code>
+Ett pentest för hundratusen.</p>
+<p><code>1217 00:36:02,120 --&gt; 00:36:04,120</code>
+Kan man göra.</p>
+<p><code>1218 00:36:04,120 --&gt; 00:36:06,120</code>
+Någonting alls då.</p>
+<p><code>1219 00:36:06,120 --&gt; 00:36:08,120</code>
+Om man nu ser att.</p>
+<p><code>1220 00:36:08,120 --&gt; 00:36:10,120</code>
+Ett externt säkerhetstest av någon form.</p>
+<p><code>1221 00:36:10,120 --&gt; 00:36:12,120</code>
+Är av intresse.</p>
+<p><code>1222 00:36:12,120 --&gt; 00:36:14,120</code>
+Om man nu börjar med.</p>
+<p><code>1223 00:36:14,120 --&gt; 00:36:16,120</code>
+Någon av de här övningarna.</p>
+<p><code>1224 00:36:16,120 --&gt; 00:36:18,120</code>
+Återigen då kommer det ju till.</p>
+<p><code>1225 00:36:18,120 --&gt; 00:36:20,120</code>
+En intern budget.</p>
+<p><code>1226 00:36:20,120 --&gt; 00:36:22,120</code>
+En person behöver ju då hantera.</p>
+<p><code>1227 00:36:22,120 --&gt; 00:36:24,120</code>
+Den här studenten.</p>
+<p><code>1228 00:36:24,120 --&gt; 00:36:26,120</code>
+Eller hur man nu väljer att lägga upp det.</p>
+<p><code>1229 00:36:26,120 --&gt; 00:36:28,120</code>
+Det kostar timmar.</p>
+<p><code>1230 00:36:28,120 --&gt; 00:36:30,120</code>
+Alltså internt.</p>
+<p><code>1231 00:36:30,120 --&gt; 00:36:32,120</code>
+Beroende på vad du har för intern timtaxa.</p>
+<p><code>1232 00:36:32,120 --&gt; 00:36:34,120</code>
+Så kommer det ju upp i hundratusen.</p>
+<p><code>1233 00:36:34,120 --&gt; 00:36:36,120</code>
+Om det inte är allt för lång tid.</p>
+<p><code>1234 00:36:36,120 --&gt; 00:36:38,120</code>
+Så där får man ju liksom.</p>
+<p><code>1235 00:36:38,120 --&gt; 00:36:40,120</code>
+Vända på det.</p>
+<p><code>1236 00:36:40,120 --&gt; 00:36:42,120</code>
+Att lägga upp tiotusen för en dag.</p>
+<p><code>1237 00:36:42,120 --&gt; 00:36:44,120</code>
+Med någon som är duktig.</p>
+<p><code>1238 00:36:44,120 --&gt; 00:36:46,120</code>
+Och så.</p>
+<p><code>1239 00:36:46,120 --&gt; 00:36:48,120</code>
+Jobbar du på det internt.</p>
+<p><code>1240 00:36:48,120 --&gt; 00:36:50,120</code>
+Och återkommande.</p>
+<p><code>1241 00:36:50,120 --&gt; 00:36:52,120</code>
+Sessioner som vi pratade om förut.</p>
+<p><code>1242 00:36:52,120 --&gt; 00:36:54,120</code>
+Ja precis det.</p>
+<p><code>1243 00:36:54,120 --&gt; 00:36:56,120</code>
+Det man är pentest på.</p>
+<p><code>1244 00:36:56,120 --&gt; 00:36:58,120</code>
+För få timmar.</p>
+<p><code>1245 00:36:58,120 --&gt; 00:37:00,120</code>
+Det kan ju bli meningslöst liksom.</p>
+<p><code>1246 00:37:00,120 --&gt; 00:37:02,120</code>
+Ja men jag tror att pentest är.</p>
+<p><code>1247 00:37:02,120 --&gt; 00:37:04,120</code>
+Bara glöm det just nu.</p>
+<p><code>1248 00:37:04,120 --&gt; 00:37:06,120</code>
+Jag är helt enig där.</p>
+<p><code>1249 00:37:06,120 --&gt; 00:37:08,120</code>
+Det är inte det som behövs.</p>
+<p><code>1250 00:37:08,120 --&gt; 00:37:10,120</code>
+Det är en ögonblicksbild.</p>
+<p><code>1251 00:37:10,120 --&gt; 00:37:12,120</code>
+Av din säkerhetsnivå som den ser ut just nu.</p>
+<p><code>1252 00:37:12,120 --&gt; 00:37:14,120</code>
+Eller för att verifiera.</p>
+<p><code>1253 00:37:14,120 --&gt; 00:37:16,120</code>
+Att ditt säkerhetsarbete som du har gjort.</p>
+<p><code>1254 00:37:16,120 --&gt; 00:37:18,120</code>
+Har gett resultat kontra tidigare pentest.</p>
+<p><code>1255 00:37:18,120 --&gt; 00:37:20,120</code>
+Och där sa du det viktigaste på hela dagen.</p>
+<p><code>1256 00:37:20,120 --&gt; 00:37:22,120</code>
+Att det är säkerhetsarbetet du redan har gjort.</p>
+<p><code>1257 00:37:22,120 --&gt; 00:37:24,120</code>
+Ja.</p>
+<p><code>1258 00:37:24,120 --&gt; 00:37:26,120</code>
+Så är det ju.</p>
+<p><code>1259 00:37:26,120 --&gt; 00:37:28,120</code>
+Pentest validerar någonting.</p>
+<p><code>1260 00:37:28,120 --&gt; 00:37:30,120</code>
+Pentest skapar inte din to do lista.</p>
+<p><code>1261 00:37:30,120 --&gt; 00:37:32,120</code>
+Eller indirekt gör den ju det.</p>
+<p><code>1262 00:37:32,120 --&gt; 00:37:34,120</code>
+Men det är inte det som är syftet med den.</p>
+<p><code>1263 00:37:34,120 --&gt; 00:37:36,120</code>
+Och det är inte heller så att ett pentest.</p>
+<p><code>1264 00:37:36,120 --&gt; 00:37:38,120</code>
+Kommer slänga på dig.</p>
+<p><code>1265 00:37:38,120 --&gt; 00:37:40,120</code>
+Kommer göra din miljö säker.</p>
+<p><code>1266 00:37:40,120 --&gt; 00:37:42,120</code>
+Så är det liksom.</p>
+<p><code>1267 00:37:42,120 --&gt; 00:37:44,120</code>
+Om försäkringen tyckte att du kunde sova bättre på natten.</p>
+<p><code>1268 00:37:44,120 --&gt; 00:37:46,120</code>
+Så kommer en pentestrapport.</p>
+<p><code>1269 00:37:46,120 --&gt; 00:37:48,120</code>
+Med massa jättejobbiga systemiska problem.</p>
+<p><code>1270 00:37:48,120 --&gt; 00:37:50,120</code>
+Och sårbarheter.</p>
+<p><code>1271 00:37:50,120 --&gt; 00:37:52,120</code>
+Får du att sova ännu sämre.</p>
+<p><code>1272 00:37:52,120 --&gt; 00:37:54,120</code>
+Så är det ju dessutom att en pentestrapport.</p>
+<p><code>1273 00:37:54,120 --&gt; 00:37:56,120</code>
+Kommer inte lösa problemen åt dig.</p>
+<p><code>1274 00:37:56,120 --&gt; 00:37:58,120</code>
+Kommer bara identifiera dem.</p>
+<p><code>1275 00:37:58,120 --&gt; 00:38:00,120</code>
+Vissa av dem.</p>
+<p><code>1276 00:38:00,120 --&gt; 00:38:02,120</code>
+Och definitivt inte alla.</p>
+<p><code>1277 00:38:02,120 --&gt; 00:38:04,120</code>
+Men förhoppningsvis en del.</p>
+<p><code>1278 00:38:04,120 --&gt; 00:38:06,120</code>
+På ett litet sätt.</p>
+<p><code>1279 00:38:06,120 --&gt; 00:38:08,120</code>
+Var det brevskrivaren som tog upp det här med försäkring också?</p>
+<p><code>1280 00:38:08,120 --&gt; 00:38:10,120</code>
+Jo.</p>
+<p><code>1281 00:38:10,120 --&gt; 00:38:12,120</code>
+Brevskrivaren.</p>
+<p><code>1282 00:38:12,120 --&gt; 00:38:14,120</code>
+Tog specifikt upp att.</p>
+<p><code>1283 00:38:14,120 --&gt; 00:38:16,120</code>
+De har testat.</p>
+<p><code>1284 00:38:16,120 --&gt; 00:38:18,120</code>
+Cyberansvarsförsäkring.</p>
+<p><code>1285 00:38:18,120 --&gt; 00:38:20,120</code>
+Eller vad det nu heter.</p>
+<p><code>1286 00:38:20,120 --&gt; 00:38:22,120</code>
+Där kan jag nästan tycka.</p>
+<p><code>1287 00:38:22,120 --&gt; 00:38:24,120</code>
+Försäkringsbolagen.</p>
+<p><code>1288 00:38:24,120 --&gt; 00:38:26,120</code>
+Det känns lite snake oil.</p>
+<p><code>1289 00:38:26,120 --&gt; 00:38:28,120</code>
+Ja men framförallt då.</p>
+<p><code>1290 00:38:28,120 --&gt; 00:38:30,120</code>
+Om de ska skydda mot ransomware.</p>
+<p><code>1291 00:38:30,120 --&gt; 00:38:32,120</code>
+Eller någonting.</p>
+<p><code>1292 00:38:32,120 --&gt; 00:38:34,120</code>
+Förmågan att bedöma.</p>
+<p><code>1293 00:38:34,120 --&gt; 00:38:36,120</code>
+Vad är risken att de behöver betala ut.</p>
+<p><code>1294 00:38:36,120 --&gt; 00:38:38,120</code>
+Det skulle vara jättekul att se.</p>
+<p><code>1295 00:38:38,120 --&gt; 00:38:40,120</code>
+Hur mycket utbetalningar som faktiskt har skett.</p>
+<p><code>1296 00:38:40,120 --&gt; 00:38:42,120</code>
+Jag tror inte det är så många.</p>
+<p><code>1297 00:38:42,120 --&gt; 00:38:44,120</code>
+Jag är sjukt skeptisk.</p>
+<p><code>1298 00:38:44,120 --&gt; 00:38:46,120</code>
+Hur bedömer du det post facto?</p>
+<p><code>1299 00:38:46,120 --&gt; 00:38:48,120</code>
+Framförallt för ett sådant här litet bolag.</p>
+<p><code>1300 00:38:48,120 --&gt; 00:38:50,120</code>
+Men generellt.</p>
+<p><code>1301 00:38:50,120 --&gt; 00:38:52,120</code>
+Om du är ett svinstort bolag.</p>
+<p><code>1302 00:38:52,120 --&gt; 00:38:54,120</code>
+Teto hade de försäkring.</p>
+<p><code>1303 00:38:54,120 --&gt; 00:38:56,120</code>
+Det kan jag tänka mig.</p>
+<p><code>1304 00:38:56,120 --&gt; 00:38:58,120</code>
+Jag tror inte Teto.</p>
+<p><code>1305 00:38:58,120 --&gt; 00:39:00,120</code>
+Jag tror det mer handlar om.</p>
+<p><code>1306 00:39:00,120 --&gt; 00:39:02,120</code>
+Säkra upp pengarna.</p>
+<p><code>1307 00:39:02,120 --&gt; 00:39:04,120</code>
+Om vi är ett supersort bolag.</p>
+<p><code>1308 00:39:04,120 --&gt; 00:39:06,120</code>
+Det är nästan som en kapitalförsäkring.</p>
+<p><code>1309 00:39:06,120 --&gt; 00:39:08,120</code>
+Det är inte kopplat till incidenten.</p>
+<p><code>1310 00:39:08,120 --&gt; 00:39:10,120</code>
+Annat än.</p>
+<p><code>1311 00:39:10,120 --&gt; 00:39:12,120</code>
+Monetärt.</p>
+<p><code>1312 00:39:12,120 --&gt; 00:39:14,120</code>
+Det känns också som ett sjukt diffust rörelse.</p>
+<p><code>1313 00:39:14,120 --&gt; 00:39:16,120</code>
+Det skyddar mig inte på någonting.</p>
+<p><code>1314 00:39:16,120 --&gt; 00:39:18,120</code>
+Från den tekniska attacken.</p>
+<p><code>1315 00:39:18,120 --&gt; 00:39:20,120</code>
+Men kostnaderna som kommer efteråt.</p>
+<p><code>1316 00:39:20,120 --&gt; 00:39:22,120</code>
+Kanske jag kan täcka upp med en försäkring.</p>
+<p><code>1317 00:39:22,120 --&gt; 00:39:24,120</code>
+Då kan kostnaderna vara.</p>
+<p><code>1318 00:39:24,120 --&gt; 00:39:26,120</code>
+Skadeståndskrav och kanske.</p>
+<p><code>1319 00:39:26,120 --&gt; 00:39:28,120</code>
+Forensisk firma som vi tar in.</p>
+<p><code>1320 00:39:28,120 --&gt; 00:39:30,120</code>
+Och så vidare.</p>
+<p><code>1321 00:39:30,120 --&gt; 00:39:32,120</code>
+För det här bolaget känns ju som en nej.</p>
+<p><code>1322 00:39:32,120 --&gt; 00:39:34,120</code>
+Och jag menar.</p>
+<p><code>1323 00:39:34,120 --&gt; 00:39:36,120</code>
+Även om du har en cyberansvarsförsäkring.</p>
+<p><code>1324 00:39:36,120 --&gt; 00:39:38,120</code>
+Och blir hackad eller lågt på ransomware.</p>
+<p><code>1325 00:39:38,120 --&gt; 00:39:40,120</code>
+Eller vad det nu är.</p>
+<p><code>1326 00:39:40,120 --&gt; 00:39:42,120</code>
+Som gör att dina kunder hamnar i skiten.</p>
+<p><code>1327 00:39:42,120 --&gt; 00:39:44,120</code>
+Men du har ju kört oavsett vilken försäkring du har.</p>
+<p><code>1328 00:39:44,120 --&gt; 00:39:46,120</code>
+De kommer inte komma tillbaka förmodligen.</p>
+<p><code>1329 00:39:46,120 --&gt; 00:39:48,120</code>
+Alltså iallafall inte inom den tiden som du.</p>
+<p><code>1330 00:39:48,120 --&gt; 00:39:50,120</code>
+Få tillbaka ekonomin för.</p>
+<p><code>1331 00:39:50,120 --&gt; 00:39:52,120</code>
+Av den här försäkringen.</p>
+<p><code>1332 00:39:52,120 --&gt; 00:39:54,120</code>
+I någon mån så är väl.</p>
+<p><code>1333 00:39:54,120 --&gt; 00:39:56,120</code>
+Konkurs är väl den yttersta försäkringen.</p>
+<p><code>1334 00:39:56,120 --&gt; 00:39:58,120</code>
+Du kan ju kursa bolaget.</p>
+<p><code>1335 00:39:58,120 --&gt; 00:40:00,120</code>
+Om det går tillräckligt dåligt.</p>
+<p><code>1336 00:40:00,120 --&gt; 00:40:02,120</code>
+Konkursen.</p>
+<p><code>1337 00:40:02,120 --&gt; 00:40:04,120</code>
+De kallar ju det utan ansvete.</p>
+<p><code>1338 00:40:04,120 --&gt; 00:40:06,120</code>
+Det här är säkerhetspodcasten.</p>
+<p><code>1339 00:40:06,120 --&gt; 00:40:08,120</code>
+Ta inga ekonomiska tips.</p>
+<p><code>1340 00:40:08,120 --&gt; 00:40:10,120</code>
+Så är det.</p>
+<p><code>1341 00:40:10,120 --&gt; 00:40:12,120</code>
+Det är en av anledningarna till att ha ett aktiebolag.</p>
+<p><code>1342 00:40:12,120 --&gt; 00:40:14,120</code>
+Att du inte är så person som ytterst ekonomiskt ansvarig.</p>
+<p><code>1343 00:40:14,120 --&gt; 00:40:16,120</code>
+Förhoppningsvis.</p>
+<p><code>1344 00:40:16,120 --&gt; 00:40:18,120</code>
+Så det är ju den yttersta försäkringen.</p>
+<p><code>1345 00:40:18,120 --&gt; 00:40:20,120</code>
+Så vårt råd är.</p>
+<p><code>1346 00:40:20,120 --&gt; 00:40:22,120</code>
+Se till så att det är ett aktiebolag där.</p>
+<p><code>1347 00:40:22,120 --&gt; 00:40:24,120</code>
+Börja där.</p>
+<p><code>1348 00:40:24,120 --&gt; 00:40:26,120</code>
+Se till att du inte är personligt ansvarig för något.</p>
+<p><code>1349 00:40:26,120 --&gt; 00:40:28,120</code>
+So you can take your shit and leave.</p>
+<p><code>1350 00:40:28,120 --&gt; 00:40:30,120</code>
+Precis.</p>
+<p><code>1351 00:40:30,120 --&gt; 00:40:32,120</code>
+Eller träffa någon som är ansvarig för säkerhet.</p>
+<p><code>1352 00:40:32,120 --&gt; 00:40:34,120</code>
+Så kan vi konkretisera det.</p>
+<p><code>1353 00:40:34,120 --&gt; 00:40:36,120</code>
+Men ska vi runda av där eller?</p>
+<p><code>1354 00:40:36,120 --&gt; 00:40:38,120</code>
+Det känns som att vi cirkulerar lite.</p>
+<p><code>1355 00:40:38,120 --&gt; 00:40:40,120</code>
+Jag är redo.</p>
+<p><code>1356 00:40:40,120 --&gt; 00:40:42,120</code>
+Jag hoppas att det var något du tillger råd.</p>
+<p><code>1357 00:40:42,120 --&gt; 00:40:44,120</code>
+Det var en kul diskussion.</p>
+<p><code>1358 00:40:44,120 --&gt; 00:40:46,120</code>
+Tack till brevskrivaren.</p>
+<p><code>1359 00:40:46,120 --&gt; 00:40:48,120</code>
+Vi kan väl säga till alla andra som lyssnar.</p>
+<p><code>1360 00:40:48,120 --&gt; 00:40:50,120</code>
+Skicka gärna in förslag på teman.</p>
+<p><code>1361 00:40:50,120 --&gt; 00:40:52,120</code>
+Så kommer vi prata om det.</p>
+<p><code>1362 00:40:52,120 --&gt; 00:40:54,120</code>
+Som ni märker behöver ni inte obfuskera någon för det löser Peter.</p>
+<p><code>1363 00:40:54,120 --&gt; 00:40:56,120</code>
+Exakt.</p>
+<p><code>1364 00:40:56,120 --&gt; 00:40:58,120</code>
+Jag kan också nämna att sist i hans brev så skrev han</p>
+<p><code>1365 00:40:58,120 --&gt; 00:41:00,120</code>
+att det är en väldigt intressant problematik</p>
+<p><code>1366 00:41:00,120 --&gt; 00:41:02,120</code>
+för honom och han</p>
+<p><code>1367 00:41:02,120 --&gt; 00:41:04,120</code>
+är med i olika sådana här forum där</p>
+<p><code>1368 00:41:04,120 --&gt; 00:41:06,120</code>
+start-up-folk</p>
+<p><code>1369 00:41:06,120 --&gt; 00:41:08,120</code>
+träffas och så.</p>
+<p><code>1370 00:41:08,120 --&gt; 00:41:10,120</code>
+Och han</p>
+<p><code>1371 00:41:10,120 --&gt; 00:41:12,120</code>
+upplever att</p>
+<p><code>1372 00:41:12,120 --&gt; 00:41:14,120</code>
+väldigt många i CTO och CTO-liknande</p>
+<p><code>1373 00:41:14,120 --&gt; 00:41:16,120</code>
+roller för start-up</p>
+<p><code>1374 00:41:16,120 --&gt; 00:41:18,120</code>
+är i precis samma roll.</p>
+<p><code>1375 00:41:18,120 --&gt; 00:41:20,120</code>
+Du skulle gärna vilja</p>
+<p><code>1376 00:41:20,120 --&gt; 00:41:22,120</code>
+köpa Pentest</p>
+<p><code>1377 00:41:22,120 --&gt; 00:41:24,120</code>
+men budgetarna</p>
+<p><code>1378 00:41:24,120 --&gt; 00:41:26,120</code>
+och annat så här</p>
+<p><code>1379 00:41:26,120 --&gt; 00:41:28,120</code>
+för vad du skulle vilja göra</p>
+<p><code>1380 00:41:28,120 --&gt; 00:41:30,120</code>
+det är helt utanför vad</p>
+<p><code>1381 00:41:30,120 --&gt; 00:41:32,120</code>
+VD har</p>
+<p><code>1382 00:41:32,120 --&gt; 00:41:34,120</code>
+kan strössla pengarna på</p>
+<p><code>1383 00:41:34,120 --&gt; 00:41:36,120</code>
+ditt säkerhetsviljande.</p>
+<p><code>1384 00:41:36,120 --&gt; 00:41:38,120</code>
+Så han ser det.</p>
+<p><code>1385 00:41:38,120 --&gt; 00:41:40,120</code>
+Det är många fler</p>
+<p><code>1386 00:41:40,120 --&gt; 00:41:42,120</code>
+i snarlik sits.</p>
+<p><code>1387 00:41:42,120 --&gt; 00:41:44,120</code>
+Ja, det känns ju</p>
+<p><code>1388 00:41:44,120 --&gt; 00:41:46,120</code>
+tryggare att veta.</p>
+<p><code>1389 00:41:46,120 --&gt; 00:41:48,120</code>
+Då har vi väl gett några bra tips som gör att man</p>
+<p><code>1390 00:41:48,120 --&gt; 00:41:50,120</code>
+inte behöver spendera så himla mycket pengar.</p>
+<p><code>1391 00:41:50,120 --&gt; 00:41:52,120</code>
+Iallafall inte initialt.</p>
+<p><code>1392 00:41:52,120 --&gt; 00:41:54,120</code>
+Vi som pratade hette</p>
+<p><code>1393 00:41:54,120 --&gt; 00:41:56,120</code>
+Johan Ryberg Möller och Jesper Larsson.</p>
+<p><code>1394 00:41:56,120 --&gt; 00:41:58,120</code>
+Jajamen!</p>
+<p><code>1395 00:41:58,120 --&gt; 00:42:00,120</code>
+Och Peter Magnusson.</p>
+<p><code>1396 00:42:00,120 --&gt; 00:42:02,120</code>
+Fortfarande ofällbara.</p>
+<p><code>1397 00:42:02,120 --&gt; 00:42:04,120</code>
+Ha det gött! Hej då!</p>
+<p><code>1398 00:42:06,120 --&gt; 00:42:08,120</code>
+Ska vi kicka igång?</p>
+<p><code>1399 00:42:08,120 --&gt; 00:42:10,120</code>
+Podcasten menar du?</p>
+<p><code>1400 00:42:10,120 --&gt; 00:42:12,120</code>
+Ja.</p>
+<p><code>1401 00:42:12,120 --&gt; 00:42:14,120</code>
+Det känns rimligt.</p>
+<p><code>1402 00:42:14,120 --&gt; 00:42:16,120</code>
+Du basar då, Peter.</p>
+<p><code>1403 00:42:16,120 --&gt; 00:42:18,120</code>
+Någon</p>
+<p><code>1404 00:42:18,120 --&gt; 00:42:20,120</code>
+presenterar, kastar</p>
+<p><code>1405 00:42:20,120 --&gt; 00:42:22,120</code>
+över till mig så försöker jag</p>
+<p><code>1406 00:42:22,120 --&gt; 00:42:24,120</code>
+dra ämnet.</p>
+<p><code>1407 00:42:24,120 --&gt; 00:42:26,120</code>
+Jag tycker att Johan gör det.</p>
+<p><code>1408 00:42:26,120 --&gt; 00:42:28,120</code>
+Jag tror att jag ska</p>
+<p><code>1409 00:42:28,120 --&gt; 00:42:30,120</code>
+ha en sån här.</p>
+<p><code>1410 00:42:30,120 --&gt; 00:42:32,120</code>
+Hjälp!</p>
+<p><code>1411 00:42:32,120 --&gt; 00:42:34,120</code>
+Det är budget.</p>
+<p><code>1412 00:42:34,120 --&gt; 00:42:36,120</code>
+Du&hellip;</p>
+<p><code>1413 00:42:36,120 --&gt; 00:42:38,120</code>
+Mer kraft.</p>
+<p><code>1414 00:42:38,120 --&gt; 00:42:40,120</code>
+Ni tar det.</p>
+<p><code>1415 00:42:40,120 --&gt; 00:42:42,120</code>
+Det blir superbra.</p>
+<p><code>1416 00:42:42,120 --&gt; 00:42:44,120</code>
+Nu ska vi se.</p>
+<p><code>1417 00:42:44,120 --&gt; 00:42:46,120</code>
+Billig trendtest</p>
+<p><code>1418 00:42:46,120 --&gt; 00:42:48,120</code>
+för 100 000 kronor.</p>
+<p><code>1419 00:42:48,120 --&gt; 00:42:50,120</code>
+Men&hellip;</p>
+<p><code>1420 00:42:50,120 --&gt; 00:42:52,120</code>
+Förlåt.</p>
+<p><code>1421 00:42:52,120 --&gt; 00:42:54,120</code>
+Iallafall, ska vi dra igång?</p>
+<p><code>1422 00:42:54,120 --&gt; 00:42:56,120</code>
+Ja, vi är sju minuter</p>
+<p><code>1423 00:42:56,120 --&gt; 00:42:58,120</code>
+in i inspelningen.</p>
+<p><code>1424 00:42:58,120 --&gt; 00:43:00,120</code>
+Oh my god!</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2025-12-29</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/tema/">tema</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/sakerhetspodcasten_294_ostrukturerat_v_50/" class="prev" rel="prev" title="Säkerhetspodcasten #294 - Ostrukturerat V.50"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Säkerhetspodcasten #294 - Ostrukturerat V.50</a></div>
+</div>
+</article></div>
+            </main></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
