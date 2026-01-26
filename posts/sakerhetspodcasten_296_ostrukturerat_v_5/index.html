@@ -33,7 +33,7 @@ wiz.io/ Yuval Avrahami, Nir Ohfeld: CodeBreach - Supply Chain Vuln &amp; AWS Cod
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/sakerhetspodcasten.se\/posts\/sakerhetspodcasten_296_ostrukturerat_v_5\/"
-        },"genre": "posts","keywords": "ostrukturerat","wordcount":  15294 ,
+        },"genre": "posts","keywords": "ostrukturerat","wordcount":  15300 ,
         "url": "https:\/\/sakerhetspodcasten.se\/posts\/sakerhetspodcasten_296_ostrukturerat_v_5\/","datePublished": "2026-01-26T09:09:00+00:00","dateModified": "2026-01-26T09:09:00+00:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -75,7 +75,7 @@ wiz.io/ Yuval Avrahami, Nir Ohfeld: CodeBreach - Supply Chain Vuln &amp; AWS Cod
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Säkerhetspodcasten #296 - Ostrukturerat V.5</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2026-01-26">2026-01-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;15294 words&nbsp;
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2026-01-26">2026-01-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;15300 words&nbsp;
                 <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;72 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
@@ -117,7 +117,8 @@ och Powershell XSS!</p>
 men nyligen, återfunna UNIX v4.</p>
 <p>Äntligen är bufferoverflow write fixad och
 PDP-11 simulatorer kan uppgradera till ett säkrare OS!</p>
-<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-diff" data-lang="diff"><span style="display:flex;"><span><span style="color:#a6e22e">+       i = 0;
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-diff" data-lang="diff"><span style="display:flex;"><span><span style="color:#f92672">-       while((*q = getchar()) != &#39;\n&#39;)
+</span></span></span><span style="display:flex;"><span><span style="color:#f92672"></span><span style="color:#a6e22e">+       i = 0;
 </span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">+       while((*q = getchar()) != &#39;\n&#39;) {
 </span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">+               if (++i &gt;= sizeof(password))
 </span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">+                       goto error;
