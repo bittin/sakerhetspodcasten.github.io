@@ -1,0 +1,3325 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Säkerhetspodcasten #296 - Ostrukturerat V.5 - Säkerhetspodcasten</title><meta name="Description" content="Säkerhetspodcasten - Sveriges första? podcast om IT-säkerhet"><meta property="og:title" content="Säkerhetspodcasten #296 - Ostrukturerat V.5" />
+<meta property="og:description" content="AWS regexp fail, Sjölogistik hade alla säkerhetshål, MongoBleed, Pre-boot attack mot UEFI, och Powershell XSS!
+Lyssna mp3, längd: 50:42 AWS hackat via regexp bug AWS CodeBuild kasst regexp lämnade viktiga repon vidöppna för konton med snarlika ID!
+Länkar:
+wiz.io/ Yuval Avrahami, Nir Ohfeld: CodeBreach - Supply Chain Vuln &amp; AWS CodeBuild Misconfig | Wiz Blog - Wiz Research discovered CodeBreach, a critical vulnerability that risked the AWS Console supply chain. Learn how to secure your AWS CodeBuild pipelines." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sakerhetspodcasten.se/posts/sakerhetspodcasten_296_ostrukturerat_v_5/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2026-01-26T09:09:00+00:00" />
+<meta property="article:modified_time" content="2026-01-26T09:09:00+00:00" /><meta property="og:site_name" content="Säkerhetspodcasten" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Säkerhetspodcasten #296 - Ostrukturerat V.5"/>
+<meta name="twitter:description" content="AWS regexp fail, Sjölogistik hade alla säkerhetshål, MongoBleed, Pre-boot attack mot UEFI, och Powershell XSS!
+Lyssna mp3, längd: 50:42 AWS hackat via regexp bug AWS CodeBuild kasst regexp lämnade viktiga repon vidöppna för konton med snarlika ID!
+Länkar:
+wiz.io/ Yuval Avrahami, Nir Ohfeld: CodeBreach - Supply Chain Vuln &amp; AWS CodeBuild Misconfig | Wiz Blog - Wiz Research discovered CodeBreach, a critical vulnerability that risked the AWS Console supply chain. Learn how to secure your AWS CodeBuild pipelines."/>
+<meta name="application-name" content="Säkerhetspodcasten">
+<meta name="apple-mobile-web-app-title" content="Säkerhetspodcasten"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://sakerhetspodcasten.se/posts/sakerhetspodcasten_296_ostrukturerat_v_5/" /><link rel="prev" href="https://sakerhetspodcasten.se/posts/sakerhetspodcasten_295_startupsakerhet/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Säkerhetspodcasten #296 - Ostrukturerat V.5",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/sakerhetspodcasten.se\/posts\/sakerhetspodcasten_296_ostrukturerat_v_5\/"
+        },"genre": "posts","keywords": "ostrukturerat","wordcount":  15294 ,
+        "url": "https:\/\/sakerhetspodcasten.se\/posts\/sakerhetspodcasten_296_ostrukturerat_v_5\/","datePublished": "2026-01-26T09:09:00+00:00","dateModified": "2026-01-26T09:09:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Säkerhetspodcasten">Säkerhetspodcasten</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Pods </a><a class="menu-item" href="/pages/lyssna" title="Lyssna"> Lyssna! </a><a class="menu-item" href="/pages/kontakt" title="kontakt"> Kontakt </a><a class="menu-item" href="/pages/panelen" title="panelen"> Panelen </a><a class="menu-item" href="/pages/supportersida-2" title="supporters"> Supporters </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Säkerhetspodcasten">Säkerhetspodcasten</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Pods</a><a class="menu-item" href="/pages/lyssna" title="Lyssna">Lyssna!</a><a class="menu-item" href="/pages/kontakt" title="kontakt">Kontakt</a><a class="menu-item" href="/pages/panelen" title="panelen">Panelen</a><a class="menu-item" href="/pages/supportersida-2" title="supporters">Supporters</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Säkerhetspodcasten #296 - Ostrukturerat V.5</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2026-01-26">2026-01-26</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;15294 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;72 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#lyssna">Lyssna</a></li>
+    <li><a href="#aws-hackat-via-regexp-bug">AWS hackat via regexp bug</a></li>
+    <li><a href="#unix-v4-återfunnet-och-patchat">UNIX v4 återfunnet och patchat</a></li>
+    <li><a href="#sjölogistik-med-fler-hål-i-skrovet-än-en-schweizerost">Sjölogistik med fler hål i skrovet än en Schweizerost</a></li>
+    <li><a href="#mongobleed">MongoBleed</a></li>
+    <li><a href="#pre-boot-attack-mot-uefi-vanguard">Pre-boot attack mot UEFI, Vanguard</a></li>
+    <li><a href="#powershell-xss-rce">Powershell XSS RCE</a></li>
+    <li><a href="#off-topic-im-the-captain-now-and-thats-okay">Off Topic: I’m the Captain Now and That&rsquo;s Okay!</a></li>
+    <li><a href="#ai-transkribering">AI transkribering</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>AWS regexp fail,
+Sjölogistik hade alla säkerhetshål,
+MongoBleed,
+Pre-boot attack mot UEFI,
+och Powershell XSS!</p>
+<h2 id="lyssna">Lyssna</h2>
+<ul>
+<li><a href="https://traffic.libsyn.com/secure/sakerhetspodcasten/2026-01-23_Sakerhetspodcasten.mp3?dest-id=117848" target="_blank" rel="noopener noreffer ">mp3</a>, längd: 50:42</li>
+</ul>
+<h2 id="aws-hackat-via-regexp-bug">AWS hackat via regexp bug</h2>
+<p>AWS CodeBuild kasst regexp lämnade viktiga repon vidöppna för konton med snarlika ID!</p>
+<p>Länkar:</p>
+<ul>
+<li><a href="https://www.wiz.io/blog/wiz-research-codebreach-vulnerability-aws-codebuild" target="_blank" rel="noopener noreffer ">wiz.io/ Yuval Avrahami, Nir Ohfeld: CodeBreach - Supply Chain Vuln &amp; AWS CodeBuild Misconfig | Wiz Blog - Wiz Research discovered CodeBreach, a critical vulnerability that risked the AWS Console supply chain. Learn how to secure your AWS CodeBuild pipelines.</a></li>
+<li><a href="https://github.com/aws/aws-sdk-js-v3/pull/7280/commits/26ebb206cf6a24b3458954c0d2b06c702d348cab" target="_blank" rel="noopener noreffer ">github/ aws-sdk-js-v3: Fix account ID validation to ensure exact match #7280</a></li>
+<li><a href="https://www.youtube.com/watch?v=dOgWVdWqXRU" target="_blank" rel="noopener noreffer ">YouTube/ The PrimeTime: it only took 2 characters</a> <code>video</code></li>
+</ul>
+<h2 id="unix-v4-återfunnet-och-patchat">UNIX v4 återfunnet och patchat</h2>
+<p>Richard Weinberger tar en titt på det 50 år gamla,
+men nyligen, återfunna UNIX v4.</p>
+<p>Äntligen är bufferoverflow write fixad och
+PDP-11 simulatorer kan uppgradera till ett säkrare OS!</p>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-diff" data-lang="diff"><span style="display:flex;"><span><span style="color:#a6e22e">+       i = 0;
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">+       while((*q = getchar()) != &#39;\n&#39;) {
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">+               if (++i &gt;= sizeof(password))
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e">+                       goto error;
+</span></span></span><span style="display:flex;"><span><span style="color:#a6e22e"></span>                if(*q++ == &#39;\0&#39;)
+</span></span><span style="display:flex;"><span>                        return;
+</span></span><span style="display:flex;"><span><span style="color:#a6e22e">+       }
+</span></span></span></code></pre></div><p>Länkar:</p>
+<ul>
+<li><a href="https://sigma-star.at/blog/2025/12/unix-v4-buffer-overflow/" target="_blank" rel="noopener noreffer ">sigma star gmbh: Fixing a Buffer Overflow in UNIX v4 Like It&rsquo;s 1973</a></li>
+<li><a href="http://squoze.net/UNIX/v4/README" target="_blank" rel="noopener noreffer ">squoze.net: UNIX Fourth Edition</a></li>
+</ul>
+<h2 id="sjölogistik-med-fler-hål-i-skrovet-än-en-schweizerost">Sjölogistik med fler hål i skrovet än en Schweizerost</h2>
+<p>Eaton Works &ldquo;Jag är en Sjökapten Nu! Kapa globalt nätverk för Sjölogistik&rdquo;:</p>
+<blockquote>
+<p>BLUVOYIX (Bluspark Global) plattform för sjölogistik och supply chain
+används av hundratals av världens största bolag.
+Kritiska sårbarheter som gjorde det möjligt att ta över hela plattformen,
+och komma åt all kunddata och alla sändningar.
+Problemen är nu åtgärdade.</p>
+</blockquote>
+<p>Eller som man också kan säga, de hade typ alla hål.</p>
+<p>Länkar:</p>
+<ul>
+<li><a href="https://techcrunch.com/2026/01/14/us-cargo-tech-company-publicly-exposed-its-shipping-systems-and-customer-data-to-the-web/" target="_blank" rel="noopener noreffer ">TechCrunch: US cargo tech company publicly exposed its shipping systems and customer data to the web - Shipping tech company Bluspark left internal plaintext passwords, including those of executives, exposed to the internet, at a time when hacks in the shipping industry are on the rise.</a></li>
+<li><a href="https://eaton-works.com/2026/01/14/bluspark-bluvoyix-hack/" target="_blank" rel="noopener noreffer ">Eaton: I’m The Captain Now - Hijacking a global ocean supply chain network</a></li>
+<li><a href="https://maritimehackingvillage.com/" target="_blank" rel="noopener noreffer ">Maritime Hacking Village</a></li>
+<li><a href="https://www.cve.org/cverecord?id=CVE-2026-22236" target="_blank" rel="noopener noreffer ">cve.org: CVE-2026-22236</a>
+APIs did not check for a valid authorization token.
+As a result, all APIs were unauthenticated.</li>
+<li><a href="https://www.cve.org/cverecord?id=CVE-2026-22237" target="_blank" rel="noopener noreffer ">cve.org: CVE-2026-22237</a>
+Exposed API documentation.
+Coupled with #1, this made it possible to cause real damage easily.</li>
+<li><a href="https://www.cve.org/cverecord?id=CVE-2026-22238" target="_blank" rel="noopener noreffer ">cve.org: CVE-2026-22238</a>
+You could create your own admin account through an HTTP POST to the users API.</li>
+<li><a href="https://www.cve.org/cverecord?id=CVE-2026-22239" target="_blank" rel="noopener noreffer ">cve.org: CVE-2026-22239</a>
+<em>Email sending code was found in client-side JS,
+making it possible to send official-looking phishing/malicious emails.</em></li>
+<li><a href="https://www.cve.org/cverecord?id=CVE-2026-22240" target="_blank" rel="noopener noreffer ">cve.org: CVE-2026-22240</a>
+<em>Plaintext passwords.
+There were 3 APIs that could be used to retrieve the plaintext passwords
+of all accounts, including admins.</em></li>
+</ul>
+<h2 id="mongobleed">MongoBleed</h2>
+<p>HartBleed liknande sårbarhet men i MondoDB:</p>
+<ul>
+<li>MongoDB initializerade inte minnet det malloc&rsquo;ade.</li>
+<li>Klient kan specificera hur stort ett BSON objekt är.</li>
+<li>Klient kan skicka felaktig BSON, med en oterminerad sträng.</li>
+<li>MongoDB felmeddelande om att BSON objektet är felaktigt,
+och BSON stängen expanderas&hellip;.
+till en sökning genom heapen&hellip;</li>
+</ul>
+<p>Felet varit med sedan 2017, och publicerades med perfekt timing mitt i jul 2025
+när alla var lediga.</p>
+<p>Länkar:</p>
+<ul>
+<li><a href="https://www.cve.org/CVERecord?id=CVE-2025-14847" target="_blank" rel="noopener noreffer ">cve.org: CVE-2025-14847</a></li>
+<li><a href="https://bigdata.2minutestreaming.com/p/mongobleed-explained-simply" target="_blank" rel="noopener noreffer ">MongoBleed explained simply - by Stanislav Kozlovski</a></li>
+<li><a href="https://www.mongodb.com/company/blog/news/mongodb-server-security-update-december-2025" target="_blank" rel="noopener noreffer ">MongoDB Server Security Update, December 2025</a></li>
+<li><a href="https://www.mongodb.com/community/forums/t/important-mongodb-patch-available/332977" target="_blank" rel="noopener noreffer ">MongoDB Community Hub: Important MongoDB patch available - Server Releases</a></li>
+<li><a href="https://www.youtube.com/watch?v=aHTCawFKkkw" target="_blank" rel="noopener noreffer ">YouTube/ The PrimeTime: MongoDB is F***ed</a> <code>video</code></li>
+<li><a href="https://www.youtube.com/watch?v=9Wg6tiaar9M" target="_blank" rel="noopener noreffer ">YouTube/ Low Level: the mongo db situation is crazy</a> <code>video</code></li>
+<li><a href="https://www.youtube.com/watch?v=hOUwH5A2oQs" target="_blank" rel="noopener noreffer ">YouTube/ Brodie Robertson: The MongoBleed Vulnerability Is Absolutely Insane</a> <code>video</code></li>
+<li><a href="https://www.youtube.com/watch?v=YTHPLDzCe0U" target="_blank" rel="noopener noreffer ">YouTube/ S0n1c: CVE-2025-14847. Aka - MongoBleed</a> <code>video</code></li>
+<li><a href="https://www.youtube.com/watch?v=b2F-DItXtZs" target="_blank" rel="noopener noreffer ">YouTube/ gar1t: Episode 1 - Mongo DB Is Web Scale</a> <code>video</code>
+<em>meme om om MongoDB från 2010.</em></li>
+</ul>
+<h2 id="pre-boot-attack-mot-uefi-vanguard">Pre-boot attack mot UEFI, Vanguard</h2>
+<p>Riot Games Vanguard säkerhetsresearchers Nick Peterson and Mohamed Al-Sharifi
+hittade att massa moderkort dels:</p>
+<ul>
+<li>inte konfigurerar IOMMU säkert under uppstart.</li>
+<li>rapporterar till OS m.m. att IOMMU är säkert under uppstart.</li>
+<li>att det potentiellt möjliggör installation av malware/cheat drivers under
+boot via PCIe/Thunderbolt/m.m.</li>
+<li>sårbara moderkort möjliggör att kringgå Vanguard boot/rootkit level
+anti-cheat.</li>
+</ul>
+<p>Sårbarheten berör ASUS, Gigabyte, MSI, Asrock, och berör massvis med
+modertkort.
+T.ex. ASUS skriver:
+<em>This issue affects motherboards based on the Intel Z490, W480, B460, H410, Z590, B560, H510, Z690, B660, W680, Z790, B760, and W790 series chipsets.</em></p>
+<p>Länkar:</p>
+<ul>
+<li><a href="https://www.cve.org/CVERecord?id=CVE-2025-11901" target="_blank" rel="noopener noreffer ">cve.org: CVE-2025-11901</a></li>
+<li><a href="https://www.cve.org/CVERecord?id=CVE-2025%e2%80%9114302" target="_blank" rel="noopener noreffer ">cve.org: CVE-2025‑14302</a></li>
+<li><a href="https://www.cve.org/CVERecord?id=CVE-2025-14303" target="_blank" rel="noopener noreffer ">cve.org: CVE-2025-14303</a></li>
+<li><a href="https://www.cve.org/CVERecord?id=CVE-2025-14304" target="_blank" rel="noopener noreffer ">cve.org: CVE-2025-14304</a></li>
+<li><a href="https://www.riotgames.com/en/news/vanguard-security-update-motherboard" target="_blank" rel="noopener noreffer ">Riot Games: VAN:Restriction and Closing the Motherboard Pre-Boot Gap for Vanguard - VAN:Restriction, how to fix it, and how we’re closing the pre-boot gap on specific motherboards that were discovered to have a flaw preventing Vanguard from doing its job.</a></li>
+<li><a href="https://www.bleepingcomputer.com/news/security/new-uefi-flaw-enables-pre-boot-attacks-on-motherboards-from-gigabyte-msi-asus-asrock/" target="_blank" rel="noopener noreffer ">BleepingComputer/ Bill Toulas: New UEFI flaw enables pre-boot attacks on motherboards from Gigabyte, MSI, ASUS, ASRock - The UEFI firmware implementation in some motherboards from ASUS, Gigabyte, MSI, and ASRock is vulnerable to direct memory access (DMA) attacks that can bypass early-boot memory protections.</a></li>
+<li><a href="https://www.kb.cert.org/vuls/id/382314" target="_blank" rel="noopener noreffer ">VU#382314 - Vulnerability in UEFI firmware modules prevents IOMMU initialization on some UEFI-based motherboards</a></li>
+<li><a href="https://www.youtube.com/watch?v=QlB1-sCp6o0" target="_blank" rel="noopener noreffer ">YouTube/ Low Level: It Goes Deeper Than Your Operating System&hellip;</a> <code>video</code></li>
+</ul>
+<h2 id="powershell-xss-rce">Powershell XSS RCE</h2>
+<ul>
+<li><a href="https://www.youtube.com/watch?v=O9-gki0no1w" target="_blank" rel="noopener noreffer ">YouTube/ DeadOverflow: How I Found A Windows RCE Vulnerability (PoC)</a> <code>video</code></li>
+<li><a href="https://www.youtube.com/watch?v=LGpvxUh9KAY" target="_blank" rel="noopener noreffer ">YouTube/ DeadOverflow: How We Found A Critical Vulnerability On Windows</a> <code>video</code></li>
+</ul>
+<h2 id="off-topic-im-the-captain-now-and-thats-okay">Off Topic: I’m the Captain Now and That&rsquo;s Okay!</h2>
+<p>Bad en AI att summera en av våra nyheter, i stilen av ett klassiskt verk&hellip;.</p>
+<p><code>(Scene: An office filled with monitors. A developer stands up, sheds his headset, and reveals a captain’s hat underneath. A chorus of bewildered IT Security Auditors stands behind him.)</code></p>
+<blockquote>
+<p><strong>Developer:</strong> I didn&rsquo;t want to be a SysAdmin! I wanted to be&hellip; A CAPTAIN! Leaping from port to port as the cargo floats down the digital rivers of the global supply chain! The Maersk, the MSC, the Evergreen, the Hapag-Lloyd! With my best API documentation by my side, we&rsquo;d ping, ping, ping!</p>
+</blockquote>
+<p><code>[Song starts – upbeat, jaunty march]</code></p>
+<blockquote>
+<p><strong>Developer:</strong> Oh, I’m the Captain now and that’s okay! I leak all night and I code all day!</p>
+</blockquote>
+<blockquote>
+<p><strong>Chorus:</strong> He’s the Captain now and he’s okay! He leaks all night and he codes all day!</p>
+</blockquote>
+<blockquote>
+<p><strong>Developer:</strong> I ship the freight, I check the logs, I bypass all the checks! I leave my APIs wide open, So anyone can wreck!</p>
+</blockquote>
+<blockquote>
+<p><strong>Chorus:</strong> He ships the freight, he checks the logs, He bypasses all the checks! He leaves his APIs wide open, So anyone can wreck! He’s the Captain now and he’s okay! He leaks all night and he codes all day!</p>
+</blockquote>
+<blockquote>
+<p><strong>Developer:</strong> I drop the tokens, I skip the auth, I like to share the keys! I put my email code in JS, To phish with total ease!</p>
+</blockquote>
+<blockquote>
+<p><strong>Chorus:</strong> He drops the tokens, he skips the auth&hellip; He likes to share the&hellip; wait&hellip; He puts his email code in JS? To phish with total ease?! (Wait, that&rsquo;s not right!)</p>
+</blockquote>
+<blockquote>
+<p><strong>Developer:</strong> I’m the Captain now and that’s okay! I leak all night and I code all day!</p>
+</blockquote>
+<blockquote>
+<p><strong>Developer:</strong> I cancel shipments, I change the dates, Back to two-thousand-seven! I store your passwords in plaintext, It’s hacker-admin heaven!</p>
+</blockquote>
+<blockquote>
+<p><strong>Chorus:</strong> He cancels shipments— (Wait, 2007?!) He stores our passwords&hellip; in PLAINTEXT?! Hacker-admin&hellip; HEAVEN?! Oh, Bevis! And we thought you were SOC2 compliant!</p>
+</blockquote>
+<blockquote>
+<p><strong>Developer:</strong> I wish I’d been an admin, With a POST to <code>/users</code>! Just like my dear Papa!</p>
+</blockquote>
+<blockquote>
+<p><strong>Chorus:</strong> (Disgusted silence, followed by the sound of a server rack falling over)</p>
+</blockquote>
+<h2 id="ai-transkribering">AI transkribering</h2>
+<p><em>AI försöker förstå oss&hellip; Ha överseende med galna feltranskriberingar.</em></p>
+<p><code>1 00:00:00,000 --&gt; 00:00:02,680</code>
+Hallå och välkommen till Säkerhetspodcasten.</p>
+<p><code>2 00:00:02,820 --&gt; 00:00:05,460</code>
+Jag som pratar är inte Johan Ribamöller men jag har Mattias Idhage.</p>
+<p><code>3 00:00:05,680 --&gt; 00:00:06,960</code>
+Grönland Sakevård.</p>
+<p><code>4 00:00:07,020 --&gt; 00:00:07,680</code>
+Jesper Larsson.</p>
+<p><code>5 00:00:07,780 --&gt; 00:00:08,600</code>
+Ekan Buffet.</p>
+<p><code>6 00:00:08,800 --&gt; 00:00:10,440</code>
+Och Peter Magnusson.</p>
+<p><code>7 00:00:11,160 --&gt; 00:00:13,540</code>
+Operativstemmet som nu gömmer sig i brinn på anspelare.</p>
+<p><code>8 00:00:13,920 --&gt; 00:00:15,120</code>
+Precis, så är det.</p>
+<p><code>9 00:00:16,140 --&gt; 00:00:20,960</code>
+Rickard kunde tyvärr inte delta i den här inspelningen men vi skickar honom alla lyckönskningar.</p>
+<p><code>10 00:00:21,680 --&gt; 00:00:23,260</code>
+Ja, han är lite dassig.</p>
+<p><code>11 00:00:23,260 --&gt; 00:00:29,820</code>
+Precis, jag ska nämna innan vi går vidare att det är den 22 januari i Nordnedsvård 2026 som vi spelar in detta.</p>
+<p><code>12 00:00:30,000 --&gt; 00:00:37,800</code>
+Och vi är sponsrade av Short som finns på short.se och även av Botfors som finns på botfors.se och 0x4a.se.</p>
+<p><code>13 00:00:38,620 --&gt; 00:00:42,920</code>
+Snabb plugg här, vi har en open source konferens som heter FOS North.</p>
+<p><code>14 00:00:43,440 --&gt; 00:00:45,240</code>
+Det går att starta den 27-28 april.</p>
+<p><code>15 00:00:45,520 --&gt; 00:00:50,140</code>
+Det kommer att händas på Chalmers och det finns en CFB som är öppen när ni hör detta.</p>
+<p><code>16 00:00:50,280 --&gt; 00:00:51,580</code>
+Om ni hör det när vi lägger ut det.</p>
+<p><code>17 00:00:52,060 --&gt; 00:00:53,780</code>
+CFB, call for papers.</p>
+<p><code>18 00:00:54,060 --&gt; 00:00:56,400</code>
+Det vill säga om du vill snacka om något kul på konferensen.</p>
+<p><code>19 00:00:56,640 --&gt; 00:00:59,900</code>
+Om du vill gå på konferensen så kan man nog säkert finna ut.</p>
+<p><code>20 00:01:00,000 --&gt; 00:01:00,900</code>
+Om man gör det på samma sajt.</p>
+<p><code>21 00:01:01,320 --&gt; 00:01:01,780</code>
+Det tror jag.</p>
+<p><code>22 00:01:02,260 --&gt; 00:01:06,920</code>
+Sen vet inte jag riktigt men jag tror att det borde komma brev till CFB inom relativt kort.</p>
+<p><code>23 00:01:07,120 --&gt; 00:01:12,560</code>
+Ja, men det är faktiskt så att nu när vi spelar in det här så pågår det ett CFB-möte som jag och Johan inleder.</p>
+<p><code>24 00:01:12,880 --&gt; 00:01:14,040</code>
+Precis, för vi gör det här istället.</p>
+<p><code>25 00:01:14,220 --&gt; 00:01:18,160</code>
+Hade vi varit där istället så hade vi vetat mer men det hade inte vi för då hade vi varit här.</p>
+<p><code>26 00:01:18,160 --&gt; 00:01:19,440</code>
+Nej, det är ett problem.</p>
+<p><code>27 00:01:19,440 --&gt; 00:01:24,660</code>
+Och på tal om säkerhetsaktiviteter så tror jag att det dessutom är B-sides Göteborg på gång.</p>
+<p><code>28 00:01:24,980 --&gt; 00:01:26,900</code>
+Jag kan inte huvudet datum och sånt.</p>
+<p><code>29 00:01:27,220 --&gt; 00:01:29,440</code>
+Jag tror även att det finns någon Ovas Joint Ventures.</p>
+<p><code>30 00:01:30,000 --&gt; 00:01:36,460</code>
+Mellan Security Fest, Ovasp, Security Meetup och ytterligare någonting.</p>
+<p><code>31 00:01:36,620 --&gt; 00:01:38,900</code>
+Jag har sett det där.</p>
+<p><code>32 00:01:39,000 --&gt; 00:01:42,700</code>
+Och det är rätt snart, det är nog fan kanske till och med innan vi släpper det här avsnittet.</p>
+<p><code>33 00:01:42,800 --&gt; 00:01:43,520</code>
+Eller väldigt nära i alla fall.</p>
+<p><code>34 00:01:43,540 --&gt; 00:01:46,560</code>
+Jag förstod liksom att det bara skulle vara de grupperingen som snackar med varandra.</p>
+<p><code>35 00:01:46,560 --&gt; 00:01:52,060</code>
+Men sen nu när jag har förstått lite mer så är det så att det är ett event för alla som tycker om meet-säkerhet.</p>
+<p><code>36 00:01:52,360 --&gt; 00:01:53,500</code>
+Men det kan ju vara det alla, du vet inte.</p>
+<p><code>37 00:01:53,580 --&gt; 00:01:54,820</code>
+Nej, jag tror inte det.</p>
+<p><code>38 00:01:55,300 --&gt; 00:01:59,980</code>
+Framförallt tänker jag att när det här kommer ut så är det fullt om man ser på hur snabbt.</p>
+<p><code>39 00:02:00,000 --&gt; 00:02:04,340</code>
+Och den observanta lyssnaren har ju redan förstått att det här är ett ostrukturerat avsnitt.</p>
+<p><code>40 00:02:04,440 --&gt; 00:02:04,760</code>
+Precis.</p>
+<p><code>41 00:02:05,320 --&gt; 00:02:07,460</code>
+Så vi tänkte att vi skulle snacka något om något.</p>
+<p><code>42 00:02:08,520 --&gt; 00:02:08,960</code>
+Så är det.</p>
+<p><code>43 00:02:10,100 --&gt; 00:02:10,840</code>
+Japp, och det var det.</p>
+<p><code>44 00:02:11,500 --&gt; 00:02:12,760</code>
+Jag spelade varsin ensam.</p>
+<p><code>45 00:02:13,980 --&gt; 00:02:15,820</code>
+Är det jag som ska börja?</p>
+<p><code>46 00:02:15,820 --&gt; 00:02:17,020</code>
+Ja, det är du som ska börja.</p>
+<p><code>47 00:02:17,040 --&gt; 00:02:18,180</code>
+Kul, för jag sitter med ryggen emot.</p>
+<p><code>48 00:02:18,260 --&gt; 00:02:19,640</code>
+Men du har tagit ett kort, så det är ju kanon.</p>
+<p><code>49 00:02:19,640 --&gt; 00:02:21,160</code>
+Ja, det är du som är högst.</p>
+<p><code>50 00:02:21,540 --&gt; 00:02:29,120</code>
+Alltså, vad vore ett ostrukturerat avsnitt om vi inte får prata om AVS Codebuild?</p>
+<p><code>51 00:02:30,000 --&gt; 00:02:31,380</code>
+Ja, det gör vi ju nästan varje avsnitt.</p>
+<p><code>52 00:02:31,380 --&gt; 00:02:35,880</code>
+Supply Chain Vulnerability som discloses utav WIS.</p>
+<p><code>53 00:02:36,180 --&gt; 00:02:37,760</code>
+Vad är nu AVS Codebuild?</p>
+<p><code>54 00:02:37,760 --&gt; 00:02:39,760</code>
+Ja, precis. Det var min fråga också.</p>
+<p><code>55 00:02:40,720 --&gt; 00:02:43,200</code>
+Ja, välkommen till säkerhetspodcasten.</p>
+<p><code>56 00:02:43,200 --&gt; 00:02:44,200</code>
+Här pratar vi om&hellip;</p>
+<p><code>57 00:02:44,200 --&gt; 00:02:48,200</code>
+Nej, men AVS, alltså, vad är Codebuild?</p>
+<p><code>58 00:02:48,200 --&gt; 00:02:58,000</code>
+Codebuild är ju liksom en CD-pipeline som man kan ha inne i AVS för att, ja&hellip;</p>
+<p><code>59 00:02:58,000 --&gt; 00:02:58,680</code>
+Bygga kod?</p>
+<p><code>60 00:02:58,680 --&gt; 00:02:59,180</code>
+Ja.</p>
+<p><code>61 00:02:59,180 --&gt; 00:02:59,680</code>
+Nej, men&hellip;</p>
+<p><code>62 00:02:59,680 --&gt; 00:03:00,440</code>
+Så skulle man väl kunna säga.</p>
+<p><code>63 00:03:01,620 --&gt; 00:03:02,580</code>
+Jag använder inte&hellip;</p>
+<p><code>64 00:03:02,580 --&gt; 00:03:06,540</code>
+Jag kan inte säga att jag har använt Codebuild så jävla mycket, men det är ju liksom&hellip;</p>
+<p><code>65 00:03:06,540 --&gt; 00:03:07,560</code>
+Ja, det är&hellip;</p>
+<p><code>66 00:03:07,560 --&gt; 00:03:10,500</code>
+Jag har inte hört talas om det före den här incidenten.</p>
+<p><code>67 00:03:11,100 --&gt; 00:03:11,500</code>
+Alltså&hellip;</p>
+<p><code>68 00:03:11,500 --&gt; 00:03:12,420</code>
+Nej, okej.</p>
+<p><code>69 00:03:12,960 --&gt; 00:03:14,560</code>
+Så, nu ska vi se.</p>
+<p><code>70 00:03:14,700 --&gt; 00:03:16,120</code>
+Hur långt ska vi ta det här?</p>
+<p><code>71 00:03:17,220 --&gt; 00:03:24,780</code>
+Så, AVS har ju flera ganska överlappande erbjudanden här egentligen, skulle jag säga.</p>
+<p><code>72 00:03:25,900 --&gt; 00:03:27,780</code>
+Och Codebuild är väl&hellip;</p>
+<p><code>73 00:03:28,440 --&gt; 00:03:29,360</code>
+Det är väl&hellip;</p>
+<p><code>74 00:03:29,360 --&gt; 00:03:30,760</code>
+Hur skulle de&hellip;</p>
+<p><code>75 00:03:30,760 --&gt; 00:03:31,360</code>
+Det är väl&hellip;</p>
+<p><code>76 00:03:31,360 --&gt; 00:03:32,440</code>
+Ska jag läsa vad det står här?</p>
+<p><code>77 00:03:32,440 --&gt; 00:03:34,300</code>
+Serverless Continuous Integration.</p>
+<p><code>78 00:03:34,420 --&gt; 00:03:39,980</code>
+Fully managed continuous integration that compiles source code, runs tests and produces deployable software artifacts.</p>
+<p><code>79 00:03:40,880 --&gt; 00:03:41,740</code>
+Så, du har ju&hellip;</p>
+<p><code>80 00:03:41,740 --&gt; 00:03:42,220</code>
+Byggserver.</p>
+<p><code>81 00:03:42,460 --&gt; 00:03:44,820</code>
+En byggserver, så det är väl CI då i stället.</p>
+<p><code>82 00:03:45,200 --&gt; 00:03:47,080</code>
+Men det är liksom en del av en suite.</p>
+<p><code>83 00:03:47,180 --&gt; 00:03:52,280</code>
+Och sen har du ju CloudFormation och du har CloudFormation Stacks och du har en massa roliga grejer uppe på det här.</p>
+<p><code>84 00:03:52,840 --&gt; 00:03:56,840</code>
+Men det är inte alls lika roligt att prata om som den här breachen, givetvis.</p>
+<p><code>85 00:03:57,000 --&gt; 00:03:57,440</code>
+Såklart.</p>
+<p><code>86 00:03:57,440 --&gt; 00:03:59,220</code>
+Så, men det är en breach.</p>
+<p><code>87 00:03:59,360 --&gt; 00:04:01,820</code>
+I AVS Codebuild.</p>
+<p><code>88 00:04:02,000 --&gt; 00:04:02,440</code>
+Alltså inte&hellip;</p>
+<p><code>89 00:04:03,080 --&gt; 00:04:04,280</code>
+Alltså, AVS Codebuild.</p>
+<p><code>90 00:04:04,640 --&gt; 00:04:06,120</code>
+Inte det som kunderna&hellip;</p>
+<p><code>91 00:04:06,120 --&gt; 00:04:07,260</code>
+Nu, håll i er här nu.</p>
+<p><code>92 00:04:07,800 --&gt; 00:04:09,820</code>
+Så vad vi hittar, det är att de&hellip;</p>
+<p><code>93 00:04:09,820 --&gt; 00:04:11,440</code>
+Vi hittar alltså en&hellip;</p>
+<p><code>94 00:04:12,000 --&gt; 00:04:14,920</code>
+Ja, felkonfiguration kanske man inte ska säga.</p>
+<p><code>95 00:04:15,040 --&gt; 00:04:19,860</code>
+Men det är väl en felkonfiguration i hur Codebuilds pipelines fungerar helt enkelt.</p>
+<p><code>96 00:04:22,040 --&gt; 00:04:26,440</code>
+Och det är väl framförallt i hur de hanterar&hellip;</p>
+<p><code>97 00:04:28,440 --&gt; 00:04:28,920</code>
+Nycklarna.</p>
+<p><code>98 00:04:29,360 --&gt; 00:04:32,240</code>
+Alltså, AVS Github och deras repositories.</p>
+<p><code>99 00:04:33,240 --&gt; 00:04:37,240</code>
+Och det inkluderar då även AVS Javascripts STKR.</p>
+<p><code>100 00:04:37,820 --&gt; 00:04:43,380</code>
+Det vill säga en ganska så viktig komponent, skulle man kunna säga, i hela AVS-konsolen.</p>
+<p><code>101 00:04:43,820 --&gt; 00:04:44,080</code>
+Punkt.</p>
+<p><code>102 00:04:44,660 --&gt; 00:04:47,960</code>
+Alltså, nu pratar vi en kritisk sårbarhet i AVS.</p>
+<p><code>103 00:04:48,160 --&gt; 00:04:51,240</code>
+Ingenting som kunderna har implementerat, utan&hellip;</p>
+<p><code>104 00:04:51,240 --&gt; 00:04:54,100</code>
+Resursen Codebuild borked.</p>
+<p><code>105 00:04:54,540 --&gt; 00:04:54,700</code>
+Ja.</p>
+<p><code>106 00:04:55,460 --&gt; 00:04:57,120</code>
+Och nu blir det vackert.</p>
+<p><code>107 00:04:57,120 --&gt; 00:04:58,720</code>
+Jag ska dra den jättesnabbt.</p>
+<p><code>108 00:04:58,720 --&gt; 00:05:01,260</code>
+Sen går vi in på detaljerna, givetvis.</p>
+<p><code>109 00:05:02,100 --&gt; 00:05:04,380</code>
+Kan någon gissa vad felet var?</p>
+<p><code>110 00:05:08,840 --&gt; 00:05:12,060</code>
+Jag kan gissa eftersom att jag tror att det är den jag&hellip;</p>
+<p><code>111 00:05:12,060 --&gt; 00:05:15,820</code>
+Du kan säkert få loss något token som har rättigheter och det är plöjagrejer.</p>
+<p><code>112 00:05:16,080 --&gt; 00:05:23,720</code>
+Men det roliga är ju då att det är givetvis ett regex-filter som har orsakat det här problemet i en trigger i en webbhook då.</p>
+<p><code>113 00:05:24,360 --&gt; 00:05:25,720</code>
+Och det som är roligt då&hellip;</p>
+<p><code>114 00:05:25,720 --&gt; 00:05:27,720</code>
+Det här är ju alltså jätte&hellip;</p>
+<p><code>115 00:05:27,720 --&gt; 00:05:30,900</code>
+Det som händer då, det är att det här regexet är inte ankrat till nåt.</p>
+<p><code>116 00:05:31,900 --&gt; 00:05:34,140</code>
+Och skit i det nu när vi går in på detaljerna.</p>
+<p><code>117 00:05:34,200 --&gt; 00:05:35,560</code>
+Sen ger jag bara en snabb summering här.</p>
+<p><code>118 00:05:36,160 --&gt; 00:05:40,200</code>
+Och det gör att attackerarna kan liksom skapa GitHub-usernames.</p>
+<p><code>119 00:05:40,540 --&gt; 00:05:44,360</code>
+Som innehåller samma Authorized Maintainer-ID.</p>
+<p><code>120 00:05:45,840 --&gt; 00:05:50,800</code>
+Som låter dem då trigga olika privilegierade byggjobbs under vissa conditions.</p>
+<p><code>121 00:05:51,800 --&gt; 00:05:57,040</code>
+Och det som händer då, det är att när de ID-erna, vi kommer till det, kan exekvera.</p>
+<p><code>122 00:05:57,040 --&gt; 00:06:00,260</code>
+Och då gör ju de det som administratörer i det kontextet de är.</p>
+<p><code>123 00:06:00,380 --&gt; 00:06:05,720</code>
+Och vad WIS har kommit fram till då, det är att de här ID-erna, de är inte så jävla långa.</p>
+<p><code>124 00:06:07,500 --&gt; 00:06:09,860</code>
+Så WIS har ju då alltså förberett.</p>
+<p><code>125 00:06:10,380 --&gt; 00:06:12,580</code>
+Det här är så jäkla vackert.</p>
+<p><code>126 00:06:13,260 --&gt; 00:06:16,480</code>
+Så WIS har kommit fram till att okej, hur fasken ska vi göra det här då?</p>
+<p><code>127 00:06:16,980 --&gt; 00:06:20,980</code>
+Så de sitter och tittar på de här Maintainer-IDs.</p>
+<p><code>128 00:06:21,080 --&gt; 00:06:22,840</code>
+Och då genereras det hur många som helst.</p>
+<p><code>129 00:06:22,840 --&gt; 00:06:24,200</code>
+Alltså det är ju&hellip;</p>
+<p><code>130 00:06:24,200 --&gt; 00:06:25,920</code>
+Jag har inte länken framför mig nu, men det är alltså&hellip;</p>
+<p><code>131 00:06:25,920 --&gt; 00:06:27,020</code>
+Det är hur många som helst.</p>
+<p><code>132 00:06:27,040 --&gt; 00:06:28,060</code>
+Det är hur många som helst per dag.</p>
+<p><code>133 00:06:28,540 --&gt; 00:06:30,800</code>
+Men jag tror att de bara är sex tecken.</p>
+<p><code>134 00:06:31,080 --&gt; 00:06:32,160</code>
+Någon som har artikeln uppe för&hellip;</p>
+<p><code>135 00:06:32,160 --&gt; 00:06:33,940</code>
+Det var några olika längder.</p>
+<p><code>136 00:06:34,180 --&gt; 00:06:39,740</code>
+Men jag tror överhuvudtaget att du inte har preppat med varför det är intressant att kolla på de här ID-erna.</p>
+<p><code>137 00:06:40,540 --&gt; 00:06:41,480</code>
+Jag kanske var lite för snabb.</p>
+<p><code>138 00:06:42,140 --&gt; 00:06:46,400</code>
+Jag tror du misshoppade över det mest centrala.</p>
+<p><code>139 00:06:47,120 --&gt; 00:06:47,660</code>
+Det kanske jag gjorde.</p>
+<p><code>140 00:06:48,600 --&gt; 00:06:50,620</code>
+Det är det att jag har notes som är längre.</p>
+<p><code>141 00:06:50,620 --&gt; 00:06:53,480</code>
+Det jag är intresserad av är hela preppen här.</p>
+<p><code>142 00:06:53,760 --&gt; 00:06:56,200</code>
+Men okej, vi cirklar tillbaka på det.</p>
+<p><code>143 00:06:56,240 --&gt; 00:06:56,960</code>
+Det är rätta mig nu.</p>
+<p><code>144 00:06:57,040 --&gt; 00:06:59,220</code>
+Jag ska hitta rätt där.</p>
+<p><code>145 00:06:59,700 --&gt; 00:07:01,420</code>
+Det finns någon konfiguration.</p>
+<p><code>146 00:07:01,520 --&gt; 00:07:05,680</code>
+Jag har inte riktigt fattat vilka delar som ligger på GitHub och vilka delar som ligger på AVS CodeBuild.</p>
+<p><code>147 00:07:06,640 --&gt; 00:07:07,920</code>
+Men så här.</p>
+<p><code>148 00:07:08,200 --&gt; 00:07:11,060</code>
+GitHub hostar ju SDK-erna för AVS.</p>
+<p><code>149 00:07:11,560 --&gt; 00:07:13,340</code>
+Och CodeBuild konsumerar ju dem.</p>
+<p><code>150 00:07:14,540 --&gt; 00:07:17,320</code>
+Och däremellan så går det tokens.</p>
+<p><code>151 00:07:17,680 --&gt; 00:07:18,120</code>
+Exakt.</p>
+<p><code>152 00:07:18,200 --&gt; 00:07:20,500</code>
+Och de tokena innehåller ett ID.</p>
+<p><code>153 00:07:21,700 --&gt; 00:07:26,500</code>
+Och det som händer här nu då är att man har lyckats skapa en&hellip;</p>
+<p><code>154 00:07:27,040 --&gt; 00:07:31,040</code>
+Egentligen så kan man ändå prekalkylera vad som kommer att hända.</p>
+<p><code>155 00:07:31,220 --&gt; 00:07:33,160</code>
+Vilka ID som kommer att bli aktiverade.</p>
+<p><code>156 00:07:33,220 --&gt; 00:07:44,260</code>
+Men det centrala här alltså är att det finns ett RegExp som styr vilka tokens får komma in.</p>
+<p><code>157 00:07:45,400 --&gt; 00:07:49,320</code>
+Och när du kör en RegExp-motor så kan du ju konfigurera den lite.</p>
+<p><code>158 00:07:49,320 --&gt; 00:07:54,320</code>
+Till exempel gör du en sökning eller gör du en fullständig match.</p>
+<p><code>159 00:07:55,380 --&gt; 00:07:56,980</code>
+Och det är API.</p>
+<p><code>160 00:07:57,040 --&gt; 00:08:00,540</code>
+Det är API som man går mot när man gör RegExp-matchningen.</p>
+<p><code>161 00:08:00,720 --&gt; 00:08:03,640</code>
+Det är sökning, alltså inte exakt matchning.</p>
+<p><code>162 00:08:04,000 --&gt; 00:08:05,220</code>
+Nej, exakt.</p>
+<p><code>163 00:08:05,480 --&gt; 00:08:09,300</code>
+Och det finns inget tecken här då i RegExp som säger</p>
+<p><code>164 00:08:09,300 --&gt; 00:08:13,080</code>
+det är exakt de här olika tokena som vi godkänner.</p>
+<p><code>165 00:08:13,300 --&gt; 00:08:17,400</code>
+Utan det finns ett antal token-ID som är okej.</p>
+<p><code>166 00:08:17,620 --&gt; 00:08:19,660</code>
+Och det är bara ett pipetecken mellan dem.</p>
+<p><code>167 00:08:20,320 --&gt; 00:08:23,040</code>
+Och ingenstans så finns det någonting som säger att</p>
+<p><code>168 00:08:23,040 --&gt; 00:08:25,380</code>
+det här måste vara hela texten.</p>
+<p><code>169 00:08:26,120 --&gt; 00:08:26,680</code>
+Så.</p>
+<p><code>170 00:08:27,040 --&gt; 00:08:28,320</code>
+De är inte ankrade.</p>
+<p><code>171 00:08:28,560 --&gt; 00:08:29,200</code>
+Det är väl det man säger.</p>
+<p><code>172 00:08:29,340 --&gt; 00:08:30,060</code>
+Det är inte anchored.</p>
+<p><code>173 00:08:30,860 --&gt; 00:08:31,800</code>
+Det kanske det är.</p>
+<p><code>174 00:08:31,820 --&gt; 00:08:33,920</code>
+Men jag tror inte folk på svenska riktigt förstår vad man menar.</p>
+<p><code>175 00:08:33,920 --&gt; 00:08:35,680</code>
+Nej, men det är precis som du säger.</p>
+<p><code>176 00:08:35,780 --&gt; 00:08:37,980</code>
+De är inte explicita då.</p>
+<p><code>177 00:08:37,980 --&gt; 00:08:41,380</code>
+Så jag tror en var väl typ 1.5, 1.1.1 eller någonting.</p>
+<p><code>178 00:08:41,520 --&gt; 00:08:43,780</code>
+Nej, det var något ganska kort i vart fall.</p>
+<p><code>179 00:08:44,020 --&gt; 00:08:45,860</code>
+Och då räknar det med någonstans i ditt token.</p>
+<p><code>180 00:08:45,880 --&gt; 00:08:47,380</code>
+Det är någonstans i ditt ID.</p>
+<p><code>181 00:08:47,820 --&gt; 00:08:50,200</code>
+Det blir ju ganska enkelt då att ta sig runt.</p>
+<p><code>182 00:08:50,420 --&gt; 00:08:50,620</code>
+Ja.</p>
+<p><code>183 00:08:51,280 --&gt; 00:08:52,060</code>
+Men vi, ja.</p>
+<p><code>184 00:08:52,840 --&gt; 00:08:54,360</code>
+Men ja, det jag håller med om.</p>
+<p><code>185 00:08:55,220 --&gt; 00:08:57,020</code>
+Enklare än nästan omöjligt.</p>
+<p><code>186 00:08:57,040 --&gt; 00:09:02,180</code>
+Men de här WIS-människorna hittar ju på något sätt att de kan se</p>
+<p><code>187 00:09:02,180 --&gt; 00:09:06,500</code>
+när man skapar ID vilken av systemen det nu är.</p>
+<p><code>188 00:09:07,240 --&gt; 00:09:11,440</code>
+Alltså när du skapar och använder det så kan man se vilka ID som skapas.</p>
+<p><code>189 00:09:12,020 --&gt; 00:09:15,000</code>
+Så då kan de ligga och lyssna på något ställe där de kan observera.</p>
+<p><code>190 00:09:15,040 --&gt; 00:09:18,540</code>
+Kan de se om det börjar närma sig att du kommer nära.</p>
+<p><code>191 00:09:19,100 --&gt; 00:09:21,660</code>
+Så det som händer är att de har ett regge som säger</p>
+<p><code>192 00:09:21,660 --&gt; 00:09:26,660</code>
+det finns ingen definierad början på det.</p>
+<p><code>193 00:09:26,660 --&gt; 00:09:27,720</code>
+På det vi ska titta på.</p>
+<p><code>194 00:09:28,800 --&gt; 00:09:31,220</code>
+Och det finns ett slut.</p>
+<p><code>195 00:09:31,680 --&gt; 00:09:36,780</code>
+Om det matchar någonstans emellan våran int till slut.</p>
+<p><code>196 00:09:37,120 --&gt; 00:09:38,220</code>
+Så är det okej.</p>
+<p><code>197 00:09:38,220 --&gt; 00:09:38,840</code>
+Det vill säga.</p>
+<p><code>198 00:09:39,860 --&gt; 00:09:43,080</code>
+Har man tur så kan det vara någonting som matchar.</p>
+<p><code>199 00:09:43,560 --&gt; 00:09:44,640</code>
+Men det är inte helt.</p>
+<p><code>200 00:09:44,760 --&gt; 00:09:47,040</code>
+Alltså det matchar absolut reggexpert.</p>
+<p><code>201 00:09:47,220 --&gt; 00:09:49,160</code>
+Men det är inte binärt.</p>
+<p><code>202 00:09:49,740 --&gt; 00:09:50,640</code>
+Det är inte korrekt liksom.</p>
+<p><code>203 00:09:51,080 --&gt; 00:09:52,240</code>
+Så det gör ju då att det.</p>
+<p><code>204 00:09:52,580 --&gt; 00:09:54,320</code>
+Den tittar ju på en string som.</p>
+<p><code>205 00:09:54,980 --&gt; 00:09:56,120</code>
+Ja men typ matchar.</p>
+<p><code>206 00:09:56,660 --&gt; 00:09:58,440</code>
+Ja men den uppföljer kravena för reggexpert.</p>
+<p><code>207 00:09:58,520 --&gt; 00:10:00,660</code>
+Men det är inte en 1-1 matchning mot det de egentligen borde ha.</p>
+<p><code>208 00:10:00,760 --&gt; 00:10:01,080</code>
+Exakt.</p>
+<p><code>209 00:10:01,280 --&gt; 00:10:04,060</code>
+Det här är väl nästan i relation med numpaddarna.</p>
+<p><code>210 00:10:04,120 --&gt; 00:10:05,240</code>
+När man skulle måta in pinnar.</p>
+<p><code>211 00:10:05,660 --&gt; 00:10:08,060</code>
+Så alla numpaddarna matchar ju inte alltid.</p>
+<p><code>212 00:10:08,360 --&gt; 00:10:09,840</code>
+Liksom att det ska vara fyra.</p>
+<p><code>213 00:10:10,320 --&gt; 00:10:12,120</code>
+Och är det fel så får du bara göra om fyra.</p>
+<p><code>214 00:10:12,220 --&gt; 00:10:14,480</code>
+Utan ibland kunde du göra en hela ström med pinnar.</p>
+<p><code>215 00:10:14,720 --&gt; 00:10:16,620</code>
+Och får du bara rätt pinn någonstans där.</p>
+<p><code>216 00:10:16,700 --&gt; 00:10:17,620</code>
+Så slåsar den upp.</p>
+<p><code>217 00:10:17,980 --&gt; 00:10:20,240</code>
+Så den evaluerar liksom varje steg och så skiftar den bara.</p>
+<p><code>218 00:10:20,580 --&gt; 00:10:21,720</code>
+Och när är det då.</p>
+<p><code>219 00:10:21,840 --&gt; 00:10:23,340</code>
+När matchar de här riderna.</p>
+<p><code>220 00:10:23,340 --&gt; 00:10:25,640</code>
+Så att det är ju lite olika då.</p>
+<p><code>221 00:10:26,040 --&gt; 00:10:26,440</code>
+Så.</p>
+<p><code>222 00:10:26,660 --&gt; 00:10:29,920</code>
+Varje unik github-identitet har ett eget id.</p>
+<p><code>223 00:10:31,100 --&gt; 00:10:33,400</code>
+Och det är sekventiella nummer i det liksom.</p>
+<p><code>224 00:10:34,140 --&gt; 00:10:36,680</code>
+Och tidiga konton från typ 2008 då.</p>
+<p><code>225 00:10:36,760 --&gt; 00:10:39,340</code>
+De hade fem digits i det.</p>
+<p><code>226 00:10:39,560 --&gt; 00:10:41,440</code>
+Men konton då som är senare.</p>
+<p><code>227 00:10:41,980 --&gt; 00:10:44,300</code>
+De har liksom gått upp till nio digits istället.</p>
+<p><code>228 00:10:45,520 --&gt; 00:10:47,280</code>
+Och nu börjar man snart komma in på vad som händer då.</p>
+<p><code>229 00:10:47,800 --&gt; 00:10:50,460</code>
+Och baserat på deras tester så har de dratt slutsats.</p>
+<p><code>230 00:10:50,460 --&gt; 00:10:54,600</code>
+Så att github skapar ungefär 200 000 nya id per dag.</p>
+<p><code>231 00:10:55,580 --&gt; 00:10:56,620</code>
+Och då har de tänkt att så.</p>
+<p><code>232 00:10:56,660 --&gt; 00:10:58,660</code>
+Eftersom det är så snabbt.</p>
+<p><code>233 00:10:58,660 --&gt; 00:11:03,600</code>
+Så kommer liksom för varje given sexdigit kombination i maintainer-id-it.</p>
+<p><code>234 00:11:04,280 --&gt; 00:11:06,400</code>
+Och längre i den än så.</p>
+<p><code>235 00:11:07,100 --&gt; 00:11:10,280</code>
+Kommer göra att typ ungefär var femte dag.</p>
+<p><code>236 00:11:10,860 --&gt; 00:11:12,320</code>
+Så kommer de få en match.</p>
+<p><code>237 00:11:12,640 --&gt; 00:11:13,160</code>
+Snyggt.</p>
+<p><code>238 00:11:13,180 --&gt; 00:11:14,060</code>
+Ja det blir bättre.</p>
+<p><code>239 00:11:14,460 --&gt; 00:11:15,460</code>
+Så vad gör de då.</p>
+<p><code>240 00:11:15,620 --&gt; 00:11:16,200</code>
+Och då har de ju.</p>
+<p><code>241 00:11:16,340 --&gt; 00:11:17,740</code>
+Alltså jag älskar Wizz.</p>
+<p><code>242 00:11:17,860 --&gt; 00:11:19,300</code>
+Då har de också dubbat det här.</p>
+<p><code>243 00:11:19,740 --&gt; 00:11:21,560</code>
+The recurring window of opportunity.</p>
+<p><code>244 00:11:22,180 --&gt; 00:11:23,520</code>
+Det kallar de för Eclipse.</p>
+<p><code>245 00:11:23,520 --&gt; 00:11:25,320</code>
+The moment new and longer id.</p>
+<p><code>246 00:11:25,320 --&gt; 00:11:28,320</code>
+Perfectly shadows the truster maintainer-id.</p>
+<p><code>247 00:11:28,320 --&gt; 00:11:31,820</code>
+Så de preppar alla de här executions.</p>
+<p><code>248 00:11:31,820 --&gt; 00:11:33,820</code>
+Tänkte att jag ser liksom ett curl.</p>
+<p><code>249 00:11:33,820 --&gt; 00:11:36,820</code>
+Jag ser liksom ett källskript med en massa curl-kommandon här.</p>
+<p><code>250 00:11:36,820 --&gt; 00:11:37,320</code>
+Och så bara.</p>
+<p><code>251 00:11:37,320 --&gt; 00:11:39,320</code>
+Klick och så händer det liksom.</p>
+<p><code>252 00:11:39,320 --&gt; 00:11:42,320</code>
+Och det som händer då är att de bygger klart de här.</p>
+<p><code>253 00:11:42,320 --&gt; 00:11:45,320</code>
+De bygger ett tool för att göra detta.</p>
+<p><code>254 00:11:45,320 --&gt; 00:11:47,320</code>
+Och sen så exekverar de det då.</p>
+<p><code>255 00:11:47,320 --&gt; 00:11:51,320</code>
+De väntar tills det live-id-et är hundra id-en ifrån.</p>
+<p><code>256 00:11:51,320 --&gt; 00:11:53,320</code>
+Ja för det kan de se när de kommer nu.</p>
+<p><code>257 00:11:53,320 --&gt; 00:11:54,320</code>
+Exakt.</p>
+<p><code>258 00:11:54,320 --&gt; 00:11:58,320</code>
+Och sen så går de in på alla de prepopulerade url-erna samtidigt.</p>
+<p><code>259 00:11:58,320 --&gt; 00:12:00,320</code>
+Tvåhundra stycken samtidigt.</p>
+<p><code>260 00:12:00,320 --&gt; 00:12:03,320</code>
+Och då tryggar de en jätteflodd då.</p>
+<p><code>261 00:12:03,320 --&gt; 00:12:05,320</code>
+Av nya registrerings-id-en.</p>
+<p><code>262 00:12:05,320 --&gt; 00:12:08,320</code>
+Då vet de liksom att där kommer vi få träff.</p>
+<p><code>263 00:12:08,320 --&gt; 00:12:08,820</code>
+Exakt.</p>
+<p><code>264 00:12:08,820 --&gt; 00:12:14,320</code>
+Och då fick de en truster maintainer-id för avs-avs-sdk-js version 3.</p>
+<p><code>265 00:12:14,320 --&gt; 00:12:15,320</code>
+Så då är de alltså.</p>
+<p><code>266 00:12:15,320 --&gt; 00:12:17,320</code>
+För det var ett tidigt konto då.</p>
+<p><code>267 00:12:17,320 --&gt; 00:12:17,820</code>
+Aaaah.</p>
+<p><code>268 00:12:17,820 --&gt; 00:12:19,320</code>
+Så det var targetat dessutom mot.</p>
+<p><code>269 00:12:19,320 --&gt; 00:12:21,320</code>
+Då får de den sektionen typ.</p>
+<p><code>270 00:12:21,320 --&gt; 00:12:22,320</code>
+Då blir de admin.</p>
+<p><code>271 00:12:22,320 --&gt; 00:12:22,820</code>
+Admin.</p>
+<p><code>272 00:12:22,820 --&gt; 00:12:23,320</code>
+Admin över det redan.</p>
+<p><code>273 00:12:23,320 --&gt; 00:12:23,820</code>
+Admin.</p>
+<p><code>274 00:12:23,820 --&gt; 00:12:24,820</code>
+Det repot.</p>
+<p><code>275 00:12:24,820 --&gt; 00:12:25,320</code>
+Aaaah vad snyggt.</p>
+<p><code>276 00:12:25,320 --&gt; 00:12:26,820</code>
+Och det är ju inget dåligt repo bara.</p>
+<p><code>277 00:12:26,820 --&gt; 00:12:27,320</code>
+Nej.</p>
+<p><code>278 00:12:28,320 --&gt; 00:12:29,820</code>
+Det är så jävla snyggt det där.</p>
+<p><code>279 00:12:29,820 --&gt; 00:12:32,820</code>
+Men det känns som att det finns ju säkert fler intressanta mål där.</p>
+<p><code>280 00:12:32,820 --&gt; 00:12:33,320</code>
+Herregud ja.</p>
+<p><code>281 00:12:33,320 --&gt; 00:12:34,320</code>
+Med samma metod.</p>
+<p><code>282 00:12:34,320 --&gt; 00:12:35,320</code>
+Alla tidiga konton.</p>
+<p><code>283 00:12:35,320 --&gt; 00:12:37,820</code>
+Man vet ju inte hur många andra repon som redan har.</p>
+<p><code>284 00:12:37,820 --&gt; 00:12:39,820</code>
+Och så har de kommit överens med avs.</p>
+<p><code>285 00:12:39,820 --&gt; 00:12:40,320</code>
+Ja.</p>
+<p><code>286 00:12:40,320 --&gt; 00:12:41,320</code>
+Vi får göra en grej av det här.</p>
+<p><code>287 00:12:41,320 --&gt; 00:12:42,320</code>
+En får vi göra.</p>
+<p><code>288 00:12:42,320 --&gt; 00:12:43,320</code>
+Ja och då tog vi den här.</p>
+<p><code>289 00:12:43,320 --&gt; 00:12:43,820</code>
+Ja.</p>
+<p><code>290 00:12:43,820 --&gt; 00:12:46,320</code>
+De kan ju ha alla avs-konton.</p>
+<p><code>291 00:12:46,320 --&gt; 00:12:48,320</code>
+Deras payload i det här fallet då.</p>
+<p><code>292 00:12:48,320 --&gt; 00:12:52,820</code>
+Fick ju github token och kunde dumpa allt minne i de processerna som kördes.</p>
+<p><code>293 00:12:52,820 --&gt; 00:12:54,820</code>
+Vilket man kan göra.</p>
+<p><code>294 00:12:54,820 --&gt; 00:12:57,820</code>
+Och då får man ju också att man kan ju få.</p>
+<p><code>295 00:12:57,820 --&gt; 00:13:03,820</code>
+Ja tidigare så har det ju funnits lite mitigations i memory på codebuild.</p>
+<p><code>296 00:13:03,820 --&gt; 00:13:06,820</code>
+Vilket gör att man kan gå hur långt bakast som helst men.</p>
+<p><code>297 00:13:06,820 --&gt; 00:13:10,820</code>
+Alltså för man får ju bara access till den runner som man är i.</p>
+<p><code>298 00:13:10,820 --&gt; 00:13:12,820</code>
+Och det är det som är kanske det tråkiga med codebuild.</p>
+<p><code>299 00:13:12,820 --&gt; 00:13:14,820</code>
+Att det är just en serverless.</p>
+<p><code>300 00:13:14,820 --&gt; 00:13:16,820</code>
+Det är liksom just in time builds.</p>
+<p><code>301 00:13:16,820 --&gt; 00:13:18,820</code>
+Eller just in time continuous integration.</p>
+<p><code>302 00:13:18,820 --&gt; 00:13:20,820</code>
+Så men tidigare har det inte varit så.</p>
+<p><code>303 00:13:20,820 --&gt; 00:13:22,820</code>
+Då har man kunnat nå historien på bygget också.</p>
+<p><code>304 00:13:22,820 --&gt; 00:13:24,820</code>
+Då kan man ju se subprocesser och sånt.</p>
+<p><code>305 00:13:24,820 --&gt; 00:13:26,820</code>
+Men i det här fallet så.</p>
+<p><code>306 00:13:26,820 --&gt; 00:13:28,820</code>
+Jag skiter lite i avs och hela det här.</p>
+<p><code>307 00:13:28,820 --&gt; 00:13:31,820</code>
+Det snygga är här att vi ser ett regexp.</p>
+<p><code>308 00:13:31,820 --&gt; 00:13:33,820</code>
+Vi har situational awareness nog.</p>
+<p><code>309 00:13:33,820 --&gt; 00:13:36,820</code>
+Och förstå att det här matchar bara från och till.</p>
+<p><code>310 00:13:36,820 --&gt; 00:13:38,820</code>
+Allting emellan är okej.</p>
+<p><code>311 00:13:38,820 --&gt; 00:13:41,820</code>
+Dra slutsatsen till att i början på github.</p>
+<p><code>312 00:13:41,820 --&gt; 00:13:43,820</code>
+Så var i dina sex tecken.</p>
+<p><code>313 00:13:43,820 --&gt; 00:13:48,820</code>
+Vi har en liten idé om att det är 200 000 som skapas per dag.</p>
+<p><code>314 00:13:48,820 --&gt; 00:13:50,820</code>
+Och sen lite enkel matte.</p>
+<p><code>315 00:13:50,820 --&gt; 00:13:53,820</code>
+Hur de har ökat över tid till fler tecken.</p>
+<p><code>316 00:13:53,820 --&gt; 00:13:54,820</code>
+Som bara så här.</p>
+<p><code>317 00:13:54,820 --&gt; 00:13:56,820</code>
+Ja det här kommer ju vara rimligt.</p>
+<p><code>318 00:13:56,820 --&gt; 00:13:58,820</code>
+Att vi får en kollision ganska snabbt.</p>
+<p><code>319 00:13:58,820 --&gt; 00:13:59,820</code>
+Och sen då räkna ut.</p>
+<p><code>320 00:13:59,820 --&gt; 00:14:00,820</code>
+Ja vad femte dag visar det sig.</p>
+<p><code>321 00:14:00,820 --&gt; 00:14:03,820</code>
+Alltså det är det här jag menar med min spaning.</p>
+<p><code>322 00:14:03,820 --&gt; 00:14:04,820</code>
+Som det kommer att vara senare.</p>
+<p><code>323 00:14:04,820 --&gt; 00:14:05,820</code>
+Det är så här.</p>
+<p><code>324 00:14:05,820 --&gt; 00:14:06,820</code>
+Det är så snyggt.</p>
+<p><code>325 00:14:06,820 --&gt; 00:14:07,820</code>
+Så att what the fuck.</p>
+<p><code>326 00:14:07,820 --&gt; 00:14:10,820</code>
+Och sen förbereder man 200 prepopulerade url.</p>
+<p><code>327 00:14:10,820 --&gt; 00:14:11,820</code>
+Och så bara.</p>
+<p><code>328 00:14:11,820 --&gt; 00:14:12,820</code>
+Så.</p>
+<p><code>329 00:14:12,820 --&gt; 00:14:13,820</code>
+Och så är man admin.</p>
+<p><code>330 00:14:13,820 --&gt; 00:14:15,820</code>
+Det låter superenkelt.</p>
+<p><code>331 00:14:15,820 --&gt; 00:14:17,820</code>
+Kanske för ni som lyssnar nu.</p>
+<p><code>332 00:14:17,820 --&gt; 00:14:19,820</code>
+Men det är så mycket rörliga grejer här.</p>
+<p><code>333 00:14:19,820 --&gt; 00:14:22,820</code>
+Som jag förstår på liksom grundstilsnivå.</p>
+<p><code>334 00:14:22,820 --&gt; 00:14:24,820</code>
+Jag har lite gåshud har jag faktiskt.</p>
+<p><code>335 00:14:24,820 --&gt; 00:14:26,820</code>
+Det jag sitter och funderar på här är.</p>
+<p><code>336 00:14:26,820 --&gt; 00:14:28,820</code>
+Alltså en logisk beslutdelning är ju som sagt.</p>
+<p><code>337 00:14:28,820 --&gt; 00:14:30,820</code>
+Det här var ett konto de gick på.</p>
+<p><code>338 00:14:30,820 --&gt; 00:14:31,820</code>
+Exakt.</p>
+<p><code>339 00:14:31,820 --&gt; 00:14:32,820</code>
+Ett utav de här femsiffriga kontorna.</p>
+<p><code>340 00:14:32,820 --&gt; 00:14:33,820</code>
+Eller var det sexsiffrigt?</p>
+<p><code>341 00:14:33,820 --&gt; 00:14:35,820</code>
+Jag vet inte.</p>
+<p><code>342 00:14:35,820 --&gt; 00:14:36,820</code>
+Det finns ju flera.</p>
+<p><code>343 00:14:36,820 --&gt; 00:14:38,820</code>
+De kan förmodligen med fem dagars mellanrum.</p>
+<p><code>344 00:14:38,820 --&gt; 00:14:40,820</code>
+Kan de välja vilket de vill utav dem.</p>
+<p><code>345 00:14:40,820 --&gt; 00:14:42,820</code>
+Och göra precis samma sak.</p>
+<p><code>346 00:14:42,820 --&gt; 00:14:43,820</code>
+Ja.</p>
+<p><code>347 00:14:43,820 --&gt; 00:14:44,820</code>
+Att de inte gör det.</p>
+<p><code>348 00:14:44,820 --&gt; 00:14:47,820</code>
+Måste ju betyda att de samarbetar med AVS.</p>
+<p><code>349 00:14:47,820 --&gt; 00:14:48,820</code>
+Är det den frågan?</p>
+<p><code>350 00:14:48,820 --&gt; 00:14:49,820</code>
+Ja.</p>
+<p><code>351 00:14:49,820 --&gt; 00:14:50,820</code>
+De är konkurrenter.</p>
+<p><code>352 00:14:50,820 --&gt; 00:14:51,820</code>
+Exakt.</p>
+<p><code>353 00:14:51,820 --&gt; 00:14:53,820</code>
+Men Google har ju en liten annan.</p>
+<p><code>354 00:14:53,820 --&gt; 00:14:54,820</code>
+De har ju.</p>
+<p><code>355 00:14:54,820 --&gt; 00:14:55,820</code>
+Absolut.</p>
+<p><code>356 00:14:55,820 --&gt; 00:14:56,820</code>
+Jag tror.</p>
+<p><code>357 00:14:56,820 --&gt; 00:14:58,820</code>
+Alltså Wizz gör ju en fet.</p>
+<p><code>358 00:14:58,820 --&gt; 00:14:59,820</code>
+Wizz cloud.</p>
+<p><code>359 00:14:59,820 --&gt; 00:15:01,820</code>
+Är ju världens dyraste jävla.</p>
+<p><code>360 00:15:01,820 --&gt; 00:15:03,820</code>
+Alltså det är supersnyggt.</p>
+<p><code>361 00:15:03,820 --&gt; 00:15:05,820</code>
+Men det kostar hur mycket pengar som helst.</p>
+<p><code>362 00:15:05,820 --&gt; 00:15:06,820</code>
+Och det är ju framförallt.</p>
+<p><code>363 00:15:06,820 --&gt; 00:15:07,820</code>
+Det är en cloud CSPM.</p>
+<p><code>364 00:15:07,820 --&gt; 00:15:08,820</code>
+En sen app.</p>
+<p><code>365 00:15:08,820 --&gt; 00:15:10,820</code>
+Cloud Native Application Protection Platform.</p>
+<p><code>366 00:15:10,820 --&gt; 00:15:11,820</code>
+Den typ.</p>
+<p><code>367 00:15:11,820 --&gt; 00:15:13,820</code>
+Köp den för alla dina pengar.</p>
+<p><code>368 00:15:13,820 --&gt; 00:15:15,820</code>
+Och så får du reda precis hur dina applikationer mår.</p>
+<p><code>369 00:15:15,820 --&gt; 00:15:16,820</code>
+I AVS.</p>
+<p><code>370 00:15:16,820 --&gt; 00:15:17,820</code>
+Och hur de kommer att må sen.</p>
+<p><code>371 00:15:17,820 --&gt; 00:15:18,820</code>
+Och AVS jobbar ju.</p>
+<p><code>372 00:15:18,820 --&gt; 00:15:21,820</code>
+Med liknande funktionalitet.</p>
+<p><code>373 00:15:21,820 --&gt; 00:15:23,820</code>
+Deras är inte lika bra och mogra.</p>
+<p><code>374 00:15:23,820 --&gt; 00:15:24,820</code>
+Men de försöker ju jobba i kapp.</p>
+<p><code>375 00:15:24,820 --&gt; 00:15:25,820</code>
+Ja.</p>
+<p><code>376 00:15:25,820 --&gt; 00:15:26,820</code>
+Och då sitter man och funderar på.</p>
+<p><code>377 00:15:26,820 --&gt; 00:15:28,820</code>
+Nu har vi alltså en leverantör.</p>
+<p><code>378 00:15:28,820 --&gt; 00:15:29,820</code>
+Och en konkurrent.</p>
+<p><code>379 00:15:29,820 --&gt; 00:15:30,820</code>
+Som har.</p>
+<p><code>380 00:15:30,820 --&gt; 00:15:31,820</code>
+Jävligt mycket.</p>
+<p><code>381 00:15:31,820 --&gt; 00:15:33,820</code>
+Information de kan släppa.</p>
+<p><code>382 00:15:33,820 --&gt; 00:15:34,820</code>
+Som inte.</p>
+<p><code>383 00:15:34,820 --&gt; 00:15:35,820</code>
+Som kommer göra ont för AVS.</p>
+<p><code>384 00:15:35,820 --&gt; 00:15:36,820</code>
+Så jag undrar hur mycket.</p>
+<p><code>385 00:15:36,820 --&gt; 00:15:37,820</code>
+Vad fick de?</p>
+<p><code>386 00:15:37,820 --&gt; 00:15:38,820</code>
+För att tala tyst om det här.</p>
+<p><code>387 00:15:38,820 --&gt; 00:15:39,820</code>
+Ja det kan man.</p>
+<p><code>388 00:15:39,820 --&gt; 00:15:40,820</code>
+Det är ju.</p>
+<p><code>389 00:15:40,820 --&gt; 00:15:41,820</code>
+Trusted supplier.</p>
+<p><code>390 00:15:41,820 --&gt; 00:15:42,820</code>
+Det är som också.</p>
+<p><code>391 00:15:42,820 --&gt; 00:15:43,820</code>
+Det är också.</p>
+<p><code>392 00:15:43,820 --&gt; 00:15:44,820</code>
+Om man så här.</p>
+<p><code>393 00:15:44,820 --&gt; 00:15:45,820</code>
+Man kan läsa mellan raderna då.</p>
+<p><code>394 00:15:45,820 --&gt; 00:15:46,820</code>
+Det är ju då att.</p>
+<p><code>395 00:15:46,820 --&gt; 00:15:47,820</code>
+AVS, STK, GIS, Automation.</p>
+<p><code>396 00:15:47,820 --&gt; 00:15:48,820</code>
+Hette servicekontot.</p>
+<p><code>397 00:15:48,820 --&gt; 00:15:49,820</code>
+Den var ju här i fulla.</p>
+<p><code>398 00:15:49,820 --&gt; 00:15:50,820</code>
+Administratörs rättigheter.</p>
+<p><code>399 00:15:50,820 --&gt; 00:15:51,820</code>
+Över hela repot.</p>
+<p><code>400 00:15:51,820 --&gt; 00:15:52,820</code>
+Och här kan man också så här.</p>
+<p><code>401 00:15:52,820 --&gt; 00:15:53,820</code>
+Börja fundera lite då.</p>
+<p><code>402 00:15:53,820 --&gt; 00:15:54,820</code>
+Ska man göra så här verkligen.</p>
+<p><code>403 00:15:54,820 --&gt; 00:15:55,820</code>
+Det lämnar vi där än.</p>
+<p><code>404 00:15:55,820 --&gt; 00:15:56,820</code>
+Men det kanske man inte ska.</p>
+<p><code>405 00:15:56,820 --&gt; 00:15:57,820</code>
+Men någonting som också.</p>
+<p><code>406 00:15:57,820 --&gt; 00:15:58,820</code>
+Är ganska roligt.</p>
+<p><code>407 00:15:58,820 --&gt; 00:15:59,820</code>
+Det är ju då att.</p>
+<p><code>408 00:15:59,820 --&gt; 00:16:00,820</code>
+Lite subtilt här.</p>
+<p><code>409 00:16:00,820 --&gt; 00:16:01,820</code>
+Så säger de ju också.</p>
+<p><code>410 00:16:01,820 --&gt; 00:16:02,820</code>
+Det är då att.</p>
+<p><code>411 00:16:02,820 --&gt; 00:16:03,820</code>
+Vi fick ju faktiskt.</p>
+<p><code>412 00:16:03,820 --&gt; 00:16:04,820</code>
+Geotokenen.</p>
+<p><code>413 00:16:04,820 --&gt; 00:16:05,820</code>
+Det.</p>
+<p><code>414 00:16:05,820 --&gt; 00:16:06,820</code>
+Det tänker.</p>
+<p><code>415 00:16:06,820 --&gt; 00:16:07,820</code>
+Man kanske så här.</p>
+<p><code>416 00:16:07,820 --&gt; 00:16:08,820</code>
+I first glance bara.</p>
+<p><code>417 00:16:08,820 --&gt; 00:16:09,820</code>
+Men det är fanfett ändå.</p>
+<p><code>418 00:16:09,820 --&gt; 00:16:10,820</code>
+Då är man dödsad.</p>
+<p><code>419 00:16:10,820 --&gt; 00:16:11,820</code>
+Men det är man.</p>
+<p><code>420 00:16:11,820 --&gt; 00:16:12,820</code>
+Men de är inte så långlivade.</p>
+<p><code>421 00:16:12,820 --&gt; 00:16:13,820</code>
+Så.</p>
+<p><code>422 00:16:13,820 --&gt; 00:16:14,820</code>
+Så.</p>
+<p><code>423 00:16:14,820 --&gt; 00:16:15,820</code>
+Så.</p>
+<p><code>424 00:16:15,820 --&gt; 00:16:16,820</code>
+Så.</p>
+<p><code>425 00:16:17,820 --&gt; 00:16:18,820</code>
+Men faktiskt.</p>
+<p><code>426 00:16:18,820 --&gt; 00:16:19,820</code>
+De håller inte så jävla länge.</p>
+<p><code>427 00:16:19,820 --&gt; 00:16:20,820</code>
+Det beror lite på.</p>
+<p><code>428 00:16:20,820 --&gt; 00:16:21,820</code>
+Men det de gör.</p>
+<p><code>429 00:16:21,820 --&gt; 00:16:22,820</code>
+Är ju att.</p>
+<p><code>430 00:16:22,820 --&gt; 00:16:23,820</code>
+De har ju också möjlighet.</p>
+<p><code>431 00:16:23,820 --&gt; 00:16:24,820</code>
+Att dumpa minnet.</p>
+<p><code>432 00:16:24,820 --&gt; 00:16:25,820</code>
+Där det händer.</p>
+<p><code>433 00:16:25,820 --&gt; 00:16:26,820</code>
+Så är det så att.</p>
+<p><code>434 00:16:26,820 --&gt; 00:16:27,820</code>
+Det triggar en automationsprocess.</p>
+<p><code>435 00:16:27,820 --&gt; 00:16:28,820</code>
+Som bygger andra grejer.</p>
+<p><code>436 00:16:28,820 --&gt; 00:16:29,820</code>
+Där CodeBuild.</p>
+<p><code>437 00:16:29,820 --&gt; 00:16:30,820</code>
+Är ansvarig för integrationen.</p>
+<p><code>438 00:16:30,820 --&gt; 00:16:31,820</code>
+Då kommer de.</p>
+<p><code>439 00:16:31,820 --&gt; 00:16:32,820</code>
+Att ligga i minnet.</p>
+<p><code>440 00:16:32,820 --&gt; 00:16:33,820</code>
+Så.</p>
+<p><code>441 00:16:33,820 --&gt; 00:16:34,820</code>
+Om du gör en bild.</p>
+<p><code>442 00:16:34,820 --&gt; 00:16:35,820</code>
+Så kommer ju.</p>
+<p><code>443 00:16:35,820 --&gt; 00:16:36,820</code>
+Din geotoken.</p>
+<p><code>444 00:16:36,820 --&gt; 00:16:37,820</code>
+Gör att du.</p>
+<p><code>445 00:16:37,820 --&gt; 00:16:38,820</code>
+Når den här.</p>
+<p><code>446 00:16:38,820 --&gt; 00:16:39,820</code>
+Serverlessinstansen.</p>
+<p><code>447 00:16:39,820 --&gt; 00:16:40,820</code>
+Med administratörs rättigheter.</p>
+<p><code>448 00:16:40,820 --&gt; 00:16:41,820</code>
+Så att du kan.</p>
+<p><code>449 00:16:41,820 --&gt; 00:16:42,820</code>
+Dumpa allt minne.</p>
+<p><code>450 00:16:42,820 --&gt; 00:16:43,820</code>
+Som den gör.</p>
+<p><code>451 00:16:43,820 --&gt; 00:16:44,820</code>
+Även efter de pipelines.</p>
+<p><code>452 00:16:44,820 --&gt; 00:16:45,820</code>
+Som du har exekvererat.</p>
+<p><code>453 00:16:45,820 --&gt; 00:16:46,820</code>
+Kör.</p>
+<p><code>454 00:16:46,820 --&gt; 00:16:47,820</code>
+Det vill säga.</p>
+<p><code>455 00:16:47,820 --&gt; 00:16:48,820</code>
+Du kommer kunna se.</p>
+<p><code>456 00:16:48,820 --&gt; 00:16:49,820</code>
+Subdependencies.</p>
+<p><code>457 00:16:49,820 --&gt; 00:16:50,820</code>
+Och allt möjligt där.</p>
+<p><code>458 00:16:50,820 --&gt; 00:16:51,820</code>
+Där kan man ju tänka sig.</p>
+<p><code>459 00:16:51,820 --&gt; 00:16:52,820</code>
+Att man bootstrappar.</p>
+<p><code>460 00:16:52,820 --&gt; 00:16:53,820</code>
+Kanske.</p>
+<p><code>461 00:16:53,820 --&gt; 00:16:54,820</code>
+Lite allt möjligt.</p>
+<p><code>462 00:16:54,820 --&gt; 00:16:55,820</code>
+Roligt.</p>
+<p><code>463 00:16:55,820 --&gt; 00:16:56,820</code>
+I backenden.</p>
+<p><code>464 00:16:56,820 --&gt; 00:16:57,820</code>
+På.</p>
+<p><code>465 00:16:57,820 --&gt; 00:16:58,820</code>
+AVS.</p>
+<p><code>466 00:16:58,820 --&gt; 00:16:59,820</code>
+När man börjar rulla ut.</p>
+<p><code>467 00:16:59,820 --&gt; 00:17:00,820</code>
+Nya resurser.</p>
+<p><code>468 00:17:00,820 --&gt; 00:17:01,820</code>
+Som ska distribueras.</p>
+<p><code>469 00:17:01,820 --&gt; 00:17:02,820</code>
+Överallt.</p>
+<p><code>470 00:17:02,820 --&gt; 00:17:03,820</code>
+Så att.</p>
+<p><code>471 00:17:03,820 --&gt; 00:17:04,820</code>
+Det där är nog.</p>
+<p><code>472 00:17:04,820 --&gt; 00:17:05,820</code>
+Det där skulle vara jättekul.</p>
+<p><code>473 00:17:05,820 --&gt; 00:17:06,820</code>
+Så det är ju.</p>
+<p><code>474 00:17:06,820 --&gt; 00:17:07,820</code>
+GitHub credentials.</p>
+<p><code>475 00:17:07,820 --&gt; 00:17:08,820</code>
+Är det ju.</p>
+<p><code>476 00:17:08,820 --&gt; 00:17:09,820</code>
+Det ligger i byggminnet.</p>
+<p><code>477 00:17:09,820 --&gt; 00:17:10,820</code>
+Men.</p>
+<p><code>478 00:17:10,820 --&gt; 00:17:11,820</code>
+Det är ju.</p>
+<p><code>479 00:17:11,820 --&gt; 00:17:12,820</code>
+Det finns säkert.</p>
+<p><code>480 00:17:12,820 --&gt; 00:17:13,820</code>
+Liksom en uppsjö.</p>
+<p><code>481 00:17:13,820 --&gt; 00:17:14,820</code>
+Med olika Linux.</p>
+<p><code>482 00:17:14,820 --&gt; 00:17:15,820</code>
+Exploits.</p>
+<p><code>483 00:17:15,820 --&gt; 00:17:16,820</code>
+Liksom.</p>
+<p><code>484 00:17:16,820 --&gt; 00:17:17,820</code>
+Bra hack.</p>
+<p><code>485 00:17:17,820 --&gt; 00:17:18,820</code>
+Alltså.</p>
+<p><code>486 00:17:18,820 --&gt; 00:17:19,820</code>
+Jag.</p>
+<p><code>487 00:17:19,820 --&gt; 00:17:20,820</code>
+Får gås ut.</p>
+<p><code>488 00:17:20,820 --&gt; 00:17:21,820</code>
+När jag tittar på det.</p>
+<p><code>489 00:17:21,820 --&gt; 00:17:22,820</code>
+Det här.</p>
+<p><code>490 00:17:22,820 --&gt; 00:17:23,820</code>
+Länkar vi i våra show notes.</p>
+<p><code>491 00:17:23,820 --&gt; 00:17:24,820</code>
+För det här är verkligen.</p>
+<p><code>492 00:17:24,820 --&gt; 00:17:25,820</code>
+Värt att läsa.</p>
+<p><code>493 00:17:25,820 --&gt; 00:17:26,820</code>
+Det är.</p>
+<p><code>494 00:17:26,820 --&gt; 00:17:27,820</code>
+Välskrivet.</p>
+<p><code>495 00:17:27,820 --&gt; 00:17:28,820</code>
+Och.</p>
+<p><code>496 00:17:28,820 --&gt; 00:17:29,820</code>
+Så jävla fett.</p>
+<p><code>497 00:17:29,820 --&gt; 00:17:30,820</code>
+Nice.</p>
+<p><code>498 00:17:30,820 --&gt; 00:17:31,820</code>
+2026 börjar starkt.</p>
+<p><code>499 00:17:31,820 --&gt; 00:17:32,820</code>
+Det gör det faktiskt.</p>
+<p><code>500 00:17:32,820 --&gt; 00:17:33,820</code>
+Peter.</p>
+<p><code>501 00:17:33,820 --&gt; 00:17:34,820</code>
+Ja.</p>
+<p><code>502 00:17:34,820 --&gt; 00:17:35,820</code>
+Det var.</p>
+<p><code>503 00:17:35,820 --&gt; 00:17:36,820</code>
+Några.</p>
+<p><code>504 00:17:36,820 --&gt; 00:17:37,820</code>
+Glada människor.</p>
+<p><code>505 00:17:37,820 --&gt; 00:17:38,820</code>
+Som.</p>
+<p><code>506 00:17:38,820 --&gt; 00:17:39,820</code>
+De hittade.</p>
+<p><code>507 00:17:39,820 --&gt; 00:17:40,820</code>
+Ett.</p>
+<p><code>508 00:17:40,820 --&gt; 00:17:41,820</code>
+Gammalt band.</p>
+<p><code>509 00:17:41,820 --&gt; 00:17:42,820</code>
+Där det.</p>
+<p><code>510 00:17:42,820 --&gt; 00:17:43,820</code>
+Jag vet inte exakt.</p>
+<p><code>511 00:17:43,820 --&gt; 00:17:44,820</code>
+Vad det stod på det.</p>
+<p><code>512 00:17:44,820 --&gt; 00:17:45,820</code>
+Men det gav dem.</p>
+<p><code>513 00:17:45,820 --&gt; 00:17:46,820</code>
+Sammanhanget.</p>
+<p><code>514 00:17:46,820 --&gt; 00:17:47,820</code>
+Att.</p>
+<p><code>515 00:17:47,820 --&gt; 00:17:48,820</code>
+Det här.</p>
+<p><code>516 00:17:48,820 --&gt; 00:17:49,820</code>
+Kanske.</p>
+<p><code>517 00:17:49,820 --&gt; 00:17:50,820</code>
+Bor.</p>
+<p><code>518 00:17:50,820 --&gt; 00:17:51,820</code>
+En gammal.</p>
+<p><code>519 00:17:51,820 --&gt; 00:17:52,820</code>
+Unix.</p>
+<p><code>520 00:17:52,820 --&gt; 00:17:53,820</code>
+V4.</p>
+<p><code>521 00:17:53,820 --&gt; 00:17:54,820</code>
+Eller något liknande.</p>
+<p><code>522 00:17:54,820 --&gt; 00:17:55,820</code>
+På den.</p>
+<p><code>523 00:17:55,820 --&gt; 00:17:56,820</code>
+Så de.</p>
+<p><code>524 00:17:56,820 --&gt; 00:17:57,820</code>
+Tog.</p>
+<p><code>525 00:17:57,820 --&gt; 00:17:58,820</code>
+Tydligen bandet.</p>
+<p><code>526 00:17:58,820 --&gt; 00:17:59,820</code>
+Och förvarade det.</p>
+<p><code>527 00:17:59,820 --&gt; 00:18:00,820</code>
+Jätteförsiktigt.</p>
+<p><code>528 00:18:00,820 --&gt; 00:18:01,820</code>
+Och så.</p>
+<p><code>529 00:18:01,820 --&gt; 00:18:02,820</code>
+Begav de sig.</p>
+<p><code>530 00:18:02,820 --&gt; 00:18:03,820</code>
+I väg.</p>
+<p><code>531 00:18:03,820 --&gt; 00:18:04,820</code>
+Till.</p>
+<p><code>532 00:18:04,820 --&gt; 00:18:05,820</code>
+Rätt.</p>
+<p><code>533 00:18:05,820 --&gt; 00:18:06,820</code>
+Typ av.</p>
+<p><code>534 00:18:06,820 --&gt; 00:18:07,820</code>
+Universitet.</p>
+<p><code>535 00:18:07,820 --&gt; 00:18:08,820</code>
+Eller.</p>
+<p><code>536 00:18:08,820 --&gt; 00:18:09,820</code>
+Arkvarie.</p>
+<p><code>537 00:18:09,820 --&gt; 00:18:10,820</code>
+Lokaler.</p>
+<p><code>538 00:18:10,820 --&gt; 00:18:11,820</code>
+Gammal.</p>
+<p><code>539 00:18:11,820 --&gt; 00:18:12,820</code>
+64.</p>
+<p><code>540 00:18:12,820 --&gt; 00:18:13,820</code>
+Nörd.</p>
+<p><code>541 00:18:13,820 --&gt; 00:18:14,820</code>
+Från.</p>
+<p><code>542 00:18:14,820 --&gt; 00:18:15,820</code>
+80-talet.</p>
+<p><code>543 00:18:15,820 --&gt; 00:18:16,820</code>
+Det var.</p>
+<p><code>544 00:18:16,820 --&gt; 00:18:17,820</code>
+Det enda sättet.</p>
+<p><code>545 00:18:17,820 --&gt; 00:18:18,820</code>
+Att hitta någonting.</p>
+<p><code>546 00:18:18,820 --&gt; 00:18:19,820</code>
+Som kan läsa band.</p>
+<p><code>547 00:18:19,820 --&gt; 00:18:20,820</code>
+Nu för tiden.</p>
+<p><code>548 00:18:20,820 --&gt; 00:18:21,820</code>
+Nej nej nej.</p>
+<p><code>549 00:18:21,820 --&gt; 00:18:22,820</code>
+Alltså.</p>
+<p><code>550 00:18:22,820 --&gt; 00:18:23,820</code>
+Såna här.</p>
+<p><code>551 00:18:23,820 --&gt; 00:18:24,820</code>
+Stora.</p>
+<p><code>552 00:18:24,820 --&gt; 00:18:25,820</code>
+Seriösa.</p>
+<p><code>553 00:18:25,820 --&gt; 00:18:26,820</code>
+Dyra band.</p>
+<p><code>554 00:18:26,820 --&gt; 00:18:27,820</code>
+Var det.</p>
+<p><code>555 00:18:27,820 --&gt; 00:18:28,820</code>
+Sånt riktigt.</p>
+<p><code>556 00:18:28,820 --&gt; 00:18:29,820</code>
+Ja.</p>
+<p><code>557 00:18:29,820 --&gt; 00:18:30,820</code>
+Det här är.</p>
+<p><code>558 00:18:30,820 --&gt; 00:18:31,820</code>
+Som tape backup.</p>
+<p><code>559 00:18:31,820 --&gt; 00:18:32,820</code>
+Ja.</p>
+<p><code>560 00:18:32,820 --&gt; 00:18:33,820</code>
+Nu kommer jag inte ihåg.</p>
+<p><code>561 00:18:33,820 --&gt; 00:18:34,820</code>
+När.</p>
+<p><code>562 00:18:34,820 --&gt; 00:18:35,820</code>
+Unix.</p>
+<p><code>563 00:18:35,820 --&gt; 00:18:36,820</code>
+V4.</p>
+<p><code>564 00:18:36,820 --&gt; 00:18:37,820</code>
+Var en grej.</p>
+<p><code>565 00:18:37,820 --&gt; 00:18:38,820</code>
+Men.</p>
+<p><code>566 00:18:38,820 --&gt; 00:18:39,820</code>
+Men.</p>
+<p><code>567 00:18:39,820 --&gt; 00:18:40,820</code>
+Jag vet att det stod.</p>
+<p><code>568 00:18:40,820 --&gt; 00:18:41,820</code>
+Bland annat.</p>
+<p><code>569 00:18:41,820 --&gt; 00:18:42,820</code>
+Att.</p>
+<p><code>570 00:18:42,820 --&gt; 00:18:43,820</code>
+Det är långt.</p>
+<p><code>571 00:18:43,820 --&gt; 00:18:44,820</code>
+Över.</p>
+<p><code>572 00:18:44,820 --&gt; 00:18:45,820</code>
+Var en.</p>
+<p><code>573 00:18:45,820 --&gt; 00:18:46,820</code>
+Tarfil.</p>
+<p><code>574 00:18:46,820 --&gt; 00:18:47,820</code>
+Som innehöll.</p>
+<p><code>575 00:18:47,820 --&gt; 00:18:48,820</code>
+Nästan hela.</p>
+<p><code>576 00:18:48,820 --&gt; 00:18:49,820</code>
+Unix.</p>
+<p><code>577 00:18:49,820 --&gt; 00:18:50,820</code>
+V4.</p>
+<p><code>578 00:18:50,820 --&gt; 00:18:51,820</code>
+Och man.</p>
+<p><code>579 00:18:51,820 --&gt; 00:18:52,820</code>
+Lyckades.</p>
+<p><code>580 00:18:52,820 --&gt; 00:18:53,820</code>
+Man.</p>
+<p><code>581 00:18:53,820 --&gt; 00:18:54,820</code>
+Man har nu lyckats.</p>
+<p><code>582 00:18:54,820 --&gt; 00:18:55,820</code>
+Kompilera det.</p>
+<p><code>583 00:18:55,820 --&gt; 00:18:56,820</code>
+Och.</p>
+<p><code>584 00:18:56,820 --&gt; 00:18:57,820</code>
+Kunnat köra det.</p>
+<p><code>585 00:18:57,820 --&gt; 00:18:58,820</code>
+På.</p>
+<p><code>586 00:18:58,820 --&gt; 00:18:59,820</code>
+En.</p>
+<p><code>587 00:18:59,820 --&gt; 00:19:00,820</code>
+Pdp.</p>
+<p><code>588 00:19:00,820 --&gt; 00:19:01,820</code>
+11.</p>
+<p><code>589 00:19:01,820 --&gt; 00:19:02,820</code>
+Det.</p>
+<p><code>590 00:19:02,820 --&gt; 00:19:03,820</code>
+Är tydligen.</p>
+<p><code>591 00:19:03,820 --&gt; 00:19:04,820</code>
+Vissa.</p>
+<p><code>592 00:19:04,820 --&gt; 00:19:05,820</code>
+Coola.</p>
+<p><code>593 00:19:05,820 --&gt; 00:19:06,820</code>
+Version.</p>
+<p><code>594 00:19:06,820 --&gt; 00:19:07,820</code>
+Av.</p>
+<p><code>595 00:19:07,820 --&gt; 00:19:08,820</code>
+Pdp.</p>
+<p><code>596 00:19:08,820 --&gt; 00:19:09,820</code>
+11.</p>
+<p><code>597 00:19:09,820 --&gt; 00:19:10,820</code>
+Som klarar av.</p>
+<p><code>598 00:19:10,820 --&gt; 00:19:11,820</code>
+Att köra.</p>
+<p><code>599 00:19:11,820 --&gt; 00:19:12,820</code>
+Det här.</p>
+<p><code>600 00:19:12,820 --&gt; 00:19:13,820</code>
+Unix.</p>
+<p><code>601 00:19:13,820 --&gt; 00:19:14,820</code>
+V4.</p>
+<p><code>602 00:19:14,820 --&gt; 00:19:15,820</code>
+Koden.</p>
+<p><code>603 00:19:15,820 --&gt; 00:19:16,820</code>
+Och.</p>
+<p><code>604 00:19:16,820 --&gt; 00:19:17,820</code>
+Su.</p>
+<p><code>605 00:19:17,820 --&gt; 00:19:18,820</code>
+Koden.</p>
+<p><code>606 00:19:18,820 --&gt; 00:19:19,820</code>
+Och.</p>
+<p><code>607 00:19:19,820 --&gt; 00:19:20,820</code>
+Se.</p>
+<p><code>608 00:19:20,820 --&gt; 00:19:21,820</code>
+Den.</p>
+<p><code>609 00:19:21,820 --&gt; 00:19:22,820</code>
+Där.</p>
+<p><code>610 00:19:22,820 --&gt; 00:19:23,820</code>
+Ser.</p>
+<p><code>611 00:19:23,820 --&gt; 00:19:24,820</code>
+Lite.</p>
+<p><code>612 00:19:24,820 --&gt; 00:19:25,820</code>
+Skummigt.</p>
+<p><code>613 00:19:25,820 --&gt; 00:19:26,820</code>
+Om.</p>
+<p><code>614 00:19:26,820 --&gt; 00:19:27,820</code>
+Man.</p>
+<p><code>615 00:19:27,820 --&gt; 00:19:28,820</code>
+Tittar.</p>
+<p><code>616 00:19:28,820 --&gt; 00:19:29,820</code>
+På.</p>
+<p><code>617 00:19:29,820 --&gt; 00:19:30,820</code>
+Den.</p>
+<p><code>618 00:19:30,820 --&gt; 00:19:31,820</code>
+Med.</p>
+<p><code>619 00:19:31,820 --&gt; 00:19:32,820</code>
+Moderna.</p>
+<p><code>620 00:19:32,820 --&gt; 00:19:33,820</code>
+Ögon.</p>
+<p><code>621 00:19:33,820 --&gt; 00:19:34,820</code>
+Men.</p>
+<p><code>622 00:19:34,820 --&gt; 00:19:35,820</code>
+Jag.</p>
+<p><code>623 00:19:35,820 --&gt; 00:19:36,820</code>
+Diskuterar.</p>
+<p><code>624 00:19:36,820 --&gt; 00:19:37,820</code>
+Med.</p>
+<p><code>625 00:19:37,820 --&gt; 00:19:38,820</code>
+Vänner.</p>
+<p><code>626 00:19:38,820 --&gt; 00:19:39,820</code>
+Konstaterar.</p>
+<p><code>627 00:19:39,820 --&gt; 00:19:40,820</code>
+De.</p>
+<p><code>628 00:19:40,820 --&gt; 00:19:41,820</code>
+Människorna.</p>
+<p><code>629 00:19:41,820 --&gt; 00:19:42,820</code>
+Som.</p>
+<p><code>630 00:19:42,820 --&gt; 00:19:43,820</code>
+Ställs.</p>
+<p><code>631 00:19:43,820 --&gt; 00:19:44,820</code>
+Där.</p>
+<p><code>632 00:19:44,820 --&gt; 00:19:45,820</code>
+På.</p>
+<p><code>633 00:19:45,820 --&gt; 00:19:46,820</code>
+Massa.</p>
+<p><code>634 00:19:46,820 --&gt; 00:19:47,820</code>
+Ställen.</p>
+<p><code>635 00:19:47,820 --&gt; 00:19:48,820</code>
+Och.</p>
+<p><code>636 00:19:48,820 --&gt; 00:19:49,820</code>
+Det.</p>
+<p><code>637 00:19:49,820 --&gt; 00:19:50,820</code>
+Tycker.</p>
+<p><code>638 00:19:50,820 --&gt; 00:19:51,820</code>
+Jag.</p>
+<p><code>639 00:19:51,820 --&gt; 00:19:52,820</code>
+Med.</p>
+<p><code>640 00:19:52,820 --&gt; 00:19:53,820</code>
+Mina.</p>
+<p><code>641 00:19:53,820 --&gt; 00:19:54,820</code>
+2026.</p>
+<p><code>642 00:19:54,820 --&gt; 00:19:55,820</code>
+Ögon.</p>
+<p><code>643 00:19:55,820 --&gt; 00:19:56,820</code>
+Att.</p>
+<p><code>644 00:19:56,820 --&gt; 00:19:57,820</code>
+Det.</p>
+<p><code>645 00:19:57,820 --&gt; 00:19:58,820</code>
+Här.</p>
+<p><code>646 00:19:58,820 --&gt; 00:19:59,820</code>
+Verkar.</p>
+<p><code>647 00:19:59,820 --&gt; 00:20:00,820</code>
+Konstigt.</p>
+<p><code>648 00:20:00,820 --&gt; 00:20:01,820</code>
+Men.</p>
+<p><code>649 00:20:01,820 --&gt; 00:20:02,820</code>
+Men.</p>
+<p><code>650 00:20:02,820 --&gt; 00:20:03,820</code>
+Jag.</p>
+<p><code>651 00:20:03,820 --&gt; 00:20:04,820</code>
+Lägger.</p>
+<p><code>652 00:20:04,820 --&gt; 00:20:05,820</code>
+En.</p>
+<p><code>653 00:20:05,820 --&gt; 00:20:06,820</code>
+Stor.</p>
+<p><code>654 00:20:06,820 --&gt; 00:20:07,820</code>
+Reservation.</p>
+<p><code>655 00:20:07,820 --&gt; 00:20:08,820</code>
+För.</p>
+<p><code>656 00:20:08,820 --&gt; 00:20:09,820</code>
+Att.</p>
+<p><code>657 00:20:09,820 --&gt; 00:20:10,820</code>
+De.</p>
+<p><code>658 00:20:10,820 --&gt; 00:20:13,820</code>
+Får enkelt.</p>
+<p><code>659 00:20:13,820 --&gt; 00:20:14,820</code>
+Enkelt.</p>
+<p><code>660 00:20:14,820 --&gt; 00:20:15,820</code>
+Komando.</p>
+<p><code>661 00:20:15,820 --&gt; 00:20:16,820</code>
+Kota.</p>
+<p><code>662 00:20:16,820 --&gt; 00:20:17,820</code>
+Jag.</p>
+<p><code>663 00:20:17,820 --&gt; 00:20:18,820</code>
+Alla.</p>
+<p><code>664 00:20:18,820 --&gt; 00:20:19,820</code>
+Alla.</p>
+<p><code>665 00:20:19,820 --&gt; 00:20:20,820</code>
+Dom.</p>
+<p><code>666 00:20:20,820 --&gt; 00:20:21,820</code>
+Mellan.</p>
+<p><code>667 00:20:21,820 --&gt; 00:20:22,820</code>
+Noll och en.</p>
+<p><code>668 00:20:22,820 --&gt; 00:20:23,820</code>
+V4.</p>
+<p><code>669 00:20:23,820 --&gt; 00:20:24,820</code>
+Installer.</p>
+<p><code>670 00:20:24,820 --&gt; 00:20:25,820</code>
+Snurrar.</p>
+<p><code>671 00:20:25,820 --&gt; 00:20:26,820</code>
+Som.</p>
+<p><code>672 00:20:26,820 --&gt; 00:20:27,820</code>
+Vi.</p>
+<p><code>673 00:20:27,820 --&gt; 00:20:28,820</code>
+Måste.</p>
+<p><code>674 00:20:28,820 --&gt; 00:20:29,820</code>
+Säkra.</p>
+<p><code>675 00:20:29,820 --&gt; 00:20:30,820</code>
+Våra.</p>
+<p><code>676 00:20:30,820 --&gt; 00:20:31,820</code>
+Simulatorer.</p>
+<p><code>677 00:20:31,820 --&gt; 00:20:33,820</code>
+Att.</p>
+<p><code>678 00:20:33,820 --&gt; 00:20:34,820</code>
+En.</p>
+<p><code>679 00:20:34,820 --&gt; 00:20:35,820</code>
+Enkel.</p>
+<p><code>680 00:20:35,820 --&gt; 00:20:36,820</code>
+Rättning.</p>
+<p><code>681 00:20:36,820 --&gt; 00:20:37,820</code>
+I.</p>
+<p><code>682 00:20:37,820 --&gt; 00:20:38,820</code>
+Komandot.</p>
+<p><code>683 00:20:38,820 --&gt; 00:20:39,820</code>
+Som.</p>
+<p><code>684 00:20:39,820 --&gt; 00:20:41,900</code>
+som är liksom såhär</p>
+<p><code>685 00:20:41,900 --&gt; 00:20:43,360</code>
+om du tänker alla SU</p>
+<p><code>686 00:20:43,360 --&gt; 00:20:45,720</code>
+och alla SU-kommando och annat som du har idag</p>
+<p><code>687 00:20:45,720 --&gt; 00:20:47,540</code>
+kan du tänka dig att de är liksom</p>
+<p><code>688 00:20:47,540 --&gt; 00:20:49,700</code>
+barnbarnens barnbarns barnbarns</p>
+<p><code>689 00:20:49,700 --&gt; 00:20:50,900</code>
+barnbarn till det som</p>
+<p><code>690 00:20:50,900 --&gt; 00:20:53,440</code>
+och nu har någon tatt den här deras gamla</p>
+<p><code>691 00:20:53,440 --&gt; 00:20:54,740</code>
+uråldriga förälder och</p>
+<p><code>692 00:20:54,740 --&gt; 00:20:58,120</code>
+reddat den mot det säkerhetshållet</p>
+<p><code>693 00:20:58,120 --&gt; 00:20:58,800</code>
+som den har haft.</p>
+<p><code>694 00:20:59,620 --&gt; 00:21:00,980</code>
+Men typ</p>
+<p><code>695 00:21:00,980 --&gt; 00:21:03,920</code>
+Unix V4 har fått en säkerhetsrättning</p>
+<p><code>696 00:21:03,920 --&gt; 00:21:05,120</code>
+PDP</p>
+<p><code>697 00:21:05,120 --&gt; 00:21:07,640</code>
+PDP 11</p>
+<p><code>698 00:21:07,640 --&gt; 00:21:09,220</code>
+och simulatorerna behöver inte känna sig</p>
+<p><code>699 00:21:09,220 --&gt; 00:21:10,100</code>
+hotade längre.</p>
+<p><code>700 00:21:10,420 --&gt; 00:21:13,620</code>
+Det är bara att säga att Unix V4 släpptes 1973.</p>
+<p><code>701 00:21:14,520 --&gt; 00:21:15,540</code>
+Ja men då var det ändå på tiden</p>
+<p><code>702 00:21:15,540 --&gt; 00:21:16,300</code>
+att de fixade det här.</p>
+<p><code>703 00:21:16,300 --&gt; 00:21:18,100</code>
+Men det är efter epok eller?</p>
+<p><code>704 00:21:18,440 --&gt; 00:21:19,680</code>
+Jo men det är efter epok.</p>
+<p><code>705 00:21:20,660 --&gt; 00:21:21,180</code>
+Ja det är det.</p>
+<p><code>706 00:21:21,860 --&gt; 00:21:23,620</code>
+Ja det är väl 70-01-01 eller något här.</p>
+<p><code>707 00:21:25,020 --&gt; 00:21:25,700</code>
+Ska vi</p>
+<p><code>708 00:21:25,700 --&gt; 00:21:27,260</code>
+prata lite båtar eller?</p>
+<p><code>709 00:21:27,460 --&gt; 00:21:29,980</code>
+Alldeles för lite båtprat i den här</p>
+<p><code>710 00:21:29,980 --&gt; 00:21:31,180</code>
+showen faktiskt.</p>
+<p><code>711 00:21:31,280 --&gt; 00:21:33,160</code>
+Och vi är ändå i Göteborg som man kan tycka att det bor bra med.</p>
+<p><code>712 00:21:34,040 --&gt; 00:21:36,460</code>
+Känner ni till företaget Blue Spark Global?</p>
+<p><code>713 00:21:36,840 --&gt; 00:21:38,340</code>
+Det är ju ett household name ändå.</p>
+<p><code>714 00:21:38,840 --&gt; 00:21:39,200</code>
+Ja det är</p>
+<p><code>715 00:21:39,200 --&gt; 00:21:41,680</code>
+väldigt, alla har ju koll på dem.</p>
+<p><code>716 00:21:41,780 --&gt; 00:21:44,100</code>
+Eller hur? Jag känner inte heller till dem</p>
+<p><code>717 00:21:44,100 --&gt; 00:21:45,240</code>
+innan jag läser den här artikeln.</p>
+<p><code>718 00:21:45,300 --&gt; 00:21:47,360</code>
+Men det vill säga att Blue Spark Global är</p>
+<p><code>719 00:21:47,360 --&gt; 00:21:48,700</code>
+en av de ledande</p>
+<p><code>720 00:21:48,700 --&gt; 00:21:51,440</code>
+firmorna inom logistikmjukvara.</p>
+<p><code>721 00:21:51,860 --&gt; 00:21:53,660</code>
+Så de hanterar</p>
+<p><code>722 00:21:53,660 --&gt; 00:21:55,280</code>
+en försvarlig del av</p>
+<p><code>723 00:21:55,280 --&gt; 00:21:57,420</code>
+logistiksoftware</p>
+<p><code>724 00:21:57,420 --&gt; 00:21:59,180</code>
+för allt som skeppas</p>
+<p><code>725 00:21:59,180 --&gt; 00:22:00,600</code>
+runt på de</p>
+<p><code>726 00:22:00,600 --&gt; 00:22:02,960</code>
+sju haven. Ja hålla koll på</p>
+<p><code>727 00:22:02,960 --&gt; 00:22:05,020</code>
+container och sånt. Jag tycker känslan om att de har</p>
+<p><code>728 00:22:05,020 --&gt; 00:22:05,900</code>
+software as a service.</p>
+<p><code>729 00:22:06,180 --&gt; 00:22:08,780</code>
+De hostar känslan själva.</p>
+<p><code>730 00:22:09,200 --&gt; 00:22:11,080</code>
+Ja precis. Så är du</p>
+<p><code>731 00:22:11,080 --&gt; 00:22:13,060</code>
+kund där och planerar dina shipments</p>
+<p><code>732 00:22:13,060 --&gt; 00:22:13,480</code>
+och sånt.</p>
+<p><code>733 00:22:14,700 --&gt; 00:22:16,860</code>
+Det var en snubbe här som heter</p>
+<p><code>734 00:22:16,860 --&gt; 00:22:18,920</code>
+Ethon Sweer. Vilket är</p>
+<p><code>735 00:22:18,920 --&gt; 00:22:21,260</code>
+ett bra namn tycker jag. Ethon Sweer</p>
+<p><code>736 00:22:21,260 --&gt; 00:22:22,820</code>
+med Z. Såklart.</p>
+<p><code>737 00:22:23,360 --&gt; 00:22:25,040</code>
+Han hade varit inne och kollat</p>
+<p><code>738 00:22:25,040 --&gt; 00:22:26,620</code>
+på någon av kundernas</p>
+<p><code>739 00:22:26,620 --&gt; 00:22:28,480</code>
+en kund till Blue Spark sa</p>
+<p><code>740 00:22:28,480 --&gt; 00:22:31,080</code>
+oklart varför. Men där</p>
+<p><code>741 00:22:31,080 --&gt; 00:22:32,620</code>
+fanns i alla fall en kontaktformulär.</p>
+<p><code>742 00:22:33,780 --&gt; 00:22:34,260</code>
+Och han</p>
+<p><code>743 00:22:34,260 --&gt; 00:22:36,980</code>
+som det finns på många sidotajter. Han gick in och</p>
+<p><code>744 00:22:36,980 --&gt; 00:22:38,260</code>
+kollade på det här i alla fall och</p>
+<p><code>745 00:22:38,260 --&gt; 00:22:40,940</code>
+noterade att det här ser lite</p>
+<p><code>746 00:22:40,940 --&gt; 00:22:42,840</code>
+flummigt ut. API-anropen som</p>
+<p><code>747 00:22:42,840 --&gt; 00:22:44,780</code>
+görs när man skickar mail. Så han började</p>
+<p><code>748 00:22:44,780 --&gt; 00:22:46,480</code>
+kika lite på den funktionen och såg att</p>
+<p><code>749 00:22:46,480 --&gt; 00:22:47,880</code>
+här kan man ju styra</p>
+<p><code>750 00:22:47,880 --&gt; 00:22:50,740</code>
+varifrån mailen skickas och till vem</p>
+<p><code>751 00:22:50,740 --&gt; 00:22:52,720</code>
+den skickas. Det är ju bra från</p>
+<p><code>752 00:22:52,720 --&gt; 00:22:54,960</code>
+ett phishing-synpunkt.</p>
+<p><code>753 00:22:56,080 --&gt; 00:22:56,900</code>
+Eller dåligt</p>
+<p><code>754 00:22:56,900 --&gt; 00:22:58,660</code>
+beroende på vilken sida man sitter på.</p>
+<p><code>755 00:22:58,840 --&gt; 00:23:00,840</code>
+Men han fortsatte i alla fall kolla på det här och gick</p>
+<p><code>756 00:23:00,840 --&gt; 00:23:02,600</code>
+helt i soniket till själva</p>
+<p><code>757 00:23:02,600 --&gt; 00:23:04,580</code>
+API-domänen. Där fick han upp typ</p>
+<p><code>758 00:23:04,580 --&gt; 00:23:06,740</code>
+motsvarande swagger-dokumentation för API-et.</p>
+<p><code>759 00:23:07,040 --&gt; 00:23:08,220</code>
+Det är inte helt ovanligt.</p>
+<p><code>760 00:23:08,260 --&gt; 00:23:10,280</code>
+Att folk har det exponerat, även om de inte borde ha det.</p>
+<p><code>761 00:23:10,980 --&gt; 00:23:12,380</code>
+Det som däremot är lite</p>
+<p><code>762 00:23:12,380 --&gt; 00:23:14,220</code>
+ovanligt är att det</p>
+<p><code>763 00:23:14,220 --&gt; 00:23:15,760</code>
+visade sig att alla</p>
+<p><code>764 00:23:15,760 --&gt; 00:23:18,380</code>
+hela det här API-et var oautentiserat.</p>
+<p><code>765 00:23:18,820 --&gt; 00:23:20,360</code>
+Även om det stod det promptar</p>
+<p><code>766 00:23:20,360 --&gt; 00:23:22,020</code>
+för användarna av lösenord, men det krävdes inte.</p>
+<p><code>767 00:23:22,900 --&gt; 00:23:24,260</code>
+Så det kräver ingen token</p>
+<p><code>768 00:23:24,260 --&gt; 00:23:26,240</code>
+för att interagera med API-et. Och i API-et</p>
+<p><code>769 00:23:26,240 --&gt; 00:23:28,220</code>
+fanns det en hel del roliga funktioner som bland annat</p>
+<p><code>770 00:23:28,220 --&gt; 00:23:30,720</code>
+skapa ny användare med administratörsrättigheter.</p>
+<p><code>771 00:23:31,280 --&gt; 00:23:31,580</code>
+Bra.</p>
+<p><code>772 00:23:32,080 --&gt; 00:23:33,980</code>
+Vilket han helt soniket då sen gjorde.</p>
+<p><code>773 00:23:34,440 --&gt; 00:23:36,340</code>
+Var det här ett blue spark</p>
+<p><code>774 00:23:36,340 --&gt; 00:23:37,560</code>
+API då? Ja, det här alltså.</p>
+<p><code>775 00:23:38,260 --&gt; 00:23:40,520</code>
+Bluesparks själva egna API då.</p>
+<p><code>776 00:23:40,520 --&gt; 00:23:42,560</code>
+Och det var inte en egen</p>
+<p><code>777 00:23:42,560 --&gt; 00:23:44,680</code>
+domän för kunden, utan det var ett generiskt</p>
+<p><code>778 00:23:44,680 --&gt; 00:23:46,380</code>
+Ja, precis. Så kundens</p>
+<p><code>779 00:23:46,380 --&gt; 00:23:47,840</code>
+sajt konsumerade det API-et.</p>
+<p><code>780 00:23:48,160 --&gt; 00:23:50,320</code>
+Jag för mig att de hade typ alla säkerhetshåll</p>
+<p><code>781 00:23:50,320 --&gt; 00:23:52,280</code>
+om man kan göra en lista. Ja, pretty much.</p>
+<p><code>782 00:23:52,360 --&gt; 00:23:54,000</code>
+Jag tror att han rapporterade fem stycken.</p>
+<p><code>783 00:23:54,240 --&gt; 00:23:55,840</code>
+De läste ofast de tio</p>
+<p><code>784 00:23:55,840 --&gt; 00:23:58,380</code>
+och såg det som att det, så här ska vi göra.</p>
+<p><code>785 00:23:58,640 --&gt; 00:24:00,580</code>
+En annan sårbarhet som han hittade då</p>
+<p><code>786 00:24:00,580 --&gt; 00:24:02,260</code>
+eller ja, by design får man ju säga, men</p>
+<p><code>787 00:24:02,260 --&gt; 00:24:04,440</code>
+ett API-anrop du kunde göra så kunde du</p>
+<p><code>788 00:24:04,440 --&gt; 00:24:06,500</code>
+få ut alla användarnamn lösenord i</p>
+<p><code>789 00:24:06,500 --&gt; 00:24:08,000</code>
+klartext. Alla? Ja.</p>
+<p><code>790 00:24:08,260 --&gt; 00:24:10,420</code>
+Vad sa du, sketmånga då? Kundernas, administratörernas</p>
+<p><code>791 00:24:10,420 --&gt; 00:24:11,940</code>
+Ja, men alla kunder också.</p>
+<p><code>792 00:24:12,060 --&gt; 00:24:12,120</code>
+Ja.</p>
+<p><code>793 00:24:14,940 --&gt; 00:24:15,940</code>
+Så det är ju toppen.</p>
+<p><code>794 00:24:17,260 --&gt; 00:24:18,500</code>
+Och sen kunde han ju då</p>
+<p><code>795 00:24:18,500 --&gt; 00:24:20,420</code>
+logga in som en administratör och därifrån</p>
+<p><code>796 00:24:20,420 --&gt; 00:24:22,360</code>
+så ja, det är ju full owner.</p>
+<p><code>797 00:24:22,540 --&gt; 00:24:24,580</code>
+Bob&rsquo;s your uncle. Ja, där är du hemma.</p>
+<p><code>798 00:24:24,720 --&gt; 00:24:26,440</code>
+Det trodde man inte att man skulle se på dagens</p>
+<p><code>799 00:24:26,440 --&gt; 00:24:27,500</code>
+hittade. Ett öppet API.</p>
+<p><code>800 00:24:28,220 --&gt; 00:24:29,380</code>
+Så är det. Och sen så</p>
+<p><code>801 00:24:29,380 --&gt; 00:24:32,440</code>
+är han ju en snäll researcher, så han försöker</p>
+<p><code>802 00:24:32,440 --&gt; 00:24:34,500</code>
+ju kontakta de här människorna.</p>
+<p><code>803 00:24:35,180 --&gt; 00:24:36,140</code>
+Och först så</p>
+<p><code>804 00:24:36,140 --&gt; 00:24:37,900</code>
+snackade han med, vad hette de då?</p>
+<p><code>805 00:24:38,260 --&gt; 00:24:39,920</code>
+Maritime Hacking Village.</p>
+<p><code>806 00:24:40,420 --&gt; 00:24:42,040</code>
+Som är en non-profit. Bra start ändå.</p>
+<p><code>807 00:24:42,180 --&gt; 00:24:44,360</code>
+Ja, non-profit som jobbar med att hjälpa</p>
+<p><code>808 00:24:44,360 --&gt; 00:24:46,180</code>
+maritime security typ.</p>
+<p><code>809 00:24:46,220 --&gt; 00:24:47,700</code>
+Och de är också en</p>
+<p><code>810 00:24:47,700 --&gt; 00:24:49,920</code>
+registrerad, vad heter de?</p>
+<p><code>811 00:24:50,360 --&gt; 00:24:51,680</code>
+CNA det heter eller vad det heter.</p>
+<p><code>812 00:24:51,940 --&gt; 00:24:53,840</code>
+De får äga CVR och CNA.</p>
+<p><code>813 00:24:54,080 --&gt; 00:24:56,460</code>
+Så han snackade med dem och de hörde</p>
+<p><code>814 00:24:56,460 --&gt; 00:24:58,320</code>
+av sig till det här bolaget och han hörde av sig</p>
+<p><code>815 00:24:58,320 --&gt; 00:24:59,760</code>
+till bolaget och de hörde ingenting.</p>
+<p><code>816 00:25:00,380 --&gt; 00:25:02,460</code>
+Han går in på LinkedIn och börjar leta upp</p>
+<p><code>817 00:25:02,460 --&gt; 00:25:04,300</code>
+folk som jobbar på det här bolaget och skriver till dem.</p>
+<p><code>818 00:25:04,300 --&gt; 00:25:06,180</code>
+Han skriver till vdn, han ringer dem</p>
+<p><code>819 00:25:06,180 --&gt; 00:25:08,220</code>
+och lämnar röstmeddelande. Det är bara</p>
+<p><code>820 00:25:08,220 --&gt; 00:25:09,020</code>
+radio silence.</p>
+<p><code>821 00:25:10,580 --&gt; 00:25:12,020</code>
+Han hör av sig då, efter</p>
+<p><code>822 00:25:12,020 --&gt; 00:25:14,440</code>
+mycket om och med så hör han av sig till TechCrunch.</p>
+<p><code>823 00:25:15,340 --&gt; 00:25:16,180</code>
+Och så, alltså</p>
+<p><code>824 00:25:16,180 --&gt; 00:25:18,320</code>
+de svarar ju inte, ni kanske, kan ni göra</p>
+<p><code>825 00:25:18,320 --&gt; 00:25:19,640</code>
+av er? Ni gör ju kanske mer klout.</p>
+<p><code>826 00:25:20,360 --&gt; 00:25:22,400</code>
+De hör av sig. De skriver</p>
+<p><code>827 00:25:22,400 --&gt; 00:25:24,120</code>
+det upprepade tillfällen</p>
+<p><code>828 00:25:24,120 --&gt; 00:25:25,440</code>
+till vdn, får inget svar.</p>
+<p><code>829 00:25:27,560 --&gt; 00:25:28,440</code>
+Till slut</p>
+<p><code>830 00:25:28,440 --&gt; 00:25:30,720</code>
+så vänder de sig till</p>
+<p><code>831 00:25:30,720 --&gt; 00:25:32,380</code>
+Bluesparks</p>
+<p><code>832 00:25:32,380 --&gt; 00:25:33,120</code>
+största kund.</p>
+<p><code>833 00:25:34,320 --&gt; 00:25:36,580</code>
+Smart! Och hör av sig till dem direkt.</p>
+<p><code>834 00:25:36,840 --&gt; 00:25:38,180</code>
+För det är ju lätt att ta reda på vilken av deras största</p>
+<p><code>835 00:25:38,220 --&gt; 00:25:39,980</code>
+kunder. Det är ju bara att emnumerera alla användarna</p>
+<p><code>836 00:25:39,980 --&gt; 00:25:41,520</code>
+och se hur många det är till varje domän.</p>
+<p><code>837 00:25:41,760 --&gt; 00:25:42,520</code>
+Får fortfarande inget svar.</p>
+<p><code>838 00:25:43,740 --&gt; 00:25:46,420</code>
+Sen mejlar de ytterligare en gång</p>
+<p><code>839 00:25:46,420 --&gt; 00:25:47,360</code>
+till vdn.</p>
+<p><code>840 00:25:48,100 --&gt; 00:25:49,660</code>
+Får svar från The Legal Department.</p>
+<p><code>841 00:25:49,960 --&gt; 00:25:50,720</code>
+Ja, såklart.</p>
+<p><code>842 00:25:51,320 --&gt; 00:25:53,800</code>
+The best way of doing business is&hellip;</p>
+<p><code>843 00:25:53,800 --&gt; 00:25:55,340</code>
+Oh my god.</p>
+<p><code>844 00:25:56,020 --&gt; 00:25:58,180</code>
+Så han lyckas</p>
+<p><code>845 00:25:58,180 --&gt; 00:25:59,720</code>
+rapportera det här då i alla fall.</p>
+<p><code>846 00:25:59,920 --&gt; 00:26:02,560</code>
+Och de har nu gått ut och sagt att det här är fixat.</p>
+<p><code>847 00:26:03,000 --&gt; 00:26:03,680</code>
+Men jag menar,</p>
+<p><code>848 00:26:04,040 --&gt; 00:26:05,360</code>
+oautentiserad API.</p>
+<p><code>849 00:26:05,360 --&gt; 00:26:07,360</code>
+Ja, okej.</p>
+<p><code>850 00:26:08,220 --&gt; 00:26:10,120</code>
+Klartext-lösnån 2026.</p>
+<p><code>851 00:26:10,620 --&gt; 00:26:13,580</code>
+Det borde man ju ha löst för</p>
+<p><code>852 00:26:13,580 --&gt; 00:26:14,480</code>
+till 10 år.</p>
+<p><code>853 00:26:14,480 --&gt; 00:26:15,640</code>
+Ja, alla användarna av lösnån.</p>
+<p><code>854 00:26:15,640 --&gt; 00:26:17,340</code>
+Kunde du ta ut i klartext från API.</p>
+<p><code>855 00:26:17,540 --&gt; 00:26:19,580</code>
+Det var ingen MD5 eller någonting.</p>
+<p><code>856 00:26:20,600 --&gt; 00:26:23,200</code>
+Jag gillar också att det var ingen MD5</p>
+<p><code>857 00:26:23,200 --&gt; 00:26:24,520</code>
+eller någonting.</p>
+<p><code>858 00:26:24,940 --&gt; 00:26:25,880</code>
+Nej, men det vet man ju, Peter.</p>
+<p><code>859 00:26:26,320 --&gt; 00:26:28,580</code>
+Eller kanske slå till med en RC4.</p>
+<p><code>860 00:26:28,680 --&gt; 00:26:30,240</code>
+Nej, men det var inte S-Pace 64</p>
+<p><code>861 00:26:30,240 --&gt; 00:26:30,680</code>
+i koden.</p>
+<p><code>862 00:26:31,360 --&gt; 00:26:34,400</code>
+Det är inte så att de inte</p>
+<p><code>863 00:26:34,400 --&gt; 00:26:36,040</code>
+har uppdaterat sin härsning de senaste</p>
+<p><code>864 00:26:36,040 --&gt; 00:26:37,820</code>
+20 åren. De har aldrig implementerat.</p>
+<p><code>865 00:26:38,220 --&gt; 00:26:40,160</code>
+Nej, det tar ju så mycket datacykler.</p>
+<p><code>866 00:26:40,480 --&gt; 00:26:42,300</code>
+Nej, det hade ju verkligen hjälpt om det var MD5.</p>
+<p><code>867 00:26:42,760 --&gt; 00:26:43,580</code>
+Ja, nej, men&hellip;</p>
+<p><code>868 00:26:43,580 --&gt; 00:26:45,720</code>
+Det hade ju hjälpt mer än om det var klartext.</p>
+<p><code>869 00:26:46,280 --&gt; 00:26:47,500</code>
+Då hade de i alla fall gjort något.</p>
+<p><code>870 00:26:48,300 --&gt; 00:26:50,180</code>
+Nej, men, ja, så att man kan väl säga</p>
+<p><code>871 00:26:50,180 --&gt; 00:26:51,300</code>
+att de gjorde alla fel här, va?</p>
+<p><code>872 00:26:52,060 --&gt; 00:26:53,700</code>
+Och jag skulle också kunna tänka mig att</p>
+<p><code>873 00:26:53,700 --&gt; 00:26:56,220</code>
+han kanske inte var först som var inne i det här systemet.</p>
+<p><code>874 00:26:56,860 --&gt; 00:26:57,680</code>
+Nej, förmodligen inte.</p>
+<p><code>875 00:26:57,900 --&gt; 00:27:00,160</code>
+Det är ju ett rätt saftigt mål om du</p>
+<p><code>876 00:27:00,160 --&gt; 00:27:01,960</code>
+nu, ja, men säg att du</p>
+<p><code>877 00:27:01,960 --&gt; 00:27:04,100</code>
+ja, Nature State är ju en grej, men om du</p>
+<p><code>878 00:27:04,100 --&gt; 00:27:05,720</code>
+bara är en kriminell aktör,</p>
+<p><code>879 00:27:05,840 --&gt; 00:27:07,820</code>
+redirekta de här&hellip;</p>
+<p><code>880 00:27:08,220 --&gt; 00:27:10,280</code>
+Man kan se manifest och sånt, och se</p>
+<p><code>881 00:27:10,280 --&gt; 00:27:12,120</code>
+vad som är i, så är det ju superspirrigt.</p>
+<p><code>882 00:27:12,120 --&gt; 00:27:14,680</code>
+Typ för somaliska</p>
+<p><code>883 00:27:14,680 --&gt; 00:27:16,180</code>
+pirater och sånt är det ju jättebra</p>
+<p><code>884 00:27:16,180 --&gt; 00:27:18,260</code>
+att veta vilka båtar som har det bästa lasten.</p>
+<p><code>885 00:27:18,280 --&gt; 00:27:20,700</code>
+Och även snubbarna i</p>
+<p><code>886 00:27:20,700 --&gt; 00:27:22,500</code>
+Bolivia, tänkte jag säga.</p>
+<p><code>887 00:27:22,680 --&gt; 00:27:24,480</code>
+Men i knarkregionerna.</p>
+<p><code>888 00:27:25,680 --&gt; 00:27:26,040</code>
+Kokaingänget.</p>
+<p><code>889 00:27:26,280 --&gt; 00:27:28,040</code>
+Men är det Trump eller vad vill du ha sagt?</p>
+<p><code>890 00:27:29,100 --&gt; 00:27:30,400</code>
+Det är han i kokaintorsk, det kanske.</p>
+<p><code>891 00:27:30,720 --&gt; 00:27:32,420</code>
+Fan, de har slutat prata</p>
+<p><code>892 00:27:32,420 --&gt; 00:27:34,360</code>
+om det här med drogbåtar sedan de fick</p>
+<p><code>893 00:27:34,360 --&gt; 00:27:34,880</code>
+all olja, va?</p>
+<p><code>894 00:27:34,880 --&gt; 00:27:35,680</code>
+Ja, herregud.</p>
+<p><code>895 00:27:37,300 --&gt; 00:27:38,060</code>
+Bra, bra.</p>
+<p><code>896 00:27:38,220 --&gt; 00:27:40,160</code>
+Bra poäng, bra poäng. Vi har spelat in ett avsnitt</p>
+<p><code>897 00:27:40,160 --&gt; 00:27:42,440</code>
+innan det här, så IQ-nivån har</p>
+<p><code>898 00:27:42,440 --&gt; 00:27:44,500</code>
+Gått över</p>
+<p><code>899 00:27:44,500 --&gt; 00:27:45,000</code>
+bälgkurvan.</p>
+<p><code>900 00:27:45,460 --&gt; 00:27:48,340</code>
+Det var det om Blue Spark Global.</p>
+<p><code>901 00:27:48,560 --&gt; 00:27:49,220</code>
+Handla inte med dem.</p>
+<p><code>902 00:27:49,920 --&gt; 00:27:52,160</code>
+Det kom på ett säkerhetshåll</p>
+<p><code>903 00:27:52,160 --&gt; 00:27:54,440</code>
+som heter Mongo Bleed.</p>
+<p><code>904 00:27:54,640 --&gt; 00:27:56,040</code>
+Just det, nu går vi in på</p>
+<p><code>905 00:27:56,040 --&gt; 00:27:57,780</code>
+de riktigt icke-PK-namnet.</p>
+<p><code>906 00:27:57,800 --&gt; 00:27:59,440</code>
+Det är det bästa namnet i hela värdet.</p>
+<p><code>907 00:28:00,120 --&gt; 00:28:00,760</code>
+Mongo Bleed.</p>
+<p><code>908 00:28:01,580 --&gt; 00:28:04,400</code>
+Jag vet inte om, alltså det är bara på svenska</p>
+<p><code>909 00:28:04,400 --&gt; 00:28:05,520</code>
+det här problematiskt, eller?</p>
+<p><code>910 00:28:06,520 --&gt; 00:28:07,520</code>
+Alltså, jag vet inte.</p>
+<p><code>911 00:28:07,520 --&gt; 00:28:08,180</code>
+Jag vet inte.</p>
+<p><code>912 00:28:08,220 --&gt; 00:28:10,440</code>
+Ja, hur som helst.</p>
+<p><code>913 00:28:10,640 --&gt; 00:28:11,540</code>
+Det är alltså Mongo</p>
+<p><code>914 00:28:11,540 --&gt; 00:28:14,200</code>
+som är MongoDB. Jag vet inte</p>
+<p><code>915 00:28:14,200 --&gt; 00:28:16,340</code>
+bakgrunden till varför MongoDB är att det är MongoDB.</p>
+<p><code>916 00:28:16,960 --&gt; 00:28:17,180</code>
+Men,</p>
+<p><code>917 00:28:17,900 --&gt; 00:28:20,080</code>
+den är så här namngiven.</p>
+<p><code>918 00:28:20,440 --&gt; 00:28:21,960</code>
+Den är namngiven</p>
+<p><code>919 00:28:21,960 --&gt; 00:28:24,140</code>
+enligt</p>
+<p><code>920 00:28:24,140 --&gt; 00:28:26,600</code>
+den nomenklaturen som</p>
+<p><code>921 00:28:26,600 --&gt; 00:28:27,660</code>
+Heartbleed</p>
+<p><code>922 00:28:27,660 --&gt; 00:28:30,040</code>
+instiftade. Det vill säga</p>
+<p><code>923 00:28:30,040 --&gt; 00:28:30,800</code>
+att</p>
+<p><code>924 00:28:30,800 --&gt; 00:28:32,380</code>
+om du,</p>
+<p><code>925 00:28:33,020 --&gt; 00:28:34,540</code>
+när du</p>
+<p><code>926 00:28:34,540 --&gt; 00:28:36,460</code>
+du jobbar</p>
+<p><code>927 00:28:36,460 --&gt; 00:28:38,100</code>
+med ett API som gör en</p>
+<p><code>928 00:28:38,220 --&gt; 00:28:41,380</code>
+en heap-allokering</p>
+<p><code>929 00:28:41,380 --&gt; 00:28:42,440</code>
+i typ en mallock</p>
+<p><code>930 00:28:42,440 --&gt; 00:28:44,040</code>
+och så får du ut</p>
+<p><code>931 00:28:44,040 --&gt; 00:28:46,240</code>
+smutsig data.</p>
+<p><code>932 00:28:47,080 --&gt; 00:28:49,220</code>
+Vad som fanns på heapen</p>
+<p><code>933 00:28:49,220 --&gt; 00:28:50,140</code>
+är det väsentligen</p>
+<p><code>934 00:28:50,140 --&gt; 00:28:51,680</code>
+som du får ut då.</p>
+<p><code>935 00:28:51,940 --&gt; 00:28:54,640</code>
+Och så beror det på vad som finns på heapen.</p>
+<p><code>936 00:28:54,720 --&gt; 00:28:56,620</code>
+Det blir alltså aldrig nollat</p>
+<p><code>937 00:28:56,620 --&gt; 00:28:57,920</code>
+eller initialiserat då.</p>
+<p><code>938 00:28:58,400 --&gt; 00:28:59,460</code>
+Så det är ju första</p>
+<p><code>939 00:28:59,460 --&gt; 00:29:02,660</code>
+säkerhetshållet, problemet</p>
+<p><code>940 00:29:02,660 --&gt; 00:29:05,240</code>
+är ju att oinitialiserat</p>
+<p><code>941 00:29:05,240 --&gt; 00:29:07,340</code>
+minne används.</p>
+<p><code>942 00:29:07,680 --&gt; 00:29:08,200</code>
+Men,</p>
+<p><code>943 00:29:08,220 --&gt; 00:29:10,220</code>
+det blir ju bättre än så för att du</p>
+<p><code>944 00:29:10,220 --&gt; 00:29:12,520</code>
+du kan alltså då</p>
+<p><code>945 00:29:12,520 --&gt; 00:29:14,360</code>
+i ett request så kan du då</p>
+<p><code>946 00:29:14,360 --&gt; 00:29:15,720</code>
+skicka upp</p>
+<p><code>947 00:29:15,720 --&gt; 00:29:18,620</code>
+de har, du skickar</p>
+<p><code>948 00:29:18,620 --&gt; 00:29:19,140</code>
+alltså</p>
+<p><code>949 00:29:19,140 --&gt; 00:29:22,000</code>
+Bison, binär Jison</p>
+<p><code>950 00:29:22,000 --&gt; 00:29:24,580</code>
+som är komprimerad</p>
+<p><code>951 00:29:24,580 --&gt; 00:29:26,380</code>
+med, jag tror det var Z-lib</p>
+<p><code>952 00:29:26,380 --&gt; 00:29:27,100</code>
+komprimation och så.</p>
+<p><code>953 00:29:29,340 --&gt; 00:29:29,900</code>
+Och</p>
+<p><code>954 00:29:29,900 --&gt; 00:29:32,400</code>
+istället för</p>
+<p><code>955 00:29:32,400 --&gt; 00:29:33,100</code>
+att</p>
+<p><code>956 00:29:33,100 --&gt; 00:29:36,440</code>
+istället för att du skickar</p>
+<p><code>957 00:29:36,440 --&gt; 00:29:37,980</code>
+så mycket data som av,</p>
+<p><code>958 00:29:38,220 --&gt; 00:29:40,220</code>
+det komprimeringen blev,</p>
+<p><code>959 00:29:40,220 --&gt; 00:29:44,220</code>
+så blir den alltså att</p>
+<p><code>960 00:29:44,220 --&gt; 00:29:46,220</code>
+den tar ett variabelvärde</p>
+<p><code>961 00:29:47,260 --&gt; 00:29:48,220</code>
+och</p>
+<p><code>962 00:29:48,220 --&gt; 00:29:50,220</code>
+som kommer</p>
+<p><code>963 00:29:50,800 --&gt; 00:29:52,300</code>
+i paketet från fienden.</p>
+<p><code>964 00:29:53,060 --&gt; 00:29:54,180</code>
+Så det</p>
+<p><code>965 00:29:54,180 --&gt; 00:29:56,600</code>
+definierar hur stort paketet är.</p>
+<p><code>966 00:29:56,720 --&gt; 00:29:57,480</code>
+Ge mig en megabyte.</p>
+<p><code>967 00:29:58,780 --&gt; 00:30:00,520</code>
+Och sen så var det ytterligare</p>
+<p><code>968 00:30:00,520 --&gt; 00:30:02,040</code>
+någon bug där du kunde då alltså</p>
+<p><code>969 00:30:02,040 --&gt; 00:30:04,720</code>
+Du vet man ju ser in, man ska alltid lita på det klienten säger.</p>
+<p><code>970 00:30:06,020 --&gt; 00:30:07,960</code>
+Det är ju en binär Jison</p>
+<p><code>971 00:30:08,220 --&gt; 00:30:10,540</code>
+men du kan ju skicka in</p>
+<p><code>972 00:30:10,540 --&gt; 00:30:12,440</code>
+felaktig Jison och</p>
+<p><code>973 00:30:12,440 --&gt; 00:30:14,180</code>
+du kan, och</p>
+<p><code>974 00:30:14,180 --&gt; 00:30:16,240</code>
+i den här Bison</p>
+<p><code>975 00:30:16,240 --&gt; 00:30:17,360</code>
+binär Jison</p>
+<p><code>976 00:30:17,360 --&gt; 00:30:19,880</code>
+strukturen så har du alltså</p>
+<p><code>977 00:30:19,880 --&gt; 00:30:21,380</code>
+C-strängar</p>
+<p><code>978 00:30:21,380 --&gt; 00:30:24,020</code>
+som alltså är en sträng</p>
+<p><code>979 00:30:24,020 --&gt; 00:30:25,800</code>
+med en nullterminering.</p>
+<p><code>980 00:30:26,800 --&gt; 00:30:28,240</code>
+Så om du skickar in</p>
+<p><code>981 00:30:28,240 --&gt; 00:30:29,100</code>
+en Jison</p>
+<p><code>982 00:30:29,100 --&gt; 00:30:31,180</code>
+och du</p>
+<p><code>983 00:30:31,180 --&gt; 00:30:34,740</code>
+och du</p>
+<p><code>984 00:30:34,740 --&gt; 00:30:37,960</code>
+helt enkelt väljer att inte</p>
+<p><code>985 00:30:37,960 --&gt; 00:30:38,880</code>
+nullterminera</p>
+<p><code>986 00:30:38,880 --&gt; 00:30:42,300</code>
+så kommer den då</p>
+<p><code>987 00:30:42,300 --&gt; 00:30:44,920</code>
+Z-alib</p>
+<p><code>988 00:30:44,920 --&gt; 00:30:46,220</code>
+av komprimera</p>
+<p><code>989 00:30:46,220 --&gt; 00:30:48,680</code>
+requestet från klienten</p>
+<p><code>990 00:30:48,680 --&gt; 00:30:50,760</code>
+den kommer skapa ett objekt</p>
+<p><code>991 00:30:50,760 --&gt; 00:30:51,420</code>
+som då är</p>
+<p><code>992 00:30:51,420 --&gt; 00:30:54,820</code>
+X storlek i minnet</p>
+<p><code>993 00:30:54,820 --&gt; 00:30:57,040</code>
+varav det mesta då är</p>
+<p><code>994 00:30:57,040 --&gt; 00:30:58,860</code>
+vad som nu låg på</p>
+<p><code>995 00:30:58,860 --&gt; 00:31:00,940</code>
+heapen från vilken del</p>
+<p><code>996 00:31:00,940 --&gt; 00:31:02,100</code>
+av heapen du nu fick ifrån.</p>
+<p><code>997 00:31:04,100 --&gt; 00:31:04,760</code>
+Så att det är</p>
+<p><code>998 00:31:04,760 --&gt; 00:31:06,680</code>
+minne som fanns</p>
+<p><code>999 00:31:06,680 --&gt; 00:31:07,320</code>
+i din</p>
+<p><code>1000 00:31:07,320 --&gt; 00:31:09,460</code>
+i din programbild</p>
+<p><code>1001 00:31:09,460 --&gt; 00:31:11,400</code>
+men inte minne som är</p>
+<p><code>1002 00:31:11,400 --&gt; 00:31:13,560</code>
+initialiserat eller avsett</p>
+<p><code>1003 00:31:13,560 --&gt; 00:31:14,720</code>
+för att komma ut till användaren.</p>
+<p><code>1004 00:31:15,720 --&gt; 00:31:17,840</code>
+Och så skickar du en sträng</p>
+<p><code>1005 00:31:17,840 --&gt; 00:31:19,780</code>
+som inte har något slut.</p>
+<p><code>1006 00:31:20,640 --&gt; 00:31:21,400</code>
+Och då kommer</p>
+<p><code>1007 00:31:21,400 --&gt; 00:31:23,420</code>
+du få ett felmeddelande</p>
+<p><code>1008 00:31:23,420 --&gt; 00:31:24,800</code>
+och det felmeddelandet</p>
+<p><code>1009 00:31:24,800 --&gt; 00:31:27,260</code>
+fylls upp med</p>
+<p><code>1010 00:31:27,260 --&gt; 00:31:29,860</code>
+strängen då är nolltecken</p>
+<p><code>1011 00:31:29,860 --&gt; 00:31:30,960</code>
+lång eller så.</p>
+<p><code>1012 00:31:31,540 --&gt; 00:31:33,180</code>
+Så kommer den säga då</p>
+<p><code>1013 00:31:33,180 --&gt; 00:31:33,800</code>
+det är fel</p>
+<p><code>1014 00:31:33,800 --&gt; 00:31:37,180</code>
+i din Bison vid det här objektet.</p>
+<p><code>1015 00:31:37,320 --&gt; 00:31:39,820</code>
+Och så säger felmeddelandet</p>
+<p><code>1016 00:31:39,820 --&gt; 00:31:41,840</code>
+då det lilla du skickade i din sträng</p>
+<p><code>1017 00:31:41,840 --&gt; 00:31:43,220</code>
+fyllt med</p>
+<p><code>1018 00:31:43,220 --&gt; 00:31:45,880</code>
+resten av minnet</p>
+<p><code>1019 00:31:45,880 --&gt; 00:31:48,000</code>
+som du har bett om.</p>
+<p><code>1020 00:31:48,000 --&gt; 00:31:48,640</code>
+Har du tur</p>
+<p><code>1021 00:31:48,640 --&gt; 00:31:50,880</code>
+att du ber om att det skulle vara</p>
+<p><code>1022 00:31:50,880 --&gt; 00:31:53,340</code>
+hundra mängd eller någonting så kommer</p>
+<p><code>1023 00:31:53,340 --&gt; 00:31:55,380</code>
+du få det minnet fram tills första</p>
+<p><code>1024 00:31:55,380 --&gt; 00:31:56,780</code>
+binära nollan kommer</p>
+<p><code>1025 00:31:56,780 --&gt; 00:31:58,860</code>
+slumpmässigt på heapen.</p>
+<p><code>1026 00:31:59,640 --&gt; 00:32:01,340</code>
+Så i vissa request får du tillbaks</p>
+<p><code>1027 00:32:01,340 --&gt; 00:32:03,360</code>
+lite grann och i andra</p>
+<p><code>1028 00:32:03,360 --&gt; 00:32:04,760</code>
+request så får du tillbaks</p>
+<p><code>1029 00:32:04,760 --&gt; 00:32:06,700</code>
+liksom superduper mycket.</p>
+<p><code>1030 00:32:07,320 --&gt; 00:32:09,060</code>
+Jag har också gjort</p>
+<p><code>1031 00:32:09,060 --&gt; 00:32:10,020</code>
+research</p>
+<p><code>1032 00:32:10,020 --&gt; 00:32:12,580</code>
+MongoDB heter det</p>
+<p><code>1033 00:32:12,580 --&gt; 00:32:14,800</code>
+för att det är en väldigt konstig</p>
+<p><code>1034 00:32:14,800 --&gt; 00:32:16,600</code>
+förkortning av humongous.</p>
+<p><code>1035 00:32:17,580 --&gt; 00:32:18,980</code>
+Det är jättekonstigt</p>
+<p><code>1036 00:32:18,980 --&gt; 00:32:19,820</code>
+men det säger internet.</p>
+<p><code>1037 00:32:21,340 --&gt; 00:32:21,700</code>
+Ja kan jag.</p>
+<p><code>1038 00:32:23,320 --&gt; 00:32:24,400</code>
+HumongousDB bleed.</p>
+<p><code>1039 00:32:24,620 --&gt; 00:32:26,080</code>
+Får det inte vara MongoDB då?</p>
+<p><code>1040 00:32:26,860 --&gt; 00:32:27,580</code>
+Ja pass.</p>
+<p><code>1041 00:32:28,000 --&gt; 00:32:30,540</code>
+Men det här låter ju jättedåligt.</p>
+<p><code>1042 00:32:31,740 --&gt; 00:32:31,820</code>
+Jo.</p>
+<p><code>1043 00:32:32,940 --&gt; 00:32:34,800</code>
+En sak som jag reflekterade över när jag</p>
+<p><code>1044 00:32:34,800 --&gt; 00:32:36,700</code>
+hörde om den här var hur ofta</p>
+<p><code>1045 00:32:37,320 --&gt; 00:32:38,980</code>
+att man verkligen publicerar</p>
+<p><code>1046 00:32:38,980 --&gt; 00:32:41,700</code>
+sin databas ut på internetet.</p>
+<p><code>1047 00:32:43,700 --&gt; 00:32:44,140</code>
+Ja.</p>
+<p><code>1048 00:32:45,260 --&gt; 00:32:47,420</code>
+Eller är det i frågor som</p>
+<p><code>1049 00:32:47,420 --&gt; 00:32:48,600</code>
+hamnar i databasen?</p>
+<p><code>1050 00:32:48,600 --&gt; 00:32:49,780</code>
+Ja det är frågan om.</p>
+<p><code>1051 00:32:50,140 --&gt; 00:32:51,260</code>
+Känner man ha ett mellanlager där?</p>
+<p><code>1052 00:32:51,540 --&gt; 00:32:52,660</code>
+Vart är vi exakt?</p>
+<p><code>1053 00:32:52,840 --&gt; 00:32:54,980</code>
+Ja alltså du behöver ju</p>
+<p><code>1054 00:32:54,980 --&gt; 00:32:58,400</code>
+du behöver kunna skicka</p>
+<p><code>1055 00:32:58,400 --&gt; 00:32:59,700</code>
+du behöver kunna skicka</p>
+<p><code>1056 00:32:59,700 --&gt; 00:33:01,240</code>
+ett väldigt konstigt objekt</p>
+<p><code>1057 00:33:01,240 --&gt; 00:33:03,660</code>
+så att om det finns</p>
+<p><code>1058 00:33:03,660 --&gt; 00:33:05,480</code>
+något obskurt attackscenario</p>
+<p><code>1059 00:33:05,480 --&gt; 00:33:07,120</code>
+och det ska väl vara</p>
+<p><code>1060 00:33:07,120 --&gt; 00:33:08,800</code>
+osagt men det uppenbara</p>
+<p><code>1061 00:33:08,800 --&gt; 00:33:10,100</code>
+attackscenariet är ju att</p>
+<p><code>1062 00:33:10,100 --&gt; 00:33:13,180</code>
+MongoDB databasen</p>
+<p><code>1063 00:33:13,180 --&gt; 00:33:14,940</code>
+är åtminstone möjligt att kommunicera</p>
+<p><code>1064 00:33:14,940 --&gt; 00:33:16,600</code>
+men det krävs ju ingen autentisering</p>
+<p><code>1065 00:33:16,600 --&gt; 00:33:18,000</code>
+eller något om jag har fattat det rätt utan.</p>
+<p><code>1066 00:33:18,320 --&gt; 00:33:19,780</code>
+Vilket också är konstigt tycker jag.</p>
+<p><code>1067 00:33:20,520 --&gt; 00:33:22,760</code>
+Allt det här sker alltså innan Ås då?</p>
+<p><code>1068 00:33:23,420 --&gt; 00:33:23,580</code>
+Mm.</p>
+<p><code>1069 00:33:24,680 --&gt; 00:33:26,620</code>
+Inte orimligt i sig det skulle kunna vara så.</p>
+<p><code>1070 00:33:27,560 --&gt; 00:33:28,900</code>
+Ås kan ju vara en av grejerna</p>
+<p><code>1071 00:33:28,900 --&gt; 00:33:29,940</code>
+som man ska skicka i den här</p>
+<p><code>1072 00:33:29,940 --&gt; 00:33:32,020</code>
+B-son-bobban.</p>
+<p><code>1073 00:33:32,320 --&gt; 00:33:34,320</code>
+Men så tänker jag såhär</p>
+<p><code>1074 00:33:34,320 --&gt; 00:33:35,480</code>
+okej det borde inte vara</p>
+<p><code>1075 00:33:35,480 --&gt; 00:33:37,100</code>
+det var, jag hoppas,</p>
+<p><code>1076 00:33:37,120 --&gt; 00:33:38,260</code>
+jag hoppas inte att det är det vanligaste</p>
+<p><code>1077 00:33:38,260 --&gt; 00:33:40,160</code>
+patent att man exponerar sin databas</p>
+<p><code>1078 00:33:40,160 --&gt; 00:33:42,360</code>
+externt men det finns ju ett garanterat fall</p>
+<p><code>1079 00:33:42,360 --&gt; 00:33:42,880</code>
+där det händer.</p>
+<p><code>1080 00:33:43,500 --&gt; 00:33:46,120</code>
+Och sen låt oss säga att du är en</p>
+<p><code>1081 00:33:46,120 --&gt; 00:33:48,040</code>
+MongoDB hosting</p>
+<p><code>1082 00:33:48,040 --&gt; 00:33:48,740</code>
+partner.</p>
+<p><code>1083 00:33:49,520 --&gt; 00:33:52,020</code>
+Då är det ju det som du gör som business</p>
+<p><code>1084 00:33:52,020 --&gt; 00:33:53,340</code>
+men om jag har fattat det rätt så just</p>
+<p><code>1085 00:33:53,340 --&gt; 00:33:55,600</code>
+det heter något speciellt typ MongoAtlas</p>
+<p><code>1086 00:33:55,600 --&gt; 00:33:57,900</code>
+och det var inte sårbart i den här.</p>
+<p><code>1087 00:33:58,380 --&gt; 00:33:59,400</code>
+De hade fixat det eller</p>
+<p><code>1088 00:33:59,400 --&gt; 00:34:02,060</code>
+inte jobbat på ett annat sätt eller något sånt här.</p>
+<p><code>1089 00:34:02,440 --&gt; 00:34:04,060</code>
+Men man kan väl också säga</p>
+<p><code>1090 00:34:04,060 --&gt; 00:34:04,900</code>
+att</p>
+<p><code>1091 00:34:07,120 --&gt; 00:34:10,620</code>
+förhoppningsvis är det ju en minoritet</p>
+<p><code>1092 00:34:10,620 --&gt; 00:34:12,480</code>
+som är sårbara</p>
+<p><code>1093 00:34:12,480 --&gt; 00:34:14,680</code>
+från internet men vi har ju också</p>
+<p><code>1094 00:34:14,680 --&gt; 00:34:16,620</code>
+den problembilden runt</p>
+<p><code>1095 00:34:16,620 --&gt; 00:34:18,200</code>
+letter of moment och sånt</p>
+<p><code>1096 00:34:18,200 --&gt; 00:34:20,360</code>
+att om någon redan har den hållfasen i ett punkt</p>
+<p><code>1097 00:34:20,360 --&gt; 00:34:22,420</code>
+så är det ju inte så bra</p>
+<p><code>1098 00:34:22,420 --&gt; 00:34:22,960</code>
+om den här ligger där.</p>
+<p><code>1099 00:34:23,900 --&gt; 00:34:24,280</code>
+Och sen</p>
+<p><code>1100 00:34:24,280 --&gt; 00:34:27,860</code>
+sen så kan man ju också säga att</p>
+<p><code>1101 00:34:27,860 --&gt; 00:34:30,540</code>
+ju mindre känsligt du har i din databas</p>
+<p><code>1102 00:34:30,540 --&gt; 00:34:31,580</code>
+desto bättre.</p>
+<p><code>1103 00:34:31,860 --&gt; 00:34:34,640</code>
+Men det som kan vara</p>
+<p><code>1104 00:34:34,640 --&gt; 00:34:36,500</code>
+otroligt det är ju om du om någon anledning</p>
+<p><code>1105 00:34:37,120 --&gt; 00:34:39,040</code>
+i MongoDBs</p>
+<p><code>1106 00:34:39,040 --&gt; 00:34:41,160</code>
+världsbild så har du någon gång</p>
+<p><code>1107 00:34:41,160 --&gt; 00:34:43,220</code>
+typ läst upp</p>
+<p><code>1108 00:34:43,220 --&gt; 00:34:44,800</code>
+miljövariabler</p>
+<p><code>1109 00:34:44,800 --&gt; 00:34:46,640</code>
+eller du har några nycklar</p>
+<p><code>1110 00:34:46,640 --&gt; 00:34:48,740</code>
+eller någonting som ligger i ditt minne</p>
+<p><code>1111 00:34:48,740 --&gt; 00:34:51,520</code>
+och har någon då</p>
+<p><code>1112 00:34:51,520 --&gt; 00:34:53,120</code>
+tur att den kan få</p>
+<p><code>1113 00:34:53,120 --&gt; 00:34:54,960</code>
+att den</p>
+<p><code>1114 00:34:54,960 --&gt; 00:34:57,140</code>
+strängreferens kommer i ett</p>
+<p><code>1115 00:34:57,140 --&gt; 00:34:58,800</code>
+heapobjekt som ligger då</p>
+<p><code>1116 00:34:58,800 --&gt; 00:35:01,040</code>
+jag vet inte om man säger till vänster</p>
+<p><code>1117 00:35:01,040 --&gt; 00:35:03,280</code>
+eller före där så kan du</p>
+<p><code>1118 00:35:03,280 --&gt; 00:35:04,620</code>
+ha tur då att komma</p>
+<p><code>1119 00:35:04,620 --&gt; 00:35:06,640</code>
+och springa över och</p>
+<p><code>1120 00:35:06,640 --&gt; 00:35:06,900</code>
+liksom</p>
+<p><code>1121 00:35:06,900 --&gt; 00:35:08,600</code>
+koppla i det och komma åt dem</p>
+<p><code>1122 00:35:08,600 --&gt; 00:35:09,260</code>
+grejerna då.</p>
+<p><code>1123 00:35:10,760 --&gt; 00:35:11,700</code>
+Det är ju inte möjligt.</p>
+<p><code>1124 00:35:12,160 --&gt; 00:35:14,040</code>
+Men det här kan man ju också säga att</p>
+<p><code>1125 00:35:14,040 --&gt; 00:35:16,720</code>
+det är ju</p>
+<p><code>1126 00:35:16,720 --&gt; 00:35:18,260</code>
+dels en bunt logikproblem här</p>
+<p><code>1127 00:35:18,260 --&gt; 00:35:20,860</code>
+så att delar av det här är ju</p>
+<p><code>1128 00:35:20,860 --&gt; 00:35:23,280</code>
+klassiska</p>
+<p><code>1129 00:35:23,280 --&gt; 00:35:24,120</code>
+programmeringsproblem</p>
+<p><code>1130 00:35:24,120 --&gt; 00:35:26,580</code>
+men det andra är ju också att</p>
+<p><code>1131 00:35:26,580 --&gt; 00:35:28,540</code>
+uppenbarligen används det</p>
+<p><code>1132 00:35:28,540 --&gt; 00:35:30,300</code>
+typ en mallock liknande</p>
+<p><code>1133 00:35:30,300 --&gt; 00:35:32,260</code>
+allokerare som inte</p>
+<p><code>1134 00:35:32,260 --&gt; 00:35:34,180</code>
+nuller in i tillgängligheten.</p>
+<p><code>1135 00:35:34,180 --&gt; 00:35:35,900</code>
+När jag på skola är så</p>
+<p><code>1136 00:35:35,900 --&gt; 00:35:38,000</code>
+du behöver inte alls sitta direkt på databasen</p>
+<p><code>1137 00:35:38,000 --&gt; 00:35:39,520</code>
+utan det räcker via den här</p>
+<p><code>1138 00:35:39,520 --&gt; 00:35:42,220</code>
+via såhär MongoDVs</p>
+<p><code>1139 00:35:42,220 --&gt; 00:35:44,060</code>
+driver så länge du har ett API</p>
+<p><code>1140 00:35:44,060 --&gt; 00:35:45,760</code>
+som kommer att skicka</p>
+<p><code>1141 00:35:45,760 --&gt; 00:35:47,940</code>
+ISONen vidare så kan du extenda</p>
+<p><code>1142 00:35:47,940 --&gt; 00:35:49,620</code>
+ditt ISONpaket</p>
+<p><code>1143 00:35:49,620 --&gt; 00:35:51,520</code>
+med de här</p>
+<p><code>1144 00:35:51,520 --&gt; 00:35:55,700</code>
+du behöver både kunna spesa</p>
+<p><code>1145 00:35:55,700 --&gt; 00:35:58,020</code>
+storleken och du behöver kunna skicka</p>
+<p><code>1146 00:35:58,020 --&gt; 00:35:59,260</code>
+en defekt</p>
+<p><code>1147 00:35:59,260 --&gt; 00:36:01,340</code>
+BESONsträng.</p>
+<p><code>1148 00:36:01,340 --&gt; 00:36:03,160</code>
+Ja exakt men det kan ju vara i</p>
+<p><code>1149 00:36:03,160 --&gt; 00:36:03,680</code>
+ett API.</p>
+<p><code>1150 00:36:04,780 --&gt; 00:36:05,700</code>
+Det kan de göra.</p>
+<p><code>1151 00:36:05,900 --&gt; 00:36:08,840</code>
+De kommer prata exakt i alla fall</p>
+<p><code>1152 00:36:08,840 --&gt; 00:36:10,500</code>
+om man ska titta på pocken så ser det ut</p>
+<p><code>1153 00:36:10,500 --&gt; 00:36:11,840</code>
+som att de men det är frågan hur vanligt</p>
+<p><code>1154 00:36:11,840 --&gt; 00:36:13,620</code>
+det är men i pocken då gissar jag på</p>
+<p><code>1155 00:36:13,620 --&gt; 00:36:15,260</code>
+då använder de den driver så att säga</p>
+<p><code>1156 00:36:15,260 --&gt; 00:36:16,880</code>
+exakt men då använder de en vanlig</p>
+<p><code>1157 00:36:16,880 --&gt; 00:36:18,220</code>
+det ser ut som ett vanligt API här</p>
+<p><code>1158 00:36:18,220 --&gt; 00:36:20,920</code>
+liksom och då finns det någon</p>
+<p><code>1159 00:36:20,920 --&gt; 00:36:22,860</code>
+MongoDV driver här som en MongoDB</p>
+<p><code>1160 00:36:22,860 --&gt; 00:36:25,060</code>
+driver som drar vidare detta</p>
+<p><code>1161 00:36:25,060 --&gt; 00:36:26,520</code>
+då så ser man hela men jag menar</p>
+<p><code>1162 00:36:26,520 --&gt; 00:36:28,560</code>
+i en applikationssättning när du</p>
+<p><code>1163 00:36:28,560 --&gt; 00:36:30,340</code>
+om du till exempel har MongoDB som</p>
+<p><code>1164 00:36:30,340 --&gt; 00:36:33,140</code>
+baksnöre till en web</p>
+<p><code>1165 00:36:33,140 --&gt; 00:36:35,120</code>
+grej eller något där då har du</p>
+<p><code>1166 00:36:35,120 --&gt; 00:36:35,800</code>
+ju inte alls den här</p>
+<p><code>1167 00:36:35,900 --&gt; 00:36:37,300</code>
+möjligheten du jobbar ju på ett web</p>
+<p><code>1168 00:36:37,300 --&gt; 00:36:39,220</code>
+gui då menar jag så jag menar bara</p>
+<p><code>1169 00:36:39,220 --&gt; 00:36:40,800</code>
+för det finns ju ingen injection</p>
+<p><code>1170 00:36:40,800 --&gt; 00:36:42,440</code>
+möjlighet här vid en jävla parameter</p>
+<p><code>1171 00:36:42,440 --&gt; 00:36:42,900</code>
+eller någonting.</p>
+<p><code>1172 00:36:42,900 --&gt; 00:36:44,140</code>
+Det borde ju inte ha sådana</p>
+<p><code>1173 00:36:44,140 --&gt; 00:36:44,960</code>
+crud bara rakt upp.</p>
+<p><code>1174 00:36:44,960 --&gt; 00:36:47,600</code>
+Nej jag menar det exakt utan det</p>
+<p><code>1175 00:36:47,600 --&gt; 00:36:49,340</code>
+krävs ju relativt rå access i alla</p>
+<p><code>1176 00:36:49,340 --&gt; 00:36:51,520</code>
+fall förmodligen.</p>
+<p><code>1177 00:36:51,520 --&gt; 00:36:54,260</code>
+Ja men kul sågbörjare dock.</p>
+<p><code>1178 00:36:54,260 --&gt; 00:36:55,600</code>
+Yes.</p>
+<p><code>1179 00:36:55,600 --&gt; 00:36:58,100</code>
+Reboot UEFI.</p>
+<p><code>1180 00:36:58,100 --&gt; 00:36:59,360</code>
+Ja det låter som.</p>
+<p><code>1181 00:36:59,360 --&gt; 00:37:00,020</code>
+Robot.</p>
+<p><code>1182 00:37:00,020 --&gt; 00:37:00,520</code>
+Nej nej nej.</p>
+<p><code>1183 00:37:00,520 --&gt; 00:37:01,420</code>
+Trollbot.</p>
+<p><code>1184 00:37:01,420 --&gt; 00:37:02,220</code>
+Preboot.</p>
+<p><code>1185 00:37:02,220 --&gt; 00:37:04,580</code>
+Preboot UEFI.</p>
+<p><code>1186 00:37:04,580 --&gt; 00:37:05,020</code>
+Trollhat.</p>
+<p><code>1187 00:37:05,020 --&gt; 00:37:05,520</code>
+Det är det.</p>
+<p><code>1188 00:37:05,900 --&gt; 00:37:07,460</code>
+Det händer ett antal gånger att</p>
+<p><code>1189 00:37:07,460 --&gt; 00:37:12,620</code>
+Johan misshandlar min fina handstilar.</p>
+<p><code>1190 00:37:12,620 --&gt; 00:37:15,400</code>
+Vanguard det är ju något sådana här</p>
+<p><code>1191 00:37:15,400 --&gt; 00:37:18,840</code>
+gamer och företag som gör den.</p>
+<p><code>1192 00:37:18,840 --&gt; 00:37:19,660</code>
+Har du koll på det?</p>
+<p><code>1193 00:37:19,660 --&gt; 00:37:22,380</code>
+Vanguard är inte det index?</p>
+<p><code>1194 00:37:22,380 --&gt; 00:37:23,260</code>
+Ja ja just det.</p>
+<p><code>1195 00:37:23,260 --&gt; 00:37:23,860</code>
+Jo det vet jag.</p>
+<p><code>1196 00:37:23,860 --&gt; 00:37:25,580</code>
+Det är någon av spelutvecklarna.</p>
+<p><code>1197 00:37:25,580 --&gt; 00:37:27,360</code>
+Jag kan inte för mitt liv komma på</p>
+<p><code>1198 00:37:27,360 --&gt; 00:37:29,780</code>
+är det Rockstar eller något</p>
+<p><code>1199 00:37:29,780 --&gt; 00:37:31,380</code>
+något utvecklar gängen som kör</p>
+<p><code>1200 00:37:31,380 --&gt; 00:37:32,380</code>
+Vanguard i vart fall.</p>
+<p><code>1201 00:37:32,380 --&gt; 00:37:33,460</code>
+Är det någon sån här</p>
+<p><code>1202 00:37:33,460 --&gt; 00:37:34,780</code>
+cheat protection grej eller?</p>
+<p><code>1203 00:37:34,780 --&gt; 00:37:35,020</code>
+Ja.</p>
+<p><code>1204 00:37:35,020 --&gt; 00:37:36,280</code>
+Ja vilket fan det är.</p>
+<p><code>1205 00:37:36,280 --&gt; 00:37:38,520</code>
+Så dom bryr sig om.</p>
+<p><code>1206 00:37:38,520 --&gt; 00:37:39,320</code>
+Är det Epic?</p>
+<p><code>1207 00:37:39,320 --&gt; 00:37:40,560</code>
+Nej.</p>
+<p><code>1208 00:37:40,560 --&gt; 00:37:43,020</code>
+Dom bryr sig om säkerhet.</p>
+<p><code>1209 00:37:43,020 --&gt; 00:37:47,420</code>
+Och dom har ju.</p>
+<p><code>1210 00:37:47,420 --&gt; 00:37:48,760</code>
+Det är Riot Games.</p>
+<p><code>1211 00:37:48,760 --&gt; 00:37:49,420</code>
+Riot Games.</p>
+<p><code>1212 00:37:49,420 --&gt; 00:37:50,120</code>
+Okej.</p>
+<p><code>1213 00:37:50,120 --&gt; 00:37:55,940</code>
+Men dom har ju modellen att dom kickar igång innan operativsystemet.</p>
+<p><code>1214 00:37:55,940 --&gt; 00:38:00,980</code>
+Så att dom är det första och det coolaste som kör.</p>
+<p><code>1215 00:38:00,980 --&gt; 00:38:05,020</code>
+Och så kollar dom att alla säkerhetsgrejer är bra och så sen.</p>
+<p><code>1216 00:38:05,020 --&gt; 00:38:17,820</code>
+När OS-et går igång och sånt så ligger dom där som en liten glad backdoor eller rothit eller vad vi kallar det och kan berätta hur cheatsäkert operativsystemet är.</p>
+<p><code>1217 00:38:17,820 --&gt; 00:38:33,140</code>
+Det som är intressant då är ju att oberoende om vi bryr oss om fuskar eller inte så har ju dom fokuserat på att hitta sätt att umgå, alltså kringgå sin egen säkerhetsmodell.</p>
+<p><code>1218 00:38:33,140 --&gt; 00:38:34,380</code>
+Så dom letar efter.</p>
+<p><code>1219 00:38:34,380 --&gt; 00:38:34,840</code>
+Ja.</p>
+<p><code>1220 00:38:34,840 --&gt; 00:38:37,400</code>
+Efter alltså pre-boot.</p>
+<p><code>1221 00:38:37,400 --&gt; 00:38:41,240</code>
+Du menar ju rent R&amp;D-perspektiv, hur skulle någon kunna gå runt våran säkerhet?</p>
+<p><code>1222 00:38:41,240 --&gt; 00:38:41,740</code>
+Ja.</p>
+<p><code>1223 00:38:41,740 --&gt; 00:38:47,900</code>
+Jag vet inte, jag har inte sett någon tydlighet, jag tror ju att dom har hittat det här innan cheaters har hittat det.</p>
+<p><code>1224 00:38:47,900 --&gt; 00:38:48,400</code>
+Mm.</p>
+<p><code>1225 00:38:48,400 --&gt; 00:39:00,440</code>
+Men det är alltså så att ett antal modekort botar igång och säger att jag startade IOMMU är säkert konfigurerat.</p>
+<p><code>1226 00:39:00,440 --&gt; 00:39:04,540</code>
+Jag startade IOMMU är säkert konfigurerat.</p>
+<p><code>1227 00:39:04,540 --&gt; 00:39:04,800</code>
+Jag startade IOMMU är säkert konfigurerat.</p>
+<p><code>1228 00:39:04,800 --&gt; 00:39:05,560</code>
+Jag startade IOMMU är säkert konfigurerat.</p>
+<p><code>1229 00:39:05,560 --&gt; 00:39:08,120</code>
+Du är i bra läge.</p>
+<p><code>1230 00:39:08,120 --&gt; 00:39:14,020</code>
+Och ett antal, alltså ganska många då, modekort säger det här men det är inte sant.</p>
+<p><code>1231 00:39:14,020 --&gt; 00:39:14,520</code>
+Mm.</p>
+<p><code>1232 00:39:14,520 --&gt; 00:39:26,820</code>
+Så dom säger att det här IOMMU är igång och att det finns säkerhet och det går inte att angripa minnet från vilken DMA-grunka som helst på PCI-bussen.</p>
+<p><code>1233 00:39:26,820 --&gt; 00:39:28,860</code>
+Men modekorten ljuger.</p>
+<p><code>1234 00:39:28,860 --&gt; 00:39:29,640</code>
+Mm.</p>
+<p><code>1235 00:39:29,640 --&gt; 00:39:34,500</code>
+Så dom har inte satt upp det här och det diskuteras liksom.</p>
+<p><code>1236 00:39:34,500 --&gt; 00:39:40,640</code>
+Det diskuteras lite där vem ansvarar för vad och liksom någonting har gått fel här.</p>
+<p><code>1237 00:39:40,640 --&gt; 00:39:41,160</code>
+Mm.</p>
+<p><code>1238 00:39:41,160 --&gt; 00:39:42,440</code>
+Men&hellip;</p>
+<p><code>1239 00:39:42,440 --&gt; 00:39:45,260</code>
+Kanske är det dyrt att göra rätt så då fejkar vi det istället.</p>
+<p><code>1240 00:39:45,260 --&gt; 00:40:04,460</code>
+Så dom publicerar den här sårbarheten och det är ju intressant för oss säkerhetsfolk att det har funnits ett sätt att injusera skadelikvård väldigt tidigt i boten innan OS-et riktigt har gått igång eller under OS-ets bot via en DMA-attack som&hellip;</p>
+<p><code>1241 00:40:04,460 --&gt; 00:40:08,040</code>
+Den har legat där. Vi har inte känt till den just för att&hellip;</p>
+<p><code>1242 00:40:08,040 --&gt; 00:40:12,400</code>
+Uppenbarligen har vi inte haft tillräckligt mycket incitament för att jobba på att säkra&hellip;</p>
+<p><code>1243 00:40:12,400 --&gt; 00:40:17,520</code>
+Och så kom ett game-anti-sheet-teknologi och hittade det här. Coolt!</p>
+<p><code>1244 00:40:17,520 --&gt; 00:40:21,620</code>
+Så dom har publicerat säkerhetshålen och dom har också då&hellip;</p>
+<p><code>1245 00:40:21,620 --&gt; 00:40:29,040</code>
+Svartlistat en bunt modekort och relaterade firmware-versioner så att om du ligger&hellip;</p>
+<p><code>1246 00:40:29,040 --&gt; 00:40:33,640</code>
+Om du ligger på blacklisten där så kan du inte starta dina spel längre för att&hellip;</p>
+<p><code>1247 00:40:33,640 --&gt; 00:40:39,320</code>
+Så du måste fixa ditt BIOS innan du kan starta dina spel längre.</p>
+<p><code>1248 00:40:39,340 --&gt; 00:40:43,520</code>
+Jag tror jag hade grymt svårt att komma igång med&hellip; Vad är det Riot har gjort mer än&hellip;</p>
+<p><code>1249 00:40:43,520 --&gt; 00:40:45,620</code>
+League har dom gjort och Valorant.</p>
+<p><code>1250 00:40:45,860 --&gt; 00:40:48,900</code>
+Valorant. Jag hade supersvårt att få igång Valorant för ett år sedan vet jag.</p>
+<p><code>1251 00:40:49,000 --&gt; 00:40:50,080</code>
+Hade du försökt fuska så mycket?</p>
+<p><code>1252 00:40:50,180 --&gt; 00:40:50,980</code>
+Jag hade ju inte det.</p>
+<p><code>1253 00:40:51,540 --&gt; 00:40:53,600</code>
+Men en sidostory här.</p>
+<p><code>1254 00:40:54,540 --&gt; 00:40:57,220</code>
+Jag har noterat det senaste att det&hellip;</p>
+<p><code>1255 00:40:57,220 --&gt; 00:41:00,240</code>
+Gamer på Linux har blivit mer och mer populärt.</p>
+<p><code>1256 00:41:00,240 --&gt; 00:41:03,180</code>
+Och det i sin tur går tillbaka till Windows.</p>
+<p><code>1257 00:41:03,640 --&gt; 00:41:04,200</code>
+Och&hellip;</p>
+<p><code>1258 00:41:04,200 --&gt; 00:41:06,480</code>
+Deras övervakningsmodell faktiskt.</p>
+<p><code>1259 00:41:06,620 --&gt; 00:41:09,040</code>
+Att dom har så jävla privacy-problem med Windows 11.</p>
+<p><code>1260 00:41:09,560 --&gt; 00:41:11,400</code>
+Folk gillar inte det så då letar dom alternativ.</p>
+<p><code>1261 00:41:11,500 --&gt; 00:41:14,600</code>
+För många använder ju Windows inte så mycket annat än just gaming.</p>
+<p><code>1262 00:41:14,720 --&gt; 00:41:18,540</code>
+Och en av grejerna som håller tillbaka dom är att det är svårt att gama på Linux.</p>
+<p><code>1263 00:41:18,820 --&gt; 00:41:20,280</code>
+Nästan allt annat kan du göra på Linux.</p>
+<p><code>1264 00:41:20,420 --&gt; 00:41:21,800</code>
+Men gama på Linux är svårt.</p>
+<p><code>1265 00:41:22,500 --&gt; 00:41:25,660</code>
+Så det har blivit mer och mer eftersökt nu.</p>
+<p><code>1266 00:41:25,860 --&gt; 00:41:28,560</code>
+Och med Steam så finns det relativt bra support nu.</p>
+<p><code>1267 00:41:28,660 --&gt; 00:41:31,560</code>
+Jag hörde precis en podcast om just Steam support.</p>
+<p><code>1268 00:41:31,700 --&gt; 00:41:32,560</code>
+Att deras nya&hellip;</p>
+<p><code>1269 00:41:33,640 --&gt; 00:41:36,340</code>
+De har ju presenterat en ny hardware-line-up som kommer komma nu med&hellip;</p>
+<p><code>1270 00:41:36,340 --&gt; 00:41:37,900</code>
+VR-googles och handsets och massa mer.</p>
+<p><code>1271 00:41:38,460 --&gt; 00:41:41,200</code>
+Allt det är ju en Linux i botten.</p>
+<p><code>1272 00:41:41,240 --&gt; 00:41:43,760</code>
+Som ska vara optimerad för spel.</p>
+<p><code>1273 00:41:44,640 --&gt; 00:41:46,180</code>
+Så det är ju helt rätt på bollen nu.</p>
+<p><code>1274 00:41:46,240 --&gt; 00:41:46,900</code>
+Det är ju ascoolt.</p>
+<p><code>1275 00:41:46,960 --&gt; 00:41:48,140</code>
+De har till och med gjort så att&hellip;</p>
+<p><code>1276 00:41:48,140 --&gt; 00:41:51,860</code>
+Det finns ju sådana här YouTube-kanaler som inte gör något annat än typ&hellip;</p>
+<p><code>1277 00:41:51,860 --&gt; 00:41:53,280</code>
+Prestandatesta grafikkort och sånt.</p>
+<p><code>1278 00:41:53,860 --&gt; 00:41:56,020</code>
+De har till och med börjat med ett officiellt program.</p>
+<p><code>1279 00:41:56,180 --&gt; 00:41:59,440</code>
+Hur ska vi räkna grafikkortsprestanda på Linux-burkar?</p>
+<p><code>1280 00:42:00,000 --&gt; 00:42:01,440</code>
+Men ett problem&hellip;</p>
+<p><code>1281 00:42:01,440 --&gt; 00:42:02,060</code>
+För det här är ju bra.</p>
+<p><code>1282 00:42:02,180 --&gt; 00:42:02,920</code>
+Vi är på väg åt rätt håll.</p>
+<p><code>1283 00:42:02,920 --&gt; 00:42:03,560</code>
+Ett problem&hellip;</p>
+<p><code>1284 00:42:03,560 --&gt; 00:42:06,760</code>
+Ett problem här är att just anti-sheet i Linux är obefintligt.</p>
+<p><code>1285 00:42:06,900 --&gt; 00:42:07,480</code>
+Det finns inget.</p>
+<p><code>1286 00:42:07,880 --&gt; 00:42:08,000</code>
+Nej.</p>
+<p><code>1287 00:42:08,800 --&gt; 00:42:10,240</code>
+Så där är det&hellip;</p>
+<p><code>1288 00:42:10,240 --&gt; 00:42:13,000</code>
+Det betyder att nästan alla som vill fuska på riktigt.</p>
+<p><code>1289 00:42:13,000 --&gt; 00:42:14,060</code>
+De kör på Linux.</p>
+<p><code>1290 00:42:14,440 --&gt; 00:42:15,740</code>
+Så det är lite ett problem idag.</p>
+<p><code>1291 00:42:16,800 --&gt; 00:42:18,600</code>
+Det är ett problem som behöver lösas fortfarande.</p>
+<p><code>1292 00:42:18,820 --&gt; 00:42:19,420</code>
+Det var en side-story.</p>
+<p><code>1293 00:42:20,020 --&gt; 00:42:22,280</code>
+Men det är skitroligt att säga det.</p>
+<p><code>1294 00:42:22,360 --&gt; 00:42:26,040</code>
+För jag har ju använt Linux som native OS i 10 000 år.</p>
+<p><code>1295 00:42:26,440 --&gt; 00:42:27,960</code>
+Och jag ser också&hellip;</p>
+<p><code>1296 00:42:27,960 --&gt; 00:42:28,960</code>
+Och jag har ju ett Steam-konto.</p>
+<p><code>1297 00:42:28,960 --&gt; 00:42:33,380</code>
+Här på mitt kontor har vi en dator man kan köra.</p>
+<p><code>1298 00:42:33,560 --&gt; 00:42:34,160</code>
+Här på till exempel.</p>
+<p><code>1299 00:42:34,700 --&gt; 00:42:38,560</code>
+Och där är det ju&hellip;</p>
+<p><code>1300 00:42:38,560 --&gt; 00:42:41,760</code>
+Där ser jag ju att när jag loggar in från min Linux-maskin så har jag ju&hellip;</p>
+<p><code>1301 00:42:41,760 --&gt; 00:42:45,320</code>
+Det finns ju faktiskt spel som har native Linux-stöd som installers.</p>
+<p><code>1302 00:42:45,500 --&gt; 00:42:46,560</code>
+Det är ju skitcoolt.</p>
+<p><code>1303 00:42:47,660 --&gt; 00:42:49,480</code>
+Ingenting jag använder kanske, men&hellip;</p>
+<p><code>1304 00:42:49,480 --&gt; 00:42:50,980</code>
+It&rsquo;s the era of Linux under this.</p>
+<p><code>1305 00:42:51,900 --&gt; 00:42:53,260</code>
+Det hade varit en trendspelning.</p>
+<p><code>1306 00:42:53,420 --&gt; 00:42:54,800</code>
+Något år blir det ju sant.</p>
+<p><code>1307 00:42:55,460 --&gt; 00:42:57,120</code>
+Det kanske är gamingen som tar oss dit.</p>
+<p><code>1308 00:42:57,320 --&gt; 00:42:57,440</code>
+Ja.</p>
+<p><code>1309 00:42:58,080 --&gt; 00:42:58,660</code>
+Sorry Peter.</p>
+<p><code>1310 00:42:58,840 --&gt; 00:42:59,640</code>
+Det tror jag fan.</p>
+<p><code>1311 00:43:00,080 --&gt; 00:43:00,520</code>
+Det skulle kunna vara.</p>
+<p><code>1312 00:43:00,520 --&gt; 00:43:01,900</code>
+Ska vi hoppa framåt till nästa?</p>
+<p><code>1313 00:43:02,040 --&gt; 00:43:02,400</code>
+Det tycker jag.</p>
+<p><code>1314 00:43:02,400 --&gt; 00:43:02,440</code>
+Ja.</p>
+<p><code>1315 00:43:03,560 --&gt; 00:43:04,040</code>
+Curl.</p>
+<p><code>1316 00:43:04,100 --&gt; 00:43:04,860</code>
+Vad tänker ni då?</p>
+<p><code>1317 00:43:05,580 --&gt; 00:43:07,000</code>
+Jag tänker&hellip;</p>
+<p><code>1318 00:43:07,000 --&gt; 00:43:08,340</code>
+Failed bug bounty.</p>
+<p><code>1319 00:43:08,600 --&gt; 00:43:09,540</code>
+Mm, det tänker jag också.</p>
+<p><code>1320 00:43:10,040 --&gt; 00:43:11,000</code>
+Är jag i slop?</p>
+<p><code>1321 00:43:11,220 --&gt; 00:43:11,400</code>
+Ja.</p>
+<p><code>1322 00:43:12,880 --&gt; 00:43:13,360</code>
+Yes.</p>
+<p><code>1323 00:43:13,560 --&gt; 00:43:16,400</code>
+Om jag säger PowerShell och sen säger jag curl, vad tänker ni då?</p>
+<p><code>1324 00:43:16,500 --&gt; 00:43:17,160</code>
+I&rsquo;m confused.</p>
+<p><code>1325 00:43:17,480 --&gt; 00:43:18,860</code>
+Gjort någonting bra dåligt.</p>
+<p><code>1326 00:43:20,340 --&gt; 00:43:25,580</code>
+Det ena med det så är att i PowerShell så kan du skriva curl och då kan du typ curla någonting.</p>
+<p><code>1327 00:43:27,600 --&gt; 00:43:28,120</code>
+Men&hellip;</p>
+<p><code>1328 00:43:28,120 --&gt; 00:43:29,060</code>
+Curl i PowerShell.</p>
+<p><code>1329 00:43:29,320 --&gt; 00:43:29,500</code>
+Ja.</p>
+<p><code>1330 00:43:30,500 --&gt; 00:43:33,500</code>
+Det är bara en namesquatting.</p>
+<p><code>1331 00:43:33,560 --&gt; 00:43:34,560</code>
+De har bara snott&hellip;</p>
+<p><code>1332 00:43:34,560 --&gt; 00:43:35,340</code>
+Ett alias till.</p>
+<p><code>1333 00:43:35,520 --&gt; 00:43:37,540</code>
+De har snott curls namn liksom.</p>
+<p><code>1334 00:43:37,720 --&gt; 00:43:48,620</code>
+Jag antar att curl-utvecklarna inte har känt att de har big money till att stämma Microsoft ner till dödagarna.</p>
+<p><code>1335 00:43:49,080 --&gt; 00:43:55,620</code>
+Det finns förmodligen någon förklaring till varför de inte har mörkat Microsoften.</p>
+<p><code>1336 00:43:55,620 --&gt; 00:43:57,160</code>
+De kanske inte har trademarkat curl.</p>
+<p><code>1337 00:43:57,800 --&gt; 00:43:58,700</code>
+Det kan vara någonting sånt.</p>
+<p><code>1338 00:43:58,700 --&gt; 00:44:02,220</code>
+Men i PowerShell så finns det alltså en curl.</p>
+<p><code>1339 00:44:03,140 --&gt; 00:44:03,500</code>
+Och&hellip;</p>
+<p><code>1340 00:44:03,560 --&gt; 00:44:08,020</code>
+Det ska väl vara rättat eller säkrat lite nu.</p>
+<p><code>1341 00:44:08,100 --&gt; 00:44:11,180</code>
+Men den här har ju varit väldigt, väldigt osäker.</p>
+<p><code>1342 00:44:11,500 --&gt; 00:44:19,720</code>
+Och curl är alltså mer eller mindre bara en namnvrappning till något&hellip;</p>
+<p><code>1343 00:44:19,720 --&gt; 00:44:22,580</code>
+Alltså namnalias för någonting som jag har för mig.</p>
+<p><code>1344 00:44:22,960 --&gt; 00:44:26,680</code>
+Om det hette InvokeWeb eller InvokeWebRequest eller någonting.</p>
+<p><code>1345 00:44:27,220 --&gt; 00:44:27,720</code>
+Ah.</p>
+<p><code>1346 00:44:28,360 --&gt; 00:44:32,720</code>
+Och det som var roligt var ju alltså att om du typ skrev curl&hellip;</p>
+<p><code>1347 00:44:33,560 --&gt; 00:44:34,700</code>
+Skrev du en ondsida.</p>
+<p><code>1348 00:44:35,520 --&gt; 00:44:40,280</code>
+Så kunde du liksom helt plötsligt att i Windows poppade du upp en alertruta.</p>
+<p><code>1349 00:44:40,400 --&gt; 00:44:42,020</code>
+Där det stod AlertXXS.</p>
+<p><code>1350 00:44:43,460 --&gt; 00:44:45,000</code>
+Och det är alltså sån här&hellip;</p>
+<p><code>1351 00:44:45,000 --&gt; 00:44:45,460</code>
+Vänta lite nu.</p>
+<p><code>1352 00:44:45,720 --&gt; 00:44:46,760</code>
+I PowerShell-kontextet.</p>
+<p><code>1353 00:44:47,440 --&gt; 00:44:48,480</code>
+Det är alltså bara i Windows.</p>
+<p><code>1354 00:44:48,580 --&gt; 00:44:50,540</code>
+Det kommer upp en Windows-dialog som säger det här.</p>
+<p><code>1355 00:44:50,940 --&gt; 00:44:51,600</code>
+Och man bara så här&hellip;</p>
+<p><code>1356 00:44:51,600 --&gt; 00:44:52,380</code>
+Vänta, vänta, vänta.</p>
+<p><code>1357 00:44:52,380 --&gt; 00:44:52,840</code>
+Jag ser.</p>
+<p><code>1358 00:44:53,020 --&gt; 00:44:53,500</code>
+Vänta lite nu.</p>
+<p><code>1359 00:44:53,660 --&gt; 00:44:54,560</code>
+Vad händer här?</p>
+<p><code>1360 00:44:54,760 --&gt; 00:44:57,360</code>
+Och sen om du då går till en annan ondsida.</p>
+<p><code>1361 00:44:57,640 --&gt; 00:45:00,740</code>
+Och du väljer då PowerShell curl.</p>
+<p><code>1362 00:45:00,880 --&gt; 00:45:02,660</code>
+Eller PowerInvokeWebRequest.</p>
+<p><code>1363 00:45:02,820 --&gt; 00:45:03,520</code>
+Eller vad fan det nu heter.</p>
+<p><code>1364 00:45:03,560 --&gt; 00:45:06,640</code>
+Om du kör den mot en annan URL.</p>
+<p><code>1365 00:45:07,120 --&gt; 00:45:08,560</code>
+Så plötsligt får du upp kalkylatorn.</p>
+<p><code>1366 00:45:10,140 --&gt; 00:45:11,700</code>
+Och då vet man ju att man är hackad.</p>
+<p><code>1367 00:45:11,900 --&gt; 00:45:12,080</code>
+Exakt.</p>
+<p><code>1368 00:45:13,380 --&gt; 00:45:15,560</code>
+Och det är alltså så att kalkylatorn.</p>
+<p><code>1369 00:45:16,980 --&gt; 00:45:17,560</code>
+Det är alltså&hellip;</p>
+<p><code>1370 00:45:18,600 --&gt; 00:45:21,560</code>
+Det kan du göra med att säga att&hellip;</p>
+<p><code>1371 00:45:22,300 --&gt; 00:45:27,920</code>
+Kalkylator-URL-en ska besökas av en iframe eller liknande.</p>
+<p><code>1372 00:45:28,100 --&gt; 00:45:29,440</code>
+Alltså Windows, vad i helvete.</p>
+<p><code>1373 00:45:29,840 --&gt; 00:45:31,040</code>
+Vad fan du får ut så.</p>
+<p><code>1374 00:45:31,040 --&gt; 00:45:32,860</code>
+Och sen så finns det&hellip;</p>
+<p><code>1375 00:45:32,860 --&gt; 00:45:33,860</code>
+Nu kommer jag inte ihåg vad det hette.</p>
+<p><code>1376 00:45:34,180 --&gt; 00:45:36,980</code>
+Det som var riktigt powerful att använda i ett exploit.</p>
+<p><code>1377 00:45:37,120 --&gt; 00:45:41,040</code>
+Men det finns även en direkt fullständig RC-vektor.</p>
+<p><code>1378 00:45:42,160 --&gt; 00:45:47,860</code>
+Och sen kan man ju fundera på hur ofta tar du i PowerShell.</p>
+<p><code>1379 00:45:47,900 --&gt; 00:45:49,680</code>
+Och skriver curl mot en ond URL.</p>
+<p><code>1380 00:45:49,980 --&gt; 00:45:50,780</code>
+Eller kör&hellip;</p>
+<p><code>1381 00:45:50,780 --&gt; 00:45:52,500</code>
+Jag kan ändå komma på några scenarion.</p>
+<p><code>1382 00:45:52,600 --&gt; 00:45:54,840</code>
+Det kan ändå vara PowerShell-skript som folk kör.</p>
+<p><code>1383 00:45:55,120 --&gt; 00:45:55,320</code>
+Ja.</p>
+<p><code>1384 00:45:56,000 --&gt; 00:45:56,800</code>
+Hämta den här grejen.</p>
+<p><code>1385 00:45:57,160 --&gt; 00:45:57,760</code>
+Ja men precis.</p>
+<p><code>1386 00:45:57,960 --&gt; 00:45:59,360</code>
+Det är lite långsiktigt.</p>
+<p><code>1387 00:45:59,540 --&gt; 00:46:01,420</code>
+Det är vissa specifika fall och sådär.</p>
+<p><code>1388 00:46:01,420 --&gt; 00:46:02,700</code>
+Men framförallt så ligger&hellip;</p>
+<p><code>1389 00:46:02,700 --&gt; 00:46:08,680</code>
+Ligger du inte med i min bild av vad som skulle kunna hända.</p>
+<p><code>1390 00:46:09,040 --&gt; 00:46:12,620</code>
+Om jag sitter i en prompt och skriver curl till en URL.</p>
+<p><code>1391 00:46:13,980 --&gt; 00:46:18,440</code>
+Att någonting håller på att RCE-a det som står på serven.</p>
+<p><code>1392 00:46:18,520 --&gt; 00:46:20,260</code>
+Det känns ju superlångsökt.</p>
+<p><code>1393 00:46:20,540 --&gt; 00:46:24,520</code>
+Och curl-utvecklarna är väl sådär glada i att de&hellip;</p>
+<p><code>1394 00:46:24,520 --&gt; 00:46:25,520</code>
+Jag tänkte ju säga det.</p>
+<p><code>1395 00:46:25,520 --&gt; 00:46:27,440</code>
+Det här känns som en bloggpost waiting to happen.</p>
+<p><code>1396 00:46:27,440 --&gt; 00:46:32,440</code>
+Att någon bug bounty-grej säger att PowerShell-curl&hellip;</p>
+<p><code>1397 00:46:32,700 --&gt; 00:46:34,000</code>
+Har en sårbarhet.</p>
+<p><code>1398 00:46:34,100 --&gt; 00:46:36,220</code>
+Daniel Stenberg hade ju gått i taket.</p>
+<p><code>1399 00:46:37,780 --&gt; 00:46:39,220</code>
+Vi får bara vänta på hans&hellip;</p>
+<p><code>1400 00:46:39,220 --&gt; 00:46:42,900</code>
+Om jag förstår rätt så de som publicerade den här grunken.</p>
+<p><code>1401 00:46:42,960 --&gt; 00:46:46,600</code>
+De hade hört av sig till curl och fått svaret.</p>
+<p><code>1402 00:46:46,820 --&gt; 00:46:47,460</code>
+Är det inte hans?</p>
+<p><code>1403 00:46:47,460 --&gt; 00:46:48,840</code>
+Ni är så fel.</p>
+<p><code>1404 00:46:50,540 --&gt; 00:46:54,080</code>
+Jag antar att om man skulle prata med curl-utvecklarna.</p>
+<p><code>1405 00:46:55,080 --&gt; 00:46:58,380</code>
+När de inte har kameror och annat på sig.</p>
+<p><code>1406 00:46:58,380 --&gt; 00:47:01,040</code>
+Så antar jag att de är lite sura över att&hellip;</p>
+<p><code>1407 00:47:01,040 --&gt; 00:47:03,740</code>
+Daniel, om du vill komma hit och prata skit om Microsoft så är du välkommen.</p>
+<p><code>1408 00:47:04,600 --&gt; 00:47:08,920</code>
+Det verkar ju jättekonstigt att du skriver curl i ett operativsystem.</p>
+<p><code>1409 00:47:09,040 --&gt; 00:47:10,580</code>
+Och nät vid det operativsystemet.</p>
+<p><code>1410 00:47:10,760 --&gt; 00:47:12,920</code>
+Finns det något som inte är curl?</p>
+<p><code>1411 00:47:13,280 --&gt; 00:47:15,060</code>
+Om inte Microsoft var med i kontextet så ja.</p>
+<p><code>1412 00:47:15,980 --&gt; 00:47:18,880</code>
+Men nu är Microsoft med så att säga hej.</p>
+<p><code>1413 00:47:18,880 --&gt; 00:47:19,520</code>
+Det är inte så konstigt.</p>
+<p><code>1414 00:47:20,040 --&gt; 00:47:21,740</code>
+Jag tycker det är jättekonstigt.</p>
+<p><code>1415 00:47:22,080 --&gt; 00:47:25,240</code>
+Alltså ta ett annat populärt välkänt utility.</p>
+<p><code>1416 00:47:25,240 --&gt; 00:47:27,420</code>
+Jag kan inte lära sig något nytt.</p>
+<p><code>1417 00:47:27,560 --&gt; 00:47:29,480</code>
+Vi går tillbaka till vår&hellip;</p>
+<p><code>1418 00:47:29,480 --&gt; 00:47:30,240</code>
+Otroliga&hellip;</p>
+<p><code>1419 00:47:31,040 --&gt; 00:47:35,560</code>
+Supporter till podcasten som genererar väldigt bra content.</p>
+<p><code>1420 00:47:36,080 --&gt; 00:47:36,540</code>
+Och det är ju Love.</p>
+<p><code>1421 00:47:37,200 --&gt; 00:47:38,940</code>
+Som har producerat klistermärket.</p>
+<p><code>1422 00:47:39,140 --&gt; 00:47:39,740</code>
+Thrasher.</p>
+<p><code>1423 00:47:40,100 --&gt; 00:47:40,640</code>
+Men vänta lite.</p>
+<p><code>1424 00:47:42,040 --&gt; 00:47:44,900</code>
+Om vi ska ta en annan supporter.</p>
+<p><code>1425 00:47:46,060 --&gt; 00:47:48,300</code>
+Johan la ju upp&hellip;</p>
+<p><code>1426 00:47:48,300 --&gt; 00:47:49,980</code>
+Var det förr&hellip;</p>
+<p><code>1427 00:47:49,980 --&gt; 00:47:53,080</code>
+Det avsnittet vi publicerade typ sist.</p>
+<p><code>1428 00:47:54,020 --&gt; 00:47:55,320</code>
+Om det här.</p>
+<p><code>1429 00:47:56,120 --&gt; 00:47:57,320</code>
+Johan la upp det.</p>
+<p><code>1430 00:47:57,720 --&gt; 00:47:59,680</code>
+Jag var inte redo&hellip;</p>
+<p><code>1431 00:47:59,680 --&gt; 00:48:00,920</code>
+Nu måste vi ha kontext Peter.</p>
+<p><code>1432 00:48:01,040 --&gt; 00:48:01,540</code>
+Nu är det bara&hellip;</p>
+<p><code>1433 00:48:01,540 --&gt; 00:48:03,940</code>
+Det är som en stor väg utav en våld.</p>
+<p><code>1434 00:48:03,940 --&gt; 00:48:05,960</code>
+Vi har ju ett förvirrat publiceringsflöde.</p>
+<p><code>1435 00:48:07,120 --&gt; 00:48:07,940</code>
+Johan är&hellip;</p>
+<p><code>1436 00:48:07,940 --&gt; 00:48:09,540</code>
+Andra saker som är rätt förvirrande också.</p>
+<p><code>1437 00:48:09,540 --&gt; 00:48:10,760</code>
+Johan är&hellip;</p>
+<p><code>1438 00:48:10,760 --&gt; 00:48:13,700</code>
+Johan är Libsyn.</p>
+<p><code>1439 00:48:13,800 --&gt; 00:48:16,040</code>
+Och Johan är Vsårs och Truff.</p>
+<p><code>1440 00:48:16,180 --&gt; 00:48:16,340</code>
+Ja.</p>
+<p><code>1441 00:48:16,700 --&gt; 00:48:18,880</code>
+Det är ett problem. Men fortsätt.</p>
+<p><code>1442 00:48:19,400 --&gt; 00:48:23,120</code>
+Sen är jag Markdown och GitHub.</p>
+<p><code>1443 00:48:23,540 --&gt; 00:48:25,540</code>
+Och jag representerar&hellip;</p>
+<p><code>1444 00:48:26,220 --&gt; 00:48:27,120</code>
+Liksom&hellip;</p>
+<p><code>1445 00:48:27,120 --&gt; 00:48:28,100</code>
+Vsårs och Truffiness.</p>
+<p><code>1446 00:48:28,380 --&gt; 00:48:30,800</code>
+Den nästan sanna bilden av verkligheten.</p>
+<p><code>1447 00:48:31,040 --&gt; 00:48:32,220</code>
+Och det finns mer&hellip;</p>
+<p><code>1448 00:48:32,220 --&gt; 00:48:34,460</code>
+Och jag är den naiva slaven som publicerar allt man säger.</p>
+<p><code>1449 00:48:34,620 --&gt; 00:48:38,180</code>
+Det finns mer information i Vsårs och Truffiness.</p>
+<p><code>1450 00:48:38,440 --&gt; 00:48:38,900</code>
+Än vad det finns.</p>
+<p><code>1451 00:48:39,100 --&gt; 00:48:40,300</code>
+Vi har tre points of failure.</p>
+<p><code>1452 00:48:43,400 --&gt; 00:48:45,420</code>
+Och det är ju när vi gör någonting.</p>
+<p><code>1453 00:48:45,820 --&gt; 00:48:48,260</code>
+Så är det bra om vi synkar med varandra.</p>
+<p><code>1454 00:48:48,700 --&gt; 00:48:50,300</code>
+Men Johan&hellip;</p>
+<p><code>1455 00:48:50,300 --&gt; 00:48:51,060</code>
+Okej, nu börjar vi om.</p>
+<p><code>1456 00:48:52,020 --&gt; 00:48:53,220</code>
+Johan menar mig ursäkt.</p>
+<p><code>1457 00:48:53,640 --&gt; 00:48:55,700</code>
+Du, jag glömde nog av att publicera.</p>
+<p><code>1458 00:48:55,780 --&gt; 00:48:56,860</code>
+Men jag publicerar det nu.</p>
+<p><code>1459 00:48:57,040 --&gt; 00:48:58,040</code>
+Och jag bara&hellip;</p>
+<p><code>1460 00:48:58,040 --&gt; 00:48:59,720</code>
+Ja, det är bra. Jag är mitt ute i en skog.</p>
+<p><code>1461 00:48:59,720 --&gt; 00:49:00,920</code>
+Men jag tar det här sen.</p>
+<p><code>1462 00:49:01,040 --&gt; 00:49:03,120</code>
+Och sen blir det ju så här.</p>
+<p><code>1463 00:49:03,160 --&gt; 00:49:05,500</code>
+Jag kommer ju väl hem och så är jag trött och så där.</p>
+<p><code>1464 00:49:05,580 --&gt; 00:49:07,160</code>
+Och så tänker jag&hellip;</p>
+<p><code>1465 00:49:07,160 --&gt; 00:49:10,160</code>
+Ja, just det. Jag skulle fixat hemsidan.</p>
+<p><code>1466 00:49:10,560 --&gt; 00:49:10,920</code>
+Men&hellip;</p>
+<p><code>1467 00:49:10,920 --&gt; 00:49:14,600</code>
+Jag sover och så löser jag det här imorgon.</p>
+<p><code>1468 00:49:15,320 --&gt; 00:49:17,960</code>
+Och ett av våra största fan</p>
+<p><code>1469 00:49:17,960 --&gt; 00:49:19,240</code>
+konstaterar ju&hellip;</p>
+<p><code>1470 00:49:19,240 --&gt; 00:49:20,560</code>
+Vad fan håller de på med?</p>
+<p><code>1471 00:49:20,620 --&gt; 00:49:22,120</code>
+De har ju inte lagt upp på hemsidan.</p>
+<p><code>1472 00:49:22,700 --&gt; 00:49:25,100</code>
+Så någonstans där nere ligger jag och sover.</p>
+<p><code>1473 00:49:25,240 --&gt; 00:49:25,920</code>
+Så får jag ett mail.</p>
+<p><code>1474 00:49:26,600 --&gt; 00:49:28,260</code>
+Och när jag får ett mail från GitHub</p>
+<p><code>1475 00:49:28,260 --&gt; 00:49:29,320</code>
+så känns det ju inte bra.</p>
+<p><code>1476 00:49:29,720 --&gt; 00:49:30,920</code>
+För det är liksom så här&hellip;</p>
+<p><code>1477 00:49:31,040 --&gt; 00:49:33,180</code>
+Jag får inte mail. Det brukar vara dåligt.</p>
+<p><code>1478 00:49:33,840 --&gt; 00:49:34,640</code>
+Så så här&hellip;</p>
+<p><code>1479 00:49:34,640 --&gt; 00:49:35,700</code>
+Vad har hänt nu?</p>
+<p><code>1480 00:49:37,320 --&gt; 00:49:39,160</code>
+Någon har faktiskt noterat</p>
+<p><code>1481 00:49:39,160 --&gt; 00:49:41,080</code>
+att vi inte skött vår publicering rätt.</p>
+<p><code>1482 00:49:41,360 --&gt; 00:49:42,820</code>
+Och lagt en bugrapport på det.</p>
+<p><code>1483 00:49:43,260 --&gt; 00:49:45,880</code>
+Så det är vår första bugrapport</p>
+<p><code>1484 00:49:45,880 --&gt; 00:49:46,360</code>
+vi har fått.</p>
+<p><code>1485 00:49:46,520 --&gt; 00:49:47,940</code>
+Och den är helt korrekt och så.</p>
+<p><code>1486 00:49:48,280 --&gt; 00:49:49,840</code>
+Men det är ju&hellip;</p>
+<p><code>1487 00:49:49,840 --&gt; 00:49:52,900</code>
+Det är inte infrastrukturfel dock.</p>
+<p><code>1488 00:49:53,020 --&gt; 00:49:54,640</code>
+För det var inte publicerat, vill jag bara säga.</p>
+<p><code>1489 00:49:55,640 --&gt; 00:49:57,600</code>
+Nej, men det finns många</p>
+<p><code>1490 00:49:57,600 --&gt; 00:49:58,820</code>
+roliga poäng som failar.</p>
+<p><code>1491 00:49:58,860 --&gt; 00:49:59,960</code>
+Ibland är det lyxigt problemet.</p>
+<p><code>1492 00:49:59,960 --&gt; 00:50:00,960</code>
+Ibland tycker man&hellip;</p>
+<p><code>1493 00:50:01,040 --&gt; 00:50:03,220</code>
+Och då dyker det upp utan kostnader.</p>
+<p><code>1494 00:50:04,180 --&gt; 00:50:05,700</code>
+Ja, så hade vi ju den</p>
+<p><code>1495 00:50:05,700 --&gt; 00:50:08,280</code>
+när vi sätter upp fler olika</p>
+<p><code>1496 00:50:08,280 --&gt; 00:50:09,140</code>
+resursbläddor.</p>
+<p><code>1497 00:50:09,500 --&gt; 00:50:10,920</code>
+Eller på helt plötsligt inte igår.</p>
+<p><code>1498 00:50:11,040 --&gt; 00:50:12,300</code>
+Så får man använda FTP istället.</p>
+<p><code>1499 00:50:13,480 --&gt; 00:50:14,220</code>
+Det är ju spännande.</p>
+<p><code>1500 00:50:14,580 --&gt; 00:50:17,500</code>
+Men ändå lite coolt att vi har</p>
+<p><code>1501 00:50:17,500 --&gt; 00:50:19,180</code>
+fans som håller ordning på oss</p>
+<p><code>1502 00:50:19,180 --&gt; 00:50:21,040</code>
+och bugrapporterar när vi inte sköter oss.</p>
+<p><code>1503 00:50:21,580 --&gt; 00:50:22,000</code>
+Så är det.</p>
+<p><code>1504 00:50:23,080 --&gt; 00:50:25,820</code>
+Då ska vi ta och säga att det får vara slutorden för idag.</p>
+<p><code>1505 00:50:26,160 --&gt; 00:50:26,520</code>
+Så är det.</p>
+<p><code>1506 00:50:26,880 --&gt; 00:50:28,560</code>
+Jag som pratade heter Johan Rybämöller.</p>
+<p><code>1507 00:50:28,560 --&gt; 00:50:29,800</code>
+Med mig hade jag Peter Magnusson.</p>
+<p><code>1508 00:50:30,240 --&gt; 00:50:30,640</code>
+Invo.</p>
+<p><code>1509 00:50:31,040 --&gt; 00:50:32,560</code>
+Requestet i din skrift.</p>
+<p><code>1510 00:50:32,780 --&gt; 00:50:33,420</code>
+Jesper Larsson.</p>
+<p><code>1511 00:50:34,060 --&gt; 00:50:34,740</code>
+Jag har inget.</p>
+<p><code>1512 00:50:34,860 --&gt; 00:50:36,200</code>
+Jag är färdig.</p>
+<p><code>1513 00:50:36,440 --&gt; 00:50:37,020</code>
+Ha det gött, hej!</p>
+<p><code>1514 00:50:37,260 --&gt; 00:50:37,660</code>
+Ha det gött, hej!</p>
+<p><code>1515 00:50:37,760 --&gt; 00:50:37,940</code>
+Tja!</p>
+<p><code>1516 00:50:37,940 --&gt; 00:50:38,380</code>
+Ha det gött!</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2026-01-26</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/ostrukturerat/">ostrukturerat</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/sakerhetspodcasten_295_startupsakerhet/" class="prev" rel="prev" title="Säkerhetspodcasten #295 - Startupsäkerhet"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Säkerhetspodcasten #295 - Startupsäkerhet</a></div>
+</div>
+</article></div>
+            </main></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
