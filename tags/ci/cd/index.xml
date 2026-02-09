@@ -4,6 +4,18 @@
         <link>https://sakerhetspodcasten.se/tags/ci/cd/</link>
         <description>CI/CD - Tag - Säkerhetspodcasten</description>
         <generator>Hugo -- gohugo.io</generator><language>en-us</language><atom:link href="https://sakerhetspodcasten.se/tags/ci/cd/" rel="self" type="application/rss+xml" /><item>
+    <title>Säkerhetspodcasten #297 - Nyår 2025</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_297_nyar_2025/</link>
+    <pubDate>Mon, 09 Feb 2026 08:57:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_297_nyar_2025/</guid>
+    <description><![CDATA[Säkerhetspodcasten snackar om vad hur vi spådde 2025, hur rätt och fel vi fick, och hur vi spår 2026.
+Lyssna mp3, längd: 01:16:57 Intro Rickard frånvarande, mår inte hundra. Donera till cancerfonden om du vill stödja framtida cancersjuka!
+Mattias presenterar regelverket, konceptet, för spanandet.
+Plugs Foss-North 2026 27-28 april 2026, Chalmers CfP, Call For Papers: öppet t.om. 15 februari From: Albin Otterhäll
+Subject: Foss-North CfP öppen fram till 15 februari 2026]]></description>
+</item>
+<item>
     <title>Säkerhetspodcasten #294 - Ostrukturerat V.50</title>
     <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_294_ostrukturerat_v_50/</link>
     <pubDate>Mon, 08 Dec 2025 10:17:00 &#43;0000</pubDate>
@@ -110,16 +122,6 @@ Man hade under en timme tryckt ut en dålig Channel File 291 som fick kundernas 
 Denna historien har ALLT: RegExp, null pointers, minnesmappning, kernel mode, CI/CD, Continous Delivery, DevOps, risk analys &hellip;
 Officiella svar från CrowdStrike:
 Remediation and Guidance Hub: Channel File 291 Incident Technical Details: Falcon Content Update for Windows Hosts July 20, 2024 External Technical Root Cause Analysis — Channel File 291 Augusti 6, 2024 The number of fields in the IPC Template Type was not validated at sensor compile time A runtime array bounds check was missing for Content Interpreter input fields on Channel File 291 Template Type testing should cover a wider variety of matching criteria The Content Validator contained a logic error Template Instance validation should expand to include testing within the Content Interpreter Template Instances should have staged deployment CrowdStrike Lingo:]]></description>
-</item>
-<item>
-    <title>Säkerhetspodcasten #261 - CI/CD Security</title>
-    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_261_ci_cd_security/</link>
-    <pubDate>Mon, 13 May 2024 14:07:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_261_ci_cd_security/</guid>
-    <description><![CDATA[Lyssna mp3, längd: 01:20:46 Plugs Konferenser Maj 30-31 2024: Security Fest Juni 4-5 2024: BSides Conference, Umeå September 10-13 2024: SEC-T 0x10sion Tillbakablickar Säkerhetspodcasten #250 - DevSecOps Säkerhetspodcasten #259 - XZ-bakdörren GitHub själv-hostad Runner litar blint på bidragare! John Stawinski med flera hackar GitHub, Microsoft, &hellip; via konstiga CI/CD fel i GitHub Self-Hosted Runners.
-Konstiga grejer som triggade oss: Contributator (bidragare) skall vara en kul grej, inte ett säkerhetshål!
-Dubbelkolla vilka regler som gäller för din Runner (joggare) om du satt upp en egen!]]></description>
 </item>
 </channel>
 </rss>

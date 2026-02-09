@@ -3,9 +3,21 @@
         <title>Säkerhetspodcasten</title>
         <link>https://sakerhetspodcasten.se/</link>
         <description>Säkerhetspodcasten - Sveriges första? podcast om IT-säkerhet</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 26 Jan 2026 09:09:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 09 Feb 2026 08:57:00 &#43;0000</lastBuildDate>
             <atom:link href="https://sakerhetspodcasten.se/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Säkerhetspodcasten #297 - Nyår 2025</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_297_nyar_2025/</link>
+    <pubDate>Mon, 09 Feb 2026 08:57:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_297_nyar_2025/</guid>
+    <description><![CDATA[Säkerhetspodcasten snackar om vad hur vi spådde 2025, hur rätt och fel vi fick, och hur vi spår 2026.
+Lyssna mp3, längd: 01:16:57 Intro Rickard frånvarande, mår inte hundra. Donera till cancerfonden om du vill stödja framtida cancersjuka!
+Mattias presenterar regelverket, konceptet, för spanandet.
+Plugs Foss-North 2026 27-28 april 2026, Chalmers CfP, Call For Papers: öppet t.om. 15 februari From: Albin Otterhäll
+Subject: Foss-North CfP öppen fram till 15 februari 2026]]></description>
+</item>
+<item>
     <title>Säkerhetspodcasten #296 - Ostrukturerat V.5</title>
     <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_296_ostrukturerat_v_5/</link>
     <pubDate>Mon, 26 Jan 2026 09:09:00 &#43;0000</pubDate>
@@ -100,17 +112,6 @@ Security Fest: WWWInterpub Friday, November 7, 2025 blaufish.github.io: Self Ref
 Lyssna mp3, längd: 35:32 Plugs Building Secure AI, Stockholm, 23-24 September 2025 Lyssnarbrev om galen JSON (Google transkribering av ljudfil, samt mindre manuella ändringar)
 Hej säkerhets podcasten mitt namn är Kalle och det här är min sommar anekdot
 Nej skämtade jag tänkte så här nya efterfrågat anekdotter min anekdoter mer av ett mysterium inom servar och webbutveckling inte direkt säkerhet i sig men ni verkar det inte fått in så många anekdoter]]></description>
-</item>
-<item>
-    <title>Säkerhetspodcasten #287 - Ostrukturerat V.34</title>
-    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_287_ostrukturerat_v_34/</link>
-    <pubDate>Mon, 18 Aug 2025 13:24:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_287_ostrukturerat_v_34/</guid>
-    <description><![CDATA[Sommar, AI utbrytning, Proven shimming, HTTP/1.1 måste dö, Solar Supplychain, Areoflot hackat, Minions!
-Lyssna mp3, längd: 01:00:13 Plugs Building Secure AI, Stockholm, 23-24 September 2025 Bli Säker podden massa spännande i sommras 00:11:54 Konkurrentanalys!
-Bli Säker med Karl Emil Nikka har släppt bra avsnitt i sommar om bland annat:
-UK lag: ID-verifiering för att få nå porr och annat upprörande Tea läckte chat-loggar, ID-handlingar, foton på användare Dataläcka med svenska medborgares personuppgifter AI-chatläckor Fyndiq falska minneskort, USB-stickor, m.]]></description>
 </item>
 </channel>
 </rss>

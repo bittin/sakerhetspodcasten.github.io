@@ -3,7 +3,19 @@
         <title>rust - Tag - Säkerhetspodcasten</title>
         <link>https://sakerhetspodcasten.se/tags/rust/</link>
         <description>rust - Tag - Säkerhetspodcasten</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 08 Dec 2025 10:17:00 &#43;0000</lastBuildDate><atom:link href="https://sakerhetspodcasten.se/tags/rust/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 09 Feb 2026 08:57:00 &#43;0000</lastBuildDate><atom:link href="https://sakerhetspodcasten.se/tags/rust/" rel="self" type="application/rss+xml" /><item>
+    <title>Säkerhetspodcasten #297 - Nyår 2025</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_297_nyar_2025/</link>
+    <pubDate>Mon, 09 Feb 2026 08:57:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_297_nyar_2025/</guid>
+    <description><![CDATA[Säkerhetspodcasten snackar om vad hur vi spådde 2025, hur rätt och fel vi fick, och hur vi spår 2026.
+Lyssna mp3, längd: 01:16:57 Intro Rickard frånvarande, mår inte hundra. Donera till cancerfonden om du vill stödja framtida cancersjuka!
+Mattias presenterar regelverket, konceptet, för spanandet.
+Plugs Foss-North 2026 27-28 april 2026, Chalmers CfP, Call For Papers: öppet t.om. 15 februari From: Albin Otterhäll
+Subject: Foss-North CfP öppen fram till 15 februari 2026]]></description>
+</item>
+<item>
     <title>Säkerhetspodcasten #294 - Ostrukturerat V.50</title>
     <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_294_ostrukturerat_v_50/</link>
     <pubDate>Mon, 08 Dec 2025 10:17:00 &#43;0000</pubDate>
@@ -96,16 +108,6 @@ Vad har blivit bättre inom säkerhet?]]></description>
     <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_231_ostrukturerat_v_51/</guid>
     <description><![CDATA[Lyssna mp3, längd: 46:08 Innehåll I dagens luciaavsnitt går vi igenom den senaste tidens nyheter. Bland annat diskuteras angrepp mot franska sjukhus och svenska folkhälsomyndigheten samt Softronic, en snygg WAF bypass och en tråkig sårbarhet i Fortinets brandväggar.
 Memcached UDP DDoS Cloudflare: What is a memcached DDoS attack? JSON SQL Injection PortSwigger: JSON syntax hack allowed SQL injection payloads to be smuggled past WAFs Folkhälsomyndigheten Sminet Dagens Nyheter: Folkhälsomyndigheten hackades – falsk covidpatient lades till i smittodatabas Linus Larsson: Trusec - 1.]]></description>
-</item>
-<item>
-    <title>Säkerhetspodcasten #229 - Ostrukturerat V.46</title>
-    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_229_ostrukturerat_v_46/</link>
-    <pubDate>Mon, 14 Nov 2022 09:41:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_229_ostrukturerat_v_46/</guid>
-    <description><![CDATA[Lyssna mp3, längd: 01:16:48 Innehåll Vi firar tio år! Det gör vi som sig bör med både öl och champagne (tack Onevinn!) och en genomgång av den senaste tidens säkerhetsnyheter.
-AI transkribering AI försöker förstå oss&hellip; Ha överseende med galna feltranskriberingar.
-1 00:00:00,520 --&gt; 00:00:16,020 Hej och välkommen till Säkerhetspodcasten. Jag som pratar heter Johan Ryberg Möller och har med mig Mattias Idage och Jesper Larsson och Peter Magnusson och Regan Bordfors på länk ifrån Kungliga Huvudstaden.]]></description>
 </item>
 </channel>
 </rss>
