@@ -3,7 +3,16 @@
         <title>ostrukturerat - Tag - Säkerhetspodcasten</title>
         <link>https://sakerhetspodcasten.se/tags/ostrukturerat/</link>
         <description>ostrukturerat - Tag - Säkerhetspodcasten</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 26 Jan 2026 09:09:00 &#43;0000</lastBuildDate><atom:link href="https://sakerhetspodcasten.se/tags/ostrukturerat/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 23 Feb 2026 07:00:00 &#43;0000</lastBuildDate><atom:link href="https://sakerhetspodcasten.se/tags/ostrukturerat/" rel="self" type="application/rss+xml" /><item>
+    <title>Säkerhetspodcasten #298 - Ostrukturerat V.9</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_298_ostrukturerat_v_9/</link>
+    <pubDate>Mon, 23 Feb 2026 07:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_298_ostrukturerat_v_9/</guid>
+    <description><![CDATA[Notepad bug, Notepad++ APT/malware, AI Skills, Rent A Human, Kubernetes Nodes/Proxy, 2038, Curl AI-Slop Spam, Microsoft gav FBI BitLocker nycklar!
+Lyssna mp3, längd: 01:05:31 Plugs Foss-North, 27-28 april 2026, Chalmers. Notepad Security Update Guide - Microsoft Security Response Center cve.org: CVE-2026-20841 Improper neutralization of special elements used in a command (&lsquo;command injection&rsquo;) in Windows Notepad App allows an unauthorized attacker to execute code locally. CyberNews/Ernestas Naprys: Critical Notepad vulnerability reignites criticism of Microsoft’s forced AI features Notepad++ Notepad++ update servern bakdörrad, och selektivt skickade bakdörrar till intressanta mål.]]></description>
+</item>
+<item>
     <title>Säkerhetspodcasten #296 - Ostrukturerat V.5</title>
     <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_296_ostrukturerat_v_5/</link>
     <pubDate>Mon, 26 Jan 2026 09:09:00 &#43;0000</pubDate>
@@ -100,17 +109,6 @@ Servern är skriven i JSP och SpringBoot. Lösenord i MD5 på klient istället f
 Lyssna mp3, längd: 01:02:36 Plugs Vi promotar random kul vagt relaterat till säkerhet:
 Hack GBGay 2025, May 17th 2025, LGBTQ+ Security Fest - IT Security Conference, Gothenburg, Sweden BSides Ume 2025 (10-11 June 2025): Overview · Indico SEC-T Lyssnarbrev Fler Anekdoter Johan Wranker om Anekdoter:
 Anekdoter tyckte jag var skitskoj och jag skulle vilja höra fler!]]></description>
-</item>
-<item>
-    <title>Säkerhetspodcasten #279 - Ostrukturerat V.14</title>
-    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_279_ostrukturerat_v_14/</link>
-    <pubDate>Mon, 31 Mar 2025 08:00:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_279_ostrukturerat_v_14/</guid>
-    <description><![CDATA[Signalgate, TJ Actions, Överförmyndarnämnden, Kryptokrig, Paragon, UTF-8, IngressNightmare, Next.js middleware, device bundna sessioner, Post Quantum Cryptograhy!
-Lyssna mp3, längd: 01:10:34 Lyssnarbrev Fler Anekdoter 00:00:43 Johan Wranker om Anekdoter:
-Anekdoter tyckte jag var skitskoj och jag skulle vilja höra fler!
-Vad sägs om att vi tillsammans crowdsårcar in lite anekdotter! Jag gissar att det finns fler som har har det på lager. så om ni skickar in ljudfiler med era historia; korta, långa - Jag har ingen aning!]]></description>
 </item>
 </channel>
 </rss>

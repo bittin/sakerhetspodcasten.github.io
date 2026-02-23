@@ -3,7 +3,16 @@
         <title>All Posts - Säkerhetspodcasten</title>
         <link>https://sakerhetspodcasten.se/posts/</link>
         <description>All Posts | Säkerhetspodcasten</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 09 Feb 2026 08:57:00 &#43;0000</lastBuildDate><atom:link href="https://sakerhetspodcasten.se/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 23 Feb 2026 07:00:00 &#43;0000</lastBuildDate><atom:link href="https://sakerhetspodcasten.se/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Säkerhetspodcasten #298 - Ostrukturerat V.9</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_298_ostrukturerat_v_9/</link>
+    <pubDate>Mon, 23 Feb 2026 07:00:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_298_ostrukturerat_v_9/</guid>
+    <description><![CDATA[Notepad bug, Notepad++ APT/malware, AI Skills, Rent A Human, Kubernetes Nodes/Proxy, 2038, Curl AI-Slop Spam, Microsoft gav FBI BitLocker nycklar!
+Lyssna mp3, längd: 01:05:31 Plugs Foss-North, 27-28 april 2026, Chalmers. Notepad Security Update Guide - Microsoft Security Response Center cve.org: CVE-2026-20841 Improper neutralization of special elements used in a command (&lsquo;command injection&rsquo;) in Windows Notepad App allows an unauthorized attacker to execute code locally. CyberNews/Ernestas Naprys: Critical Notepad vulnerability reignites criticism of Microsoft’s forced AI features Notepad++ Notepad++ update servern bakdörrad, och selektivt skickade bakdörrar till intressanta mål.]]></description>
+</item>
+<item>
     <title>Säkerhetspodcasten #297 - Nyår 2025</title>
     <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_297_nyar_2025/</link>
     <pubDate>Mon, 09 Feb 2026 08:57:00 &#43;0000</pubDate>
@@ -99,17 +108,6 @@ Stötte på en sak häromveckan som jag började fundera lite på. Skickar med e
     <description><![CDATA[SEC-T. Självrefererande Git. NPM: S1ngularity, och Shai-Hulud. Massa randomware och läckor: Miljödata, Jaguar LandRover (JLR), Collins, Kinesiska Muren (GFwC). Minnesskydd. Kassa kassaskåp! WhatsApp/iOS/DNG attack. Hotaktör säkrar dina server. Steam-malware.
 Lyssna mp3, längd: 01:16:09 Plugs Vi promotar random kul vagt relaterat till säkerhet:
 Security Fest: WWWInterpub Friday, November 7, 2025 blaufish.github.io: Self Referential Git Peter har gjort en git commit be31337 som i en länk refererar till sig själv på github. Antar du vår utmaning?]]></description>
-</item>
-<item>
-    <title>Säkerhetspodcasten #288 - Era Anekdoter</title>
-    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_288_era_anekdoter/</link>
-    <pubDate>Mon, 01 Sep 2025 09:44:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_288_era_anekdoter/</guid>
-    <description><![CDATA[Lyssnarna hör av sig om befängda API-servers, och skolan som ger elever för mycket rättigeter.
-Lyssna mp3, längd: 35:32 Plugs Building Secure AI, Stockholm, 23-24 September 2025 Lyssnarbrev om galen JSON (Google transkribering av ljudfil, samt mindre manuella ändringar)
-Hej säkerhets podcasten mitt namn är Kalle och det här är min sommar anekdot
-Nej skämtade jag tänkte så här nya efterfrågat anekdotter min anekdoter mer av ett mysterium inom servar och webbutveckling inte direkt säkerhet i sig men ni verkar det inte fått in så många anekdoter]]></description>
 </item>
 </channel>
 </rss>
