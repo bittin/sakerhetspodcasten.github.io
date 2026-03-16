@@ -3,9 +3,18 @@
         <title>Säkerhetspodcasten</title>
         <link>https://sakerhetspodcasten.se/</link>
         <description>Säkerhetspodcasten - Sveriges första? podcast om IT-säkerhet</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 23 Feb 2026 07:00:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 16 Mar 2026 09:55:00 &#43;0000</lastBuildDate>
             <atom:link href="https://sakerhetspodcasten.se/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Säkerhetspodcasten #299 - Rollspel</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_299_rollspel/</link>
+    <pubDate>Mon, 16 Mar 2026 09:55:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_299_rollspel/</guid>
+    <description><![CDATA[Game Master Jesper leder podden in i ett rollspel / äventyr (AI genererat) äventyr om en krypto-myntstöld. Podden försöker utifrån gamla citat med mera gissa sig fram till vad som kan ha hänt, hur man skulle skydda sig, med mera.
+Lyssna mp3, längd: 01:00:58 Plugs Informell afterwork, spelat in 300 avsnitt firande: 24 Mars 2026 18:00, på Bishops Arms Park Avenue (på Avenyn). Finns inga reservationer eller dylikt, vi är bara där och tar någon öl, kika efter oss.]]></description>
+</item>
+<item>
     <title>Säkerhetspodcasten #298 - Ostrukturerat V.9</title>
     <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_298_ostrukturerat_v_9/</link>
     <pubDate>Mon, 23 Feb 2026 07:00:00 &#43;0000</pubDate>
@@ -100,16 +109,6 @@ Security Fest: WWWInterpub Friday, November 7, 2025 Lyssnarfråga Ida: e-identit
 Länkar:
 Svensk e-identitet: Driftinformation Ida:
 Stötte på en sak häromveckan som jag började fundera lite på. Skickar med en skärmdump.]]></description>
-</item>
-<item>
-    <title>Säkerhetspodcasten #289 - Ostrukturerat V.41</title>
-    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_289_ostrukturerat_v_41/</link>
-    <pubDate>Mon, 06 Oct 2025 08:05:00 &#43;0200</pubDate>
-    <author>Author</author>
-    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_289_ostrukturerat_v_41/</guid>
-    <description><![CDATA[SEC-T. Självrefererande Git. NPM: S1ngularity, och Shai-Hulud. Massa randomware och läckor: Miljödata, Jaguar LandRover (JLR), Collins, Kinesiska Muren (GFwC). Minnesskydd. Kassa kassaskåp! WhatsApp/iOS/DNG attack. Hotaktör säkrar dina server. Steam-malware.
-Lyssna mp3, längd: 01:16:09 Plugs Vi promotar random kul vagt relaterat till säkerhet:
-Security Fest: WWWInterpub Friday, November 7, 2025 blaufish.github.io: Self Referential Git Peter har gjort en git commit be31337 som i en länk refererar till sig själv på github. Antar du vår utmaning?]]></description>
 </item>
 </channel>
 </rss>
