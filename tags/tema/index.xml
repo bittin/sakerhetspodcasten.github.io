@@ -3,7 +3,19 @@
         <title>tema - Tag - Säkerhetspodcasten</title>
         <link>https://sakerhetspodcasten.se/tags/tema/</link>
         <description>tema - Tag - Säkerhetspodcasten</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 16 Mar 2026 09:55:00 &#43;0000</lastBuildDate><atom:link href="https://sakerhetspodcasten.se/tags/tema/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 30 Mar 2026 10:16:00 &#43;0000</lastBuildDate><atom:link href="https://sakerhetspodcasten.se/tags/tema/" rel="self" type="application/rss+xml" /><item>
+    <title>Säkerhetspodcasten #300 - Jubileum!</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_300_jubileum/</link>
+    <pubDate>Mon, 30 Mar 2026 10:16:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_300_jubileum/</guid>
+    <description><![CDATA[Podden firar 300 avsnitt och snackar igenom bästa / värsta gamla minnen, avsnitten och ögonblicken som formade oss och vår podd!
+Lyssna mp3, längd: 01:04:31 AI transkribering AI försöker förstå oss&hellip; Ha överseende med galna feltranskriberingar.
+1 00:00:00,000 --&gt; 00:00:02,520 Hej och välkomna till Säkerhetspodcasten.
+2 00:00:02,640 --&gt; 00:00:05,160 Jag som pratar heter Johan Ryberg Möller, med mig har jag Jesper Larsson.
+3 00:00:05,200 --&gt; 00:00:06,140 Det kan ni fet haja.]]></description>
+</item>
+<item>
     <title>Säkerhetspodcasten #299 - Rollspel</title>
     <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_299_rollspel/</link>
     <pubDate>Mon, 16 Mar 2026 09:55:00 &#43;0000</pubDate>
@@ -100,27 +112,6 @@ Hur stadsoberoende styrs Internet när relationerna krånglar? DNS, DNSSEC och t
 Lyssna mp3, längd: 01:06:51 Lyssnarbrev Fler Anekdoter 00:01:04 Johan Wranker om Anekdoter:
 Anekdoter tyckte jag var skitskoj och jag skulle vilja höra fler!
 Vad sägs om att vi tillsammans crowdsårcar in lite anekdotter!]]></description>
-</item>
-<item>
-    <title>Säkerhetspodcasten #278 - Automatiseringens Akilleshäl</title>
-    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_278_automatiseringens_akilleshal/</link>
-    <pubDate>Mon, 17 Mar 2025 06:33:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_278_automatiseringens_akilleshal/</guid>
-    <description><![CDATA[Hot mot pipelines, workflows, actions, continuous deployment.
-Lyssna mp3, längd: 01:22:43 Introduktion Automatiseringens fördelar vs. risker – hur Workflows och Actions blivit en attackvektor.
-Exempel på verkliga incidenter (t.ex. supply chain-attacker via CI/CD).
-Populära Workflows &amp; Actions GitHub Actions
-Hur det fungerar.
-Self-hosted vs. GitHub-hosted runners.
-Typiska säkerhetsbrister.
-GitLab CI/CD
-Shared vs. Private Runners.
-Pipeline permissions.
-ArgoCD &amp; Kubernetes CI/CD
-GitOps och hotbilden.
-Privilegierade tillgångar och Kubernetes RBAC.
-Andra populära system]]></description>
 </item>
 </channel>
 </rss>

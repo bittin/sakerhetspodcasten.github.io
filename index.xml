@@ -3,9 +3,21 @@
         <title>Säkerhetspodcasten</title>
         <link>https://sakerhetspodcasten.se/</link>
         <description>Säkerhetspodcasten - Sveriges första? podcast om IT-säkerhet</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 16 Mar 2026 09:55:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 30 Mar 2026 10:16:00 &#43;0000</lastBuildDate>
             <atom:link href="https://sakerhetspodcasten.se/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Säkerhetspodcasten #300 - Jubileum!</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_300_jubileum/</link>
+    <pubDate>Mon, 30 Mar 2026 10:16:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_300_jubileum/</guid>
+    <description><![CDATA[Podden firar 300 avsnitt och snackar igenom bästa / värsta gamla minnen, avsnitten och ögonblicken som formade oss och vår podd!
+Lyssna mp3, längd: 01:04:31 AI transkribering AI försöker förstå oss&hellip; Ha överseende med galna feltranskriberingar.
+1 00:00:00,000 --&gt; 00:00:02,520 Hej och välkomna till Säkerhetspodcasten.
+2 00:00:02,640 --&gt; 00:00:05,160 Jag som pratar heter Johan Ryberg Möller, med mig har jag Jesper Larsson.
+3 00:00:05,200 --&gt; 00:00:06,140 Det kan ni fet haja.]]></description>
+</item>
+<item>
     <title>Säkerhetspodcasten #299 - Rollspel</title>
     <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_299_rollspel/</link>
     <pubDate>Mon, 16 Mar 2026 09:55:00 &#43;0000</pubDate>
@@ -96,19 +108,6 @@ Mic-E-Mouse Invisible Ears at Your Fingertips: Acoustic Eavesdropping via Mouse 
 Varför kräver vissa typer av tjänster höjda privilegier?
 Lyssna mp3, längd: 01:07:56 Plugs Vi promotar random kul vagt relaterat till säkerhet:
 Security Fest: WWWInterpub Friday, November 7, 2025 Primer/intro Vad är CSI, CNI, CRI – och varför de är kritiska för klustret.]]></description>
-</item>
-<item>
-    <title>Säkerhetspodcasten #290 - Ostrukturerat V.42</title>
-    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_290_ostrukturerat_v_42/</link>
-    <pubDate>Mon, 13 Oct 2025 15:32:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_290_ostrukturerat_v_42/</guid>
-    <description><![CDATA[VPN med e-identitet/BankID. RedHat, Discord läckor. DrayTek och CISCO hål. Audacity, Qualcomm, Arduino - off-topic!
-Lyssna mp3, längd: 52:28 Plugs Vi promotar random kul vagt relaterat till säkerhet:
-Security Fest: WWWInterpub Friday, November 7, 2025 Lyssnarfråga Ida: e-identitet.se BankID-tjänst stoppar VPN Ida undrar vad vi tycker om att e-identitet.se stoppar BankID användning via VPN.
-Länkar:
-Svensk e-identitet: Driftinformation Ida:
-Stötte på en sak häromveckan som jag började fundera lite på. Skickar med en skärmdump.]]></description>
 </item>
 </channel>
 </rss>
