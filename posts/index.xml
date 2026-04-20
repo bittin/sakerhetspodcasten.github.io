@@ -3,7 +3,16 @@
         <title>All Posts - Säkerhetspodcasten</title>
         <link>https://sakerhetspodcasten.se/posts/</link>
         <description>All Posts | Säkerhetspodcasten</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 30 Mar 2026 10:16:00 &#43;0000</lastBuildDate><atom:link href="https://sakerhetspodcasten.se/posts/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 20 Apr 2026 08:10:00 &#43;0000</lastBuildDate><atom:link href="https://sakerhetspodcasten.se/posts/" rel="self" type="application/rss+xml" /><item>
+    <title>Säkerhetspodcasten #301 - Ostrukturerat V.17</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_301_ostrukturerat_v_17/</link>
+    <pubDate>Mon, 20 Apr 2026 08:10:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_301_ostrukturerat_v_17/</guid>
+    <description><![CDATA[Karl Emil Nikka får pris, Apple Notifications läcker Signal-meddelanden till forensiker, Bedrägare har verifierade profiler trotts falska foton, Claude Vim/Emacs, Opus 4.7, Mythos/Glasswing, Allt brinner i Supply Chain Hell, Windows Malware, CGI hackat, IT-säkerhet via mjölk, HTTP Terminator!
+Lyssna mp3, längd: 01:07:23 Plugs Security Fest - IT Security Conference, Gothenburg, Sweden finns fortfarande trainings till salu! HackGBGay 30:e Maj 2026, Regnbågshuset Göteborg. Queer IT-Security konferens. Cybersecurity för LGBTQ+. Registrera plats! blaufish.]]></description>
+</item>
+<item>
     <title>Säkerhetspodcasten #300 - Jubileum!</title>
     <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_300_jubileum/</link>
     <pubDate>Mon, 30 Mar 2026 10:16:00 &#43;0000</pubDate>
@@ -95,17 +104,6 @@ Lyssna mp3, längd: 01:13:21 Försnack Rickard pratar om varför han varit borta
 Mus avlyssnar dig Möss med hög uppdateringsfrekvens kan avlyssna rum via sin fotosensor.
 Länkar:
 Mic-E-Mouse Invisible Ears at Your Fingertips: Acoustic Eavesdropping via Mouse Sensors pdf Mohamad Habib Fakih, Rahul Dharmaji, Youssef Mahmoud, Halima Bouzidi, Mohammad Abdullah Al Faruque, Dept.]]></description>
-</item>
-<item>
-    <title>Säkerhetspodcasten #291 - Kubernetes Drivers</title>
-    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_291_kubernetes_drivers/</link>
-    <pubDate>Mon, 27 Oct 2025 13:32:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_291_kubernetes_drivers/</guid>
-    <description><![CDATA[Kubernetes och CSI/CNI/&hellip; driver-infrastrukturen, Priviligerade tjänster (DaemonSet) - vilka hål kan det finns det där? Hur illa kan det gå om det är dåligt konf&rsquo;at eller om ondingar kan pilla på konfigurationen?
-Varför kräver vissa typer av tjänster höjda privilegier?
-Lyssna mp3, längd: 01:07:56 Plugs Vi promotar random kul vagt relaterat till säkerhet:
-Security Fest: WWWInterpub Friday, November 7, 2025 Primer/intro Vad är CSI, CNI, CRI – och varför de är kritiska för klustret.]]></description>
 </item>
 </channel>
 </rss>
