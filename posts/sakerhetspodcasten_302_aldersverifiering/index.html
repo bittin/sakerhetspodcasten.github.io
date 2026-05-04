@@ -1,0 +1,3391 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="robots" content="noodp" />
+        <title>Säkerhetspodcasten #302 - Åldersverifiering - Säkerhetspodcasten</title><meta name="Description" content="Säkerhetspodcasten - Sveriges första? podcast om IT-säkerhet"><meta property="og:title" content="Säkerhetspodcasten #302 - Åldersverifiering" />
+<meta property="og:description" content="Åldersverifiering på Internet är just nu hett i hela världen &ndash; EU, UK, Australien, USA, &hellip; Risker, fördelar, designval runt åldersverifiering, vi diskuterar igenom, med primärt fokus på EU.
+Vi spelade in strax innan Paul Moore påtalade en drös fel och brister i EU&rsquo;s Android app och EU&rsquo;s system/biljettformat för åldersbevis.
+Lyssna mp3, längd: 53:33 EU&rsquo;s lösning för åldersverifiering EU vill rulla ut en lösning där man då och då måste autentisera sig, men får ett integritetsskyddat (engelska privacy-preserving) bevis för sin ålder." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://sakerhetspodcasten.se/posts/sakerhetspodcasten_302_aldersverifiering/" /><meta property="article:section" content="posts" />
+<meta property="article:published_time" content="2026-05-04T10:28:00+00:00" />
+<meta property="article:modified_time" content="2026-05-04T10:28:00+00:00" /><meta property="og:site_name" content="Säkerhetspodcasten" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Säkerhetspodcasten #302 - Åldersverifiering"/>
+<meta name="twitter:description" content="Åldersverifiering på Internet är just nu hett i hela världen &ndash; EU, UK, Australien, USA, &hellip; Risker, fördelar, designval runt åldersverifiering, vi diskuterar igenom, med primärt fokus på EU.
+Vi spelade in strax innan Paul Moore påtalade en drös fel och brister i EU&rsquo;s Android app och EU&rsquo;s system/biljettformat för åldersbevis.
+Lyssna mp3, längd: 53:33 EU&rsquo;s lösning för åldersverifiering EU vill rulla ut en lösning där man då och då måste autentisera sig, men får ett integritetsskyddat (engelska privacy-preserving) bevis för sin ålder."/>
+<meta name="application-name" content="Säkerhetspodcasten">
+<meta name="apple-mobile-web-app-title" content="Säkerhetspodcasten"><meta name="theme-color" content="#ffffff"><meta name="msapplication-TileColor" content="#da532c"><link rel="shortcut icon" type="image/x-icon" href="/favicon.ico" />
+        <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png"><link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png"><link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5"><link rel="manifest" href="/site.webmanifest"><link rel="canonical" href="https://sakerhetspodcasten.se/posts/sakerhetspodcasten_302_aldersverifiering/" /><link rel="prev" href="https://sakerhetspodcasten.se/posts/sakerhetspodcasten_301_ostrukturerat_v_17/" /><link rel="stylesheet" href="/css/style.min.css"><link rel="preload" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.1.1/css/all.min.css"></noscript><link rel="preload" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css" as="style" onload="this.onload=null;this.rel='stylesheet'">
+        <noscript><link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/animate.css@4.1.1/animate.min.css"></noscript><script type="application/ld+json">
+    {
+        "@context": "http://schema.org",
+        "@type": "BlogPosting",
+        "headline": "Säkerhetspodcasten #302 - Åldersverifiering",
+        "inLanguage": "en-us",
+        "mainEntityOfPage": {
+            "@type": "WebPage",
+            "@id": "https:\/\/sakerhetspodcasten.se\/posts\/sakerhetspodcasten_302_aldersverifiering\/"
+        },"genre": "posts","keywords": "tema","wordcount":  16623 ,
+        "url": "https:\/\/sakerhetspodcasten.se\/posts\/sakerhetspodcasten_302_aldersverifiering\/","datePublished": "2026-05-04T10:28:00+00:00","dateModified": "2026-05-04T10:28:00+00:00","publisher": {
+            "@type": "Organization",
+            "name": ""},"author": {
+                "@type": "Person",
+                "name": "Author"
+            },"description": ""
+    }
+    </script></head>
+    <body data-header-desktop="fixed" data-header-mobile="auto"><script type="text/javascript">(window.localStorage && localStorage.getItem('theme') ? localStorage.getItem('theme') === 'dark' : ('light' === 'auto' ? window.matchMedia('(prefers-color-scheme: dark)').matches : 'light' === 'dark')) && document.body.setAttribute('theme', 'dark');</script>
+
+        <div id="mask"></div><div class="wrapper"><header class="desktop" id="header-desktop">
+    <div class="header-wrapper">
+        <div class="header-title">
+            <a href="/" title="Säkerhetspodcasten">Säkerhetspodcasten</a>
+        </div>
+        <div class="menu">
+            <div class="menu-inner"><a class="menu-item" href="/posts/"> Pods </a><a class="menu-item" href="/pages/lyssna" title="Lyssna"> Lyssna! </a><a class="menu-item" href="/pages/kontakt" title="kontakt"> Kontakt </a><a class="menu-item" href="/pages/panelen" title="panelen"> Panelen </a><a class="menu-item" href="/pages/supportersida-2" title="supporters"> Supporters </a><span class="menu-item delimiter"></span><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                    <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+                </a></div>
+        </div>
+    </div>
+</header><header class="mobile" id="header-mobile">
+    <div class="header-container">
+        <div class="header-wrapper">
+            <div class="header-title">
+                <a href="/" title="Säkerhetspodcasten">Säkerhetspodcasten</a>
+            </div>
+            <div class="menu-toggle" id="menu-toggle-mobile">
+                <span></span><span></span><span></span>
+            </div>
+        </div>
+        <div class="menu" id="menu-mobile"><a class="menu-item" href="/posts/" title="">Pods</a><a class="menu-item" href="/pages/lyssna" title="Lyssna">Lyssna!</a><a class="menu-item" href="/pages/kontakt" title="kontakt">Kontakt</a><a class="menu-item" href="/pages/panelen" title="panelen">Panelen</a><a class="menu-item" href="/pages/supportersida-2" title="supporters">Supporters</a><a href="javascript:void(0);" class="menu-item theme-switch" title="Switch Theme">
+                <i class="fas fa-adjust fa-fw" aria-hidden="true"></i>
+            </a></div>
+    </div>
+</header><main class="main">
+                <div class="container"><div class="toc" id="toc-auto">
+            <h2 class="toc-title">Contents</h2>
+            <div class="toc-content" id="toc-content-auto"></div>
+        </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Säkerhetspodcasten #302 - Åldersverifiering</h1><div class="post-meta">
+            <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span></div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2026-05-04">2026-05-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;16623 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;79 minutes&nbsp;</div>
+        </div><div class="details toc" id="toc-static"  data-kept="">
+                <div class="details-summary toc-title">
+                    <span>Contents</span>
+                    <span><i class="details-icon fas fa-angle-right" aria-hidden="true"></i></span>
+                </div>
+                <div class="details-content toc-content" id="toc-content-static"><nav id="TableOfContents">
+  <ul>
+    <li><a href="#lyssna">Lyssna</a></li>
+    <li><a href="#eus-lösning-för-åldersverifiering">EU&rsquo;s lösning för åldersverifiering</a></li>
+    <li><a href="#kritik-mot-åldersverifiering">Kritik mot åldersverifiering</a></li>
+    <li><a href="#säkerhetshål-i-eus-åldersverifieringsapp">Säkerhetshål i EU&rsquo;s åldersverifieringsapp</a>
+      <ul>
+        <li><a href="#krypteringsproblemen">Krypteringsproblemen</a></li>
+        <li><a href="#kringgå-begränsningar-med-egen-kod">Kringgå begränsningar med egen kod</a></li>
+        <li><a href="#brister-i-bildkryptering-filborttagning">Brister i bildkryptering, filborttagning</a></li>
+        <li><a href="#första-härdningen-release-202604-2">Första härdningen, release 2026.04-2</a></li>
+      </ul>
+    </li>
+    <li><a href="#ai-transkribering">AI transkribering</a></li>
+  </ul>
+</nav></div>
+            </div><div class="content" id="content"><p>Åldersverifiering på Internet är just nu hett i hela världen
+&ndash; EU, UK, Australien, USA, &hellip;
+Risker, fördelar, designval runt åldersverifiering,
+vi diskuterar igenom, med primärt fokus på EU.</p>
+<p>Vi spelade in strax innan Paul Moore påtalade en drös fel och brister i
+EU&rsquo;s Android app och EU&rsquo;s system/biljettformat för åldersbevis.</p>
+<h2 id="lyssna">Lyssna</h2>
+<ul>
+<li><a href="https://traffic.libsyn.com/secure/sakerhetspodcasten/2026-04-15_AgeID.mp3?dest-id=117848" target="_blank" rel="noopener noreffer ">mp3</a>, längd: 53:33</li>
+</ul>
+<h2 id="eus-lösning-för-åldersverifiering">EU&rsquo;s lösning för åldersverifiering</h2>
+<p>EU vill rulla ut en lösning där man då och då måste autentisera sig,
+men får ett integritetsskyddat (engelska <em>privacy-preserving</em>)
+bevis för sin ålder.</p>
+<p>Länkar:</p>
+<ul>
+<li><a href="https://digital-strategy.ec.europa.eu/en/policies/eu-age-verification" target="_blank" rel="noopener noreffer ">Shaping Europe’s digital future: The EU approach to age verification</a></li>
+<li><a href="https://ageverification.dev/av-doc-technical-specification/docs/architecture-and-technical-specifications/#131-definitions" target="_blank" rel="noopener noreffer ">Overall architecture - European Age Verification Solution</a></li>
+<li><a href="https://github.com/eu-digital-identity-wallet/av-app-android-wallet-ui" target="_blank" rel="noopener noreffer ">GitHub - eu-digital-identity-wallet/av-app-android-wallet-ui · GitHub</a></li>
+<li><a href="https://www.youtube.com/watch?v=4VRRriyDKKk" target="_blank" rel="noopener noreffer ">YouTube/ Europe Echo: Ursula von der Leyen Unveils EU Age Verification App</a> <code>video</code></li>
+<li><a href="https://www.youtube.com/watch?v=ULFTrTznG7Y" target="_blank" rel="noopener noreffer ">YouTube/ DigitalEU: Blueprint for an age verification solution to help protect minors online</a> <code>video</code></li>
+</ul>
+<p>Nyhetsartiklar om EU&rsquo;s åldersverifiering:</p>
+<ul>
+<li><a href="https://www.globalbankingandfinance.com/macron-host-call-eu-leaders-social-media-ban-minors/" target="_blank" rel="noopener noreffer ">Macron Pushes EU Leaders for Coordinated Social Media Ban</a></li>
+<li><a href="https://www.gp.se/nyheter/varlden/eu-app-redo-for-alderskoll-pa-natet.9e3d2c70-a5a2-5b39-88c3-57266bcea5a9" target="_blank" rel="noopener noreffer ">Göteborgs-Posten: EU - App redo för ålderskoll på nätet</a></li>
+<li><a href="https://www.gp.se/nyheter/varlden/eus-nya-app-ska-verifiera-barns-alder-pa-sociala-medier.d4895635-20b5-40c3-a591-fe74ea478af4" target="_blank" rel="noopener noreffer ">Göteborgs-Posten: EU:s nya app ska verifiera barns ålder på sociala medier</a></li>
+</ul>
+<h2 id="kritik-mot-åldersverifiering">Kritik mot åldersverifiering</h2>
+<p>Det finns en hel del invändningar mot att begränsa åtkomsten till internet,
+och att träna folk i att onödan autentisera sig mot staten eller tredje
+part.</p>
+<p>Åldersverifiering får flera negativa konsekvenser,
+EFF&rsquo;s lista fritt översatt till svenska:</p>
+<blockquote>
+<ol>
+<li>Vuxna utan ID-kort blir utelåsta</li>
+<li>Färgade grupper möter högre felfrekvenser</li>
+<li>Personer med funktionsnedsättning möter fler hinder</li>
+<li>Transpersoner och icke-binära personer utsätts för risk</li>
+<li>Anonymitet blir ett offer</li>
+<li>Ungdomar förlorar tillgång till viktig information</li>
+<li>HBTQ+-ungdomar nekas viktiga livlinor</li>
+<li>Ungdomar i fosterhemssystem lämnas helt utanför</li>
+<li>Våra personuppgifter utsätts för risk</li>
+<li>Våra rättigheter till yttrandefrihet trampas på</li>
+</ol>
+</blockquote>
+<p>Länkar:</p>
+<ul>
+<li><a href="https://edri.org/our-work/why-age-verification-misses-the-mark-and-puts-everyone-at-risk/" target="_blank" rel="noopener noreffer ">European Digital Rights (EDRi): Why age verification misses the mark and puts everyone at risk - Age verification is a short-sighted, ineffective and dangerous way to protect young people form online harms.</a></li>
+<li><a href="https://www.eff.org/deeplinks/2025/12/10-not-so-hidden-dangers-age-verification" target="_blank" rel="noopener noreffer ">Electronic Frontier Foundation: 10 (Not So) Hidden Dangers of Age Verification</a></li>
+</ul>
+<h2 id="säkerhetshål-i-eus-åldersverifieringsapp">Säkerhetshål i EU&rsquo;s åldersverifieringsapp</h2>
+<p><a href="https://x.com/Paul_Reviews" target="_blank" rel="noopener noreffer ">Paul Moore</a> påtalade en bunt problem efter att
+vi spelat in:</p>
+<ul>
+<li>Använda en och samma åldersverifiering om och om igen.
+Svårt att bygga bort om man vill ha kvar
+integritetsskyddat (engelska <em>privacy-preserving</em>)
+bevis för ålder.
+De flesta enkla motmedel skulle göra ens bevis mer spårbart, lättare att
+koppla till person/enhet.</li>
+<li>Android app bister:
+<ul>
+<li>PIN bypass.
+Åldersbeviset på telefonen är inte krypterat/kopplat till ens PIN.</li>
+<li>Tar inte bort PII data som den skall</li>
+<li>Krypterar inte PII data den sparar ner</li>
+<li>2026.04-2 härdning:
+La till utdaterade beroenden, använder krypto-bibliotek som är
+<code>@Deprecated</code> sedan flera år.</li>
+<li>2026.04-2 härdning:
+La till <code>PBKDF2</code> kryptering med svag konfiguration (hash/iterationer)&hellip;
+och om ens hemlighet hur som helst är ett kort svagt PIN,
+är ens en stark konfiguration bra nog?</li>
+</ul>
+</li>
+</ul>
+<p>Länkar, artiklar:</p>
+<ul>
+<li><a href="https://proton.me/blog/eu-age-verification-app-hacked" target="_blank" rel="noopener noreffer ">Proton: EU age verification app hacked in 2 minutes – now what?</a></li>
+<li><a href="https://www.youtube.com/watch?v=1hfDOhrNx1I" target="_blank" rel="noopener noreffer ">YouTube/ Deep Humor: Age Verification App Got Hacked&hellip;</a> <code>video</code></li>
+<li><a href="https://www.youtube.com/watch?v=EcR4Ldg-ATU" target="_blank" rel="noopener noreffer ">YouTube/ Deep Humor: Age Verification App Hacked AGAIN!</a> <code>video</code></li>
+</ul>
+<h3 id="krypteringsproblemen">Krypteringsproblemen</h3>
+<p><a href="https://x.com/Paul_Reviews/status/2044723123287666921" target="_blank" rel="noopener noreffer ">Några av krypteringsproblemen</a>:</p>
+<ul>
+<li>PIN inte kopplat till ditt data.</li>
+<li>Du kan byta PIN utan att veta gamla PIN och behålla ditt data.
+i.e. en annan användare kan sno någons åldersverifiering.</li>
+<li>Du kan testa PIN i appen hur många gånger som helst, om du modifierar en fil.</li>
+</ul>
+<blockquote>
+<p>During setup, the app asks you to create a PIN.
+After entry, the app <em>encrypts</em> it and saves it in the <code>shared_prefs</code> directory.</p>
+<ol>
+<li>It shouldn&rsquo;t be encrypted at all - that&rsquo;s a really poor design.</li>
+<li>It&rsquo;s not cryptographically tied to the vault which contains the identity data.</li>
+</ol>
+<p>So, an attacker can simply remove the <code>PinEnc</code>/<code>PinIV</code> values from the
+<code>shared_prefs</code> file and restart the app.</p>
+<p>After choosing a different PIN, the app presents credentials created under
+the old profile and let&rsquo;s the attacker present them as valid.</p>
+<p>Other issues:</p>
+<ol>
+<li>Rate limiting is an incrementing number in the same config file. Just reset it to 0 and keep trying.</li>
+<li>&ldquo;UseBiometricAuth&rdquo; is a boolean, also in the same file. Set it to false and it just skips that step.</li>
+</ol>
+</blockquote>
+<h3 id="kringgå-begränsningar-med-egen-kod">Kringgå begränsningar med egen kod</h3>
+<p><a href="https://twitter.com/Paul_Reviews/status/2044784814289523093" target="_blank" rel="noopener noreffer ">En egen Chrome Extension</a>:</p>
+<blockquote>
+<p>I&rsquo;ve ported the Android app logic to a Chrome extension -
+stripping out the pesky step of handing over biometric data which they can
+leak&hellip; and pass verification instantly.</p>
+<p>Step 1: Install the extension <br>
+Step 2: Register an identity (just once) <br>
+Step 3: Continue using the web as normal</p>
+<p>The extension detects the QR code, generates a cryptographically identical
+payload and tells the verifier I&rsquo;m over 18, which it &ldquo;fully trusts&rdquo;.</p>
+<p>This isn&rsquo;t a bug&hellip; it&rsquo;s a fundamental design flaw they can&rsquo;t solve without
+irrevocably tying a key to you personally; which then allows
+tracking/monitoring.</p>
+</blockquote>
+<h3 id="brister-i-bildkryptering-filborttagning">Brister i bildkryptering, filborttagning</h3>
+<p><a href="https://x.com/Paul_Reviews/status/2044436001611801072" target="_blank" rel="noopener noreffer ">Om problem med bildkryptering, ta bort bilder</a>:</p>
+<blockquote>
+<p>The app goes to great lengths to protect the AV data AFTER collection
+(<code>is_over_18</code>: true is AES-GCM&rsquo;d); it does so pretty well.</p>
+<p>But, the source image used to collect that data is written to disk without
+encryption and not deleted correctly.</p>
+</blockquote>
+<p>NFC bilder:</p>
+<blockquote>
+<p>It pulls DG2 and writes a lossless PNG to the filesystem.
+It&rsquo;s only deleted on success.
+If it fails for any reason (user clicks back, scan fails &amp; retries, app
+crashes etc), the full biometric image remains on the device in cache.</p>
+</blockquote>
+<p>Selfie bilder:</p>
+<blockquote>
+<p>These images are written to external storage in lossless PNG format,
+but they&rsquo;re never deleted.  Not a cache&hellip; long-term storage.</p>
+</blockquote>
+<h3 id="första-härdningen-release-202604-2">Första härdningen, release 2026.04-2</h3>
+<p>eu-digital-identity-wallet uppdatering
+<a href="https://github.com/eu-digital-identity-wallet/av-app-android-wallet-ui/releases/tag/2026.04-2" target="_blank" rel="noopener noreffer ">Release 2026.04-2</a>
+första svaret på påtalade brister:</p>
+<blockquote>
+<p>This release hardens the Age Verification Blueprint App across several layers.</p>
+<ul>
+<li>On-device data: database and settings encrypted at rest, with keys protected
+by the device’s hardware-backed key store.</li>
+<li>Runtime: the app checks device integrity on startup and refuses to run on
+rooted or jailbroken devices. Production deployments should complement it
+with stronger device-attestation mechanisms appropriate to their
+infrastructure and compliance requirements.</li>
+<li>Passport onboarding: more stable scanning; the passport photo is stored
+privately and deleted as soon as it’s no longer needed.</li>
+<li>PIN: stricter rules block easy-to-guess PINs; PINs are salted and hashed,
+never stored in plain form.</li>
+</ul>
+<p>First hardening step — more to come.</p>
+</blockquote>
+<p><a href="https://twitter.com/Paul_Reviews/status/2047288336511897632" target="_blank" rel="noopener noreffer ">Paul Moore om deras uppdateringar, 1</a>:</p>
+<blockquote>
+<p>If we ignore the fact they&rsquo;ve used a 6 year old deprecated library,
+they haven&rsquo;t actually solved the problem at all.  An attacker can just
+as easily delete ciphertext as plain text.</p>
+</blockquote>
+<p><a href="https://twitter.com/Paul_Reviews/status/2047043703173513635" target="_blank" rel="noopener noreffer ">Paul Moore om deras uppdateringar, 2</a>:</p>
+<blockquote>
+<p>They introduced <code>androidx.security:security-crypto</code>, deprecated in 2025.
+Also <code>androidx.security.crypto.EncryptedSharedPreferences</code>, deprecated in 2025.
+Finally, <code>androidx.security.crypto.MasterKeys</code>, which were deprecated in 2020.</p>
+</blockquote>
+<blockquote>
+<p>They salt correctly (a true CSPRNG), then use PBKDF2-SHA256 -
+which is outdated and only recommended where FIPS compliance
+is required, which doesn&rsquo;t apply here.</p>
+<p>To make matters worse, they use just 210,000 iterations.
+For those of a NISTy disposition, you&rsquo;re likely already shaking your head.
+210,000 seems oddly specific.
+It is. It&rsquo;s the @owasp minimum for PBKDF2-SHA512, not SHA256.
+Right number, wrong algorithm.
+In reality, OWASP recommended 600,000 iterations as a minimum in 2023.</p>
+<p>Worse still, 600,000 is the baseline minimum for passwords, not PINs
+with 1 million permutations.
+You could use 1B iterations,
+you&rsquo;re not measurably increasing security when there are so few
+attempts required to break it.  At the very least, use a modern
+hash with reasonable brute-force resistance against a 2026 threat model.</p>
+</blockquote>
+<h2 id="ai-transkribering">AI transkribering</h2>
+<p><em>AI försöker förstå oss&hellip; Ha överseende med galna feltranskriberingar.</em></p>
+<p><code>1 00:00:00,000 --&gt; 00:00:04,540</code>
+Hej och välkomna till Säkerhetspodcasten. Jag som pratar heter Johan Ryberg-Möller, med mig har jag Mattias Hidrager.</p>
+<p><code>2 00:00:05,520 --&gt; 00:00:07,380</code>
+Japp, det här är jag.</p>
+<p><code>3 00:00:08,220 --&gt; 00:00:10,580</code>
+Hej och välkommen. Peter Magnusson är också här.</p>
+<p><code>4 00:00:10,800 --&gt; 00:00:11,280</code>
+Dave.</p>
+<p><code>5 00:00:11,900 --&gt; 00:00:13,120</code>
+Och Jesper Larsson.</p>
+<p><code>6 00:00:13,540 --&gt; 00:00:14,260</code>
+Jag tror det.</p>
+<p><code>7 00:00:14,860 --&gt; 00:00:15,940</code>
+Jespers konstant.</p>
+<p><code>8 00:00:16,100 --&gt; 00:00:18,460</code>
+Ja, Blanks konstant har vi precis pratat om.</p>
+<p><code>9 00:00:18,580 --&gt; 00:00:20,500</code>
+Rickard är inte här, men förhoppningsvis snart med oss igen.</p>
+<p><code>10 00:00:21,220 --&gt; 00:00:21,820</code>
+Så är det faktiskt.</p>
+<p><code>11 00:00:22,420 --&gt; 00:00:26,360</code>
+Innan vi börjar så ska vi nämna att det är den 15 april när vi spelar in.</p>
+<p><code>12 00:00:26,360 --&gt; 00:00:30,340</code>
+Och vi är sponsrade av Shored som finns på Shored.se.</p>
+<p><code>13 00:00:30,480 --&gt; 00:00:35,020</code>
+Så även av 0x4A som finns på 0x4A.se och Bortfors som finns på Bortfors.se.</p>
+<p><code>14 00:00:35,820 --&gt; 00:00:36,640</code>
+Där har vi alla dem.</p>
+<p><code>15 00:00:36,760 --&gt; 00:00:39,620</code>
+Jesper, Securityfest är en grej som vi håller på med.</p>
+<p><code>16 00:00:40,160 --&gt; 00:00:40,720</code>
+Några av oss.</p>
+<p><code>17 00:00:41,040 --&gt; 00:00:43,120</code>
+Ja, jag hörde att det var en liten explosion bakgrund.</p>
+<p><code>18 00:00:43,300 --&gt; 00:00:43,820</code>
+Det är ju Göteborg.</p>
+<p><code>19 00:00:44,020 --&gt; 00:00:45,660</code>
+Ja, den kom jättebra.</p>
+<p><code>20 00:00:47,860 --&gt; 00:00:50,180</code>
+Securityfest är ju GoAfsApen och ni som inte har köpt biljett,</p>
+<p><code>21 00:00:50,960 --&gt; 00:00:52,540</code>
+ställ er i kö för det finns inga biljetter.</p>
+<p><code>22 00:00:52,540 --&gt; 00:00:54,280</code>
+Men, exakt.</p>
+<p><code>23 00:00:54,980 --&gt; 00:00:56,060</code>
+Det finns en möjlighet.</p>
+<p><code>24 00:00:56,360 --&gt; 00:00:58,180</code>
+Att komma in på konferensen.</p>
+<p><code>25 00:00:58,320 --&gt; 00:00:59,460</code>
+Huta mig eller Jesper.</p>
+<p><code>26 00:00:59,940 --&gt; 00:01:00,600</code>
+Det går alltid.</p>
+<p><code>27 00:01:01,580 --&gt; 00:01:02,740</code>
+Men det är svårt att göra nu.</p>
+<p><code>28 00:01:03,140 --&gt; 00:01:04,640</code>
+Men vad man kan göra faktiskt.</p>
+<p><code>29 00:01:04,780 --&gt; 00:01:07,260</code>
+Vi har en biljett kvar till en av våra trainings.</p>
+<p><code>30 00:01:07,960 --&gt; 00:01:10,740</code>
+Som är fullstack pentesting laboratory.</p>
+<p><code>31 00:01:13,680 --&gt; 00:01:14,860</code>
+Man lär sig allt.</p>
+<p><code>32 00:01:15,000 --&gt; 00:01:16,260</code>
+Jag har läst innehållet här.</p>
+<p><code>33 00:01:16,380 --&gt; 00:01:17,060</code>
+Så den är bra att gå.</p>
+<p><code>34 00:01:18,360 --&gt; 00:01:19,980</code>
+Det är verkligen högt och lågt.</p>
+<p><code>35 00:01:21,320 --&gt; 00:01:24,060</code>
+Men om man då går training med Dave.</p>
+<p><code>36 00:01:24,880 --&gt; 00:01:25,760</code>
+Eller David.</p>
+<p><code>37 00:01:26,360 --&gt; 00:01:29,120</code>
+Så får man faktiskt access till konferensen också.</p>
+<p><code>38 00:01:29,120 --&gt; 00:01:35,120</code>
+Så det är inte nog med att man får massa cool kunskap som man kan lägga i sin verktygslåda av saker.</p>
+<p><code>39 00:01:35,120 --&gt; 00:01:39,920</code>
+Så får man också komma på konferensen och hänga där och träffa oss.</p>
+<p><code>40 00:01:39,920 --&gt; 00:01:41,120</code>
+Det brukar vara väldigt roligt.</p>
+<p><code>41 00:01:41,120 --&gt; 00:01:46,120</code>
+Ja, det finns inte jättemånga sådana trainings kvar men hej, köp dem.</p>
+<p><code>42 00:01:46,120 --&gt; 00:01:48,620</code>
+Medans hjärnet är varmt.</p>
+<p><code>43 00:01:48,620 --&gt; 00:01:50,620</code>
+Ja, eller någon form av metall.</p>
+<p><code>44 00:01:50,620 --&gt; 00:01:51,820</code>
+Ska man svida.</p>
+<p><code>45 00:01:51,820 --&gt; 00:01:53,020</code>
+Hackegebegej.</p>
+<p><code>46 00:01:53,020 --&gt; 00:01:55,700</code>
+QueerLGBTQ+.</p>
+<p><code>47 00:01:55,700 --&gt; 00:01:57,500</code>
+IT-säkerhetskonferens.</p>
+<p><code>48 00:01:57,500 --&gt; 00:01:58,700</code>
+Den 30 maj.</p>
+<p><code>49 00:01:58,700 --&gt; 00:02:00,500</code>
+Regnbokshuset i Göteborg.</p>
+<p><code>50 00:02:00,500 --&gt; 00:02:02,500</code>
+Kom ihåg att registrera er för att få plats.</p>
+<p><code>51 00:02:02,500 --&gt; 00:02:06,500</code>
+Jag fick ihop en bloggpost om RSA som jag skickade ut.</p>
+<p><code>52 00:02:06,500 --&gt; 00:02:08,500</code>
+Till webbgården.</p>
+<p><code>53 00:02:08,500 --&gt; 00:02:10,500</code>
+Ja, RSA-konferensen.</p>
+<p><code>54 00:02:10,500 --&gt; 00:02:13,500</code>
+Nej, alltså bara kryptot RSA.</p>
+<p><code>55 00:02:13,500 --&gt; 00:02:19,500</code>
+Lite lagom för folk som är typ CTF-intresserade.</p>
+<p><code>56 00:02:19,500 --&gt; 00:02:25,500</code>
+De lite enklare, lättexploitade RSA-problemen tar den upp.</p>
+<p><code>57 00:02:25,500 --&gt; 00:02:26,300</code>
+Okej, nice.</p>
+<p><code>58 00:02:26,300 --&gt; 00:02:28,300</code>
+Vad kan man läsa mer om dem?</p>
+<p><code>59 00:02:28,300 --&gt; 00:02:29,300</code>
+På iShownotes.</p>
+<p><code>60 00:02:29,300 --&gt; 00:02:32,300</code>
+Ja, iShownotes är det blowfish.blogg.</p>
+<p><code>61 00:02:32,300 --&gt; 00:02:37,300</code>
+Nej, blowfish.github.com tror jag kanske.</p>
+<p><code>62 00:02:37,300 --&gt; 00:02:40,300</code>
+Gå in på sakenspodcast.se på iShownotes.</p>
+<p><code>63 00:02:40,300 --&gt; 00:02:42,300</code>
+Ja, på iShownotes kommer det stå en riktig ura.</p>
+<p><code>64 00:02:42,300 --&gt; 00:02:46,300</code>
+Om Arit hinner tolka den på ett korrekt sätt. Annars googla.</p>
+<p><code>65 00:02:46,300 --&gt; 00:02:48,300</code>
+Det här är ett strukturerat avsnitt.</p>
+<p><code>66 00:02:48,300 --&gt; 00:02:50,300</code>
+Ja, det har alla redan förstått.</p>
+<p><code>67 00:02:50,300 --&gt; 00:02:52,300</code>
+Vad ska vi prata om idag, Johan?</p>
+<p><code>68 00:02:52,300 --&gt; 00:02:53,300</code>
+Idag ska vi prata om någonting som är högre.</p>
+<p><code>69 00:02:53,300 --&gt; 00:02:54,500</code>
+Idag ska vi prata om någonting som är högre.</p>
+<p><code>70 00:02:54,500 --&gt; 00:02:55,500</code>
+Idag ska vi prata om någonting som är högre.</p>
+<p><code>71 00:02:55,500 --&gt; 00:02:56,500</code>
+Idag ska vi prata om någonting som är högre.</p>
+<p><code>72 00:02:56,500 --&gt; 00:02:57,500</code>
+Idag ska vi prata om någonting som är högre.</p>
+<p><code>73 00:02:57,500 --&gt; 00:03:04,500</code>
+När vi precis drog igång detta så sa du, Mattias, att du hade sett två artiklar i GP om detta bara idag.</p>
+<p><code>74 00:03:04,500 --&gt; 00:03:08,500</code>
+Så det är fingret på pulsen som alltid är här i Säkerhetspodcast-stugan.</p>
+<p><code>75 00:03:08,500 --&gt; 00:03:16,500</code>
+Jag tror det var igår så stod Macron på någon scen och basonerade ut åsikter.</p>
+<p><code>76 00:03:16,500 --&gt; 00:03:18,500</code>
+Men nu ska vi inte hålla lyssnarna på halter för länge.</p>
+<p><code>77 00:03:18,500 --&gt; 00:03:20,500</code>
+Vad är det vi ska prata om?</p>
+<p><code>78 00:03:20,500 --&gt; 00:03:22,500</code>
+Vi ska prata om något så roligt som&hellip;</p>
+<p><code>79 00:03:22,500 --&gt; 00:03:23,500</code>
+Vi ska prata om något så roligt som&hellip;</p>
+<p><code>80 00:03:23,500 --&gt; 00:03:24,500</code>
+Vi ska prata om något så roligt som&hellip;</p>
+<p><code>81 00:03:24,500 --&gt; 00:03:26,500</code>
+Vi ska prata om något som&hellip;</p>
+<p><code>82 00:03:26,500 --&gt; 00:03:28,500</code>
+Vi ska prata om något som&hellip;</p>
+<p><code>83 00:03:28,500 --&gt; 00:03:30,500</code>
+recession hittills, och om det t ex.</p>
+<p><code>84 00:03:30,500 --&gt; 00:03:32,500</code>
+anim funciona&hellip;</p>
+<p><code>85 00:03:32,500 --&gt; 00:03:34,700</code>
+Vi ska prata om något som åldersverifiering.</p>
+<p><code>86 00:03:34,700 --&gt; 00:03:36,700</code>
+Vi ska prata om något som åldersverifiering.</p>
+<p><code>87 00:03:36,700 --&gt; 00:03:38,500</code>
+Olika metoder för begränsad access till olika resurser.</p>
+<p><code>88 00:03:38,500 --&gt; 00:03:40,500</code>
+Olika metoder för begränsad access till olika resurser.</p>
+<p><code>89 00:03:40,500 --&gt; 00:03:42,500</code>
+Olika metoder för begränsad access till olika resurser.</p>
+<p><code>90 00:03:42,500 --&gt; 00:03:44,500</code>
+Resurser som sociala medier eller pornografi eller andra sådana.</p>
+<p><code>91 00:03:44,500 --&gt; 00:03:46,500</code>
+Resurser som sociala medier eller pornografi eller andra sådana.</p>
+<p><code>92 00:03:46,500 --&gt; 00:03:48,500</code>
+Resurser som sociala medier eller pornografi eller andra sådana.</p>
+<p><code>93 00:03:48,500 --&gt; 00:03:50,500</code>
+Resurser som sociala medier eller pornografi eller andra sådana.</p>
+<p><code>94 00:03:50,500 --&gt; 00:03:52,500</code>
+Gaming.</p>
+<p><code>95 00:03:52,500 --&gt; 00:03:53,500</code>
+Gaming. Alkohol och betting.</p>
+<p><code>96 00:03:53,500 --&gt; 00:03:55,040</code>
+När man ska gå in på barer och sådana saker.</p>
+<p><code>97 00:03:55,380 --&gt; 00:03:57,080</code>
+Men det är i en mer analog form.</p>
+<p><code>98 00:03:57,360 --&gt; 00:03:59,140</code>
+Ja, då får man visa sitt plastkort.</p>
+<p><code>99 00:03:59,560 --&gt; 00:04:01,160</code>
+Precis, men vi har ju sett det senaste.</p>
+<p><code>100 00:04:01,360 --&gt; 00:04:03,660</code>
+Jag vet inte exakt när den här trenden egentligen började.</p>
+<p><code>101 00:04:03,780 --&gt; 00:04:05,200</code>
+Men det är de senaste åren.</p>
+<p><code>102 00:04:05,860 --&gt; 00:04:07,400</code>
+Senaste typ två åren skulle jag säga.</p>
+<p><code>103 00:04:07,740 --&gt; 00:04:09,440</code>
+Som man har sett väldigt mycket om det här.</p>
+<p><code>104 00:04:10,440 --&gt; 00:04:16,240</code>
+Australien gick ut och lagstiftade om att begränsa tillgången till sociala medier.</p>
+<p><code>105 00:04:16,240 --&gt; 00:04:20,400</code>
+För barn under 15 eller 16 år.</p>
+<p><code>106 00:04:20,620 --&gt; 00:04:21,200</code>
+Ja, något sånt.</p>
+<p><code>107 00:04:21,500 --&gt; 00:04:23,440</code>
+Och det var väl för några månader sedan om jag minns rätt.</p>
+<p><code>108 00:04:23,500 --&gt; 00:04:28,460</code>
+Sen var det ju rejäla protester från diverse ungdomar i Australien.</p>
+<p><code>109 00:04:28,620 --&gt; 00:04:29,260</code>
+Som man kan tänka sig.</p>
+<p><code>110 00:04:30,640 --&gt; 00:04:32,240</code>
+Tror du inte det är en bra sak alltså?</p>
+<p><code>111 00:04:32,560 --&gt; 00:04:36,400</code>
+Ängland har gått ut och gjort liknande manövrar.</p>
+<p><code>112 00:04:36,500 --&gt; 00:04:38,560</code>
+Även för pornografi.</p>
+<p><code>113 00:04:39,120 --&gt; 00:04:41,240</code>
+De har ju det här kända DNS-filtret.</p>
+<p><code>114 00:04:41,460 --&gt; 00:04:44,560</code>
+Vilket det kommer vi komma in på under dagens avsnitt.</p>
+<p><code>115 00:04:44,680 --&gt; 00:04:46,960</code>
+Hur effektivt det faktiskt egentligen inte är.</p>
+<p><code>116 00:04:47,500 --&gt; 00:04:48,760</code>
+Precis, även i USA.</p>
+<p><code>117 00:04:48,760 --&gt; 00:04:52,760</code>
+I vissa delstater så är det begränsat framförallt just pornografi.</p>
+<p><code>118 00:04:53,500 --&gt; 00:04:57,800</code>
+Men i UK så är det väl bredare än så.</p>
+<p><code>119 00:04:57,900 --&gt; 00:05:00,520</code>
+För jag läste någonstans, det var för en månad sedan eller någonting.</p>
+<p><code>120 00:05:00,700 --&gt; 00:05:06,780</code>
+Så var det Reddit som fick 14,5 miljoner pound i böter.</p>
+<p><code>121 00:05:06,900 --&gt; 00:05:09,500</code>
+För att de då inte hade implementerat åldersverifiering.</p>
+<p><code>122 00:05:10,340 --&gt; 00:05:11,660</code>
+På ett tillräckligt bra sätt.</p>
+<p><code>123 00:05:12,340 --&gt; 00:05:18,500</code>
+Jag vet ju att X har väl också det för framförallt pornografi.</p>
+<p><code>124 00:05:18,500 --&gt; 00:05:23,480</code>
+Men också, vad kallar man det när det är gory stuff.</p>
+<p><code>125 00:05:23,500 --&gt; 00:05:25,000</code>
+Adult content.</p>
+<p><code>126 00:05:25,420 --&gt; 00:05:25,980</code>
+Ja, är det det?</p>
+<p><code>127 00:05:27,780 --&gt; 00:05:28,780</code>
+Sensitive content.</p>
+<p><code>128 00:05:28,860 --&gt; 00:05:30,660</code>
+Ja, men exakt. Det är ju en sån soptipp på X.</p>
+<p><code>129 00:05:30,760 --&gt; 00:05:34,520</code>
+Du ska ju se allt ifrån alla bottar och det dåliga på internet.</p>
+<p><code>130 00:05:34,940 --&gt; 00:05:38,300</code>
+Men för där vet jag att jag var inne och tittade på mitt Twitterkonto.</p>
+<p><code>131 00:05:38,460 --&gt; 00:05:40,720</code>
+Och då var det ju såhär, det blöras ju liksom.</p>
+<p><code>132 00:05:40,840 --&gt; 00:05:42,280</code>
+Och då måste du age verification.</p>
+<p><code>133 00:05:42,820 --&gt; 00:05:44,020</code>
+För att få lov att se dem.</p>
+<p><code>134 00:05:44,840 --&gt; 00:05:46,460</code>
+Så det är en tydlig trend i alla fall.</p>
+<p><code>135 00:05:46,680 --&gt; 00:05:48,240</code>
+Som vi märker.</p>
+<p><code>136 00:05:48,340 --&gt; 00:05:52,900</code>
+Nu har ju EU också gått ut och börjat arbeta på lagstiftning.</p>
+<p><code>137 00:05:52,900 --&gt; 00:05:53,840</code>
+Kring de här delarna.</p>
+<p><code>138 00:05:54,120 --&gt; 00:05:58,620</code>
+Och även försöka att införa någon form av central lösning.</p>
+<p><code>139 00:05:58,720 --&gt; 00:06:02,000</code>
+För att hantera identitet och åldersverifiering för EU-länderna.</p>
+<p><code>140 00:06:02,500 --&gt; 00:06:05,760</code>
+Ja, det som var i nyheterna idag då i GP2-artiklar.</p>
+<p><code>141 00:06:05,840 --&gt; 00:06:07,440</code>
+Det var ju just att EUs app.</p>
+<p><code>142 00:06:07,980 --&gt; 00:06:09,880</code>
+Den som ska vara så jävla bra, säger de.</p>
+<p><code>143 00:06:11,720 --&gt; 00:06:14,740</code>
+Highest level of integrity eller något sånt där.</p>
+<p><code>144 00:06:15,980 --&gt; 00:06:19,320</code>
+Den har nu testats, om jag fattar det hela rätt, i ett par länder.</p>
+<p><code>145 00:06:19,320 --&gt; 00:06:22,700</code>
+Och nu känner de att den börjar bli redo för att användas.</p>
+<p><code>146 00:06:22,700 --&gt; 00:06:23,080</code>
+På riktigt.</p>
+<p><code>147 00:06:23,440 --&gt; 00:06:28,440</code>
+Och det är väl det som jag tror länkas med Macron då igen.</p>
+<p><code>148 00:06:28,560 --&gt; 00:06:32,720</code>
+För att han och jag tror det var Spaniens premiärminister och någon till.</p>
+<p><code>149 00:06:32,860 --&gt; 00:06:34,600</code>
+De går nu upp på barrikaderna.</p>
+<p><code>150 00:06:34,820 --&gt; 00:06:37,220</code>
+Nu jävlar så inför vi det här i EU typ.</p>
+<p><code>151 00:06:38,040 --&gt; 00:06:40,560</code>
+Och vad är det här? Ska det här vara någon bank-ID-grej typ?</p>
+<p><code>152 00:06:40,800 --&gt; 00:06:41,380</code>
+Nej, det är det som är.</p>
+<p><code>153 00:06:41,500 --&gt; 00:06:45,120</code>
+Jag försökte googla runt det här hur det funkar.</p>
+<p><code>154 00:06:45,220 --&gt; 00:06:46,940</code>
+Men jag hade velat hitta appen liksom.</p>
+<p><code>155 00:06:47,040 --&gt; 00:06:47,620</code>
+Men jag hittade ingen.</p>
+<p><code>156 00:06:47,620 --&gt; 00:06:49,860</code>
+Jag kan försöka.</p>
+<p><code>157 00:06:50,400 --&gt; 00:06:52,620</code>
+Det är ju skillnaden mellan EU och&hellip;</p>
+<p><code>158 00:06:52,700 --&gt; 00:06:56,920</code>
+Till exempel UK är att det faktiskt finns en lösning så att säga.</p>
+<p><code>159 00:06:57,120 --&gt; 00:07:01,480</code>
+Som är tillhandahålls av staten, om vi nu kallar EU.</p>
+<p><code>160 00:07:02,040 --&gt; 00:07:06,880</code>
+För UK menar jag så har de bara lagstiftat och lämnat ut problembilden till operatörerna.</p>
+<p><code>161 00:07:07,080 --&gt; 00:07:07,600</code>
+Eller leverantörerna.</p>
+<p><code>162 00:07:07,940 --&gt; 00:07:09,360</code>
+Det funkar väl sådär.</p>
+<p><code>163 00:07:10,080 --&gt; 00:07:18,040</code>
+Men jag har ju inte hunnit hundra procent sätta mig in i exakt detaljerna när den funkar.</p>
+<p><code>164 00:07:18,040 --&gt; 00:07:18,480</code>
+Men?</p>
+<p><code>165 00:07:20,740 --&gt; 00:07:22,040</code>
+De försöker&hellip;</p>
+<p><code>166 00:07:22,700 --&gt; 00:07:27,360</code>
+De försöker splitta problembilden i ett antal olika frågor då.</p>
+<p><code>167 00:07:30,080 --&gt; 00:07:35,940</code>
+Du får alltså en EU Age Verification-app på din mobiltelefon.</p>
+<p><code>168 00:07:37,940 --&gt; 00:07:40,940</code>
+Påminner lite grann om hur vi använder bank-ID.</p>
+<p><code>169 00:07:41,940 --&gt; 00:07:49,940</code>
+Så att om du är inne på en sajt som kräver ID-verifiering eller åldersverifiering.</p>
+<p><code>170 00:07:50,580 --&gt; 00:07:52,580</code>
+Så kan du alltså hoppa över till appen.</p>
+<p><code>171 00:07:52,700 --&gt; 00:07:55,100</code>
+Och sen tillbaks när du har gjort verifieringen.</p>
+<p><code>172 00:07:56,940 --&gt; 00:08:03,020</code>
+Och de skryter ju med att den här ska vara Privacy Preserving.</p>
+<p><code>173 00:08:03,460 --&gt; 00:08:15,080</code>
+Så att målsättningen är ju att din identitet ska vara skyddad i den här operationen.</p>
+<p><code>174 00:08:16,260 --&gt; 00:08:19,060</code>
+Och det tror jag är under vissa antaganden.</p>
+<p><code>175 00:08:20,060 --&gt; 00:08:22,500</code>
+Till exempel att man typ litar.</p>
+<p><code>176 00:08:22,700 --&gt; 00:08:26,140</code>
+På att Age Verification-appen är god.</p>
+<p><code>177 00:08:26,880 --&gt; 00:08:31,160</code>
+Så i slutändan vad Relying Party.</p>
+<p><code>178 00:08:31,160 --&gt; 00:08:35,640</code>
+Det vill säga den tjänstleverantör som vill veta att du uppfyller ålderskraven.</p>
+<p><code>179 00:08:36,220 --&gt; 00:08:39,300</code>
+Så får den över ett signerat attest.</p>
+<p><code>180 00:08:39,440 --&gt; 00:08:41,440</code>
+Alltså typ tänk motsvarande en OOF-token.</p>
+<p><code>181 00:08:41,540 --&gt; 00:08:42,960</code>
+Eller en samhällsbiljett eller så.</p>
+<p><code>182 00:08:45,100 --&gt; 00:08:51,260</code>
+Och du får inte så mycket mer än att det är bundet till den session eller händelse som du är i.</p>
+<p><code>183 00:08:51,620 --&gt; 00:08:52,160</code>
+Och det får&hellip;</p>
+<p><code>184 00:08:52,700 --&gt; 00:08:58,340</code>
+Det ska finnas en utsaga då om att du är över age 16.</p>
+<p><code>185 00:08:58,520 --&gt; 00:08:59,420</code>
+Har de smätt till exempel då.</p>
+<p><code>186 00:08:59,420 --&gt; 00:09:07,600</code>
+Och du ska också kunna spara i den här appen lite olika test.</p>
+<p><code>187 00:09:07,980 --&gt; 00:09:10,600</code>
+Typ att du vill ha olika identifieringar.</p>
+<p><code>188 00:09:10,660 --&gt; 00:09:14,660</code>
+Så att du kan ha en identifiering där du säger att du är över 18.</p>
+<p><code>189 00:09:15,020 --&gt; 00:09:17,020</code>
+Och så ska du kunna välja att du har två stycken.</p>
+<p><code>190 00:09:17,100 --&gt; 00:09:20,260</code>
+Och ha en där du säger att du är över 23 och så.</p>
+<p><code>191 00:09:20,940 --&gt; 00:09:22,420</code>
+Så att du ska kunna&hellip;</p>
+<p><code>192 00:09:22,700 --&gt; 00:09:26,380</code>
+Vad är det jag inte fattar i&hellip;</p>
+<p><code>193 00:09:26,380 --&gt; 00:09:31,920</code>
+Vad är kopplingen mellan appen och sajten?</p>
+<p><code>194 00:09:32,220 --&gt; 00:09:33,340</code>
+Alltså hur&hellip;</p>
+<p><code>195 00:09:33,340 --&gt; 00:09:34,440</code>
+Om du fattar vad jag menar.</p>
+<p><code>196 00:09:34,500 --&gt; 00:09:35,240</code>
+Hur får jag&hellip;</p>
+<p><code>197 00:09:35,240 --&gt; 00:09:36,520</code>
+Hur kopplar jag&hellip;</p>
+<p><code>198 00:09:36,520 --&gt; 00:09:38,140</code>
+Om jag nu som användare.</p>
+<p><code>199 00:09:38,340 --&gt; 00:09:39,140</code>
+Som mot appen.</p>
+<p><code>200 00:09:40,020 --&gt; 00:09:41,140</code>
+Jag bryr mig inte om hur det går till.</p>
+<p><code>201 00:09:41,200 --&gt; 00:09:43,060</code>
+Men på något sätt så är det verifierad vem jag är.</p>
+<p><code>202 00:09:43,160 --&gt; 00:09:44,680</code>
+Förmodligen bank-ID liknande.</p>
+<p><code>203 00:09:45,100 --&gt; 00:09:47,020</code>
+Det vill säga det är koppling till mitt ID på något jävla sätt.</p>
+<p><code>204 00:09:47,140 --&gt; 00:09:47,820</code>
+In the back-end.</p>
+<p><code>205 00:09:49,240 --&gt; 00:09:50,460</code>
+Men jag måste&hellip;</p>
+<p><code>206 00:09:50,460 --&gt; 00:09:52,520</code>
+Hur kopplar du sajten och appen?</p>
+<p><code>207 00:09:52,520 --&gt; 00:09:53,460</code>
+Vem på ett rimligt sätt?</p>
+<p><code>208 00:09:53,760 --&gt; 00:09:55,140</code>
+Och så ska det vara privacy-preservive.</p>
+<p><code>209 00:09:55,340 --&gt; 00:09:58,000</code>
+Jag menar i de andra fall så är det ju typ&hellip;</p>
+<p><code>210 00:09:58,000 --&gt; 00:09:59,560</code>
+QR-kod-grejen då.</p>
+<p><code>211 00:09:59,600 --&gt; 00:10:00,740</code>
+Är det något sånt man kör då kanske?</p>
+<p><code>212 00:10:01,140 --&gt; 00:10:02,780</code>
+Ja QR-koden kan du ha om du vill.</p>
+<p><code>213 00:10:03,080 --&gt; 00:10:04,760</code>
+Alltså om du har ett annat&hellip;</p>
+<p><code>214 00:10:04,760 --&gt; 00:10:05,720</code>
+Alltså det går ju att göra det här.</p>
+<p><code>215 00:10:05,720 --&gt; 00:10:08,740</code>
+En identifierings-device och en&hellip;</p>
+<p><code>216 00:10:08,740 --&gt; 00:10:09,260</code>
+Ja.</p>
+<p><code>217 00:10:09,480 --&gt; 00:10:11,760</code>
+Och en website på en dator.</p>
+<p><code>218 00:10:11,860 --&gt; 00:10:12,780</code>
+Då använder du det.</p>
+<p><code>219 00:10:12,840 --&gt; 00:10:14,000</code>
+Då kan du scanna QR-koder och sånt.</p>
+<p><code>220 00:10:14,000 --&gt; 00:10:16,040</code>
+Annars kan du ju poppa appen lokalt.</p>
+<p><code>221 00:10:16,220 --&gt; 00:10:16,660</code>
+Ja just det.</p>
+<p><code>222 00:10:16,700 --&gt; 00:10:17,200</code>
+Det är så du gör.</p>
+<p><code>223 00:10:17,300 --&gt; 00:10:17,960</code>
+Ja men då är jag med.</p>
+<p><code>224 00:10:18,140 --&gt; 00:10:20,360</code>
+Det enda som är läskigt här är att man&hellip;</p>
+<p><code>225 00:10:20,360 --&gt; 00:10:22,360</code>
+Måste ju lita på de tjänsterna som&hellip;</p>
+<p><code>226 00:10:22,520 --&gt; 00:10:23,680</code>
+Som man konsumerar då.</p>
+<p><code>227 00:10:24,100 --&gt; 00:10:25,940</code>
+Att de sköter det här på ett bra sätt.</p>
+<p><code>228 00:10:27,320 --&gt; 00:10:29,400</code>
+Och du måste ju lita på båda&hellip;</p>
+<p><code>229 00:10:29,400 --&gt; 00:10:30,580</code>
+Båda leverantörerna.</p>
+<p><code>230 00:10:30,680 --&gt; 00:10:30,860</code>
+Exakt.</p>
+<p><code>231 00:10:30,940 --&gt; 00:10:33,380</code>
+Dels identitets&hellip;</p>
+<p><code>232 00:10:33,380 --&gt; 00:10:34,540</code>
+Identitets&hellip;</p>
+<p><code>233 00:10:34,540 --&gt; 00:10:36,520</code>
+Identitetsverifieringstjänsten.</p>
+<p><code>234 00:10:36,700 --&gt; 00:10:38,560</code>
+Och det är tjänsten som du vill komma åt.</p>
+<p><code>235 00:10:39,100 --&gt; 00:10:40,360</code>
+Och det vet man ju&hellip;</p>
+<p><code>236 00:10:40,360 --&gt; 00:10:41,920</code>
+Men grejen här med den&hellip;</p>
+<p><code>237 00:10:41,920 --&gt; 00:10:43,780</code>
+Med den kopplingen de har gjort där då.</p>
+<p><code>238 00:10:43,840 --&gt; 00:10:46,220</code>
+Det är ju det som skiljer sig från&hellip;</p>
+<p><code>239 00:10:46,220 --&gt; 00:10:48,240</code>
+Många UK-tjänster och sånt.</p>
+<p><code>240 00:10:48,240 --&gt; 00:10:50,400</code>
+Det är alltså att du har ju splittat&hellip;</p>
+<p><code>241 00:10:50,400 --&gt; 00:10:52,240</code>
+Identifiering&hellip;</p>
+<p><code>242 00:10:52,240 --&gt; 00:10:52,500</code>
+Från&hellip;</p>
+<p><code>243 00:10:52,520 --&gt; 00:10:53,440</code>
+En age-verification.</p>
+<p><code>244 00:10:53,780 --&gt; 00:10:56,520</code>
+Så att det finns ju en mellanlagning här där&hellip;</p>
+<p><code>245 00:10:57,820 --&gt; 00:11:00,520</code>
+Du bevisar för appen&hellip;</p>
+<p><code>246 00:11:01,280 --&gt; 00:11:02,720</code>
+Att du&hellip;</p>
+<p><code>247 00:11:02,720 --&gt; 00:11:03,640</code>
+Har din ålder och så.</p>
+<p><code>248 00:11:03,740 --&gt; 00:11:05,700</code>
+Och så får du någon sorts&hellip;</p>
+<p><code>249 00:11:05,700 --&gt; 00:11:08,420</code>
+Förmodligen inte egentligen för all framtid.</p>
+<p><code>250 00:11:08,560 --&gt; 00:11:10,520</code>
+Men du gör ett antal&hellip;</p>
+<p><code>251 00:11:11,160 --&gt; 00:11:12,540</code>
+En dans där du kan då&hellip;</p>
+<p><code>252 00:11:12,540 --&gt; 00:11:14,500</code>
+Du kan visa&hellip;</p>
+<p><code>253 00:11:14,500 --&gt; 00:11:16,240</code>
+Du kan till exempel använda ett pass.</p>
+<p><code>254 00:11:16,800 --&gt; 00:11:18,660</code>
+Och så kan du filma dig själv&hellip;</p>
+<p><code>255 00:11:18,660 --&gt; 00:11:19,120</code>
+För att visa.</p>
+<p><code>256 00:11:19,120 --&gt; 00:11:21,120</code>
+Och så kan jag jämföra att du är typ lik&hellip;</p>
+<p><code>257 00:11:21,120 --&gt; 00:11:22,120</code>
+Den bilden som finns på passet.</p>
+<p><code>258 00:11:22,520 --&gt; 00:11:25,520</code>
+Och så kan du&hellip;</p>
+<p><code>259 00:11:25,520 --&gt; 00:11:27,620</code>
+I någon sorts övning då&hellip;</p>
+<p><code>260 00:11:27,620 --&gt; 00:11:28,840</code>
+Så kan du få&hellip;</p>
+<p><code>261 00:11:28,840 --&gt; 00:11:31,900</code>
+Kan du få att ett age-bevis&hellip;</p>
+<p><code>262 00:11:31,900 --&gt; 00:11:33,360</code>
+Ligger på din mobiltelefon&hellip;</p>
+<p><code>263 00:11:33,360 --&gt; 00:11:34,500</code>
+Över en längre tid då.</p>
+<p><code>264 00:11:34,760 --&gt; 00:11:36,980</code>
+Det är också bra att flika in här.</p>
+<p><code>265 00:11:37,240 --&gt; 00:11:39,520</code>
+Det är ju inte så många EU-länder som har samma&hellip;</p>
+<p><code>266 00:11:40,960 --&gt; 00:11:41,780</code>
+Ja men&hellip;</p>
+<p><code>267 00:11:41,780 --&gt; 00:11:43,720</code>
+Aggregerad identitet som vi har här.</p>
+<p><code>268 00:11:43,820 --&gt; 00:11:44,780</code>
+Som med BankID till exempel.</p>
+<p><code>269 00:11:44,900 --&gt; 00:11:47,260</code>
+Som har blivit en de facto standard i Sverige på något sätt.</p>
+<p><code>270 00:11:47,380 --&gt; 00:11:48,580</code>
+För identifiering online.</p>
+<p><code>271 00:11:49,240 --&gt; 00:11:51,280</code>
+Det är ju väldigt vanligt som Peter säger här nu.</p>
+<p><code>272 00:11:51,280 --&gt; 00:11:51,780</code>
+Att man&hellip;</p>
+<p><code>273 00:11:51,780 --&gt; 00:11:53,200</code>
+Sätter sig vid webbkameran.</p>
+<p><code>274 00:11:53,280 --&gt; 00:11:54,140</code>
+Viker upp passet.</p>
+<p><code>275 00:11:54,260 --&gt; 00:11:57,020</code>
+Och så ler man lite snyggt in i en tjänst.</p>
+<p><code>276 00:11:57,120 --&gt; 00:11:59,140</code>
+Och så skickas det iväg.</p>
+<p><code>277 00:11:59,260 --&gt; 00:12:01,660</code>
+Och så är det en algoritm kanske då som&hellip;</p>
+<p><code>278 00:12:01,660 --&gt; 00:12:02,420</code>
+Validerar det vidare.</p>
+<p><code>279 00:12:02,560 --&gt; 00:12:03,480</code>
+Det ser det på riktigt ut.</p>
+<p><code>280 00:12:03,900 --&gt; 00:12:04,080</code>
+Mm.</p>
+<p><code>281 00:12:04,540 --&gt; 00:12:07,520</code>
+Och grejen är att det här ska kunna göras&hellip;</p>
+<p><code>282 00:12:07,520 --&gt; 00:12:09,280</code>
+På något sätt då&hellip;</p>
+<p><code>283 00:12:10,360 --&gt; 00:12:14,280</code>
+I och med att du har&hellip;</p>
+<p><code>284 00:12:15,160 --&gt; 00:12:16,060</code>
+Liksom&hellip;</p>
+<p><code>285 00:12:16,060 --&gt; 00:12:17,820</code>
+Det där finns ju flera bolag som gör idag.</p>
+<p><code>286 00:12:18,120 --&gt; 00:12:20,280</code>
+Ja men din mobiltelefon kan ju läsa koden&hellip;</p>
+<p><code>287 00:12:20,420 --&gt; 00:12:21,280</code>
+För att prata&hellip;</p>
+<p><code>288 00:12:21,780 --&gt; 00:12:23,600</code>
+Om NFC på ditt pass och sånt.</p>
+<p><code>289 00:12:23,680 --&gt; 00:12:25,880</code>
+Så kan du aktivera det.</p>
+<p><code>290 00:12:26,640 --&gt; 00:12:27,860</code>
+Och då kan du bildmatcha.</p>
+<p><code>291 00:12:28,080 --&gt; 00:12:29,920</code>
+Och du ska också kunna på något sätt&hellip;</p>
+<p><code>292 00:12:30,700 --&gt; 00:12:33,920</code>
+Använda andra leverantörer.</p>
+<p><code>293 00:12:34,540 --&gt; 00:12:35,560</code>
+För det är&hellip;</p>
+<p><code>294 00:12:35,560 --&gt; 00:12:38,420</code>
+För den lösningen är nog bättre än många av de här.</p>
+<p><code>295 00:12:38,900 --&gt; 00:12:39,860</code>
+För dels är ju då&hellip;</p>
+<p><code>296 00:12:39,860 --&gt; 00:12:42,160</code>
+Att man har en fotokopia på ett pass eller ett körkort.</p>
+<p><code>297 00:12:42,680 --&gt; 00:12:44,440</code>
+Men det kan ju också vara såna här diffusa grejer.</p>
+<p><code>298 00:12:44,560 --&gt; 00:12:46,560</code>
+Som att vi vill ha en e-utility-bild.</p>
+<p><code>299 00:12:46,680 --&gt; 00:12:47,760</code>
+Alltså typ elräkningen.</p>
+<p><code>300 00:12:47,880 --&gt; 00:12:49,260</code>
+Spanien vet jag har ett sånt flöde.</p>
+<p><code>301 00:12:49,460 --&gt; 00:12:51,280</code>
+Där man visar proof of address.</p>
+<p><code>302 00:12:51,280 --&gt; 00:12:53,480</code>
+Och proof of origin med&hellip;</p>
+<p><code>303 00:12:53,480 --&gt; 00:12:55,640</code>
+En räkning på någonting man har köpt.</p>
+<p><code>304 00:12:56,260 --&gt; 00:12:57,780</code>
+Vilket det också är&hellip;</p>
+<p><code>305 00:12:57,780 --&gt; 00:12:59,020</code>
+Ja&hellip;</p>
+<p><code>306 00:12:59,020 --&gt; 00:12:59,980</code>
+Lite läskigt.</p>
+<p><code>307 00:13:00,000 --&gt; 00:13:00,860</code>
+Inte superexakt.</p>
+<p><code>308 00:13:01,400 --&gt; 00:13:03,020</code>
+Då är det som Peter säger här.</p>
+<p><code>309 00:13:03,180 --&gt; 00:13:04,320</code>
+10 000 nivåer bättre.</p>
+<p><code>310 00:13:04,460 --&gt; 00:13:05,240</code>
+Det vill säga&hellip;</p>
+<p><code>311 00:13:05,240 --&gt; 00:13:06,920</code>
+NFC-delen i ditt pass.</p>
+<p><code>312 00:13:07,040 --&gt; 00:13:08,180</code>
+Det är ju en PKI-infrastruktur.</p>
+<p><code>313 00:13:08,280 --&gt; 00:13:09,480</code>
+Det är ju en jättebra grej.</p>
+<p><code>314 00:13:09,560 --&gt; 00:13:10,140</code>
+Men vet du Peter.</p>
+<p><code>315 00:13:10,260 --&gt; 00:13:11,760</code>
+Är det här&hellip;</p>
+<p><code>316 00:13:11,760 --&gt; 00:13:13,060</code>
+När de nu ändå bygger den här appen.</p>
+<p><code>317 00:13:13,320 --&gt; 00:13:16,180</code>
+Kommer det vara så att den bara gör de här&hellip;</p>
+<p><code>318 00:13:16,180 --&gt; 00:13:17,280</code>
+Ganska vaga&hellip;</p>
+<p><code>319 00:13:18,200 --&gt; 00:13:19,760</code>
+Åldersattesteringarna då?</p>
+<p><code>320 00:13:19,800 --&gt; 00:13:20,840</code>
+Eller kommer man passa på?</p>
+<p><code>321 00:13:20,840 --&gt; 00:13:21,240</code>
+Och även&hellip;</p>
+<p><code>322 00:13:21,240 --&gt; 00:13:22,740</code>
+Att man bygger en identitetsfunktion här?</p>
+<p><code>323 00:13:25,680 --&gt; 00:13:28,640</code>
+Det här kommer ju med&hellip;</p>
+<p><code>324 00:13:28,640 --&gt; 00:13:31,240</code>
+Det hänger ihop med&hellip;</p>
+<p><code>325 00:13:31,240 --&gt; 00:13:33,240</code>
+Den här EID&hellip;</p>
+<p><code>326 00:13:33,240 --&gt; 00:13:34,120</code>
+Vad heter den?</p>
+<p><code>327 00:13:34,380 --&gt; 00:13:35,020</code>
+EIDAS?</p>
+<p><code>328 00:13:35,200 --&gt; 00:13:36,400</code>
+Eller någonting&hellip;</p>
+<p><code>329 00:13:36,400 --&gt; 00:13:39,380</code>
+Någon sorts EU-lag-framework.</p>
+<p><code>330 00:13:39,400 --&gt; 00:13:41,520</code>
+Kring hur identitetshandlingar ska funka.</p>
+<p><code>331 00:13:42,260 --&gt; 00:13:43,340</code>
+Så att&hellip;</p>
+<p><code>332 00:13:43,340 --&gt; 00:13:45,280</code>
+Jag tror mycket väl att man långsiktigt&hellip;</p>
+<p><code>333 00:13:45,280 --&gt; 00:13:47,240</code>
+Vill ha en typ&hellip;</p>
+<p><code>334 00:13:48,040 --&gt; 00:13:50,460</code>
+En bank-ID-liknande funktion för EU.</p>
+<p><code>335 00:13:50,460 --&gt; 00:13:51,220</code>
+Vill man säkert.</p>
+<p><code>336 00:13:51,240 --&gt; 00:13:52,820</code>
+Det finns ju även en&hellip;</p>
+<p><code>337 00:13:52,820 --&gt; 00:13:55,400</code>
+Money-grunka.</p>
+<p><code>338 00:13:55,580 --&gt; 00:13:56,340</code>
+Som EU jobbar på också.</p>
+<p><code>339 00:13:57,000 --&gt; 00:13:58,720</code>
+Men specifikt Age Verification.</p>
+<p><code>340 00:13:59,420 --&gt; 00:14:01,000</code>
+Ska vara sin egen app.</p>
+<p><code>341 00:14:01,520 --&gt; 00:14:02,880</code>
+Och ska&hellip;</p>
+<p><code>342 00:14:02,880 --&gt; 00:14:05,380</code>
+Den appen ska inte behöva veta&hellip;</p>
+<p><code>343 00:14:05,380 --&gt; 00:14:05,780</code>
+Vem du är.</p>
+<p><code>344 00:14:06,140 --&gt; 00:14:08,500</code>
+Utan den ska bara behöva veta att&hellip;</p>
+<p><code>345 00:14:08,500 --&gt; 00:14:11,160</code>
+Den här nuvarande användaren på telefonen.</p>
+<p><code>346 00:14:12,200 --&gt; 00:14:13,960</code>
+Den vet ju att den får använda&hellip;</p>
+<p><code>347 00:14:13,960 --&gt; 00:14:15,120</code>
+Det här utsagan.</p>
+<p><code>348 00:14:15,120 --&gt; 00:14:16,120</code>
+Om hur gammal den är.</p>
+<p><code>349 00:14:16,380 --&gt; 00:14:19,400</code>
+Och den är godkänd någon gång tidigare.</p>
+<p><code>350 00:14:19,400 --&gt; 00:14:21,100</code>
+Men appen kommer väl typiskt&hellip;</p>
+<p><code>351 00:14:21,100 --&gt; 00:14:22,060</code>
+Att veta hur gammal du är.</p>
+<p><code>352 00:14:22,140 --&gt; 00:14:22,800</code>
+Och exakt vem du är.</p>
+<p><code>353 00:14:23,080 --&gt; 00:14:26,360</code>
+Om du blippar den mot NFC.</p>
+<p><code>354 00:14:26,760 --&gt; 00:14:28,220</code>
+Jo, precis.</p>
+<p><code>355 00:14:28,560 --&gt; 00:14:30,000</code>
+Du har två frågor där.</p>
+<p><code>356 00:14:30,060 --&gt; 00:14:31,280</code>
+Det ena är&hellip;</p>
+<p><code>357 00:14:31,280 --&gt; 00:14:33,040</code>
+Vad den faktiskt vet.</p>
+<p><code>358 00:14:33,120 --&gt; 00:14:34,900</code>
+Versus vad den kan veta.</p>
+<p><code>359 00:14:36,280 --&gt; 00:14:38,540</code>
+Jag är så jävla nojig för det här.</p>
+<p><code>360 00:14:38,740 --&gt; 00:14:41,140</code>
+För det är ju absolut så&hellip;</p>
+<p><code>361 00:14:41,140 --&gt; 00:14:43,000</code>
+Jag gillar idén konceptuellt.</p>
+<p><code>362 00:14:43,060 --&gt; 00:14:44,220</code>
+Det vill säga att vi kan ha en&hellip;</p>
+<p><code>363 00:14:44,220 --&gt; 00:14:45,600</code>
+Out of bound-idé då.</p>
+<p><code>364 00:14:45,600 --&gt; 00:14:46,860</code>
+Där vi kan skapa en&hellip;</p>
+<p><code>365 00:14:46,860 --&gt; 00:14:48,680</code>
+En session.</p>
+<p><code>366 00:14:49,160 --&gt; 00:14:50,780</code>
+En signerad grunka.</p>
+<p><code>367 00:14:51,100 --&gt; 00:14:52,500</code>
+Och någonting med någonting att göra.</p>
+<p><code>368 00:14:52,920 --&gt; 00:14:55,240</code>
+I ett kontext där den inte är byggd för att vara.</p>
+<p><code>369 00:14:55,820 --&gt; 00:14:58,680</code>
+Men det finns ju ingenting som säger att den informationen inte kan&hellip;</p>
+<p><code>370 00:14:58,680 --&gt; 00:15:00,360</code>
+Ta vägen någonstans.</p>
+<p><code>371 00:15:01,000 --&gt; 00:15:01,280</code>
+Precis.</p>
+<p><code>372 00:15:01,460 --&gt; 00:15:05,640</code>
+För grejen är att om vi väljer att vi inte litar på EU-infrastrukturen.</p>
+<p><code>373 00:15:05,740 --&gt; 00:15:07,080</code>
+Och vi inte litar på appen.</p>
+<p><code>374 00:15:07,700 --&gt; 00:15:10,180</code>
+Så kommer en massa&hellip;</p>
+<p><code>375 00:15:10,180 --&gt; 00:15:12,720</code>
+Då tror jag att många av de här privacy-lufterna inte håller.</p>
+<p><code>376 00:15:13,020 --&gt; 00:15:14,160</code>
+Men&hellip;</p>
+<p><code>377 00:15:14,160 --&gt; 00:15:16,460</code>
+Jag tror att den är privacy-preserving.</p>
+<p><code>378 00:15:16,560 --&gt; 00:15:18,880</code>
+Under antagandet att&hellip;</p>
+<p><code>379 00:15:18,880 --&gt; 00:15:20,020</code>
+Appen inte är ond.</p>
+<p><code>380 00:15:20,220 --&gt; 00:15:20,680</code>
+Och infrastrukturen&hellip;</p>
+<p><code>381 00:15:21,100 --&gt; 00:15:22,640</code>
+Infrastrukturen runt den inte är ond.</p>
+<p><code>382 00:15:22,700 --&gt; 00:15:24,500</code>
+Det är nog med i grundantagandet.</p>
+<p><code>383 00:15:24,620 --&gt; 00:15:26,480</code>
+Den ska inte läcka några&hellip;</p>
+<p><code>384 00:15:26,480 --&gt; 00:15:29,520</code>
+Privacy-detaljer till sajterna du ska logga in på.</p>
+<p><code>385 00:15:29,520 --&gt; 00:15:31,060</code>
+Men vad de säger är ju liksom till exempel att&hellip;</p>
+<p><code>386 00:15:31,060 --&gt; 00:15:34,140</code>
+När du identifierar med pass för att skapa en&hellip;</p>
+<p><code>387 00:15:34,140 --&gt; 00:15:36,420</code>
+En edge i den här edge-appen.</p>
+<p><code>388 00:15:37,820 --&gt; 00:15:40,300</code>
+Så ska den ju kasta bort&hellip;</p>
+<p><code>389 00:15:40,300 --&gt; 00:15:42,000</code>
+Allting som stod på passet.</p>
+<p><code>390 00:15:42,120 --&gt; 00:15:42,780</code>
+Ditt foto.</p>
+<p><code>391 00:15:43,400 --&gt; 00:15:45,920</code>
+Den videon som du tog för att bevisa att&hellip;</p>
+<p><code>392 00:15:45,920 --&gt; 00:15:48,100</code>
+Du var den personen som du hade passet till.</p>
+<p><code>393 00:15:48,260 --&gt; 00:15:49,820</code>
+Det ska ju tydligt inte vara med i&hellip;</p>
+<p><code>394 00:15:49,820 --&gt; 00:15:50,820</code>
+I resultatet.</p>
+<p><code>395 00:15:51,100 --&gt; 00:15:53,140</code>
+Nej, så om&hellip;</p>
+<p><code>396 00:15:53,140 --&gt; 00:15:54,340</code>
+Metadatat ska ju vara borta.</p>
+<p><code>397 00:15:54,700 --&gt; 00:15:56,480</code>
+Om appen funkar som den ska.</p>
+<p><code>398 00:15:56,740 --&gt; 00:15:58,720</code>
+Så ska liksom&hellip;</p>
+<p><code>399 00:15:58,720 --&gt; 00:16:00,620</code>
+De här passinformationen och sånt ska försvinna.</p>
+<p><code>400 00:16:00,620 --&gt; 00:16:02,540</code>
+Ja, för jag får ju kalla kårar direkt så här.</p>
+<p><code>401 00:16:02,660 --&gt; 00:16:04,420</code>
+Jag menar&hellip;</p>
+<p><code>402 00:16:04,420 --&gt; 00:16:05,820</code>
+Ja, men en VPN-tunnel då.</p>
+<p><code>403 00:16:06,820 --&gt; 00:16:07,760</code>
+Så här&hellip;</p>
+<p><code>404 00:16:07,760 --&gt; 00:16:10,760</code>
+De associationerna kommer ju att korreleras och aggregeras</p>
+<p><code>405 00:16:10,760 --&gt; 00:16:12,040</code>
+på ett och samma ställe alltid.</p>
+<p><code>406 00:16:12,720 --&gt; 00:16:14,900</code>
+För jag kommer ju gå och fråga tjänsten</p>
+<p><code>407 00:16:14,900 --&gt; 00:16:15,900</code>
+efter mitt lilla frö då.</p>
+<p><code>408 00:16:15,980 --&gt; 00:16:19,340</code>
+Eller om jag behöver göra den signeringsvalsen</p>
+<p><code>409 00:16:19,340 --&gt; 00:16:20,540</code>
+varje gång jag besöker en sajt.</p>
+<p><code>410 00:16:21,100 --&gt; 00:16:22,140</code>
+Nej, men det var nog det Peter sa.</p>
+<p><code>411 00:16:22,280 --&gt; 00:16:25,400</code>
+Det där gör man one time och sen gäller den&hellip;</p>
+<p><code>412 00:16:25,400 --&gt; 00:16:26,660</code>
+Jag hoppas man ju inte&hellip;</p>
+<p><code>413 00:16:26,660 --&gt; 00:16:29,400</code>
+För då funkar det ju inte riktigt som bank i det då egentligen.</p>
+<p><code>414 00:16:29,540 --&gt; 00:16:30,740</code>
+Utan då har man liksom en&hellip;</p>
+<p><code>415 00:16:30,740 --&gt; 00:16:33,840</code>
+Det blir som en passkey som gäller tills den är revokad på något sätt.</p>
+<p><code>416 00:16:34,680 --&gt; 00:16:35,200</code>
+Men då&hellip;</p>
+<p><code>417 00:16:35,200 --&gt; 00:16:36,640</code>
+Frågan är hur&hellip;</p>
+<p><code>418 00:16:36,640 --&gt; 00:16:37,520</code>
+Men det är läskigt då.</p>
+<p><code>419 00:16:38,440 --&gt; 00:16:40,760</code>
+Säger du att man är på en sajt, den som trackar dig.</p>
+<p><code>420 00:16:41,280 --&gt; 00:16:44,220</code>
+Och så säger den, ja men ange din lilla sektion här då.</p>
+<p><code>421 00:16:44,280 --&gt; 00:16:47,060</code>
+Även om den då ligger inom kaka, inom en store state</p>
+<p><code>422 00:16:47,060 --&gt; 00:16:49,660</code>
+eller om jag behöver ange någon siffer, kombination.</p>
+<p><code>423 00:16:50,220 --&gt; 00:16:50,940</code>
+Så är det ju&hellip;</p>
+<p><code>424 00:16:50,940 --&gt; 00:16:53,360</code>
+Det är ju väldigt enkelt att göra korrelationsanalys</p>
+<p><code>425 00:16:53,360 --&gt; 00:16:54,640</code>
+för vad jag är och var jag kommer ifrån.</p>
+<p><code>426 00:16:55,740 --&gt; 00:16:57,760</code>
+Ja, man kan ju säga så här, du trackar en perspektiv</p>
+<p><code>427 00:16:57,760 --&gt; 00:16:59,540</code>
+så ger du&hellip;</p>
+<p><code>428 00:16:59,540 --&gt; 00:17:01,300</code>
+Du ger tjänsten</p>
+<p><code>429 00:17:01,300 --&gt; 00:17:03,080</code>
+mer information än den hade tidigare.</p>
+<p><code>430 00:17:03,360 --&gt; 00:17:03,840</code>
+Mycket mer.</p>
+<p><code>431 00:17:05,060 --&gt; 00:17:07,320</code>
+Potentiellt väldigt känslig information om man nu lyckas</p>
+<p><code>432 00:17:07,320 --&gt; 00:17:08,600</code>
+korrelera de här sakerna på rätt sätt.</p>
+<p><code>433 00:17:08,600 --&gt; 00:17:10,480</code>
+Eller om du har en läcka på någon&hellip;</p>
+<p><code>434 00:17:10,480 --&gt; 00:17:12,620</code>
+Jag tänker bara så här, nästa steg blir ju att</p>
+<p><code>435 00:17:12,620 --&gt; 00:17:14,280</code>
+det kommer ju finnas en jävla plugin i någon browser</p>
+<p><code>436 00:17:14,280 --&gt; 00:17:15,920</code>
+och så den browsern</p>
+<p><code>437 00:17:15,920 --&gt; 00:17:18,280</code>
+surfar på internet på många olika sätt.</p>
+<p><code>438 00:17:19,220 --&gt; 00:17:20,600</code>
+Och det känns ju också läskigt.</p>
+<p><code>439 00:17:20,940 --&gt; 00:17:21,720</code>
+Läckigt som fasiken.</p>
+<p><code>440 00:17:22,040 --&gt; 00:17:24,240</code>
+Jag skulle bara vilja gå tillbaka lite till</p>
+<p><code>441 00:17:24,240 --&gt; 00:17:25,460</code>
+de här olika lösningarna vi har sett.</p>
+<p><code>442 00:17:25,540 --&gt; 00:17:28,580</code>
+För vi har diskuterat den som eventuellt är på gång inom EU</p>
+<p><code>443 00:17:28,580 --&gt; 00:17:30,200</code>
+eller det som är på gång inom EU och Sverige.</p>
+<p><code>444 00:17:31,020 --&gt; 00:17:33,160</code>
+Sen har vi ju sett det som har&hellip;</p>
+<p><code>445 00:17:33,160 --&gt; 00:17:34,960</code>
+Jag vet inte exakt hur Australien har gjort.</p>
+<p><code>446 00:17:36,020 --&gt; 00:17:37,360</code>
+De har väl contentfilter, va?</p>
+<p><code>447 00:17:37,400 --&gt; 00:17:37,860</code>
+Har de inte det?</p>
+<p><code>448 00:17:38,380 --&gt; 00:17:39,280</code>
+Jag misstänker att det är något sånt.</p>
+<p><code>449 00:17:39,380 --&gt; 00:17:41,740</code>
+I USA vet jag att jag har hört att&hellip;</p>
+<p><code>450 00:17:41,740 --&gt; 00:17:45,080</code>
+Där hade det väl varit lite mer att de har lagt ansvaret på tjänsterna.</p>
+<p><code>451 00:17:45,080 --&gt; 00:17:45,220</code>
+Ja.</p>
+<p><code>452 00:17:45,900 --&gt; 00:17:47,440</code>
+Lite som i England då, misstänker jag.</p>
+<p><code>453 00:17:48,840 --&gt; 00:17:50,440</code>
+England har väl det rätt av, tror jag.</p>
+<p><code>454 00:17:50,580 --&gt; 00:17:50,900</code>
+Det är&hellip;</p>
+<p><code>455 00:17:50,940 --&gt; 00:17:52,860</code>
+Vilket är ganska problematiskt för att</p>
+<p><code>456 00:17:52,860 --&gt; 00:17:56,180</code>
+då har det ju helt plötsligt en massa företag som säger</p>
+<p><code>457 00:17:56,180 --&gt; 00:17:58,980</code>
+vi gör åldersverifiering utifrån</p>
+<p><code>458 00:17:58,980 --&gt; 00:18:02,100</code>
+bilder på användaren och sådana här saker som&hellip;</p>
+<p><code>459 00:18:02,100 --&gt; 00:18:04,280</code>
+Ja, bilder på användaren eller origin av användaren.</p>
+<p><code>460 00:18:04,880 --&gt; 00:18:07,840</code>
+Egentligen inte knutet till en central identitet.</p>
+<p><code>461 00:18:07,920 --&gt; 00:18:08,320</code>
+Alls.</p>
+<p><code>462 00:18:08,740 --&gt; 00:18:11,960</code>
+Utan ta ett bild på ditt ansikte så avgör vi</p>
+<p><code>463 00:18:11,960 --&gt; 00:18:13,700</code>
+ifall du är gammal nog, exempelvis.</p>
+<p><code>464 00:18:14,060 --&gt; 00:18:14,900</code>
+Sådana här saker.</p>
+<p><code>465 00:18:15,160 --&gt; 00:18:18,860</code>
+Och det är ju bara upplagt för katastrof.</p>
+<p><code>466 00:18:19,300 --&gt; 00:18:20,820</code>
+Och det kommer det ju vara också.</p>
+<p><code>467 00:18:20,940 --&gt; 00:18:23,100</code>
+Dels att folk kan kringgå det, det är ju relativt enkelt.</p>
+<p><code>468 00:18:23,320 --&gt; 00:18:25,440</code>
+Men dels också att du har en massa 3D-parts-företag</p>
+<p><code>469 00:18:25,440 --&gt; 00:18:27,860</code>
+som nu sitter på känslig data, inklusive</p>
+<p><code>470 00:18:27,860 --&gt; 00:18:29,540</code>
+biometri och sådana här saker</p>
+<p><code>471 00:18:29,540 --&gt; 00:18:31,680</code>
+om användare som försöker komma åt</p>
+<p><code>472 00:18:31,680 --&gt; 00:18:33,120</code>
+potentiellt känslig information.</p>
+<p><code>473 00:18:33,640 --&gt; 00:18:33,820</code>
+Ja.</p>
+<p><code>474 00:18:35,160 --&gt; 00:18:37,280</code>
+Så från det perspektivet så är ju</p>
+<p><code>475 00:18:37,280 --&gt; 00:18:39,320</code>
+åtminstone ur ett tekniskt</p>
+<p><code>476 00:18:39,320 --&gt; 00:18:41,860</code>
+synpunkt den EU-modellen</p>
+<p><code>477 00:18:41,860 --&gt; 00:18:43,980</code>
+med en central ID-infrastruktur</p>
+<p><code>478 00:18:43,980 --&gt; 00:18:44,740</code>
+bättre.</p>
+<p><code>479 00:18:45,540 --&gt; 00:18:47,720</code>
+Du har i alla fall möjligheten att göra det mer anonymt.</p>
+<p><code>480 00:18:48,040 --&gt; 00:18:50,720</code>
+Sen är väl frågan om den större problembilden</p>
+<p><code>481 00:18:50,940 --&gt; 00:18:52,780</code>
+är det här någonting vi egentligen</p>
+<p><code>482 00:18:52,780 --&gt; 00:18:53,960</code>
+vill ha överhuvudtaget?</p>
+<p><code>483 00:18:54,020 --&gt; 00:18:56,460</code>
+Det var lite det jag satt och funderade på initialt</p>
+<p><code>484 00:18:56,460 --&gt; 00:18:58,000</code>
+när jag tänkte på det här.</p>
+<p><code>485 00:18:59,720 --&gt; 00:19:01,060</code>
+Varför är det här ens</p>
+<p><code>486 00:19:01,060 --&gt; 00:19:01,980</code>
+en bra idé?</p>
+<p><code>487 00:19:03,020 --&gt; 00:19:04,620</code>
+Jag menar, jag köper att</p>
+<p><code>488 00:19:04,620 --&gt; 00:19:07,100</code>
+det blir ett cirkel</p>
+<p><code>489 00:19:07,100 --&gt; 00:19:08,620</code>
+som många hör. För jag tänker såhär</p>
+<p><code>490 00:19:08,620 --&gt; 00:19:10,960</code>
+är det skrivet i lag att vissa saker</p>
+<p><code>491 00:19:10,960 --&gt; 00:19:12,420</code>
+är åldersgräns på.</p>
+<p><code>492 00:19:12,700 --&gt; 00:19:13,940</code>
+Då måste det ju verifieras på något.</p>
+<p><code>493 00:19:14,080 --&gt; 00:19:16,940</code>
+Och det brukar man göra med ett ID, typ köpa sprit på bolaget</p>
+<p><code>494 00:19:16,940 --&gt; 00:19:17,700</code>
+och sådana grejer.</p>
+<p><code>495 00:19:19,460 --&gt; 00:19:20,640</code>
+Så det är väl där vi måste</p>
+<p><code>496 00:19:20,940 --&gt; 00:19:23,020</code>
+börja på något sätt. Inte implementationen</p>
+<p><code>497 00:19:23,020 --&gt; 00:19:24,180</code>
+utan är det</p>
+<p><code>498 00:19:24,180 --&gt; 00:19:27,120</code>
+i det här fallet då så är det ju social media</p>
+<p><code>499 00:19:27,120 --&gt; 00:19:28,120</code>
+primärt, tror jag va?</p>
+<p><code>500 00:19:28,540 --&gt; 00:19:31,200</code>
+Är det rimligt att lagstifta</p>
+<p><code>501 00:19:31,200 --&gt; 00:19:33,260</code>
+att 15-</p>
+<p><code>502 00:19:33,260 --&gt; 00:19:34,780</code>
+eller 16-åringar inte</p>
+<p><code>503 00:19:34,780 --&gt; 00:19:36,360</code>
+får använda social media?</p>
+<p><code>504 00:19:36,880 --&gt; 00:19:39,040</code>
+Och hur drar man gränsen kan man ju också</p>
+<p><code>505 00:19:39,040 --&gt; 00:19:40,440</code>
+fråga sig. Vad är social media då?</p>
+<p><code>506 00:19:40,640 --&gt; 00:19:42,600</code>
+Vad är det vi inkluderar i det?</p>
+<p><code>507 00:19:43,240 --&gt; 00:19:44,980</code>
+För med så här långt då så har det ju</p>
+<p><code>508 00:19:44,980 --&gt; 00:19:47,180</code>
+nu ramlar vi snabbt in i hur det är fördelar</p>
+<p><code>509 00:19:47,180 --&gt; 00:19:48,840</code>
+och risker och problembild.</p>
+<p><code>510 00:19:48,840 --&gt; 00:19:50,860</code>
+Men så här långt har det varit föräldrar</p>
+<p><code>511 00:19:50,860 --&gt; 00:19:51,860</code>
+ansvar att styra det här.</p>
+<p><code>512 00:19:53,740 --&gt; 00:19:54,840</code>
+Vissa frågor bestämmer</p>
+<p><code>513 00:19:54,840 --&gt; 00:19:56,100</code>
+staten om, det vill säga</p>
+<p><code>514 00:19:56,100 --&gt; 00:19:58,340</code>
+köra bil, rösta, dricka sprit.</p>
+<p><code>515 00:19:59,780 --&gt; 00:20:00,880</code>
+Men här</p>
+<p><code>516 00:20:00,880 --&gt; 00:20:02,600</code>
+är det då föräldrarna som bestämmer om</p>
+<p><code>517 00:20:02,600 --&gt; 00:20:04,340</code>
+om han får social media och mobiltelefoner eller inte.</p>
+<p><code>518 00:20:05,100 --&gt; 00:20:06,700</code>
+Jag kan ju hävda att i viss mån så har ju föräldrarna</p>
+<p><code>519 00:20:06,700 --&gt; 00:20:08,840</code>
+failat. Alltså okej,</p>
+<p><code>520 00:20:09,040 --&gt; 00:20:10,820</code>
+människor har ju inte dött i partiet men ut kanske</p>
+<p><code>521 00:20:10,820 --&gt; 00:20:12,500</code>
+så att så jävla mycket kanske de inte har failat.</p>
+<p><code>522 00:20:12,960 --&gt; 00:20:14,740</code>
+Men konsumtionen av</p>
+<p><code>523 00:20:14,740 --&gt; 00:20:16,960</code>
+social media bland ungdomar är ju rätt hög.</p>
+<p><code>524 00:20:17,740 --&gt; 00:20:18,640</code>
+Och det är ju inte</p>
+<p><code>525 00:20:18,640 --&gt; 00:20:20,400</code>
+enbart positivt.</p>
+<p><code>526 00:20:20,860 --&gt; 00:20:22,980</code>
+Men det är ju också en produkt av tiden. Man får tänka</p>
+<p><code>527 00:20:22,980 --&gt; 00:20:25,160</code>
+på det här. Tittar man historiskt</p>
+<p><code>528 00:20:25,160 --&gt; 00:20:26,780</code>
+så finns det ju andra saker och ting som har varit</p>
+<p><code>529 00:20:26,780 --&gt; 00:20:29,220</code>
+väldigt hemska. Rockmusik.</p>
+<p><code>530 00:20:29,420 --&gt; 00:20:29,760</code>
+Ja, exakt.</p>
+<p><code>531 00:20:31,640 --&gt; 00:20:34,340</code>
+Man får vara försiktig här.</p>
+<p><code>532 00:20:34,480 --&gt; 00:20:36,660</code>
+Jag är ju en väldigt</p>
+<p><code>533 00:20:36,660 --&gt; 00:20:38,880</code>
+jag vurmar ju jättemycket för privacy men framförallt</p>
+<p><code>534 00:20:38,880 --&gt; 00:20:40,920</code>
+yttrandefrihet. Och här är ju då</p>
+<p><code>535 00:20:40,920 --&gt; 00:20:42,940</code>
+så här, vi ändrar våran</p>
+<p><code>536 00:20:42,940 --&gt; 00:20:45,200</code>
+vad man säger här då, media idag.</p>
+<p><code>537 00:20:46,160 --&gt; 00:20:46,700</code>
+Publik, alltså</p>
+<p><code>538 00:20:46,700 --&gt; 00:20:48,820</code>
+tidningar och så. Vi konsumerar</p>
+<p><code>539 00:20:48,820 --&gt; 00:20:50,740</code>
+nyheter om en</p>
+<p><code>540 00:20:50,740 --&gt; 00:20:52,860</code>
+nationssponsrade, höger-vänstervridet</p>
+<p><code>541 00:20:52,860 --&gt; 00:20:53,500</code>
+hur det än är.</p>
+<p><code>542 00:20:54,560 --&gt; 00:20:56,680</code>
+Alltså, funktionen</p>
+<p><code>543 00:20:56,680 --&gt; 00:20:58,680</code>
+eller produkten tidning, den ser ju inte</p>
+<p><code>544 00:20:58,680 --&gt; 00:21:00,600</code>
+likadan ut idag. Så det är så</p>
+<p><code>545 00:21:00,600 --&gt; 00:21:02,480</code>
+att vi kan konsumera opinion</p>
+<p><code>546 00:21:02,480 --&gt; 00:21:04,740</code>
+och så vidare. Det finns ju inte</p>
+<p><code>547 00:21:04,740 --&gt; 00:21:06,540</code>
+på samma sätt. Det görs ju via</p>
+<p><code>548 00:21:06,540 --&gt; 00:21:08,580</code>
+sociala medier. Så frågan är</p>
+<p><code>549 00:21:08,580 --&gt; 00:21:10,720</code>
+om ska man förbjuda</p>
+<p><code>550 00:21:10,720 --&gt; 00:21:12,540</code>
+eller ska man moderera eller ska man</p>
+<p><code>551 00:21:12,540 --&gt; 00:21:14,700</code>
+göra någon kombination? Vi kan väl också</p>
+<p><code>552 00:21:14,700 --&gt; 00:21:16,540</code>
+konstatera. Är förbud rätt väg liksom?</p>
+<p><code>553 00:21:16,880 --&gt; 00:21:18,920</code>
+En direkt effekt av</p>
+<p><code>554 00:21:18,920 --&gt; 00:21:20,680</code>
+att man börjar göra</p>
+<p><code>555 00:21:20,740 --&gt; 00:21:22,500</code>
+sånt här inom EU och sånt</p>
+<p><code>556 00:21:22,500 --&gt; 00:21:23,300</code>
+det är ju att</p>
+<p><code>557 00:21:23,300 --&gt; 00:21:26,560</code>
+det kommer ju finnas en marknad för</p>
+<p><code>558 00:21:26,560 --&gt; 00:21:28,640</code>
+social media-sajter med</p>
+<p><code>559 00:21:28,640 --&gt; 00:21:30,480</code>
+mera som tillåter ungar</p>
+<p><code>560 00:21:30,480 --&gt; 00:21:32,300</code>
+som inte gör de här kollarna.</p>
+<p><code>561 00:21:32,520 --&gt; 00:21:34,340</code>
+Alltså, det kommer ju ske med en gång.</p>
+<p><code>562 00:21:35,200 --&gt; 00:21:36,760</code>
+Alltså, det är ju liksom inget</p>
+<p><code>563 00:21:36,760 --&gt; 00:21:38,340</code>
+The dark youth web.</p>
+<p><code>564 00:21:38,680 --&gt; 00:21:40,600</code>
+Men så är det ju. Om du begränsar du</p>
+<p><code>565 00:21:40,600 --&gt; 00:21:42,500</code>
+någonting så kommer ju en uppsjö av alternativ</p>
+<p><code>566 00:21:42,500 --&gt; 00:21:44,580</code>
+dyka upp. När vi var 15 år</p>
+<p><code>567 00:21:44,580 --&gt; 00:21:46,020</code>
+så hade ju inte vi accepterat att</p>
+<p><code>568 00:21:46,020 --&gt; 00:21:47,740</code>
+någonting inte lät oss använda.</p>
+<p><code>569 00:21:47,740 --&gt; 00:21:49,820</code>
+Nej, folk kommer ju ta sig runt</p>
+<p><code>570 00:21:49,820 --&gt; 00:21:50,620</code>
+att det är ingen särskild sak.</p>
+<p><code>571 00:21:50,740 --&gt; 00:21:53,280</code>
+Vi kan ju bara vända på det och säga, ja men alla runt det här bordet</p>
+<p><code>572 00:21:53,280 --&gt; 00:21:55,620</code>
+laddade ju ner både musik och film</p>
+<p><code>573 00:21:55,620 --&gt; 00:21:57,460</code>
+för det var så man konsumerade för att</p>
+<p><code>574 00:21:57,460 --&gt; 00:21:59,600</code>
+alternativet var bakom en</p>
+<p><code>575 00:21:59,600 --&gt; 00:22:01,660</code>
+paywall liksom. Men nu</p>
+<p><code>576 00:22:01,660 --&gt; 00:22:03,620</code>
+så ändrar man hela konsumtionsmöstret så nu</p>
+<p><code>577 00:22:03,620 --&gt; 00:22:05,700</code>
+har alla här runt det här bordet streaming för att</p>
+<p><code>578 00:22:05,700 --&gt; 00:22:07,800</code>
+det blir mycket lättare att konsumera saker.</p>
+<p><code>579 00:22:08,380 --&gt; 00:22:09,820</code>
+Så vi ändrade affärsmodellen lite.</p>
+<p><code>580 00:22:10,460 --&gt; 00:22:11,600</code>
+Och nu tillämpar man det</p>
+<p><code>581 00:22:11,600 --&gt; 00:22:14,080</code>
+då att man ska förbjuda folk att använda teknik.</p>
+<p><code>582 00:22:14,620 --&gt; 00:22:15,680</code>
+Det tycker jag inte</p>
+<p><code>583 00:22:15,680 --&gt; 00:22:17,120</code>
+är rätt väg att gå.</p>
+<p><code>584 00:22:17,520 --&gt; 00:22:19,700</code>
+Sen så håller jag med om att det finns jättemycket studier</p>
+<p><code>585 00:22:19,700 --&gt; 00:22:20,700</code>
+på hur skadligt</p>
+<p><code>586 00:22:20,740 --&gt; 00:22:23,560</code>
+mitt missbruk också är. Inte bara kidsen.</p>
+<p><code>587 00:22:23,920 --&gt; 00:22:25,720</code>
+Alltså jag har också ett jättemissbruk</p>
+<p><code>588 00:22:25,720 --&gt; 00:22:26,980</code>
+där man kan sitta liksom och bara så här</p>
+<p><code>589 00:22:26,980 --&gt; 00:22:29,900</code>
+vad fan är det som händer nu? Här har jag suttit i 20 minuter och kollat på</p>
+<p><code>590 00:22:29,900 --&gt; 00:22:31,080</code>
+katter.</p>
+<p><code>591 00:22:32,120 --&gt; 00:22:34,220</code>
+Det är en av de bättre</p>
+<p><code>592 00:22:34,220 --&gt; 00:22:35,360</code>
+dåliga sakerna idag.</p>
+<p><code>593 00:22:36,180 --&gt; 00:22:37,540</code>
+Det kan jag säga</p>
+<p><code>594 00:22:37,540 --&gt; 00:22:39,120</code>
+att samhället konstaterar att</p>
+<p><code>595 00:22:39,120 --&gt; 00:22:41,800</code>
+vi har en problem att tekniknivå</p>
+<p><code>596 00:22:41,800 --&gt; 00:22:42,840</code>
+och kompetensen</p>
+<p><code>597 00:22:42,840 --&gt; 00:22:45,200</code>
+sjunker de yngre generationerna.</p>
+<p><code>598 00:22:45,340 --&gt; 00:22:47,100</code>
+Så nu gör vi den här satsningen</p>
+<p><code>599 00:22:47,100 --&gt; 00:22:49,660</code>
+för att tvinga ungdomarna att lära sig teknik.</p>
+<p><code>600 00:22:50,080 --&gt; 00:22:50,580</code>
+Det kommer att vara så.</p>
+<p><code>601 00:22:50,740 --&gt; 00:22:52,960</code>
+Det kommer att bli så jävla mycket</p>
+<p><code>602 00:22:52,960 --&gt; 00:22:55,120</code>
+duxiga unga när de börjar</p>
+<p><code>603 00:22:55,120 --&gt; 00:22:56,740</code>
+leka den här dansen med</p>
+<p><code>604 00:22:56,740 --&gt; 00:22:59,180</code>
+banivation och grejer.</p>
+<p><code>605 00:23:00,140 --&gt; 00:23:00,880</code>
+Det är ju så smart.</p>
+<p><code>606 00:23:00,960 --&gt; 00:23:02,620</code>
+Det är så vi kommer att få nästa generations hackers.</p>
+<p><code>607 00:23:03,140 --&gt; 00:23:04,560</code>
+Men är det någon som har tittat på det? Hur</p>
+<p><code>608 00:23:04,560 --&gt; 00:23:06,520</code>
+motiveras de här förbuden?</p>
+<p><code>609 00:23:06,900 --&gt; 00:23:08,280</code>
+Vi måste tänka på de små barnen.</p>
+<p><code>610 00:23:09,180 --&gt; 00:23:10,500</code>
+Man får vara lite mer</p>
+<p><code>611 00:23:10,500 --&gt; 00:23:12,920</code>
+granulära och nyanserade än så.</p>
+<p><code>612 00:23:13,080 --&gt; 00:23:14,240</code>
+Inte om man heter Ylva.</p>
+<p><code>613 00:23:14,240 --&gt; 00:23:15,540</code>
+Grejen är att det får mig</p>
+<p><code>614 00:23:15,540 --&gt; 00:23:18,220</code>
+det här ger mig smaken</p>
+<p><code>615 00:23:18,220 --&gt; 00:23:19,260</code>
+av chat-control.</p>
+<p><code>616 00:23:20,740 --&gt; 00:23:22,960</code>
+Jag känner lite likadant</p>
+<p><code>617 00:23:22,960 --&gt; 00:23:24,980</code>
+för att det finns ingenting som säger att man inte bygger</p>
+<p><code>618 00:23:24,980 --&gt; 00:23:26,300</code>
+funktionalitet uppe på det här.</p>
+<p><code>619 00:23:27,300 --&gt; 00:23:29,120</code>
+Jag tog i någon av artiklarna som jag</p>
+<p><code>620 00:23:29,120 --&gt; 00:23:30,980</code>
+läste kring detta där de</p>
+<p><code>621 00:23:30,980 --&gt; 00:23:33,060</code>
+om det var Electronic</p>
+<p><code>622 00:23:33,060 --&gt; 00:23:34,880</code>
+Frontier Foundation</p>
+<p><code>623 00:23:34,880 --&gt; 00:23:37,060</code>
+Men mental murbräcka</p>
+<p><code>624 00:23:37,060 --&gt; 00:23:38,520</code>
+är väl en av</p>
+<p><code>625 00:23:38,520 --&gt; 00:23:40,880</code>
+anklagelserna. Vi börjar</p>
+<p><code>626 00:23:40,880 --&gt; 00:23:42,860</code>
+med att lära sig folk att acceptera</p>
+<p><code>627 00:23:42,860 --&gt; 00:23:45,080</code>
+internet är inte längre</p>
+<p><code>628 00:23:45,080 --&gt; 00:23:46,960</code>
+fritt utan du måste identifiera dig</p>
+<p><code>629 00:23:46,960 --&gt; 00:23:48,580</code>
+verifiera dig för att komma åt det.</p>
+<p><code>630 00:23:49,020 --&gt; 00:23:50,700</code>
+Och det har det ju inte varit på länge men</p>
+<p><code>631 00:23:50,740 --&gt; 00:23:52,280</code>
+men alltså fingerprinting och tracking.</p>
+<p><code>632 00:23:52,300 --&gt; 00:23:54,420</code>
+Har vi de här sakerna på plats?</p>
+<p><code>633 00:23:54,840 --&gt; 00:23:56,560</code>
+Det är någon artikel som jag läste som</p>
+<p><code>634 00:23:56,560 --&gt; 00:23:58,940</code>
+har åldrats lite nu då med tanke på</p>
+<p><code>635 00:23:58,940 --&gt; 00:24:00,560</code>
+det senaste valet i Ungern</p>
+<p><code>636 00:24:00,560 --&gt; 00:24:03,020</code>
+som ju faktiskt gick åt rätt håll</p>
+<p><code>637 00:24:03,020 --&gt; 00:24:04,640</code>
+för en gång så det är första gången på 16 år.</p>
+<p><code>638 00:24:04,900 --&gt; 00:24:06,740</code>
+Ja, väldigt bra. Inte om du frågar</p>
+<p><code>639 00:24:06,740 --&gt; 00:24:08,700</code>
+den rumänska taxichauffören som körde mig igår.</p>
+<p><code>640 00:24:09,220 --&gt; 00:24:10,360</code>
+Han följer inte med.</p>
+<p><code>641 00:24:10,820 --&gt; 00:24:12,960</code>
+Nej men vi kan inte ta alla våra åsikter från honom.</p>
+<p><code>642 00:24:14,800 --&gt; 00:24:16,880</code>
+Nej men i den artikeln jag läste här så stod de bara upp</p>
+<p><code>643 00:24:16,880 --&gt; 00:24:18,880</code>
+som ett exempel om vi nu stiftar den här</p>
+<p><code>644 00:24:18,880 --&gt; 00:24:20,560</code>
+infrastrukturen i EU. Vad skulle</p>
+<p><code>645 00:24:20,560 --&gt; 00:24:22,600</code>
+stoppa egentligen en</p>
+<p><code>646 00:24:22,600 --&gt; 00:24:24,340</code>
+regim som Orbans då</p>
+<p><code>647 00:24:24,340 --&gt; 00:24:27,140</code>
+från att använda liknande för att begränsa</p>
+<p><code>648 00:24:27,140 --&gt; 00:24:28,840</code>
+tillgång till information</p>
+<p><code>649 00:24:28,840 --&gt; 00:24:30,840</code>
+för LGBTQI+.</p>
+<p><code>650 00:24:31,420 --&gt; 00:24:33,140</code>
+Ja men det du säger nu är</p>
+<p><code>651 00:24:33,140 --&gt; 00:24:35,000</code>
+helt rätt och det kommer ju också vara en svart låda</p>
+<p><code>652 00:24:35,000 --&gt; 00:24:36,640</code>
+där man inte har insyn.</p>
+<p><code>653 00:24:36,800 --&gt; 00:24:38,080</code>
+Men tittar man på</p>
+<p><code>654 00:24:38,080 --&gt; 00:24:40,680</code>
+både Storbritannien och</p>
+<p><code>655 00:24:40,680 --&gt; 00:24:42,320</code>
+och ännu mer</p>
+<p><code>656 00:24:42,320 --&gt; 00:24:44,460</code>
+delar av USA så är ju</p>
+<p><code>657 00:24:44,460 --&gt; 00:24:46,920</code>
+det är ju jättemycket som är känsligt som</p>
+<p><code>658 00:24:46,920 --&gt; 00:24:48,460</code>
+unga inte borde få läsa om.</p>
+<p><code>659 00:24:48,900 --&gt; 00:24:49,920</code>
+Exakt, enligt dem.</p>
+<p><code>660 00:24:50,560 --&gt; 00:24:52,060</code>
+Och definitivt&hellip;</p>
+<p><code>661 00:24:52,060 --&gt; 00:24:54,820</code>
+Men att lägga, vi kan prata snabbt om det här</p>
+<p><code>662 00:24:54,820 --&gt; 00:24:56,800</code>
+om UKs DNS-filtrering</p>
+<p><code>663 00:24:56,800 --&gt; 00:24:58,580</code>
+helt enkelt, det vill säga att man måste ha</p>
+<p><code>664 00:24:58,580 --&gt; 00:25:00,660</code>
+age verification för att nå vissa&hellip;</p>
+<p><code>665 00:25:00,660 --&gt; 00:25:03,160</code>
+Det är väl framförallt gaming och adult content</p>
+<p><code>666 00:25:03,160 --&gt; 00:25:04,080</code>
+alltså porr liksom.</p>
+<p><code>667 00:25:04,640 --&gt; 00:25:06,900</code>
+Men det är ju super, i och med att man lägger det då</p>
+<p><code>668 00:25:06,900 --&gt; 00:25:08,960</code>
+hos leverantören så leverantören kommer ju</p>
+<p><code>669 00:25:08,960 --&gt; 00:25:10,400</code>
+bara se till att man har</p>
+<p><code>670 00:25:10,400 --&gt; 00:25:12,960</code>
+flyttat risken någonstans. Så man gör</p>
+<p><code>671 00:25:12,960 --&gt; 00:25:15,020</code>
+det man kan göra. Men det finns ju ingenting</p>
+<p><code>672 00:25:15,020 --&gt; 00:25:16,900</code>
+idag med i vetlingen som stoppar att man använder en</p>
+<p><code>673 00:25:16,900 --&gt; 00:25:19,140</code>
+VPN och så kommer man in på sina</p>
+<p><code>674 00:25:19,140 --&gt; 00:25:20,500</code>
+sajter från ett annat land där det inte är så.</p>
+<p><code>675 00:25:20,560 --&gt; 00:25:22,820</code>
+Det är age verification. Leverantören har ju</p>
+<p><code>676 00:25:22,820 --&gt; 00:25:23,840</code>
+i det här fallet</p>
+<p><code>677 00:25:23,840 --&gt; 00:25:26,480</code>
+inga incitament att göra någonting mer än</p>
+<p><code>678 00:25:26,480 --&gt; 00:25:28,620</code>
+absolut minsta möjliga. Exakt. De vill ju ha många</p>
+<p><code>679 00:25:28,620 --&gt; 00:25:30,820</code>
+användare. Och ett VPN-konto är ganska</p>
+<p><code>680 00:25:30,820 --&gt; 00:25:32,880</code>
+gratis idag. Precis. Och det gör ju att du kan</p>
+<p><code>681 00:25:32,880 --&gt; 00:25:34,700</code>
+komma från vilket land som helst. Och jag tycker att&hellip;</p>
+<p><code>682 00:25:34,700 --&gt; 00:25:36,760</code>
+Och börjar vi då säga såhär, vi förbjuder VPN-trafik</p>
+<p><code>683 00:25:36,760 --&gt; 00:25:38,860</code>
+vi förbjuder krypterad trafik. Precis, då har du ju inte</p>
+<p><code>684 00:25:38,860 --&gt; 00:25:40,820</code>
+internet längre. Nu är vi ju, då börjar vi gå in på</p>
+<p><code>685 00:25:40,820 --&gt; 00:25:42,940</code>
+ett jäkligt, alltså såhär snårig skog.</p>
+<p><code>686 00:25:43,140 --&gt; 00:25:44,640</code>
+Men då börjar vi komma till liksom</p>
+<p><code>687 00:25:44,640 --&gt; 00:25:46,380</code>
+lite Great Firewall of China. Ja, det är sant.</p>
+<p><code>688 00:25:46,380 --&gt; 00:25:48,340</code>
+Det är som du säger, det här är inte i världen</p>
+<p><code>689 00:25:48,340 --&gt; 00:25:50,320</code>
+implementeras inte detta. Nej. Så det är bara</p>
+<p><code>690 00:25:50,320 --&gt; 00:25:52,600</code>
+lägga din användare i ett land som inte har det här.</p>
+<p><code>691 00:25:52,600 --&gt; 00:25:54,420</code>
+Och då börjar vi då bli intressant, för att</p>
+<p><code>692 00:25:54,420 --&gt; 00:25:56,480</code>
+då måste vi ändå i värdera&hellip;</p>
+<p><code>693 00:25:56,480 --&gt; 00:25:58,460</code>
+Det är sjukt många användare som kommer från</p>
+<p><code>694 00:25:58,460 --&gt; 00:25:59,480</code>
+Niu. Ja.</p>
+<p><code>695 00:26:00,220 --&gt; 00:26:02,600</code>
+Nej, men om man vänder på det då, så vad har vi då?</p>
+<p><code>696 00:26:02,760 --&gt; 00:26:03,960</code>
+Jo, men vi har en</p>
+<p><code>697 00:26:03,960 --&gt; 00:26:06,220</code>
+point of contact som kommer innehålla</p>
+<p><code>698 00:26:06,220 --&gt; 00:26:08,020</code>
+integritet om detta blir ett</p>
+<p><code>699 00:26:08,020 --&gt; 00:26:10,280</code>
+bör, ett skallkrav på alla</p>
+<p><code>700 00:26:10,280 --&gt; 00:26:12,360</code>
+europeiska sajter. Då kommer jag också</p>
+<p><code>701 00:26:12,360 --&gt; 00:26:14,160</code>
+kunna fingerprinta folk som använder VPN</p>
+<p><code>702 00:26:14,160 --&gt; 00:26:15,000</code>
+när det är väldigt tydligt.</p>
+<p><code>703 00:26:16,400 --&gt; 00:26:17,980</code>
+Och det är inte heller så jäkla bra då.</p>
+<p><code>704 00:26:18,340 --&gt; 00:26:20,520</code>
+Du kommer ju också sätta en massa</p>
+<p><code>705 00:26:20,520 --&gt; 00:26:22,100</code>
+människor i kläm som inte av</p>
+<p><code>706 00:26:22,100 --&gt; 00:26:24,360</code>
+olika anledningar har tillgång till identifierade</p>
+<p><code>707 00:26:24,360 --&gt; 00:26:26,360</code>
+känslor, alltså som inte har ID-en</p>
+<p><code>708 00:26:26,360 --&gt; 00:26:27,780</code>
+eller pass eller&hellip;</p>
+<p><code>709 00:26:27,780 --&gt; 00:26:30,700</code>
+En sak som jag har satt och funderat på, kan det här vara</p>
+<p><code>710 00:26:30,700 --&gt; 00:26:31,720</code>
+ett</p>
+<p><code>711 00:26:31,720 --&gt; 00:26:34,600</code>
+ett steg i maktkampen</p>
+<p><code>712 00:26:34,600 --&gt; 00:26:36,340</code>
+mot de sociala medierietarna?</p>
+<p><code>713 00:26:36,960 --&gt; 00:26:38,700</code>
+Att det har varit svårt</p>
+<p><code>714 00:26:38,700 --&gt; 00:26:40,560</code>
+och även med GDPR</p>
+<p><code>715 00:26:40,560 --&gt; 00:26:42,440</code>
+har det varit svårt att tvinga dem att inte</p>
+<p><code>716 00:26:42,440 --&gt; 00:26:44,100</code>
+samla information om alla besökare.</p>
+<p><code>717 00:26:45,680 --&gt; 00:26:46,200</code>
+Så</p>
+<p><code>718 00:26:46,200 --&gt; 00:26:47,940</code>
+nu tar de bort</p>
+<p><code>719 00:26:48,340 --&gt; 00:26:50,420</code>
+en jävla massa besökare istället från de sociala</p>
+<p><code>720 00:26:50,420 --&gt; 00:26:52,240</code>
+medie-sajterna. Tror inte att det kommer</p>
+<p><code>721 00:26:52,240 --&gt; 00:26:53,340</code>
+att funka på det sättet.</p>
+<p><code>722 00:26:53,700 --&gt; 00:26:56,660</code>
+Det är det de försöker</p>
+<p><code>723 00:26:56,660 --&gt; 00:26:57,560</code>
+göra, det är det jag försöker säga.</p>
+<p><code>724 00:26:57,600 --&gt; 00:27:00,120</code>
+Tror du att risken är större att de får mer information</p>
+<p><code>725 00:27:00,120 --&gt; 00:27:01,220</code>
+om</p>
+<p><code>726 00:27:01,220 --&gt; 00:27:03,700</code>
+de individuella kontorna?</p>
+<p><code>727 00:27:03,860 --&gt; 00:27:05,740</code>
+Ja, de får ju åldersverifiering.</p>
+<p><code>728 00:27:05,900 --&gt; 00:27:08,020</code>
+Och det är ju väldigt värdefull information</p>
+<p><code>729 00:27:08,020 --&gt; 00:27:10,120</code>
+även om du inte har identiteten</p>
+<p><code>730 00:27:10,120 --&gt; 00:27:11,780</code>
+så är det ju ett marknadsförings&hellip;</p>
+<p><code>731 00:27:11,780 --&gt; 00:27:14,160</code>
+Det är så roligt att vi pratar om det här nu. Jag läser</p>
+<p><code>732 00:27:14,160 --&gt; 00:27:16,340</code>
+en bok just nu som heter</p>
+<p><code>733 00:27:16,340 --&gt; 00:27:18,100</code>
+jag fuskar lite</p>
+<p><code>734 00:27:18,340 --&gt; 00:27:20,420</code>
+som är skriven utav</p>
+<p><code>735 00:27:20,420 --&gt; 00:27:22,160</code>
+Sarah Wynne Williams</p>
+<p><code>736 00:27:22,160 --&gt; 00:27:24,520</code>
+som var en utav Facebooks</p>
+<p><code>737 00:27:24,520 --&gt; 00:27:26,620</code>
+första policy</p>
+<p><code>738 00:27:26,620 --&gt; 00:27:28,520</code>
+kör. Alltså hon går på nation</p>
+<p><code>739 00:27:28,520 --&gt; 00:27:29,580</code>
+och så här. Hon kommer från UN</p>
+<p><code>740 00:27:29,580 --&gt; 00:27:32,260</code>
+och går in på Facebook och beskriver</p>
+<p><code>741 00:27:32,260 --&gt; 00:27:34,160</code>
+sin resa från</p>
+<p><code>742 00:27:34,160 --&gt; 00:27:36,100</code>
+hur vi ska prata med regimer</p>
+<p><code>743 00:27:36,100 --&gt; 00:27:38,120</code>
+och länder, hur vi ska förhålla oss till information</p>
+<p><code>744 00:27:38,120 --&gt; 00:27:38,960</code>
+i olika länder.</p>
+<p><code>745 00:27:39,920 --&gt; 00:27:41,900</code>
+Jag är inte klar med boken än, men</p>
+<p><code>746 00:27:41,900 --&gt; 00:27:44,560</code>
+The Trajectory, alltså det vill säga</p>
+<p><code>747 00:27:44,560 --&gt; 00:27:46,260</code>
+vägen från hennes idé</p>
+<p><code>748 00:27:46,260 --&gt; 00:27:48,300</code>
+om att vi ska skapa en så</p>
+<p><code>749 00:27:48,340 --&gt; 00:27:49,360</code>
+social mediaplattform</p>
+<p><code>750 00:27:49,360 --&gt; 00:27:50,600</code>
+som är god.</p>
+<p><code>751 00:27:50,600 --&gt; 00:27:51,480</code>
+Som är god.</p>
+<p><code>752 00:27:52,980 --&gt; 00:27:54,600</code>
+Ja, det är så bäckmörkt</p>
+<p><code>753 00:27:54,600 --&gt; 00:27:56,160</code>
+nu när folk börjar förstå att</p>
+<p><code>754 00:27:56,160 --&gt; 00:27:57,520</code>
+vi kan driva opinion.</p>
+<p><code>755 00:27:58,220 --&gt; 00:28:00,460</code>
+Och sen då vad som händer inne i Facebook</p>
+<p><code>756 00:28:00,460 --&gt; 00:28:02,780</code>
+när de kommer fram till att de kan driva opinion.</p>
+<p><code>757 00:28:03,040 --&gt; 00:28:04,340</code>
+Den här boken är skriven av en person</p>
+<p><code>758 00:28:04,340 --&gt; 00:28:05,800</code>
+så att det är en åsikt och hennes</p>
+<p><code>759 00:28:05,800 --&gt; 00:28:08,080</code>
+livsåskådning på det här.</p>
+<p><code>760 00:28:08,540 --&gt; 00:28:10,200</code>
+Men det är ju inte positivt.</p>
+<p><code>761 00:28:10,340 --&gt; 00:28:12,760</code>
+Tänk om man ser tillbaka på hela Cambridge Analytica</p>
+<p><code>762 00:28:12,760 --&gt; 00:28:14,020</code>
+skandalen och sådär.</p>
+<p><code>763 00:28:14,140 --&gt; 00:28:15,160</code>
+Det har ju pågått länge.</p>
+<p><code>764 00:28:15,580 --&gt; 00:28:18,220</code>
+Och då kan man tänka sig att Facebook bara, ja det var ju dumt</p>
+<p><code>765 00:28:18,220 --&gt; 00:28:20,720</code>
+att de var där. Eller, det här är ett business case.</p>
+<p><code>766 00:28:20,920 --&gt; 00:28:21,520</code>
+Ja, såklart.</p>
+<p><code>767 00:28:21,980 --&gt; 00:28:22,980</code>
+Min spontana tanke är att&hellip;</p>
+<p><code>768 00:28:22,980 --&gt; 00:28:26,280</code>
+Vi vet ju att det har läckt Facebook</p>
+<p><code>769 00:28:26,280 --&gt; 00:28:28,700</code>
+material från marknadsföringsavdelningen</p>
+<p><code>770 00:28:28,700 --&gt; 00:28:30,500</code>
+där man vet att man har skamannonser</p>
+<p><code>771 00:28:30,500 --&gt; 00:28:31,620</code>
+men det är också revenue</p>
+<p><code>772 00:28:31,620 --&gt; 00:28:33,540</code>
+som man väljer att inte ta bort dem.</p>
+<p><code>773 00:28:35,060 --&gt; 00:28:36,460</code>
+Men en annan grej</p>
+<p><code>774 00:28:36,460 --&gt; 00:28:37,260</code>
+är ju det här.</p>
+<p><code>775 00:28:37,660 --&gt; 00:28:39,960</code>
+En logisk följd av det här är ju att</p>
+<p><code>776 00:28:39,960 --&gt; 00:28:42,320</code>
+om det blir</p>
+<p><code>777 00:28:42,320 --&gt; 00:28:44,040</code>
+16-årsgräns till en massa grejer</p>
+<p><code>778 00:28:44,040 --&gt; 00:28:45,940</code>
+så kommer ju typ alla 14-åringar</p>
+<p><code>779 00:28:45,940 --&gt; 00:28:47,600</code>
+kommer ju betala någon.</p>
+<p><code>780 00:28:48,220 --&gt; 00:28:50,100</code>
+För att skapa ett åldersbevis på deras</p>
+<p><code>781 00:28:50,100 --&gt; 00:28:50,920</code>
+mobiltelefon.</p>
+<p><code>782 00:28:51,600 --&gt; 00:28:53,840</code>
+Det kommer kring oss på massa olika sätt.</p>
+<p><code>783 00:28:53,840 --&gt; 00:28:55,140</code>
+Ja, men alltså&hellip;</p>
+<p><code>784 00:28:55,140 --&gt; 00:28:57,760</code>
+Eller så kommer de hänga på en sajt som hostas</p>
+<p><code>785 00:28:57,760 --&gt; 00:28:58,280</code>
+i ett land utanför.</p>
+<p><code>786 00:28:58,280 --&gt; 00:29:00,520</code>
+Ja, men har du precis fyllt&hellip;</p>
+<p><code>787 00:29:00,520 --&gt; 00:29:03,020</code>
+Har du precis fyllt så kan ju det ju snabba pengar</p>
+<p><code>788 00:29:03,020 --&gt; 00:29:04,840</code>
+och börja hjälpa folk att</p>
+<p><code>789 00:29:04,840 --&gt; 00:29:06,140</code>
+fixa åldersbevis.</p>
+<p><code>790 00:29:06,140 --&gt; 00:29:08,120</code>
+Det är ju som när den första personen fyllde 20</p>
+<p><code>791 00:29:08,120 --&gt; 00:29:09,620</code>
+och kunde köpa ut på systemet.</p>
+<p><code>792 00:29:09,740 --&gt; 00:29:11,280</code>
+Det är ju samma effekt liksom.</p>
+<p><code>793 00:29:12,400 --&gt; 00:29:14,200</code>
+En sak jag tänkte på här, jag tycker att</p>
+<p><code>794 00:29:14,200 --&gt; 00:29:16,340</code>
+att jag var ute efter det där</p>
+<p><code>795 00:29:16,340 --&gt; 00:29:17,820</code>
+att de försöker nå, eller</p>
+<p><code>796 00:29:18,220 --&gt; 00:29:20,500</code>
+sätta tryck på de här sociala medieplattformarna</p>
+<p><code>797 00:29:20,500 --&gt; 00:29:21,700</code>
+kommer från att jag läste just</p>
+<p><code>798 00:29:21,700 --&gt; 00:29:24,180</code>
+Australiens, det här är ju</p>
+<p><code>799 00:29:24,180 --&gt; 00:29:25,700</code>
+eSafety heter det i Australien då.</p>
+<p><code>800 00:29:26,080 --&gt; 00:29:28,260</code>
+Läste deras information om beslutet.</p>
+<p><code>801 00:29:29,260 --&gt; 00:29:30,500</code>
+Det är då eSafety&rsquo;s</p>
+<p><code>802 00:29:30,500 --&gt; 00:29:32,520</code>
+view that Facebook, Instagram,</p>
+<p><code>803 00:29:32,680 --&gt; 00:29:34,640</code>
+Snapchat, Threads, TikTok, Twitch,</p>
+<p><code>804 00:29:34,860 --&gt; 00:29:36,720</code>
+X, YouTube, Kik och Reddit</p>
+<p><code>805 00:29:36,720 --&gt; 00:29:38,620</code>
+are age-restricted platforms</p>
+<p><code>806 00:29:38,620 --&gt; 00:29:40,720</code>
+among others. Men de är liksom uttalade.</p>
+<p><code>807 00:29:41,860 --&gt; 00:29:42,800</code>
+Den listan</p>
+<p><code>808 00:29:42,800 --&gt; 00:29:44,360</code>
+kan förändras och de har en antal</p>
+<p><code>809 00:29:44,360 --&gt; 00:29:46,220</code>
+kategorier längre ner som liksom avgör</p>
+<p><code>810 00:29:46,220 --&gt; 00:29:47,840</code>
+om det ska vara</p>
+<p><code>811 00:29:48,220 --&gt; 00:29:50,400</code>
+age-restricted eller inte. Men de säger här, varför då?</p>
+<p><code>812 00:29:51,160 --&gt; 00:29:52,780</code>
+The social media age-restriction</p>
+<p><code>813 00:29:52,780 --&gt; 00:29:55,100</code>
+aim to protect young Australians</p>
+<p><code>814 00:29:55,100 --&gt; 00:29:57,340</code>
+from pressures and risks</p>
+<p><code>815 00:29:57,340 --&gt; 00:29:59,580</code>
+that users can be exposed to</p>
+<p><code>816 00:29:59,580 --&gt; 00:30:01,720</code>
+while logged into social media accounts.</p>
+<p><code>817 00:30:02,160 --&gt; 00:30:03,220</code>
+These come from</p>
+<p><code>818 00:30:03,220 --&gt; 00:30:05,540</code>
+design features that encourage</p>
+<p><code>819 00:30:05,540 --&gt; 00:30:07,480</code>
+them to spend more time on screens</p>
+<p><code>820 00:30:07,480 --&gt; 00:30:09,340</code>
+while also serving up content</p>
+<p><code>821 00:30:09,340 --&gt; 00:30:11,400</code>
+and can harm their health and well-being.</p>
+<p><code>822 00:30:11,700 --&gt; 00:30:13,460</code>
+De pekar ju verkligen ut att det liksom är</p>
+<p><code>823 00:30:13,460 --&gt; 00:30:15,060</code>
+det är algoritmerna</p>
+<p><code>824 00:30:15,060 --&gt; 00:30:17,480</code>
+och i viss mån innehållet då</p>
+<p><code>825 00:30:17,480 --&gt; 00:30:17,800</code>
+som</p>
+<p><code>826 00:30:18,220 --&gt; 00:30:19,380</code>
+är det som är skadligt.</p>
+<p><code>827 00:30:20,080 --&gt; 00:30:20,460</code>
+Och jag menar,</p>
+<p><code>828 00:30:20,740 --&gt; 00:30:23,820</code>
+ett annat sätt att go about this</p>
+<p><code>829 00:30:23,820 --&gt; 00:30:25,960</code>
+är ju att se till att de här plattformarna</p>
+<p><code>830 00:30:25,960 --&gt; 00:30:26,420</code>
+måste</p>
+<p><code>831 00:30:26,420 --&gt; 00:30:29,800</code>
+få inte ha skadliga algoritmer.</p>
+<p><code>832 00:30:30,380 --&gt; 00:30:32,000</code>
+Det låter ju nästan som en</p>
+<p><code>833 00:30:32,000 --&gt; 00:30:33,440</code>
+rimligare approach.</p>
+<p><code>834 00:30:33,920 --&gt; 00:30:36,080</code>
+Om vi nu har system där ute</p>
+<p><code>835 00:30:36,080 --&gt; 00:30:38,000</code>
+i världen som snurrar på vårt</p>
+<p><code>836 00:30:38,000 --&gt; 00:30:39,120</code>
+gemensamma internet,</p>
+<p><code>837 00:30:39,440 --&gt; 00:30:41,360</code>
+och de är</p>
+<p><code>838 00:30:41,360 --&gt; 00:30:43,340</code>
+skadliga saker där.</p>
+<p><code>839 00:30:43,620 --&gt; 00:30:45,720</code>
+Jag kan ju jämföra det med om någon har gått omkring</p>
+<p><code>840 00:30:45,720 --&gt; 00:30:47,540</code>
+och släppt ut giftig gas.</p>
+<p><code>841 00:30:48,220 --&gt; 00:30:50,240</code>
+Oavsett var det någonstans i världen så har ju folk</p>
+<p><code>842 00:30:50,240 --&gt; 00:30:51,320</code>
+runt omkring haft åsikter.</p>
+<p><code>843 00:30:52,620 --&gt; 00:30:54,680</code>
+Lösningen hade inte varit att du måste köpa en gasmask.</p>
+<p><code>844 00:30:54,780 --&gt; 00:30:55,820</code>
+Du måste, precis.</p>
+<p><code>845 00:30:56,280 --&gt; 00:30:58,320</code>
+Jag måste verifiera att jag kan</p>
+<p><code>846 00:30:58,320 --&gt; 00:31:00,300</code>
+klara av den här gasen. Det är inte lösningen.</p>
+<p><code>847 00:31:00,500 --&gt; 00:31:02,260</code>
+Utan sluta släppa ut gasen</p>
+<p><code>848 00:31:02,260 --&gt; 00:31:04,080</code>
+för helvete. Det här är skadligt liksom.</p>
+<p><code>849 00:31:04,320 --&gt; 00:31:05,020</code>
+Jag håller helt med.</p>
+<p><code>850 00:31:05,160 --&gt; 00:31:07,340</code>
+Och sen bygger väl det här lite på också att det är en</p>
+<p><code>851 00:31:07,340 --&gt; 00:31:09,920</code>
+dopaminidé här.</p>
+<p><code>852 00:31:10,160 --&gt; 00:31:11,820</code>
+Så det är ju ett knark.</p>
+<p><code>853 00:31:12,240 --&gt; 00:31:12,600</code>
+Exakt.</p>
+<p><code>854 00:31:12,860 --&gt; 00:31:15,360</code>
+Det här är ju ingenting som jag hittar på utan</p>
+<p><code>855 00:31:15,360 --&gt; 00:31:18,040</code>
+det är ju samma som en slot machine.</p>
+<p><code>856 00:31:18,220 --&gt; 00:31:20,280</code>
+Det är samma, exakt samma fenomen här</p>
+<p><code>857 00:31:20,280 --&gt; 00:31:22,260</code>
+att man ska serva så mycket bra content</p>
+<p><code>858 00:31:22,260 --&gt; 00:31:23,580</code>
+att man inte kan sluta.</p>
+<p><code>859 00:31:23,740 --&gt; 00:31:25,880</code>
+Med samma vinkel där då. Knark är ju inte lagligt</p>
+<p><code>860 00:31:25,880 --&gt; 00:31:26,340</code>
+för det mesta.</p>
+<p><code>861 00:31:27,400 --&gt; 00:31:29,940</code>
+Så får de att sluta tillverka det då.</p>
+<p><code>862 00:31:30,140 --&gt; 00:31:31,160</code>
+Jag ser nästa grej.</p>
+<p><code>863 00:31:31,640 --&gt; 00:31:34,280</code>
+För jag pratade alldeles nyss om hur man kommer betala</p>
+<p><code>864 00:31:34,280 --&gt; 00:31:35,120</code>
+för att sin</p>
+<p><code>865 00:31:35,120 --&gt; 00:31:37,420</code>
+äldre polare</p>
+<p><code>866 00:31:37,420 --&gt; 00:31:39,480</code>
+fixar en åldersverifiering.</p>
+<p><code>867 00:31:39,900 --&gt; 00:31:42,000</code>
+Den andra grejen är ju att det kommer ju komma</p>
+<p><code>868 00:31:42,000 --&gt; 00:31:44,340</code>
+massvis med sajter som erbjuder</p>
+<p><code>869 00:31:44,340 --&gt; 00:31:46,180</code>
+att ge oss dina</p>
+<p><code>870 00:31:46,180 --&gt; 00:31:48,140</code>
+creds så fixar vi</p>
+<p><code>871 00:31:48,140 --&gt; 00:31:49,320</code>
+åldersverifieringen för dig.</p>
+<p><code>872 00:31:49,460 --&gt; 00:31:51,600</code>
+Och sen kommer massa unga</p>
+<p><code>873 00:31:51,600 --&gt; 00:31:53,340</code>
+ge iväg sina konton till&hellip;</p>
+<p><code>874 00:31:53,340 --&gt; 00:31:55,860</code>
+Idén är ju, nu ska jag inte</p>
+<p><code>875 00:31:55,860 --&gt; 00:31:57,860</code>
+raljera på något sätt, men idén är ju</p>
+<p><code>876 00:31:57,860 --&gt; 00:31:58,780</code>
+säkerligen sund.</p>
+<p><code>877 00:32:00,040 --&gt; 00:32:00,920</code>
+Protect the children.</p>
+<p><code>878 00:32:01,140 --&gt; 00:32:02,680</code>
+Det tycker ju Ylva också.</p>
+<p><code>879 00:32:03,040 --&gt; 00:32:05,240</code>
+Sen är frågan till vilken nivå vi ska protect the children.</p>
+<p><code>880 00:32:05,900 --&gt; 00:32:08,280</code>
+Men vad jag vill säga här är att</p>
+<p><code>881 00:32:08,280 --&gt; 00:32:10,420</code>
+det är ju teknik vi pratar om här nu</p>
+<p><code>882 00:32:10,420 --&gt; 00:32:11,200</code>
+och det är liksom inte bara</p>
+<p><code>883 00:32:11,200 --&gt; 00:32:13,180</code>
+om vi slänger upp den här grejen så är det löst.</p>
+<p><code>884 00:32:14,240 --&gt; 00:32:15,820</code>
+Den morfar ju tekniken liksom.</p>
+<p><code>885 00:32:15,820 --&gt; 00:32:17,820</code>
+Ja, vi kan säkert komma på</p>
+<p><code>886 00:32:17,820 --&gt; 00:32:19,480</code>
+hundra olika sätt att mitigera</p>
+<p><code>887 00:32:19,480 --&gt; 00:32:21,860</code>
+det här problemet med proxys eller VPN</p>
+<p><code>888 00:32:21,860 --&gt; 00:32:23,820</code>
+eller olika SOX-lösningar.</p>
+<p><code>889 00:32:24,900 --&gt; 00:32:27,020</code>
+Så det här är ju&hellip;</p>
+<p><code>890 00:32:27,020 --&gt; 00:32:28,500</code>
+Det är väl bra att man pratar om det</p>
+<p><code>891 00:32:28,500 --&gt; 00:32:29,920</code>
+men frågan är om kontrollen ska ligga på</p>
+<p><code>892 00:32:29,920 --&gt; 00:32:31,580</code>
+nationsnivå. Jag vet ju fan om det är rätt väg.</p>
+<p><code>893 00:32:31,580 --&gt; 00:32:34,040</code>
+Jag ser inte att det här löser något problem.</p>
+<p><code>894 00:32:35,760 --&gt; 00:32:36,940</code>
+Jag ser lite som två saker.</p>
+<p><code>895 00:32:37,440 --&gt; 00:32:39,280</code>
+Alltså jag gillar att man har en universell</p>
+<p><code>896 00:32:39,280 --&gt; 00:32:41,040</code>
+ID-hantering i Europa till exempel.</p>
+<p><code>897 00:32:41,200 --&gt; 00:32:43,020</code>
+Det här har varit guld att inte behöva åka med sitt pass.</p>
+<p><code>898 00:32:43,120 --&gt; 00:32:45,480</code>
+Att man kan ha en identitet i en telefon</p>
+<p><code>899 00:32:45,480 --&gt; 00:32:47,460</code>
+som bank-ID som funkar i alla Europaländer.</p>
+<p><code>900 00:32:47,820 --&gt; 00:32:49,800</code>
+Det är det jag gillar i idén.</p>
+<p><code>901 00:32:49,900 --&gt; 00:32:51,700</code>
+Men att sen använda den som någon form av</p>
+<p><code>902 00:32:51,700 --&gt; 00:32:53,920</code>
+A-nyckel till olika tjänster på det öppna</p>
+<p><code>903 00:32:53,920 --&gt; 00:32:54,560</code>
+internetet.</p>
+<p><code>904 00:32:55,060 --&gt; 00:32:57,060</code>
+Jag tycker nog inte att det är</p>
+<p><code>905 00:32:57,060 --&gt; 00:32:59,040</code>
+där vi ska vara.</p>
+<p><code>906 00:32:59,120 --&gt; 00:33:01,340</code>
+Det föreslagna lösningen löser inte problemet</p>
+<p><code>907 00:33:01,340 --&gt; 00:33:04,140</code>
+som man har sagt, som man har identifierat</p>
+<p><code>908 00:33:04,140 --&gt; 00:33:04,660</code>
+att det finns.</p>
+<p><code>909 00:33:04,840 --&gt; 00:33:07,940</code>
+Jag kan tänka mig</p>
+<p><code>910 00:33:07,940 --&gt; 00:33:09,720</code>
+att det är&hellip;</p>
+<p><code>911 00:33:09,720 --&gt; 00:33:11,300</code>
+Det skickar en tydlig signal</p>
+<p><code>912 00:33:11,300 --&gt; 00:33:12,420</code>
+till alla föräldrar.</p>
+<p><code>913 00:33:13,280 --&gt; 00:33:15,540</code>
+Ja, fast det är ju bara en</p>
+<p><code>914 00:33:15,540 --&gt; 00:33:17,160</code>
+jävla pyttefraktion av föräldrar.</p>
+<p><code>915 00:33:17,820 --&gt; 00:33:19,640</code>
+Till dina kids</p>
+<p><code>916 00:33:19,640 --&gt; 00:33:20,780</code>
+skolklass och fråga alla</p>
+<p><code>917 00:33:20,780 --&gt; 00:33:23,100</code>
+vilka har koll på den här grejen?</p>
+<p><code>918 00:33:23,580 --&gt; 00:33:25,880</code>
+Det är ju liksom 1% av föräldrarna som räcker på handen.</p>
+<p><code>919 00:33:25,920 --&gt; 00:33:27,200</code>
+Ja, men det kommer ju bli&hellip;</p>
+<p><code>920 00:33:27,200 --&gt; 00:33:28,140</code>
+Om det blir konsekvens, ja.</p>
+<p><code>921 00:33:29,960 --&gt; 00:33:31,480</code>
+Eftersom den här kommer rullas ut</p>
+<p><code>922 00:33:31,480 --&gt; 00:33:33,780</code>
+så kommer det då vara kanske i svensk</p>
+<p><code>923 00:33:33,780 --&gt; 00:33:35,620</code>
+lag att du måste ha</p>
+<p><code>924 00:33:35,620 --&gt; 00:33:37,660</code>
+age verification. Då vet ju alla om att det är</p>
+<p><code>925 00:33:37,660 --&gt; 00:33:39,560</code>
+age verification. Det är uttalat</p>
+<p><code>926 00:33:39,560 --&gt; 00:33:41,600</code>
+från statligt håll att ungdomar under</p>
+<p><code>927 00:33:41,600 --&gt; 00:33:43,620</code>
+15 eller 16 ska inte jobba med socialmedia.</p>
+<p><code>928 00:33:43,620 --&gt; 00:33:45,120</code>
+Det kommer ju föräldrarna ta till sig.</p>
+<p><code>929 00:33:45,220 --&gt; 00:33:47,660</code>
+De kommer ju inte hjälpa kidsen att ta sig</p>
+<p><code>930 00:33:47,660 --&gt; 00:33:49,720</code>
+runt det här. Och de flesta kidsen idag</p>
+<p><code>931 00:33:49,720 --&gt; 00:33:51,440</code>
+har ju inte den</p>
+<p><code>932 00:33:51,440 --&gt; 00:33:53,340</code>
+degen kanske eller den tekniska know-howen</p>
+<p><code>933 00:33:53,340 --&gt; 00:33:55,700</code>
+så de går och skaffar sig ett VPN för att ta sig</p>
+<p><code>934 00:33:55,700 --&gt; 00:33:57,620</code>
+runt det här. I alla fall</p>
+<p><code>935 00:33:57,620 --&gt; 00:33:59,500</code>
+inte under 15 års ålder.</p>
+<p><code>936 00:33:59,640 --&gt; 00:34:00,940</code>
+Utan det är ju där någonstans det kommer.</p>
+<p><code>937 00:34:01,180 --&gt; 00:34:02,820</code>
+15, 16, kanske 14 på vissa.</p>
+<p><code>938 00:34:03,920 --&gt; 00:34:05,280</code>
+Det vill säga, det kommer ju ha effekt.</p>
+<p><code>939 00:34:05,400 --&gt; 00:34:07,540</code>
+Det kommer inte vara 100%, men det är klart att det kommer att ha effekt.</p>
+<p><code>940 00:34:07,820 --&gt; 00:34:09,420</code>
+Och mycket av den effekten tror jag kommer från</p>
+<p><code>941 00:34:09,420 --&gt; 00:34:11,960</code>
+just det att det är signalvärdet.</p>
+<p><code>942 00:34:11,960 --&gt; 00:34:14,020</code>
+För jag menar, att en vuxen kan ta sig</p>
+<p><code>943 00:34:14,020 --&gt; 00:34:15,840</code>
+runt det här, det är ju förmodligen sannolikt</p>
+<p><code>944 00:34:15,840 --&gt; 00:34:17,460</code>
+så att det går om man anstränger sig.</p>
+<p><code>945 00:34:17,660 --&gt; 00:34:20,000</code>
+Jag hittade en miljard grejer i mitt huvud. Vem säger att jag</p>
+<p><code>946 00:34:20,000 --&gt; 00:34:22,060</code>
+inte slänger upp ett konto och låter alla</p>
+<p><code>947 00:34:22,060 --&gt; 00:34:23,700</code>
+Europas ungdomar använda det?</p>
+<p><code>948 00:34:24,140 --&gt; 00:34:25,980</code>
+Grejen är ju såhär, om det bara vore så att</p>
+<p><code>949 00:34:25,980 --&gt; 00:34:28,000</code>
+det bara var ungdomarna som var tvungna att verifiera sig</p>
+<p><code>950 00:34:28,000 --&gt; 00:34:29,320</code>
+så hade väl det varit en sak.</p>
+<p><code>951 00:34:29,900 --&gt; 00:34:32,080</code>
+Men så är det ju inte. Det är alla som</p>
+<p><code>952 00:34:32,080 --&gt; 00:34:33,740</code>
+måste ju verifiera sig. Åh fy fan vad stökigt.</p>
+<p><code>953 00:34:34,580 --&gt; 00:34:36,020</code>
+Och nu drabbade jag mig, nu blir jag upprörd.</p>
+<p><code>954 00:34:37,000 --&gt; 00:34:38,280</code>
+Åh i helvete!</p>
+<p><code>955 00:34:38,940 --&gt; 00:34:40,140</code>
+Det var det jag menade med innan.</p>
+<p><code>956 00:34:40,140 --&gt; 00:34:42,360</code>
+Det är väl en sak att man har en ID-kontroll</p>
+<p><code>957 00:34:42,360 --&gt; 00:34:44,460</code>
+och att man har en sessionsbaserad, centraliserad</p>
+<p><code>958 00:34:44,460 --&gt; 00:34:46,580</code>
+idé. Men implementationen</p>
+<p><code>959 00:34:46,580 --&gt; 00:34:47,180</code>
+blir ju</p>
+<p><code>960 00:34:47,180 --&gt; 00:34:49,760</code>
+inte sådan. Återigen, då blir det ju</p>
+<p><code>961 00:34:49,760 --&gt; 00:34:51,920</code>
+en privacy-dröm</p>
+<p><code>962 00:34:51,920 --&gt; 00:34:53,900</code>
+ur det perspektivet också. Så att även om</p>
+<p><code>963 00:34:53,900 --&gt; 00:34:55,300</code>
+det här görs</p>
+<p><code>964 00:34:55,300 --&gt; 00:34:57,900</code>
+superbra så är det ändå så att på något sätt måste</p>
+<p><code>965 00:34:57,900 --&gt; 00:34:58,760</code>
+mitt konto</p>
+<p><code>966 00:34:58,760 --&gt; 00:35:01,280</code>
+eller min session</p>
+<p><code>967 00:35:01,280 --&gt; 00:35:04,400</code>
+knytas till min attestation</p>
+<p><code>968 00:35:04,400 --&gt; 00:35:06,060</code>
+som säger att jag är över 16.</p>
+<p><code>969 00:35:06,440 --&gt; 00:35:07,960</code>
+Och den kommer ju vara pass.</p>
+<p><code>970 00:35:07,960 --&gt; 00:35:10,160</code>
+Och den kommer ju kopplas till</p>
+<p><code>971 00:35:10,160 --&gt; 00:35:11,880</code>
+nattjournalitet och pass med</p>
+<p><code>972 00:35:11,880 --&gt; 00:35:13,940</code>
+metadata. Hur lång tid tror du det kommer ta</p>
+<p><code>973 00:35:13,940 --&gt; 00:35:16,420</code>
+innan den första polisundersökningen</p>
+<p><code>974 00:35:16,420 --&gt; 00:35:17,160</code>
+kommer att ringa upp?</p>
+<p><code>975 00:35:17,180 --&gt; 00:35:20,040</code>
+I det, vet du det, utfördaren</p>
+<p><code>976 00:35:20,040 --&gt; 00:35:22,200</code>
+och säga, vi tror att det här kontot</p>
+<p><code>977 00:35:22,200 --&gt; 00:35:24,080</code>
+gjorde något dumt. Kan du ge oss</p>
+<p><code>978 00:35:24,080 --&gt; 00:35:25,320</code>
+allt du har så vi kan korrelera?</p>
+<p><code>979 00:35:25,460 --&gt; 00:35:27,920</code>
+Det finns idag. Blue notice</p>
+<p><code>980 00:35:27,920 --&gt; 00:35:30,220</code>
+och red notice. Det sätts ut på passnivå</p>
+<p><code>981 00:35:30,220 --&gt; 00:35:32,060</code>
+i Europa. Det blir en</p>
+<p><code>982 00:35:32,060 --&gt; 00:35:33,900</code>
+metadata-lager på din passidentitet.</p>
+<p><code>983 00:35:34,080 --&gt; 00:35:36,180</code>
+På ditt certifikat som du har i din pass.</p>
+<p><code>984 00:35:36,880 --&gt; 00:35:37,940</code>
+Svaret är väl det här</p>
+<p><code>985 00:35:37,940 --&gt; 00:35:40,080</code>
+att appen ska ju inte spara</p>
+<p><code>986 00:35:40,080 --&gt; 00:35:40,460</code>
+någonting.</p>
+<p><code>987 00:35:41,680 --&gt; 00:35:43,420</code>
+Nej, men bara ålder.</p>
+<p><code>988 00:35:43,420 --&gt; 00:35:46,120</code>
+Det finns ju redan profiler</p>
+<p><code>989 00:35:46,120 --&gt; 00:35:47,100</code>
+på mig.</p>
+<p><code>990 00:35:47,180 --&gt; 00:35:49,440</code>
+Men skall och bör</p>
+<p><code>991 00:35:49,440 --&gt; 00:35:49,780</code>
+är ju ett vanligt grej.</p>
+<p><code>992 00:35:49,780 --&gt; 00:35:53,620</code>
+De flesta sajter har ju koll på</p>
+<p><code>993 00:35:53,620 --&gt; 00:35:55,400</code>
+vem jag är när jag är ute och snurfar där.</p>
+<p><code>994 00:35:56,480 --&gt; 00:35:58,040</code>
+Om de var tveksamma</p>
+<p><code>995 00:35:58,040 --&gt; 00:35:59,420</code>
+över min ålder, de flesta</p>
+<p><code>996 00:35:59,420 --&gt; 00:36:01,580</code>
+A-genererade reklamannonserna säger redan</p>
+<p><code>997 00:36:01,580 --&gt; 00:36:03,700</code>
+att den här annonsen är direkt riktad</p>
+<p><code>998 00:36:03,700 --&gt; 00:36:05,220</code>
+till folk som är 56 år gamla.</p>
+<p><code>999 00:36:06,100 --&gt; 00:36:07,840</code>
+Så de har ju bra koll på det redan.</p>
+<p><code>1000 00:36:08,140 --&gt; 00:36:09,820</code>
+Men om de inte hade det så får de ju det</p>
+<p><code>1001 00:36:09,820 --&gt; 00:36:11,020</code>
+vid den här verifieringen.</p>
+<p><code>1002 00:36:12,460 --&gt; 00:36:13,920</code>
+Där är det ju också att du kan</p>
+<p><code>1003 00:36:13,920 --&gt; 00:36:15,500</code>
+välja att</p>
+<p><code>1004 00:36:15,500 --&gt; 00:36:16,420</code>
+ha</p>
+<p><code>1005 00:36:16,420 --&gt; 00:36:18,700</code>
+att jag är över 18 av test.</p>
+<p><code>1006 00:36:19,500 --&gt; 00:36:21,840</code>
+Så att du behöver ju inte&hellip;</p>
+<p><code>1007 00:36:21,840 --&gt; 00:36:24,180</code>
+Det här är ju en funktionsbeskrivning</p>
+<p><code>1008 00:36:24,180 --&gt; 00:36:25,720</code>
+på någonting som ändå nycklas mot</p>
+<p><code>1009 00:36:25,720 --&gt; 00:36:27,100</code>
+en riktig identitet.</p>
+<p><code>1010 00:36:28,000 --&gt; 00:36:30,180</code>
+Jo, men appen är gjord</p>
+<p><code>1011 00:36:30,180 --&gt; 00:36:30,840</code>
+superbra då.</p>
+<p><code>1012 00:36:31,100 --&gt; 00:36:32,620</code>
+Kan det ens teoretiskt funka?</p>
+<p><code>1013 00:36:32,880 --&gt; 00:36:35,760</code>
+Den riktiga identiteten lägger ganska många steg bak.</p>
+<p><code>1014 00:36:35,760 --&gt; 00:36:37,480</code>
+Alltså, ja, det ni säger nu,</p>
+<p><code>1015 00:36:37,560 --&gt; 00:36:39,320</code>
+absolut, men det Johan säger är viktigare.</p>
+<p><code>1016 00:36:39,600 --&gt; 00:36:41,420</code>
+Ja, alltså, det går väl an så länge</p>
+<p><code>1017 00:36:41,420 --&gt; 00:36:43,040</code>
+vi litar på regimen bakom.</p>
+<p><code>1018 00:36:43,320 --&gt; 00:36:45,520</code>
+Men har vi då ett knasigt EU-land</p>
+<p><code>1019 00:36:45,520 --&gt; 00:36:46,300</code>
+finns ganska många.</p>
+<p><code>1020 00:36:46,420 --&gt; 00:36:46,540</code>
+Ja, ändå.</p>
+<p><code>1021 00:36:47,580 --&gt; 00:36:49,940</code>
+Då kan ju det där metadata-lagret</p>
+<p><code>1022 00:36:49,940 --&gt; 00:36:52,020</code>
+kanske, det blir några extra rader i den</p>
+<p><code>1023 00:36:52,020 --&gt; 00:36:53,700</code>
+av finstacken som säger</p>
+<p><code>1024 00:36:53,700 --&gt; 00:36:56,300</code>
+du, jag vill veta vem de röstar på,</p>
+<p><code>1025 00:36:56,460 --&gt; 00:36:57,660</code>
+vad de har för sexuell läggning.</p>
+<p><code>1026 00:36:58,480 --&gt; 00:37:00,000</code>
+Jag har börjat anonymisera det här</p>
+<p><code>1027 00:37:00,000 --&gt; 00:37:01,000</code>
+attestet.</p>
+<p><code>1028 00:37:01,440 --&gt; 00:37:03,980</code>
+Ja, men det borde ju, eftersom det här är</p>
+<p><code>1029 00:37:03,980 --&gt; 00:37:05,900</code>
+en app som är tillgänglig via en appstore,</p>
+<p><code>1030 00:37:06,280 --&gt; 00:37:07,740</code>
+så borde man ju kunna verifiera</p>
+<p><code>1031 00:37:07,740 --&gt; 00:37:09,340</code>
+om den gör ondska eller inte.</p>
+<p><code>1032 00:37:10,160 --&gt; 00:37:12,300</code>
+Ja, det där är också jävligt intressant.</p>
+<p><code>1033 00:37:12,300 --&gt; 00:37:13,380</code>
+Beroende på om ondskan sker i backen.</p>
+<p><code>1034 00:37:13,380 --&gt; 00:37:13,820</code>
+Exakt.</p>
+<p><code>1035 00:37:14,340 --&gt; 00:37:16,400</code>
+Men vad kan den göra i backen i så fall?</p>
+<p><code>1036 00:37:16,420 --&gt; 00:37:18,220</code>
+Ja, det har vi noll koll på.</p>
+<p><code>1037 00:37:18,300 --&gt; 00:37:20,420</code>
+Låt säga att du har en app som pratar</p>
+<p><code>1038 00:37:20,420 --&gt; 00:37:23,300</code>
+med en ID-verifierings-backend</p>
+<p><code>1039 00:37:23,300 --&gt; 00:37:25,140</code>
+som sedan pratar med</p>
+<p><code>1040 00:37:25,140 --&gt; 00:37:25,160</code>
+din tredje part tjänst.</p>
+<p><code>1041 00:37:25,160 --&gt; 00:37:27,100</code>
+Ja, du kan ju förmodligen se vilka tjänster</p>
+<p><code>1042 00:37:27,100 --&gt; 00:37:27,980</code>
+går den här personen till.</p>
+<p><code>1043 00:37:28,580 --&gt; 00:37:29,220</code>
+Herregud, ja.</p>
+<p><code>1044 00:37:29,840 --&gt; 00:37:31,480</code>
+Det måste du kunna göra, för att frågan</p>
+<p><code>1045 00:37:31,480 --&gt; 00:37:33,540</code>
+kommer ju komma från tjänsten.</p>
+<p><code>1046 00:37:33,580 --&gt; 00:37:33,920</code>
+Ja, precis.</p>
+<p><code>1047 00:37:34,760 --&gt; 00:37:36,020</code>
+Ja, spännande.</p>
+<p><code>1048 00:37:36,600 --&gt; 00:37:38,940</code>
+Jag är nog mer inne på Johans grej så här.</p>
+<p><code>1049 00:37:39,480 --&gt; 00:37:43,420</code>
+Jag tror att på en högnivå</p>
+<p><code>1050 00:37:43,420 --&gt; 00:37:45,420</code>
+och arkitektur,</p>
+<p><code>1051 00:37:46,420 --&gt; 00:37:48,720</code>
+ja, men fan, det kan vara ändå en bra grej</p>
+<p><code>1052 00:37:48,720 --&gt; 00:37:50,560</code>
+att göra att vi inte behöver ha</p>
+<p><code>1053 00:37:50,560 --&gt; 00:37:52,960</code>
+med oss ett jävla plastpapper</p>
+<p><code>1054 00:37:52,960 --&gt; 00:37:54,320</code>
+med sig i passet.</p>
+<p><code>1055 00:37:54,880 --&gt; 00:37:56,700</code>
+Men implikationen på</p>
+<p><code>1056 00:37:56,700 --&gt; 00:37:57,740</code>
+identitet och privacy,</p>
+<p><code>1057 00:37:58,220 --&gt; 00:38:00,400</code>
+den kommer inte bli bra, för att det är så här</p>
+<p><code>1058 00:38:00,400 --&gt; 00:38:02,640</code>
+vi måste ha tillit till nation och stat</p>
+<p><code>1059 00:38:02,640 --&gt; 00:38:04,380</code>
+och det har vi ju aldrig varit</p>
+<p><code>1060 00:38:04,380 --&gt; 00:38:07,480</code>
+Det har aldrig varit ett problem innan, eller?</p>
+<p><code>1061 00:38:07,900 --&gt; 00:38:08,660</code>
+Men vi kan ju också</p>
+<p><code>1062 00:38:08,660 --&gt; 00:38:10,060</code>
+säga så här att i</p>
+<p><code>1063 00:38:10,060 --&gt; 00:38:12,080</code>
+många av de</p>
+<p><code>1064 00:38:12,080 --&gt; 00:38:14,880</code>
+identifieringsfrågor som vi har haft</p>
+<p><code>1065 00:38:14,880 --&gt; 00:38:15,720</code>
+historiskt sett,</p>
+<p><code>1066 00:38:16,420 --&gt; 00:38:18,620</code>
+säg till exempel, du ska in på</p>
+<p><code>1067 00:38:18,620 --&gt; 00:38:21,000</code>
+Skatteverket och du ska ändra någonting</p>
+<p><code>1068 00:38:21,000 --&gt; 00:38:23,160</code>
+rara om din person på Skatteverket</p>
+<p><code>1069 00:38:23,160 --&gt; 00:38:24,960</code>
+då är du ju</p>
+<p><code>1070 00:38:24,960 --&gt; 00:38:26,280</code>
+i lägen, du är</p>
+<p><code>1071 00:38:26,280 --&gt; 00:38:28,920</code>
+du vill identifiera dig</p>
+<p><code>1072 00:38:28,920 --&gt; 00:38:31,180</code>
+därför så har du i praktiken</p>
+<p><code>1073 00:38:31,180 --&gt; 00:38:33,320</code>
+lite lägre</p>
+<p><code>1074 00:38:33,320 --&gt; 00:38:34,880</code>
+säkerhetskrav</p>
+<p><code>1075 00:38:34,880 --&gt; 00:38:36,880</code>
+eller du har liksom en</p>
+<p><code>1076 00:38:36,880 --&gt; 00:38:38,140</code>
+helt annan hotbild.</p>
+<p><code>1077 00:38:38,660 --&gt; 00:38:40,700</code>
+När vi börjar flytta oss till de här</p>
+<p><code>1078 00:38:40,700 --&gt; 00:38:43,200</code>
+age verification</p>
+<p><code>1079 00:38:43,200 --&gt; 00:38:44,480</code>
+så blir det ju väldigt mycket</p>
+<p><code>1080 00:38:44,480 --&gt; 00:38:45,200</code>
+liksom</p>
+<p><code>1081 00:38:46,420 --&gt; 00:38:48,700</code>
+eftersom att det är någonting som vi inte väljer att göra</p>
+<p><code>1082 00:38:48,700 --&gt; 00:38:50,540</code>
+utan vi är påtvingade att göra den</p>
+<p><code>1083 00:38:50,540 --&gt; 00:38:51,440</code>
+i olika flöden</p>
+<p><code>1084 00:38:51,440 --&gt; 00:38:54,400</code>
+så blir det ju en mycket viktigare fråga om</p>
+<p><code>1085 00:38:54,400 --&gt; 00:38:56,820</code>
+vad händer om backen är ond</p>
+<p><code>1086 00:38:56,820 --&gt; 00:38:58,200</code>
+liksom, alltså om</p>
+<p><code>1087 00:38:58,200 --&gt; 00:38:59,160</code>
+autentiseringsbacken</p>
+<p><code>1088 00:38:59,160 --&gt; 00:39:02,300</code>
+säger då till exempel</p>
+<p><code>1089 00:39:02,300 --&gt; 00:39:05,120</code>
+om vi är amerikan och det värsta som kan hända</p>
+<p><code>1090 00:39:05,120 --&gt; 00:39:06,540</code>
+är sådana här</p>
+<p><code>1091 00:39:06,540 --&gt; 00:39:07,920</code>
+bilderna som kommer ut på hans</p>
+<p><code>1092 00:39:07,920 --&gt; 00:39:10,200</code>
+som hade liksom fejktuttar och så liksom</p>
+<p><code>1093 00:39:10,200 --&gt; 00:39:12,040</code>
+om det är det värsta som kan hända</p>
+<p><code>1094 00:39:12,040 --&gt; 00:39:13,860</code>
+som man vill</p>
+<p><code>1095 00:39:13,860 --&gt; 00:39:15,780</code>
+transa eller så liksom</p>
+<p><code>1096 00:39:16,420 --&gt; 00:39:18,960</code>
+då blir det ju helt plötsligt</p>
+<p><code>1097 00:39:18,960 --&gt; 00:39:22,100</code>
+då blir det ju väldigt allvarligt</p>
+<p><code>1098 00:39:22,100 --&gt; 00:39:24,540</code>
+om du kan bli identifierad i det flödet</p>
+<p><code>1099 00:39:24,540 --&gt; 00:39:25,620</code>
+definitivt</p>
+<p><code>1100 00:39:25,620 --&gt; 00:39:28,140</code>
+och det finns ju väldigt många exempel på liknande flöden</p>
+<p><code>1101 00:39:28,140 --&gt; 00:39:30,580</code>
+som är potentiellt oerhört känsliga</p>
+<p><code>1102 00:39:30,580 --&gt; 00:39:32,600</code>
+beroende på var man är någonstans</p>
+<p><code>1103 00:39:32,600 --&gt; 00:39:35,200</code>
+så där blir det ju</p>
+<p><code>1104 00:39:35,200 --&gt; 00:39:35,580</code>
+en</p>
+<p><code>1105 00:39:35,580 --&gt; 00:39:38,620</code>
+så det är intressant när de säger att de är privacy preserving</p>
+<p><code>1106 00:39:38,620 --&gt; 00:39:40,640</code>
+för privacy preserving</p>
+<p><code>1107 00:39:40,640 --&gt; 00:39:42,040</code>
+hade ju bara givet</p>
+<p><code>1108 00:39:42,040 --&gt; 00:39:44,220</code>
+en serie antaganden såhär</p>
+<p><code>1109 00:39:44,220 --&gt; 00:39:46,220</code>
+så hur onda antaganden</p>
+<p><code>1110 00:39:46,220 --&gt; 00:39:47,980</code>
+kan vi göra om</p>
+<p><code>1111 00:39:47,980 --&gt; 00:39:50,480</code>
+identifieringsinfrastrukturen</p>
+<p><code>1112 00:39:50,480 --&gt; 00:39:52,480</code>
+innan den inte längre är privacy preserving</p>
+<p><code>1113 00:39:52,480 --&gt; 00:39:54,260</code>
+sen så tycker jag att ett annat problem är</p>
+<p><code>1114 00:39:54,260 --&gt; 00:39:54,780</code>
+att man</p>
+<p><code>1115 00:39:54,780 --&gt; 00:39:58,040</code>
+vänjer folk vid att ge bort sin identitet</p>
+<p><code>1116 00:39:58,040 --&gt; 00:39:59,380</code>
+till höger och vänster hela tiden</p>
+<p><code>1117 00:39:59,380 --&gt; 00:40:02,600</code>
+du vänjer folk</p>
+<p><code>1118 00:40:02,600 --&gt; 00:40:03,120</code>
+vid att</p>
+<p><code>1119 00:40:03,120 --&gt; 00:40:05,700</code>
+tycka att det är något normalt att</p>
+<p><code>1120 00:40:05,700 --&gt; 00:40:07,600</code>
+släppa sin anonymitet</p>
+<p><code>1121 00:40:07,600 --&gt; 00:40:10,220</code>
+även om det är för en central tjänst</p>
+<p><code>1122 00:40:10,800 --&gt; 00:40:12,580</code>
+jag tycker inte det är någonting</p>
+<p><code>1123 00:40:12,580 --&gt; 00:40:13,300</code>
+vi ska ha</p>
+<p><code>1124 00:40:13,300 --&gt; 00:40:14,600</code>
+nej men det är väl</p>
+<p><code>1125 00:40:16,220 --&gt; 00:40:18,460</code>
+vad den hette den här idiotiska</p>
+<p><code>1126 00:40:18,460 --&gt; 00:40:19,680</code>
+lagstiftningen som var tidigare</p>
+<p><code>1127 00:40:19,680 --&gt; 00:40:21,040</code>
+alltså det är ju uppenbart</p>
+<p><code>1128 00:40:21,040 --&gt; 00:40:24,060</code>
+och det är ju uppenbart att väldigt många</p>
+<p><code>1129 00:40:24,060 --&gt; 00:40:26,100</code>
+politiker</p>
+<p><code>1130 00:40:26,100 --&gt; 00:40:28,320</code>
+och de som sitter och</p>
+<p><code>1131 00:40:28,320 --&gt; 00:40:29,300</code>
+jobbar i olika</p>
+<p><code>1132 00:40:29,300 --&gt; 00:40:32,040</code>
+liksom lagstiftar</p>
+<p><code>1133 00:40:32,040 --&gt; 00:40:34,220</code>
+polismyndighetslobbys och sånt</p>
+<p><code>1134 00:40:35,060 --&gt; 00:40:36,440</code>
+de vill ju gärna</p>
+<p><code>1135 00:40:36,440 --&gt; 00:40:37,400</code>
+att vi</p>
+<p><code>1136 00:40:37,400 --&gt; 00:40:40,140</code>
+vänjer oss vid att vara</p>
+<p><code>1137 00:40:40,140 --&gt; 00:40:42,300</code>
+lydiga medborgare som</p>
+<p><code>1138 00:40:42,300 --&gt; 00:40:44,020</code>
+håller i hatten</p>
+<p><code>1139 00:40:44,020 --&gt; 00:40:46,220</code>
+och bugar inför staten och gör som staten</p>
+<p><code>1140 00:40:46,220 --&gt; 00:40:46,540</code>
+säger</p>
+<p><code>1141 00:40:46,540 --&gt; 00:40:49,720</code>
+så det är en lite</p>
+<p><code>1142 00:40:49,720 --&gt; 00:40:51,940</code>
+det är en liten tråkig</p>
+<p><code>1143 00:40:51,940 --&gt; 00:40:54,020</code>
+mental vändning som samhället</p>
+<p><code>1144 00:40:54,020 --&gt; 00:40:55,460</code>
+håller på att göra för närvarande och</p>
+<p><code>1145 00:40:55,460 --&gt; 00:40:57,960</code>
+att de lyckas få igenom</p>
+<p><code>1146 00:40:57,960 --&gt; 00:41:00,300</code>
+ungefär samma idéer globalt</p>
+<p><code>1147 00:41:00,300 --&gt; 00:41:01,120</code>
+det är spännande också</p>
+<p><code>1148 00:41:01,120 --&gt; 00:41:03,720</code>
+precis och det får mig att känna att</p>
+<p><code>1149 00:41:03,720 --&gt; 00:41:04,600</code>
+den här</p>
+<p><code>1150 00:41:04,600 --&gt; 00:41:07,580</code>
+anledningen som man</p>
+<p><code>1151 00:41:07,580 --&gt; 00:41:10,100</code>
+åberopar för att införa de här sakerna</p>
+<p><code>1152 00:41:10,100 --&gt; 00:41:12,160</code>
+tror inte jag speglar hela verkligheten</p>
+<p><code>1153 00:41:12,160 --&gt; 00:41:14,620</code>
+inte för att vara superkonspiratorisk</p>
+<p><code>1154 00:41:14,620 --&gt; 00:41:16,020</code>
+min rumänsk</p>
+<p><code>1155 00:41:16,220 --&gt; 00:41:18,860</code>
+taxichaufför, han hävdar att det är globalisterna</p>
+<p><code>1156 00:41:18,860 --&gt; 00:41:20,080</code>
+som ligger bakom allting</p>
+<p><code>1157 00:41:20,080 --&gt; 00:41:20,700</code>
+George Soros</p>
+<p><code>1158 00:41:20,700 --&gt; 00:41:23,400</code>
+det är klart det är</p>
+<p><code>1159 00:41:23,400 --&gt; 00:41:25,800</code>
+vad brukar det vara en omskrivning för</p>
+<p><code>1160 00:41:25,800 --&gt; 00:41:26,880</code>
+nej men</p>
+<p><code>1161 00:41:26,880 --&gt; 00:41:30,580</code>
+det händer grejer</p>
+<p><code>1162 00:41:30,580 --&gt; 00:41:31,940</code>
+runt om i världen som är</p>
+<p><code>1163 00:41:31,940 --&gt; 00:41:33,260</code>
+läskiga just nu</p>
+<p><code>1164 00:41:33,260 --&gt; 00:41:35,200</code>
+på många olika fronter</p>
+<p><code>1165 00:41:35,200 --&gt; 00:41:38,280</code>
+jag tror att vi måste mota Ollegrin på de här grejerna</p>
+<p><code>1166 00:41:38,280 --&gt; 00:41:40,140</code>
+för att släpper man en centimeter</p>
+<p><code>1167 00:41:40,140 --&gt; 00:41:42,040</code>
+så är det en illa ute</p>
+<p><code>1168 00:41:42,040 --&gt; 00:41:44,460</code>
+och kärrkontrollgrejen den har ju kommit tillbaka i en ny</p>
+<p><code>1169 00:41:44,460 --&gt; 00:41:46,200</code>
+tappning liksom så att det här</p>
+<p><code>1170 00:41:46,220 --&gt; 00:41:47,360</code>
+är ju någonting som kommer hända</p>
+<p><code>1171 00:41:47,360 --&gt; 00:41:49,780</code>
+och det är såhär vi måste verkligen gå i bräschen för det här</p>
+<p><code>1172 00:41:49,780 --&gt; 00:41:51,880</code>
+för det är, när man har tryckt på knappen</p>
+<p><code>1173 00:41:51,880 --&gt; 00:41:53,440</code>
+är det svårt att ta bort knappen</p>
+<p><code>1174 00:41:53,440 --&gt; 00:41:55,740</code>
+och jag tror som du sa där Mattias</p>
+<p><code>1175 00:41:55,740 --&gt; 00:41:57,540</code>
+att ifall vi verkligen brydde oss om de här sakerna</p>
+<p><code>1176 00:41:57,540 --&gt; 00:41:59,920</code>
+så hade vi även lagt all den här energin</p>
+<p><code>1177 00:41:59,920 --&gt; 00:42:01,760</code>
+på att lagstifta kring</p>
+<p><code>1178 00:42:01,760 --&gt; 00:42:04,020</code>
+hur de här algoritmerna får se ut och hur de får fungera</p>
+<p><code>1179 00:42:04,020 --&gt; 00:42:06,220</code>
+för det är ju som Jesper sa initialt</p>
+<p><code>1180 00:42:07,000 --&gt; 00:42:08,580</code>
+vi, nu koncentrerar vi oss</p>
+<p><code>1181 00:42:08,580 --&gt; 00:42:09,560</code>
+på barn</p>
+<p><code>1182 00:42:09,560 --&gt; 00:42:12,120</code>
+dels för att det är väl ett lätt PR-mål</p>
+<p><code>1183 00:42:12,120 --&gt; 00:42:13,960</code>
+men det är väl framförallt för att man hävdar</p>
+<p><code>1184 00:42:13,960 --&gt; 00:42:15,900</code>
+att barn ska skyddas</p>
+<p><code>1185 00:42:15,900 --&gt; 00:42:17,820</code>
+i större utsträckning än vuxna, vuxna får ju</p>
+<p><code>1186 00:42:17,820 --&gt; 00:42:19,340</code>
+vara dumma, de får</p>
+<p><code>1187 00:42:19,340 --&gt; 00:42:22,000</code>
+förstöra sina liv, men med barn så är det lite</p>
+<p><code>1188 00:42:22,000 --&gt; 00:42:23,840</code>
+viktigare, men med det sagt</p>
+<p><code>1189 00:42:23,840 --&gt; 00:42:25,740</code>
+alltså de här algoritmerna och de här sajterna</p>
+<p><code>1190 00:42:25,740 --&gt; 00:42:27,580</code>
+de är ju lika usla för oss som de är för</p>
+<p><code>1191 00:42:27,580 --&gt; 00:42:30,140</code>
+kids, det kanske är lite uslare</p>
+<p><code>1192 00:42:30,140 --&gt; 00:42:31,800</code>
+för kids som i sina</p>
+<p><code>1193 00:42:31,800 --&gt; 00:42:33,980</code>
+formative years, men det är ju fan inte</p>
+<p><code>1194 00:42:33,980 --&gt; 00:42:36,080</code>
+det är inte bra för vår</p>
+<p><code>1195 00:42:36,080 --&gt; 00:42:38,080</code>
+hjärnutveckling heller</p>
+<p><code>1196 00:42:38,080 --&gt; 00:42:39,240</code>
+sen har vi också en</p>
+<p><code>1197 00:42:39,240 --&gt; 00:42:41,740</code>
+om man pratar ännu högre nivå, vi har ju liksom</p>
+<p><code>1198 00:42:41,740 --&gt; 00:42:44,160</code>
+en ganska konstig global struktur</p>
+<p><code>1199 00:42:44,160 --&gt; 00:42:45,880</code>
+nu där våra täckhjältar</p>
+<p><code>1200 00:42:45,900 --&gt; 00:42:47,680</code>
+har större BNP än</p>
+<p><code>1201 00:42:47,680 --&gt; 00:42:49,660</code>
+många länder, alltså de flesta länderna</p>
+<p><code>1202 00:42:49,660 --&gt; 00:42:51,420</code>
+de har en sån maktfaktor och sån</p>
+<p><code>1203 00:42:51,420 --&gt; 00:42:53,820</code>
+extrem maktfaktor och ekonomi</p>
+<p><code>1204 00:42:53,820 --&gt; 00:42:55,480</code>
+att de kan styra</p>
+<p><code>1205 00:42:55,480 --&gt; 00:42:58,260</code>
+opinion, och det är läskigt</p>
+<p><code>1206 00:42:58,260 --&gt; 00:42:59,540</code>
+ur ett</p>
+<p><code>1207 00:42:59,540 --&gt; 00:43:00,780</code>
+nationsperspektiv dock</p>
+<p><code>1208 00:43:00,780 --&gt; 00:43:03,600</code>
+de här lagarna</p>
+<p><code>1209 00:43:03,600 --&gt; 00:43:05,640</code>
+som är på väg, de visar ju ändå att</p>
+<p><code>1210 00:43:05,640 --&gt; 00:43:08,100</code>
+stater kan sätta hårt mot hårt</p>
+<p><code>1211 00:43:08,100 --&gt; 00:43:08,760</code>
+kan de det?</p>
+<p><code>1212 00:43:10,760 --&gt; 00:43:11,860</code>
+varför gör de då</p>
+<p><code>1213 00:43:11,860 --&gt; 00:43:13,700</code>
+det på det här sättet, varför inte sätta</p>
+<p><code>1214 00:43:13,700 --&gt; 00:43:15,280</code>
+push på, återigen, ner på</p>
+<p><code>1215 00:43:15,900 --&gt; 00:43:18,140</code>
+algoritmnivå istället, så här får det inte funka</p>
+<p><code>1216 00:43:18,140 --&gt; 00:43:19,700</code>
+det är det som får mig att känna att det här</p>
+<p><code>1217 00:43:19,700 --&gt; 00:43:22,160</code>
+det är inte algoritmerna som är det man vill åt här</p>
+<p><code>1218 00:43:22,160 --&gt; 00:43:23,920</code>
+aaah, du tänker så</p>
+<p><code>1219 00:43:23,920 --&gt; 00:43:25,840</code>
+men jag tror på riktigt att</p>
+<p><code>1220 00:43:25,840 --&gt; 00:43:28,480</code>
+det är den typen</p>
+<p><code>1221 00:43:28,480 --&gt; 00:43:29,860</code>
+av lobbyverksamhet som ligger bakom</p>
+<p><code>1222 00:43:29,860 --&gt; 00:43:31,580</code>
+som finns bakom chat-kontrollen också</p>
+<p><code>1223 00:43:31,580 --&gt; 00:43:33,460</code>
+jag vill helst inte att mina paket</p>
+<p><code>1224 00:43:33,460 --&gt; 00:43:36,100</code>
+vi ska begränsa frihet, vi ska ha mer kontroll</p>
+<p><code>1225 00:43:36,100 --&gt; 00:43:38,060</code>
+på vad folk</p>
+<p><code>1226 00:43:38,060 --&gt; 00:43:39,040</code>
+säger och skriver och tänker</p>
+<p><code>1227 00:43:39,040 --&gt; 00:43:41,060</code>
+protect the children</p>
+<p><code>1228 00:43:41,060 --&gt; 00:43:43,260</code>
+och så ska vi inte ha det</p>
+<p><code>1229 00:43:43,260 --&gt; 00:43:44,600</code>
+nej, så ska vi verkligen inte ha det</p>
+<p><code>1230 00:43:44,600 --&gt; 00:43:45,100</code>
+det är</p>
+<p><code>1231 00:43:45,900 --&gt; 00:43:47,400</code>
+fan vad deppig jag blir nu</p>
+<p><code>1232 00:43:47,400 --&gt; 00:43:48,840</code>
+ni är så cyniska</p>
+<p><code>1233 00:43:48,840 --&gt; 00:43:51,040</code>
+men sen är det ju också så här att internet</p>
+<p><code>1234 00:43:51,040 --&gt; 00:43:52,740</code>
+jag har sagt det här i många år</p>
+<p><code>1235 00:43:52,740 --&gt; 00:43:54,760</code>
+att man har ett internetabonnemang och sen har man</p>
+<p><code>1236 00:43:54,760 --&gt; 00:43:55,960</code>
+ett VPN-abonnemang</p>
+<p><code>1237 00:43:55,960 --&gt; 00:43:58,660</code>
+alltså du ser, man surfar inte på internet</p>
+<p><code>1238 00:43:58,660 --&gt; 00:43:59,680</code>
+utan kondom liksom</p>
+<p><code>1239 00:43:59,680 --&gt; 00:44:01,820</code>
+och det kommer ju utveckla sig, tänker jag</p>
+<p><code>1240 00:44:01,820 --&gt; 00:44:05,200</code>
+den DNS-infrastrukturen vi har idag</p>
+<p><code>1241 00:44:05,200 --&gt; 00:44:06,500</code>
+den behöver vi inte använda</p>
+<p><code>1242 00:44:06,500 --&gt; 00:44:08,860</code>
+vi kan dra igång signerade</p>
+<p><code>1243 00:44:08,860 --&gt; 00:44:10,500</code>
+DNS-zoner där vi själva hostar saker</p>
+<p><code>1244 00:44:10,500 --&gt; 00:44:11,800</code>
+genom proxys och sånt, så det är så här</p>
+<p><code>1245 00:44:11,800 --&gt; 00:44:13,360</code>
+det är bara det att</p>
+<p><code>1246 00:44:13,360 --&gt; 00:44:14,280</code>
+det är mycket man kan göra</p>
+<p><code>1247 00:44:14,280 --&gt; 00:44:15,440</code>
+homehosting är</p>
+<p><code>1248 00:44:15,900 --&gt; 00:44:18,540</code>
+men jag menar så här, behöver internet</p>
+<p><code>1249 00:44:18,540 --&gt; 00:44:20,760</code>
+bli liksom ett piratsamhälle, måste vi</p>
+<p><code>1250 00:44:20,760 --&gt; 00:44:22,580</code>
+behöva? Alltså det kommer ju bli mer och mer</p>
+<p><code>1251 00:44:22,580 --&gt; 00:44:24,440</code>
+så under förutsättningar att vi fortsätter introducera</p>
+<p><code>1252 00:44:24,440 --&gt; 00:44:25,500</code>
+den här typen av lagstiftning</p>
+<p><code>1253 00:44:25,500 --&gt; 00:44:27,380</code>
+och det är så onödigt för det skapar liksom</p>
+<p><code>1254 00:44:27,380 --&gt; 00:44:28,940</code>
+så konstiga grejer</p>
+<p><code>1255 00:44:28,940 --&gt; 00:44:32,160</code>
+det är ju bara en tidsfråga innan, du kommer inte vilja ha en europeisk DNS</p>
+<p><code>1256 00:44:32,160 --&gt; 00:44:33,300</code>
+om du är en</p>
+<p><code>1257 00:44:33,300 --&gt; 00:44:36,500</code>
+och sen är det ju också så här</p>
+<p><code>1258 00:44:36,500 --&gt; 00:44:38,160</code>
+du kommer inte vilja ha</p>
+<p><code>1259 00:44:38,160 --&gt; 00:44:39,420</code>
+du kommer bara ha mesh-internet</p>
+<p><code>1260 00:44:39,420 --&gt; 00:44:42,440</code>
+ja men vad fan, peka på något i rötten och köra din egen</p>
+<p><code>1261 00:44:42,440 --&gt; 00:44:43,340</code>
+resolver då liksom</p>
+<p><code>1262 00:44:43,340 --&gt; 00:44:45,140</code>
+ja men ha det helt decentraliserat</p>
+<p><code>1263 00:44:45,900 --&gt; 00:44:46,900</code>
+off the grid</p>
+<p><code>1264 00:44:46,900 --&gt; 00:44:47,400</code>
+exakt</p>
+<p><code>1265 00:44:47,400 --&gt; 00:44:49,160</code>
+och då är det så här, om jag nu kör min egen DNS</p>
+<p><code>1266 00:44:49,160 --&gt; 00:44:51,160</code>
+om nu DNS blir bärvågen för det här</p>
+<p><code>1267 00:44:51,160 --&gt; 00:44:53,160</code>
+ja hur ska jag, jag är ingen könsleverantör</p>
+<p><code>1268 00:44:53,160 --&gt; 00:44:55,160</code>
+jag är ju en privatperson, jag behöver inte implementera någonting</p>
+<p><code>1269 00:44:55,160 --&gt; 00:44:57,160</code>
+precis, du kan göra vad du vill</p>
+<p><code>1270 00:44:57,160 --&gt; 00:44:59,160</code>
+ja, nu så här, det är bara, det har de säkert tänkt på</p>
+<p><code>1271 00:44:59,160 --&gt; 00:45:01,160</code>
+men jag menar det är så här, det är inte en</p>
+<p><code>1272 00:45:01,160 --&gt; 00:45:03,160</code>
+lite som du var inne på Johan, det är inte en</p>
+<p><code>1273 00:45:03,160 --&gt; 00:45:05,160</code>
+binära approach liksom</p>
+<p><code>1274 00:45:05,160 --&gt; 00:45:07,160</code>
+bara vi gör det här så blir det kanon</p>
+<p><code>1275 00:45:07,160 --&gt; 00:45:08,160</code>
+snarare tvärtom</p>
+<p><code>1276 00:45:08,160 --&gt; 00:45:10,160</code>
+jag tror att det kommer ske en</p>
+<p><code>1277 00:45:10,160 --&gt; 00:45:12,160</code>
+eller har väl redan börjat ske en</p>
+<p><code>1278 00:45:12,160 --&gt; 00:45:14,160</code>
+social backlash mot sociala medier</p>
+<p><code>1279 00:45:14,160 --&gt; 00:45:14,660</code>
+ja</p>
+<p><code>1280 00:45:14,660 --&gt; 00:45:15,240</code>
+ändå</p>
+<p><code>1281 00:45:15,240 --&gt; 00:45:15,740</code>
+mm</p>
+<p><code>1282 00:45:15,900 --&gt; 00:45:17,900</code>
+folk har insett att så här, det här är</p>
+<p><code>1283 00:45:17,900 --&gt; 00:45:19,900</code>
+det här är ingen bra grej, det kommer börja bli</p>
+<p><code>1284 00:45:19,900 --&gt; 00:45:21,900</code>
+trendigare och trendigare att</p>
+<p><code>1285 00:45:21,900 --&gt; 00:45:22,900</code>
+koppla ifrån sig helt</p>
+<p><code>1286 00:45:22,900 --&gt; 00:45:23,400</code>
+ja</p>
+<p><code>1287 00:45:23,400 --&gt; 00:45:24,400</code>
+från sociala medier</p>
+<p><code>1288 00:45:24,400 --&gt; 00:45:26,400</code>
+det tycker jag man ser</p>
+<p><code>1289 00:45:26,400 --&gt; 00:45:28,400</code>
+att det redan händer till stor utsträckning</p>
+<p><code>1290 00:45:28,400 --&gt; 00:45:30,900</code>
+folk försöker lägga band på sig själva på olika sätt</p>
+<p><code>1291 00:45:30,900 --&gt; 00:45:32,900</code>
+låsa ner appar, ta bort sina konton</p>
+<p><code>1292 00:45:32,900 --&gt; 00:45:34,900</code>
+det där tror jag kommer fortsätta</p>
+<p><code>1293 00:45:34,900 --&gt; 00:45:36,900</code>
+för att det är helt enkelt</p>
+<p><code>1294 00:45:36,900 --&gt; 00:45:38,900</code>
+inte socialt credit att vara</p>
+<p><code>1295 00:45:38,900 --&gt; 00:45:40,900</code>
+konstant i online längre</p>
+<p><code>1296 00:45:40,900 --&gt; 00:45:42,900</code>
+på samma sätt</p>
+<p><code>1297 00:45:42,900 --&gt; 00:45:44,900</code>
+och det tror jag är en bra lösning</p>
+<p><code>1298 00:45:44,900 --&gt; 00:45:45,240</code>
+ja</p>
+<p><code>1299 00:45:45,240 --&gt; 00:45:47,240</code>
+sen så är ju inte det en lösning</p>
+<p><code>1300 00:45:47,240 --&gt; 00:45:49,240</code>
+hundra procentig lösning på hela saken</p>
+<p><code>1301 00:45:49,240 --&gt; 00:45:51,240</code>
+men min känsla är att det här skulle kunna vara</p>
+<p><code>1302 00:45:51,240 --&gt; 00:45:53,240</code>
+self-correcting</p>
+<p><code>1303 00:45:53,240 --&gt; 00:45:55,240</code>
+to a point</p>
+<p><code>1304 00:45:55,240 --&gt; 00:45:57,240</code>
+du tror på folket</p>
+<p><code>1305 00:45:57,240 --&gt; 00:45:59,240</code>
+jag tror att vi inte har gett det här till mycket tid för att avgöra</p>
+<p><code>1306 00:45:59,240 --&gt; 00:46:01,240</code>
+åt andra håll</p>
+<p><code>1307 00:46:01,240 --&gt; 00:46:03,240</code>
+nej, det kan jag nog också ställa mig bakom</p>
+<p><code>1308 00:46:03,240 --&gt; 00:46:05,240</code>
+och sen så kan jag väl också säga</p>
+<p><code>1309 00:46:05,240 --&gt; 00:46:07,240</code>
+som</p>
+<p><code>1310 00:46:07,240 --&gt; 00:46:09,240</code>
+kan jag sitta här väldigt enkelt och säga</p>
+<p><code>1311 00:46:09,240 --&gt; 00:46:11,240</code>
+som inte har några barn men</p>
+<p><code>1312 00:46:11,240 --&gt; 00:46:13,240</code>
+lite ansvar får nog ligga på föräldrarna också</p>
+<p><code>1313 00:46:13,240 --&gt; 00:46:14,240</code>
+så är det faktiskt</p>
+<p><code>1314 00:46:14,240 --&gt; 00:46:16,240</code>
+så har det väl varit med allting i alla tider</p>
+<p><code>1315 00:46:16,240 --&gt; 00:46:18,240</code>
+jag menar jag vet att</p>
+<p><code>1316 00:46:18,240 --&gt; 00:46:20,240</code>
+ifall jag satt och spelade tv-spel i mer än fyra timmar</p>
+<p><code>1317 00:46:20,240 --&gt; 00:46:22,240</code>
+så kom min mamma och var arg på mig</p>
+<p><code>1318 00:46:22,240 --&gt; 00:46:24,240</code>
+liksom</p>
+<p><code>1319 00:46:24,240 --&gt; 00:46:26,240</code>
+ja nej nej och så var det ju för mig med att du har riktigt utsladdad</p>
+<p><code>1320 00:46:26,240 --&gt; 00:46:28,240</code>
+ur datorn liksom, nu får du göra något annat</p>
+<p><code>1321 00:46:28,240 --&gt; 00:46:30,240</code>
+och jag menar det är</p>
+<p><code>1322 00:46:30,240 --&gt; 00:46:32,240</code>
+under förutsättningen att dina barn fortfarande bor hemma hos dig</p>
+<p><code>1323 00:46:32,240 --&gt; 00:46:34,240</code>
+så har du faktiskt en del du kan säga till om</p>
+<p><code>1324 00:46:34,240 --&gt; 00:46:36,240</code>
+sen så inser jag också att det inte</p>
+<p><code>1325 00:46:36,240 --&gt; 00:46:38,240</code>
+är alltid så lätt och det finns en himla massa</p>
+<p><code>1326 00:46:38,240 --&gt; 00:46:40,240</code>
+sociala tryck och sådana här saker</p>
+<p><code>1327 00:46:40,240 --&gt; 00:46:42,240</code>
+som gör att det blir problematiskt och svårt</p>
+<p><code>1328 00:46:42,240 --&gt; 00:46:44,240</code>
+men man får också vara lite vuxen</p>
+<p><code>1329 00:46:44,240 --&gt; 00:46:46,240</code>
+vi hade ju faktiskt den här</p>
+<p><code>1330 00:46:46,240 --&gt; 00:46:48,240</code>
+jag har ju 17-åringar hemma</p>
+<p><code>1331 00:46:48,240 --&gt; 00:46:50,240</code>
+vi hade den här diskussionen för bara två veckor sedan</p>
+<p><code>1332 00:46:50,240 --&gt; 00:46:52,240</code>
+för jag noterade att en utav mina kids</p>
+<p><code>1333 00:46:52,240 --&gt; 00:46:54,240</code>
+la sjuka mängder tid på sin telefon</p>
+<p><code>1334 00:46:54,240 --&gt; 00:46:56,240</code>
+och</p>
+<p><code>1335 00:46:56,240 --&gt; 00:46:58,240</code>
+istället för</p>
+<p><code>1336 00:46:58,240 --&gt; 00:47:00,240</code>
+min gut reaction var faktiskt</p>
+<p><code>1337 00:47:00,240 --&gt; 00:47:02,240</code>
+förbjud</p>
+<p><code>1338 00:47:02,240 --&gt; 00:47:04,240</code>
+det är ju mitt</p>
+<p><code>1339 00:47:04,240 --&gt; 00:47:06,240</code>
+ditt familjekonto så jag kan ju styra</p>
+<p><code>1340 00:47:06,240 --&gt; 00:47:08,240</code>
+hur mycket tid de får ha på apparna</p>
+<p><code>1341 00:47:08,240 --&gt; 00:47:10,240</code>
+så jag började med att</p>
+<p><code>1342 00:47:10,240 --&gt; 00:47:12,240</code>
+stänga ner det och då sa min son att</p>
+<p><code>1343 00:47:12,240 --&gt; 00:47:14,240</code>
+det där är inte okej farsan, okej?</p>
+<p><code>1344 00:47:14,240 --&gt; 00:47:16,240</code>
+vad ska vi ha för alternativ då?</p>
+<p><code>1345 00:47:16,240 --&gt; 00:47:18,240</code>
+så då sa han, ja men låt mig</p>
+<p><code>1346 00:47:18,240 --&gt; 00:47:20,240</code>
+jag hör vad du säger, låt mig</p>
+<p><code>1347 00:47:20,240 --&gt; 00:47:22,240</code>
+sköta det här nu</p>
+<p><code>1348 00:47:22,240 --&gt; 00:47:24,240</code>
+och nu har det bara gått två veckor</p>
+<p><code>1349 00:47:24,240 --&gt; 00:47:26,240</code>
+men det har varit, konsumtionen har gått ner</p>
+<p><code>1350 00:47:26,240 --&gt; 00:47:28,240</code>
+stadigt</p>
+<p><code>1351 00:47:28,240 --&gt; 00:47:30,240</code>
+ja det är så, du har ändå sett det över tid för vi pratade precis när det hade hänt</p>
+<p><code>1352 00:47:30,240 --&gt; 00:47:32,240</code>
+och då hade det liksom</p>
+<p><code>1353 00:47:32,240 --&gt; 00:47:34,240</code>
+hans son har skaffat en mobil till</p>
+<p><code>1354 00:47:34,240 --&gt; 00:47:36,240</code>
+och har skaffat att vi sätter upp den nyligen till</p>
+<p><code>1355 00:47:36,240 --&gt; 00:47:38,240</code>
+respekt</p>
+<p><code>1356 00:47:38,240 --&gt; 00:47:40,240</code>
+här kan han se runt sig</p>
+<p><code>1357 00:47:40,240 --&gt; 00:47:42,240</code>
+när du säger det och vi litar ju på det</p>
+<p><code>1358 00:47:42,240 --&gt; 00:47:44,240</code>
+då det</p>
+<p><code>1359 00:47:44,240 --&gt; 00:47:46,240</code>
+då brukar jag ändå validera lite Johans idé här</p>
+<p><code>1360 00:47:46,240 --&gt; 00:47:48,240</code>
+eller Johans tes, det vill säga</p>
+<p><code>1361 00:47:48,240 --&gt; 00:47:50,240</code>
+ja, reminder, det här är inte så jävla bra</p>
+<p><code>1362 00:47:50,240 --&gt; 00:47:52,240</code>
+och vi pratar rätt mycket hemma om det nu också</p>
+<p><code>1363 00:47:52,240 --&gt; 00:47:54,240</code>
+så att ser jag någon av grabbarna</p>
+<p><code>1364 00:47:54,240 --&gt; 00:47:56,240</code>
+sitter för sjunkna i sin telefon</p>
+<p><code>1365 00:47:56,240 --&gt; 00:47:58,240</code>
+eller om de ser mig</p>
+<p><code>1366 00:47:58,240 --&gt; 00:48:00,240</code>
+då petar man i magen litegrann och säger</p>
+<p><code>1367 00:48:00,240 --&gt; 00:48:02,240</code>
+har du dopamin nu eller?</p>
+<p><code>1368 00:48:02,240 --&gt; 00:48:04,240</code>
+får du din fix nu eller?</p>
+<p><code>1369 00:48:04,240 --&gt; 00:48:06,240</code>
+det här tror jag är helt rätt</p>
+<p><code>1370 00:48:06,240 --&gt; 00:48:08,240</code>
+jag använde datorer för mycket när jag var ung</p>
+<p><code>1371 00:48:08,240 --&gt; 00:48:10,240</code>
+han har ju blivit jätteirriterad</p>
+<p><code>1372 00:48:10,240 --&gt; 00:48:12,240</code>
+ja, och jag skulle vilja säga att</p>
+<p><code>1373 00:48:12,240 --&gt; 00:48:14,240</code>
+vi kan ju inte vara exakt samma snabbare</p>
+<p><code>1374 00:48:14,240 --&gt; 00:48:16,240</code>
+dopaminkickare</p>
+<p><code>1375 00:48:16,240 --&gt; 00:48:18,240</code>
+kanske inte</p>
+<p><code>1376 00:48:18,240 --&gt; 00:48:20,240</code>
+algoritmerna var inte riktigt fullt lika utvecklade</p>
+<p><code>1377 00:48:20,240 --&gt; 00:48:22,240</code>
+när vi var tvungna att använda dial-up</p>
+<p><code>1378 00:48:22,240 --&gt; 00:48:24,240</code>
+av flera anledningar så är inte jag så orolig</p>
+<p><code>1379 00:48:24,240 --&gt; 00:48:26,240</code>
+för just Australiens lista här då</p>
+<p><code>1380 00:48:26,240 --&gt; 00:48:28,240</code>
+för att dels är jag ju äldre än 16</p>
+<p><code>1381 00:48:28,240 --&gt; 00:48:30,240</code>
+som är deras gräns</p>
+<p><code>1382 00:48:30,240 --&gt; 00:48:32,240</code>
+och dels så är det på listan så finns då</p>
+<p><code>1383 00:48:32,240 --&gt; 00:48:34,240</code>
+Facebook, Instagram, Kik, Reddit, Snapchat</p>
+<p><code>1384 00:48:34,240 --&gt; 00:48:36,240</code>
+Threads, TikTok, Twitch, X</p>
+<p><code>1385 00:48:36,240 --&gt; 00:48:38,240</code>
+och Youtube</p>
+<p><code>1386 00:48:38,240 --&gt; 00:48:40,240</code>
+så det är egentligen, utav dem så är det bara Youtube</p>
+<p><code>1387 00:48:40,240 --&gt; 00:48:42,240</code>
+som jag känner att jag skulle</p>
+<p><code>1388 00:48:42,240 --&gt; 00:48:44,240</code>
+sakna med och då är jag oerhört</p>
+<p><code>1389 00:48:44,240 --&gt; 00:48:46,240</code>
+generös i mitt uttryck</p>
+<p><code>1390 00:48:46,240 --&gt; 00:48:48,240</code>
+de andra är liksom</p>
+<p><code>1391 00:48:48,240 --&gt; 00:48:50,240</code>
+not so important</p>
+<p><code>1392 00:48:50,240 --&gt; 00:48:52,240</code>
+jag kanske skulle bara göra</p>
+<p><code>1393 00:48:52,240 --&gt; 00:48:54,240</code>
+bygga sociala medier där man måste</p>
+<p><code>1394 00:48:54,240 --&gt; 00:48:56,240</code>
+verifiera att man är under 18</p>
+<p><code>1395 00:48:56,240 --&gt; 00:48:58,240</code>
+för att få vara med</p>
+<p><code>1396 00:48:58,240 --&gt; 00:49:00,240</code>
+jag höll på att säga</p>
+<p><code>1397 00:49:00,240 --&gt; 00:49:02,240</code>
+jag pratar ju inte om det i något gammalt Peter-avsnitt</p>
+<p><code>1398 00:49:02,240 --&gt; 00:49:04,240</code>
+Lunestorm</p>
+<p><code>1399 00:49:04,240 --&gt; 00:49:06,240</code>
+det var nästan så</p>
+<p><code>1400 00:49:06,240 --&gt; 00:49:08,240</code>
+har vi lyckats ta oss igenom</p>
+<p><code>1401 00:49:08,240 --&gt; 00:49:10,240</code>
+punkterna, vad händer</p>
+<p><code>1402 00:49:10,240 --&gt; 00:49:12,240</code>
+det har vi nog täckt va?</p>
+<p><code>1403 00:49:12,240 --&gt; 00:49:14,240</code>
+vad som försöker lösas</p>
+<p><code>1404 00:49:14,240 --&gt; 00:49:16,240</code>
+och risker skulle jag säga</p>
+<p><code>1405 00:49:16,240 --&gt; 00:49:18,240</code>
+att vi har definierat rätt väl</p>
+<p><code>1406 00:49:18,240 --&gt; 00:49:20,240</code>
+fördelar har vi väl</p>
+<p><code>1407 00:49:20,240 --&gt; 00:49:22,240</code>
+jag tror på riktigt att det här</p>
+<p><code>1408 00:49:22,240 --&gt; 00:49:24,240</code>
+låt oss säga att det går igenom enligt</p>
+<p><code>1409 00:49:24,240 --&gt; 00:49:26,240</code>
+plan allting, så tror jag att</p>
+<p><code>1410 00:49:26,240 --&gt; 00:49:28,240</code>
+det kommer bli färre</p>
+<p><code>1411 00:49:28,240 --&gt; 00:49:30,240</code>
+under 16-åringar</p>
+<p><code>1412 00:49:30,240 --&gt; 00:49:32,240</code>
+på sociala medier, det tror jag</p>
+<p><code>1413 00:49:32,240 --&gt; 00:49:34,240</code>
+åtminstone på de stora sociala medierna</p>
+<p><code>1414 00:49:34,240 --&gt; 00:49:36,240</code>
+ja, precis</p>
+<p><code>1415 00:49:36,240 --&gt; 00:49:38,240</code>
+på dem jag just rappade upp till</p>
+<p><code>1416 00:49:38,240 --&gt; 00:49:40,240</code>
+huruvida medlemsavtalet</p>
+<p><code>1417 00:49:40,240 --&gt; 00:49:42,240</code>
+på 4chan kommer öka</p>
+<p><code>1418 00:49:42,240 --&gt; 00:49:44,240</code>
+skulle det låta vara osagt</p>
+<p><code>1419 00:49:44,240 --&gt; 00:49:46,240</code>
+not age restricted social media platforms</p>
+<p><code>1420 00:49:46,240 --&gt; 00:49:48,240</code>
+finns också en lista på</p>
+<p><code>1421 00:49:48,240 --&gt; 00:49:50,240</code>
+discord, github, google classroom</p>
+<p><code>1422 00:49:50,240 --&gt; 00:49:52,240</code>
+legoplay, messenger, pinterest, roblox</p>
+<p><code>1423 00:49:52,240 --&gt; 00:49:54,240</code>
+steam och steam chat, whatsapp</p>
+<p><code>1424 00:49:54,240 --&gt; 00:49:56,240</code>
+och youtube kids</p>
+<p><code>1425 00:49:56,240 --&gt; 00:49:58,240</code>
+discord vet jag har age verification och har blivit hackad och blivit av</p>
+<p><code>1426 00:49:58,240 --&gt; 00:50:00,240</code>
+med sända optionuppgifter från det</p>
+<p><code>1427 00:50:00,240 --&gt; 00:50:02,240</code>
+perfekt</p>
+<p><code>1428 00:50:02,240 --&gt; 00:50:04,240</code>
+det är ju bara början på en dum grej</p>
+<p><code>1429 00:50:04,240 --&gt; 00:50:06,240</code>
+nej</p>
+<p><code>1430 00:50:06,240 --&gt; 00:50:08,240</code>
+det är privacy for the win</p>
+<p><code>1431 00:50:08,240 --&gt; 00:50:10,240</code>
+alltså</p>
+<p><code>1432 00:50:10,240 --&gt; 00:50:12,240</code>
+är det slutsatsen</p>
+<p><code>1433 00:50:12,240 --&gt; 00:50:14,240</code>
+ja men jag tror fan det med det</p>
+<p><code>1434 00:50:14,240 --&gt; 00:50:16,240</code>
+om det nu är problemet man vill komma tillrätta med</p>
+<p><code>1435 00:50:16,240 --&gt; 00:50:18,240</code>
+är att sociala medier är onda för att de har</p>
+<p><code>1436 00:50:18,240 --&gt; 00:50:20,240</code>
+ondskefulla algoritmer som gör oss dopaminberoende</p>
+<p><code>1437 00:50:20,240 --&gt; 00:50:22,240</code>
+gå efter algoritmerna</p>
+<p><code>1438 00:50:22,240 --&gt; 00:50:24,240</code>
+inför inte</p>
+<p><code>1439 00:50:24,240 --&gt; 00:50:26,240</code>
+slutet på privacy online</p>
+<p><code>1440 00:50:26,240 --&gt; 00:50:28,240</code>
+för att komma åt det problemet på helt fel sätt</p>
+<p><code>1441 00:50:28,240 --&gt; 00:50:30,240</code>
+jag kan tänka mig dock att det där</p>
+<p><code>1442 00:50:30,240 --&gt; 00:50:32,240</code>
+är ju</p>
+<p><code>1443 00:50:32,240 --&gt; 00:50:34,240</code>
+det som är svårt med det är</p>
+<p><code>1444 00:50:34,240 --&gt; 00:50:36,240</code>
+vad är en dålig algoritm</p>
+<p><code>1445 00:50:36,240 --&gt; 00:50:38,240</code>
+absolut</p>
+<p><code>1446 00:50:38,240 --&gt; 00:50:40,240</code>
+det här är ju fan företagshemligheter</p>
+<p><code>1447 00:50:40,240 --&gt; 00:50:42,240</code>
+det får ingen annan veta</p>
+<p><code>1448 00:50:42,240 --&gt; 00:50:44,240</code>
+det här är ju det lättare av de två alternativen</p>
+<p><code>1449 00:50:44,240 --&gt; 00:50:46,240</code>
+att försöka driva igen</p>
+<p><code>1450 00:50:46,240 --&gt; 00:50:48,240</code>
+men allting kan inte vara lätt</p>
+<p><code>1451 00:50:48,240 --&gt; 00:50:50,240</code>
+men ett problem</p>
+<p><code>1452 00:50:50,240 --&gt; 00:50:52,240</code>
+runt de här grejerna</p>
+<p><code>1453 00:50:52,240 --&gt; 00:50:54,240</code>
+vi tog förut upp att man kommer</p>
+<p><code>1454 00:50:54,240 --&gt; 00:50:56,240</code>
+vissa kommer lägga på</p>
+<p><code>1455 00:50:56,240 --&gt; 00:50:58,240</code>
+det på grejer</p>
+<p><code>1456 00:50:58,240 --&gt; 00:51:00,240</code>
+som kanske inte borde vara där</p>
+<p><code>1457 00:51:00,240 --&gt; 00:51:02,240</code>
+men</p>
+<p><code>1458 00:51:02,240 --&gt; 00:51:04,240</code>
+det finns ju också det att om du är som tjänsteleverantör</p>
+<p><code>1459 00:51:04,240 --&gt; 00:51:06,240</code>
+så finns det ju</p>
+<p><code>1460 00:51:06,240 --&gt; 00:51:08,240</code>
+en risk att du smackar på</p>
+<p><code>1461 00:51:08,240 --&gt; 00:51:10,240</code>
+en 16 års gräns på</p>
+<p><code>1462 00:51:10,240 --&gt; 00:51:12,240</code>
+massa grejer</p>
+<p><code>1463 00:51:12,240 --&gt; 00:51:14,240</code>
+bara för att det kanske skulle kunna vara</p>
+<p><code>1464 00:51:14,240 --&gt; 00:51:16,240</code>
+ett problem</p>
+<p><code>1465 00:51:16,240 --&gt; 00:51:18,240</code>
+för det är ju en vanlig grej</p>
+<p><code>1466 00:51:18,240 --&gt; 00:51:20,240</code>
+alltså olika varianter på självcensur</p>
+<p><code>1467 00:51:20,240 --&gt; 00:51:22,240</code>
+att du</p>
+<p><code>1468 00:51:22,240 --&gt; 00:51:24,240</code>
+fegar ut och sätter gränser</p>
+<p><code>1469 00:51:24,240 --&gt; 00:51:26,240</code>
+där det inte borde vara gränser</p>
+<p><code>1470 00:51:26,240 --&gt; 00:51:28,240</code>
+det kan också bli en sån sammansvändning där</p>
+<p><code>1471 00:51:28,240 --&gt; 00:51:30,240</code>
+det är plötsligt mer och mer information</p>
+<p><code>1472 00:51:30,240 --&gt; 00:51:32,240</code>
+men nej</p>
+<p><code>1473 00:51:32,240 --&gt; 00:51:34,240</code>
+du skulle kunna hävda att Wikipedia</p>
+<p><code>1474 00:51:34,240 --&gt; 00:51:36,240</code>
+är social media för att folk får editera där</p>
+<p><code>1475 00:51:36,240 --&gt; 00:51:38,240</code>
+så att teoretiskt</p>
+<p><code>1476 00:51:38,240 --&gt; 00:51:40,240</code>
+skulle vi kunna säga att ungdomar</p>
+<p><code>1477 00:51:40,240 --&gt; 00:51:42,240</code>
+får läsa Wikipedia längre</p>
+<p><code>1478 00:51:42,240 --&gt; 00:51:44,240</code>
+eller att du måste identifiera din ålder för att läsa Wikipedia</p>
+<p><code>1479 00:51:44,240 --&gt; 00:51:46,240</code>
+ja men alltså det är inte en</p>
+<p><code>1480 00:51:46,240 --&gt; 00:51:48,240</code>
+oring</p>
+<p><code>1481 00:51:48,240 --&gt; 00:51:50,240</code>
+jag tror att det är så man ska se på det</p>
+<p><code>1482 00:51:50,240 --&gt; 00:51:52,240</code>
+inte att ungdomar får inte göra detta</p>
+<p><code>1483 00:51:52,240 --&gt; 00:51:54,240</code>
+utan du måste verifiera dig för att komma åt det</p>
+<p><code>1484 00:51:54,240 --&gt; 00:51:56,240</code>
+det är den vinkeln man måste ha på det</p>
+<p><code>1485 00:51:56,240 --&gt; 00:51:58,240</code>
+och ja och</p>
+<p><code>1486 00:51:58,240 --&gt; 00:52:00,240</code>
+var det slutsatsen?</p>
+<p><code>1487 00:52:00,240 --&gt; 00:52:02,240</code>
+jag tror det</p>
+<p><code>1488 00:52:02,240 --&gt; 00:52:04,240</code>
+det går åt helvete med allt</p>
+<p><code>1489 00:52:04,240 --&gt; 00:52:06,240</code>
+men snart så kommer ni kunna signa upp er på</p>
+<p><code>1490 00:52:06,240 --&gt; 00:52:08,240</code>
+Säkerhetsbrogasterns decentraliserade internetlösning</p>
+<p><code>1491 00:52:08,240 --&gt; 00:52:10,240</code>
+som vi håller på att bygga</p>
+<p><code>1492 00:52:10,240 --&gt; 00:52:12,240</code>
+någon moderation och inga algoritmer</p>
+<p><code>1493 00:52:12,240 --&gt; 00:52:14,240</code>
+till en kostnad av</p>
+<p><code>1494 00:52:14,240 --&gt; 00:52:16,240</code>
+ja men vänta var inte det</p>
+<p><code>1495 00:52:16,240 --&gt; 00:52:18,240</code>
+var det Grock som utlovade det</p>
+<p><code>1496 00:52:18,240 --&gt; 00:52:20,240</code>
+eller var det Truth Social</p>
+<p><code>1497 00:52:20,240 --&gt; 00:52:22,240</code>
+som gick ut med det här</p>
+<p><code>1498 00:52:22,240 --&gt; 00:52:24,240</code>
+det här är free voice på riktigt liksom</p>
+<p><code>1499 00:52:24,240 --&gt; 00:52:26,240</code>
+det är ju det som både Facebook</p>
+<p><code>1500 00:52:26,240 --&gt; 00:52:28,240</code>
+och Twitter</p>
+<p><code>1501 00:52:28,240 --&gt; 00:52:30,240</code>
+sparkade ju typ alla sina</p>
+<p><code>1502 00:52:30,240 --&gt; 00:52:32,240</code>
+moderatortjänster</p>
+<p><code>1503 00:52:32,240 --&gt; 00:52:34,240</code>
+det kommer bli kanon</p>
+<p><code>1504 00:52:34,240 --&gt; 00:52:36,240</code>
+ja toppen</p>
+<p><code>1505 00:52:36,240 --&gt; 00:52:38,240</code>
+ja men på den där lilla halvdeprimerande</p>
+<p><code>1506 00:52:38,240 --&gt; 00:52:40,240</code>
+not som får vi väl ta en runda av för idag</p>
+<p><code>1507 00:52:40,240 --&gt; 00:52:42,240</code>
+jag som pratade lite Johan Ryberg Möller med mig</p>
+<p><code>1508 00:52:42,240 --&gt; 00:52:44,240</code>
+hade jag Jesper Larsson</p>
+<p><code>1509 00:52:44,240 --&gt; 00:52:46,240</code>
+Jajamen</p>
+<p><code>1510 00:52:46,240 --&gt; 00:52:48,240</code>
+Peter Magnusson</p>
+<p><code>1511 00:52:48,240 --&gt; 00:52:50,240</code>
+Nullpekaren i din adressrymd</p>
+<p><code>1512 00:52:50,240 --&gt; 00:52:52,240</code>
+och Mattias Idag</p>
+<p><code>1513 00:52:52,240 --&gt; 00:52:54,240</code>
+och mer dopamin</p>
+<p><code>1514 00:52:54,240 --&gt; 00:52:56,240</code>
+ha det gött hej</p>
+<p><code>1515 00:52:56,240 --&gt; 00:52:58,240</code>
+tja</p>
+<p><code>1516 00:52:58,240 --&gt; 00:53:00,240</code>
+jag ska bara häng kvar en sekund nu</p>
+<p><code>1517 00:53:00,240 --&gt; 00:53:02,240</code>
+jag ska bara se</p>
+<p><code>1518 00:53:02,240 --&gt; 00:53:04,240</code>
+han hette väl Dave eller vad fan hette han</p>
+<p><code>1519 00:53:04,240 --&gt; 00:53:06,240</code>
+Kronmål</p>
+<p><code>1520 00:53:06,240 --&gt; 00:53:08,240</code>
+Dave och Plank</p>
+<p><code>1521 00:53:08,240 --&gt; 00:53:10,240</code>
+Dave Plank</p>
+<p><code>1522 00:53:10,240 --&gt; 00:53:12,240</code>
+nej jag tror du har fel i det här</p>
+<p><code>1523 00:53:12,240 --&gt; 00:53:14,240</code>
+Daves konstant</p>
+<p><code>1524 00:53:14,240 --&gt; 00:53:16,240</code>
+Dave från de här pingvinerna</p>
+<p><code>1525 00:53:16,240 --&gt; 00:53:18,240</code>
+det där som är fienden</p>
+<p><code>1526 00:53:18,240 --&gt; 00:53:20,240</code>
+är det en av dem som är Dave</p>
+<p><code>1527 00:53:20,240 --&gt; 00:53:22,240</code>
+nej den är fienden</p>
+<p><code>1528 00:53:22,240 --&gt; 00:53:24,240</code>
+den onda blackfisken är Dave</p>
+<p><code>1529 00:53:24,240 --&gt; 00:53:26,240</code>
+även stormen</p>
+<p><code>1530 00:53:26,240 --&gt; 00:53:28,240</code>
+råkar ju vara Dave</p>
+<p><code>1531 00:53:28,240 --&gt; 00:53:30,240</code>
+men du har koll</p>
+<p><code>1532 00:53:30,240 --&gt; 00:53:32,240</code>
+nu slutar vi prata fysik</p>
+</div><div class="post-footer" id="post-footer">
+    <div class="post-info">
+        <div class="post-info-line">
+            <div class="post-info-mod">
+                <span>Updated on 2026-05-04</span>
+            </div></div>
+        <div class="post-info-line">
+            <div class="post-info-md"></div>
+            <div class="post-info-share">
+                <span></span>
+            </div>
+        </div>
+    </div>
+
+    <div class="post-info-more">
+        <section class="post-tags"><i class="fas fa-tags fa-fw" aria-hidden="true"></i>&nbsp;<a href="/tags/tema/">tema</a></section>
+        <section>
+            <span><a href="javascript:void(0);" onclick="window.history.back();">Back</a></span>&nbsp;|&nbsp;<span><a href="/">Home</a></span>
+        </section>
+    </div>
+
+    <div class="post-nav"><a href="/posts/sakerhetspodcasten_301_ostrukturerat_v_17/" class="prev" rel="prev" title="Säkerhetspodcasten #301 - Ostrukturerat V.17"><i class="fas fa-angle-left fa-fw" aria-hidden="true"></i>Säkerhetspodcasten #301 - Ostrukturerat V.17</a></div>
+</div>
+</article></div>
+            </main></div>
+
+        <div id="fixed-buttons"><a href="#" id="back-to-top" class="fixed-button" title="Back to Top">
+                <i class="fas fa-arrow-up fa-fw" aria-hidden="true"></i>
+            </a><a href="#" id="view-comments" class="fixed-button" title="View Comments">
+                <i class="fas fa-comment fa-fw" aria-hidden="true"></i>
+            </a>
+        </div><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/lazysizes@5.3.2/lazysizes.min.js"></script><script type="text/javascript" src="https://cdn.jsdelivr.net/npm/clipboard@2.0.11/dist/clipboard.min.js"></script><script type="text/javascript">window.config={"code":{"copyTitle":"Copy to clipboard","maxShownLines":50},"comment":{}};</script><script type="text/javascript" src="/js/theme.min.js"></script></body>
+</html>
