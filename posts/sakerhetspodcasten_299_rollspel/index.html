@@ -29,7 +29,7 @@ Lyssna mp3, längd: 01:00:58 Plugs Informell afterwork, spelat in 300 avsnitt fi
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/sakerhetspodcasten.se\/posts\/sakerhetspodcasten_299_rollspel\/"
-        },"genre": "posts","keywords": "tema","wordcount":  16819 ,
+        },"genre": "posts","keywords": "tema","wordcount":  17322 ,
         "url": "https:\/\/sakerhetspodcasten.se\/posts\/sakerhetspodcasten_299_rollspel\/","datePublished": "2026-03-16T09:55:00+00:00","dateModified": "2026-03-16T09:55:00+00:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -71,8 +71,8 @@ Lyssna mp3, längd: 01:00:58 Plugs Informell afterwork, spelat in 300 avsnitt fi
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Säkerhetspodcasten #299 - Rollspel</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2026-03-16">2026-03-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;16819 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;79 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2026-03-16">2026-03-16</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;17322 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;82 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -82,6 +82,15 @@ Lyssna mp3, längd: 01:00:58 Plugs Informell afterwork, spelat in 300 avsnitt fi
   <ul>
     <li><a href="#lyssna">Lyssna</a></li>
     <li><a href="#plugs">Plugs</a></li>
+    <li><a href="#feedback-bybit-hacket">Feedback: Bybit hacket</a>
+      <ul>
+        <li><a href="#den-enkla-formuleringen-till-podden-jämför-med-bankid">Den enkla formuleringen till podden, jämför med BankID</a></li>
+        <li><a href="#en-övergipande-förklaring-av-osäkra-blind-signering-flödet">En övergipande förklaring av osäkra blind signering flödet</a></li>
+        <li><a href="#läsbar-signering-transparent-signering-clear-signing-flöden">Läsbar signering, transparent signering (Clear signing) flöden</a></li>
+        <li><a href="#vad-är-en-hårdvaruplånbok--och-varför-spelar-det-roll">Vad är en hårdvaruplånbok – och varför spelar det roll?</a></li>
+        <li><a href="#multisig--när-en-nyckel-inte-räcker">Multisig – när en nyckel inte räcker</a></li>
+      </ul>
+    </li>
     <li><a href="#ai-transkribering">AI transkribering</a></li>
   </ul>
 </nav></div>
@@ -102,6 +111,70 @@ på Bishops Arms Park Avenue (på Avenyn).
 <li><a href="https://foss-north.se/" target="_blank" rel="noopener noreffer ">Foss-North</a>,
 27-28 april 2026, Chalmers.</li>
 </ul>
+<h2 id="feedback-bybit-hacket">Feedback: Bybit hacket</h2>
+<p>Johan Lindberg, Säkerhet, Ethereum Foundation
+hörde av sig i April med lite förtydlingar,
+efter att lyssnat på avsnittet:</p>
+<h3 id="den-enkla-formuleringen-till-podden-jämför-med-bankid">Den enkla formuleringen till podden, jämför med BankID</h3>
+<blockquote>
+<p>Föreställ er att BankID visade “Godkänn transaktion: 3a7f9c…d82b” istället för
+“Betala 149 kr till Spotify”. Ni skulle trycka godkänn ändå, för ni litar på bankens
+webbsida som säger att det är lugnt? Det är precis det Bybits signatärer gjorde –
+och det är varför det inte spelade någon roll att de var tre stycken. Alla tre
+granskade webbsidans lögn, inte sanningen i hårdvaruplånboken.</p>
+</blockquote>
+<h3 id="en-övergipande-förklaring-av-osäkra-blind-signering-flödet">En övergipande förklaring av osäkra blind signering flödet</h3>
+<blockquote>
+<p>De som skulle signera satt vid sina datorer och öppnade Safe{Wallet}s webbgränssnitt i
+sin webbläsare.  Webbläsaren hämtade JavaScript från app.safe.global och renderade en
+sida som visade: “Flytta X ETH från “cold wallet adress” till “hot wallet adress” – allt såg legitimt ut.</p>
+<p>Sedan kopplade de in sin Ledger hårdvaruplånbok. Webbsidan skickade då ett EIP–712-
+meddelande till Ledgern för signering. Och här är det kritiska problemet: Ledgern kan
+inte avkoda och visa EIP–712-meddelandets faktiska innehåll i läsbar form när det
+innehåller nestade operationer som delegatecall.</p>
+<p>Vad Ledgern visade på sin lilla skärm var i praktiken ett kryptografiskt hash
+– en lång teckensträng –
+inte transaktionens faktiska innebörd.</p>
+<p>Alla tre tryckte godkänn på Ledgern baserat på vad webbsidan visade, inte vad
+Ledgern visade. Det är blind signing.</p>
+</blockquote>
+<blockquote>
+<p>Hade de faktiskt granskat vad Ledgern visade hade de sett att hashen inte stämde med
+en normal överföring. De hade troligtvis inte kunnat läsa sig till exakt vad som skulle
+ske – men de hade sett att något var fel.</p>
+</blockquote>
+<h3 id="läsbar-signering-transparent-signering-clear-signing-flöden">Läsbar signering, transparent signering (Clear signing) flöden</h3>
+<blockquote>
+<p>Det finns något som kallas clear signing som alla hårdvaruplånböcker försöker
+implementera på ett eller annat sätt – principen att det du ser på enhetens skärm
+bokstavligen är det du signerar, utan att behöva lita på webbsidan däremellan.</p>
+</blockquote>
+<h3 id="vad-är-en-hårdvaruplånbok--och-varför-spelar-det-roll">Vad är en hårdvaruplånbok – och varför spelar det roll?</h3>
+<blockquote>
+<p>En hårdvaruplånbok är en fysisk enhet – ungefär som ett USB-minne – vars
+enda uppgift är att skydda din privata nyckel. Den privata nyckeln
+är det som bevisar äganderätt till kryptotillgångar: den som kontrollerar
+nyckeln kontrollerar pengarna, oavsett vad som står någon annanstans.
+Nyckeln lämnar aldrig hårdvaruplånboken, vilket innebär att en angripare
+som tar sig in på din dator eller i din e-post ändå inte kan komma åt den.
+De vanligaste enheterna är Trezor och Ledger – båda väletablerade, men med
+olika designfilosofier kring öppenhet och säkerhet.</p>
+</blockquote>
+<h3 id="multisig--när-en-nyckel-inte-räcker">Multisig – när en nyckel inte räcker</h3>
+<blockquote>
+<p>För tillgångar av högre värde används ofta multisignatur (multisig),
+vilket innebär att en transaktion kräver godkännande från flera nycklar.
+Upplägget beskrivs som M-av-N – t.ex.:</p>
+<ul>
+<li>3-av-5: Fem nycklar existerar, varav tre måste signera.
+Ger redundans (du kan tappa två nycklar utan att förlora åtkomst)
+och skydd mot kompromiss (en angripare som tar sig in på en enhet
+kan inte agera ensam).</li>
+<li>7-av-10: Används för mycket höga värden eller organisationer med fler
+intressenter. Kräver bred konsensus, vilket gör obehörig åtkomst ännu svårare
+– men ställer också högre krav på koordination</li>
+</ul>
+</blockquote>
 <h2 id="ai-transkribering">AI transkribering</h2>
 <p><em>AI försöker förstå oss&hellip; Ha överseende med galna feltranskriberingar.</em></p>
 <p><code>1 00:00:00,000 --&gt; 00:00:02,200</code>
