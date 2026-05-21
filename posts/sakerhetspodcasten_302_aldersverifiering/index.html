@@ -31,7 +31,7 @@ Lyssna mp3, längd: 53:33 EU&rsquo;s lösning för åldersverifiering EU vill ru
         "mainEntityOfPage": {
             "@type": "WebPage",
             "@id": "https:\/\/sakerhetspodcasten.se\/posts\/sakerhetspodcasten_302_aldersverifiering\/"
-        },"genre": "posts","keywords": "tema","wordcount":  16623 ,
+        },"genre": "posts","keywords": "tema","wordcount":  17232 ,
         "url": "https:\/\/sakerhetspodcasten.se\/posts\/sakerhetspodcasten_302_aldersverifiering\/","datePublished": "2026-05-04T10:28:00+00:00","dateModified": "2026-05-04T10:28:00+00:00","publisher": {
             "@type": "Organization",
             "name": ""},"author": {
@@ -73,8 +73,8 @@ Lyssna mp3, längd: 53:33 EU&rsquo;s lösning för åldersverifiering EU vill ru
             <div class="toc-content" id="toc-content-auto"></div>
         </div><article class="page single"><h1 class="single-title animate__animated animate__flipInX">Säkerhetspodcasten #302 - Åldersverifiering</h1><div class="post-meta">
             <div class="post-meta-line"><span class="post-author"><a href="/" title="Author" rel="author" class="author"><i class="fas fa-user-circle fa-fw" aria-hidden="true"></i>Author</a></span></div>
-            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2026-05-04">2026-05-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;16623 words&nbsp;
-                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;79 minutes&nbsp;</div>
+            <div class="post-meta-line"><i class="far fa-calendar-alt fa-fw" aria-hidden="true"></i>&nbsp;<time datetime="2026-05-04">2026-05-04</time>&nbsp;<i class="fas fa-pencil-alt fa-fw" aria-hidden="true"></i>&nbsp;17232 words&nbsp;
+                <i class="far fa-clock fa-fw" aria-hidden="true"></i>&nbsp;81 minutes&nbsp;</div>
         </div><div class="details toc" id="toc-static"  data-kept="">
                 <div class="details-summary toc-title">
                     <span>Contents</span>
@@ -93,6 +93,7 @@ Lyssna mp3, längd: 53:33 EU&rsquo;s lösning för åldersverifiering EU vill ru
         <li><a href="#första-härdningen-release-202604-2">Första härdningen, release 2026.04-2</a></li>
       </ul>
     </li>
+    <li><a href="#feedback">Feedback</a></li>
     <li><a href="#ai-transkribering">AI transkribering</a></li>
   </ul>
 </nav></div>
@@ -289,6 +290,91 @@ You could use 1B iterations,
 you&rsquo;re not measurably increasing security when there are so few
 attempts required to break it.  At the very least, use a modern
 hash with reasonable brute-force resistance against a 2026 threat model.</p>
+</blockquote>
+<h2 id="feedback">Feedback</h2>
+<p><strong>Thomas</strong> hörde av sig:</p>
+<blockquote>
+<p>Lyssnade på avsnittet om åldersverifiering.</p>
+<p>Funderar lite och borde man inte kunna sätta upp det såhär:</p>
+<p>Hemsidor pratat bara med appen. De ger en sträng som måste
+komma tillbaka signerad av rätt auktoritet. Appen tar strängen
+och får den signerad och ger den till hemsidan. Förutsatt att
+strängen inte läcker data så borde väl nu inte auktorieteten
+få reda på vilken hemsida det är?</p>
+</blockquote>
+<p>Knåpade ihop detta svar:</p>
+<blockquote>
+<p>Mmm, Din design ide är inte helt kass.</p>
+<p>Oavsiktliga läckage: Som du beskriver den så skulle dock
+”cornhub-123456” läcka mellan Rp relying party och
+autentisering backend. Men man skulle kunna blinda detta
+på lite olika sätt, typ</p>
+</blockquote>
+<div class="highlight"><pre tabindex="0" style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-plain" data-lang="plain"><span style="display:flex;"><span>SHA256(
+</span></span><span style="display:flex;"><span>  concat(
+</span></span><span style="display:flex;"><span>    SHA256(app-nonce),
+</span></span><span style="display:flex;"><span>    SHA256(domännamn),
+</span></span><span style="display:flex;"><span>    SHA256(sträng-från-sajten)
+</span></span><span style="display:flex;"><span>  )
+</span></span><span style="display:flex;"><span>)
+</span></span></code></pre></div><blockquote>
+<p>och sen ge sajten vad den behöver för att verifiera ens åldersbevis rör deras challenge.</p>
+<p>Missbruk: Din modell förhindrar inte missbruk, t.ex. att tusentals
+enheter delar ett och samma åldersbevis.</p>
+<p>Om du kollar i FIDO spec:ar finns mer seriöst vad de tänkt på och
+vilka delar av FIDO lösningen som skall skydda mot vad. Det är
+nog det mest väldokumenterade, genomtänkta autentiseringsramverket
+med massvis med olika privacy-avvägningar gjorda. De har en bunt
+designade motmedel mot oavsiktliga läckage.</p>
+<p>Det är mycket som hamnar i ”vad är vår hotmodell”. <br>
+T.ex. litar vi på att appen gör vad den skall? <br>
+T.ex. litar vi på att auth-backend och relying party
+inte samarbetar för att korrelera vem man är.
+Säg t.ex. att rp och auth-backend anser att ett
+åldersbevis är inblandat i ett brott, kommer de
+då samarbeta för spåra vilket ID som begick ett brott?</p>
+<p>Appen behöver egentligen inte prata med autentiseringsbackend.
+Behöver inte finnas någon kontakt mellan Rp relying party och
+Auth-infran utöver t.ex.</p>
+<ul>
+<li>vilka signing keys som är betrodda</li>
+<li>eventuella blacklist som gäller</li>
+</ul>
+<p>EU’s lösning skall funka typ så.</p>
+<p>Det intressanta är vilken modell man väljer och vad den skall skydda mot.</p>
+<p>Vi spelade ju in före Paul Moore’s analys, han påvisade precis den typen
+av attack mot EUs nuvarande lösning.
+Problembilden är att privacy preserving ligger i konflikt med andra mål.</p>
+<p>Om man vill skydda detta ”på riktigt” kommer man t.ex. vilja förhindra att åldersbevis:</p>
+<ul>
+<li>är giltiga mer än X tid</li>
+<li>kopieras mellan olika enheter</li>
+<li>användas mer än X gånger</li>
+<li>används i ej godkänd mjukvara</li>
+</ul>
+<p>Den senaste releasen de gjorde nyss gör ett antal saker för att förhindra att
+appen kan starta i jailbreak’ade telefoner.
+(Se t.ex. FIDO / passkeys som är äldre och mer moget, för en del tillämpningar -
+bank m.m. - tillåter man bara betrodda signerade enheter)</p>
+<p>Så frågan är hur man balanserar äkthet på åldersbeviset med
+privacy/integritetsskydd. Skall man ha full äkthet vill man att backend
+skall se allt och bara låta ens egen app få lov att jobba med lösningen.
+Vill man ha full privacy preserving gör man så lite inskränkning som
+möjligt och så lite insyn som möjligt.</p>
+<p>Det vore inte orimligt att man på sikt skulle vilja ha en helt annan
+lösning än det man har idag… vill rulla ut en rätt annorlunda
+version 2 som är mer robust mot attacker; ergo mindre privacy fokuserad.</p>
+<p>Jag har en stark misstanke om att Paul Moore’s chrome extension inte
+kommer tillåtas publicering, att EU kommer bli jättesura på alla som
+gör konkurrerande appar där de saknar kontroll/insyn.
+EU har redan börjat prata om att förbjuda VPN som ett sätt att stoppa
+att lagen kringgås.</p>
+<p>Så allt är teknisk lösbart det är bara frågan om vilken hotmodell man
+väljer, vad man litar på, vem man litar på.</p>
+<p>EFF m.fl. har en del andra invändningar som inte är lika
+teknik/ säkerhet/ privacy orienterade.
+Tillgänglighet för funktionshindrade, papperslösa, HBTQ+, färgade.</p>
+<p>Typ så, tillit, privacy och tillgänglighet i en go röra :)</p>
 </blockquote>
 <h2 id="ai-transkribering">AI transkribering</h2>
 <p><em>AI försöker förstå oss&hellip; Ha överseende med galna feltranskriberingar.</em></p>
