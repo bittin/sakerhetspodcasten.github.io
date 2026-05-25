@@ -3,7 +3,16 @@
         <title>ostrukturerat - Tag - Säkerhetspodcasten</title>
         <link>https://sakerhetspodcasten.se/tags/ostrukturerat/</link>
         <description>ostrukturerat - Tag - Säkerhetspodcasten</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 20 Apr 2026 08:10:00 &#43;0000</lastBuildDate><atom:link href="https://sakerhetspodcasten.se/tags/ostrukturerat/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 25 May 2026 09:16:00 &#43;0000</lastBuildDate><atom:link href="https://sakerhetspodcasten.se/tags/ostrukturerat/" rel="self" type="application/rss+xml" /><item>
+    <title>Säkerhetspodcasten #303 - Ostrukturerat V.22</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_303_ostrukturerat_v_22/</link>
+    <pubDate>Mon, 25 May 2026 09:16:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_303_ostrukturerat_v_22/</guid>
+    <description><![CDATA[Enhetsbundna sessioner, Reproducerbara byggen, Supply Chain Hell, Windows Bitlocker hackat i &ldquo;Yellowkey&rdquo;, CISA läckte sina hemligheter, CPanel autentisering bypass, AI-slop rapporter, Curl fått en Mythos rapport, Linux Copy Fail, Linux Dirty Frag!
+Lyssna mp3, längd: 01:04:12 Plugs hack.gbgay.com Säkerhetsevent för Queers / LGBTQ+, 30:e Maj 2026, Regnbågshuset Göteborg. OWASP Gotheburg: Unofficial Security Fest Pre-Party 27:e Maj 2026, Assured, Götenorg. Feedback: Bybit hacket Johan Lindberg, Säkerhet, Ethereum Foundation hörde av sig, med återkoppling till Säkerhetspodcasten #299 - Rollspel]]></description>
+</item>
+<item>
     <title>Säkerhetspodcasten #301 - Ostrukturerat V.17</title>
     <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_301_ostrukturerat_v_17/</link>
     <pubDate>Mon, 20 Apr 2026 08:10:00 &#43;0000</pubDate>
@@ -96,17 +105,6 @@ UK lag: ID-verifiering för att få nå porr och annat upprörande Tea läckte c
     <description><![CDATA[Operation Deep Sentinel, Påskägg, BankID, CrowdStrike, ASUS API, ASUS SSH, Azure
 Lyssna mp3, längd: 54:23 Archetyp 00:00:49 Europol Operation Deep Sentinel slår mot Archetyp, en handelsplats på &ldquo;darknet&rdquo;.
 Europol: Europe-wide takedown hits longest-standing dark web drug market – Administrator arrested in Spain; top vendors targeted in Sweden - Between 11 and 13 June, a series of coordinated actions took place across Germany, the Netherlands, Romania, Spain, Sweden, targeting the platform’s administrator, moderators, key vendors, and technical infrastructure.]]></description>
-</item>
-<item>
-    <title>Säkerhetspodcasten #283 - Ostrukturerat V.22</title>
-    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_283_ostrukturerat_v_22/</link>
-    <pubDate>Mon, 26 May 2025 11:54:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_283_ostrukturerat_v_22/</guid>
-    <description><![CDATA[TeleMessage/Signalgate, DOGE/Infostealer, Hangul, ASUS, Airborn, VM-escape, Intel BPRC, Unify Protect, sudo-rs!
-Lyssna mp3, längd: 01:12:48 Incident: TeleMessage 00:03:28 USA använder Signal-klonen TeleMessage, utvecklat i Israel under &ldquo;Israel-US Binational Industrial Research and Development Foundation&rdquo;. Meddelanden från appen kunde komma åts av hackers.
-Tekniska detaljer:
-Servern är skriven i JSP och SpringBoot. Lösenord i MD5 på klient istället för server, dvs hittar du en hash funkar den rakt av mot server. feroxbuster hittar /heapdump på archive.]]></description>
 </item>
 </channel>
 </rss>

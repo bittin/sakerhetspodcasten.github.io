@@ -3,9 +3,18 @@
         <title>Säkerhetspodcasten</title>
         <link>https://sakerhetspodcasten.se/</link>
         <description>Säkerhetspodcasten - Sveriges första? podcast om IT-säkerhet</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 04 May 2026 10:28:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 25 May 2026 09:16:00 &#43;0000</lastBuildDate>
             <atom:link href="https://sakerhetspodcasten.se/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Säkerhetspodcasten #303 - Ostrukturerat V.22</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_303_ostrukturerat_v_22/</link>
+    <pubDate>Mon, 25 May 2026 09:16:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_303_ostrukturerat_v_22/</guid>
+    <description><![CDATA[Enhetsbundna sessioner, Reproducerbara byggen, Supply Chain Hell, Windows Bitlocker hackat i &ldquo;Yellowkey&rdquo;, CISA läckte sina hemligheter, CPanel autentisering bypass, AI-slop rapporter, Curl fått en Mythos rapport, Linux Copy Fail, Linux Dirty Frag!
+Lyssna mp3, längd: 01:04:12 Plugs hack.gbgay.com Säkerhetsevent för Queers / LGBTQ+, 30:e Maj 2026, Regnbågshuset Göteborg. OWASP Gotheburg: Unofficial Security Fest Pre-Party 27:e Maj 2026, Assured, Götenorg. Feedback: Bybit hacket Johan Lindberg, Säkerhet, Ethereum Foundation hörde av sig, med återkoppling till Säkerhetspodcasten #299 - Rollspel]]></description>
+</item>
+<item>
     <title>Säkerhetspodcasten #302 - Åldersverifiering</title>
     <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_302_aldersverifiering/</link>
     <pubDate>Mon, 04 May 2026 10:28:00 &#43;0000</pubDate>
@@ -94,16 +103,6 @@ Lyssna mp3, längd: 43:03 Innehåll &lt;NAMN&gt; heter jag och är CTO för ett 
     <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_294_ostrukturerat_v_50/</guid>
     <description><![CDATA[Sha-Hulud 2.0 NPM/Github/PostHog hack, Glassworm gömmer sitt malware med Unicode Variation Selectors, ShadyPanda Browser Malware, CloudFlare/Rust krash, Ryska hackers trashar OT/ICS honypot, React2Shell, Pixelnapping spionerar på din OTP, Flock kameror usel säkerhet&hellip;
 Lyssna mp3, längd: 01:08:49 Sha-hulud 2.0: NPM och Github brinner igen Dune-masken reser sig ur sanden igen, och hackar NPM, github. Masken blir mer resilient och hittar mer stabil sätt att exfiltera secrets, genom att kollaborativt dela github tokens på github.]]></description>
-</item>
-<item>
-    <title>Säkerhetspodcasten #293 - Molnet Har Fallit</title>
-    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_293_molnet_har_fallit/</link>
-    <pubDate>Mon, 24 Nov 2025 12:15:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_293_molnet_har_fallit/</guid>
-    <description><![CDATA[Molnet har fallit. Två stora hyperscalers har gått ner. AWS står och brinner. Zombies vandrar runt i Azure&rsquo;s datahallar. Säkerhetspodcasten försöker leda dig genom den post-apokalyps vi nu lever i, tiden efter att molnet gick ner.
-Körde du EKG över AWS? Styrde du sängvärmen via AWS? Kunde du inte hämta ut dina barn för att Azure vägrade dig checka ut dem från kommunens system?
-Lyssna mp3, längd: 54:07 AWS brinner: US-EAST-1 har fallit DynamoDB Service Disruption.]]></description>
 </item>
 </channel>
 </rss>
