@@ -3,7 +3,17 @@
         <title>ostrukturerat - Tag - Säkerhetspodcasten</title>
         <link>https://sakerhetspodcasten.se/tags/ostrukturerat/</link>
         <description>ostrukturerat - Tag - Säkerhetspodcasten</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 25 May 2026 09:16:00 &#43;0000</lastBuildDate><atom:link href="https://sakerhetspodcasten.se/tags/ostrukturerat/" rel="self" type="application/rss+xml" /><item>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 17 Jun 2026 09:11:00 &#43;0000</lastBuildDate><atom:link href="https://sakerhetspodcasten.se/tags/ostrukturerat/" rel="self" type="application/rss+xml" /><item>
+    <title>Säkerhetspodcasten #305 - Ostrukturerat V.25</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_305_ostrukturerat_v_25/</link>
+    <pubDate>Wed, 17 Jun 2026 09:11:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_305_ostrukturerat_v_25/</guid>
+    <description><![CDATA[Microsoft / Nighmare Eclipse drama, Bumsrake FreeBSD KTLS kernel sårbarhet, FFmpeg sårbarheter, CI/CD säkerhet: (Boost Security Labs, Bumblebee, Härda din NPM/Bun mot Supply Chain Hell), Arch User Repository (AUR) Supply Chain Hell, AI: (Facebook FAIL, Fable/Mythos, driver sårbarheter), Frostig webläsare!
+Lyssna:
+mp3, längd: 01:04:24 Microsoft&rsquo;s Nighmare Eclipse drama Nighmare Eclipse fortsätter hoppa runt medan Micrsoft försöker boota ut hen från alla tjänster&hellip; Utkastad från Github, utkastad från Gitlab, tillbaka på nytt Github konto.]]></description>
+</item>
+<item>
     <title>Säkerhetspodcasten #303 - Ostrukturerat V.22</title>
     <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_303_ostrukturerat_v_22/</link>
     <pubDate>Mon, 25 May 2026 09:16:00 &#43;0000</pubDate>
@@ -95,16 +105,6 @@ Security Fest: WWWInterpub Friday, November 7, 2025 blaufish.github.io: Self Ref
 Lyssna mp3, längd: 01:00:13 Plugs Building Secure AI, Stockholm, 23-24 September 2025 Bli Säker podden massa spännande i sommras 00:11:54 Konkurrentanalys!
 Bli Säker med Karl Emil Nikka har släppt bra avsnitt i sommar om bland annat:
 UK lag: ID-verifiering för att få nå porr och annat upprörande Tea läckte chat-loggar, ID-handlingar, foton på användare Dataläcka med svenska medborgares personuppgifter AI-chatläckor Fyndiq falska minneskort, USB-stickor, m.]]></description>
-</item>
-<item>
-    <title>Säkerhetspodcasten #285 - Ostrukturerat V.27</title>
-    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_285_ostrukturerat_v_27/</link>
-    <pubDate>Mon, 30 Jun 2025 13:32:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_285_ostrukturerat_v_27/</guid>
-    <description><![CDATA[Operation Deep Sentinel, Påskägg, BankID, CrowdStrike, ASUS API, ASUS SSH, Azure
-Lyssna mp3, längd: 54:23 Archetyp 00:00:49 Europol Operation Deep Sentinel slår mot Archetyp, en handelsplats på &ldquo;darknet&rdquo;.
-Europol: Europe-wide takedown hits longest-standing dark web drug market – Administrator arrested in Spain; top vendors targeted in Sweden - Between 11 and 13 June, a series of coordinated actions took place across Germany, the Netherlands, Romania, Spain, Sweden, targeting the platform’s administrator, moderators, key vendors, and technical infrastructure.]]></description>
 </item>
 </channel>
 </rss>

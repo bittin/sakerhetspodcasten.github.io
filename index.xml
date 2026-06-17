@@ -3,9 +3,19 @@
         <title>Säkerhetspodcasten</title>
         <link>https://sakerhetspodcasten.se/</link>
         <description>Säkerhetspodcasten - Sveriges första? podcast om IT-säkerhet</description>
-        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Mon, 08 Jun 2026 07:55:00 &#43;0000</lastBuildDate>
+        <generator>Hugo -- gohugo.io</generator><language>en-us</language><lastBuildDate>Wed, 17 Jun 2026 09:11:00 &#43;0000</lastBuildDate>
             <atom:link href="https://sakerhetspodcasten.se/index.xml" rel="self" type="application/rss+xml" />
         <item>
+    <title>Säkerhetspodcasten #305 - Ostrukturerat V.25</title>
+    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_305_ostrukturerat_v_25/</link>
+    <pubDate>Wed, 17 Jun 2026 09:11:00 &#43;0000</pubDate>
+    <author>Author</author>
+    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_305_ostrukturerat_v_25/</guid>
+    <description><![CDATA[Microsoft / Nighmare Eclipse drama, Bumsrake FreeBSD KTLS kernel sårbarhet, FFmpeg sårbarheter, CI/CD säkerhet: (Boost Security Labs, Bumblebee, Härda din NPM/Bun mot Supply Chain Hell), Arch User Repository (AUR) Supply Chain Hell, AI: (Facebook FAIL, Fable/Mythos, driver sårbarheter), Frostig webläsare!
+Lyssna:
+mp3, längd: 01:04:24 Microsoft&rsquo;s Nighmare Eclipse drama Nighmare Eclipse fortsätter hoppa runt medan Micrsoft försöker boota ut hen från alla tjänster&hellip; Utkastad från Github, utkastad från Gitlab, tillbaka på nytt Github konto.]]></description>
+</item>
+<item>
     <title>Säkerhetspodcasten #304 - Udda attacker</title>
     <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_304_udda_attacker/</link>
     <pubDate>Mon, 08 Jun 2026 07:55:00 &#43;0000</pubDate>
@@ -95,15 +105,6 @@ Subject: Foss-North CfP öppen fram till 15 februari 2026]]></description>
 Lyssna mp3, längd: 50:42 AWS hackat via regexp bug AWS CodeBuild kasst regexp lämnade viktiga repon vidöppna för konton med snarlika ID!
 Länkar:
 wiz.io/ Yuval Avrahami, Nir Ohfeld: CodeBreach - Supply Chain Vuln &amp; AWS CodeBuild Misconfig | Wiz Blog - Wiz Research discovered CodeBreach, a critical vulnerability that risked the AWS Console supply chain. Learn how to secure your AWS CodeBuild pipelines.]]></description>
-</item>
-<item>
-    <title>Säkerhetspodcasten #295 - Startupsäkerhet</title>
-    <link>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_295_startupsakerhet/</link>
-    <pubDate>Mon, 29 Dec 2025 10:22:00 &#43;0000</pubDate>
-    <author>Author</author>
-    <guid>https://sakerhetspodcasten.se/posts/sakerhetspodcasten_295_startupsakerhet/</guid>
-    <description><![CDATA[En startup hörde av sig med hur vi ser på att säkerhet är för dyrt för många mindre kunder. Vi försöker säga något klokt.
-Lyssna mp3, längd: 43:03 Innehåll &lt;NAMN&gt; heter jag och är CTO för ett mindre startup. Vi jobbar inom &lt;BRANCH&gt; kan man säga. För att sätta lite perspektiv på saker så omsätter vårt bolag ca &lt;BELOPP&gt; SEK och vi är &lt;ANTAL_ANSTÄLLDA&gt; anställda, varav 4 är utvecklare (två på frontend och två på backend).]]></description>
 </item>
 </channel>
 </rss>
