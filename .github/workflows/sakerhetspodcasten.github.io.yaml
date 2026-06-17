@@ -25,7 +25,8 @@ jobs:
       -  name: Download Hugo
          run: wget https://github.com/gohugoio/hugo/releases/download/v${{env.HUGO_VERSION}}/hugo_extended_${{env.HUGO_VERSION}}_linux-amd64.deb
       -  name: Verify hugo
-         run: sha256sum -c self/.github/workflows/sha256sum.txt
+         run: |
+           echo "969eeabb570e9d674d374de37a9d4c8799edf91a9a4dd9115dd714d559b5ad46  hugo_extended_0.110.0_linux-amd64.deb" | sha256sum -c
       -  name: install hugo
          run: sudo apt install ./hugo_extended_${{env.HUGO_VERSION}}_linux-amd64.deb
       -  name: run hugo
